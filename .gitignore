@@ -1,0 +1,14 @@
+data/raw/
+data/processed/
+*.tar.gz
+*.pt
+*.npz
+__pycache__/
+.venv/
+runs/
+results/host/*.png
+data/changan/
+RAW_DATA*
+*.rar
+results/large/prelim/
+results/large/prelim85/

@@ -1,0 +1,42 @@
+{
+ "tag": "DERIVED",
+ "assumptions": {
+  "channels": 7,
+  "bytes_per_sample": 2,
+  "snippet_len": 128,
+  "feat_dim": 64,
+  "feat_bytes": 4
+ },
+ "raw_history_bytes": {
+  "10 min": {
+   "1": 8400,
+   "10": 84000,
+   "100": 840000
+  },
+  "1 h": {
+   "1": 50400,
+   "10": 504000,
+   "100": 5040000
+  },
+  "8 h (drive day)": {
+   "1": 403200,
+   "10": 4032000,
+   "100": 40320000
+  },
+  "7 days": {
+   "1": 8467200,
+   "10": 84672000,
+   "100": 846720000
+  }
+ },
+ "last_layer_ft": {
+  "per_example_raw_B": 1792,
+  "per_example_cached_feature_B": 260,
+  "e4_n_ft_median": 915,
+  "e4_n_ft_max": 2221,
+  "raw_bytes_median_car": 1639680,
+  "feat_bytes_median_car": 237900,
+  "raw_bytes_max_car": 3980032,
+  "feat_bytes_max_car": 577460
+ }
+}

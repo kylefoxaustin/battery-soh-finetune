@@ -1,0 +1,22 @@
+{
+ "primary": {
+  "n_target_units": 94,
+  "noise_sd_median": 4.761399732013615,
+  "noise_mad_median": 3.9086247447532303,
+  "fade_median_ah": 6.529513989760369,
+  "frac_fade_neg": 0.1595744680851064,
+  "labels": 6638,
+  "vehicles": 246,
+  "cap_median": 122.59751510620117
+ },
+ "strict": {
+  "n_target_units": 45,
+  "noise_sd_median": 3.843618339674581,
+  "noise_mad_median": 2.759219781772937,
+  "fade_median_ah": 6.334753328571751,
+  "frac_fade_neg": 0.06666666666666667,
+  "labels": 3285,
+  "vehicles": 224,
+  "cap_median": 122.0818099975586
+ }
+}

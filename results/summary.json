@@ -1,0 +1,961 @@
+{
+ "e1_int8": {
+  "stored_bytes": {
+   "value": 225544,
+   "tag": "MEASURED",
+   "how": ".tflite file size"
+  },
+  "latency_p50_ms": {
+   "value": 22.841768000000002,
+   "tag": "MEASURED",
+   "how": "wall clock, 1000 invokes, 1 thread, core [5], output gated same run"
+  },
+  "latency_p99_ms": {
+   "value": 22.944956010000002,
+   "tag": "MEASURED",
+   "how": "as above"
+  },
+  "interp_delta_kb": {
+   "value": 3444,
+   "tag": "MEASURED",
+   "how": "VmRSS after allocate_tensors minus before interpreter"
+  },
+  "hwm_kb": {
+   "value": 44728,
+   "tag": "MEASURED",
+   "how": "VmHWM, whole python process"
+  },
+  "gate": {
+   "match_ok": true,
+   "max_lsb_vs_host_int8": 0.0,
+   "pass": true,
+   "rmse_board_ah": 1.0986824035644531,
+   "rmse_ok": true,
+   "rmse_ref_ah": 1.0986824035644531
+  },
+  "governor": {
+   "cur_khz": 1800000,
+   "governor": "performance"
+  }
+ },
+ "e1_fp32": {
+  "stored_bytes": {
+   "value": 857692,
+   "tag": "MEASURED",
+   "how": ".tflite file size"
+  },
+  "latency_p50_ms": {
+   "value": 37.4449305,
+   "tag": "MEASURED",
+   "how": "wall clock, 1000 invokes, 1 thread, core [5], output gated same run"
+  },
+  "latency_p99_ms": {
+   "value": 37.91021491,
+   "tag": "MEASURED",
+   "how": "as above"
+  },
+  "interp_delta_kb": {
+   "value": 3868,
+   "tag": "MEASURED",
+   "how": "VmRSS after allocate_tensors minus before interpreter"
+  },
+  "hwm_kb": {
+   "value": 44048,
+   "tag": "MEASURED",
+   "how": "VmHWM, whole python process"
+  },
+  "gate": {
+   "match_ok": true,
+   "max_abs_vs_torch_ah": 7.62939453125e-06,
+   "pass": true,
+   "rmse_board_ah": 1.1000754833221436,
+   "rmse_ok": true,
+   "rmse_ref_ah": 1.100075364112854
+  },
+  "governor": {
+   "cur_khz": 1800000,
+   "governor": "performance"
+  }
+ },
+ "train_full_adam": {
+  "n_reps": 3,
+  "all_gates_pass": true,
+  "params_trainable": 214145,
+  "hwm_peak_kb": {
+   "value": [
+    418648,
+    419004,
+    415532
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM after training loop, per rep"
+  },
+  "train_delta_kb": {
+   "value": [
+    47484,
+    47992,
+    44920
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM(after train) - VmHWM(before train), fresh process"
+  },
+  "rss_baseline_kb": {
+   "value": [
+    356956,
+    356808,
+    356404
+   ],
+   "tag": "MEASURED",
+   "how": "VmRSS before training (torch+model+one car)"
+  },
+  "opt_state_bytes": {
+   "value": 1713160,
+   "tag": "MEASURED",
+   "how": "sum of live optimizer state tensors"
+  },
+  "derived_bytes_per_brief": {
+   "value": 3426320,
+   "tag": "DERIVED",
+   "how": "trainable params x (8 SGD | 16 Adam) B"
+  },
+  "ms_per_step": {
+   "value": [
+    1192.06,
+    1192.41,
+    1193.85
+   ],
+   "tag": "MEASURED",
+   "how": "bs 32, 2 threads"
+  },
+  "heldout_rmse_ah": [
+   1.3887991905212402,
+   1.3887991905212402,
+   1.3887991905212402
+  ],
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.001,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "adam",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  }
+ },
+ "train_full_sgd": {
+  "n_reps": 3,
+  "all_gates_pass": true,
+  "params_trainable": 214145,
+  "hwm_peak_kb": {
+   "value": [
+    412660,
+    418044,
+    415528
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM after training loop, per rep"
+  },
+  "train_delta_kb": {
+   "value": [
+    43872,
+    47708,
+    44380
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM(after train) - VmHWM(before train), fresh process"
+  },
+  "rss_baseline_kb": {
+   "value": [
+    354580,
+    356128,
+    356940
+   ],
+   "tag": "MEASURED",
+   "how": "VmRSS before training (torch+model+one car)"
+  },
+  "opt_state_bytes": {
+   "value": 0,
+   "tag": "MEASURED",
+   "how": "sum of live optimizer state tensors"
+  },
+  "derived_bytes_per_brief": {
+   "value": 1713160,
+   "tag": "DERIVED",
+   "how": "trainable params x (8 SGD | 16 Adam) B"
+  },
+  "ms_per_step": {
+   "value": [
+    1184.85,
+    1186.36,
+    1184.16
+   ],
+   "tag": "MEASURED",
+   "how": "bs 32, 2 threads"
+  },
+  "heldout_rmse_ah": [
+   1.0260686874389648,
+   1.0260686874389648,
+   1.0260686874389648
+  ],
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.01,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "sgd",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  }
+ },
+ "train_head_adam": {
+  "n_reps": 3,
+  "all_gates_pass": true,
+  "params_trainable": 8321,
+  "hwm_peak_kb": {
+   "value": [
+    385928,
+    384768,
+    384672
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM after training loop, per rep"
+  },
+  "train_delta_kb": {
+   "value": [
+    14648,
+    14612,
+    14648
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM(after train) - VmHWM(before train), fresh process"
+  },
+  "rss_baseline_kb": {
+   "value": [
+    357072,
+    355948,
+    355816
+   ],
+   "tag": "MEASURED",
+   "how": "VmRSS before training (torch+model+one car)"
+  },
+  "opt_state_bytes": {
+   "value": 66568,
+   "tag": "MEASURED",
+   "how": "sum of live optimizer state tensors"
+  },
+  "derived_bytes_per_brief": {
+   "value": 133136,
+   "tag": "DERIVED",
+   "how": "trainable params x (8 SGD | 16 Adam) B"
+  },
+  "ms_per_step": {
+   "value": [
+    442.8,
+    442.55,
+    443.68
+   ],
+   "tag": "MEASURED",
+   "how": "bs 32, 2 threads"
+  },
+  "heldout_rmse_ah": [
+   1.3190371990203857,
+   1.3190371990203857,
+   1.3190371990203857
+  ],
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.001,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "adam",
+   "precision": "fp32",
+   "scope": "head",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  }
+ },
+ "train_head_sgd": {
+  "n_reps": 3,
+  "all_gates_pass": true,
+  "params_trainable": 8321,
+  "hwm_peak_kb": {
+   "value": [
+    384336,
+    383340,
+    382632
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM after training loop, per rep"
+  },
+  "train_delta_kb": {
+   "value": [
+    14664,
+    14528,
+    13732
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM(after train) - VmHWM(before train), fresh process"
+  },
+  "rss_baseline_kb": {
+   "value": [
+    355464,
+    354604,
+    354692
+   ],
+   "tag": "MEASURED",
+   "how": "VmRSS before training (torch+model+one car)"
+  },
+  "opt_state_bytes": {
+   "value": 0,
+   "tag": "MEASURED",
+   "how": "sum of live optimizer state tensors"
+  },
+  "derived_bytes_per_brief": {
+   "value": 66568,
+   "tag": "DERIVED",
+   "how": "trainable params x (8 SGD | 16 Adam) B"
+  },
+  "ms_per_step": {
+   "value": [
+    444.12,
+    444.05,
+    443.15
+   ],
+   "tag": "MEASURED",
+   "how": "bs 32, 2 threads"
+  },
+  "heldout_rmse_ah": [
+   1.1205110549926758,
+   1.1205110549926758,
+   1.1205110549926758
+  ],
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.01,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "sgd",
+   "precision": "fp32",
+   "scope": "head",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  }
+ },
+ "train_last_adam": {
+  "n_reps": 3,
+  "all_gates_pass": true,
+  "params_trainable": 65,
+  "hwm_peak_kb": {
+   "value": [
+    382612,
+    383540,
+    381020
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM after training loop, per rep"
+  },
+  "train_delta_kb": {
+   "value": [
+    12088,
+    14644,
+    12088
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM(after train) - VmHWM(before train), fresh process"
+  },
+  "rss_baseline_kb": {
+   "value": [
+    356316,
+    354688,
+    354724
+   ],
+   "tag": "MEASURED",
+   "how": "VmRSS before training (torch+model+one car)"
+  },
+  "opt_state_bytes": {
+   "value": 520,
+   "tag": "MEASURED",
+   "how": "sum of live optimizer state tensors"
+  },
+  "derived_bytes_per_brief": {
+   "value": 1040,
+   "tag": "DERIVED",
+   "how": "trainable params x (8 SGD | 16 Adam) B"
+  },
+  "ms_per_step": {
+   "value": [
+    445.02,
+    444.92,
+    442.97
+   ],
+   "tag": "MEASURED",
+   "how": "bs 32, 2 threads"
+  },
+  "heldout_rmse_ah": [
+   1.4053080081939697,
+   1.4053080081939697,
+   1.4053080081939697
+  ],
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.001,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "adam",
+   "precision": "fp32",
+   "scope": "last",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  }
+ },
+ "train_last_sgd": {
+  "n_reps": 3,
+  "all_gates_pass": true,
+  "params_trainable": 65,
+  "hwm_peak_kb": {
+   "value": [
+    382300,
+    381464,
+    380344
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM after training loop, per rep"
+  },
+  "train_delta_kb": {
+   "value": [
+    11036,
+    11312,
+    10928
+   ],
+   "tag": "MEASURED",
+   "how": "VmHWM(after train) - VmHWM(before train), fresh process"
+  },
+  "rss_baseline_kb": {
+   "value": [
+    357056,
+    355944,
+    355208
+   ],
+   "tag": "MEASURED",
+   "how": "VmRSS before training (torch+model+one car)"
+  },
+  "opt_state_bytes": {
+   "value": 0,
+   "tag": "MEASURED",
+   "how": "sum of live optimizer state tensors"
+  },
+  "derived_bytes_per_brief": {
+   "value": 520,
+   "tag": "DERIVED",
+   "how": "trainable params x (8 SGD | 16 Adam) B"
+  },
+  "ms_per_step": {
+   "value": [
+    441.62,
+    443.14,
+    440.1
+   ],
+   "tag": "MEASURED",
+   "how": "bs 32, 2 threads"
+  },
+  "heldout_rmse_ah": [
+   1.1122491359710693,
+   1.1122491359710693,
+   1.1122491359710693
+  ],
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.01,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "sgd",
+   "precision": "fp32",
+   "scope": "last",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  }
+ },
+ "e4": {
+  "bias": {
+   "mean": 0.9443718016147613,
+   "median": 0.9796676337718964,
+   "p25": 0.6879421919584274,
+   "p75": 1.0878019630908966
+  },
+  "early_mean": {
+   "mean": 2.3769858360290526,
+   "median": 2.223325729370117,
+   "p25": 1.912207305431366,
+   "p75": 3.206388831138611
+  },
+  "frozen": {
+   "mean": 0.9562417358160019,
+   "median": 0.8599724173545837,
+   "p25": 0.7077724188566208,
+   "p75": 1.0525762736797333
+  },
+  "guard_steps_chosen": {
+   "head": [
+    25,
+    25,
+    300,
+    100,
+    50,
+    25,
+    300,
+    300,
+    25,
+    50,
+    300,
+    0,
+    25,
+    300,
+    0,
+    100,
+    25,
+    100,
+    300,
+    300
+   ],
+   "last": [
+    200,
+    300,
+    200,
+    300,
+    50,
+    50,
+    200,
+    300,
+    100,
+    50,
+    100,
+    0,
+    50,
+    25,
+    0,
+    300,
+    25,
+    300,
+    50,
+    300
+   ]
+  },
+  "head": {
+   "mean": 1.1145563110709191,
+   "median": 0.978316605091095,
+   "p25": 0.6546962857246399,
+   "p75": 1.2557997703552246
+  },
+  "head_guard": {
+   "mean": 0.9322870954871177,
+   "median": 0.8151139914989471,
+   "p25": 0.6203053146600723,
+   "p75": 1.2152703404426575
+  },
+  "last": {
+   "mean": 1.3182576701045037,
+   "median": 1.0851154923439026,
+   "p25": 0.7401229739189148,
+   "p75": 1.4870181381702423
+  },
+  "last_beats": {
+   "bias": 8,
+   "early_mean": 16,
+   "frozen": 6
+  },
+  "last_guard": {
+   "mean": 1.1979482159018517,
+   "median": 0.9317925572395325,
+   "p25": 0.69883693754673,
+   "p75": 1.2734349966049194
+  },
+  "last_guard_beats": {
+   "bias": 8,
+   "early_mean": 16,
+   "frozen": 10
+  },
+  "reduction_pct_last_guard_vs_frozen": {
+   "median": 0.0015610450686098787,
+   "n_improved": 10,
+   "n_unchanged": 2,
+   "p25": -13.28969535306926,
+   "p75": 6.28499342971277
+  },
+  "reduction_pct_last_vs_frozen": {
+   "median": -12.554799787811177,
+   "n": 20,
+   "n_improved": 6,
+   "p25": -56.84214385325055,
+   "p75": 3.6075821158994326
+  }
+ },
+ "e4_ft10": {
+  "bias": {
+   "mean": 1.1007764607667923,
+   "median": 1.0547103881835938,
+   "p25": 0.8151956796646118,
+   "p75": 1.1746959686279297
+  },
+  "early_mean": {
+   "mean": 2.7026986479759216,
+   "median": 2.5737879276275635,
+   "p25": 1.8730603456497192,
+   "p75": 3.8364670872688293
+  },
+  "frozen": {
+   "mean": 0.9562417358160019,
+   "median": 0.8599724173545837,
+   "p25": 0.7077724188566208,
+   "p75": 1.0525762736797333
+  },
+  "guard_steps_chosen": {
+   "head": [
+    50,
+    0,
+    300,
+    0,
+    25,
+    0,
+    300,
+    50,
+    300,
+    50,
+    25,
+    0,
+    25,
+    0,
+    0,
+    0,
+    200,
+    200,
+    300,
+    0
+   ],
+   "last": [
+    300,
+    0,
+    300,
+    0,
+    50,
+    25,
+    300,
+    300,
+    25,
+    300,
+    50,
+    0,
+    100,
+    0,
+    25,
+    0,
+    25,
+    200,
+    50,
+    25
+   ]
+  },
+  "head": {
+   "mean": 1.316688622534275,
+   "median": 0.9651794135570526,
+   "p25": 0.6941670775413513,
+   "p75": 1.2317600846290588
+  },
+  "head_guard": {
+   "mean": 1.2558859422802926,
+   "median": 0.8599724173545837,
+   "p25": 0.6375752836465836,
+   "p75": 1.222872108221054
+  },
+  "last": {
+   "mean": 1.4845946073532104,
+   "median": 1.2114461064338684,
+   "p25": 0.7271056473255157,
+   "p75": 1.8332346081733704
+  },
+  "last_beats": {
+   "bias": 7,
+   "early_mean": 14,
+   "frozen": 9
+  },
+  "last_guard": {
+   "mean": 1.3774445489048959,
+   "median": 0.8953943252563477,
+   "p25": 0.8067764788866043,
+   "p75": 1.2604477405548096
+  },
+  "last_guard_beats": {
+   "bias": 7,
+   "early_mean": 17,
+   "frozen": 5
+  },
+  "reduction_pct_last_guard_vs_frozen": {
+   "median": -2.8479709766286776,
+   "n_improved": 5,
+   "n_unchanged": 5,
+   "p25": -23.114016651934605,
+   "p75": 0.48739255505510504
+  },
+  "reduction_pct_last_vs_frozen": {
+   "median": -1.8104959022708922,
+   "n": 20,
+   "n_improved": 9,
+   "p25": -89.4183624720332,
+   "p75": 6.256534510849204
+  }
+ },
+ "e4_host": {
+  "bias": {
+   "mean": 0.9443332508206368,
+   "median": 0.9795998632907867,
+   "p25": 0.6876952052116394,
+   "p75": 1.0881869494915009
+  },
+  "early_mean": {
+   "mean": 2.3769858360290526,
+   "median": 2.223325729370117,
+   "p25": 1.912207305431366,
+   "p75": 3.206388831138611
+  },
+  "frozen": {
+   "mean": 0.9563793197274209,
+   "median": 0.8608382642269135,
+   "p25": 0.7078977227210999,
+   "p75": 1.0526317656040192
+  },
+  "guard_steps_chosen": {
+   "head": [
+    50,
+    25,
+    300,
+    100,
+    50,
+    25,
+    200,
+    200,
+    200,
+    50,
+    25,
+    0,
+    25,
+    300,
+    0,
+    100,
+    25,
+    300,
+    300,
+    200
+   ],
+   "last": [
+    200,
+    300,
+    200,
+    300,
+    50,
+    50,
+    200,
+    300,
+    0,
+    50,
+    50,
+    0,
+    50,
+    25,
+    0,
+    300,
+    100,
+    300,
+    50,
+    300
+   ]
+  },
+  "head": {
+   "mean": 1.1226351737976075,
+   "median": 0.9932125806808472,
+   "p25": 0.6201334297657013,
+   "p75": 1.2880573272705078
+  },
+  "head_guard": {
+   "mean": 0.9251705542206764,
+   "median": 0.7934584021568298,
+   "p25": 0.6476124227046967,
+   "p75": 1.216290295124054
+  },
+  "last": {
+   "mean": 1.324134784936905,
+   "median": 1.0871233344078064,
+   "p25": 0.8159807175397873,
+   "p75": 1.498972862958908
+  },
+  "last_beats": {
+   "bias": 7,
+   "early_mean": 16,
+   "frozen": 6
+  },
+  "last_guard": {
+   "mean": 1.1991451546549796,
+   "median": 0.9329280257225037,
+   "p25": 0.7002216428518295,
+   "p75": 1.2567220628261566
+  },
+  "last_guard_beats": {
+   "bias": 9,
+   "early_mean": 16,
+   "frozen": 9
+  },
+  "reduction_pct_last_guard_vs_frozen": {
+   "median": 0.0,
+   "n_improved": 9,
+   "n_unchanged": 3,
+   "p25": -13.102324559423469,
+   "p75": 6.140196785323237
+  },
+  "reduction_pct_last_vs_frozen": {
+   "median": -14.201465077037678,
+   "n": 20,
+   "n_improved": 6,
+   "p25": -59.83379053095338,
+   "p75": 3.5535755240196423
+  }
+ },
+ "e4_host_nokm": {
+  "bias": {
+   "mean": 1.8086014091968536,
+   "median": 1.65750652551651,
+   "p25": 1.5179135203361511,
+   "p75": 2.2108726501464844
+  },
+  "early_mean": {
+   "mean": 2.3769858360290526,
+   "median": 2.223325729370117,
+   "p25": 1.912207305431366,
+   "p75": 3.206388831138611
+  },
+  "frozen": {
+   "mean": 1.4047476947307587,
+   "median": 1.2480047345161438,
+   "p25": 1.1820209324359894,
+   "p75": 1.511092871427536
+  },
+  "guard_steps_chosen": {
+   "head": [
+    300,
+    50,
+    200,
+    300,
+    300,
+    200,
+    50,
+    300,
+    300,
+    50,
+    300,
+    300,
+    50,
+    100,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300
+   ],
+   "last": [
+    300,
+    100,
+    200,
+    300,
+    300,
+    200,
+    200,
+    300,
+    300,
+    100,
+    300,
+    300,
+    100,
+    200,
+    100,
+    300,
+    300,
+    300,
+    300,
+    300
+   ]
+  },
+  "head": {
+   "mean": 2.113019862771034,
+   "median": 2.0340282917022705,
+   "p25": 1.5188378691673279,
+   "p75": 2.912630796432495
+  },
+  "head_guard": {
+   "mean": 2.05702343583107,
+   "median": 1.990768849849701,
+   "p25": 1.5237129032611847,
+   "p75": 2.8109253644943237
+  },
+  "last": {
+   "mean": 1.9161113560199738,
+   "median": 1.8027383089065552,
+   "p25": 1.4825339019298553,
+   "p75": 2.3040006160736084
+  },
+  "last_beats": {
+   "bias": 7,
+   "early_mean": 17,
+   "frozen": 6
+  },
+  "last_guard": {
+   "mean": 1.867171621322632,
+   "median": 1.7939234375953674,
+   "p25": 1.5223514139652252,
+   "p75": 2.2563316822052
+  },
+  "last_guard_beats": {
+   "bias": 7,
+   "early_mean": 17,
+   "frozen": 6
+  },
+  "reduction_pct_last_guard_vs_frozen": {
+   "median": -42.38981628263859,
+   "n_improved": 6,
+   "n_unchanged": 0,
+   "p25": -69.82405216194428,
+   "p75": 13.06442637445817
+  },
+  "reduction_pct_last_vs_frozen": {
+   "median": -44.13865432244558,
+   "n": 20,
+   "n_improved": 6,
+   "p25": -73.4486751256428,
+   "p75": 6.871513746759517
+  }
+ },
+ "e4_noise_floor_ah": {
+  "value": 0.6478754560419184,
+  "tag": "DERIVED",
+  "how": "median over target cars of SD of capacity labels around a per-car linear fit vs odometer (all of the car's data)"
+ }
+}

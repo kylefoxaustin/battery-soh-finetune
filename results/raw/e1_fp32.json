@@ -1,0 +1,88 @@
+{
+  "cpu_pct": {
+    "cpu": 17.1,
+    "cpu0": 1.2,
+    "cpu1": 0.3,
+    "cpu2": 0.1,
+    "cpu3": 0.1,
+    "cpu4": 0.6,
+    "cpu5": 100.0,
+    "interval_s": 37.512
+  },
+  "env": {
+    "affinity": [
+      5
+    ],
+    "cpufreq": {
+      "cpu0": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu1": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu2": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu3": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu4": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu5": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      }
+    },
+    "host": "imx95evk",
+    "loadavg": [
+      "0.77",
+      "0.63",
+      "0.39"
+    ],
+    "machine": "aarch64",
+    "model": "NXP FRDM-IMX95-PRO",
+    "python": "3.14.4",
+    "time": "2026-10-08T17:17:11-0500"
+  },
+  "gate": {
+    "match_ok": true,
+    "max_abs_vs_torch_ah": 7.62939453125e-06,
+    "pass": true,
+    "rmse_board_ah": 1.1000754833221436,
+    "rmse_ok": true,
+    "rmse_ref_ah": 1.100075364112854
+  },
+  "latency_ms": {
+    "mean": 37.470625565000006,
+    "min": 37.186469,
+    "n": 1000,
+    "p50": 37.4449305,
+    "p99": 37.91021491
+  },
+  "mem_kb": {
+    "hwm": 44048,
+    "interp_delta": 3868,
+    "rss_after_allocate": 39560,
+    "rss_pre_interpreter": 35692
+  },
+  "model": "soh_fp32.tflite",
+  "placement": {
+    "delegate": "none (A55 CPU builtin kernels)",
+    "ops": [
+      "DELEGATE",
+      "FULLY_CONNECTED",
+      "STRIDED_SLICE",
+      "UNIDIRECTIONAL_SEQUENCE_LSTM"
+    ]
+  },
+  "runtime": "tflite_runtime",
+  "tag": "MEASURED",
+  "tflite_bytes": 857692,
+  "threads": 1
+}

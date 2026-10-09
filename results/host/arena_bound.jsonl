@@ -1,0 +1,2 @@
+{"model": "soh_int8.tflite", "tag": "DERIVED", "nonconstant_tensor_bytes": 35521, "constant_tensor_bytes": 219752, "lstm_state_bytes": 768}
+{"model": "soh_fp32.tflite", "tag": "DERIVED", "nonconstant_tensor_bytes": 141060, "constant_tensor_bytes": 857768, "lstm_state_bytes": 2048}

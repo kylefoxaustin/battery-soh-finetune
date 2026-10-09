@@ -1,0 +1,99 @@
+{
+  "config": {
+    "bs": 32,
+    "car": 3,
+    "lr": 0.01,
+    "n_ft": 1118,
+    "n_test": 1865,
+    "opt": "sgd",
+    "precision": "fp32",
+    "scope": "head",
+    "seq_len": 128,
+    "steps": 60,
+    "threads": 2,
+    "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+    "cpu": 33.6,
+    "cpu0": 1.1,
+    "cpu1": 0.4,
+    "cpu2": 0.7,
+    "cpu3": 0.5,
+    "cpu4": 98.9,
+    "cpu5": 100.0,
+    "interval_s": 26.649
+  },
+  "derived_bytes": {
+    "adam_extra_m_v": 0,
+    "total_per_brief": 66568,
+    "weights_plus_grads": 66568
+  },
+  "env": {
+    "affinity": [
+      4,
+      5
+    ],
+    "cpufreq": {
+      "cpu0": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu1": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu2": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu3": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu4": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu5": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      }
+    },
+    "host": "imx95evk",
+    "loadavg": [
+      "1.94",
+      "1.89",
+      "1.60"
+    ],
+    "machine": "aarch64",
+    "model": "NXP FRDM-IMX95-PRO",
+    "python": "3.14.4",
+    "time": "2026-10-08T17:41:23-0500"
+  },
+  "ft_loss_after": 0.19494490325450897,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+    "frozen_bit_identical": true,
+    "ft_set_loss_decreased": true,
+    "heldout_rmse_finite": true,
+    "losses_finite": true,
+    "pass": true,
+    "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.1205110549926758,
+  "loss_first10": 0.22306521981954575,
+  "loss_last10": 0.25854588449001314,
+  "mem_kb": {
+    "hwm_baseline": 369672,
+    "hwm_peak": 384336,
+    "rss_after_import": 231652,
+    "rss_baseline": 355464,
+    "train_delta": 14664
+  },
+  "ms_per_step": 444.12,
+  "opt_state_bytes_actual": 0,
+  "params_total": 214145,
+  "params_trainable": 8321,
+  "tag": "MEASURED",
+  "train_s": 26.647
+}

@@ -1,0 +1,629 @@
+{
+  "config": {
+    "ft_bs": 32,
+    "ft_frac": 0.3,
+    "ft_lr": 0.001,
+    "ft_steps": 300,
+    "gap_frac": 0.2,
+    "guard_frac": 0.25,
+    "guard_steps": [
+      0,
+      25,
+      50,
+      100,
+      200,
+      300
+    ],
+    "mileage_input": true,
+    "optimizer": "Adam",
+    "test_frac": 0.5,
+    "torch": "2.11.0+cu130"
+  },
+  "env": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "cpufreq": {
+      "cpu0": {
+        "cur_khz": 5400000,
+        "governor": "performance"
+      },
+      "cpu1": {
+        "cur_khz": 5336672,
+        "governor": "performance"
+      },
+      "cpu10": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      },
+      "cpu11": {
+        "cur_khz": 5336612,
+        "governor": "performance"
+      },
+      "cpu12": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      },
+      "cpu13": {
+        "cur_khz": 5336593,
+        "governor": "performance"
+      },
+      "cpu14": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      },
+      "cpu15": {
+        "cur_khz": 5336606,
+        "governor": "performance"
+      },
+      "cpu16": {
+        "cur_khz": 4282328,
+        "governor": "performance"
+      },
+      "cpu17": {
+        "cur_khz": 4393775,
+        "governor": "performance"
+      },
+      "cpu18": {
+        "cur_khz": 4282272,
+        "governor": "performance"
+      },
+      "cpu19": {
+        "cur_khz": 4282339,
+        "governor": "performance"
+      },
+      "cpu2": {
+        "cur_khz": 5336603,
+        "governor": "performance"
+      },
+      "cpu20": {
+        "cur_khz": 4360479,
+        "governor": "performance"
+      },
+      "cpu21": {
+        "cur_khz": 4384636,
+        "governor": "performance"
+      },
+      "cpu22": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      },
+      "cpu23": {
+        "cur_khz": 4282431,
+        "governor": "performance"
+      },
+      "cpu24": {
+        "cur_khz": 4282419,
+        "governor": "performance"
+      },
+      "cpu25": {
+        "cur_khz": 4289656,
+        "governor": "performance"
+      },
+      "cpu26": {
+        "cur_khz": 4294009,
+        "governor": "performance"
+      },
+      "cpu27": {
+        "cur_khz": 4201876,
+        "governor": "performance"
+      },
+      "cpu28": {
+        "cur_khz": 4162879,
+        "governor": "performance"
+      },
+      "cpu29": {
+        "cur_khz": 4300248,
+        "governor": "performance"
+      },
+      "cpu3": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      },
+      "cpu30": {
+        "cur_khz": 4320226,
+        "governor": "performance"
+      },
+      "cpu31": {
+        "cur_khz": 4277717,
+        "governor": "performance"
+      },
+      "cpu4": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      },
+      "cpu5": {
+        "cur_khz": 5336606,
+        "governor": "performance"
+      },
+      "cpu6": {
+        "cur_khz": 5336588,
+        "governor": "performance"
+      },
+      "cpu7": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      },
+      "cpu8": {
+        "cur_khz": 5336604,
+        "governor": "performance"
+      },
+      "cpu9": {
+        "cur_khz": 800000,
+        "governor": "performance"
+      }
+    },
+    "host": "x86-host",
+    "loadavg": [
+      "23.77",
+      "21.38",
+      "17.18"
+    ],
+    "machine": "x86_64",
+    "model": "n/a",
+    "python": "3.10.12",
+    "time": "2026-10-08T22:00:49-0500"
+  },
+  "hwm_kb": 826952,
+  "per_car": [
+    {
+      "cap_ft_mean": 124.07328033447266,
+      "cap_test_mean": 120.3148422241211,
+      "car": 36,
+      "guard_steps": {
+        "head": 0,
+        "last": 25
+      },
+      "mileage_ft_km": [
+        2695.800048828125,
+        40425.1015625
+      ],
+      "mileage_test_km": [
+        181130.40625,
+        232975.09375
+      ],
+      "n": 32,
+      "n_ft": 9,
+      "n_test": 16,
+      "reduction_pct_last_vs_frozen": -4.824908295400743,
+      "rmse": {
+        "bias": 2.901493787765503,
+        "early_mean": 4.553861141204834,
+        "frozen": 2.9104716777801514,
+        "head": 2.9741382598876953,
+        "head_guard": 2.9104716777801514,
+        "last": 3.0508992671966553,
+        "last_guard": 3.0839877128601074
+      }
+    },
+    {
+      "cap_ft_mean": 125.47554779052734,
+      "cap_test_mean": 119.70687103271484,
+      "car": 37,
+      "guard_steps": {
+        "head": 0,
+        "last": 0
+      },
+      "mileage_ft_km": [
+        22632.5,
+        116650.6015625
+      ],
+      "mileage_test_km": [
+        124484.296875,
+        178263.796875
+      ],
+      "n": 29,
+      "n_ft": 8,
+      "n_test": 15,
+      "reduction_pct_last_vs_frozen": 6.442942684127995,
+      "rmse": {
+        "bias": 3.6949658393859863,
+        "early_mean": 7.1312947273254395,
+        "frozen": 3.7649970054626465,
+        "head": 3.5647263526916504,
+        "head_guard": 3.7649970054626465,
+        "last": 3.5224204063415527,
+        "last_guard": 3.7649970054626465
+      }
+    },
+    {
+      "cap_ft_mean": 126.52027130126953,
+      "cap_test_mean": 122.73892974853516,
+      "car": 43,
+      "guard_steps": {
+        "head": 0,
+        "last": 0
+      },
+      "mileage_ft_km": [
+        50.79999923706055,
+        17138.5
+      ],
+      "mileage_test_km": [
+        37307.0,
+        111729.3984375
+      ],
+      "n": 26,
+      "n_ft": 7,
+      "n_test": 13,
+      "reduction_pct_last_vs_frozen": 1.7595840643641725,
+      "rmse": {
+        "bias": 3.8000717163085938,
+        "early_mean": 4.940845489501953,
+        "frozen": 3.3966147899627686,
+        "head": 4.395201683044434,
+        "head_guard": 3.3966147899627686,
+        "last": 3.336848497390747,
+        "last_guard": 3.3966147899627686
+      }
+    },
+    {
+      "cap_ft_mean": 121.8149642944336,
+      "cap_test_mean": 118.41095733642578,
+      "car": 64,
+      "guard_steps": {
+        "head": 25,
+        "last": 50
+      },
+      "mileage_ft_km": [
+        838.2000122070312,
+        110936.203125
+      ],
+      "mileage_test_km": [
+        147198.09375,
+        220532.90625
+      ],
+      "n": 51,
+      "n_ft": 15,
+      "n_test": 26,
+      "reduction_pct_last_vs_frozen": -104.51911910845202,
+      "rmse": {
+        "bias": 1.640565037727356,
+        "early_mean": 4.008461952209473,
+        "frozen": 3.074078321456909,
+        "head": 7.279654502868652,
+        "head_guard": 2.761584997177124,
+        "last": 6.287077903747559,
+        "last_guard": 2.7043910026550293
+      }
+    },
+    {
+      "cap_ft_mean": 129.4190673828125,
+      "cap_test_mean": 124.02555847167969,
+      "car": 69,
+      "guard_steps": {
+        "head": 50,
+        "last": 100
+      },
+      "mileage_ft_km": [
+        754.5999755859375,
+        110936.3984375
+      ],
+      "mileage_test_km": [
+        159664.703125,
+        180693.796875
+      ],
+      "n": 22,
+      "n_ft": 6,
+      "n_test": 11,
+      "reduction_pct_last_vs_frozen": -15.251465942308528,
+      "rmse": {
+        "bias": 3.0347542762756348,
+        "early_mean": 6.225716590881348,
+        "frozen": 3.029710292816162,
+        "head": 3.791614055633545,
+        "head_guard": 2.8516385555267334,
+        "last": 3.4917855262756348,
+        "last_guard": 3.0493290424346924
+      }
+    },
+    {
+      "cap_ft_mean": 117.69477844238281,
+      "cap_test_mean": 117.30492401123047,
+      "car": 95,
+      "guard_steps": {
+        "head": 0,
+        "last": 25
+      },
+      "mileage_ft_km": [
+        3671.5,
+        195859.796875
+      ],
+      "mileage_test_km": [
+        226315.5,
+        257521.796875
+      ],
+      "n": 59,
+      "n_ft": 17,
+      "n_test": 30,
+      "reduction_pct_last_vs_frozen": -13.822497364822063,
+      "rmse": {
+        "bias": 2.457752227783203,
+        "early_mean": 3.4596807956695557,
+        "frozen": 2.5853323936462402,
+        "head": 2.97068190574646,
+        "head_guard": 2.5853323936462402,
+        "last": 2.942689895629883,
+        "last_guard": 2.6827120780944824
+      }
+    },
+    {
+      "cap_ft_mean": 124.8236083984375,
+      "cap_test_mean": 120.20104217529297,
+      "car": 143,
+      "guard_steps": {
+        "head": 0,
+        "last": 25
+      },
+      "mileage_ft_km": [
+        23522.5,
+        103450.5
+      ],
+      "mileage_test_km": [
+        146607.203125,
+        274132.90625
+      ],
+      "n": 87,
+      "n_ft": 26,
+      "n_test": 44,
+      "reduction_pct_last_vs_frozen": -94.99589211111876,
+      "rmse": {
+        "bias": 2.4905123710632324,
+        "early_mean": 5.054687023162842,
+        "frozen": 1.5463093519210815,
+        "head": 2.8632640838623047,
+        "head_guard": 1.5463093519210815,
+        "last": 3.015239715576172,
+        "last_guard": 1.7359849214553833
+      }
+    },
+    {
+      "cap_ft_mean": 121.15558624267578,
+      "cap_test_mean": 119.52730560302734,
+      "car": 147,
+      "guard_steps": {
+        "head": 300,
+        "last": 50
+      },
+      "mileage_ft_km": [
+        2393.89990234375,
+        64413.0
+      ],
+      "mileage_test_km": [
+        157912.296875,
+        244738.90625
+      ],
+      "n": 37,
+      "n_ft": 11,
+      "n_test": 19,
+      "reduction_pct_last_vs_frozen": -2.8322091971953345,
+      "rmse": {
+        "bias": 3.338754415512085,
+        "early_mean": 3.3413925170898438,
+        "frozen": 3.4721686840057373,
+        "head": 3.615205764770508,
+        "head_guard": 3.641547918319702,
+        "last": 3.570507764816284,
+        "last_guard": 3.434671640396118
+      }
+    },
+    {
+      "cap_ft_mean": 124.35211181640625,
+      "cap_test_mean": 126.06302642822266,
+      "car": 169,
+      "guard_steps": {
+        "head": 300,
+        "last": 100
+      },
+      "mileage_ft_km": [
+        6314.89990234375,
+        43626.69921875
+      ],
+      "mileage_test_km": [
+        54687.80078125,
+        170769.59375
+      ],
+      "n": 20,
+      "n_ft": 6,
+      "n_test": 10,
+      "reduction_pct_last_vs_frozen": -1.5083955247566783,
+      "rmse": {
+        "bias": 3.1955604553222656,
+        "early_mean": 3.5654029846191406,
+        "frozen": 3.6619741916656494,
+        "head": 4.055330276489258,
+        "head_guard": 3.5598864555358887,
+        "last": 3.7172112464904785,
+        "last_guard": 3.5554699897766113
+      }
+    },
+    {
+      "cap_ft_mean": 126.52986907958984,
+      "cap_test_mean": 125.44642639160156,
+      "car": 200,
+      "guard_steps": {
+        "head": 0,
+        "last": 0
+      },
+      "mileage_ft_km": [
+        899.9000244140625,
+        36987.1015625
+      ],
+      "mileage_test_km": [
+        41277.1015625,
+        128713.203125
+      ],
+      "n": 57,
+      "n_ft": 17,
+      "n_test": 29,
+      "reduction_pct_last_vs_frozen": -38.65511524119718,
+      "rmse": {
+        "bias": 2.7396047115325928,
+        "early_mean": 3.535659074783325,
+        "frozen": 2.7285754680633545,
+        "head": 3.159487247467041,
+        "head_guard": 2.7285754680633545,
+        "last": 3.7833094596862793,
+        "last_guard": 2.7285754680633545
+      }
+    },
+    {
+      "cap_ft_mean": 120.17205047607422,
+      "cap_test_mean": 121.1937484741211,
+      "car": 272,
+      "guard_steps": {
+        "head": 25,
+        "last": 100
+      },
+      "mileage_ft_km": [
+        145.0,
+        21987.19921875
+      ],
+      "mileage_test_km": [
+        36440.30078125,
+        89591.796875
+      ],
+      "n": 21,
+      "n_ft": 6,
+      "n_test": 11,
+      "reduction_pct_last_vs_frozen": -7.283134971499972,
+      "rmse": {
+        "bias": 8.330048561096191,
+        "early_mean": 8.6768159866333,
+        "frozen": 7.832587718963623,
+        "head": 8.37659740447998,
+        "head_guard": 8.115066528320312,
+        "last": 8.403045654296875,
+        "last_guard": 8.089774131774902
+      }
+    }
+  ],
+  "summary": {
+    "bias": {
+      "mean": 3.4203712181611494,
+      "median": 3.0347542762756348,
+      "p25": 2.6150585412979126,
+      "p75": 3.5168601274490356
+    },
+    "early_mean": {
+      "mean": 4.953983480280096,
+      "median": 4.553861141204834,
+      "p25": 3.550531029701233,
+      "p75": 5.640201807022095
+    },
+    "frozen": {
+      "mean": 3.4548018087040293,
+      "median": 3.074078321456909,
+      "p25": 2.819523572921753,
+      "p75": 3.5670714378356934
+    },
+    "guard_steps_chosen": {
+      "head": [
+        0,
+        0,
+        0,
+        25,
+        50,
+        0,
+        0,
+        300,
+        300,
+        0,
+        25
+      ],
+      "last": [
+        25,
+        0,
+        0,
+        50,
+        100,
+        25,
+        25,
+        50,
+        100,
+        0,
+        100
+      ]
+    },
+    "head": {
+      "mean": 4.276900139721957,
+      "median": 3.615205764770508,
+      "p25": 3.066812753677368,
+      "p75": 4.225265979766846
+    },
+    "head_guard": {
+      "mean": 3.442002285610546,
+      "median": 2.9104716777801514,
+      "p25": 2.7450802326202393,
+      "p75": 3.6007171869277954
+    },
+    "last": {
+      "mean": 4.101912303404375,
+      "median": 3.5224204063415527,
+      "p25": 3.193873882293701,
+      "p75": 3.750260353088379
+    },
+    "last_beats": {
+      "bias": 2,
+      "early_mean": 7,
+      "frozen": 2
+    },
+    "last_guard": {
+      "mean": 3.475137071176009,
+      "median": 3.0839877128601074,
+      "p25": 2.716483235359192,
+      "p75": 3.4950708150863647
+    },
+    "last_guard_beats": {
+      "bias": 4,
+      "early_mean": 10,
+      "frozen": 3
+    },
+    "reduction_pct_last_guard_vs_frozen": {
+      "median": 0.0,
+      "n_improved": 3,
+      "n_unchanged": 3,
+      "p25": -3.525082396789714,
+      "p75": 0.5399657537139002
+    },
+    "reduction_pct_last_vs_frozen": {
+      "median": -7.283134971499972,
+      "n": 11,
+      "n_improved": 2,
+      "p25": -26.953290591752854,
+      "p75": -2.1703023609760064
+    }
+  },
+  "tag": "MEASURED (real field data, EVBattery; no synthetic drift)",
+  "wall_s": 3.66
+}

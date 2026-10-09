@@ -1,0 +1,99 @@
+{
+  "config": {
+    "bs": 32,
+    "car": 3,
+    "lr": 0.001,
+    "n_ft": 1118,
+    "n_test": 1865,
+    "opt": "adam",
+    "precision": "fp32",
+    "scope": "head",
+    "seq_len": 128,
+    "steps": 60,
+    "threads": 2,
+    "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+    "cpu": 33.4,
+    "cpu0": 0.2,
+    "cpu1": 0.8,
+    "cpu2": 0.3,
+    "cpu3": 0.3,
+    "cpu4": 100.0,
+    "cpu5": 98.9,
+    "interval_s": 26.622
+  },
+  "derived_bytes": {
+    "adam_extra_m_v": 66568,
+    "total_per_brief": 133136,
+    "weights_plus_grads": 66568
+  },
+  "env": {
+    "affinity": [
+      4,
+      5
+    ],
+    "cpufreq": {
+      "cpu0": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu1": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu2": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu3": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu4": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      },
+      "cpu5": {
+        "cur_khz": 1800000,
+        "governor": "performance"
+      }
+    },
+    "host": "imx95evk",
+    "loadavg": [
+      "1.93",
+      "1.87",
+      "1.70"
+    ],
+    "machine": "aarch64",
+    "model": "NXP FRDM-IMX95-PRO",
+    "python": "3.14.4",
+    "time": "2026-10-08T17:48:54-0500"
+  },
+  "ft_loss_after": 0.18041270971298218,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+    "frozen_bit_identical": true,
+    "ft_set_loss_decreased": true,
+    "heldout_rmse_finite": true,
+    "losses_finite": true,
+    "pass": true,
+    "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.3190371990203857,
+  "loss_first10": 0.2099711962044239,
+  "loss_last10": 0.22833860889077187,
+  "mem_kb": {
+    "hwm_baseline": 370024,
+    "hwm_peak": 384672,
+    "rss_after_import": 232012,
+    "rss_baseline": 355816,
+    "train_delta": 14648
+  },
+  "ms_per_step": 443.68,
+  "opt_state_bytes_actual": 66568,
+  "params_total": 214145,
+  "params_trainable": 8321,
+  "tag": "MEASURED",
+  "train_s": 26.621
+}

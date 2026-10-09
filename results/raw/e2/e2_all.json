@@ -1,0 +1,596 @@
+[
+ {
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.01,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "sgd",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+   "cpu": 33.8,
+   "cpu0": 0.5,
+   "cpu1": 1.4,
+   "cpu2": 0.4,
+   "cpu3": 0.4,
+   "cpu4": 99.6,
+   "cpu5": 100.0,
+   "interval_s": 71.092
+  },
+  "derived_bytes": {
+   "adam_extra_m_v": 0,
+   "total_per_brief": 1713160,
+   "weights_plus_grads": 1713160
+  },
+  "env": {
+   "affinity": [
+    4,
+    5
+   ],
+   "cpufreq": {
+    "cpu0": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu1": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu2": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu3": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu4": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu5": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    }
+   },
+   "host": "imx95evk",
+   "loadavg": [
+    "1.85",
+    "1.10",
+    "0.60"
+   ],
+   "machine": "aarch64",
+   "model": "NXP FRDM-IMX95-PRO",
+   "python": "3.14.4",
+   "time": "2026-10-08T17:19:30-0500"
+  },
+  "ft_loss_after": 0.1776534616947174,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+   "frozen_bit_identical": true,
+   "ft_set_loss_decreased": true,
+   "heldout_rmse_finite": true,
+   "losses_finite": true,
+   "pass": true,
+   "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.0260686874389648,
+  "loss_first10": 0.236043581366539,
+  "loss_last10": 0.23962268829345704,
+  "mem_kb": {
+   "hwm_baseline": 368788,
+   "hwm_peak": 412660,
+   "rss_after_import": 230792,
+   "rss_baseline": 354580,
+   "train_delta": 43872
+  },
+  "ms_per_step": 1184.85,
+  "opt_state_bytes_actual": 0,
+  "params_total": 214145,
+  "params_trainable": 214145,
+  "tag": "MEASURED",
+  "train_s": 71.091
+ },
+ {
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.01,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "sgd",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+   "cpu": 34.0,
+   "cpu0": 1.0,
+   "cpu1": 1.4,
+   "cpu2": 0.8,
+   "cpu3": 1.4,
+   "cpu4": 99.9,
+   "cpu5": 99.6,
+   "interval_s": 71.183
+  },
+  "derived_bytes": {
+   "adam_extra_m_v": 0,
+   "total_per_brief": 1713160,
+   "weights_plus_grads": 1713160
+  },
+  "env": {
+   "affinity": [
+    4,
+    5
+   ],
+   "cpufreq": {
+    "cpu0": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu1": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu2": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu3": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu4": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu5": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    }
+   },
+   "host": "imx95evk",
+   "loadavg": [
+    "1.97",
+    "1.41",
+    "0.79"
+   ],
+   "machine": "aarch64",
+   "model": "NXP FRDM-IMX95-PRO",
+   "python": "3.14.4",
+   "time": "2026-10-08T17:21:44-0500"
+  },
+  "ft_loss_after": 0.1776534616947174,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+   "frozen_bit_identical": true,
+   "ft_set_loss_decreased": true,
+   "heldout_rmse_finite": true,
+   "losses_finite": true,
+   "pass": true,
+   "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.0260686874389648,
+  "loss_first10": 0.236043581366539,
+  "loss_last10": 0.23962268829345704,
+  "mem_kb": {
+   "hwm_baseline": 370336,
+   "hwm_peak": 418044,
+   "rss_after_import": 232316,
+   "rss_baseline": 356128,
+   "train_delta": 47708
+  },
+  "ms_per_step": 1186.36,
+  "opt_state_bytes_actual": 0,
+  "params_total": 214145,
+  "params_trainable": 214145,
+  "tag": "MEASURED",
+  "train_s": 71.182
+ },
+ {
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.01,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "sgd",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+   "cpu": 33.7,
+   "cpu0": 0.4,
+   "cpu1": 0.6,
+   "cpu2": 0.4,
+   "cpu3": 0.9,
+   "cpu4": 99.6,
+   "cpu5": 100.0,
+   "interval_s": 71.051
+  },
+  "derived_bytes": {
+   "adam_extra_m_v": 0,
+   "total_per_brief": 1713160,
+   "weights_plus_grads": 1713160
+  },
+  "env": {
+   "affinity": [
+    4,
+    5
+   ],
+   "cpufreq": {
+    "cpu0": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu1": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu2": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu3": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu4": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu5": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    }
+   },
+   "host": "imx95evk",
+   "loadavg": [
+    "1.97",
+    "1.60",
+    "0.95"
+   ],
+   "machine": "aarch64",
+   "model": "NXP FRDM-IMX95-PRO",
+   "python": "3.14.4",
+   "time": "2026-10-08T17:23:59-0500"
+  },
+  "ft_loss_after": 0.1776534616947174,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+   "frozen_bit_identical": true,
+   "ft_set_loss_decreased": true,
+   "heldout_rmse_finite": true,
+   "losses_finite": true,
+   "pass": true,
+   "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.0260686874389648,
+  "loss_first10": 0.236043581366539,
+  "loss_last10": 0.23962268829345704,
+  "mem_kb": {
+   "hwm_baseline": 371148,
+   "hwm_peak": 415528,
+   "rss_after_import": 231256,
+   "rss_baseline": 356940,
+   "train_delta": 44380
+  },
+  "ms_per_step": 1184.16,
+  "opt_state_bytes_actual": 0,
+  "params_total": 214145,
+  "params_trainable": 214145,
+  "tag": "MEASURED",
+  "train_s": 71.05
+ },
+ {
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.001,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "adam",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+   "cpu": 33.7,
+   "cpu0": 0.8,
+   "cpu1": 0.4,
+   "cpu2": 0.8,
+   "cpu3": 0.4,
+   "cpu4": 100.0,
+   "cpu5": 99.5,
+   "interval_s": 71.525
+  },
+  "derived_bytes": {
+   "adam_extra_m_v": 1713160,
+   "total_per_brief": 3426320,
+   "weights_plus_grads": 1713160
+  },
+  "env": {
+   "affinity": [
+    4,
+    5
+   ],
+   "cpufreq": {
+    "cpu0": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu1": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu2": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu3": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu4": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu5": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    }
+   },
+   "host": "imx95evk",
+   "loadavg": [
+    "2.01",
+    "1.73",
+    "1.09"
+   ],
+   "machine": "aarch64",
+   "model": "NXP FRDM-IMX95-PRO",
+   "python": "3.14.4",
+   "time": "2026-10-08T17:26:14-0500"
+  },
+  "ft_loss_after": 0.14669956266880035,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+   "frozen_bit_identical": true,
+   "ft_set_loss_decreased": true,
+   "heldout_rmse_finite": true,
+   "losses_finite": true,
+   "pass": true,
+   "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.3887991905212402,
+  "loss_first10": 0.191920767724514,
+  "loss_last10": 0.19486642852425576,
+  "mem_kb": {
+   "hwm_baseline": 371164,
+   "hwm_peak": 418648,
+   "rss_after_import": 231088,
+   "rss_baseline": 356956,
+   "train_delta": 47484
+  },
+  "ms_per_step": 1192.06,
+  "opt_state_bytes_actual": 1713160,
+  "params_total": 214145,
+  "params_trainable": 214145,
+  "tag": "MEASURED",
+  "train_s": 71.524
+ },
+ {
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.001,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "adam",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+   "cpu": 33.7,
+   "cpu0": 0.8,
+   "cpu1": 0.4,
+   "cpu2": 0.6,
+   "cpu3": 0.6,
+   "cpu4": 99.5,
+   "cpu5": 100.0,
+   "interval_s": 71.546
+  },
+  "derived_bytes": {
+   "adam_extra_m_v": 1713160,
+   "total_per_brief": 3426320,
+   "weights_plus_grads": 1713160
+  },
+  "env": {
+   "affinity": [
+    4,
+    5
+   ],
+   "cpufreq": {
+    "cpu0": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu1": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu2": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu3": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu4": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu5": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    }
+   },
+   "host": "imx95evk",
+   "loadavg": [
+    "2.07",
+    "1.83",
+    "1.21"
+   ],
+   "machine": "aarch64",
+   "model": "NXP FRDM-IMX95-PRO",
+   "python": "3.14.4",
+   "time": "2026-10-08T17:28:29-0500"
+  },
+  "ft_loss_after": 0.14669956266880035,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+   "frozen_bit_identical": true,
+   "ft_set_loss_decreased": true,
+   "heldout_rmse_finite": true,
+   "losses_finite": true,
+   "pass": true,
+   "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.3887991905212402,
+  "loss_first10": 0.191920767724514,
+  "loss_last10": 0.19486642852425576,
+  "mem_kb": {
+   "hwm_baseline": 371012,
+   "hwm_peak": 419004,
+   "rss_after_import": 230932,
+   "rss_baseline": 356808,
+   "train_delta": 47992
+  },
+  "ms_per_step": 1192.41,
+  "opt_state_bytes_actual": 1713160,
+  "params_total": 214145,
+  "params_trainable": 214145,
+  "tag": "MEASURED",
+  "train_s": 71.545
+ },
+ {
+  "config": {
+   "bs": 32,
+   "car": 3,
+   "lr": 0.001,
+   "n_ft": 1118,
+   "n_test": 1865,
+   "opt": "adam",
+   "precision": "fp32",
+   "scope": "full",
+   "seq_len": 128,
+   "steps": 60,
+   "threads": 2,
+   "torch": "2.9.0+cpu"
+  },
+  "cpu_pct": {
+   "cpu": 33.7,
+   "cpu0": 0.7,
+   "cpu1": 0.8,
+   "cpu2": 0.3,
+   "cpu3": 0.5,
+   "cpu4": 100.0,
+   "cpu5": 99.5,
+   "interval_s": 71.633
+  },
+  "derived_bytes": {
+   "adam_extra_m_v": 1713160,
+   "total_per_brief": 3426320,
+   "weights_plus_grads": 1713160
+  },
+  "env": {
+   "affinity": [
+    4,
+    5
+   ],
+   "cpufreq": {
+    "cpu0": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu1": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu2": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu3": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu4": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    },
+    "cpu5": {
+     "cur_khz": 1800000,
+     "governor": "performance"
+    }
+   },
+   "host": "imx95evk",
+   "loadavg": [
+    "2.09",
+    "1.89",
+    "1.32"
+   ],
+   "machine": "aarch64",
+   "model": "NXP FRDM-IMX95-PRO",
+   "python": "3.14.4",
+   "time": "2026-10-08T17:30:45-0500"
+  },
+  "ft_loss_after": 0.14669956266880035,
+  "ft_loss_before": 0.2225811779499054,
+  "gate": {
+   "frozen_bit_identical": true,
+   "ft_set_loss_decreased": true,
+   "heldout_rmse_finite": true,
+   "losses_finite": true,
+   "pass": true,
+   "trainable_changed": true
+  },
+  "heldout_rmse_ah": 1.3887991905212402,
+  "loss_first10": 0.191920767724514,
+  "loss_last10": 0.19486642852425576,
+  "mem_kb": {
+   "hwm_baseline": 370612,
+   "hwm_peak": 415532,
+   "rss_after_import": 230536,
+   "rss_baseline": 356404,
+   "train_delta": 44920
+  },
+  "ms_per_step": 1193.85,
+  "opt_state_bytes_actual": 1713160,
+  "params_total": 214145,
+  "params_trainable": 214145,
+  "tag": "MEASURED",
+  "train_s": 71.631
+ }
+]
