@@ -1,0 +1,94 @@
+== reproduce base A in pass 2: 4.440892098500626e-16 3.552713678800501e-15
+
+== run/gap structure ==
+n_runs                 AUC 0.834 (0.764,0.904)  n=58/335  med F 127 N 62
+run_med                AUC 0.222 (0.138,0.305)  n=58/335  med F 88 N 258
+run_max                AUC 0.259 (0.174,0.345)  n=58/335  med F 1405 N 2073
+frac_frames_in_long_runs AUC 0.234 (0.145,0.322)  n=58/335  med F 0.5721 N 0.7559
+T_range_E              AUC 0.744 (0.663,0.824)  n=58/335  med F 28.5 N 24
+T_range_L              AUC 0.681 (0.593,0.768)  n=58/335  med F 22 N 19
+dT_at_breaks_med       AUC 0.276 (0.207,0.344)  n=58/335  med F 3 N 3
+n_Tjumps3              AUC 0.787 (0.706,0.869)  n=58/335  med F 64.5 N 42
+
+== block-SOC dispersion and SOC-dependence (mechanism check) ==
+E_blk_soc_sd           AUC 0.381 (0.300,0.461)  n=58/335  med F 0.09295 N 0.1089
+E_blk_soc_slope        AUC 0.504 (0.426,0.582)  n=58/335  med F -0.001545 N -0.001697
+E_blk_T_sd             AUC 0.666 (0.592,0.740)  n=58/335  med F 4.749 N 4.1
+E_blk_T_slope          AUC 0.817 (0.755,0.878)  n=58/335  med F 1.198 N 0.4364
+E_rest_soc_sd          AUC 0.600 (0.521,0.679)  n=58/335  med F 0.1852 N 0.1728
+E_rest_soc_min         AUC 0.328 (0.253,0.404)  n=58/335  med F 0.2 N 0.28
+E_rest_soc_p05         AUC 0.420 (0.339,0.501)  n=58/335  med F 0.395 N 0.43
+E_dsoc_absmax_z        AUC 0.649 (0.577,0.721)  n=58/335  med F 9.394 N 6.067
+E_corr_Acell_soc       AUC 0.523 (0.439,0.606)  n=58/335  med F 0.02499 N 0.01145
+E_A_var                AUC 0.580 (0.499,0.661)  n=58/335  med F 7.91 N 6.953
+E_A_rng                AUC 0.567 (0.486,0.649)  n=58/335  med F 7.162 N 6.865
+E_corr_zsl_zvar        AUC 0.556 (0.475,0.638)  n=58/335  med F 0.08356 N 0.05454
+
+L_blk_soc_sd           AUC 0.451 (0.365,0.537)  n=58/335  med F 0.09976 N 0.1119
+L_blk_soc_slope        AUC 0.473 (0.394,0.552)  n=58/335  med F -0.002424 N -0.002727
+L_blk_T_sd             AUC 0.405 (0.316,0.494)  n=58/335  med F 2.968 N 3.286
+L_blk_T_slope          AUC 0.513 (0.415,0.611)  n=58/335  med F 0.03939 N 0.04242
+L_rest_soc_sd          AUC 0.686 (0.606,0.767)  n=58/335  med F 0.1996 N 0.1712
+L_rest_soc_min         AUC 0.252 (0.173,0.332)  n=58/335  med F 0.15 N 0.29
+L_rest_soc_p05         AUC 0.333 (0.254,0.411)  n=58/335  med F 0.365 N 0.43
+L_dsoc_absmax_z        AUC 0.687 (0.611,0.762)  n=58/335  med F 13.68 N 7.331
+L_corr_Acell_soc       AUC 0.541 (0.459,0.624)  n=58/335  med F 0.09232 N 0.02273
+L_A_var                AUC 0.726 (0.652,0.800)  n=58/335  med F 25.65 N 5.958
+L_A_rng                AUC 0.723 (0.651,0.795)  n=58/335  med F 24.04 N 5.96
+L_corr_zsl_zvar        AUC 0.578 (0.480,0.677)  n=58/335  med F 0.1302 N -0.006755
+
+== Spearman within normals / within faulty: A vs block-SOC dispersion, A vs A_var ==
+E normals A~blk_soc_sd r=0.03 A~rest_soc_min r=-0.02 A~A_var r=0.54 A~dsoc_absmax_z r=0.31
+E faulty A~blk_soc_sd r=-0.10 A~rest_soc_min r=0.04 A~A_var r=0.60 A~dsoc_absmax_z r=0.10
+L normals A~blk_soc_sd r=0.06 A~rest_soc_min r=0.01 A~A_var r=0.53 A~dsoc_absmax_z r=0.36
+L faulty A~blk_soc_sd r=-0.00 A~rest_soc_min r=-0.33 A~A_var r=0.64 A~dsoc_absmax_z r=0.24
+
+== SOC-restricted rest frames (post-hoc sensitivity) ==
+E_A_2                  AUC 0.591 (0.509,0.674)  n=58/335  med F 3.27 N 2.586
+E_B_2                  AUC 0.521 (0.434,0.608)  n=58/335  med F -0.002975 N 0.002094
+E_A_var                AUC 0.580 (0.499,0.661)  n=58/335  med F 7.91 N 6.953
+   E_: A-B +0.071 (+0.007,+0.135) p=0.030
+
+E_socmid_A             AUC 0.594 (0.509,0.678)  n=58/335  med F 3.279 N 2.488
+E_socmid_B             AUC 0.549 (0.465,0.634)  n=58/335  med F 0.0009091 N -0.006722
+E_socmid_A_var         AUC 0.558 (0.476,0.641)  n=58/335  med F 7.698 N 6.349
+   E_socmid_: A-B +0.044 (-0.027,+0.116) p=0.226
+
+E_sochi_A              AUC 0.526 (0.442,0.611)  n=55/316  med F 2.858 N 2.667
+E_sochi_B              AUC 0.526 (0.438,0.613)  n=55/316  med F -0.004738 N -0.006281
+E_sochi_A_var          AUC 0.541 (0.465,0.616)  n=55/316  med F 4.762 N 4.414
+   E_sochi_: A-B +0.001 (-0.095,+0.096) p=0.990
+
+L_A_2                  AUC 0.733 (0.664,0.802)  n=58/335  med F 6.448 N 2.514
+L_B_2                  AUC 0.574 (0.475,0.673)  n=58/335  med F 0.02562 N 0.004573
+L_A_var                AUC 0.726 (0.652,0.800)  n=58/335  med F 25.65 N 5.958
+   L_: A-B +0.159 (+0.066,+0.251) p=0.001
+
+L_socmid_A             AUC 0.701 (0.628,0.773)  n=58/335  med F 4.788 N 2.628
+L_socmid_B             AUC 0.533 (0.431,0.635)  n=58/335  med F 0.02426 N 0.005758
+L_socmid_A_var         AUC 0.729 (0.652,0.805)  n=58/335  med F 28.06 N 6.387
+   L_socmid_: A-B +0.167 (+0.062,+0.273) p=0.002
+
+L_sochi_A              AUC 0.641 (0.556,0.725)  n=54/321  med F 3.896 N 2.608
+L_sochi_B              AUC 0.556 (0.453,0.658)  n=54/321  med F 0.02226 N -0.00584
+L_sochi_A_var          AUC 0.696 (0.627,0.764)  n=54/321  med F 11.39 N 5.04
+   L_sochi_: A-B +0.085 (-0.033,+0.203) p=0.158
+
+== Stratified (L_T 3°C x S_jumps02 tertile) for socmid late A ==
+L_socmid_A strat AUC 0.608 perm p=0.064
+L_A_var strat AUC 0.517 perm p=0.454
+L_socmid_A_var strat AUC 0.522 perm p=0.404
+
+== cross-vehicle duplicate check (identical n_rows & V_nuniq & T_nuniq & S_nuniq) ==
+0 
+
+== ID-adjacency: AUC of L_A/E_A vs ID among normals in sliding 50-ID windows (is there a trend toward the 335 boundary?) ==
+IDs 0-49: median E_A 2.47 L_A 2.51 L_T 22 S_jumps02 24 frac_sent 0.133
+IDs 50-99: median E_A 2.28 L_A 2.43 L_T 22 S_jumps02 26 frac_sent 0.151
+IDs 100-149: median E_A 2.80 L_A 2.62 L_T 22 S_jumps02 24 frac_sent 0.142
+IDs 150-199: median E_A 2.37 L_A 2.88 L_T 22 S_jumps02 28 frac_sent 0.133
+IDs 200-249: median E_A 2.59 L_A 2.38 L_T 22 S_jumps02 23 frac_sent 0.134
+IDs 250-299: median E_A 2.89 L_A 2.42 L_T 22 S_jumps02 24 frac_sent 0.150
+IDs 300-349: median E_A 2.72 L_A 2.58 L_T 22 S_jumps02 28 frac_sent 0.137
+faulty 335-392: median E_A 3.27 L_A 6.45 L_T 30 S_jumps02 56 frac_sent 0.000
+faulty split by ID halves: 335-363 L_A med 5.89, 364-392 L_A med 7.01; has_sent by half: {False: 0.3793103448275862, True: 0.20689655172413793}

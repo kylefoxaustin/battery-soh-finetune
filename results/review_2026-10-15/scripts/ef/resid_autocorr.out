@@ -1,0 +1,15 @@
+primary: within-unit residual SD 4.08 Ah (n=5550)
+  consecutive-label pairs <= 300 km apart: n=1198, SD(diff)/sqrt2 = 3.41 Ah -> share of within-unit variance that is NOT pair-to-pair noise: 0.30
+  consecutive-label pairs <= 1000 km apart: n=2968, SD(diff)/sqrt2 = 3.39 Ah -> share of within-unit variance that is NOT pair-to-pair noise: 0.31
+  consecutive-label pairs <= 3000 km apart: n=4258, SD(diff)/sqrt2 = 3.64 Ah -> share of within-unit variance that is NOT pair-to-pair noise: 0.20
+  median lag-1 autocorrelation of within-unit residual: +0.056 (units 94)
+  excess variance of 5-label running mean over white-noise expectation, median over units: +0.20 Ah^2 (within var 16.6 Ah^2)
+strict: within-unit residual SD 3.18 Ah (n=2049)
+  consecutive-label pairs <= 300 km apart: n=378, SD(diff)/sqrt2 = 2.53 Ah -> share of within-unit variance that is NOT pair-to-pair noise: 0.37
+  consecutive-label pairs <= 1000 km apart: n=1006, SD(diff)/sqrt2 = 2.45 Ah -> share of within-unit variance that is NOT pair-to-pair noise: 0.41
+  consecutive-label pairs <= 3000 km apart: n=1492, SD(diff)/sqrt2 = 2.70 Ah -> share of within-unit variance that is NOT pair-to-pair noise: 0.28
+  median lag-1 autocorrelation of within-unit residual: +0.090 (units 45)
+  excess variance of 5-label running mean over white-noise expectation, median over units: +0.09 Ah^2 (within var 10.1 Ah^2)
+
+slow-charge (<25 A) label minus the unit's fast-charge (>=40 A) trend: median +6.76 Ah, IQR +4.97..+9.06, units 137
+RESID_DONE

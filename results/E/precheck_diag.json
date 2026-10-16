@@ -1,0 +1,54 @@
+{
+ "primary": {
+  "in_sample_r2_percell": 0.011190279984463758,
+  "in_sample_r2_all8": 0.01184689145385287,
+  "corr_with_target": {
+   "top_spread": 0.084,
+   "rest_spread": 0.058,
+   "weak_dev": -0.061,
+   "cross_sd": 0.043,
+   "weak_slope": -0.014,
+   "probe_spread": 0.008,
+   "top_spread_mm": 0.084,
+   "rest_spread_mm": 0.059
+  },
+  "corr_with_raw_residual": {
+   "top_spread": -0.007,
+   "rest_spread": -0.009,
+   "weak_dev": 0.031,
+   "cross_sd": 0.045,
+   "weak_slope": 0.0,
+   "probe_spread": 0.059,
+   "top_spread_mm": -0.007,
+   "rest_spread_mm": -0.008
+  },
+  "between_unit_in_sample_r2_percell": 0.08314385324830897,
+  "n_units": 94
+ },
+ "strict": {
+  "in_sample_r2_percell": 0.003523001671055015,
+  "in_sample_r2_all8": 0.004193157450843588,
+  "corr_with_target": {
+   "top_spread": 0.052,
+   "rest_spread": 0.045,
+   "weak_dev": -0.042,
+   "cross_sd": 0.044,
+   "weak_slope": -0.023,
+   "probe_spread": -0.005,
+   "top_spread_mm": 0.052,
+   "rest_spread_mm": 0.045
+  },
+  "corr_with_raw_residual": {
+   "top_spread": 0.058,
+   "rest_spread": 0.073,
+   "weak_dev": -0.038,
+   "cross_sd": 0.133,
+   "weak_slope": -0.073,
+   "probe_spread": 0.084,
+   "top_spread_mm": 0.059,
+   "rest_spread_mm": 0.074
+  },
+  "between_unit_in_sample_r2_percell": 0.2240299778876127,
+  "n_units": 45
+ }
+}

@@ -12,3 +12,5 @@ RAW_DATA*
 *.rar
 results/large/prelim/
 results/large/prelim85/
+data/weihai/
+results/X/X2P_run.err

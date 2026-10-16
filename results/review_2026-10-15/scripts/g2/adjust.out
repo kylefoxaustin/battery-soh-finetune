@@ -1,0 +1,57 @@
+faulty with any sentinel frames: 17/58 ; normals: 335/335
+
+== Within-normals Spearman of A with cohort-distinguishing covariates (does A respond to the confounders?) ==
+E_A : E_T +0.01  L_T +0.02  T_last10 +0.08  T_max -0.04  S_jumps02 -0.11  S_min -0.00  V_min -0.04  E_n_rest -0.10  L_n_rest -0.10  frac_sent -0.02  frac_Ipos +0.03  E_restfrac -0.05  L_restfrac -0.07  n_valid -0.04
+L_A : E_T -0.01  L_T +0.05  T_last10 +0.11  T_max +0.05  S_jumps02 -0.07  S_min +0.02  V_min -0.07  E_n_rest -0.13  L_n_rest -0.15*  frac_sent -0.01  frac_Ipos -0.10  E_restfrac -0.12  L_restfrac -0.12  n_valid -0.07
+E_B : E_T +0.00  L_T -0.03  T_last10 +0.00  T_max -0.04  S_jumps02 -0.03  S_min -0.01  V_min +0.01  E_n_rest -0.07  L_n_rest -0.07  frac_sent +0.07  frac_Ipos +0.05  E_restfrac -0.05  L_restfrac -0.04  n_valid -0.03
+L_B : E_T -0.03  L_T +0.04  T_last10 -0.02  T_max +0.13  S_jumps02 -0.06  S_min +0.06  V_min -0.00  E_n_rest -0.05  L_n_rest -0.08  frac_sent +0.03  frac_Ipos -0.02  E_restfrac -0.07  L_restfrac -0.06  n_valid -0.02
+L_A_up : E_T +0.04  L_T -0.03  T_last10 +0.00  T_max -0.08  S_jumps02 -0.01  S_min -0.00  V_min -0.03  E_n_rest -0.12  L_n_rest -0.10  frac_sent -0.05  frac_Ipos -0.04  E_restfrac -0.09  L_restfrac -0.08  n_valid -0.04
+L_A_abs : E_T -0.04  L_T +0.02  T_last10 +0.05  T_max -0.05  S_jumps02 -0.08  S_min -0.01  V_min -0.09  E_n_rest -0.10  L_n_rest -0.11  frac_sent -0.04  frac_Ipos -0.06  E_restfrac -0.07  L_restfrac -0.07  n_valid -0.07
+
+== A: faulty subgroups vs normals (processing-path split) ==
+E_A faulty WITH sentinels      n=17 AUC 0.587 (0.440,0.735)
+E_A faulty WITHOUT sentinels   n=41 AUC 0.593 (0.496,0.690)
+   E_A with vs without (within faulty) MWU p=0.811
+L_A faulty WITH sentinels      n=17 AUC 0.612 (0.489,0.734)
+L_A faulty WITHOUT sentinels   n=41 AUC 0.783 (0.709,0.857)
+   L_A with vs without (within faulty) MWU p=0.010
+E_B faulty WITH sentinels      n=17 AUC 0.524 (0.371,0.677)
+E_B faulty WITHOUT sentinels   n=41 AUC 0.519 (0.416,0.623)
+   E_B with vs without (within faulty) MWU p=1.000
+L_B faulty WITH sentinels      n=17 AUC 0.458 (0.295,0.621)
+L_B faulty WITHOUT sentinels   n=41 AUC 0.622 (0.503,0.742)
+   L_B with vs without (within faulty) MWU p=0.142
+
+== Adjusted logistic regression (standardised), 2000 vehicle bootstraps; coefficient of feature ==
+E_A       | prereg-5 (E_T,E_S,n_valid,E_restfrac,|I|)                              coef +0.31 (+0.04,+0.52)
+E_A       | season/gap set (E_T, L_T, T_max, S_jumps02, S_min, has_sent, E_n_rest) coef +0.22 (-1.11,+0.57)
+E_A       | gap-only (S_jumps02, S_min, has_sent)                                  coef +0.22 (-0.97,+0.52)
+E_A       | temp-only (E_T, L_T, T_max)                                            coef +0.25 (-0.11,+0.57)
+E_B       | prereg-5 (E_T,E_S,n_valid,E_restfrac,|I|)                              coef +0.11 (-0.22,+0.36)
+E_B       | season/gap set (E_T, L_T, T_max, S_jumps02, S_min, has_sent, E_n_rest) coef -0.13 (-1.27,+0.27)
+E_B       | gap-only (S_jumps02, S_min, has_sent)                                  coef -0.14 (-1.16,+0.28)
+E_B       | temp-only (E_T, L_T, T_max)                                            coef -0.04 (-0.81,+0.33)
+L_A       | prereg-5 (E_T,E_S,n_valid,E_restfrac,|I|)                              coef +0.43 (+0.20,+1.07)
+L_A       | season/gap set (E_T, L_T, T_max, S_jumps02, S_min, has_sent, E_n_rest) coef +0.09 (-1.51,+0.62)
+L_A       | gap-only (S_jumps02, S_min, has_sent)                                  coef +0.08 (-2.17,+0.63)
+L_A       | temp-only (E_T, L_T, T_max)                                            coef +0.24 (+0.04,+0.82)
+L_B       | prereg-5 (E_T,E_S,n_valid,E_restfrac,|I|)                              coef +0.28 (-0.14,+0.79)
+L_B       | season/gap set (E_T, L_T, T_max, S_jumps02, S_min, has_sent, E_n_rest) coef -0.02 (-2.14,+1.02)
+L_B       | gap-only (S_jumps02, S_min, has_sent)                                  coef -0.02 (-2.49,+1.52)
+L_B       | temp-only (E_T, L_T, T_max)                                            coef +0.17 (-0.11,+0.57)
+Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-kyle-Documents-GitHub-batt-finetune/8fc251be-e160-42c8-b7ad-d2301080f5cc/scratchpad/review/g2/adjust.py", line 36, in <module>
+    c, lo, hi = logit(df, f, covs, nboot=600); print(f"{f:9s} | {nm:70s} coef {c:+.2f} ({lo:+.2f},{hi:+.2f})")
+  File "/tmp/claude-1000/-home-kyle-Documents-GitHub-batt-finetune/8fc251be-e160-42c8-b7ad-d2301080f5cc/scratchpad/review/g2/adjust.py", line 28, in logit
+    bs = [fit(pd.concat([pos.sample(len(pos), replace=True, random_state=rng.integers(1 << 31)), neg.sample(len(neg), replace=True, random_state=rng.integers(1 << 31))])) for _ in range(nboot)]
+  File "/tmp/claude-1000/-home-kyle-Documents-GitHub-batt-finetune/8fc251be-e160-42c8-b7ad-d2301080f5cc/scratchpad/review/g2/adjust.py", line 28, in <listcomp>
+    bs = [fit(pd.concat([pos.sample(len(pos), replace=True, random_state=rng.integers(1 << 31)), neg.sample(len(neg), replace=True, random_state=rng.integers(1 << 31))])) for _ in range(nboot)]
+  File "/tmp/claude-1000/-home-kyle-Documents-GitHub-batt-finetune/8fc251be-e160-42c8-b7ad-d2301080f5cc/scratchpad/review/g2/adjust.py", line 25, in fit
+    X = dd[cols].to_numpy(float); X = (X - X.mean(0)) / (X.std(0) + 1e-12)
+  File "<site-packages>/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "<site-packages>/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "<site-packages>/pandas/core/indexes/base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['L_A_perm'] not in index"

@@ -15,6 +15,29 @@ Code comments mark every input as **CHOSEN** or **IMPOSED**. Section references 
 the two study specifications these experiments were written against (not included); the write-ups are
 self-contained.
 
+## Follow-on experiments (2026-10-13 → 10-16): per-cell and per-unit value beyond fine-tuning
+
+After the two studies, a series of pre-registered experiments asked whether per-cell data, or per-unit history, buys
+anything a min/max BMS does not. Each pre-registration was committed before its analysis code. An independent
+six-reviewer audit sits in the middle of the series.
+
+- **Start here:** [`results/RESEARCH_DOSSIER.md`](results/RESEARCH_DOSSIER.md), the single narrative; its §9 is the
+  synthesis table.
+- **Audit:** [`results/review_2026-10-15/REVIEW.md`](results/review_2026-10-15/REVIEW.md).
+
+| Exp | Question | Answer (short) | Write-up |
+|---|---|---|---|
+| E | Can per-cell data tighten a worst-case capacity bound? | Inconclusive: the pre-check failed; the oracle ceiling is about 1 % | [`results/E/`](results/E/) |
+| F | Does per-cell data catch failing cells beyond min/max? | Detection overlap is near an identity; the value is diagnosis | [`results/F/`](results/F/) |
+| G / G.2 | Is there public ground truth, and do per-cell features flag teardown-failed packs? | Weak signal (AUC about 0.6), downgraded to a hypothesis by the audit (cohort confound) | [`results/G/`](results/G/), [`results/G2/`](results/G2/) |
+| H / H2 | Does per-cell charge limiting shorten charging? | No, under uniform assumed maps (Changan NMC EVs, Weihai LFP grid battery). Board cost 1.5–52 µs (MEASURED) | [`results/H/`](results/H/), [`results/H2/`](results/H2/) |
+| X2 | …with per-cell R **learned from history**? | Cold: no, because cold sessions never reach top of charge. Warm sessions with history: +5.5 % (post-hoc, NC data). CC BY McMaster arm at its own 6 C: 0.00 % | [`results/X/X2/`](results/X/X2/), [`results/X/X2M2/`](results/X/X2M2/) |
+| X2-P | How much active probing would make that history available? | Only ≥ 0.3 C steps work, and they need about 80 of them for a reliable per-cell R; 7-day coverage stays below 90 % even at 10 injected steps per charge | [`results/X/X2P/`](results/X/X2P/) |
+| X3 / X3-b | Does per-cell drift locate known faulty cells early? | Weeks ahead of min/max on 3 located faults, but the rule raises about 22 false episodes per 100 vehicle-days on a healthy fleet | [`results/X/X3/`](results/X/X3/), [`results/X/X3b/`](results/X/X3b/) |
+
+**Additional datasets** are listed with their licences in the dossier §1: Beihang, Weihai, BATSS and McMaster are
+CC BY 4.0; BatICM and Yuasa are MIT. None of the data is included.
+
 ## Data — not included; how to get it
 
 ### EVBattery (Study 1, and Study 2's second dataset) — CC BY 4.0
@@ -118,7 +141,7 @@ results/   results.md · dataset_profile.md · results_large.md · raw/ · large
 
 ## Licence
 
-Code: MIT (see `LICENSE`). Data: not included; each dataset remains under its own licence (EVBattery CC BY 4.0;
-Changan CC BY-NC-SA 4.0 with the provider's terms of use). Results derived from the Changan data are
+Code: MIT (see `LICENSE`). Data: not included; each dataset remains under its own licence (EVBattery, Beihang,
+Weihai, BATSS, McMaster CC BY 4.0; BatICM, Yuasa MIT; Changan CC BY-NC-SA 4.0 with the provider's terms of use). Results derived from the Changan data are
 published here for non-commercial research with attribution to Liu et al. (2025) and the State Key Laboratory of
 Intelligent Vehicle Safety Technology.

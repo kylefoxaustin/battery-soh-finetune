@@ -1,0 +1,222 @@
+
+===== Changan primary: 94 units
+ band (0, 5000.0) n=89  frozen med 4.098
+   [repo rolling json] frozen 4.098 bias 3.906 persist 4.844 persist_recent 4.936
+   bias30       med 3.906 (-3.0%)  beats frozen 55/89 sign p=0.0334 wilc p=0.0183 | beats persist5 69/89 wilc p=5.21e-10
+   bias5        med 4.375 (+7.2%)  beats frozen 36/89 sign p=0.0893 wilc p=0.0273 | beats persist5 67/89 wilc p=2.56e-07
+   ewma10       med 3.888 (-3.1%)  beats frozen 55/89 sign p=0.0334 wilc p=0.0235 | beats persist5 68/89 wilc p=2.5e-10
+   ewma5        med 3.874 (-1.8%)  beats frozen 48/89 sign p=0.525 wilc p=0.579 | beats persist5 70/89 wilc p=1.02e-09
+   shrink30_k2  med 3.903 (-3.4%)  beats frozen 58/89 sign p=0.00554 wilc p=0.000874 | beats persist5 70/89 wilc p=1.06e-10
+   shrink30_k5  med 3.907 (-4.6%)  beats frozen 61/89 sign p=0.00061 wilc p=3.96e-05 | beats persist5 70/89 wilc p=6.5e-11
+   kalman       med 3.846 (-3.0%)  beats frozen 57/89 sign p=0.0105 wilc p=0.000424 | beats persist5 69/89 wilc p=1.98e-11
+   persist30    med 4.844 (+12.4%)  beats frozen 28/89 sign p=0.00061 wilc p=0.000451 | beats persist5 58/89 wilc p=0.000301
+   persist5     med 4.936 (+30.6%)  beats frozen 25/89 sign p=4.32e-05 wilc p=4.55e-06 | beats persist5 0/89 wilc p=1
+   trend30      med 5.403 (+36.6%)  beats frozen 16/89 sign p=7.24e-10 wilc p=1.7e-08 | beats persist5 27/89 wilc p=0.000968
+   oracle_bias  med 3.685 (-6.2%)  beats frozen 71/89 sign p=1.3e-08 wilc p=1.61e-09 | beats persist5 71/89 wilc p=6e-12
+ band (5000.0, 10000.0) n=81  frozen med 3.728
+   [repo rolling json] frozen 3.728 bias 3.703 persist 4.550 persist_recent 5.271
+   bias30       med 3.703 (-2.7%)  beats frozen 48/81 sign p=0.119 wilc p=0.0355 | beats persist5 70/81 wilc p=1.04e-11
+   bias5        med 4.531 (+5.3%)  beats frozen 37/81 sign p=0.505 wilc p=0.144 | beats persist5 61/81 wilc p=4.08e-08
+   ewma10       med 3.662 (-0.8%)  beats frozen 43/81 sign p=0.657 wilc p=0.066 | beats persist5 70/81 wilc p=2.18e-12
+   ewma5        med 3.675 (+0.8%)  beats frozen 39/81 sign p=0.824 wilc p=0.377 | beats persist5 69/81 wilc p=6.78e-12
+   shrink30_k2  med 3.635 (-4.3%)  beats frozen 51/81 sign p=0.0257 wilc p=0.00252 | beats persist5 71/81 wilc p=2.5e-12
+   shrink30_k5  med 3.643 (-4.2%)  beats frozen 53/81 sign p=0.00728 wilc p=0.000158 | beats persist5 71/81 wilc p=6.34e-12
+   kalman       med 3.714 (-2.6%)  beats frozen 48/81 sign p=0.119 wilc p=0.0101 | beats persist5 71/81 wilc p=2.58e-12
+   persist30    med 4.550 (+16.5%)  beats frozen 22/81 sign p=4.77e-05 wilc p=0.00106 | beats persist5 47/81 wilc p=0.000221
+   persist5     med 5.271 (+29.4%)  beats frozen 20/81 sign p=5.66e-06 wilc p=5.94e-07 | beats persist5 0/81 wilc p=1
+   trend30      med 6.217 (+59.4%)  beats frozen 12/81 sign p=7.03e-11 wilc p=6.24e-10 | beats persist5 18/81 wilc p=1.09e-06
+   oracle_bias  med 3.502 (-9.1%)  beats frozen 65/81 sign p=3.64e-08 wilc p=8.62e-09 | beats persist5 71/81 wilc p=2.17e-13
+ band (10000.0, 20000.0) n=85  frozen med 4.239
+   [repo rolling json] frozen 4.239 bias 4.223 persist 5.390 persist_recent 5.940
+   bias30       med 4.223 (+0.1%)  beats frozen 42/85 sign p=1 wilc p=0.317 | beats persist5 73/85 wilc p=2.33e-12
+   bias5        med 4.484 (+5.6%)  beats frozen 31/85 sign p=0.0165 wilc p=0.00931 | beats persist5 72/85 wilc p=1.65e-12
+   ewma10       med 4.145 (+0.3%)  beats frozen 41/85 sign p=0.828 wilc p=0.419 | beats persist5 76/85 wilc p=4.05e-13
+   ewma5        med 4.212 (+2.4%)  beats frozen 36/85 sign p=0.193 wilc p=0.705 | beats persist5 76/85 wilc p=4.32e-13
+   shrink30_k2  med 4.206 (-0.2%)  beats frozen 44/85 sign p=0.828 wilc p=0.0414 | beats persist5 73/85 wilc p=1.17e-12
+   shrink30_k5  med 4.198 (-1.5%)  beats frozen 48/85 sign p=0.278 wilc p=0.00354 | beats persist5 74/85 wilc p=1.65e-12
+   kalman       med 4.132 (-0.4%)  beats frozen 46/85 sign p=0.515 wilc p=0.0552 | beats persist5 75/85 wilc p=8.48e-13
+   persist30    med 5.390 (+18.8%)  beats frozen 20/85 sign p=1.03e-06 wilc p=5.19e-07 | beats persist5 61/85 wilc p=1.34e-07
+   persist5     med 5.940 (+41.9%)  beats frozen 17/85 sign p=2.18e-08 wilc p=9.34e-09 | beats persist5 0/85 wilc p=1
+   trend30      med 8.986 (+104.1%)  beats frozen 6/85 sign p=2.44e-17 wilc p=1.85e-13 | beats persist5 8/85 wilc p=2.65e-13
+   oracle_bias  med 3.941 (-6.1%)  beats frozen 73/85 sign p=8.09e-12 wilc p=1.04e-10 | beats persist5 76/85 wilc p=8.95e-14
+ band (20000.0, 40000.0) n=86  frozen med 4.083
+   [repo rolling json] frozen 4.083 bias 4.182 persist 5.626 persist_recent 6.139
+   bias30       med 4.182 (+0.9%)  beats frozen 37/86 sign p=0.235 wilc p=0.46 | beats persist5 77/86 wilc p=2.29e-13
+   bias5        med 4.688 (+14.0%)  beats frozen 16/86 sign p=3.21e-09 wilc p=1.51e-07 | beats persist5 70/86 wilc p=1.93e-10
+   ewma10       med 4.111 (+2.2%)  beats frozen 36/86 sign p=0.161 wilc p=0.137 | beats persist5 77/86 wilc p=1.12e-13
+   ewma5        med 4.186 (+5.2%)  beats frozen 28/86 sign p=0.00161 wilc p=0.00368 | beats persist5 76/86 wilc p=6.74e-13
+   shrink30_k2  med 4.124 (-0.1%)  beats frozen 45/86 sign p=0.747 wilc p=0.577 | beats persist5 77/86 wilc p=8.64e-14
+   shrink30_k5  med 4.017 (-0.8%)  beats frozen 49/86 sign p=0.235 wilc p=0.127 | beats persist5 78/86 wilc p=1.02e-13
+   kalman       med 4.146 (+0.4%)  beats frozen 40/86 sign p=0.59 wilc p=0.858 | beats persist5 77/86 wilc p=1.09e-13
+   persist30    med 5.626 (+22.4%)  beats frozen 14/86 sign p=1.45e-10 wilc p=5.4e-10 | beats persist5 66/86 wilc p=8.23e-09
+   persist5     med 6.139 (+40.8%)  beats frozen 12/86 sign p=4.69e-12 wilc p=1.1e-11 | beats persist5 0/86 wilc p=1
+   trend30      med 11.761 (+167.4%)  beats frozen 1/86 sign p=2.25e-24 wilc p=2.13e-15 | beats persist5 4/86 wilc p=3.22e-15
+   oracle_bias  med 3.844 (-4.6%)  beats frozen 66/86 sign p=6.67e-07 wilc p=7.27e-07 | beats persist5 82/86 wilc p=9.61e-15
+ band (40000.0, 80000.0) n=88  frozen med 4.542
+   [repo rolling json] frozen 4.542 bias 4.564 persist 5.998 persist_recent 6.949
+   bias30       med 4.564 (+1.9%)  beats frozen 39/88 sign p=0.337 wilc p=0.901 | beats persist5 80/88 wilc p=6.49e-14
+   bias5        med 5.145 (+17.4%)  beats frozen 23/88 sign p=8.5e-06 wilc p=6.48e-07 | beats persist5 76/88 wilc p=2.23e-12
+   ewma10       med 4.555 (+1.6%)  beats frozen 41/88 sign p=0.594 wilc p=0.806 | beats persist5 81/88 wilc p=2.41e-14
+   ewma5        med 4.645 (+1.4%)  beats frozen 40/88 sign p=0.456 wilc p=0.155 | beats persist5 80/88 wilc p=4.87e-14
+   shrink30_k2  med 4.553 (-0.4%)  beats frozen 46/88 sign p=0.749 wilc p=0.283 | beats persist5 82/88 wilc p=3.9e-14
+   shrink30_k5  med 4.505 (-1.6%)  beats frozen 48/88 sign p=0.456 wilc p=0.036 | beats persist5 82/88 wilc p=4.15e-14
+   kalman       med 4.546 (-1.0%)  beats frozen 47/88 sign p=0.594 wilc p=0.318 | beats persist5 79/88 wilc p=4.29e-14
+   persist30    med 5.998 (+28.9%)  beats frozen 17/88 sign p=5.15e-09 wilc p=1.29e-10 | beats persist5 63/88 wilc p=1.17e-06
+   persist5     med 6.949 (+46.3%)  beats frozen 8/88 sign p=4.6e-16 wilc p=8.02e-13 | beats persist5 0/88 wilc p=1
+   trend30      med 20.105 (+349.3%)  beats frozen 1/88 sign p=5.75e-25 wilc p=3.86e-16 | beats persist5 2/88 wilc p=5.63e-16
+   oracle_bias  med 4.209 (-3.8%)  beats frozen 70/88 sign p=2.08e-08 wilc p=1.48e-07 | beats persist5 84/88 wilc p=1.61e-15
+
+===== Changan strict: 45 units
+ band (0, 5000.0) n=37  frozen med 3.275
+   [repo rolling json] frozen 3.275 bias 2.919 persist 3.656 persist_recent 3.916
+   bias30       med 2.919 (-2.9%)  beats frozen 20/37 sign p=0.743 wilc p=0.107 | beats persist5 29/37 wilc p=3.36e-06
+   bias5        med 3.107 (+2.1%)  beats frozen 16/37 sign p=0.511 wilc p=0.602 | beats persist5 30/37 wilc p=1.3e-05
+   ewma10       med 3.109 (-1.1%)  beats frozen 21/37 sign p=0.511 wilc p=0.137 | beats persist5 29/37 wilc p=5.14e-07
+   ewma5        med 3.013 (+0.4%)  beats frozen 18/37 sign p=1 wilc p=0.55 | beats persist5 29/37 wilc p=1.79e-06
+   shrink30_k2  med 2.858 (-5.3%)  beats frozen 23/37 sign p=0.188 wilc p=0.0206 | beats persist5 28/37 wilc p=6.74e-06
+   shrink30_k5  med 2.897 (-4.7%)  beats frozen 24/37 sign p=0.0989 wilc p=0.00653 | beats persist5 28/37 wilc p=2.22e-05
+   kalman       med 3.008 (-4.4%)  beats frozen 24/37 sign p=0.0989 wilc p=0.0215 | beats persist5 29/37 wilc p=1.16e-06
+   persist30    med 3.656 (+18.5%)  beats frozen 12/37 sign p=0.047 wilc p=0.0206 | beats persist5 20/37 wilc p=0.11
+   persist5     med 3.916 (+28.0%)  beats frozen 13/37 sign p=0.0989 wilc p=0.0024 | beats persist5 0/37 wilc p=1
+   trend30      med 4.217 (+34.4%)  beats frozen 7/37 sign p=0.000191 wilc p=4.74e-05 | beats persist5 10/37 wilc p=0.00653
+   oracle_bias  med 2.575 (-3.6%)  beats frozen 29/37 sign p=0.000753 wilc p=2.03e-05 | beats persist5 29/37 wilc p=2.74e-06
+ band (5000.0, 10000.0) n=35  frozen med 3.048
+   [repo rolling json] frozen 3.048 bias 2.975 persist 3.486 persist_recent 3.928
+   bias30       med 2.975 (+2.4%)  beats frozen 14/35 sign p=0.311 wilc p=0.554 | beats persist5 27/35 wilc p=7.05e-06
+   bias5        med 3.113 (+6.3%)  beats frozen 16/35 sign p=0.736 wilc p=0.287 | beats persist5 28/35 wilc p=7.74e-05
+   ewma10       med 2.870 (+3.2%)  beats frozen 14/35 sign p=0.311 wilc p=0.599 | beats persist5 29/35 wilc p=2.9e-06
+   ewma5        med 3.041 (+4.9%)  beats frozen 14/35 sign p=0.311 wilc p=0.377 | beats persist5 29/35 wilc p=2.9e-06
+   shrink30_k2  med 2.916 (+0.8%)  beats frozen 17/35 sign p=1 wilc p=0.865 | beats persist5 29/35 wilc p=6.6e-07
+   shrink30_k5  med 2.889 (-0.0%)  beats frozen 18/35 sign p=1 wilc p=0.342 | beats persist5 30/35 wilc p=1.61e-07
+   kalman       med 2.846 (+2.1%)  beats frozen 15/35 sign p=0.5 wilc p=0.942 | beats persist5 30/35 wilc p=1.25e-06
+   persist30    med 3.486 (+19.1%)  beats frozen 6/35 sign p=0.000117 wilc p=8.43e-05 | beats persist5 18/35 wilc p=0.273
+   persist5     med 3.928 (+37.5%)  beats frozen 8/35 sign p=0.00188 wilc p=1.19e-05 | beats persist5 0/35 wilc p=1
+   trend30      med 5.739 (+99.3%)  beats frozen 3/35 sign p=4.18e-07 wilc p=2.6e-08 | beats persist5 5/35 wilc p=9.18e-05
+   oracle_bias  med 2.782 (-2.2%)  beats frozen 25/35 sign p=0.0167 wilc p=0.00452 | beats persist5 32/35 wilc p=1.2e-08
+ band (10000.0, 20000.0) n=39  frozen med 3.173
+   [repo rolling json] frozen 3.173 bias 2.995 persist 4.235 persist_recent 4.538
+   bias30       med 2.995 (+2.8%)  beats frozen 17/39 sign p=0.522 wilc p=0.907 | beats persist5 37/39 wilc p=2e-10
+   bias5        med 3.549 (+3.9%)  beats frozen 16/39 sign p=0.337 wilc p=0.236 | beats persist5 33/39 wilc p=2.32e-07
+   ewma10       med 2.910 (+0.4%)  beats frozen 17/39 sign p=0.522 wilc p=0.94 | beats persist5 37/39 wilc p=6.91e-11
+   ewma5        med 2.844 (-0.4%)  beats frozen 20/39 sign p=1 wilc p=0.994 | beats persist5 36/39 wilc p=6.91e-11
+   shrink30_k2  med 2.935 (+1.3%)  beats frozen 18/39 sign p=0.749 wilc p=0.494 | beats persist5 36/39 wilc p=1.12e-09
+   shrink30_k5  med 2.967 (-0.1%)  beats frozen 20/39 sign p=1 wilc p=0.131 | beats persist5 36/39 wilc p=3.16e-08
+   kalman       med 2.912 (+0.8%)  beats frozen 19/39 sign p=1 wilc p=0.566 | beats persist5 37/39 wilc p=1.56e-10
+   persist30    med 4.235 (+16.9%)  beats frozen 7/39 sign p=7.03e-05 wilc p=0.000322 | beats persist5 29/39 wilc p=0.000112
+   persist5     med 4.538 (+33.7%)  beats frozen 4/39 sign p=3.35e-07 wilc p=6.29e-06 | beats persist5 0/39 wilc p=1
+   trend30      med 7.571 (+144.5%)  beats frozen 1/39 sign p=1.46e-10 wilc p=3.64e-11 | beats persist5 2/39 wilc p=4.98e-10
+   oracle_bias  med 2.772 (-4.8%)  beats frozen 30/39 sign p=0.00107 wilc p=0.000413 | beats persist5 36/39 wilc p=1.01e-08
+ band (20000.0, 40000.0) n=37  frozen med 3.234
+   [repo rolling json] frozen 3.234 bias 3.240 persist 4.511 persist_recent 5.028
+   bias30       med 3.240 (+1.1%)  beats frozen 16/37 sign p=0.511 wilc p=0.633 | beats persist5 32/37 wilc p=6.27e-08
+   bias5        med 4.021 (+11.7%)  beats frozen 13/37 sign p=0.0989 wilc p=0.0336 | beats persist5 30/37 wilc p=1.44e-06
+   ewma10       med 3.265 (+3.5%)  beats frozen 16/37 sign p=0.511 wilc p=0.676 | beats persist5 32/37 wilc p=2.53e-08
+   ewma5        med 3.302 (+4.0%)  beats frozen 16/37 sign p=0.511 wilc p=0.835 | beats persist5 32/37 wilc p=4.02e-08
+   shrink30_k2  med 3.079 (-0.1%)  beats frozen 19/37 sign p=1 wilc p=0.225 | beats persist5 32/37 wilc p=1.65e-07
+   shrink30_k5  med 3.130 (-2.6%)  beats frozen 21/37 sign p=0.511 wilc p=0.0349 | beats persist5 32/37 wilc p=4.03e-07
+   kalman       med 3.146 (-1.3%)  beats frozen 20/37 sign p=0.743 wilc p=0.236 | beats persist5 32/37 wilc p=4.02e-08
+   persist30    med 4.511 (+31.0%)  beats frozen 9/37 sign p=0.00256 wilc p=0.000218 | beats persist5 30/37 wilc p=0.000406
+   persist5     med 5.028 (+44.6%)  beats frozen 6/37 sign p=4.13e-05 wilc p=4.55e-06 | beats persist5 0/37 wilc p=1
+   trend30      med 11.325 (+232.6%)  beats frozen 0/37 sign p=1.46e-11 wilc p=1.46e-11 | beats persist5 2/37 wilc p=1.02e-09
+   oracle_bias  med 2.752 (-9.9%)  beats frozen 30/37 sign p=0.000191 wilc p=8.27e-05 | beats persist5 32/37 wilc p=3.15e-07
+ band (40000.0, 80000.0) n=38  frozen med 3.424
+   [repo rolling json] frozen 3.424 bias 3.538 persist 5.160 persist_recent 5.971
+   bias30       med 3.538 (+1.2%)  beats frozen 18/38 sign p=0.871 wilc p=1 | beats persist5 32/38 wilc p=3.14e-08
+   bias5        med 4.230 (+12.5%)  beats frozen 10/38 sign p=0.0051 wilc p=0.00347 | beats persist5 32/38 wilc p=1.39e-07
+   ewma10       med 3.577 (+1.8%)  beats frozen 18/38 sign p=0.871 wilc p=0.863 | beats persist5 32/38 wilc p=1.73e-08
+   ewma5        med 3.628 (+3.6%)  beats frozen 16/38 sign p=0.418 wilc p=0.321 | beats persist5 32/38 wilc p=1.27e-08
+   shrink30_k2  med 3.449 (+0.2%)  beats frozen 18/38 sign p=0.871 wilc p=0.616 | beats persist5 32/38 wilc p=1.48e-08
+   shrink30_k5  med 3.309 (-2.4%)  beats frozen 21/38 sign p=0.627 wilc p=0.287 | beats persist5 34/38 wilc p=5.54e-09
+   kalman       med 3.572 (+0.1%)  beats frozen 19/38 sign p=1 wilc p=0.596 | beats persist5 31/38 wilc p=3.14e-08
+   persist30    med 5.160 (+29.6%)  beats frozen 8/38 sign p=0.000472 wilc p=4.62e-05 | beats persist5 29/38 wilc p=6.6e-06
+   persist5     med 5.971 (+52.7%)  beats frozen 4/38 sign p=6.04e-07 wilc p=7.24e-08 | beats persist5 0/38 wilc p=1
+   trend30      med 17.802 (+412.4%)  beats frozen 0/38 sign p=7.28e-12 wilc p=7.28e-12 | beats persist5 0/38 wilc p=7.28e-12
+   oracle_bias  med 3.130 (-5.9%)  beats frozen 31/38 sign p=0.000116 wilc p=0.00028 | beats persist5 36/38 wilc p=4e-10
+evb car 3 origins 11
+evb car 5 origins 10
+evb car 11 origins 12
+evb car 25 origins 11
+evb car 34 origins 15
+evb car 38 origins 8
+evb car 65 origins 10
+evb car 75 origins 7
+evb car 82 origins 6
+evb car 83 origins 4
+evb car 91 origins 17
+evb car 97 origins 19
+evb car 105 origins 9
+evb car 108 origins 17
+evb car 120 origins 10
+evb car 121 origins 2
+evb car 131 origins 14
+evb car 156 origins 5
+evb car 168 origins 3
+evb car 170 origins 9
+
+===== EVBattery ds1: 20 units
+ band (0, 5000.0) n=19  frozen med 0.837
+   [repo rolling json] frozen 0.837 bias 0.767 persist 0.953 persist_recent 0.733
+   bias30       med 0.767 (-12.3%)  beats frozen 13/19 sign p=0.167 wilc p=0.00458 | beats persist5 7/19 wilc p=0.465
+   bias5        med 0.745 (-14.1%)  beats frozen 14/19 sign p=0.0636 wilc p=0.00823 | beats persist5 8/19 wilc p=0.395
+   ewma10       med 0.743 (-17.1%)  beats frozen 17/19 sign p=0.000729 wilc p=0.000523 | beats persist5 8/19 wilc p=0.953
+   ewma5        med 0.719 (-17.5%)  beats frozen 17/19 sign p=0.000729 wilc p=0.000645 | beats persist5 9/19 wilc p=0.891
+   shrink30_k2  med 0.767 (-12.3%)  beats frozen 13/19 sign p=0.167 wilc p=0.00458 | beats persist5 7/19 wilc p=0.465
+   shrink30_k5  med 0.767 (-12.4%)  beats frozen 13/19 sign p=0.167 wilc p=0.00458 | beats persist5 7/19 wilc p=0.465
+   kalman       med 0.761 (-4.9%)  beats frozen 12/19 sign p=0.359 wilc p=0.123 | beats persist5 5/19 wilc p=0.0361
+   persist30    med 0.953 (+2.9%)  beats frozen 8/19 sign p=0.648 wilc p=0.709 | beats persist5 4/19 wilc p=0.00458
+   persist5     med 0.733 (-23.2%)  beats frozen 16/19 sign p=0.00443 wilc p=0.00533 | beats persist5 0/19 wilc p=1
+   trend30      med 0.648 (-6.6%)  beats frozen 12/19 sign p=0.359 wilc p=0.145 | beats persist5 9/19 wilc p=0.332
+   oracle_bias  med 0.762 (-17.1%)  beats frozen 16/19 sign p=0.00443 wilc p=0.000645 | beats persist5 7/19 wilc p=0.49
+ band (5000.0, 10000.0) n=19  frozen med 0.800
+   [repo rolling json] frozen 0.800 bias 0.726 persist 1.020 persist_recent 0.799
+   bias30       med 0.726 (-6.9%)  beats frozen 11/19 sign p=0.648 wilc p=0.0728 | beats persist5 17/19 wilc p=0.0024
+   bias5        med 0.808 (+3.2%)  beats frozen 9/19 sign p=1 wilc p=0.679 | beats persist5 11/19 wilc p=0.595
+   ewma10       med 0.710 (-8.9%)  beats frozen 10/19 sign p=1 wilc p=0.123 | beats persist5 16/19 wilc p=0.0024
+   ewma5        med 0.746 (-8.4%)  beats frozen 10/19 sign p=1 wilc p=0.196 | beats persist5 15/19 wilc p=0.0124
+   shrink30_k2  med 0.725 (-7.0%)  beats frozen 11/19 sign p=0.648 wilc p=0.0728 | beats persist5 17/19 wilc p=0.0024
+   shrink30_k5  med 0.723 (-7.3%)  beats frozen 11/19 sign p=0.648 wilc p=0.0602 | beats persist5 17/19 wilc p=0.00202
+   kalman       med 0.889 (+11.0%)  beats frozen 7/19 sign p=0.359 wilc p=0.49 | beats persist5 9/19 wilc p=0.465
+   persist30    med 1.020 (+26.2%)  beats frozen 5/19 sign p=0.0636 wilc p=0.0141 | beats persist5 3/19 wilc p=0.00141
+   persist5     med 0.799 (+2.5%)  beats frozen 9/19 sign p=1 wilc p=0.829 | beats persist5 0/19 wilc p=1
+   trend30      med 1.040 (+9.8%)  beats frozen 5/19 sign p=0.0636 wilc p=0.0955 | beats persist5 5/19 wilc p=0.00618
+   oracle_bias  med 0.676 (-12.8%)  beats frozen 16/19 sign p=0.00443 wilc p=0.000336 | beats persist5 15/19 wilc p=0.00823
+ band (10000.0, 20000.0) n=19  frozen med 0.784
+   [repo rolling json] frozen 0.784 bias 0.849 persist 1.283 persist_recent 1.075
+   bias30       med 0.849 (-1.2%)  beats frozen 10/19 sign p=1 wilc p=0.196 | beats persist5 16/19 wilc p=0.016
+   bias5        med 0.846 (+9.5%)  beats frozen 8/19 sign p=0.648 wilc p=0.651 | beats persist5 15/19 wilc p=0.0446
+   ewma10       med 0.813 (-2.9%)  beats frozen 10/19 sign p=1 wilc p=0.123 | beats persist5 16/19 wilc p=0.00823
+   ewma5        med 0.813 (-1.7%)  beats frozen 10/19 sign p=1 wilc p=0.258 | beats persist5 16/19 wilc p=0.0141
+   shrink30_k2  med 0.849 (-1.2%)  beats frozen 10/19 sign p=1 wilc p=0.182 | beats persist5 16/19 wilc p=0.016
+   shrink30_k5  med 0.848 (-1.3%)  beats frozen 10/19 sign p=1 wilc p=0.134 | beats persist5 16/19 wilc p=0.0108
+   kalman       med 0.966 (+13.1%)  beats frozen 8/19 sign p=0.648 wilc p=0.441 | beats persist5 10/19 wilc p=0.595
+   persist30    med 1.283 (+46.6%)  beats frozen 3/19 sign p=0.00443 wilc p=0.00533 | beats persist5 3/19 wilc p=0.000126
+   persist5     med 1.075 (+8.7%)  beats frozen 6/19 sign p=0.167 wilc p=0.0955 | beats persist5 0/19 wilc p=1
+   trend30      med 1.244 (+52.3%)  beats frozen 5/19 sign p=0.0636 wilc p=0.0289 | beats persist5 6/19 wilc p=0.0401
+   oracle_bias  med 0.786 (-11.2%)  beats frozen 14/19 sign p=0.0636 wilc p=0.00458 | beats persist5 16/19 wilc p=0.00533
+ band (20000.0, 40000.0) n=19  frozen med 0.889
+   [repo rolling json] frozen 0.889 bias 0.939 persist 1.748 persist_recent 1.443
+   bias30       med 0.939 (+2.3%)  beats frozen 9/19 sign p=1 wilc p=0.922 | beats persist5 17/19 wilc p=5.34e-05
+   bias5        med 1.000 (+10.6%)  beats frozen 5/19 sign p=0.0636 wilc p=0.441 | beats persist5 15/19 wilc p=0.000267
+   ewma10       med 0.909 (+5.2%)  beats frozen 8/19 sign p=0.648 wilc p=0.953 | beats persist5 18/19 wilc p=2.67e-05
+   ewma5        med 0.889 (+7.3%)  beats frozen 8/19 sign p=0.648 wilc p=0.86 | beats persist5 17/19 wilc p=5.34e-05
+   shrink30_k2  med 0.938 (+2.3%)  beats frozen 9/19 sign p=1 wilc p=0.86 | beats persist5 17/19 wilc p=5.34e-05
+   shrink30_k5  med 0.937 (+2.3%)  beats frozen 9/19 sign p=1 wilc p=0.798 | beats persist5 17/19 wilc p=5.34e-05
+   kalman       med 1.060 (+8.5%)  beats frozen 7/19 sign p=0.359 wilc p=0.225 | beats persist5 15/19 wilc p=0.00141
+   persist30    med 1.748 (+100.7%)  beats frozen 2/19 sign p=0.000729 wilc p=0.00021 | beats persist5 2/19 wilc p=1.91e-05
+   persist5     med 1.443 (+72.8%)  beats frozen 2/19 sign p=0.000729 wilc p=0.000645 | beats persist5 0/19 wilc p=1
+   trend30      med 1.913 (+95.3%)  beats frozen 3/19 sign p=0.00443 wilc p=0.000164 | beats persist5 5/19 wilc p=0.113
+   oracle_bias  med 0.860 (-4.4%)  beats frozen 14/19 sign p=0.0636 wilc p=0.0361 | beats persist5 18/19 wilc p=1.91e-05
+ band (40000.0, 80000.0) n=18  frozen med 0.918
+   [repo rolling json] frozen 0.918 bias 1.076 persist 2.476 persist_recent 2.476
+   bias30       med 1.076 (+3.4%)  beats frozen 8/18 sign p=0.815 wilc p=0.551 | beats persist5 17/18 wilc p=1.53e-05
+   bias5        med 1.090 (+7.0%)  beats frozen 8/18 sign p=0.815 wilc p=0.393 | beats persist5 17/18 wilc p=1.53e-05
+   ewma10       med 1.068 (+6.5%)  beats frozen 8/18 sign p=0.815 wilc p=0.58 | beats persist5 18/18 wilc p=7.63e-06
+   ewma5        med 1.045 (+9.6%)  beats frozen 8/18 sign p=0.815 wilc p=0.442 | beats persist5 18/18 wilc p=7.63e-06
+   shrink30_k2  med 1.076 (+3.4%)  beats frozen 8/18 sign p=0.815 wilc p=0.551 | beats persist5 17/18 wilc p=1.53e-05
+   shrink30_k5  med 1.077 (+3.4%)  beats frozen 8/18 sign p=0.815 wilc p=0.58 | beats persist5 17/18 wilc p=1.53e-05
+   kalman       med 1.182 (+16.5%)  beats frozen 7/18 sign p=0.481 wilc p=0.142 | beats persist5 17/18 wilc p=1.53e-05
+   persist30    med 2.476 (+184.6%)  beats frozen 1/18 sign p=0.000145 wilc p=1.53e-05 | beats persist5 3/18 wilc p=0.00401
+   persist5     med 2.476 (+166.9%)  beats frozen 1/18 sign p=0.000145 wilc p=1.53e-05 | beats persist5 0/18 wilc p=1
+   trend30      med 3.232 (+251.5%)  beats frozen 1/18 sign p=0.000145 wilc p=1.53e-05 | beats persist5 6/18 wilc p=0.0385
+   oracle_bias  med 0.919 (-1.0%)  beats frozen 10/18 sign p=0.815 wilc p=0.325 | beats persist5 18/18 wilc p=7.63e-06
+DONE

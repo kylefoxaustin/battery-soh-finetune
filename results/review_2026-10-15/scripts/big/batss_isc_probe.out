@@ -1,0 +1,12 @@
+header ['Time_s', 'StepMode', 'Voltage_V_', 'Current_A_', 'Capacity_Ah_', 'Vcell_1_V_', 'Vcell_2_V_', 'Vcell_3_V_', 'Vcell_4_V_', 'Vcell_5_V_', 'Vcell_6_V_', 'Vcell_7_V_', 'Vcell_8_V_', 'Vcell_9_V_', 'Vcell_10_V_', 'T1_C_', 'T2_C_', 'T3_C_', 'T4_C_', 'T5_C_', 'T6_C_', 'T7_C_', 'T8_C_', 'T9_C_', 'T10_C_', 'T11_C_', 'T12_C_', 'T13_C_', 'T14_C_', 'T15_C_', 'T16_C_', 'T17_C_', 'T18_C_', 'T19_C_', 'T20_C_', 'T21_C_', 'T22_C_', 'T23_C_', 'T24_C_', 'T25_C_', 'T26_C_', 'T27_C_', 'T28_C_', 'T29_C_', 'T30_C_', 'T31_C_', 'T32_C_', 'T33_C_', 'T34_C_', 'T35_C_', 'T36_C_', 'T37_C_', 'T38_C_', 'T39_C_', 'T40_C_', 'T41_C_', 'T42_C_', 'T43_C_', 'T44_C_', 'T45_C_', 'T46_C_', 'T47_C_', 'T48_C_', 'T49_C_', 'T50_C_', 'T51_C_', 'T52_C_', 'T53_C_', 'T54_C_', 'T55_C_', 'Tliq_IN_C_', 'Tliq_OUT_C_', 'P_IN_kPa_', 'P_OUT_kPa_', 'Flow_Lmin_']
+rows 62817
+time span s 0.2 62971.96 dt median 1.0
+time resets at rows [] count 0
+modes {'CC-CV Charge': 12966, 'CC Discharge': 12323, 'REST': 37528}
+current min/max -66.9895 134.0175 pack V min/max 28.5357 42.0032
+cell V min/max per cell [2.914 2.797 2.864 2.887 2.85  2.884 2.799 2.865 2.867 2.854] [4.201 4.181 4.194 4.192 4.19  4.198 4.188 4.193 4.198 4.191]
+cell T min/max 24.707968253968254 59.47444444444444
+rest segments (>10 rows): 7
+Per rest segment: start_t, dur_h, per-cell dV over segment (mV) and dev at end (mV)
+  t0=    26972s dur= 10.00h  dV(mV)= [-71. -64. -65. -63. -63. -67. -61. -73. -68. -64.]  dev_end(mV)= [ 15.8 -25.2   7.8   5.8   0.8   5.8  -1.2 -21.2   9.8   1.8]
+run 0: rows 0-62817, t 0->62972s (17.5 h); dev start(mV)= [ 1.4  0.1  0.6  0.3  0.2 -2.1 -0.7  0.   1.5 -1.8]  dev end(mV)= [ 15.8 -25.2   7.8   5.8   0.8   5.8  -1.2 -21.2   9.8   1.8]

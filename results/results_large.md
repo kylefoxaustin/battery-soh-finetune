@@ -196,3 +196,34 @@ persistence control and the Bonferroni rule were added after preliminary results
 positive finding harder). No synthetic drift was used anywhere. The feasibility and bandwidth arguments in
 `results.md` stand on their own measured numbers; the accuracy claim — "per-vehicle data, used by on-device
 fine-tuning, beats fleet-average" — should be dropped.
+
+## Post-review addendum (2026-10-15, independent review)
+
+See [`review_2026-10-15/REVIEW.md`](review_2026-10-15/REVIEW.md). The text above is unchanged.
+
+1. **"Per-unit adaptation does not help" is too broad. It holds for on-device *training*.**
+   - The rolling protocol tested a closed-form *shrunken* per-unit residual offset: κ = 3.55, from E's variance
+     split, with a 10 k km EWMA.
+   - At 0–5 k km on primary labels it **passes every clause of the pre-declared "helps robustly" rule** (✔
+     reproduced by the main session; `review_2026-10-15/scripts/s12/d2_shrink_eb.py`):
+     - median 3.85 vs 4.10 Ah;
+     - beats frozen on 67 of 89 units, p = 1.9e-6;
+     - beats persistence on 70 of 89 units, p = 5e-8.
+   - **Caveats:**
+     - the method family is post hoc;
+     - κ uses a whole-data variance split;
+     - it passes in one band only;
+     - on strict labels it points the same way but does not pass (24 of 37 units, sign p = 0.10).
+   - It needs a pre-registered confirmation.
+2. **"Persistence matches the only gain" is EVBattery-specific.** On Changan, recent-label persistence is the weakest
+   control.
+3. **The "label-noise floor" is an upper bound, not a ceiling.** Frozen RMSE is below the unit's own floor in 54 of
+   94 units. Out-of-unit covariate correction lowers the floor from 4.76 to 4.49 Ah (reviewer).
+4. **Label defects.**
+   - Labels rise +2.34 Ah per e-fold of wake→full segment duration; 6–24 h segments (7.4 % of primary labels) are
+     about +3.7 Ah high. This is fixable at `data/changan_labels.py:36`.
+   - `odo.min()` NaN-poisoning drops 8 of 300 vehicles from the OCV table. Negligible.
+5. **Statistics.**
+   - The Bonferroni family is per label set.
+   - "Significantly worse at 40–80 k km" holds unguarded only.
+   - Whole-head harm (p = 0.0095) is not significant at the 0.0025 rule.

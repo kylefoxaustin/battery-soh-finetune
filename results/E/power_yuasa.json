@@ -1,0 +1,75 @@
+{
+ "tag": "DERIVED from SOURCED per-cell model estimates",
+ "n_cells": 324,
+ "n_modules": 27,
+ "cells_per_module": [
+  12
+ ],
+ "Q_median": 75.35524220402638,
+ "Q_min": 38.02362574569319,
+ "Q_max": 79.280526675383,
+ "Q_between_cell_sd": 3.663368265187679,
+ "Q_between_cell_sd_excl_2_faulty": 2.6585785366865315,
+ "Q_sigma_median": 0.48240203985986063,
+ "Q_sigma_median_pct": 0.6415674929344326,
+ "Q_sigma_max": 1.7859382900754823,
+ "ref_check_rmse_abs_ah_SOURCED": 1.25,
+ "ref_check_rmse_module_centred_ah_SOURCED": 0.55,
+ "module_mean_minus_min_pct": {
+  "median": 0.8485773368472858,
+  "min": 0.6256976590260005,
+  "max": 44.21599717257662,
+  "per_module": [
+   1.55,
+   0.7,
+   0.79,
+   1.0,
+   1.01,
+   24.36,
+   0.82,
+   0.79,
+   0.79,
+   0.74,
+   0.81,
+   1.3,
+   0.95,
+   0.79,
+   0.92,
+   0.82,
+   0.66,
+   0.67,
+   0.63,
+   0.98,
+   1.67,
+   0.85,
+   44.22,
+   0.75,
+   1.14,
+   2.17,
+   1.1
+  ]
+ },
+ "coverage_verifiability": {
+  "0.1": {
+   "units": 27,
+   "expected_violations": 2.7,
+   "P_zero_violations_if_calibrated": 0.058149737003040096
+  },
+  "0.05": {
+   "units": 27,
+   "expected_violations": 1.35,
+   "P_zero_violations_if_calibrated": 0.2503440897424549
+  },
+  "0.01": {
+   "units": 27,
+   "expected_violations": 0.27,
+   "P_zero_violations_if_calibrated": 0.7623427143471035
+  },
+  "0.001": {
+   "units": 27,
+   "expected_violations": 0.027,
+   "P_zero_violations_if_calibrated": 0.9733480924695651
+  }
+ },
+ "time_axis": "single 12.5 h snapshot; one capacity estimate per cell; no forecast origin/horizon possible"
+}

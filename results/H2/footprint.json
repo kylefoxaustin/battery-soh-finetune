@@ -1,0 +1,48 @@
+{
+ "tag": "MEASURED on NXP FRDM-IMX95-PRO (A55 core 3, performance 1.8 GHz), gated",
+ "per_N": {
+  "396": {
+   "lat_ns_p50": 5834.0,
+   "lat_ns_p99": 11875.0,
+   "lat_ns_max": 71085.0,
+   "sustained_updates_per_s": 165765.0,
+   "p50_range": [
+    5834,
+    5834
+   ],
+   "p99_range": [
+    11834,
+    11875
+   ],
+   "max_range": [
+    61168,
+    96834
+   ],
+   "state_bytes": 3968,
+   "lut_bytes": 13608,
+   "p": 216
+  },
+  "3564": {
+   "lat_ns_p50": 52126.0,
+   "lat_ns_p99": 107001.0,
+   "lat_ns_max": 185627.0,
+   "sustained_updates_per_s": 18446.0,
+   "p50_range": [
+    52125,
+    52167
+   ],
+   "p99_range": [
+    106918,
+    107085
+   ],
+   "max_range": [
+    180044,
+    217462
+   ],
+   "state_bytes": 35648,
+   "lut_bytes": 13608,
+   "p": 1944
+  }
+ },
+ "gate_pass": "10/10"
+}

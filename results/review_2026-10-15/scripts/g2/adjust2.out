@@ -1,0 +1,32 @@
+== Adjusted logistic (no has_sent; it quasi-separates). season/gap covariates ==
+E_A       coef +0.28 (-0.08,+0.59)
+E_B       coef +0.01 (-0.68,+0.36)
+L_A       coef +0.23 (+0.01,+0.90)
+L_B       coef +0.18 (-0.15,+0.58)
+L_perm_A  coef +0.47 (+0.12,+0.95)
+L_A_abs   coef +0.36 (+0.14,+0.87)
+
+== Same-processing-path subset: 17 sentinel-bearing faulty vs 335 normals, adjusted (prereg-5 covariates) ==
+E_A       coef +0.12 (-0.96,+0.37)
+L_A       coef +0.07 (-1.59,+0.37)
+
+== Stratified permutation: strata = L_T 3°C-bin x S_jumps02 tertile (late), E_T 3°C x E_n_rest tertile (early); 2000 perms ==
+L_A strat AUC 0.595 (pairs 908) perm p=0.110
+L_B strat AUC 0.441 (pairs 908) perm p=0.791
+L_perm_A strat AUC 0.656 (pairs 908) perm p=0.013
+E_A strat AUC 0.600 (pairs 1181) perm p=0.028
+E_B strat AUC 0.528 (pairs 1181) perm p=0.313
+L A-B strat +0.154 perm p=0.021
+E A-B strat +0.073 perm p=0.067
+
+== Caliper matching: |L_T diff|<=2, |S_jumps02 diff|<=10, same has_sent (only the 17 sentinel-bearing faulty can match) ==
+L_A: matched AUC 0.586 over 1874 pairs from 17 faulty
+L_B: matched AUC 0.446 over 1874 pairs from 17 faulty
+E_A: matched AUC 0.614 over 1874 pairs from 17 faulty
+E_B: matched AUC 0.534 over 1874 pairs from 17 faulty
+
+== Caliper matching ignoring has_sent: |L_T|<=2 and |S_jumps02|<=10 ==
+L_A: matched AUC 0.589 over 1910 pairs from 31 faulty
+L_B: matched AUC 0.448 over 1910 pairs from 31 faulty
+E_A: matched AUC 0.615 over 1910 pairs from 31 faulty
+E_B: matched AUC 0.532 over 1910 pairs from 31 faulty

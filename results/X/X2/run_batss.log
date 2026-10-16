@@ -1,0 +1,49 @@
+{
+ "tag": "DERIVED, report-only (BATSS, CC BY 4.0; TC->cell mapping ASSUMED M1/M2)",
+ "sessions": [
+  {
+   "run": "BATSS_16_FastCharge_Voltstation_results.xlsx",
+   "segment": 0,
+   "n": 2228,
+   "n_steps_before": 0,
+   "hist_ok": false,
+   "Tmax": 39.40847724761904,
+   "spread_med": 12.953320217460313,
+   "S_M1_kappa1": 0.0,
+   "S_M2_median_kappa1": 0.0
+  },
+  {
+   "run": "BATSS_17_FastCharge_Marine_results.xlsx",
+   "segment": 0,
+   "n": 1856,
+   "n_steps_before": 0,
+   "hist_ok": false,
+   "Tmax": 58.47284126984126,
+   "spread_med": 24.554730158730152,
+   "S_M1_kappa1": 0.0,
+   "S_M2_median_kappa1": 0.0
+  },
+  {
+   "run": "BATSS_18_FastCharge_Offroad_results.xlsx",
+   "segment": 0,
+   "n": 1598,
+   "n_steps_before": 0,
+   "hist_ok": false,
+   "Tmax": 75.39858444444455,
+   "spread_med": 33.74777968253943,
+   "S_M1_kappa1": 0.0,
+   "S_M2_median_kappa1": 0.0
+  },
+  {
+   "run": "BATSS_19_FastCharge_3C_results.xlsx",
+   "segment": 0,
+   "n": 1569,
+   "n_steps_before": 0,
+   "hist_ok": false,
+   "Tmax": 78.7934565079365,
+   "spread_med": 40.836507301587325,
+   "S_M1_kappa1": 0.0,
+   "S_M2_median_kappa1": 0.0
+  }
+ ]
+}

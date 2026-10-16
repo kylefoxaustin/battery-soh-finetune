@@ -1,0 +1,202 @@
+[{"case": "BatICM car2", "faulty_cols": [81], "first_level3_h": 591.0408333333334, "geometry": [48, 7], "A": {"first_correct_h": 222.29166666666666, "first_correct_day": 9.262152777777777, "first_flag_cells": [87], "first_flag_is_faulty": false, "first_flag_tied": false, "false_before": 1, "false_total": 78, "episodes_total": 153, "lead_vs_level3_days": 15.364548611111113}, "A_lvl": {"first_correct_h": 78.29166666666667, "first_correct_day": 3.262152777777778, "first_flag_cells": [30, 31, 39, 40, 81], "first_flag_is_faulty": true, "first_flag_tied": true, "false_before": 0, "false_total": 11, "episodes_total": 14, "lead_vs_level3_days": 21.364548611111115}, "A_nb": {"first_correct_h": 174.29166666666666, "first_correct_day": 7.262152777777778, "first_flag_cells": [87], "first_flag_is_faulty": false, "first_flag_tied": false, "false_before": 1, "false_total": 16, "episodes_total": 33, "lead_vs_level3_days": 17.364548611111115}, "A_nb_lvl": {"first_correct_h": 78.29166666666667, "first_correct_day": 3.262152777777778, "first_flag_cells": [81], "first_flag_is_faulty": true, "first_flag_tied": false, "false_before": 0, "false_total": 28, "episodes_total": 62, "lead_vs_level3_days": 21.364548611111115}, "A_mod": {"first_correct_h": 174.29166666666666, "first_correct_day": 7.262152777777778, "first_flag_cells": [87], "first_flag_is_faulty": false, "first_flag_tied": false, "false_before": 1, "false_total": 41, "episodes_total": 126, "lead_vs_level3_days": 17.364548611111115}}, {"case": "BatICM car3", "faulty_cols": [1, 80], "first_level3_h": 119.78444444444445, "geometry": [32, 0], "A": {"first_correct_h": 317.84833333333336, "first_correct_day": 13.243680555555557, "first_flag_cells": [1, 80], "first_flag_is_faulty": true, "first_flag_tied": true, "false_before": 0, "false_total": 3, "episodes_total": 5, "lead_vs_level3_days": -8.25266203703704}, "A_lvl": {"first_correct_h": 77.84833333333333, "first_correct_day": 3.2436805555555552, "first_flag_cells": [1, 48, 49, 67, 80], "first_flag_is_faulty": true, "first_flag_tied": true, "false_before": 0, "false_total": 4, "episodes_total": 8, "lead_vs_level3_days": 1.7473379629629633}, "A_nb": {"first_correct_h": 125.84833333333333, "first_correct_day": 5.243680555555556, "first_flag_cells": [1, 49], "first_flag_is_faulty": true, "first_flag_tied": true, "false_before": 0, "false_total": 3, "episodes_total": 8, "lead_vs_level3_days": -0.25266203703703677}, "A_nb_lvl": {"first_correct_h": 77.84833333333333, "first_correct_day": 3.2436805555555552, "first_flag_cells": [1, 18, 33, 48, 49, 59, 67, 70, 80], "first_flag_is_faulty": true, "first_flag_tied": true, "false_before": 0, "false_total": 8, "episodes_total": 10, "lead_vs_level3_days": 1.7473379629629633}, "A_mod": {"first_correct_h": 125.84833333333333, "first_correct_day": 5.243680555555556, "first_flag_cells": [1], "first_flag_is_faulty": true, "first_flag_tied": false, "false_before": 0, "false_total": 3, "episodes_total": 6, "lead_vs_level3_days": -0.25
+{
+ "tag": "DERIVED; Changan CC BY-NC-SA 4.0 (non-commercial), BatICM MIT",
+ "preregistered_in": "ea9f714",
+ "control_no_F_event_days": {
+  "n_vehicles": 250,
+  "vehicle_days": 191396,
+  "A": {
+   "fa_per_100_vd": 21.787289180547138,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    11172,
+    3098,
+    1293,
+    714,
+    425,
+    297,
+    222,
+    162,
+    138,
+    643
+   ]
+  },
+  "A_lvl": {
+   "fa_per_100_vd": 13.405713808021066,
+   "frac_vehicles_ge1": 0.996,
+   "episode_size_hist": [
+    0,
+    7650,
+    2387,
+    1054,
+    616,
+    312,
+    243,
+    137,
+    80,
+    69,
+    185
+   ]
+  },
+  "A_nb": {
+   "fa_per_100_vd": 43.50874626428975,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    26265,
+    9152,
+    4009,
+    1932,
+    935,
+    621,
+    358,
+    210,
+    186,
+    387
+   ]
+  },
+  "A_nb_lvl": {
+   "fa_per_100_vd": 25.6645906915505,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    12130,
+    3577,
+    1565,
+    837,
+    458,
+    264,
+    132,
+    99,
+    58,
+    915
+   ]
+  },
+  "A_mod": {
+   "fa_per_100_vd": 36.70818616898995,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    21616,
+    7323,
+    3154,
+    1648,
+    831,
+    527,
+    328,
+    226,
+    161,
+    413
+   ]
+  },
+  "ratio_A_nb_over_A": 1.996978417266187,
+  "ratio_CI": [
+   1.9057756164767083,
+   2.0976702099737494
+  ],
+  "reading": "NO REDUCTION",
+  "A_nb_usable_bar_le_1_per_100vd": false
+ },
+ "context_F_event_vehicles": {
+  "n_vehicles": 50,
+  "vehicle_days": 34984,
+  "A": {
+   "fa_per_100_vd": 31.057054653555912,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    2413,
+    772,
+    314,
+    234,
+    160,
+    77,
+    52,
+    55,
+    20,
+    174
+   ]
+  },
+  "A_lvl": {
+   "fa_per_100_vd": 12.099817059227075,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    1416,
+    391,
+    163,
+    104,
+    61,
+    33,
+    14,
+    16,
+    8,
+    24
+   ]
+  },
+  "A_nb": {
+   "fa_per_100_vd": 52.61548136290876,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    5153,
+    1913,
+    819,
+    458,
+    252,
+    146,
+    85,
+    56,
+    46,
+    126
+   ]
+  },
+  "A_nb_lvl": {
+   "fa_per_100_vd": 29.58495312142694,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    2036,
+    604,
+    283,
+    129,
+    81,
+    70,
+    33,
+    31,
+    13,
+    254
+   ]
+  },
+  "A_mod": {
+   "fa_per_100_vd": 46.006745941001604,
+   "frac_vehicles_ge1": 1.0,
+   "episode_size_hist": [
+    0,
+    4369,
+    1596,
+    614,
+    431,
+    215,
+    134,
+    76,
+    63,
+    52,
+    124
+   ]
+  },
+  "ratio_A_nb_over_A": 1.6941555453290382,
+  "ratio_CI": [
+   1.5409240901086443,
+   1.869695190827037
+  ]
+ },
+ "detection_retained_baticm": {
+  "A": 2,
+  "A_lvl": 3,
+  "A_nb": 2,
+  "A_nb_lvl": 2,
+  "A_mod": 2
+ }
+}

@@ -1,0 +1,16 @@
+progress 0
+progress 25
+progress 50
+progress 75
+progress 100
+progress 125
+progress 150
+progress 175
+progress 200
+progress 225
+progress 250
+progress 275
+vehicles: 300; with any NaN odometer: 8; median frac NaN frames among them: 0.0000
+OCV-table contributors as written: 292 vehicles, 62877 rests  (ocv_full.json says 62,877)
+OCV-table contributors with nanmin: 300 vehicles, 64260 rests
+odometer at record start (nanmin): p5/25/50/75/95 = [2.000e+00 7.000e+00 8.000e+00 1.000e+01 4.044e+03]; >20k km: 4 vehicles

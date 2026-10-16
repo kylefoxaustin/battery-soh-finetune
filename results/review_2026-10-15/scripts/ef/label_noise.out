@@ -1,0 +1,34 @@
+all labels 17474 primary-band 8853
+primary-band units>=20 labels: 126, labels 7691, median per-unit SD about linear fit 4.67 Ah, pooled SD 4.63 Ah
+close pairs (<= 300 km, <= 20 d): n=1603, SD(diff)/sqrt2 = 3.91 Ah, robust (MAD) = 2.88 Ah
+close pairs (<= 1000 km, <= 45 d): n=4083, SD(diff)/sqrt2 = 3.86 Ah, robust (MAD) = 2.79 Ah
+close pairs (<= 2000 km, <= 90 d): n=5331, SD(diff)/sqrt2 = 4.05 Ah, robust (MAD) = 2.94 Ah
+  corr(dev, soc_s) = -0.132
+  corr(dev, I_chg) = -0.002
+  corr(dev, log_seg_s) = +0.222
+  corr(dev, tmax_end) = +0.113
+  corr(dev, tspread_end) = +0.068
+  corr(dev, tmax_start128) = +0.161
+  corr(dev, vmax_end) = +0.253
+  corr(dev, soc_bms_end) = +0.222
+in-sample R2 of within-unit deviation on 8 session covariates: 0.187
+out-of-fold (by unit) R2: 0.183
+R2 soc_s quadratic alone: 0.027; soc_s range p5-p95 [11.39998627 57.40000534]
+   soc_s   4.3- 14.8%: mean dev +2.43 Ah (n=778)
+   soc_s  14.8- 22.0%: mean dev -0.24 Ah (n=778)
+   soc_s  22.0- 28.0%: mean dev +0.13 Ah (n=788)
+   soc_s  28.0- 32.2%: mean dev +0.06 Ah (n=857)
+   soc_s  32.2- 37.2%: mean dev -0.81 Ah (n=850)
+   soc_s  37.2- 41.8%: mean dev +0.16 Ah (n=814)
+   soc_s  41.8- 46.8%: mean dev -0.22 Ah (n=779)
+   soc_s  46.8- 51.1%: mean dev -0.31 Ah (n=807)
+   soc_s  51.1- 55.3%: mean dev -0.76 Ah (n=788)
+   soc_s  55.3- 59.9%: mean dev -0.56 Ah (n=778)
+
+label-rise decomposition (all labels of the vehicle, +-180 d around onset; medians before -> after):
+ vin 19 n=2/6  cap  122.9-> 124.9  soc_s  49.0-> 43.9  ah  62.8-> 69.3  I  49.1-> 48.6  seg_h   2.5->  1.5  tmax_end 31.0->29.5  km   7.6-> 30.2k
+ vin 93 n=2/3  cap  128.6-> 128.6  soc_s  33.8-> 18.6  ah  85.3->107.3  I  49.0-> 48.5  seg_h   3.4->  1.4  tmax_end 30.5->37.0  km  13.5-> 19.4k
+ vin116 n=13/5  cap  119.9-> 129.6  soc_s  41.2-> 34.8  ah  70.6-> 92.5  I  48.0-> 14.8  seg_h   1.2->  3.4  tmax_end 28.0->28.0  km 193.0->270.1k
+ vin120 n=3/4  cap  126.6-> 128.6  soc_s  38.6-> 42.0  ah  78.4-> 74.6  I  49.7-> 49.2  seg_h   1.2->  1.8  tmax_end 30.0->34.5  km  14.3-> 59.2k
+ vin169 n=4/25  cap  124.7-> 133.0  soc_s  48.1-> 31.6  ah  63.3-> 89.9  I  49.0-> 49.1  seg_h   1.8->  1.4  tmax_end 30.0->37.0  km   8.4-> 35.2k
+ vin266 n=3/19  cap  121.7-> 127.4  soc_s  43.9-> 34.0  ah  67.6-> 83.0  I  28.6-> 49.2  seg_h   2.1->  1.5  tmax_end 21.0->36.0  km   9.9-> 36.0k

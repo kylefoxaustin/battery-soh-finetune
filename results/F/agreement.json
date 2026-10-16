@@ -1,0 +1,22 @@
+{
+ "tag": "MEASURED (Changan per-cell telemetry; CC BY-NC-SA 4.0, non-commercial)",
+ "pc_event_days": 730,
+ "mo_event_days": 723,
+ "both": 715,
+ "frac_pc_days_seen_by_minonly": 0.9794520547945206,
+ "frac_mo_days_seen_by_percell": 0.9889349930843707,
+ "vehicles_pc_qual": 20,
+ "vehicles_mo_qual": 25,
+ "vehicles_both_qual": 19,
+ "vehicles_pc_only": [
+  282
+ ],
+ "vehicles_mo_only": [
+  24,
+  58,
+  60,
+  190,
+  256,
+  289
+ ]
+}

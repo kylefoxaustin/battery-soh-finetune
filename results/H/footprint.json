@@ -1,0 +1,132 @@
+{
+ "tag": "MEASURED on NXP FRDM-IMX95-PRO (verified via /proc/device-tree/model), Cortex-A55 core 3 pinned, performance governor @1.8 GHz, gcc 15.2 -O2, hard reservation, census before/after; gate in the same run",
+ "gate": {
+  "runs": 20,
+  "pass": 20,
+  "max_abs_dR": 4.76837158203125e-07,
+  "max_abs_dsetpoint_C": 0.0,
+  "argmin_exact_min": 1.0
+ },
+ "per_N": {
+  "96": {
+   "p": 32,
+   "repeats": 5,
+   "lat_ns_p50_median": 1500.0,
+   "lat_ns_p50_range": [
+    1500,
+    1500
+   ],
+   "lat_ns_p99_median": 3167.0,
+   "lat_ns_p99_range": [
+    3126,
+    3167
+   ],
+   "lat_ns_max_range": [
+    57793,
+    143002
+   ],
+   "sustained_updates_per_s_median": 635540.0,
+   "ns_per_update_sustained": 1573.465084809768,
+   "state_bytes": 968,
+   "lut_bytes": 13608,
+   "frame_buffer_bytes": 2600000,
+   "rss_delta_kb_hwm_minus_before_state": [
+    80,
+    860,
+    80,
+    856,
+    856
+   ]
+  },
+  "192": {
+   "p": 64,
+   "repeats": 5,
+   "lat_ns_p50_median": 2917.0,
+   "lat_ns_p50_range": [
+    2916,
+    2917
+   ],
+   "lat_ns_p99_median": 6209.0,
+   "lat_ns_p99_range": [
+    6208,
+    6250
+   ],
+   "lat_ns_max_range": [
+    56751,
+    724093
+   ],
+   "sustained_updates_per_s_median": 318927.0,
+   "ns_per_update_sustained": 3135.513769608719,
+   "state_bytes": 1928,
+   "lut_bytes": 13608,
+   "frame_buffer_bytes": 5160000,
+   "rss_delta_kb_hwm_minus_before_state": [
+    860,
+    860,
+    860,
+    860,
+    860
+   ]
+  },
+  "324": {
+   "p": 108,
+   "repeats": 5,
+   "lat_ns_p50_median": 4833.0,
+   "lat_ns_p50_range": [
+    4833,
+    4833
+   ],
+   "lat_ns_p99_median": 10500.0,
+   "lat_ns_p99_range": [
+    10459,
+    10667
+   ],
+   "lat_ns_max_range": [
+    75126,
+    145877
+   ],
+   "sustained_updates_per_s_median": 178031.0,
+   "ns_per_update_sustained": 5616.99928664109,
+   "state_bytes": 3248,
+   "lut_bytes": 13608,
+   "frame_buffer_bytes": 8680000,
+   "rss_delta_kb_hwm_minus_before_state": [
+    80,
+    80,
+    80,
+    860,
+    860
+   ]
+  },
+  "1000": {
+   "p": 334,
+   "repeats": 5,
+   "lat_ns_p50_median": 14750.0,
+   "lat_ns_p50_range": [
+    14750,
+    14751
+   ],
+   "lat_ns_p99_median": 32251.0,
+   "lat_ns_p99_range": [
+    32209,
+    32334
+   ],
+   "lat_ns_max_range": [
+    97418,
+    158836
+   ],
+   "sustained_updates_per_s_median": 51743.0,
+   "ns_per_update_sustained": 19326.28568115494,
+   "state_bytes": 10008,
+   "lut_bytes": 13608,
+   "frame_buffer_bytes": 26720000,
+   "rss_delta_kb_hwm_minus_before_state": [
+    84,
+    868,
+    868,
+    868,
+    84
+   ]
+  }
+ }
+}

@@ -1,0 +1,283 @@
+{
+ "tag": "POST-HOC, DERIVED",
+ "D1_first_day_pct": [
+  -1096.0,
+  0.0,
+  0.0,
+  0.0,
+  68.0
+ ],
+ "D1_last_day_pct": [
+  204.0,
+  979.75,
+  1211.0,
+  1327.0,
+  1461.0
+ ],
+ "D1_onset_days": [
+  -253,
+  -249,
+  -245,
+  -242,
+  -207,
+  -206,
+  -192,
+  -155,
+  -127,
+  -36,
+  -28,
+  50,
+  89,
+  146,
+  161,
+  177,
+  182,
+  222,
+  232,
+  293,
+  344,
+  356,
+  362,
+  397,
+  419,
+  519,
+  521,
+  521,
+  524,
+  539,
+  545,
+  547,
+  552,
+  552,
+  593,
+  597,
+  610,
+  637,
+  648,
+  786,
+  1046
+ ],
+ "D2": {
+  "n_vehicles": 20,
+  "cell_counts": [
+   [
+    31,
+    3
+   ],
+   [
+    62,
+    1
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    19,
+    1
+   ]
+  ],
+  "max_mult": 3,
+  "p_null_max_ge": 0.10395,
+  "cell31_events": [
+   [
+    19,
+    356,
+    -380
+   ],
+   [
+    50,
+    362,
+    -263
+   ],
+   [
+    272,
+    -242,
+    -90
+   ],
+   [
+    277,
+    648,
+    -389
+   ]
+  ]
+ },
+ "D3": {
+  "per_vehicle": [
+   {
+    "car": 19,
+    "cell": 31,
+    "onset_day": 356,
+    "delta": 2.0883445739746094,
+    "placebo_median_same_date": -1.2347221374511719,
+    "n_placebo": 137,
+    "excess": 3.3230667114257812,
+    "placebo_pct_rank": 0.8102189781021898
+   },
+   {
+    "car": 93,
+    "cell": 19,
+    "onset_day": 293,
+    "delta": -0.0012969970703125,
+    "placebo_median_same_date": -0.5380096435546875,
+    "n_placebo": 127,
+    "excess": 0.536712646484375,
+    "placebo_pct_rank": 0.5669291338582677
+   },
+   {
+    "car": 116,
+    "cell": 21,
+    "onset_day": 786,
+    "delta": 9.692352294921875,
+    "placebo_median_same_date": -0.27559661865234375,
+    "n_placebo": 157,
+    "excess": 9.967948913574219,
+    "placebo_pct_rank": 0.9171974522292994
+   },
+   {
+    "car": 120,
+    "cell": 47,
+    "onset_day": 222,
+    "delta": 2.0243301391601562,
+    "placebo_median_same_date": -0.6262474060058594,
+    "n_placebo": 93,
+    "excess": 2.6505775451660156,
+    "placebo_pct_rank": 0.6989247311827957
+   },
+   {
+    "car": 169,
+    "cell": 89,
+    "onset_day": 232,
+    "delta": 8.281055450439453,
+    "placebo_median_same_date": -0.6262474060058594,
+    "n_placebo": 97,
+    "excess": 8.907302856445312,
+    "placebo_pct_rank": 0.9175257731958762
+   },
+   {
+    "car": 266,
+    "cell": 76,
+    "onset_day": 146,
+    "delta": 5.691688537597656,
+    "placebo_median_same_date": 0.1243438720703125,
+    "n_placebo": 70,
+    "excess": 5.567344665527344,
+    "placebo_pct_rank": 0.8571428571428571
+   }
+  ],
+  "n": 6,
+  "median_excess": 4.4452056884765625,
+  "median_placebo_same_date": -0.5821285247802734,
+  "wilcoxon_p_excess": 0.03125
+ },
+ "D4": {
+  "per_vehicle": [
+   {
+    "car": 19,
+    "event_days_tmean": 26.334251740139212,
+    "other_days_tmean": 24.907927852348994
+   },
+   {
+    "car": 26,
+    "event_days_tmean": 22.15111636245111,
+    "other_days_tmean": 24.854478303061708
+   },
+   {
+    "car": 50,
+    "event_days_tmean": 21.78533014840925,
+    "other_days_tmean": 28.52733655616943
+   },
+   {
+    "car": 53,
+    "event_days_tmean": 16.614753099656895,
+    "other_days_tmean": 17.969205550874236
+   },
+   {
+    "car": 61,
+    "event_days_tmean": 27.829657258064515,
+    "other_days_tmean": 21.491307471264367
+   },
+   {
+    "car": 93,
+    "event_days_tmean": 18.780210148083626,
+    "other_days_tmean": 22.226455194949047
+   },
+   {
+    "car": 114,
+    "event_days_tmean": 25.19146050347222,
+    "other_days_tmean": 24.58016304347826
+   },
+   {
+    "car": 116,
+    "event_days_tmean": 31.700079285272277,
+    "other_days_tmean": 28.872698780725145
+   },
+   {
+    "car": 120,
+    "event_days_tmean": 30.754050645757843,
+    "other_days_tmean": 23.139008620689655
+   },
+   {
+    "car": 133,
+    "event_days_tmean": 15.745866733466935,
+    "other_days_tmean": 24.126588983050848
+   },
+   {
+    "car": 139,
+    "event_days_tmean": 26.060539925999592,
+    "other_days_tmean": 28.50559413580247
+   },
+   {
+    "car": 161,
+    "event_days_tmean": 23.302822580645163,
+    "other_days_tmean": 24.822191455696203
+   },
+   {
+    "car": 162,
+    "event_days_tmean": 23.66141538053723,
+    "other_days_tmean": 22.941624868004222
+   },
+   {
+    "car": 169,
+    "event_days_tmean": 22.412424438627333,
+    "other_days_tmean": 27.34655070754717
+   },
+   {
+    "car": 224,
+    "event_days_tmean": 23.323647103658537,
+    "other_days_tmean": 25.24493243243243
+   },
+   {
+    "car": 266,
+    "event_days_tmean": 18.96039784787159,
+    "other_days_tmean": 25.35492886178862
+   },
+   {
+    "car": 272,
+    "event_days_tmean": 23.670022424130003,
+    "other_days_tmean": 27.219979508196722
+   },
+   {
+    "car": 277,
+    "event_days_tmean": 30.350852272727273,
+    "other_days_tmean": 23.62849561994609
+   },
+   {
+    "car": 282,
+    "event_days_tmean": 23.948689778645832,
+    "other_days_tmean": 24.587086397058826
+   },
+   {
+    "car": 283,
+    "event_days_tmean": 21.4981520097988,
+    "other_days_tmean": 24.213789682539684
+   }
+  ],
+  "n_colder": 13,
+  "median_diff_C": -1.720327101912467
+ }
+}
