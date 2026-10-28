@@ -1,0 +1,219 @@
+{
+ "tag": "DERIVED (Beihang CC BY 4.0); V_lim and Q_ref ASSUMED (frozen here from the calibration half)",
+ "split_counts": {
+  "QAS": {
+   "calibration": 167,
+   "evaluation": 168,
+   "n_normal": 335,
+   "n_faulty_excluded": 58
+  },
+  "DTI": {
+   "calibration": 38,
+   "evaluation": 39,
+   "n_normal": 77,
+   "n_faulty_excluded": 3
+  }
+ },
+ "QAS": {
+  "vehicles": 335,
+  "rows": 11872516,
+  "valid_frames": 10188117,
+  "charge_frames": 5781366,
+  "corr_dsoc_Ic_median": 0.1581829414153187,
+  "rows_per_vehicle_p10_med_p90": [
+   27638.6,
+   32760.0,
+   43193.40000000001
+  ],
+  "steps_ge_0.2C_per_vehicle_p10_med_p90": [
+   2150.2,
+   3295.0,
+   5092.2000000000035
+  ],
+  "steps_ge_0.3C_per_vehicle_p10_med_p90": [
+   1162.6,
+   2103.0,
+   3646.600000000001
+  ],
+  "steps_ge_0.5C_per_vehicle_p10_med_p90": [
+   355.4,
+   901.0,
+   1897.4
+  ],
+  "calibration": {
+   "sessions_ge_0p5Ah": 13097,
+   "session_vmax_gap_mV_p10_med_p90": [
+    -114.00000953674328,
+    135.99999046325672,
+    181.99999046325655
+   ],
+   "within_25mV": 1656,
+   "within_50mV": 1685,
+   "within_100mV": 2178,
+   "hist20_7d": 13002,
+   "primary_7d_25mV": 1642,
+   "primary_7d_25mV_vehicles": 92,
+   "primary_7d_50mV": 1671,
+   "primary_7d_50mV_vehicles": 93,
+   "primary_7d_100mV": 2155,
+   "primary_7d_100mV_vehicles": 154,
+   "hist20_30d": 13002,
+   "primary_30d_25mV": 1642,
+   "primary_30d_25mV_vehicles": 92,
+   "primary_30d_50mV": 1671,
+   "primary_30d_50mV_vehicles": 93,
+   "primary_30d_100mV": 2155,
+   "primary_30d_100mV_vehicles": 154,
+   "hist20_90d": 13002,
+   "primary_90d_25mV": 1642,
+   "primary_90d_25mV_vehicles": 92,
+   "primary_90d_50mV": 1671,
+   "primary_90d_50mV_vehicles": 93,
+   "primary_90d_100mV": 2155,
+   "primary_90d_100mV_vehicles": 154
+  },
+  "evaluation": {
+   "sessions_ge_0p5Ah": 11694,
+   "session_vmax_gap_mV_p10_med_p90": [
+    -127.00000953674318,
+    135.99999046325672,
+    180.99999046325667
+   ],
+   "within_25mV": 1614,
+   "within_50mV": 1636,
+   "within_100mV": 2154,
+   "hist20_7d": 11599,
+   "primary_7d_25mV": 1599,
+   "primary_7d_25mV_vehicles": 106,
+   "primary_7d_50mV": 1621,
+   "primary_7d_50mV_vehicles": 106,
+   "primary_7d_100mV": 2136,
+   "primary_7d_100mV_vehicles": 161,
+   "hist20_30d": 11599,
+   "primary_30d_25mV": 1599,
+   "primary_30d_25mV_vehicles": 106,
+   "primary_30d_50mV": 1621,
+   "primary_30d_50mV_vehicles": 106,
+   "primary_30d_100mV": 2136,
+   "primary_30d_100mV_vehicles": 161,
+   "hist20_90d": 11599,
+   "primary_90d_25mV": 1599,
+   "primary_90d_25mV_vehicles": 106,
+   "primary_90d_50mV": 1621,
+   "primary_90d_50mV_vehicles": 106,
+   "primary_90d_100mV": 2136,
+   "primary_90d_100mV_vehicles": 161
+  }
+ },
+ "DTI": {
+  "vehicles": 77,
+  "rows": 3257610,
+  "valid_frames": 3257610,
+  "charge_frames": 1189277,
+  "corr_dsoc_Ic_median": 0.4559206340922337,
+  "rows_per_vehicle_p10_med_p90": [
+   4768.800000000003,
+   48179.0,
+   62724.0
+  ],
+  "steps_ge_0.2C_per_vehicle_p10_med_p90": [
+   379.2000000000002,
+   9855.0,
+   12240.400000000001
+  ],
+  "steps_ge_0.3C_per_vehicle_p10_med_p90": [
+   248.20000000000016,
+   6040.0,
+   7982.400000000001
+  ],
+  "steps_ge_0.5C_per_vehicle_p10_med_p90": [
+   82.80000000000004,
+   1778.0,
+   3362.6000000000004
+  ],
+  "calibration": {
+   "sessions_ge_0p5Ah": 11538,
+   "session_vmax_gap_mV_p10_med_p90": [
+    29.99984741210948,
+    372.99984741210943,
+    568.9998474121091
+   ],
+   "within_25mV": 1137,
+   "within_50mV": 1205,
+   "within_100mV": 1604,
+   "hist20_7d": 11498,
+   "primary_7d_25mV": 1120,
+   "primary_7d_25mV_vehicles": 34,
+   "primary_7d_50mV": 1188,
+   "primary_7d_50mV_vehicles": 34,
+   "primary_7d_100mV": 1582,
+   "primary_7d_100mV_vehicles": 34,
+   "hist20_30d": 11498,
+   "primary_30d_25mV": 1120,
+   "primary_30d_25mV_vehicles": 34,
+   "primary_30d_50mV": 1188,
+   "primary_30d_50mV_vehicles": 34,
+   "primary_30d_100mV": 1582,
+   "primary_30d_100mV_vehicles": 34,
+   "hist20_90d": 11498,
+   "primary_90d_25mV": 1120,
+   "primary_90d_25mV_vehicles": 34,
+   "primary_90d_50mV": 1188,
+   "primary_90d_50mV_vehicles": 34,
+   "primary_90d_100mV": 1582,
+   "primary_90d_100mV_vehicles": 34
+  },
+  "evaluation": {
+   "sessions_ge_0p5Ah": 12461,
+   "session_vmax_gap_mV_p10_med_p90": [
+    29.99984741210948,
+    365.9998474121093,
+    562.9998474121094
+   ],
+   "within_25mV": 1235,
+   "within_50mV": 1312,
+   "within_100mV": 1720,
+   "hist20_7d": 12414,
+   "primary_7d_25mV": 1214,
+   "primary_7d_25mV_vehicles": 35,
+   "primary_7d_50mV": 1291,
+   "primary_7d_50mV_vehicles": 35,
+   "primary_7d_100mV": 1694,
+   "primary_7d_100mV_vehicles": 35,
+   "hist20_30d": 12414,
+   "primary_30d_25mV": 1214,
+   "primary_30d_25mV_vehicles": 35,
+   "primary_30d_50mV": 1291,
+   "primary_30d_50mV_vehicles": 35,
+   "primary_30d_100mV": 1694,
+   "primary_30d_100mV_vehicles": 35,
+   "hist20_90d": 12414,
+   "primary_90d_25mV": 1214,
+   "primary_90d_25mV_vehicles": 35,
+   "primary_90d_50mV": 1291,
+   "primary_90d_50mV_vehicles": 35,
+   "primary_90d_100mV": 1694,
+   "primary_90d_100mV_vehicles": 35
+  }
+ },
+ "frozen": {
+  "QAS": {
+   "V_lim_V": 3.509999990463257,
+   "Q_ref_Ah": 84.40714285714357,
+   "n_q_segments_cal": 3229,
+   "q_ratio_p10_p90": [
+    79.392715617716,
+    89.62956235945367
+   ]
+  },
+  "DTI": {
+   "V_lim_V": 4.159999847412109,
+   "Q_ref_Ah": 140.611111111111,
+   "n_q_segments_cal": 1537,
+   "q_ratio_p10_p90": [
+    125.87009983856613,
+    150.41883915319093
+   ]
+  }
+ }
+}

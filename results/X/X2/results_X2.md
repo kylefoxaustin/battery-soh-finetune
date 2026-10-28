@@ -203,3 +203,14 @@ All were fixed in the code before any result was read.
 **Board.** None. The primary verdict is NO BENEFIT, so §7 is not triggered.
 
 **Licences:** X2-C (Changan) is **CC BY-NC-SA 4.0, non-commercial**. X2-M and X2-B are CC BY 4.0.
+
+## Addendum (2026-10-28): X2-C does not confirm the +5.5 %
+
+See [`../X2C/results_X2C.md`](../X2C/results_X2C.md). The pre-registered confirmation ran on new data: Beihang QAS,
+CC BY 4.0, with κ calibrated on held-out vehicles.
+
+- **Verdict: NOT INTERPRETABLE.** Held-out unsafe frames were 0.24 %, against a bar of 0.2 %.
+- **The shuffle control failed.** Assigning each cell another cell's R gave a **larger** S than the true assignment:
+  11.7 % against 10.8 %.
+- **So the comparison in this file rewards the per-cell limiter's lack of margin, not knowledge of which cell is
+  worst.** The +5.5 % above should be read as margin asymmetry. X2 itself ran no shuffle control.
