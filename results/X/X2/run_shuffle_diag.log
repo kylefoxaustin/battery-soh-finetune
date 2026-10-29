@@ -1,0 +1,27 @@
+{
+ "tag": "DERIVED, POST-HOC diagnostic on seen Changan data (CC BY-NC-SA 4.0); limits ASSUMED",
+ "kappa_mm": 1.65,
+ "n_sessions": 75905,
+ "n_vehicles": 290,
+ "S_median": 0.0553444959789261,
+ "S_CI": [
+  0.046529337591450434,
+  0.06407918700677845
+ ],
+ "S_shuffle_median": 0.06018680363449591,
+ "S_shuffle_CI": [
+  0.05239785992516726,
+  0.06725120363023819
+ ],
+ "paired_S_minus_shuffle_median": 0.0,
+ "paired_CI": [
+  0.0,
+  0.0
+ ],
+ "mm_unsafe_vs_true_frac": 0.004042296579451437,
+ "shuffle_unsafe_vs_true_frac": 0.3021585459474141,
+ "warm_S_median": 0.056324362632641956,
+ "warm_S_shuffle_median": 0.06099344476866453,
+ "cold_S_median": 0.0,
+ "cold_S_shuffle_median": 0.0
+}

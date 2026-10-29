@@ -214,3 +214,21 @@ CC BY 4.0, with κ calibrated on held-out vehicles.
   11.7 % against 10.8 %.
 - **So the comparison in this file rewards the per-cell limiter's lack of margin, not knowledge of which cell is
   worst.** The +5.5 % above should be read as margin asymmetry. X2 itself ran no shuffle control.
+
+### Shuffle diagnostic on Changan (2026-10-28, POST-HOC, seen data)
+
+Run at Kyle's request after X2-C. Code: `analysis/X2_shuffle_diag.py`. Output: `x2_shuffle_diag.json`. It re-scores
+the subset above (all sessions with history) at X2's κ_mm 1.65, M1 mapping, with each vehicle's R_k vector permuted
+once (`default_rng(car)`), exactly as X2-C did. All numbers are **DERIVED**; limits are **ASSUMED**. It is a
+diagnostic on data already seen, not a test.
+
+| All sessions with history (75,905 sessions, 290 vehicles) | Median S | Vehicle-bootstrap CI |
+|---|---|---|
+| Real per-cell R (reproduces the +5.5 % above exactly) | **+5.5 %** | 4.7–6.4 % |
+| **R_k shuffled across cells** | **+6.0 %** | 5.2–6.7 % |
+| Paired, real minus shuffled | **0.0 pp** | 0.0–0.0 |
+
+- The shuffled limiter exceeds the true per-cell limiter in **30 %** of frames, yet gains as much or more.
+- Warm sessions: 5.6 % real against 6.1 % shuffled. Cold sessions: 0 % for both.
+- **The +5.5 % is margin asymmetry, as X2-C indicated.** Knowing which cell has which R contributes nothing measurable
+  in this comparison.
