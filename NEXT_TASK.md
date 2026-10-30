@@ -19,4 +19,4 @@ Status line.
 ## When you finish
 Edit only the **Status** line below to `DONE <commit-hash>` or `BLOCKED: <one-line reason>`, then commit and push.
 
-**Status:** OPEN
+**Status:** DONE ddac35c (dossier row citing the X6 review; stopped, no new experiment)
