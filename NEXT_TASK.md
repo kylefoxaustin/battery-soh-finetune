@@ -34,4 +34,4 @@ added to `results/X/README.md` and `results/RESEARCH_DOSSIER.md` §9. Plan: `bri
 ## When you finish
 Edit only the **Status** line below to `DONE <commit-hash>` or `BLOCKED: <one-line reason>`, then commit and push.
 
-**Status:** OPEN
+**Status:** BLOCKED: storage gate — eMMC partition 555 MB free, SD 7.9 GB, need ≥ 12 GB (census 2c797f3; 20.2 GB unallocated on the eMMC)
