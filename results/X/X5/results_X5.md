@@ -5,7 +5,7 @@ coupling; an upper bound on what per-cell history can do.* Licence: ISU-ILCC **C
 
 | | |
 |---|---|
-| **Pre-registration** | [`../X5_preregistration.md`](../X5_preregistration.md): `059b818`, reviewer-approved, with D-1 and D-2 committed before estimator code at `bd7a2af` |
+| **Pre-registration** | [`../X5_preregistration.md`](../X5_preregistration.md): `059b818`, reviewer-approved, with D-1 and D-2 committed before estimator code at `624e4ee` |
 | **Code** | `analysis/X5_estimate.py` |
 | **Outputs** | `x5.json`, `x5_targets_full.csv`, `x5_plots.png` |
 | **Tags** | Every number is **DERIVED** from **MEASURED** lab labels (RPT C/5 capacity, label noise 0.24 %). The reserve is a statistic of prediction error. It is not a kWh, cost, range or regulatory figure. |
@@ -145,7 +145,7 @@ cells.*
 
 ## Deviations and run notes
 
-- **D-1, D-2:** reviewer additions, committed before estimator code (`bd7a2af`).
+- **D-1, D-2:** reviewer additions, committed before estimator code (`624e4ee`).
 - **D-3 (alignment, found while coding, before any run).** In groups 20–29, `Q_interpolated` has one more column than
   `capacity_fade`. The extra column is entirely empty: the week-4 RPT the dataset README lists as lost. Dropping
   all-empty columns aligns every cell, and max Q(V) then matches the measured capacity within 0.1 % (median). No unit
