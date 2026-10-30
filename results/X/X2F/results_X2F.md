@@ -137,3 +137,54 @@ variants are as pre-registered.
 No other changes. All thresholds were applied as pre-registered.
 
 **Licence:** Beihang is CC BY 4.0, so these results are commercially citable.
+
+## Addendum (2026-10-29): fine κ grid (EXPLORATORY, POST-HOC, not a test)
+
+**Purpose.** X2-F's S jumped with the 0.05 κ grid. This addendum re-runs X2-F's base definitions **unchanged** on a
+**0.01** grid (1.00–2.00) to size the gain. The data had already been seen twice, so **nothing here is a result**. It
+only informs whether a confirmation on new data is worth seeking.
+
+| | |
+|---|---|
+| Code | `analysis/X2F_finegrid.py` |
+| Output | `x2f_finegrid.json` |
+| Tags | All numbers **DERIVED**; limits **ASSUMED** |
+
+**QAS evaluation half, primary population (1,607 sessions, 106 vehicles).** κ is calibrated on the calibration half at
+each tolerance.
+
+| Calibration tolerance | κ mm / cell / sh | Held-out unsafe, mm / cell / sh (%) | S | S_sh | D |
+|---|---|---|---|---|---|
+| 0.01 % | 1.39 / 1.16 / 1.27 | **0.14 / 0 / 0.004**: all under the 0.2 % bar | **+2.5 %** (CI 2.1–2.8) | −3.2 % | **+6.0 pp** (5.7–6.2) |
+| 0.05 % | 1.35 / 1.12 / 1.21 | 0.24 / 0.004 / 0.04 | +2.9 % (2.6–3.2) | −1.7 % | +4.9 pp |
+| 0.1 % (X2-F rule) | 1.32 / 1.09 / 1.18 | 0.29 / 0.06 / 0.08 | +3.2 % (2.9–3.6) | −1.5 % | +5.0 pp |
+| 0.2 % | 1.31 / 1.07 / 1.15 | 0.30 / 0.14 / 0.15 | +4.0 % (3.6–4.3) | −0.1 % | +4.4 pp |
+| **ORACLE**: each κ picked on the evaluation half at ≤ 0.1 % | 1.40 / 1.08 / 1.17 | ≤ 0.1 % each, by construction | +8.1 % (7.7–8.4) | +3.3 % | +4.8 pp |
+
+**Readings:**
+
+- **The 0.05 grid understated the gain where everything is safe.** X2-F's +0.6 % at tolerance 0.01 % came from κ_c
+  rounding up from 1.16 to 1.20. At 0.01 resolution, with all three limiters held-out safe, S is **about +2.5 %** and
+  D is **+6.0 pp**.
+- **Across tolerances, S is +2.5 % to +4.0 %, and D is +4.4 to +6.0 pp. Both are stable.**
+- **Min/max's margin still fails to transfer** at every tolerance of 0.05 % or above.
+  - The ORACLE row shows what equal **held-out** safety would give: about +8 %.
+  - It is not a fair estimate, because κ was picked on the scored half. It bounds the effect of min/max's margin
+    not transferring.
+- **Scope.** These figures are the primary population only: top-of-charge sessions, about 14 % of QAS sessions.
+  - Over all evaluation history sessions, S is +1.5 % (tolerance 0.01 %) to +2.1 % (tolerance 0.1 %).
+  - Above V_lim, S is +2.6 % to 3.3 %. Within 50 mV below V_lim, it is +0.6 % to 0.9 %.
+
+**DTI (NMC-like).** S is +0.5 % to +1.0 % and D is +0.1 to +0.7 pp at all tolerances; the oracle gives S +0.9 %. The
+binding cell is the max-V cell in about 87–89 % of frames. **Essentially no effect.**
+
+**What this says about a confirmation (EXPLORATORY).**
+
+- On an LFP-like fleet, the effect looks like **about +2.5 % to +4 %** more admitted current near top of charge, with a
+  robust mechanism (D of about 5 pp).
+- On NMC-like DTI it is near zero.
+- A confirmation would need **new LFP-like fleet data** with frequent current steps and synchronous cell-voltage and
+  current sampling. Its pre-registration should fix:
+  - a 0.01 κ grid;
+  - calibration tolerance 0.01 %;
+  - the X2-F design, unchanged otherwise.

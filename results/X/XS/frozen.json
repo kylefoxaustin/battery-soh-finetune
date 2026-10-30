@@ -1,0 +1,6 @@
+{
+ "V_lim_mV": 3650.0,
+ "V_lim_uncapped_p99.5_mV": 3762.0,
+ "Q_ref_Ah": 160.0,
+ "tag": "ASSUMED limits; V_lim from calibration half only; Q_ref SOURCED (README)"
+}

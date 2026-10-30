@@ -1,0 +1,74 @@
+[
+ [
+  "BASE  age 0.5, 45 C",
+  {
+   "tierA": 0.0,
+   "tierB": 9.48,
+   "static": 0.02,
+   "oracle_eff": 97.884
+  }
+ ],
+ [
+  "Tier A refresh 5 s",
+  {
+   "tierA": 3.96,
+   "tierB": 9.48,
+   "static": 0.02,
+   "oracle_eff": 97.884
+  }
+ ],
+ [
+  "Tier A refresh 10 s",
+  {
+   "tierA": 6.02,
+   "tierB": 9.48,
+   "static": 0.02,
+   "oracle_eff": 97.884
+  }
+ ],
+ [
+  "Tier B refresh 30 s, no delay",
+  {
+   "tierA": 0.0,
+   "tierB": 8.41,
+   "static": 0.02,
+   "oracle_eff": 97.884
+  }
+ ],
+ [
+  "Tier B refresh 10 s, 10 s delay",
+  {
+   "tierA": 0.0,
+   "tierB": 8.96,
+   "static": 0.02,
+   "oracle_eff": 97.884
+  }
+ ],
+ [
+  "Tier B refresh 60 s, 60 s delay",
+  {
+   "tierA": 0.0,
+   "tierB": 8.95,
+   "static": 0.02,
+   "oracle_eff": 97.884
+  }
+ ],
+ [
+  "Sensor noise 5 C",
+  {
+   "tierA": 0.0,
+   "tierB": 9.48,
+   "static": 0.02,
+   "oracle_eff": 97.884
+  }
+ ],
+ [
+  "EOL age 1.0, 45 C",
+  {
+   "tierA": 0.0,
+   "tierB": 9.96,
+   "static": 0.09,
+   "oracle_eff": 97.799
+  }
+ ]
+]

@@ -1,0 +1,47 @@
+{
+ "C1_degradation_sizing_usd_per_K": {
+  "p10": 24.2,
+  "p50": 55.1,
+  "p90": 118.1
+ },
+ "C1_warranty_usd_per_K": {
+  "p10": 0.8,
+  "p50": 2.5,
+  "p90": 6.7
+ },
+ "C1_total_usd_per_K": {
+  "p10": 25.6,
+  "p50": 58.0,
+  "p90": 123.7
+ },
+ "C1_share_in_50_to_200": 0.586,
+ "C1_fade_saved_pct_capacity_per_K": {
+  "p10": 0.2,
+  "p50": 0.4,
+  "p90": 0.8
+ },
+ "C2A_uncertainty_reserve_20to5_usd": {
+  "p10": 1405.8,
+  "p50": 1701.0,
+  "p90": 1997.3
+ },
+ "C2A_kwh_saved_20to5": 14.8,
+ "C2A_uncertainty_reserve_20to10_usd": {
+  "p10": 989.2,
+  "p50": 1197.0,
+  "p90": 1405.5
+ },
+ "C2A_precision_gain_needed_x": 4.0,
+ "C2B_durability_reserve_fade_cut_needed_x": 4.0,
+ "C2B_share_reachable_with_15K_cooler": 0.0,
+ "C3_two_ecus_usd": {
+  "p10": 131.8,
+  "p50": 148.3,
+  "p90": 164.9
+ },
+ "C3_mass_value_usd": {
+  "p10": 3.0,
+  "p50": 4.3,
+  "p90": 5.8
+ }
+}
