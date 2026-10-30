@@ -1,0 +1,103 @@
+
+### 1. kernel
+$ uname -a
+Linux imx95evk 6.18.20-2.0.0-gb096ce610e95 #1 SMP PREEMPT Tue Jun  9 02:25:20 UTC 2026 aarch64 GNU/Linux
+
+### 1. online cores
+$ cat /sys/devices/system/cpu/online; nproc
+0-5
+6
+
+### 1. max freq and governor per core (before pinning)
+$ for c in /sys/devices/system/cpu/cpu[0-9]*; do echo "$(basename $c) max_khz=$(cat $c/cpufreq/cpuinfo_max_freq) gov=$(cat $c/cpufreq/scaling_governor)"; done
+cpu0 max_khz=1800000 gov=performance
+cpu1 max_khz=1800000 gov=performance
+cpu2 max_khz=1800000 gov=performance
+cpu3 max_khz=1800000 gov=performance
+cpu4 max_khz=1800000 gov=performance
+cpu5 max_khz=1800000 gov=performance
+
+### 2. memory
+$ grep -E 'MemTotal|MemFree|MemAvailable|HugePages_Total|HugePages_Free|Hugepagesize|CmaTotal|CmaFree' /proc/meminfo
+MemTotal:       16097084 kB
+MemFree:        14263004 kB
+MemAvailable:   15318620 kB
+CmaTotal:        5177344 kB
+CmaFree:         5112876 kB
+HugePages_Total:       0
+HugePages_Free:        0
+Hugepagesize:       2048 kB
+
+### 2. THP
+$ cat /sys/kernel/mm/transparent_hugepage/enabled /sys/kernel/mm/transparent_hugepage/defrag
+[always] madvise never
+always defer defer+madvise [madvise] never
+
+### 2. anonymous mapping test (MAP_POPULATE, then MAP_HUGETLB), 512 MB and 2 GB; released
+$ timeout -k 10 120 python3 - <<'EOF'
+import mmap, time
+for mb in (512, 2048):
+    for lab, fl in (('POPULATE', mmap.MAP_PRIVATE | mmap.MAP_ANONYMOUS | getattr(mmap, 'MAP_POPULATE', 0x8000)),
+                    ('HUGETLB+POPULATE', mmap.MAP_PRIVATE | mmap.MAP_ANONYMOUS | 0x40000 | getattr(mmap, 'MAP_POPULATE', 0x8000))):
+        t = time.perf_counter()
+        try:
+            m = mmap.mmap(-1, mb << 20, flags=fl)
+            m[0:1] = b'x'; m[-1:] = b'x'
+            print(f'{mb} MB {lab}: OK in {time.perf_counter() - t:.2f} s'); m.close()
+        except OSError as e:
+            print(f'{mb} MB {lab}: FAILED ({e})')
+EOF
+512 MB POPULATE: OK in 0.04 s
+512 MB HUGETLB+POPULATE: FAILED ([Errno 12] Cannot allocate memory)
+2048 MB POPULATE: OK in 0.18 s
+2048 MB HUGETLB+POPULATE: FAILED ([Errno 12] Cannot allocate memory)
+
+### 3. block devices
+$ lsblk -o NAME,SIZE,TYPE,MOUNTPOINT,ROTA
+NAME          SIZE TYPE MOUNTPOINT                ROTA
+mmcblk0      29.6G disk                              0
+|-mmcblk0p1   256M part /run/media/boot-mmcblk0p1    0
+`-mmcblk0p2  10.6G part /run/media/root-mmcblk0p2    0
+mmcblk0boot0 31.5M disk                              0
+mmcblk0boot1 31.5M disk                              0
+mmcblk1        58G disk                              0
+|-mmcblk1p1   256M part /run/media/boot-mmcblk1p1    0
+`-mmcblk1p2  57.7G part /                            0
+
+### 3. mmc identity
+$ for d in /sys/block/mmcblk[0-9]; do echo "$d type=$(cat $d/device/type) name=$(cat $d/device/name) sectors=$(cat $d/size) cid=$(cat $d/device/cid)"; done
+/sys/block/mmcblk0 type=MMC name=0IM20E sectors=62160896 cid=13014e30494d3230451035839a019c00
+/sys/block/mmcblk1 type=SD name=SD64G sectors=121634816 cid=275048534436344760da30750e018a00
+
+### 3. filesystems, mount options, free space
+$ df -h / /run/media/root-mmcblk0p2 /tmp; mount | grep -E 'mmcblk|/tmp'
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        56G   46G  7.9G  86% /
+/dev/mmcblk0p2   11G  9.1G  555M  95% /run/media/root-mmcblk0p2
+tmpfs           7.7G  110M  7.6G   2% /tmp
+/dev/mmcblk1p2 on / type ext4 (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,size=8048544k,nr_inodes=1048576)
+/dev/mmcblk0p1 on /run/media/boot-mmcblk0p1 type vfat (rw,relatime,gid=6,fmask=0007,dmask=0007,allow_utime=0020,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+/dev/mmcblk1p1 on /run/media/boot-mmcblk1p1 type vfat (rw,relatime,gid=6,fmask=0007,dmask=0007,allow_utime=0020,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+/dev/mmcblk0p2 on /run/media/root-mmcblk0p2 type ext4 (rw,relatime)
+
+### 3. eMMC partition table and unallocated space
+$ parted -s /dev/mmcblk0 unit GB print free
+Model: MMC 0IM20E (sd/mmc)
+Disk /dev/mmcblk0: 31.8GB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+Disk Flags: 
+
+Number  Start   End     Size    Type     File system  Flags
+        0.00GB  0.01GB  0.01GB           Free Space
+ 1      0.01GB  0.28GB  0.27GB  primary  fat16        boot, lba
+ 2      0.28GB  11.7GB  11.4GB  primary  ext4
+        11.7GB  31.8GB  20.2GB           Free Space
+
+
+### census before baselines (CPU delta over 10 s, binaries by /proc/PID/exe)
+$ python3 board/census.py --interval 10 --json out/census_before.json
+census interval=10.1s procs=201 loadavg=['0.17', '0.06', '0.02']
+  no process > 0.5% of a core over the interval (self excluded)
+governor pinned: performance -> performance

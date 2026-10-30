@@ -1,0 +1,2 @@
+census interval=10.1s procs=201 loadavg=['0.52', '0.18', '0.06']
+  no process > 0.5% of a core over the interval (self excluded)

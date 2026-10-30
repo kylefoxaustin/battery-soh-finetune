@@ -1,0 +1,1 @@
+{"n": 96, "p": 32, "frames": 10000, "updates_timed": 100000, "lat_ns_p50": 1500, "lat_ns_p99": 3208, "lat_ns_max": 67417, "lat_ns_mean": 1636.2, "sustained_updates_per_s": 634942, "state_bytes": 968, "state_bytes_per_cell": 10, "lut_bytes": 13608, "frame_buffer_bytes": 2600000, "rss_start_kb": 1236, "rss_before_state_kb": 3928, "rss_end_kb": 4788, "hwm_kb": 4788, "sink": 1.0}
