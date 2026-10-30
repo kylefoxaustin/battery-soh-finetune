@@ -120,8 +120,7 @@ manufacturer's own call. **We have not ruled out the third reading, and we now t
 
 ### 2.1 The shared real-time control engine
 
-- Several small vector cores, each running a power-conversion control interrupt at about **1 µs** (the previous
-  generation managed 5.5–7 µs).
+- Several small vector cores, each running a power-conversion control interrupt at about **1 µs** (earlier designs managed roughly 5–7 µs).
 - High-resolution PWM (~100 ps edge placement) and fast ADCs.
 - About **4 million control interrupts per second** in total.
 - The engine can **"farm"** its own telemetry: copy a fraction of each interrupt's data out by DMA without disturbing
