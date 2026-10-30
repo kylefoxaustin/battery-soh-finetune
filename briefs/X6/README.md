@@ -2,15 +2,22 @@
 
 **Licence of this document:** public domain (CC0).
 
-> ## ▶ START HERE — instructions for the session running this repo
+> ## ▶ START HERE (updated 2026-10-30): X6 is APPROVED, run it now
 >
-> 1. `git pull` on `main`. First, finish the one housekeeping fix in `briefs/X5/REVIEW_RESULTS.md` §3 if not done.
-> 2. Read this brief in full, then `results/X/X5/results_X5.md`.
-> 3. Do **§3 (profile and knee definition) only**, then write `results/X/X6_preregistration.md` and
->    `results/X/X6_profile.md`. **Commit both before any forecasting code exists.** Message must say "before
->    forecasting code".
-> 4. **Stop and push for review.** Do not write `analysis/X6_forecast.py` until the reviewer approves.
-> 5. Reuse X5's data (ISU-ILCC, already in `data/raw/isu_ilcc`), split (`X5/split.json`) and estimators unchanged.
+> 1. `git pull` on `main`.
+> 2. Read [`briefs/X6/REVIEW_DECISION.md`](REVIEW_DECISION.md). X6 is approved as pre-registered (`2188950`), with
+>    the reported additions R-1 and R-2.
+> 3. Commit R-1 and R-2 as deviations **D-1 and D-2** in `results/X/X6_preregistration.md`. The commit message must
+>    contain "before forecasting code".
+> 4. Write and run `analysis/X6_forecast.py` exactly as pre-registered, plus R-1 and R-2.
+> 5. Commit `results/X/X6/results_X6.md` (verdict first, with the coupling caveat and licence), `x6.json`, the plots,
+>    and the `results/X/README.md` and `results/RESEARCH_DOSSIER.md` updates.
+> 6. Set the Status line in [`NEXT_TASK.md`](../../NEXT_TASK.md) to `DONE <commit-hash>`, then **stop and push**.
+>    Do not start any other experiment.
+
+---
+
+> *Superseded first-stage instructions (profile and pre-registration only, then stop) are done: `2188950`.*
 
 ---
 

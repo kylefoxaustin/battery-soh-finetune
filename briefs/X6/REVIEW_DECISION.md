@@ -1,3 +1,18 @@
+> ## ▶ START HERE (updated 2026-10-30): X6 is APPROVED, run it now
+>
+> 1. `git pull` on `main`.
+> 2. Read [`briefs/X6/REVIEW_DECISION.md`](REVIEW_DECISION.md). X6 is approved as pre-registered (`2188950`), with
+>    the reported additions R-1 and R-2.
+> 3. Commit R-1 and R-2 as deviations **D-1 and D-2** in `results/X/X6_preregistration.md`. The commit message must
+>    contain "before forecasting code".
+> 4. Write and run `analysis/X6_forecast.py` exactly as pre-registered, plus R-1 and R-2.
+> 5. Commit `results/X/X6/results_X6.md` (verdict first, with the coupling caveat and licence), `x6.json`, the plots,
+>    and the `results/X/README.md` and `results/RESEARCH_DOSSIER.md` updates.
+> 6. Set the Status line in [`NEXT_TASK.md`](../../NEXT_TASK.md) to `DONE <commit-hash>`, then **stop and push**.
+>    Do not start any other experiment.
+
+---
+
 # X6 reviewer decision: APPROVED (2026-10-30)
 
 Approves `2188950`: the knee definition (H = 2, T = 5 %, 2× rate rule), the profile, the pre-registration and
