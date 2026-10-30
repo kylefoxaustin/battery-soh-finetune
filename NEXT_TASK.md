@@ -29,4 +29,4 @@ Status line.
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN
+**Status:** AWAITING APPROVAL 8a468ad
