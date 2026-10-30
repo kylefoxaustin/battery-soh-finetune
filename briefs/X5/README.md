@@ -1,3 +1,9 @@
+> ## ▶ UPDATE 2026-10-30 — the audit and pre-registration have been reviewed
+> **Read [`REVIEW_DECISION.md`](REVIEW_DECISION.md) first.** X5 is approved with two deviations (D-1, D-2). It also
+> records a correction to X4's reserve tail. The brief below is unchanged and kept for the record.
+
+---
+
 # Build Brief — Experiment X5: can per-cell history shrink an uncertainty reserve? (clean-label test)
 
 **Licence of this document:** public domain (CC0). Copy, modify and redistribute freely.
