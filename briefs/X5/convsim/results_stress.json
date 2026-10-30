@@ -1,0 +1,48 @@
+{
+ "cold -10 C, new": {
+  "tierA": 0.0,
+  "tierB": 9.55,
+  "static": 0.93,
+  "Tj": [
+   -0.6,
+   6.2
+  ]
+ },
+ "cold -10 C, EOL": {
+  "tierA": 0.0,
+  "tierB": 8.09,
+  "static": 0.19,
+  "Tj": [
+   -0.2,
+   7.5
+  ]
+ },
+ "hot 70 C ambient, EOL": {
+  "tierA": 0.0,
+  "tierB": 11.09,
+  "static": 0.29,
+  "Tj": [
+   79.9,
+   90.5
+  ]
+ },
+ "base 45 C, EOL": {
+  "tierA": 0.0,
+  "tierB": 9.96,
+  "static": 0.09,
+  "Tj": [
+   54.9,
+   64.6
+  ]
+ },
+ "AGGRESSIVE ageing, EOL, 45 C": {
+  "tierA": 0.0,
+  "tierB": 12.96,
+  "static": 0.99
+ },
+ "AGGRESSIVE ageing, EOL, -10 C": {
+  "tierA": 0.0,
+  "tierB": 9.52,
+  "static": 0.06
+ }
+}

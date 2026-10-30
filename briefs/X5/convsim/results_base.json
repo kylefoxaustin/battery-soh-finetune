@@ -1,0 +1,152 @@
+{
+ "age0.0_amb25": {
+  "eff_pct": {
+   "oracle": 98.034,
+   "tierA": 98.034,
+   "tierB": 97.8779,
+   "static": 98.031
+  },
+  "loss_Wh_per_cycle": {
+   "oracle": 6.114,
+   "tierA": 6.114,
+   "tierB": 6.61,
+   "static": 6.123
+  },
+  "excess_loss_vs_oracle_pct": {
+   "oracle": 0.0,
+   "tierA": 0.0,
+   "tierB": 8.11,
+   "static": 0.16
+  },
+  "Tj_C": [
+   34.8,
+   42.3
+  ]
+ },
+ "age0.0_amb45": {
+  "eff_pct": {
+   "oracle": 97.9699,
+   "tierA": 97.9699,
+   "tierB": 97.7965,
+   "static": 97.9698
+  },
+  "loss_Wh_per_cycle": {
+   "oracle": 6.317,
+   "tierA": 6.317,
+   "tierB": 6.869,
+   "static": 6.317
+  },
+  "excess_loss_vs_oracle_pct": {
+   "oracle": 0.0,
+   "tierA": 0.0,
+   "tierB": 8.73,
+   "static": 0.0
+  },
+  "Tj_C": [
+   54.8,
+   62.9
+  ]
+ },
+ "age0.5_amb25": {
+  "eff_pct": {
+   "oracle": 97.9543,
+   "tierA": 97.9543,
+   "tierB": 97.7785,
+   "static": 97.9542
+  },
+  "loss_Wh_per_cycle": {
+   "oracle": 6.367,
+   "tierA": 6.367,
+   "tierB": 6.927,
+   "static": 6.367
+  },
+  "excess_loss_vs_oracle_pct": {
+   "oracle": 0.0,
+   "tierA": 0.0,
+   "tierB": 8.79,
+   "static": 0.0
+  },
+  "Tj_C": [
+   34.8,
+   43.1
+  ]
+ },
+ "age0.5_amb45": {
+  "eff_pct": {
+   "oracle": 97.8842,
+   "tierA": 97.8842,
+   "tierB": 97.6882,
+   "static": 97.8838
+  },
+  "loss_Wh_per_cycle": {
+   "oracle": 6.59,
+   "tierA": 6.59,
+   "tierB": 7.215,
+   "static": 6.591
+  },
+  "excess_loss_vs_oracle_pct": {
+   "oracle": 0.0,
+   "tierA": 0.0,
+   "tierB": 9.48,
+   "static": 0.02
+  },
+  "Tj_C": [
+   54.8,
+   63.8
+  ]
+ },
+ "age1.0_amb25": {
+  "eff_pct": {
+   "oracle": 97.8772,
+   "tierA": 97.8772,
+   "tierB": 97.6796,
+   "static": 97.8768
+  },
+  "loss_Wh_per_cycle": {
+   "oracle": 6.612,
+   "tierA": 6.612,
+   "tierB": 7.242,
+   "static": 6.613
+  },
+  "excess_loss_vs_oracle_pct": {
+   "oracle": 0.0,
+   "tierA": 0.0,
+   "tierB": 9.53,
+   "static": 0.02
+  },
+  "Tj_C": [
+   34.8,
+   43.9
+  ]
+ },
+ "age1.0_amb45": {
+  "eff_pct": {
+   "oracle": 97.7992,
+   "tierA": 97.7992,
+   "tierB": 97.5854,
+   "static": 97.7972
+  },
+  "loss_Wh_per_cycle": {
+   "oracle": 6.861,
+   "tierA": 6.861,
+   "tierB": 7.544,
+   "static": 6.867
+  },
+  "excess_loss_vs_oracle_pct": {
+   "oracle": 0.0,
+   "tierA": 0.0,
+   "tierB": 9.96,
+   "static": 0.09
+  },
+  "Tj_C": [
+   54.9,
+   64.6
+  ]
+ },
+ "_meta": {
+  "cycle": "WLTC class 3b (JRC wltp, EUPL)",
+  "km": 23.27,
+  "load_W_p50": 537.0987291259253,
+  "note": "All component values ASSUMED. Converter-loss replay, not a vehicle measurement."
+ }
+}
