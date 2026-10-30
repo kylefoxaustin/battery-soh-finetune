@@ -6,14 +6,9 @@ Status line.
 ## Do these steps, in order
 
 1. `git pull` on `main`.
-2. Read [`briefs/X6/REVIEW_DECISION.md`](briefs/X6/REVIEW_DECISION.md). **X6 is approved** as pre-registered
-   (`2188950`), with the reported additions R-1 and R-2.
-3. Commit R-1 and R-2 as deviations **D-1 and D-2** in `results/X/X6_preregistration.md`, **before forecasting
-   code**. The commit message must contain "before forecasting code".
-4. Write and run `analysis/X6_forecast.py` exactly as pre-registered, plus R-1 and R-2.
-5. Commit `results/X/X6/results_X6.md` (verdict first, with the coupling caveat and licence), `x6.json`, the plots,
-   and the `results/X/README.md` and `results/RESEARCH_DOSSIER.md` updates.
-6. **Stop and push.** Do not start any other experiment.
+2. Read [`briefs/X6/REVIEW_RESULTS.md`](briefs/X6/REVIEW_RESULTS.md). **X6 is accepted and closed.**
+3. Optional: the one-row dossier update in its §3.
+4. **Stop.** There is no new experiment yet. Wait for the reviewer to replace this file.
 
 ## Rules that always apply
 - Pre-register before analysis code. Never move a threshold after seeing results. Number every deviation.
@@ -24,4 +19,4 @@ Status line.
 ## When you finish
 Edit only the **Status** line below to `DONE <commit-hash>` or `BLOCKED: <one-line reason>`, then commit and push.
 
-**Status:** DONE ec79131 (X6 D-1/D-2 2881c7b before forecasting code; results ec79131: UNCLEAR; stopped for review)
+**Status:** OPEN
