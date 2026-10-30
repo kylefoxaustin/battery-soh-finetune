@@ -24,4 +24,4 @@ Status line.
 ## When you finish
 Edit only the **Status** line below to `DONE <commit-hash>` or `BLOCKED: <one-line reason>`, then commit and push.
 
-**Status:** OPEN
+**Status:** DONE ec79131 (X6 D-1/D-2 2881c7b before forecasting code; results ec79131: UNCLEAR; stopped for review)
