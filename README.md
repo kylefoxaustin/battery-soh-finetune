@@ -1,5 +1,8 @@
 # battery-soh-finetune
 
+> ## ▶ Running this repo as an agent? Open [`NEXT_TASK.md`](NEXT_TASK.md) first and do what it says.
+> It always holds the current task and stop point. No separate prompt is needed.
+
 **Is on-device fine-tuning of a battery state-of-health (SoH) model feasible on an i.MX 95-class
 application processor — and is it worth doing?** Two studies, on real EV field data, with every number tagged
 by how it was obtained.
