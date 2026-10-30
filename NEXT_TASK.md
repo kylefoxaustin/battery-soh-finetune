@@ -24,4 +24,4 @@
 ## When you finish
 Edit only the **Status** line below to `DONE <commit-hash>` (or `BLOCKED: <one-line reason>`), commit, and push.
 
-**Status:** OPEN
+**Status:** DONE 2188950 (X5 hash fix 78d5956; X6 profile + pre-registration 2188950, before forecasting code; stopped for review)
