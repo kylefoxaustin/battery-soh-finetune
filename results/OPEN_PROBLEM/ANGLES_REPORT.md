@@ -234,6 +234,15 @@ temperature directly.
 **What kills it.** McMaster's 72 per-cell thermistors predicted within ~1 K by a lumped model, or by probe interpolation
 with a fixed margin. Then the mechanism is real but Tier M.
 
+> **Update 2026-10-30 (X7 profile, `8a468ad`).** Run as §C.4 to the profile stage and **closed UNDERPOWERED** without a
+> model: 3 of 14 McMaster runs reach a 3 K hot spot for ≥ 10 % of frames (gate 8); the thermistors read in 1 K steps;
+> a one-probe-per-three-cells view is never more than 1.0 K below the hottest cell; the hot spots sit at fixed, probed
+> positions. The mechanism is neither confirmed nor killed — it is **untestable on public data at this sensor
+> resolution**. Two corrections to this section's test design were made by the session and are kept: sensor resolution
+> and the raw probe-max gap belong in the profile gate, and the scored quantity must be the issued bound
+> `mean(T̂_hot + κ_T − T_hot)`, not κ_T alone, which a biased-high estimator earns for free.
+> See `results/X/X7_profile.md` and `results/X/X7_preregistration.md`.
+
 ### B.6 Anticipation on the 48 V side of the EV, where the load *is* predictable
 
 **Mechanism.** The brief says EV load steps are less predictable than GPU dispatch. True for traction; false for the 48 V

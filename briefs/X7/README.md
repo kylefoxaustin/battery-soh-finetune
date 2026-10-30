@@ -4,7 +4,23 @@
 ([`results/OPEN_PROBLEM/ANGLES_REPORT.md`](../../results/OPEN_PROBLEM/ANGLES_REPORT.md)), ranked first in
 [`briefs/NEXT_EXPERIMENTS/README.md`](../NEXT_EXPERIMENTS/README.md).
 
-> ## ▶ START HERE (first stage: profile and pre-registration only, then STOP)
+> ## ▶ CLOSED 2026-10-30 — UNDERPOWERED at the profile stage; reviewer accepted; do not run
+>
+> The first stage was done at `8a468ad` ([`results/X/X7_profile.md`](../../results/X/X7_profile.md),
+> [`results/X/X7_preregistration.md`](../../results/X/X7_preregistration.md)). The §3.5 power gate fails under any fold
+> assignment (3 of 14 McMaster runs reach a 3 K hot spot for ≥ 10 % of frames; 8 needed), and two structural facts cap
+> the recoverable margin at the decision bar regardless of the gate: the thermistors read in **1 K steps**, and a
+> one-probe-per-three-cells view is **never more than 1.0 K below the hottest cell** in any frame. The hot spots sit at
+> fixed, probed positions (cells 1, 28, 29). The reviewer agrees with the session's recommendation: **relaxing the gate
+> would not lift the ceiling**, so no observer is fitted. The question is not answerable on public data at this sensor
+> resolution (rule 9).
+>
+> **Kept from X7 for any future thermal brief:** (a) put sensor resolution and the raw probe-max gap in the profile gate,
+> because they can decide the experiment before any model exists; (b) score the **mean issued bound**
+> `B = mean(T̂_hot + κ_T − T_hot)`, not the margin κ_T alone, because a biased-high estimator earns κ_T = 0 for free
+> (X7-P1). The original first-stage instructions are kept below for the record.
+>
+> ## ▶ START HERE (superseded: first stage done; see the CLOSED box above)
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief end to end, then `results/X/README.md` (the McMaster corrections), `results/X/X2M2_preregistration.md`

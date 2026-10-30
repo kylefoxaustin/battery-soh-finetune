@@ -31,6 +31,13 @@ customer's C2 last, because its data is non-commercial.
 **What changes the roadmap most per hour:** B1 (a MEASURED capability number) and X7 (a CC BY mechanism number). **What
 bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 
+> **Status 2026-10-30.** **X7 is closed: UNDERPOWERED at the profile stage** (`8a468ad`; no observer fitted; see
+> `results/X/X7_profile.md`). The order is now **B1 → DC1 → X8 → FR1 → O1 → R1**, with FR1 and DC1 runnable in parallel
+> sessions. B1 has a full Build Brief at [`briefs/B1/README.md`](../B1/README.md). Two lessons from X7 apply to every
+> later brief: put the data's *resolution* (sensor quantisation, label noise, probe-max gap) in the profile gate, not
+> only its *spread*; and score the quantity a controller would act on (the issued bound, the admitted current), never a
+> margin alone.
+
 ---
 
 ## 1. How the reviewer starts one
@@ -47,8 +54,10 @@ Paste this into `NEXT_TASK.md`, replacing `<ID>` and the brief path, and set Sta
 After approval the reviewer edits the brief's START HERE box to "APPROVED, run it now" (as was done for X6), and the
 session runs exactly what was pre-registered, commits results, README and dossier updates, sets `DONE <hash>`, and stops.
 
-Only **X7** has a full Build Brief today: [`briefs/X7/README.md`](../X7/README.md). The others below are skeletons at the
-level of X6's §3–§4; promote one to a Build Brief before naming it in `NEXT_TASK.md`.
+**X7** ([`briefs/X7/README.md`](../X7/README.md), closed) and **B1** ([`briefs/B1/README.md`](../B1/README.md)) have full
+Build Briefs. The others below are skeletons at the level of X6's §3–§4; promote one to a Build Brief before naming it
+in `NEXT_TASK.md`. B1 is a capability measurement: its brief fixes the protocol in advance and lets the session continue
+from the census to the measurement without a stop when every census gate passes.
 
 ---
 
