@@ -131,3 +131,24 @@ match its capacity checks, P4 is not scored for that unit, and the unit is count
 
 Any change after this commit is a numbered deviation. Thresholds, W, warm-up, α, the model family and the split never
 move.
+
+**Reviewer decision (2026-10-30, `briefs/X5/REVIEW_DECISION.md`):** APPROVED as pre-registered (ISU-ILCC primary,
+split, P-1 to P-5), with D-1 and D-2 below. Both are committed **before any estimator code**.
+
+**D-1. End-of-first-life truncation is a co-primary readout.**
+
+- The full §5 verdict table is reported twice, side by side:
+  - (a) full life, as pre-registered;
+  - (b) each unit truncated at the first check where `U < 0.8·U_0`. The checks before it are kept; warm-up and target
+    rules are re-applied to the truncated unit.
+- The **headline verdict is (a)**. If (a) and (b) disagree, the first paragraph of `results_X5.md` says so.
+- If (b) leaves fewer than 40 evaluation targets, (b) is UNDERPOWERED. Nothing is relaxed.
+- This replaces the §7 "added" truncation sensitivity row. ρ for P1 and the P4 coefficients are refit on the
+  truncated calibration half for (b).
+
+**D-2. Reserve by spread (descriptive, no verdict).**
+
+- One table of the P3 and P1 reserve at α = 1 % (over-statement tail), full life.
+- Bins: the unit's within-group spread `(max − min)/mean` of the measured `Q_c,k` at the target check: < 2 %, 2–5 %,
+  5–15 %, > 15 %.
+- Each row gives n targets and n units.
