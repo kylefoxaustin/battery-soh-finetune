@@ -7,17 +7,26 @@ Data: one Changan EV, 6 public sample files, 1.2 M frames at 10 s, 1,322 days, 0
 
 ## Verdict: NO GAIN — and the labels are too noisy to have shown one
 
+> **Correction (2026-10-30).** The first version of this table scored the reserve on the **under-prediction** tail,
+> `q(−e)` with `e = U_pred − U_true`. A reserve protects against **over**-statement, so the correct form is `q(e)`.
+> This was caught in the X5 audit (`X5_preregistration.md` P-3). The table below is re-scored on the correct tail with
+> the same code and data (`x4_results_overstatement_tail.json`). **The verdict does not change.** The original
+> under-prediction figures are kept in `x4_results.json` for the record.
+
 | Estimator (W = 8) | Mean abs error | Reserve at 95 % | at 99 % | at 99.9 % (extrapolated) |
 |---|---|---|---|---|
-| P0 last value | 7.8 % | 15.3 % | 35.2 % | 39.5 % |
-| P1 pack scalar | 7.0 % | 14.5 % | 31.8 % | 39.2 % |
-| P2 min/max | 7.7 % | 14.7 % | 27.9 % | 35.6 % |
-| **P3 per-cell** | **7.0 %** | **14.7 %** | **30.7 %** | **37.3 %** |
+| P0 last value | 7.8 % | 15.9 % | 33.0 % | 36.2 % |
+| P1 pack scalar | 7.0 % | 16.7 % | 25.9 % | 29.4 % |
+| P2 min/max | 7.7 % | 17.0 % | 28.7 % | 38.8 % |
+| **P3 per-cell** | **7.0 %** | **14.5 %** | **27.8 %** | **29.4 %** |
 
-- Precision gain P1/P3 at 99.9 %: **1.05**. Pre-registered bar for "helps": 1.5. **NO GAIN.**
+- Precision gain P1/P3: **0.93 at 99 %, 1.00 at 99.9 %** (W = 4: 1.17 / 1.16; W = 16: 1.01 / 0.90). Pre-registered bar
+  for "helps": 1.5. **NO GAIN.**
 - P3 beats P1 on 51 % of targets (W = 8); 49 % (W = 4); 57 % (W = 16).
-- **Shuffle control:** shuffled per-cell gives the same result (37.2 %). Nothing here depends on knowing which cell is
-  which. **Pack-level truth:** P3 does no better (63 % vs 65 %).
+- **Shuffle control:** shuffled per-cell gives about the same reserve (29.1 % at 99 %; 32.6 % at 99.9 %). Nothing here
+  depends on knowing which cell is which. **Pack-level truth:** P3 does no better than P1.
+- **Shuffle caveat:** this control permutes cells independently within each discharge, which does change the
+  per-cell trends. (The X5 brief's whole-series version would have been a no-op; see `X5_preregistration.md` P-2.)
 - 234 labels (12 outliers > 5 MAD removed), 164 scored after warm-up. Not underpowered by count.
 
 ## Why it could not have shown anything (post-hoc, read before using the result)
