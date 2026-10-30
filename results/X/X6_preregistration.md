@@ -153,3 +153,21 @@ carry the test.
 
 Any change after this commit is a numbered deviation. H, T, W, L, the thresholds, the model family, the features, λ
 and the split never move.
+
+**Reviewer decision (2026-10-30, `briefs/X6/REVIEW_DECISION.md`):** APPROVED as pre-registered (`2188950`), with
+two reported additions. Both are committed **before forecasting code**, and neither changes the decision table.
+
+**D-1 (reviewer R-1). Two contrasts that separate "per-cell" from "history".**
+
+- Both are reported in the verdict section, each with a unit-bootstrap 95 % CI (2,000 resamples of evaluation
+  groups, seed 0), at L = 1 and L = 2. **Neither decides.**
+- **AUC(K3) − AUC(K3-sh):** the value of cell identity, tested directly against the shuffle.
+- **AUC(K3) − AUC(K2):** the value of the Q(V) curve history over a 4-point per-cell capacity trend.
+
+**D-2 (reviewer R-2). K1's structural ceiling.**
+
+- Beside K1's actual AUC, report its best case:
+  - every non-weakest cell-check sits in one tied block;
+  - weakest-cell positives rank above that block;
+  - weakest-cell negatives rank below it.
+- This is computed on the evaluation Task A rows at L = 1 and L = 2. It shows how much of K3 − K1 is structural.
