@@ -152,3 +152,8 @@ split, P-1 to P-5), with D-1 and D-2 below. Both are committed **before any esti
 - Bins: the unit's within-group spread `(max − min)/mean` of the measured `Q_c,k` at the target check: < 2 %, 2–5 %,
   5–15 %, > 15 %.
 - Each row gives n targets and n units.
+
+**D-3 (alignment, found while writing `X5_estimate.py`, before any run).** In groups 20–29, `Q_interpolated` has one
+more column than `capacity_fade`. The extra column is entirely empty: the week-4 RPT the dataset README lists as lost.
+All-empty Q(V) columns are dropped before aligning. Every cell then aligns, and max Q(V) matches the measured
+capacity within 0.1 % (median), so no unit loses P4.
