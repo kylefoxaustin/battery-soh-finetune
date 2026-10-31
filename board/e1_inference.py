@@ -29,14 +29,9 @@ RMSE_SLACK_AH = 0.05
 WARMUP, ITERS = 20, 1000  # CHOSEN
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--run", required=True)
-    ap.add_argument("--model", default="soh_int8.tflite")
-    ap.add_argument("--threads", type=int, default=1)  # CHOSEN: single-stream, 1 thread
-    ap.add_argument("--runtime", choices=["auto", "tflite_runtime", "tf"], default="auto")
-    ap.add_argument("--out", required=True)
-    a = ap.parse_args()
+def setup(run, model, threads, runtime="auto"):
+    """Interpreter built and allocated, gate inputs loaded (shared with board/b1_e1loop.py)."""
+    a = argparse.Namespace(run=run, model=model, threads=threads, runtime=runtime)
     if a.runtime in ("auto", "tflite_runtime"):
         try:
             from tflite_runtime.interpreter import Interpreter
@@ -68,8 +63,17 @@ def main():
     else:
         Xq = g["Xn"].astype(np.float32)
         ref, lsb_unit = g["p_torch"], None                    # fp32: compare to PyTorch fp32, in Ah
+    return {"rt": rt, "it": it, "i": i, "o": o, "Xq": Xq, "ref": ref, "lsb_unit": lsb_unit, "quant": quant,
+            "norm": norm, "g": g, "path": path, "rss_pre": rss_pre, "rss_alloc": rss_alloc}
 
-    # ---- gate pass: outputs produced by THIS process ----
+
+def gate_pass(ctx):
+    """Gate (brief §0.3) on outputs produced by THIS process; returns the gate dict."""
+    it, i, o, Xq, ref, lsb_unit, quant, norm, g = (ctx[k] for k in ("it", "i", "o", "Xq", "ref", "lsb_unit", "quant",
+                                                                    "norm", "g"))
+    if quant:
+        so, zo = o["quantization"]
+
     raw = np.empty(len(Xq), np.float32)
     for k in range(len(Xq)):
         it.reset_all_variables()  # LSTM h/c are persistent variable tensors — reset per inference
@@ -89,6 +93,21 @@ def main():
     gate.update({"rmse_board_ah": rmse_board, "rmse_ref_ah": rmse_ref,
                  "rmse_ok": rmse_board <= rmse_ref + RMSE_SLACK_AH})
     gate["pass"] = gate["match_ok"] and gate["rmse_ok"]
+    return gate
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--run", required=True)
+    ap.add_argument("--model", default="soh_int8.tflite")
+    ap.add_argument("--threads", type=int, default=1)  # CHOSEN: single-stream, 1 thread
+    ap.add_argument("--runtime", choices=["auto", "tflite_runtime", "tf"], default="auto")
+    ap.add_argument("--out", required=True)
+    a = ap.parse_args()
+    ctx = setup(a.run, a.model, a.threads, a.runtime)
+    rt, it, i, o, Xq, path, rss_pre, rss_alloc = (ctx[k] for k in ("rt", "it", "i", "o", "Xq", "path", "rss_pre",
+                                                                    "rss_alloc"))
+    gate = gate_pass(ctx)
 
     # ---- timed loop (same interpreter, same inputs) ----
     for k in range(WARMUP):

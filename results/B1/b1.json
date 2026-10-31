@@ -1,0 +1,2594 @@
+{
+ "tag": "MEASURED on FRDM-IMX95-PRO (CPU producer: CPU cost is an upper bound on a DMA path)",
+ "cells": {
+  "P1": {
+   "rate_mbps": 3.2,
+   "ring_mb": 512,
+   "repeats": [
+    {
+     "round": 1,
+     "achieved_mbps": 3.2,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.826,
+     "bursts_late_gt_ms": {
+      "0.1": 1762,
+      "1": 622,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 0.544,
+     "depth_s_measured": 167.772,
+     "depth_s_arithmetic": 167.772,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 120000200,
+       "first_seq": 118000200,
+       "expected_frames": 2000000,
+       "frames_dumped": 2000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 32.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.041,
+       "fsync_s": 0.19,
+       "total_s": 0.232,
+       "copy_mbps": 138.22,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 240000200,
+       "first_seq": 228000200,
+       "expected_frames": 12000000,
+       "frames_dumped": 12000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 192.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.196,
+       "fsync_s": 1.083,
+       "total_s": 1.279,
+       "copy_mbps": 150.09,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 336000200,
+       "first_seq": 302445768,
+       "expected_frames": 60000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.548,
+       "fsync_s": 2.99,
+       "total_s": 3.537,
+       "copy_mbps": 151.77,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 178,
+       "median": 0.5,
+       "min": 0.3,
+       "max": 3.2
+      },
+      "cpu4_dumper_pct": {
+       "n": 178,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 6.1
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 58.78,
+      "dirty_kb_max": 401408
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 2,
+     "achieved_mbps": 3.2,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.978,
+     "bursts_late_gt_ms": {
+      "0.1": 1175,
+      "1": 410,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 0.549,
+     "depth_s_measured": 167.772,
+     "depth_s_arithmetic": 167.772,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 120000200,
+       "first_seq": 118000200,
+       "expected_frames": 2000000,
+       "frames_dumped": 2000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 32.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.035,
+       "fsync_s": 0.188,
+       "total_s": 0.223,
+       "copy_mbps": 143.59,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 240000200,
+       "first_seq": 228000200,
+       "expected_frames": 12000000,
+       "frames_dumped": 12000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 192.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.196,
+       "fsync_s": 1.07,
+       "total_s": 1.266,
+       "copy_mbps": 151.63,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 336000200,
+       "first_seq": 302445768,
+       "expected_frames": 60000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.546,
+       "fsync_s": 2.949,
+       "total_s": 3.495,
+       "copy_mbps": 153.62,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 178,
+       "median": 0.5,
+       "min": 0.3,
+       "max": 3.4
+      },
+      "cpu4_dumper_pct": {
+       "n": 178,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 6.1
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.5,
+      "dirty_kb_max": 393220
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 3,
+     "achieved_mbps": 3.2,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.461,
+     "bursts_late_gt_ms": {
+      "0.1": 1219,
+      "1": 402,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 0.558,
+     "depth_s_measured": 167.772,
+     "depth_s_arithmetic": 167.772,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 120000200,
+       "first_seq": 118000200,
+       "expected_frames": 2000000,
+       "frames_dumped": 2000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 32.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.035,
+       "fsync_s": 0.197,
+       "total_s": 0.232,
+       "copy_mbps": 137.74,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 240000200,
+       "first_seq": 228000200,
+       "expected_frames": 12000000,
+       "frames_dumped": 12000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 192.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.196,
+       "fsync_s": 1.062,
+       "total_s": 1.258,
+       "copy_mbps": 152.67,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 336000200,
+       "first_seq": 302445768,
+       "expected_frames": 60000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.547,
+       "fsync_s": 2.968,
+       "total_s": 3.514,
+       "copy_mbps": 152.76,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 178,
+       "median": 0.7,
+       "min": 0.4,
+       "max": 2.8
+      },
+      "cpu4_dumper_pct": {
+       "n": 178,
+       "median": 0.4,
+       "min": 0.0,
+       "max": 6.1
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.37,
+      "dirty_kb_max": 409600
+     },
+     "RT_DISTURBED": false
+    }
+   ]
+  },
+  "P2": {
+   "rate_mbps": 32,
+   "ring_mb": 512,
+   "repeats": [
+    {
+     "round": 1,
+     "achieved_mbps": 32.0,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.957,
+     "bursts_late_gt_ms": {
+      "0.1": 516,
+      "1": 149,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 1.888,
+     "depth_s_measured": 16.777,
+     "depth_s_arithmetic": 16.777,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 1200002000,
+       "first_seq": 1180002000,
+       "expected_frames": 20000000,
+       "frames_dumped": 20000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 320.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.329,
+       "fsync_s": 1.768,
+       "total_s": 2.098,
+       "copy_mbps": 152.55,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 2400002000,
+       "first_seq": 2366447568,
+       "expected_frames": 120000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.548,
+       "fsync_s": 2.962,
+       "total_s": 3.51,
+       "copy_mbps": 152.93,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 3360002000,
+       "first_seq": 3326447568,
+       "expected_frames": 600000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.548,
+       "fsync_s": 2.964,
+       "total_s": 3.513,
+       "copy_mbps": 152.84,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.5,
+       "min": 0.3,
+       "max": 2.7
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.4,
+       "min": 0.0,
+       "max": 6.1
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.54,
+      "dirty_kb_max": 417792
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 2,
+     "achieved_mbps": 32.0,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 4.998,
+     "bursts_late_gt_ms": {
+      "0.1": 1098,
+      "1": 401,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 1.89,
+     "depth_s_measured": 16.777,
+     "depth_s_arithmetic": 16.777,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 1200002000,
+       "first_seq": 1180002000,
+       "expected_frames": 20000000,
+       "frames_dumped": 20000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 320.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.33,
+       "fsync_s": 1.787,
+       "total_s": 2.116,
+       "copy_mbps": 151.2,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 2400002000,
+       "first_seq": 2366447568,
+       "expected_frames": 120000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.549,
+       "fsync_s": 2.951,
+       "total_s": 3.5,
+       "copy_mbps": 153.39,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 3360002000,
+       "first_seq": 3326447568,
+       "expected_frames": 600000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.549,
+       "fsync_s": 2.979,
+       "total_s": 3.528,
+       "copy_mbps": 152.18,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.5,
+       "min": 0.3,
+       "max": 2.9
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.2,
+       "min": 0.0,
+       "max": 6.3
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.96,
+      "dirty_kb_max": 401412
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 3,
+     "achieved_mbps": 32.0,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.443,
+     "bursts_late_gt_ms": {
+      "0.1": 1168,
+      "1": 360,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 1.913,
+     "depth_s_measured": 16.777,
+     "depth_s_arithmetic": 16.777,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 1200002000,
+       "first_seq": 1180002000,
+       "expected_frames": 20000000,
+       "frames_dumped": 20000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 320.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.33,
+       "fsync_s": 1.753,
+       "total_s": 2.083,
+       "copy_mbps": 153.59,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 2400002000,
+       "first_seq": 2366447568,
+       "expected_frames": 120000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.549,
+       "fsync_s": 2.945,
+       "total_s": 3.494,
+       "copy_mbps": 153.67,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 3360002000,
+       "first_seq": 3326447568,
+       "expected_frames": 600000000,
+       "frames_dumped": 33554432,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 536.871,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.548,
+       "fsync_s": 3.019,
+       "total_s": 3.567,
+       "copy_mbps": 150.53,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.8,
+       "min": 0.3,
+       "max": 3.0
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.4,
+       "min": 0.0,
+       "max": 7.0
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.68,
+      "dirty_kb_max": 425984
+     },
+     "RT_DISTURBED": false
+    }
+   ]
+  },
+  "P3": {
+   "rate_mbps": 3.2,
+   "ring_mb": 2048,
+   "repeats": [
+    {
+     "round": 1,
+     "achieved_mbps": 3.2,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.108,
+     "bursts_late_gt_ms": {
+      "0.1": 926,
+      "1": 337,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 0.563,
+     "depth_s_measured": 671.089,
+     "depth_s_arithmetic": 671.089,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 120000200,
+       "first_seq": 118000200,
+       "expected_frames": 2000000,
+       "frames_dumped": 2000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 32.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.035,
+       "fsync_s": 0.181,
+       "total_s": 0.216,
+       "copy_mbps": 147.96,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 240000200,
+       "first_seq": 228000200,
+       "expected_frames": 12000000,
+       "frames_dumped": 12000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 192.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.196,
+       "fsync_s": 1.096,
+       "total_s": 1.292,
+       "copy_mbps": 148.6,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 336000200,
+       "first_seq": 276000200,
+       "expected_frames": 60000000,
+       "frames_dumped": 60000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 960.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.986,
+       "fsync_s": 5.268,
+       "total_s": 6.254,
+       "copy_mbps": 153.51,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": true,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.4,
+       "min": 0.3,
+       "max": 3.1
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 10.4
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.0,
+      "dirty_kb_max": 798236
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 2,
+     "achieved_mbps": 3.2,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.702,
+     "bursts_late_gt_ms": {
+      "0.1": 1298,
+      "1": 465,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 0.551,
+     "depth_s_measured": 671.089,
+     "depth_s_arithmetic": 671.089,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 120000200,
+       "first_seq": 118000200,
+       "expected_frames": 2000000,
+       "frames_dumped": 2000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 32.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.035,
+       "fsync_s": 0.19,
+       "total_s": 0.225,
+       "copy_mbps": 142.39,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 240000200,
+       "first_seq": 228000200,
+       "expected_frames": 12000000,
+       "frames_dumped": 12000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 192.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.196,
+       "fsync_s": 1.062,
+       "total_s": 1.257,
+       "copy_mbps": 152.7,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 336000200,
+       "first_seq": 276000200,
+       "expected_frames": 60000000,
+       "frames_dumped": 60000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 960.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.977,
+       "fsync_s": 5.32,
+       "total_s": 6.297,
+       "copy_mbps": 152.46,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": true,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.5,
+       "min": 0.3,
+       "max": 2.6
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 10.2
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.54,
+      "dirty_kb_max": 781856
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 3,
+     "achieved_mbps": 3.2,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.376,
+     "bursts_late_gt_ms": {
+      "0.1": 618,
+      "1": 161,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 0.553,
+     "depth_s_measured": 671.089,
+     "depth_s_arithmetic": 671.089,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 120000200,
+       "first_seq": 118000200,
+       "expected_frames": 2000000,
+       "frames_dumped": 2000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 32.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.035,
+       "fsync_s": 0.186,
+       "total_s": 0.221,
+       "copy_mbps": 145.08,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 240000200,
+       "first_seq": 228000200,
+       "expected_frames": 12000000,
+       "frames_dumped": 12000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 192.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.196,
+       "fsync_s": 1.059,
+       "total_s": 1.255,
+       "copy_mbps": 153.01,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 336000200,
+       "first_seq": 276000200,
+       "expected_frames": 60000000,
+       "frames_dumped": 60000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 960.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.978,
+       "fsync_s": 5.26,
+       "total_s": 6.238,
+       "copy_mbps": 153.89,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": true,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.5,
+       "min": 0.4,
+       "max": 2.2
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 10.2
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 59.54,
+      "dirty_kb_max": 798236
+     },
+     "RT_DISTURBED": false
+    }
+   ]
+  },
+  "P4": {
+   "rate_mbps": 32,
+   "ring_mb": 2048,
+   "repeats": [
+    {
+     "round": 1,
+     "achieved_mbps": 32.0,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.855,
+     "bursts_late_gt_ms": {
+      "0.1": 1201,
+      "1": 386,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 1.837,
+     "depth_s_measured": 67.109,
+     "depth_s_arithmetic": 67.109,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 1200002000,
+       "first_seq": 1180002000,
+       "expected_frames": 20000000,
+       "frames_dumped": 20000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 320.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.33,
+       "fsync_s": 1.763,
+       "total_s": 2.093,
+       "copy_mbps": 152.87,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 2400002000,
+       "first_seq": 2280002000,
+       "expected_frames": 120000000,
+       "frames_dumped": 120000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 1920.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 1.963,
+       "fsync_s": 9.834,
+       "total_s": 11.797,
+       "copy_mbps": 162.75,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 3360002000,
+       "first_seq": 3225784272,
+       "expected_frames": 600000000,
+       "frames_dumped": 134217728,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 2147.484,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 2.702,
+       "fsync_s": 10.406,
+       "total_s": 13.108,
+       "copy_mbps": 163.83,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.5,
+       "min": 0.3,
+       "max": 2.7
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 19.6
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 60.82,
+      "dirty_kb_max": 1736704
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 2,
+     "achieved_mbps": 32.0,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.788,
+     "bursts_late_gt_ms": {
+      "0.1": 1301,
+      "1": 424,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 1.839,
+     "depth_s_measured": 67.109,
+     "depth_s_arithmetic": 67.109,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 1200002000,
+       "first_seq": 1180002000,
+       "expected_frames": 20000000,
+       "frames_dumped": 20000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 320.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.33,
+       "fsync_s": 1.791,
+       "total_s": 2.121,
+       "copy_mbps": 150.87,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 2400002000,
+       "first_seq": 2280002000,
+       "expected_frames": 120000000,
+       "frames_dumped": 120000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 1920.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 1.964,
+       "fsync_s": 9.912,
+       "total_s": 11.877,
+       "copy_mbps": 161.66,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 3360002000,
+       "first_seq": 3225784272,
+       "expected_frames": 600000000,
+       "frames_dumped": 134217728,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 2147.484,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 2.623,
+       "fsync_s": 10.443,
+       "total_s": 13.066,
+       "copy_mbps": 164.36,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.5,
+       "min": 0.3,
+       "max": 3.1
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 20.2
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 61.25,
+      "dirty_kb_max": 1794052
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 3,
+     "achieved_mbps": 32.0,
+     "achieved_frac": 1.000001,
+     "drop_events": 0,
+     "max_lag_ms": 5.397,
+     "bursts_late_gt_ms": {
+      "0.1": 634,
+      "1": 164,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 1.837,
+     "depth_s_measured": 67.109,
+     "depth_s_arithmetic": 67.109,
+     "dumps": {
+      "10": {
+       "at_s": 600.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 1200002000,
+       "first_seq": 1180002000,
+       "expected_frames": 20000000,
+       "frames_dumped": 20000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 320.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 0.329,
+       "fsync_s": 1.779,
+       "total_s": 2.108,
+       "copy_mbps": 151.83,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 1200.0,
+       "window_s": 60,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 2400002000,
+       "first_seq": 2280002000,
+       "expected_frames": 120000000,
+       "frames_dumped": 120000000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 1920.0,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 1.961,
+       "fsync_s": 9.839,
+       "total_s": 11.8,
+       "copy_mbps": 162.71,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 1680.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 3360002000,
+       "first_seq": 3225784272,
+       "expected_frames": 600000000,
+       "frames_dumped": 134217728,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 2147.484,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 2.626,
+       "fsync_s": 10.433,
+       "total_s": 13.059,
+       "copy_mbps": 164.45,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 179,
+       "median": 0.6,
+       "min": 0.4,
+       "max": 2.7
+      },
+      "cpu4_dumper_pct": {
+       "n": 179,
+       "median": 0.4,
+       "min": 0.0,
+       "max": 19.5
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 62.28,
+      "dirty_kb_max": 1716224
+     },
+     "RT_DISTURBED": false
+    }
+   ]
+  },
+  "P5": {
+   "rate_mbps": 60,
+   "ring_mb": 2048,
+   "repeats": [
+    {
+     "round": 1,
+     "achieved_mbps": 60.0001,
+     "achieved_frac": 1.000002,
+     "drop_events": 0,
+     "max_lag_ms": 5.099,
+     "bursts_late_gt_ms": {
+      "0.1": 422,
+      "1": 116,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 3.1,
+     "depth_s_measured": 35.791,
+     "depth_s_arithmetic": 35.791,
+     "dumps": {
+      "10": {
+       "at_s": 200.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 750003750,
+       "first_seq": 712503750,
+       "expected_frames": 37500000,
+       "frames_dumped": 37500000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 600.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.615,
+       "fsync_s": 3.282,
+       "total_s": 3.897,
+       "copy_mbps": 153.98,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 400.0,
+       "window_s": 60,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 1500003750,
+       "first_seq": 1365786022,
+       "expected_frames": 225000000,
+       "frames_dumped": 134217728,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 2147.484,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 2.686,
+       "fsync_s": 10.391,
+       "total_s": 13.078,
+       "copy_mbps": 164.21,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 560.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 2100000000,
+       "first_seq": 1965782272,
+       "expected_frames": 1125000000,
+       "frames_dumped": 134217728,
+       "mismatched_frames": 3750,
+       "overwrite_depth_s": 0.001,
+       "first_mismatch_index": 0,
+       "mb": 2147.484,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 2.635,
+       "fsync_s": 10.428,
+       "total_s": 13.063,
+       "copy_mbps": 164.4,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 59,
+       "median": 0.4,
+       "min": 0.3,
+       "max": 1.5
+      },
+      "cpu4_dumper_pct": {
+       "n": 59,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 16.0
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 60.79,
+      "dirty_kb_max": 927744
+     },
+     "RT_DISTURBED": false
+    },
+    {
+     "round": 2,
+     "achieved_mbps": 60.0001,
+     "achieved_frac": 1.000002,
+     "drop_events": 0,
+     "max_lag_ms": 5.831,
+     "bursts_late_gt_ms": {
+      "0.1": 356,
+      "1": 103,
+      "10": 0,
+      "100": 0,
+      "1000": 0
+     },
+     "producer_thread_cpu_pct": 3.084,
+     "depth_s_measured": 35.791,
+     "depth_s_arithmetic": 35.791,
+     "dumps": {
+      "10": {
+       "at_s": 200.0,
+       "window_s": 10,
+       "gate": "PASS",
+       "fail_reason": null,
+       "head_at_trigger": 750003750,
+       "first_seq": 712503750,
+       "expected_frames": 37500000,
+       "frames_dumped": 37500000,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 600.0,
+       "snapshot_ms": 0.0,
+       "copy_write_s": 0.614,
+       "fsync_s": 3.291,
+       "total_s": 3.905,
+       "copy_mbps": 153.63,
+       "producer_drops_during_dump": 0
+      },
+      "60": {
+       "at_s": 400.0,
+       "window_s": 60,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 1500000000,
+       "first_seq": 1365782272,
+       "expected_frames": 225000000,
+       "frames_dumped": 134217728,
+       "mismatched_frames": 3750,
+       "overwrite_depth_s": 0.001,
+       "first_mismatch_index": 0,
+       "mb": 2147.484,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 2.617,
+       "fsync_s": 10.426,
+       "total_s": 13.043,
+       "copy_mbps": 164.64,
+       "producer_drops_during_dump": 0
+      },
+      "300": {
+       "at_s": 560.0,
+       "window_s": 300,
+       "gate": "FAIL",
+       "fail_reason": "window exceeds the ring's live span",
+       "head_at_trigger": 2100003750,
+       "first_seq": 1965786022,
+       "expected_frames": 1125000000,
+       "frames_dumped": 134217728,
+       "mismatched_frames": 0,
+       "overwrite_depth_s": 0.0,
+       "first_mismatch_index": 0,
+       "mb": 2147.484,
+       "snapshot_ms": 0.001,
+       "copy_write_s": 2.613,
+       "fsync_s": 10.504,
+       "total_s": 13.117,
+       "copy_mbps": 163.72,
+       "producer_drops_during_dump": 0
+      }
+     },
+     "SUSTAINED": false,
+     "monitor": {
+      "cpu3_producer_pct": {
+       "n": 59,
+       "median": 0.6,
+       "min": 0.3,
+       "max": 2.7
+      },
+      "cpu4_dumper_pct": {
+       "n": 59,
+       "median": 0.3,
+       "min": 0.0,
+       "max": 16.2
+      },
+      "min_cur_khz": 1800000,
+      "a55_thermal_max_c": 61.09,
+      "dirty_kb_max": 1013764
+     },
+     "RT_DISTURBED": false
+    }
+   ]
+  }
+ },
+ "rt": {
+  "1": {
+   "e1_gate_all_pass": true,
+   "e1_blocks": 142,
+   "lim_gate_all_pass": true,
+   "lim_blocks": 142,
+   "phases": {
+    "P0": {
+     "e1_p50_ms": {
+      "n": 9,
+      "median": 22.84777,
+      "min": 22.828693,
+      "max": 22.86693
+     },
+     "e1_p99_ms": {
+      "n": 9,
+      "median": 23.038202339999998,
+      "min": 23.012609780000002,
+      "max": 23.08322864
+     },
+     "lim96_p50_ns": {
+      "n": 4,
+      "median": 2499.5,
+      "min": 2417.0,
+      "max": 2584.0
+     },
+     "lim96_p99_ns": {
+      "n": 4,
+      "median": 5146.0,
+      "min": 5041.0,
+      "max": 5209.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 4,
+      "median": 2021.6999999999998,
+      "min": 990.9,
+      "max": 3356.0
+     },
+     "lim3564_p50_ns": {
+      "n": 4,
+      "median": 56918.0,
+      "min": 56917.0,
+      "max": 57085.0
+     },
+     "lim3564_p99_ns": {
+      "n": 4,
+      "median": 119397.5,
+      "min": 118210.0,
+      "max": 129210.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 4,
+      "median": 2240.2,
+      "min": 1479.5,
+      "max": 2901.6
+     }
+    },
+    "P1": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.835587,
+      "min": 22.813879,
+      "max": 22.856067
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.06272386,
+      "min": 22.9996925,
+      "max": 23.153220049999998
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2459.0,
+      "min": 2416.0,
+      "max": 2667.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5250.0,
+      "min": 5042.0,
+      "max": 5417.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2865.15,
+      "min": 1524.8,
+      "max": 5032.6
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57543.0,
+      "min": 57084.0,
+      "max": 64792.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 120710.0,
+      "min": 118626.0,
+      "max": 131169.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 2469.7,
+      "min": 589.8,
+      "max": 3624.4
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 1.00106438513032,
+       "ratio_worst_block": 1.0049924776379058,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0202098717450447,
+       "ratio_worst_block": 1.05266226195103,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0109926924768107,
+       "ratio_worst_block": 1.0985908415167822,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P2": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.8745725,
+      "min": 22.867797,
+      "max": 22.886933
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.03652946,
+      "min": 22.99936388,
+      "max": 23.15456563
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2500.0,
+      "min": 2458.0,
+      "max": 2584.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5125.0,
+      "min": 5083.0,
+      "max": 5584.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2422.8500000000004,
+      "min": 1266.8,
+      "max": 4120.4
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57667.0,
+      "min": 57501.0,
+      "max": 58251.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 120585.0,
+      "min": 119835.0,
+      "max": 132710.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 138.0,
+      "min": 89.2,
+      "max": 359.9
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9999273866955716,
+       "ratio_worst_block": 1.0050508841047014,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 0.9959191605130199,
+       "ratio_worst_block": 1.0851146521570152,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.009945769383781,
+       "ratio_worst_block": 1.111497309407651,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P3": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.825633,
+      "min": 22.813383,
+      "max": 22.834174
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.022520749999998,
+      "min": 22.960506000000002,
+      "max": 23.069790049999998
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2562.5,
+      "min": 2417.0,
+      "max": 2667.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5250.0,
+      "min": 5083.0,
+      "max": 5417.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 3019.0,
+      "min": 2090.7,
+      "max": 4030.8
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 58000.0,
+      "min": 56876.0,
+      "max": 59167.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 121543.0,
+      "min": 118293.0,
+      "max": 124252.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 622.2,
+      "min": 85.3,
+      "max": 3683.0
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9993193223252158,
+       "ratio_worst_block": 1.0013711013356783,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0202098717450447,
+       "ratio_worst_block": 1.05266226195103,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.01796938796876,
+       "ratio_worst_block": 1.040658305240897,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P4": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.831886,
+      "min": 22.818594,
+      "max": 22.866131
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.011152640000002,
+      "min": 22.93430756,
+      "max": 23.20759821
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2500.0,
+      "min": 2417.0,
+      "max": 2625.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5291.5,
+      "min": 5000.0,
+      "max": 5708.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 3596.85,
+      "min": 1655.2,
+      "max": 5216.1
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57501.0,
+      "min": 57209.0,
+      "max": 59459.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 121460.0,
+      "min": 119710.0,
+      "max": 129335.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 2169.3,
+      "min": 662.5,
+      "max": 3303.7
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9988258762727754,
+       "ratio_worst_block": 1.007352824994765,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.028274387874077,
+       "ratio_worst_block": 1.1092110376991837,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0172742310349883,
+       "ratio_worst_block": 1.083230385895852,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P5": {
+     "e1_p50_ms": {
+      "n": 9,
+      "median": 22.845053,
+      "min": 22.835313,
+      "max": 22.885593999999998
+     },
+     "e1_p99_ms": {
+      "n": 9,
+      "median": 23.0768193,
+      "min": 22.9733892,
+      "max": 23.18938087
+     },
+     "lim96_p50_ns": {
+      "n": 5,
+      "median": 2583.0,
+      "min": 2459.0,
+      "max": 2625.0
+     },
+     "lim96_p99_ns": {
+      "n": 5,
+      "median": 5292.0,
+      "min": 5167.0,
+      "max": 5458.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 5,
+      "median": 2355.1,
+      "min": 1188.6,
+      "max": 3326.8
+     },
+     "lim3564_p50_ns": {
+      "n": 4,
+      "median": 57647.0,
+      "min": 57459.0,
+      "max": 58959.0
+     },
+     "lim3564_p99_ns": {
+      "n": 4,
+      "median": 120189.5,
+      "min": 118835.0,
+      "max": 123835.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 4,
+      "median": 2391.1,
+      "min": 1417.3,
+      "max": 3568.6
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 1.0016762141173208,
+       "ratio_worst_block": 1.0065620801384108,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.028371550719005,
+       "ratio_worst_block": 1.060629615235134,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0066333047174354,
+       "ratio_worst_block": 1.0371657698025503,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    }
+   }
+  },
+  "2": {
+   "e1_gate_all_pass": true,
+   "e1_blocks": 142,
+   "lim_gate_all_pass": true,
+   "lim_blocks": 142,
+   "phases": {
+    "P0": {
+     "e1_p50_ms": {
+      "n": 9,
+      "median": 22.871598,
+      "min": 22.860431,
+      "max": 22.9004105
+     },
+     "e1_p99_ms": {
+      "n": 9,
+      "median": 23.067317459999998,
+      "min": 22.996627880000002,
+      "max": 23.09385525
+     },
+     "lim96_p50_ns": {
+      "n": 5,
+      "median": 2375.0,
+      "min": 2375.0,
+      "max": 2417.0
+     },
+     "lim96_p99_ns": {
+      "n": 5,
+      "median": 5041.0,
+      "min": 4834.0,
+      "max": 5250.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 5,
+      "median": 2472.9,
+      "min": 1265.7,
+      "max": 5331.5
+     },
+     "lim3564_p50_ns": {
+      "n": 4,
+      "median": 57000.5,
+      "min": 56835.0,
+      "max": 64667.0
+     },
+     "lim3564_p99_ns": {
+      "n": 4,
+      "median": 124501.5,
+      "min": 122835.0,
+      "max": 136252.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 4,
+      "median": 4267.55,
+      "min": 2137.0,
+      "max": 5092.6
+     }
+    },
+    "P1": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.842494,
+      "min": 22.822896,
+      "max": 22.859103
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.039853240000003,
+      "min": 22.96221088,
+      "max": 23.10585184
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2458.0,
+      "min": 2375.0,
+      "max": 2708.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5209.0,
+      "min": 4834.0,
+      "max": 5334.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 1772.55,
+      "min": 103.5,
+      "max": 2984.7
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57417.0,
+      "min": 56835.0,
+      "max": 59042.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 130085.0,
+      "min": 123835.0,
+      "max": 134127.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 3020.2,
+      "min": 2025.1,
+      "max": 4957.9
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.998809388215703,
+       "ratio_worst_block": 1.0016705184756234,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0333267208887125,
+       "ratio_worst_block": 1.0581233882166237,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0448468492347482,
+       "ratio_worst_block": 1.0773123215382947,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P2": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.826909999999998,
+      "min": 22.809389,
+      "max": 22.8397
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.06282828,
+      "min": 22.90062404,
+      "max": 23.0930985
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2396.0,
+      "min": 2375.0,
+      "max": 2750.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5104.5,
+      "min": 4958.0,
+      "max": 5458.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2457.6,
+      "min": 618.7,
+      "max": 4032.0
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57335.0,
+      "min": 57043.0,
+      "max": 64501.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 129252.0,
+      "min": 122835.0,
+      "max": 134668.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 2952.0,
+      "min": 891.9,
+      "max": 4022.8
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9998053878606482,
+       "ratio_worst_block": 1.001117643611777,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0125967070025788,
+       "ratio_worst_block": 1.0827216822059116,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0381561667931711,
+       "ratio_worst_block": 1.0816576507110356,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P3": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.839446,
+      "min": 22.831058,
+      "max": 22.856412
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.05143105,
+      "min": 22.976540500000002,
+      "max": 23.09514354
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2416.5,
+      "min": 2292.0,
+      "max": 2583.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5125.0,
+      "min": 4792.0,
+      "max": 5333.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2332.1499999999996,
+      "min": 542.4,
+      "max": 3743.6
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57501.0,
+      "min": 57001.0,
+      "max": 65209.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 129211.0,
+      "min": 123668.0,
+      "max": 137460.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 3161.2,
+      "min": 1746.9,
+      "max": 4178.3
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9993113022341005,
+       "ratio_worst_block": 1.0012062989139614,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0166633604443562,
+       "ratio_worst_block": 1.0579250148780004,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.037826853491725,
+       "ratio_worst_block": 1.1040830833363453,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P4": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.8303705,
+      "min": 22.8196,
+      "max": 22.837723
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.05528966,
+      "min": 23.02061544,
+      "max": 23.17970412
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2417.0,
+      "min": 2375.0,
+      "max": 2792.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5062.5,
+      "min": 4959.0,
+      "max": 5583.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2473.35,
+      "min": 765.8,
+      "max": 3999.8
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57501.0,
+      "min": 57334.0,
+      "max": 58750.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 130543.0,
+      "min": 125918.0,
+      "max": 139711.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 2716.5,
+      "min": 1402.8,
+      "max": 4956.5
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9994785782949901,
+       "ratio_worst_block": 1.0048721165863732,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0042650267804007,
+       "ratio_worst_block": 1.1075183495338226,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0485255197728542,
+       "ratio_worst_block": 1.1221631867889141,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P5": {
+     "e1_p50_ms": {
+      "n": 9,
+      "median": 22.844683,
+      "min": 22.838890499999998,
+      "max": 22.860226
+     },
+     "e1_p99_ms": {
+      "n": 9,
+      "median": 23.06516548,
+      "min": 23.0444644,
+      "max": 23.1996212
+     },
+     "lim96_p50_ns": {
+      "n": 5,
+      "median": 2584.0,
+      "min": 2375.0,
+      "max": 2833.0
+     },
+     "lim96_p99_ns": {
+      "n": 5,
+      "median": 5292.0,
+      "min": 5084.0,
+      "max": 5792.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 5,
+      "median": 2083.8,
+      "min": 342.4,
+      "max": 3172.9
+     },
+     "lim3564_p50_ns": {
+      "n": 4,
+      "median": 58417.5,
+      "min": 57751.0,
+      "max": 63876.0
+     },
+     "lim3564_p99_ns": {
+      "n": 4,
+      "median": 132335.0,
+      "min": 129169.0,
+      "max": 139044.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 4,
+      "median": 2803.15,
+      "min": 2117.0,
+      "max": 3641.0
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9999067087014462,
+       "ratio_worst_block": 1.0057355494512712,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0497917079944457,
+       "ratio_worst_block": 1.14897837730609,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0629189206555745,
+       "ratio_worst_block": 1.116805821616607,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    }
+   }
+  },
+  "3": {
+   "e1_gate_all_pass": true,
+   "e1_blocks": 132,
+   "lim_gate_all_pass": true,
+   "lim_blocks": 131,
+   "phases": {
+    "P0": {
+     "e1_p50_ms": {
+      "n": 9,
+      "median": 22.850579500000002,
+      "min": 22.8351415,
+      "max": 22.864287500000003
+     },
+     "e1_p99_ms": {
+      "n": 9,
+      "median": 23.02414961,
+      "min": 22.98809688,
+      "max": 23.08344322
+     },
+     "lim96_p50_ns": {
+      "n": 4,
+      "median": 2417.0,
+      "min": 2416.0,
+      "max": 2500.0
+     },
+     "lim96_p99_ns": {
+      "n": 4,
+      "median": 5125.0,
+      "min": 5083.0,
+      "max": 5250.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 4,
+      "median": 2289.3,
+      "min": 2024.1,
+      "max": 3603.4
+     },
+     "lim3564_p50_ns": {
+      "n": 4,
+      "median": 56834.0,
+      "min": 56543.0,
+      "max": 57001.0
+     },
+     "lim3564_p99_ns": {
+      "n": 4,
+      "median": 127064.5,
+      "min": 123335.0,
+      "max": 131127.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 4,
+      "median": 2956.0,
+      "min": 137.2,
+      "max": 3559.0
+     }
+    },
+    "P1": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.833437,
+      "min": 22.817352,
+      "max": 22.856997
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.02583684,
+      "min": 22.94627026,
+      "max": 23.11918892
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2500.5,
+      "min": 2417.0,
+      "max": 2792.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5229.5,
+      "min": 5083.0,
+      "max": 5542.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 3313.05,
+      "min": 2468.9,
+      "max": 4368.2
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 56834.0,
+      "min": 56584.0,
+      "max": 64251.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 128127.0,
+      "min": 123043.0,
+      "max": 135794.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 1685.3,
+      "min": 95.0,
+      "max": 3770.0
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 1.000073280882403,
+       "ratio_worst_block": 1.0041278097827648,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.020390243902439,
+       "ratio_worst_block": 1.0813658536585367,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0083618949431195,
+       "ratio_worst_block": 1.0687013288526692,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P2": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.821769,
+      "min": 22.804987,
+      "max": 22.857037
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 23.04565452,
+      "min": 22.93456823,
+      "max": 23.084167139999998
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2479.0,
+      "min": 2416.0,
+      "max": 3000.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5250.0,
+      "min": 5083.0,
+      "max": 5667.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2693.3,
+      "min": 968.9,
+      "max": 5415.8
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57292.0,
+      "min": 56876.0,
+      "max": 58792.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 131793.0,
+      "min": 124459.0,
+      "max": 139252.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 2020.4,
+      "min": 350.7,
+      "max": 5486.5
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 1.0009340153866382,
+       "ratio_worst_block": 1.0026067208134337,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.024390243902439,
+       "ratio_worst_block": 1.1057560975609757,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.0372133837539204,
+       "ratio_worst_block": 1.0959158537593112,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P3": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.833136,
+      "min": 22.822016,
+      "max": 22.8491365
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 22.99317756,
+      "min": 22.91509944,
+      "max": 23.06738328
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2458.0,
+      "min": 2416.0,
+      "max": 2750.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5208.5,
+      "min": 5000.0,
+      "max": 5625.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2156.65,
+      "min": 858.0,
+      "max": 4557.8
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57334.0,
+      "min": 56750.0,
+      "max": 58043.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 129710.0,
+      "min": 123627.0,
+      "max": 135127.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 124.3,
+      "min": 72.8,
+      "max": 3464.4
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9986548015659806,
+       "ratio_worst_block": 1.0018777531736167,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0162926829268293,
+       "ratio_worst_block": 1.0975609756097562,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.020820134656021,
+       "ratio_worst_block": 1.063452026333083,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    },
+    "P4": {
+     "e1_p50_ms": {
+      "n": 29,
+      "median": 22.823036000000002,
+      "min": 22.806223,
+      "max": 22.853288499999998
+     },
+     "e1_p99_ms": {
+      "n": 29,
+      "median": 22.9758692,
+      "min": 22.90205475,
+      "max": 23.15609408
+     },
+     "lim96_p50_ns": {
+      "n": 14,
+      "median": 2437.5,
+      "min": 2375.0,
+      "max": 2833.0
+     },
+     "lim96_p99_ns": {
+      "n": 14,
+      "median": 5146.0,
+      "min": 4917.0,
+      "max": 5666.0
+     },
+     "lim96_tick_late_max_us": {
+      "n": 14,
+      "median": 2036.0,
+      "min": 384.6,
+      "max": 3911.4
+     },
+     "lim3564_p50_ns": {
+      "n": 15,
+      "median": 57293.0,
+      "min": 56710.0,
+      "max": 64626.0
+     },
+     "lim3564_p99_ns": {
+      "n": 15,
+      "median": 130502.0,
+      "min": 123626.0,
+      "max": 140543.0
+     },
+     "lim3564_tick_late_max_us": {
+      "n": 15,
+      "median": 111.3,
+      "min": 105.1,
+      "max": 1305.3
+     },
+     "rt_disturbed": {
+      "e1_p99_ms": {
+       "ratio_median": 0.9979030534974014,
+       "ratio_worst_block": 1.0057306989502315,
+       "disturbed": false
+      },
+      "lim96_p99_ns": {
+       "ratio_median": 1.0040975609756098,
+       "ratio_worst_block": 1.1055609756097562,
+       "disturbed": false
+      },
+      "lim3564_p99_ns": {
+       "ratio_median": 1.027053189521857,
+       "ratio_worst_block": 1.1060760479913745,
+       "disturbed": false
+      }
+     },
+     "RT_DISTURBED": false
+    }
+   }
+  }
+ },
+ "emmc": {
+  "emmc_r1.jsonl": {
+   "mode": "oflag=direct",
+   "files": 46,
+   "seconds": 301.5421004295349,
+   "per_file_mbps": {
+    "n": 46,
+    "median": 163.74173682177258,
+    "min": 159.49030340488224,
+    "max": 165.73712628486658
+   },
+   "overall_mbps": 163.7984342274026,
+   "free_kb_before": 18203032,
+   "free_kb_after": 18203032
+  },
+  "emmc_r2.jsonl": {
+   "mode": "oflag=direct",
+   "files": 46,
+   "seconds": 301.0071053504944,
+   "per_file_mbps": {
+    "n": 46,
+    "median": 164.1689204700213,
+    "min": 162.1545525488665,
+    "max": 165.7641810860277
+   },
+   "overall_mbps": 164.08956142908164,
+   "free_kb_before": 18203032,
+   "free_kb_after": 18203032
+  }
+ },
+ "emmc_derived": {
+  "tag": "DERIVED from the MEASURED write rate and the census capacity; endurance ASSUMED (P/E 3000 MLC-class, 500 TLC-class; write amplification 1.0)",
+  "write_mbps_used": 163.94399782824212,
+  "capacity_bytes": 31826378752,
+  "years_to_wearout": {
+   "3.2 MB/s": {
+    "PE3000": 0.945484766902426,
+    "PE500": 0.15758079448373766
+   },
+   "32 MB/s": {
+    "PE3000": 0.0945484766902426,
+    "PE500": 0.015758079448373766
+   },
+   "60 MB/s": {
+    "PE3000": 0.05042585423479606,
+    "PE500": 0.008404309039132677
+   }
+  },
+  "can_sustain_as_ring_medium": {
+   "3.2 MB/s": true,
+   "32 MB/s": true,
+   "60 MB/s": true
+  },
+  "predicted_dump_s_N300": {
+   "3.2 MB/s": 5.85565810714068,
+   "32 MB/s": 58.556581071406804,
+   "60 MB/s": 109.79358950888775
+  }
+ }
+}

@@ -1,0 +1,14 @@
+b1_ring 3.2 MB/s ring 512 MB: achieved 3.2000 MB/s, drops 0, max lag 5.826 ms, cpu 0.54 %, dumps N10:PASS N60:PASS N300:FAIL
+b1_ring 32.0 MB/s ring 512 MB: achieved 32.0000 MB/s, drops 0, max lag 5.957 ms, cpu 1.89 %, dumps N10:PASS N60:FAIL N300:FAIL
+b1_ring 3.2 MB/s ring 2048 MB: achieved 3.2000 MB/s, drops 0, max lag 5.108 ms, cpu 0.56 %, dumps N10:PASS N60:PASS N300:PASS
+b1_ring 32.0 MB/s ring 2048 MB: achieved 32.0000 MB/s, drops 0, max lag 5.855 ms, cpu 1.84 %, dumps N10:PASS N60:PASS N300:FAIL
+b1_ring 60.0 MB/s ring 2048 MB: achieved 60.0001 MB/s, drops 0, max lag 5.099 ms, cpu 3.10 %, dumps N10:PASS N60:FAIL N300:FAIL
+b1_ring 3.2 MB/s ring 512 MB: achieved 3.2000 MB/s, drops 0, max lag 5.978 ms, cpu 0.55 %, dumps N10:PASS N60:PASS N300:FAIL
+b1_ring 32.0 MB/s ring 512 MB: achieved 32.0000 MB/s, drops 0, max lag 4.998 ms, cpu 1.89 %, dumps N10:PASS N60:FAIL N300:FAIL
+b1_ring 3.2 MB/s ring 2048 MB: achieved 3.2000 MB/s, drops 0, max lag 5.702 ms, cpu 0.55 %, dumps N10:PASS N60:PASS N300:PASS
+b1_ring 32.0 MB/s ring 2048 MB: achieved 32.0000 MB/s, drops 0, max lag 5.788 ms, cpu 1.84 %, dumps N10:PASS N60:PASS N300:FAIL
+b1_ring 60.0 MB/s ring 2048 MB: achieved 60.0001 MB/s, drops 0, max lag 5.831 ms, cpu 3.08 %, dumps N10:PASS N60:FAIL N300:FAIL
+b1_ring 3.2 MB/s ring 512 MB: achieved 3.2000 MB/s, drops 0, max lag 5.461 ms, cpu 0.56 %, dumps N10:PASS N60:PASS N300:FAIL
+b1_ring 32.0 MB/s ring 512 MB: achieved 32.0000 MB/s, drops 0, max lag 5.443 ms, cpu 1.91 %, dumps N10:PASS N60:FAIL N300:FAIL
+b1_ring 3.2 MB/s ring 2048 MB: achieved 3.2000 MB/s, drops 0, max lag 5.376 ms, cpu 0.55 %, dumps N10:PASS N60:PASS N300:PASS
+b1_ring 32.0 MB/s ring 2048 MB: achieved 32.0000 MB/s, drops 0, max lag 5.397 ms, cpu 1.84 %, dumps N10:PASS N60:PASS N300:FAIL

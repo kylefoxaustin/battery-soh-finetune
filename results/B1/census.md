@@ -12,6 +12,16 @@ named below unless tagged otherwise.
 
 ## Verdict of the census: **BLOCKED on the storage gate**
 
+> **Addendum, 2026-10-30, after the census.** Kyle approved option (a) below.
+>
+> - `mmcblk0p3` was created in the eMMC's unallocated space: 18.8 GB ext4, label `b1dump`, mounted only for B1 at
+>   `/mnt/b1`. p1 and p2 were not touched.
+> - Re-measured: **18 GB free on the eMMC** (`df`, 18,203,032 kB), so **the storage gate PASSES**. Every other gate
+>   above was already PASS.
+> - Stage 2 then ran: [`results_B1.md`](results_B1.md).
+> - After the run the partition is empty (only `lost+found`), unmounted and not in fstab. It is left in place pending
+>   Kyle's decision.
+
 | §3.5 gate | Value | Bar | Result |
 |---|---|---|---|
 | Available RAM | **15.3 GB** (`MemAvailable` 15,318,620 kB) | ≥ 3 GB | **PASS.** No D-1 is needed: the 2 GB and 512 MB rings fit. |

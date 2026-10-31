@@ -189,6 +189,15 @@ tail**. The same arithmetic applies to the data-centre shelf, where a fleet-wide
 **What kills it.** A review of the last N root-cause reports showing the needed pre-event window is ≤ 1 s (today's
 UDS snapshot plus statistics). Design in §C.3.
 
+**Note, 2026-10-30: B1 measured the application-processor half of this table** ([`results/B1/results_B1.md`](../B1/results_B1.md)).
+
+- **Ring buffer (MEASURED, FRDM-IMX95-PRO).** The ring sustained 3.2, 32 and 60 MB/s with 0 drops. Measured depth
+  is 512 MB = 168 / 17 s and 2 GB = 671 / 67 / 36 s. Every dump that fitted the ring verified. The real-time loops
+  were not disturbed beyond the 20 % flag.
+- **eMMC (MEASURED).** The board's 29.6 GiB eMMC sustains 164 MB/s.
+- **eMMC wear-out (DERIVED, endurance ASSUMED).** 0.95 / 0.095 / 0.050 years at P/E 3,000.
+- **What B1 does not measure.** The HyperRAM, MCU-SDRAM and SRAM rows above remain DERIVED arithmetic.
+
 ### B.4 Per-unit learning pays on the converter, not the battery — the variance structure is inverted
 
 **Mechanism.** Studies 1–2 and X5/X6 failed because battery ageing is dominated by **unpredictable late-life knees**;
