@@ -4,7 +4,14 @@
 ([`results/OPEN_PROBLEM/ANGLES_REPORT.md`](../../results/OPEN_PROBLEM/ANGLES_REPORT.md)), item 3 in
 [`briefs/NEXT_EXPERIMENTS/README.md`](../NEXT_EXPERIMENTS/README.md); promoted after B1 (MEASURED) completed.
 
-> ## ▶ APPROVED 2026-10-31, with two reviewer additions — commit them as D-1 and D-2, then run
+> ## ▶ DONE 2026-10-31 — `cf94244`: REACTIVE SUFFICES on both workloads; NO HISTORY NEEDED (reviewer accepted)
+>
+> Results: [`results/DC1/results_DC1.md`](../../results/DC1/results_DC1.md). The reviewer re-derived G, G_sh, G_∞ and the
+> memory ratio per workload from the per-job E* values in `dc1.json` (primary and three sensitivities); they match.
+> Reading and follow-ups are in [`briefs/NEXT_EXPERIMENTS/README.md`](../NEXT_EXPERIMENTS/README.md) (status block). The
+> approval text is kept below for the record.
+>
+> ## ▶ APPROVED 2026-10-31, with two reviewer additions — commit them as D-1 and D-2, then run (superseded: done)
 >
 > The first stage (`09051a5`: [`results/DC1/DC1_profile.md`](../../results/DC1/DC1_profile.md),
 > [`results/DC1/DC1_preregistration.md`](../../results/DC1/DC1_preregistration.md), licence record) is accepted. The

@@ -50,6 +50,25 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > clears it. Design rule from B1: a whole-ring freeze with a running producer needs at least one burst of headroom over
 > the window (two 60 MB/s dumps lost exactly one 1 ms burst at the oldest edge).
 
+> **Status 2026-10-31 (later). DC1 is DONE and accepted** (`cf94244`;
+> [`results/DC1/results_DC1.md`](../../results/DC1/results_DC1.md)): **REACTIVE SUFFICES on both workloads**
+> (Llama LoRA G 1.022 [1.003, 1.048]; SD 1.001 [0.997, 1.054] at W = 30 s) and **NO HISTORY NEEDED** (a 1 s ramp
+> extrapolator matches 30 s of history). The reviewer re-derived G, G_sh, G_∞ and the memory ratio from the per-job E*
+> values in `dc1.json` for the primary and three sensitivities; they match, including the fold structure (fold A's
+> calibration chose g = 0, so fold-B jobs have G = 1 exactly). **Reading for the roadmap:** the anticipation leg of
+> ANGLES §B.2 is not supported on public node-level data — a tuned reactive controller or a 1 s ramp detector, both
+> MCU-class, do as well — while the perfect-foresight ceiling (~1.38×) shows the pre-positioning *room* exists and the
+> causal predictor is what fails to reach it. The one pre-registered sensitivity where history pays is a 5× looser
+> violation budget (SD 1.27×, W* 30 s). What remains Tier-A-specific in §B.2 is the telemetry volume for the spectral
+> backstop and the storage-element BMS, neither of which public data can test. Two design notes kept: (i) the
+> time-shuffle control collapsed the forecaster to persistence, so it tested "forecast vs none" rather than "ordered vs
+> disordered history" — a time-*shifted* window (right values, wrong phase) is the better control next time; (ii) the
+> violation budget decides this class of result, so **DC2 (documentary seed, not scheduled):** what compliance window and
+> excursion allowance real large-load ramp specs actually use (ERCOT large-load interconnection rules, IEC 61000-3-3,
+> utility ramp-rate clauses) — if they average over seconds or tolerate ~0.5 % excursions, DC1's sensitivity is the
+> real-world case. **Order now: FR1 → X8 → O1 → R1.** X8 has a full Build Brief at [`briefs/X8/README.md`](../X8/README.md);
+> it needs no label fix (it is a voltage/current replay) and can run before O1.
+
 ---
 
 ## 1. How the reviewer starts one
@@ -67,8 +86,8 @@ After approval the reviewer edits the brief's START HERE box to "APPROVED, run i
 session runs exactly what was pre-registered, commits results, README and dossier updates, sets `DONE <hash>`, and stops.
 
 **X7** ([`briefs/X7/README.md`](../X7/README.md), closed), **B1** ([`briefs/B1/README.md`](../B1/README.md), done),
-**DC1** ([`briefs/DC1/README.md`](../DC1/README.md)) and **FR1** ([`briefs/FR1/README.md`](../FR1/README.md)) have full
-Build Briefs. FR1 is documentary and may run in a parallel session; it records its state in its own brief's Status line
+**DC1** ([`briefs/DC1/README.md`](../DC1/README.md), done), **FR1** ([`briefs/FR1/README.md`](../FR1/README.md)) and
+**X8** ([`briefs/X8/README.md`](../X8/README.md)) have full Build Briefs. FR1 is documentary and may run in a parallel session; it records its state in its own brief's Status line
 and never touches `NEXT_TASK.md`. The others below are skeletons at the level of X6's §3–§4; promote one to a Build
 Brief before naming it in `NEXT_TASK.md`. B1 is a capability measurement: its brief fixes the protocol in advance and lets the session continue
 from the census to the measurement without a stop when every census gate passes.

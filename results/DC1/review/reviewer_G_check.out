@@ -1,0 +1,24 @@
+
+=== primary  spec={'R': 0.1, 'budget': 0.001, 'pms': 2.0, 'eta': 1.0, 'seg': 'active', 'dec': 1}  Estar keys: ['K0', 'K1_1', 'K1sh_1', 'K1sh_1_own', 'K1_5', 'K1sh_5', 'K1sh_5_own', 'K1_30', 'K1sh_30', 'K1sh_30_own', 'K1_60', 'K1sh_60', 'K1sh_60_own', 'K1r', 'K1rsh', 'K1rsh_own', 'Kinf']
+llama2_70b_lora      n=21 G(30s)=1.022 [1.003,1.048] per-fold medians=[1.044, 1.0]  G_sh=1.000  G_inf=1.393  G_r(1s)=1.011  M=1.011
+stable_diffusion     n=20 G(30s)=1.001 [0.997,1.054] per-fold medians=[1.003, 1.0]  G_sh=1.000  G_inf=1.373  G_r(1s)=1.001  M=1.000
+   reported llama2_70b_lora: n=21, verdict=REACTIVE SUFFICES, memory=NO HISTORY NEEDED, W_star_s=1
+   reported stable_diffusion: n=20, verdict=REACTIVE SUFFICES, memory=NO HISTORY NEEDED, W_star_s=1
+
+=== budget0.5%  spec={'R': 0.1, 'budget': 0.005, 'pms': 2.0, 'eta': 1.0, 'seg': 'active', 'dec': 1}  Estar keys: ['K0', 'K1_1', 'K1sh_1', 'K1sh_1_own', 'K1_5', 'K1sh_5', 'K1sh_5_own', 'K1_30', 'K1sh_30', 'K1sh_30_own', 'K1_60', 'K1sh_60', 'K1sh_60_own', 'K1r', 'K1rsh', 'K1rsh_own', 'Kinf']
+llama2_70b_lora      n=21 G(30s)=1.137 [1.126,1.244] per-fold medians=[1.169, 1.104]  G_sh=1.000  G_inf=1.272  G_r(1s)=0.997  M=1.140
+stable_diffusion     n=20 G(30s)=1.270 [1.147,1.277] per-fold medians=[1.294, 1.246]  G_sh=1.000  G_inf=1.284  G_r(1s)=0.993  M=1.279
+   reported llama2_70b_lora: n=21, verdict=UNCLEAR, memory=NEEDS HISTORY, W_star_s=30
+   reported stable_diffusion: n=20, verdict=FORECASTING SAVES STORAGE, memory=NEEDS HISTORY, W_star_s=30
+
+=== R0.20  spec={'R': 0.2, 'budget': 0.001, 'pms': 2.0, 'eta': 1.0, 'seg': 'active', 'dec': 1}  Estar keys: ['K0', 'K1_1', 'K1sh_1', 'K1sh_1_own', 'K1_5', 'K1sh_5', 'K1sh_5_own', 'K1_30', 'K1sh_30', 'K1sh_30_own', 'K1_60', 'K1sh_60', 'K1sh_60_own', 'K1r', 'K1rsh', 'K1rsh_own', 'Kinf']
+llama2_70b_lora      n=21 G(30s)=1.134 [1.090,1.236] per-fold medians=[1.181, 1.087]  G_sh=1.000  G_inf=1.328  G_r(1s)=1.060  M=1.070
+stable_diffusion     n=20 G(30s)=1.000 [0.987,1.022] per-fold medians=[1.0, 1.0]  G_sh=1.000  G_inf=1.340  G_r(1s)=1.016  M=0.984
+   reported llama2_70b_lora: n=21, verdict=UNCLEAR, memory=NO HISTORY NEEDED, W_star_s=30
+   reported stable_diffusion: n=20, verdict=REACTIVE SUFFICES, memory=NO HISTORY NEEDED, W_star_s=60
+
+=== Pmax_s_1x  spec={'R': 0.1, 'budget': 0.001, 'pms': 1.0, 'eta': 1.0, 'seg': 'active', 'dec': 1}  Estar keys: ['K0', 'K1_1', 'K1sh_1', 'K1sh_1_own', 'K1_5', 'K1sh_5', 'K1sh_5_own', 'K1_30', 'K1sh_30', 'K1sh_30_own', 'K1_60', 'K1sh_60', 'K1sh_60_own', 'K1r', 'K1rsh', 'K1rsh_own', 'Kinf']
+llama2_70b_lora      n=21 G(30s)=1.000 [1.000,1.000] per-fold medians=[1.0, 1.0]  G_sh=1.000  G_inf=22.371  G_r(1s)=1.000  M=1.000
+stable_diffusion     n=20 G(30s)=1.188 [1.074,1.326] per-fold medians=[1.165, 1.21]  G_sh=1.000  G_inf=1.415  G_r(1s)=1.000  M=1.188
+   reported llama2_70b_lora: n=21, verdict=REACTIVE SUFFICES, memory=NO HISTORY NEEDED, W_star_s=1
+   reported stable_diffusion: n=20, verdict=UNCLEAR, memory=NEEDS HISTORY, W_star_s=30

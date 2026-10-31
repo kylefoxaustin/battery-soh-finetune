@@ -6,8 +6,9 @@ the window the application-processor tier can hold.
 
 > ## ▶ START HERE (first stage: case list and rating scheme only, then STOP)
 >
-> FR1 is a documentary study with no compute. It may run in a **separate session in parallel with DC1**. If it does,
-> it does **not** touch `NEXT_TASK.md`; it records its state in the Status line at the bottom of this file instead.
+> FR1 is a documentary study with no compute. **As of 2026-10-31 it is the task named in `NEXT_TASK.md`**, so its state
+> goes in `NEXT_TASK.md`'s Status line as usual (mirror it in the Status line at the bottom of this file). If it is
+> instead run in a parallel session while another task holds `NEXT_TASK.md`, use only this file's Status line.
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief, ANGLES §B.3 and `results/B1/results_B1.md` §1 (the measured windows).
