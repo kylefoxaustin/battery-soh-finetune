@@ -4,7 +4,36 @@
 ([`results/OPEN_PROBLEM/ANGLES_REPORT.md`](../../results/OPEN_PROBLEM/ANGLES_REPORT.md)), item 3 in
 [`briefs/NEXT_EXPERIMENTS/README.md`](../NEXT_EXPERIMENTS/README.md); promoted after B1 (MEASURED) completed.
 
-> ## ▶ START HERE (first stage: profile and pre-registration only, then STOP)
+> ## ▶ APPROVED 2026-10-31, with two reviewer additions — commit them as D-1 and D-2, then run
+>
+> The first stage (`09051a5`: [`results/DC1/DC1_profile.md`](../../results/DC1/DC1_profile.md),
+> [`results/DC1/DC1_preregistration.md`](../../results/DC1/DC1_preregistration.md), licence record) is accepted. The
+> reviewer re-derived the gate (20 of 41, all SD, 10 per fold), the periodic counts (26 of 41; 5 among the gated, A 2 /
+> B 3), the per-workload A and period ranges and the folds from `profile.json`; they match. DC1-P1, P3, P4, P5 and P7
+> are accepted as written. Two additions, fixed now before any controller code:
+>
+> - **D-1 (replaces DC1-P2's decision population).** The profile shows two structurally different populations: Llama
+>   LoRA (21 jobs, periodic ~10 s, swing 19–24 %) and Stable Diffusion training (20 jobs, deep burst phases, mostly
+>   aperiodic). A pooled median over 41 would be decided by whichever population sits in the middle, not by the
+>   mechanism. **Decide co-primary, per workload**, each by the §6 table at W = 30 s, out of fold: one verdict for Llama,
+>   one for SD. The pooled 41 and the gated 20 are reported beside them, non-deciding. Llama's verdict carries the
+>   disclosed caveat that its active-segment swing is below the 0.30 amplitude used in the count gate (the gate itself
+>   passed, as a count, and is not reopened).
+> - **D-2 (makes the memory readout a test rather than a tautology).** As pre-registered, G(1 s) = 1 by construction,
+>   so "NEEDS HISTORY" could only ever come out one way. Add **K1-r**, a short-memory comparator: linear extrapolation
+>   of the last **1 s** slope over the same horizon H_p = 5 s, the same pre-positioning law (§4.2 steps 3–4), its own g
+>   fitted on the calibration fold from the same grid; **K1-r-sh** (window shuffled) reported beside it. Memory
+>   readout: **NEEDS HISTORY** if median G(K1, 30 s) / median G(K1-r, 1 s) ≥ **1.10** with CI lower bound > 1;
+>   **NO HISTORY NEEDED** if K1-r is within 10 % of K1; otherwise UNCLEAR on memory. W* is computed over
+>   {1 s (K1-r), 5, 30, **60**} s (DC1-P6's 60 s point joins the W* grid; the headline stays at W = 30 s).
+>
+> **Run order:** commit D-1 and D-2 into `results/DC1/DC1_preregistration.md` with "before controller code" in the
+> message; then write and run `analysis/DC1_storage.py` (and `DC1_sim.c` if used, gated as §4.5) exactly as
+> pre-registered; commit `results/DC1/results_DC1.md` (verdicts first — two of them — with the licence and the
+> resolution caveat), `dc1.json`, the plots, the index rows and the ANGLES §B.2 note; set `NEXT_TASK.md` Status to
+> `DONE <commit-hash>`; push; stop.
+>
+> ## ▶ START HERE (superseded: first stage done at `09051a5`; see the APPROVED box above)
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief end to end, then ANGLES §B.2 and §C.2 and `results/X/X6_preregistration.md` (the decision-table
