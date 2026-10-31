@@ -152,6 +152,20 @@ its headroom (960 → 1,020 W per GPU, 2–3 % performance) from **3-second** sa
 oversubscription half may not need fast local telemetry at all — the stabilisation half is where ms data is called
 for; (c) the operator wants the data in its own domain and will not pay the shelf vendor for it.
 
+**Note, 2026-10-31: DC1 tested the stabilisation half on public traces** ([`results/DC1/results_DC1.md`](../DC1/results_DC1.md)).
+
+- **Verdict (pre-registered, D-1 co-primary): REACTIVE SUFFICES on both workloads.** The data is 41 NLR multi-node
+  training jobs at 5 Hz (CC BY 4.0). Under an ASSUMED 0.10 P_max/s ramp limit with a 0.1 % violation budget, a 30 s
+  seasonal forecaster needs 2.2 % (Llama LoRA) and 0.1 % (Stable Diffusion) less storage than a tuned reactive
+  controller.
+- **Memory readout (D-2): NO HISTORY NEEDED.** A 1 s ramp extrapolator matches it. The perfect-foresight ceiling of
+  the same form is ~1.38×, so the room exists but a causal seasonal predictor does not reach it.
+- **Sensitivity, not deciding.** At a 0.5 % budget, SD gains 1.27× with W* = 30 s.
+- **Tags and scope.** All DERIVED from SOURCED traces under ASSUMED specs. Node-level 5 Hz; says nothing about
+  phase-level (ms) dynamics, the ~20 Hz component or GB200-class racks.
+- **What this does to the window argument above.** The window argument above (10 s at 100 MB/s ≈ 1 GB) gets no
+  support from the 0.2–2.5 Hz band at this resolution. Its case rests on the phase-level band DC1 could not see.
+
 ### B.3 Event-triggered retention: the one place DRAM is physically necessary
 
 **Mechanism.** Keep a rolling window of raw or lightly decimated converter and pack telemetry resident; on a trigger
