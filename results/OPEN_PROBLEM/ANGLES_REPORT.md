@@ -55,8 +55,8 @@ hardware proposal.
    rack is $60–70 k of avoided capex against a controller BoM delta of tens of dollars. The rack storage element is
    an EV-class pack with a far more predictable load. (§B.2)
 
-6. **The null (§E) is the best-supported explanation of C1–C6 as a set**, and it is good news for an "A-core + DDR
-   tier" roadmap: Tier A wins wherever the box must host Linux-class software anyway, with battery and converter
+6. **The null (§E) is the best-supported explanation of C1–C6 as a set**, and it is good news for an "application processor +
+   DRAM" roadmap: Tier A wins wherever the box must host Linux-class software anyway, with battery and converter
    intelligence as upside that the already-present memory makes free. Tier M wins everywhere else. The DRAM size is
    set by the software stack, not by battery working set.
 
@@ -400,7 +400,7 @@ C4/C6" to the first half. It is refuted if §C.3 finds most root causes need min
 forecasting cuts rack storage by a large factor *and* needs seconds of history, or if §C.4 finds a higher-order thermal
 model removes several kelvin of margin that lumped models cannot.
 
-**Why the null is good news for an "A-core + DDR tier" roadmap.** It says the tier is real and the customers for it are
+**Why the null is good news for an "application processor + DRAM" roadmap.** It says that class of design is real and the customers for it are
 identifiable by their software obligations, not by their battery chemistry; that the DRAM is sized by the software
 stack (OS, A/B images, TLS, applications: 1–2 GB) rather than by a battery working set that does not exist; and that
 the counter-tier (MCU + MRAM, no MMU) keeps every customer whose box has no post-SOP software obligations. The battery

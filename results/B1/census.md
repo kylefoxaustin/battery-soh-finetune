@@ -19,8 +19,8 @@ named below unless tagged otherwise.
 > - Re-measured: **18 GB free on the eMMC** (`df`, 18,203,032 kB), so **the storage gate PASSES**. Every other gate
 >   above was already PASS.
 > - Stage 2 then ran: [`results_B1.md`](results_B1.md).
-> - After the run the partition is empty (only `lost+found`), unmounted and not in fstab. It is left in place pending
->   Kyle's decision.
+> - After the run the partition was empty (only `lost+found`), unmounted and not in fstab. On Kyle's instruction it
+>   was then deleted the same day. The eMMC is back to p1 + p2 with 20.2 GB unallocated.
 
 | §3.5 gate | Value | Bar | Result |
 |---|---|---|---|

@@ -171,9 +171,10 @@ their difference (Law 1).
   - The census storage gate failed: 555 MB free on the eMMC root partition.
   - On Kyle's approval (census option (a)), `mmcblk0p3` was created in the eMMC's 20.2 GB of unallocated space as 18.8
     GB ext4, label `b1dump`. p1 and p2 were not touched.
-  - It was mounted only for B1. After the run it is **empty (only `lost+found`), unmounted and not in fstab**, so no
-    dump file remains on the partition (§6 of the brief).
-  - The partition itself is left in place pending Kyle's decision. See the census addendum.
+  - It was mounted only for B1. After the run it was **empty (only `lost+found`), unmounted and not in fstab**, so no
+    dump file remained on it (§6 of the brief).
+  - **On Kyle's instruction the partition was then deleted** (`wipefs -a`, `parted rm 3`, same day). The eMMC is back
+    to p1 + p2 with 20.2 GB unallocated, as the census found it.
 - **Governor (brief §6: do not leave `performance` set).** The census found the governor already at `performance`, set
   by an earlier tenant (the board card says `ondemand` is the boot default). The runner's trap restored *what it found*,
   so the board is at `performance`, as found. Setting it to `ondemand` is a one-line change if the reviewer wants that;
