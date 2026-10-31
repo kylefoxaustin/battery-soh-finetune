@@ -198,3 +198,52 @@ calibration fold, from the same grid extended by {3, 5}. It is non-causal, a cei
 Any change after this commit is a numbered deviation (D-1, D-2, …). The segment rule, the population, the folds, R,
 the budget, P_max_s, the controller forms, the grids, ρ_min, L_min, H_p, the bisection bounds and the thresholds never
 move after results are seen.
+
+### D-1 (reviewer, 2026-10-31, before controller code): co-primary decisions per workload
+
+Replaces DC1-P2's decision population. Nothing else in §1–§4 moves.
+
+- **Two decisions, co-primary:** one for **Llama LoRA** (21 jobs: fold A 11, B 10) and one for **Stable Diffusion
+  training** (20 jobs: A 10, B 10). Each is decided by the §6 table at W = 30 s, out of fold.
+- **Within each workload,** the headline median is the median G over that workload's evaluation jobs in each fold,
+  averaged over the two fold directions. The 95 % CI uses 1,000 bootstrap resamples (seed 0), drawn within fold within
+  workload. G_sh and G_∞ are computed the same way.
+- **Fitting is unchanged:** every parameter (K0's s_tgt and T_rec; g per controller and W) is still fitted on the whole
+  calibration fold, both workloads, with the §4.1 objective. D-1 changes the population a decision is read over. It
+  does not change what is fitted, or on what.
+- **Reported beside the two verdicts, non-deciding:** the pooled 41 and the gated 20, each run through the §6 table
+  with its verdict printed.
+- **Caveat on the Llama verdict, disclosed in advance:** Llama's active-segment swing (0.19–0.24 of max) is below the
+  0.30 amplitude used in the §3.4 count gate. The gate passed as a count and is not reopened.
+
+### D-2 (reviewer, 2026-10-31, before controller code): 1 s ramp comparator for the memory readout
+
+As pre-registered, G(K1, 1 s) = 1 by construction, so the memory readout could only come out one way. D-2 adds a
+short-memory comparator.
+
+- **K1-r (ramp, W = 1 s).**
+  - Window: the last n = 5 samples, P_load[t−4 … t].
+  - Slope b̂: the least-squares slope of the window against time, in W per frame.
+  - Forecast: `P̂(t + h) = P_load(t) + b̂ · h`, for h = 1 … 25 (H_p = 5 s).
+  - Then §4.2 steps 3–4 unchanged: Δ̂ = the largest-magnitude `P̂(t + h) − P_load(t)` over the horizon; same target
+    law; same r(t).
+  - s_tgt and T_rec are K0's fitted values. **g ∈ {0, 0.25, 0.5, 1, 1.5, 2}** is fitted on the calibration fold with
+    §4.1's objective, ties to the smaller g.
+- **K1-r-sh.** The same, but the 5 window values are randomly permuted before the slope fit; the slope is fitted
+  against the original time positions. The anchor P_load(t) is the current reading, not history, and is not permuted.
+  RNG: `numpy.random.default_rng(1000 · job_idx + 1001)`, one permutation per frame in frame order. The deciding
+  version uses K1-r's fitted g. A version with its own fitted g is reported. Like K1-sh, it is reported, not deciding.
+- **Memory readout (replaces the §6 sub-verdict rows), per workload and at W = 30 s:**
+  - M = median G(K1, 30 s) / median G(K1-r, 1 s). Both medians are the headline medians, i.e. the mean of fold
+    medians. The CI comes from the same 1,000 bootstrap resamples, recomputing both medians in each resample.
+  - **NEEDS HISTORY** if M ≥ **1.10** and its CI lower bound > 1.
+  - **NO HISTORY NEEDED** if M < **1.10**, i.e. K1-r comes within 10 % of K1. If M < 1/1.10, the write-up says that
+    K1-r beat K1.
+  - **UNCLEAR on memory** otherwise: M ≥ 1.10, but the CI lower bound is ≤ 1.
+  - The readout is computed and printed for both workloads whatever the main verdict. It qualifies the main verdict
+    only when that verdict is FORECASTING SAVES STORAGE.
+- **W\*.** W* is computed over {1 s (K1-r), 5, 30, 60} s, per workload: the smallest W at which the headline median
+  G ≥ 0.95 × its maximum over that set. At 1 s, G means G(K1-r). This supersedes DC1-P6's "W* on {1, 5, 30} only".
+  The headline stays at W = 30 s. G(K1, 1 s) = 1 is still printed, as a check of §4.2's disclosure.
+- **Where it appears:** K1-r and K1-r-sh are evaluated in every §7 sensitivity alongside K1. G(K1-r) and G(K1-r-sh)
+  are printed beside every W* readout.
