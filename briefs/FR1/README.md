@@ -4,7 +4,31 @@
 ([`results/OPEN_PROBLEM/ANGLES_REPORT.md`](../../results/OPEN_PROBLEM/ANGLES_REPORT.md)); promoted after B1 measured
 the window the application-processor tier can hold.
 
-> ## ▶ START HERE (first stage: case list and rating scheme only, then STOP)
+> ## ▶ APPROVED 2026-10-31 — rate now, as two blind raters on two branches (D-1 to D-3 in the pre-registration §8)
+>
+> The first stage (`765d1f1`: 75 power-electronics cases from NHTSA component fields, 75 base-rate cases, the rating
+> scheme) is accepted. FR1-P1 to P5 are accepted as written. The reviewer made three pre-rating changes, recorded in
+> `results/FR1/FR1_preregistration.md` §8 and `results/FR1/FR1_cases.md`:
+> **D-1** — PE006 excluded (non-plug-in by model name); 25V-811 Bentayga Hybrid added as PE076; 75 cases remain.
+> **D-2** — blindness by branches: rater A on `fr1-rater-a`, rater B on `fr1-rater-b`; nothing merges to `main` until
+> both exist. **D-3** — disclose that both raters are language-model sessions; κ is reproducibility, not independence;
+> an optional 15-case human spot-check is defined.
+>
+> **Rater A (this session):** `git pull`; create branch `fr1-rater-a` from `main`; rate every PE and BR case from its
+> Part 573 report (and the ODI résumé only where §4.1 allows) in the `default_rng(1)` order; write
+> `results/FR1/ratings_A.csv`; commit and push the branch; set the Status lines in `NEXT_TASK.md` (on `main`) and here
+> to `RATER A DONE <hash>`; stop. **Do not run the agreement analysis.**
+>
+> **Rater B (a fresh session, started by the reviewer afterwards):** `git pull` on `main` only; **do not fetch or open
+> `fr1-rater-a`**; create `fr1-rater-b`; rate in the `default_rng(2)` order; write `results/FR1/ratings_B.csv`; commit
+> and push the branch; set the Status lines to `RATER B DONE <hash>`; stop.
+>
+> **Analysis (either session, after both branches exist):** merge both branches into `main`; write
+> `analysis/FR1_agreement.py`; produce `results/FR1/results_FR1.md` (verdict first; κ with the D-3 disclosure beside
+> it; every disagreement listed, never reconciled), the index rows and the ANGLES §B.3 note; set Status to
+> `DONE <hash>`; push; stop.
+>
+> ## ▶ START HERE (superseded: first stage done at `765d1f1`; see the APPROVED box above)
 >
 > FR1 is a documentary study with no compute. **As of 2026-10-31 it is the task named in `NEXT_TASK.md`**, so its state
 > goes in `NEXT_TASK.md`'s Status line as usual (mirror it in the Status line at the bottom of this file). If it is
@@ -135,4 +159,4 @@ reports verdict first, with the licence and the "judgemental" caveat, and one ro
 
 *Fix the list blind. Pre-register the thresholds against the measured windows. Rate twice. Report the disagreement.*
 
-**Status:** AWAITING APPROVAL 765d1f1
+**Status:** APPROVED 2026-10-31 — rating in progress (rater A first)

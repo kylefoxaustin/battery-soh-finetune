@@ -240,7 +240,21 @@ A clean "most causes need ≤ 1 s" is a result (brief rule 7). No dollar figure 
 
 ## 8. Deviations
 
-Any change after this commit is a numbered deviation (D-1, D-2, …). After any rating has been written, none of the
+- **D-1 (reviewer, 2026-10-31, before any rating; model and component fields only).** PE006 (20V-798; Honda Accord
+  Hybrid, CR-V Hybrid, Insight) is **excluded** as non-plug-in by model name. 25V-811 (Bentley Bentayga Hybrid, a
+  plug-in-only model) is **added as PE076**. The PE list stays at 75 cases. Recorded in `FR1_cases.md`.
+- **D-2 (reviewer, 2026-10-31).** Blindness is enforced by branches, not by instruction alone: rater A commits
+  `ratings_A.csv` to branch `fr1-rater-a` and rater B commits `ratings_B.csv` to branch `fr1-rater-b`; neither file
+  touches `main` until both exist. Rater B is a **fresh session** started by the reviewer from `main` after rater A has
+  pushed, with the instruction not to fetch or read `fr1-rater-a`. The agreement analysis runs only after both branches
+  are merged.
+- **D-3 (reviewer, 2026-10-31; disclosure, no change to the readouts).** Both raters are language-model sessions working
+  from the same documents. κ therefore measures the **reproducibility** of the judgement, not its independence from a
+  shared model prior, and `results_FR1.md` must say so beside the κ value. The reviewer may add a human spot-check: a
+  stratified subset of 15 PE cases (5 per window category by rater A, drawn by `default_rng(3)`) rated by the reviewer
+  after both machine ratings are committed; κ(A, human) on that subset is reported as a calibration, non-deciding.
+
+Any further change after this commit is a numbered deviation (D-4, …). After any rating has been written, none of the
 following moves:
 
 - the case list (apart from a reviewer move of unresolved cases before rating, §2);

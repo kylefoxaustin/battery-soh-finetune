@@ -3,34 +3,35 @@
 **Updated:** 2026-10-31. **Owner of this file:** the reviewer. The running session only *reads* it, except for the
 Status line.
 
-**Previous task — DC1: DONE at `cf94244`, reviewed and accepted** (REACTIVE SUFFICES on both workloads; NO HISTORY
-NEEDED; [`results/DC1/results_DC1.md`](results/DC1/results_DC1.md)). Plan and reading:
-[`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/README.md) (order now FR1 → X8 → O1 → R1; X8 has a full
-Build Brief at [`briefs/X8/README.md`](briefs/X8/README.md) and is next after this task).
+**FR1 first stage (`765d1f1`) is APPROVED with reviewer deviations D-1 to D-3** (see
+[`briefs/FR1/README.md`](briefs/FR1/README.md) APPROVED box and `results/FR1/FR1_preregistration.md` §8). Plan:
+[`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/README.md). X8 ([`briefs/X8/README.md`](briefs/X8/README.md))
+is next after FR1.
 
-## Do these steps, in order
+## Do these steps, in order (this session is **Rater A**)
 
-1. `git pull` on `main`.
-2. Open [`briefs/FR1/README.md`](briefs/FR1/README.md) and follow its START HERE box. **First stage only:** fix the
-   search terms, inclusion criteria and the rating scheme (brief §3), run the search, and write
-   `results/FR1/FR1_cases.md` (the case list with sources and **no** root-cause or remedy text) and
-   `results/FR1/FR1_preregistration.md`. Then STOP.
-3. Commit both with "before rating" in the commit message. **Do not read or record any remedy or root-cause text in this
-   stage.** Inclusion is decided from component and symptom fields only.
-4. Set the Status line below to `AWAITING APPROVAL <commit-hash>` (and mirror it in the FR1 brief's own Status line),
-   push, and stop. The reviewer approves by editing the brief's START HERE box to "APPROVED, rate now".
+1. `git pull` on `main`. Read the APPROVED box in `briefs/FR1/README.md` and §8 of the pre-registration.
+2. Create branch `fr1-rater-a` from `main`. Rate every PE case (PE001–PE005, PE007–PE076) and every BR case from its
+   Part 573 Safety Recall Report (plus the ODI résumé only where pre-registration §4.1 allows), in the
+   `numpy.random.default_rng(1)` order, using the closed lists in pre-registration §3. Record *cannot judge* where a
+   document cannot be opened. No TSBs, press, papers or memory of a case.
+3. Write `results/FR1/ratings_A.csv` (one row per case: items 1–5 plus the free-text signals and rate). Commit and push
+   **the branch only**. Do not merge to `main`. Do not write or run any agreement analysis.
+4. Set the Status line below (on `main`) to `RATER A DONE <branch-hash>`, mirror it in the FR1 brief's Status line,
+   push, and stop.
+
+The reviewer will then start a fresh session as **Rater B** (branch `fr1-rater-b`, blind to yours), and after both
+branches exist a session merges them and runs the pre-registered agreement analysis.
 
 ## Rules that always apply
-- The case list is fixed blind, before any root-cause text is read. That rule is what makes the ratings mean anything.
-- Pre-register the rating categories and the window thresholds (≤ 1 s · 1–40 s · 40–80 s · 80–700 s · > 700 s) before
-  rating; the tier line is 80 s and B1's measured window is 671 s.
-- Two raters, blind to each other; κ ≥ 0.6 or the study is UNGATED. Disagreements are reported, never reconciled.
-- Every rating is DERIVED-judgemental and says so. Carry the source (NHTSA public domain; check Safety Gate terms).
-- No dollar figures.
+- Rate from the cited documents only. Every rating is DERIVED-judgemental and says so.
+- Nothing in the case list, categories, thresholds or decision table moves. Any change is a numbered deviation (D-4, …).
+- The κ gate (≥ 0.6) and the conservative reading decide; disagreements are reported, never reconciled.
+- Carry the source (NHTSA, public domain) on every table. No dollar figures.
 - Do not start any experiment this file does not name.
 
 ## When you finish
-Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
-and push.
+Edit only the **Status** line below to `RATER A DONE <branch-hash>` or `BLOCKED: <one-line reason>`, then commit and
+push `main`.
 
-**Status:** AWAITING APPROVAL 765d1f1
+**Status:** OPEN

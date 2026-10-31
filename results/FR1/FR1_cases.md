@@ -214,3 +214,16 @@ Every 24-th campaign (starting at index 12) of the 1867 vehicle campaigns in the
 | BR073 | [26V-166](https://www.nhtsa.gov/recalls?nhtsaId=26V166) | 20260319 | General Motors, LLC | SIERRA 1500; SIERRA 2500; SIERRA 3500; SILVERADO 1500; SILVERADO 2500… (2018-2019) | AIR BAGS | restraint |
 | BR074 | [26V-266](https://www.nhtsa.gov/recalls?nhtsaId=26V266) | 20260424 | Volkswagen Group of America, Inc. | Q5; Q5 SPORTBACK; SQ5; SQ5 SPORTBACK (2025-2025) | SEAT BELTS:PRETENSIONER | restraint |
 | BR075 | [26V-350](https://www.nhtsa.gov/recalls?nhtsaId=26V350) | 20260528 | Volvo Trucks North America | VAH; VHD; VN; VNL (4); VNR (4) (2026-2027) | WHEELS:LUGS/NUTS/BOLTS/STUDS | chassis |
+
+## Reviewer edits before rating (2026-10-31; model and component fields only, no cause text read)
+
+Made under pre-registration §2 ("the reviewer may move any of them in, from model names alone, before rating") and
+recorded as deviation **D-1** in `FR1_preregistration.md` §8.
+
+| Edit | Case | Reason (from model names and component fields alone) |
+|---|---|---|
+| **Excluded** | **PE006** (20V-798, Honda Accord Hybrid / CR-V Hybrid / Insight) | Non-plug-in hybrids by model name; the brief's scope is plug-in vehicles. It entered through the P1 component code only. Rated by neither rater; not in any denominator. |
+| **Added** | **PE076** = [25V-811](https://www.nhtsa.gov/recalls?nhtsaId=25V811), 2025-11-24, Bentley Motors, BENTAYGA HYBRID (2023), groups HV BMS / contactor unit; Traction inverter / motor controller, plug-in rule: reviewer (model name), cluster C53, initiated by MFR | The Bentayga Hybrid is sold only as a plug-in hybrid, so the model name alone resolves it. |
+| Left out | the other 23 unresolved | Model names alone do not resolve them (gas or non-plug-in variants share the name: Pacifica, Fusion, XC40, CX-90, Escape/Corsair, the JLR list, the bus and van chassis). |
+
+The power-electronics list is therefore **75 cases: PE001–PE005, PE007–PE076.** The base-rate sample is unchanged.
