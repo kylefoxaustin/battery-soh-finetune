@@ -1,0 +1,5573 @@
+{
+ "source": "FLAT_RCL_POST_2010.txt",
+ "steps": {
+  "records_in_file": 247021,
+  "campaigns_in_file": 15368,
+  "S1_vehicle_campaigns_2018-01-01_to_2026-10-31": 7915,
+  "S2_component_term_hit": 123,
+  "S2_by_group": {
+   "OBC / charging control": 16,
+   "DC-DC converter": 13,
+   "Traction inverter / motor controller": 60,
+   "HV BMS / contactor unit": 45
+  },
+  "S2b_propulsion_context": 99,
+  "S3_plug_in": 75,
+  "S3_plug_in_by_rule": {
+   "P1": 14,
+   "P2": 61
+  },
+  "S3_plug_in_unresolved": 24,
+  "S4_included_with_defect_summary_present": 75,
+  "S5_mechanical_clusters": 52,
+  "base_pool": 1867,
+  "base_k": 24
+ },
+ "groups": {
+  "OBC / charging control": [
+   "ON[- ]?BOARD CHARG",
+   "\\bOBCM?\\b",
+   "\\bICCU\\b",
+   "INTEGRATED CHARGING",
+   "CHARGING CONTROL",
+   "CHARGE CONTROL",
+   "CHARGING:MODULE",
+   "CHARGING MODULE",
+   "(?<![A-Z])CHARGER\\b"
+  ],
+  "DC-DC converter": [
+   "DC ?[/-] ?DC",
+   "\\bDCDC\\b",
+   "DC TO DC",
+   "\\bLDC\\b",
+   "(?<!TORQUE )(?<!CATALYTIC )CONVERTER"
+  ],
+  "Traction inverter / motor controller": [
+   "INVERTER",
+   "POWER CONTROL UNIT",
+   "\\bH?PCU\\b",
+   "MOTOR CONTROLLER",
+   "MOTOR CONTROL UNIT",
+   "TRACTION MOTOR:CONTROLLER",
+   "POWER ELECTRONIC"
+  ],
+  "HV BMS / contactor unit": [
+   "\\bBMS\\b",
+   "\\bBECM\\b",
+   "BATTERY MANAGEMENT",
+   "BATTERY ENERGY CONTROL",
+   "ENERGY CONTROL MODULE",
+   "CONTACTOR",
+   "FUSES, RELAYS, CONTACTS",
+   "PYRO",
+   "BATTERY JUNCTION BOX",
+   "\\bBJB\\b",
+   "HIGH[- ]VOLTAGE RELAY",
+   "PRE-?CHARGE",
+   "BATTERY DISCONNECT UNIT",
+   "\\bBDU\\b"
+  ]
+ },
+ "not_terms": [
+  "SUPERCHARG",
+  "TURBOCHARG",
+  "TORQUE CONVERTER",
+  "CATALYTIC CONVERTER",
+  "SOLAR[^|]*"
+ ],
+ "p2_makes": [
+  "ARCIMOTO",
+  "ARRIVAL",
+  "BOLLINGER",
+  "BRIGHTDROP",
+  "BYD",
+  "CANOO",
+  "ELECTRAMECCANICA",
+  "FISKER",
+  "GREENPOWER",
+  "HARBINGER",
+  "KARMA",
+  "LIGHTNING EMOTORS",
+  "LION ELECTRIC",
+  "LIVEWIRE",
+  "LORDSTOWN",
+  "LUCID",
+  "MOTIV",
+  "MULLEN",
+  "NIKOLA",
+  "PHOENIX MOTORCARS",
+  "POLESTAR",
+  "PROTERRA",
+  "RIVIAN",
+  "SCOUT",
+  "SEA ELECTRIC",
+  "TESLA",
+  "TROPOS",
+  "VINFAST",
+  "WORKHORSE",
+  "XOS",
+  "ZERO",
+  "ZEUS"
+ ],
+ "p2_model": [
+  "\\bEV\\d?\\b",
+  "ELECTRIC",
+  "E-TRON",
+  "\\bPHEV\\b",
+  "PLUG-?IN",
+  "\\bPLUG\\b",
+  "\\bPRIME\\b",
+  "\\b4XE\\b",
+  "RECHARGE",
+  "E-HYBRID",
+  "ENERGI",
+  "IONIQ ?[56]",
+  "\\bBOLT\\b",
+  "\\bLEAF\\b",
+  "MACH-E",
+  "LIGHTNING",
+  "E-TRANSIT",
+  "TAYCAN",
+  "\\bI[3457]\\b",
+  "\\bIX\\d?\\b",
+  "\\bEQ[ABCES]\\b",
+  "\\bEQ\\b",
+  "\\bID\\.? ?4\\b",
+  "ID\\.? ?BUZZ",
+  "BZ4X",
+  "SOLTERRA",
+  "ARIYA",
+  "LYRIQ",
+  "OPTIQ",
+  "VISTIQ",
+  "CELESTIQ",
+  "HUMMER",
+  "\\bVOLT\\b",
+  "PACIFICA HYBRID",
+  "\\bC40\\b",
+  "\\bEX30\\b",
+  "\\bEX90\\b",
+  "\\bGV60\\b",
+  "\\bRZ\\b",
+  "UX ?300E",
+  "450H\\+",
+  "GRAND TOURING",
+  "\\b\\d{3}E\\b",
+  "XDRIVE\\d{2}E",
+  "I-PACE",
+  "PROLOGUE",
+  "\\bZDX\\b",
+  "CYBERTRUCK",
+  "HORNET R/T",
+  "E-GOLF",
+  "FORTWO",
+  "CROSSTREK HYBRID",
+  "EDV",
+  "\\bR1[ST]\\b",
+  "MODEL [3SXY]",
+  "MACH ?E\\b",
+  "\\bBEV\\b",
+  "\\bXH?E\\d\\d",
+  "RIZON",
+  "JOULEY",
+  "E-ACTT",
+  "\\bBZ\\b",
+  "D45CRTE",
+  "J4500E"
+ ],
+ "base_top": {
+  "body": [
+   "STRUCTURE",
+   "LATCHES/LOCKS/LINKAGES",
+   "SEATS"
+  ],
+  "chassis": [
+   "SUSPENSION",
+   "WHEELS"
+  ],
+  "restraint": [
+   "AIR BAGS",
+   "SEAT BELTS"
+  ]
+ },
+ "cases": [
+  {
+   "campno": "19V833000",
+   "nhtsa_id": "19V-833",
+   "rcdate": "20191119",
+   "mfgname": "Arcimoto Inc",
+   "makes": [
+    "ARCIMOTO"
+   ],
+   "models": [
+    "FUV"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 22,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V833",
+   "case": "PE001",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C01"
+  },
+  {
+   "campno": "19V834000",
+   "nhtsa_id": "19V-834",
+   "rcdate": "20191119",
+   "mfgname": "Arcimoto Inc",
+   "makes": [
+    "ARCIMOTO"
+   ],
+   "models": [
+    "FUV"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 18,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V834",
+   "case": "PE002",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C01"
+  },
+  {
+   "campno": "20V624000",
+   "nhtsa_id": "20V-624",
+   "rcdate": "20201008",
+   "mfgname": "Harley-Davidson Motor Company",
+   "makes": [
+    "HARLEY-DAVIDSON/LIVEWIRE"
+   ],
+   "models": [
+    "ELW (LIVEWIRE)"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Charger, On-Board"
+   ],
+   "potaff": 1012,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V624",
+   "case": "PE003",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C02"
+  },
+  {
+   "campno": "20V630000",
+   "nhtsa_id": "20V-630",
+   "rcdate": "20201013",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "KONA ELECTRIC"
+   ],
+   "years": "2019-2020",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "High Voltage Battery System Assembly"
+   ],
+   "potaff": 6707,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V630",
+   "case": "PE004",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C03"
+  },
+  {
+   "campno": "20V640000",
+   "nhtsa_id": "20V-640",
+   "rcdate": "20201015",
+   "mfgname": "Zero Motorcycles Inc.",
+   "makes": [
+    "ZERO"
+   ],
+   "models": [
+    "DS",
+    "DSR",
+    "FX",
+    "FXS",
+    "S",
+    "SR"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:DC/DC CONVERTER"
+   ],
+   "mfr_comp_name": [
+    "DC-DC CONV BORGWARNER 622-11213 REV B"
+   ],
+   "potaff": 64,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V640",
+   "case": "PE005",
+   "groups": [
+    "DC-DC converter"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C04"
+  },
+  {
+   "campno": "20V798000",
+   "nhtsa_id": "20V-798",
+   "rcdate": "20201217",
+   "mfgname": "Honda (American Honda Motor Co.)",
+   "makes": [
+    "HONDA"
+   ],
+   "models": [
+    "ACCORD HYBRID",
+    "CR-V HYBRID",
+    "INSIGHT"
+   ],
+   "years": "2020-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:DC/DC CONVERTER"
+   ],
+   "mfr_comp_name": [
+    "PCU Assy."
+   ],
+   "potaff": 27838,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V798",
+   "case": "PE006",
+   "groups": [
+    "DC-DC converter",
+    "OBC / charging control",
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C05"
+  },
+  {
+   "campno": "21V110000",
+   "nhtsa_id": "21V-110",
+   "rcdate": "20210224",
+   "mfgname": "Polestar Automotive USA, Inc.",
+   "makes": [
+    "POLESTAR"
+   ],
+   "models": [
+    "POLESTAR 2"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "BECM software with updated micro-processor operati"
+   ],
+   "potaff": 3457,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V110",
+   "case": "PE007",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C06"
+  },
+  {
+   "campno": "21V191000",
+   "nhtsa_id": "21V-191",
+   "rcdate": "20210318",
+   "mfgname": "Arcimoto Inc",
+   "makes": [
+    "ARCIMOTO"
+   ],
+   "models": [
+    "DELIVERATOR",
+    "FUV"
+   ],
+   "years": "2019-2020",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM)"
+   ],
+   "mfr_comp_name": [
+    "000895 Gigavac 300A GV241MAB contactor (as-receive",
+    "001052 BMS, Orion 2, Standard 36 Cell, Factory Def",
+    "002176 Fuse, Semiconductor, 150VDC, 400A Rating",
+    "003024 Busbar, Mid-pack, Flexible",
+    "003105 Backbone, ASSY",
+    "003196 Battery Bay, ASSY",
+    "003198 Battery Electronics, ASSY",
+    "003357 Contactor, Traction, ASSY (Gigavac 300A GV2",
+    "003358 Contactor, Isolation, ASSY (Gigavac 300A GV",
+    "003375 Firmware and Profile, Orion BMS2",
+    "004947 Battery Electronics V2, ASSY",
+    "004953 Battery Bay V2, ASSY",
+    "004957 Busbar, Wide, Rear Contactor to Battery, FM"
+   ],
+   "potaff": 181,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V191",
+   "case": "PE008",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C01"
+  },
+  {
+   "campno": "21V242000",
+   "nhtsa_id": "21V-242",
+   "rcdate": "20210406",
+   "mfgname": "Arcimoto Inc",
+   "makes": [
+    "ARCIMOTO"
+   ],
+   "models": [
+    "DELIVERATOR",
+    "FUV",
+    "RAPID RESPONDER",
+    "ROADSTER"
+   ],
+   "years": "2019-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "001052 BMS, Orion 2, Standard 36 Cell, Factory Def",
+    "003222 VCU, ECOTRONS, ES1274A",
+    "003375 Firmware and Profile, Orion BMS2",
+    "004085 Inverter, SME, AC-X1, CAN programming inter",
+    "004332 Kinetic Energy Recovery System, ASSY"
+   ],
+   "potaff": 252,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V242",
+   "case": "PE009",
+   "groups": [
+    "HV BMS / contactor unit",
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C01"
+  },
+  {
+   "campno": "21V244000",
+   "nhtsa_id": "21V-244",
+   "rcdate": "20210407",
+   "mfgname": "New Flyer of America, Inc.",
+   "makes": [
+    "NEW FLYER"
+   ],
+   "models": [
+    "XE35",
+    "XE40",
+    "XE60",
+    "XHE40",
+    "XHE60"
+   ],
+   "years": "2013-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "ELFA2 DC4-650WM Inverter",
+    "ELFA2 DV4-650WH Inverter with 1VPM"
+   ],
+   "potaff": 227,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V244",
+   "case": "PE010",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C07"
+  },
+  {
+   "campno": "21V311000",
+   "nhtsa_id": "21V-311",
+   "rcdate": "20210504",
+   "mfgname": "Arcimoto Inc",
+   "makes": [
+    "ARCIMOTO"
+   ],
+   "models": [
+    "DELIVERATOR",
+    "FUV",
+    "RAPID RESPONDER",
+    "ROADSTER"
+   ],
+   "years": "2019-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:SOFTWARE",
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [
+    "003222 VCU, ECOTRONS, ES1274A",
+    "004085 Inverter, SME, AC-X1, CAN programming inter"
+   ],
+   "potaff": 261,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V311",
+   "case": "PE011",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C01"
+  },
+  {
+   "campno": "21V486000",
+   "nhtsa_id": "21V-486",
+   "rcdate": "20210629",
+   "mfgname": "Porsche Cars North America, Inc.",
+   "makes": [
+    "PORSCHE"
+   ],
+   "models": [
+    "TAYCAN"
+   ],
+   "years": "2020-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER:SOFTWARE",
+    "ENGINE AND ENGINE COOLING:ENGINE:ENGINE CONTROL MODULE (ECU/ECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Power Electronics"
+   ],
+   "potaff": 10373,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V486",
+   "case": "PE012",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C08"
+  },
+  {
+   "campno": "21V944000",
+   "nhtsa_id": "21V-944",
+   "rcdate": "20211207",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "IONIQ ELECTRIC"
+   ],
+   "years": "2017-2019",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:ONBOARD (OBCM)",
+    "ELECTRICAL SYSTEM:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Power Electric (\u201cPE\u201d) Module"
+   ],
+   "potaff": 2679,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V944",
+   "case": "PE013",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C09"
+  },
+  {
+   "campno": "22V223000",
+   "nhtsa_id": "22V-223",
+   "rcdate": "20220406",
+   "mfgname": "Arcimoto Inc",
+   "makes": [
+    "ARCIMOTO"
+   ],
+   "models": [
+    "DELIVERATOR",
+    "FUV",
+    "RAPID RESPONDER",
+    "ROADSTER"
+   ],
+   "years": "2019-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "ORION BMS 2",
+    "VCU, ECOTRONS, ES1274A"
+   ],
+   "potaff": 516,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V223",
+   "case": "PE014",
+   "groups": [
+    "HV BMS / contactor unit",
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C01"
+  },
+  {
+   "campno": "22V412000",
+   "nhtsa_id": "22V-412",
+   "rcdate": "20220610",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "MUSTANG MACH E"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Battery Energy Control Module Software",
+    "Secondary On-Board Diagnostic Control Module Softw"
+   ],
+   "potaff": 48924,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V412",
+   "case": "PE015",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C10"
+  },
+  {
+   "campno": "22V459000",
+   "nhtsa_id": "22V-459",
+   "rcdate": "20220628",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "IONIQ HYBRID",
+    "IONIQ PLUG-IN HYBRID"
+   ],
+   "years": "2017-2018",
+   "compname": [
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [
+    "MAIN RELAY",
+    "PRA"
+   ],
+   "potaff": 10575,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V459",
+   "case": "PE016",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C11"
+  },
+  {
+   "campno": "22V899000",
+   "nhtsa_id": "22V-899",
+   "rcdate": "20221206",
+   "mfgname": "Kia America, Inc.",
+   "makes": [
+    "KIA"
+   ],
+   "models": [
+    "NIRO EV"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:THERMAL MANAGEMENT:FLUID/COOLANT"
+   ],
+   "mfr_comp_name": [
+    "EPCU ASSY"
+   ],
+   "potaff": 872,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V899",
+   "case": "PE017",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C12"
+  },
+  {
+   "campno": "22V941000",
+   "nhtsa_id": "22V-941",
+   "rcdate": "20221216",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "KONA ELECTRIC"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:THERMAL MANAGEMENT:FLUID/COOLANT"
+   ],
+   "mfr_comp_name": [
+    "EPCU ASSY"
+   ],
+   "potaff": 853,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V941",
+   "case": "PE018",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C13"
+  },
+  {
+   "campno": "23V040000",
+   "nhtsa_id": "23V-040",
+   "rcdate": "20230201",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "VOLKSWAGEN"
+   ],
+   "models": [
+    "ID.4"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "HV Battery management software",
+    "Pulse inverter software"
+   ],
+   "potaff": 20904,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V040",
+   "case": "PE019",
+   "groups": [
+    "HV BMS / contactor unit",
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C14"
+  },
+  {
+   "campno": "23V041000",
+   "nhtsa_id": "23V-041",
+   "rcdate": "20230202",
+   "mfgname": "Toyota Motor Engineering & Manufacturing",
+   "makes": [
+    "TOYOTA"
+   ],
+   "models": [
+    "RAV4 PRIME"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:HYBRID MANAGEMENT:POWER CONTROL UNIT/MODULE (HPCU)"
+   ],
+   "mfr_comp_name": [
+    "Computer Assembly, Hybrid Vehicle Control"
+   ],
+   "potaff": 16679,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V041",
+   "case": "PE020",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C15"
+  },
+  {
+   "campno": "23V095000",
+   "nhtsa_id": "23V-095",
+   "rcdate": "20230216",
+   "mfgname": "Electra Meccanica Vehicles Corp",
+   "makes": [
+    "ELECTRAMECCANICA"
+   ],
+   "models": [
+    "SOLO G2",
+    "SOLO G3"
+   ],
+   "years": "2019-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM)"
+   ],
+   "mfr_comp_name": [
+    "ASSEMBLY, ECU, BATTERY MANAGEMENT SYSTEM (BMS)",
+    "INVERTER (IPU), ALPHA MOTOR"
+   ],
+   "potaff": 429,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V095",
+   "case": "PE021",
+   "groups": [
+    "HV BMS / contactor unit",
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C16"
+  },
+  {
+   "campno": "23V110000",
+   "nhtsa_id": "23V-110",
+   "rcdate": "20230222",
+   "mfgname": "Lucid USA, Inc.",
+   "makes": [
+    "LUCID"
+   ],
+   "models": [
+    "AIR"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS"
+   ],
+   "mfr_comp_name": [
+    "Contactor GXV600-010/-018"
+   ],
+   "potaff": 886,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V110",
+   "case": "PE022",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C17"
+  },
+  {
+   "campno": "23V309000",
+   "nhtsa_id": "23V-309",
+   "rcdate": "20230502",
+   "mfgname": "Mercedes-Benz USA, LLC",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "AMG EQS 53",
+    "EQS 450",
+    "EQS 450+",
+    "EQS 580",
+    "EQS450",
+    "EQS580",
+    "S 580 E",
+    "redundant EQE 350 4MATIC"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY THERMAL:MANAGEMENT:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Battery Management Software"
+   ],
+   "potaff": 3828,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V309",
+   "case": "PE023",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C18"
+  },
+  {
+   "campno": "23V434000",
+   "nhtsa_id": "23V-434",
+   "rcdate": "20230619",
+   "mfgname": "Tesla, Inc.",
+   "makes": [
+    "TESLA"
+   ],
+   "models": [
+    "MODEL 3",
+    "MODEL Y"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "DISCONNECT,BATTERY,PYRO"
+   ],
+   "potaff": 26,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V434",
+   "case": "PE024",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C19"
+  },
+  {
+   "campno": "23V478000",
+   "nhtsa_id": "23V-478",
+   "rcdate": "20230712",
+   "mfgname": "Toyota Motor Engineering & Manufacturing",
+   "makes": [
+    "LEXUS",
+    "TOYOTA"
+   ],
+   "models": [
+    "NX450H+",
+    "RAV4 PRIME"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:DC/DC CONVERTER"
+   ],
+   "mfr_comp_name": [
+    "Converter Assy, Hybrid Vehicle"
+   ],
+   "potaff": 43442,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V478",
+   "case": "PE025",
+   "groups": [
+    "DC-DC converter"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C20"
+  },
+  {
+   "campno": "23V657000",
+   "nhtsa_id": "23V-657",
+   "rcdate": "20230928",
+   "mfgname": "Nissan North America, Inc.",
+   "makes": [
+    "NISSAN"
+   ],
+   "models": [
+    "ARIYA"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "Inverter \u2013 Power Electronics Box (PEB)"
+   ],
+   "potaff": 9813,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V657",
+   "case": "PE026",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C21"
+  },
+  {
+   "campno": "23V687000",
+   "nhtsa_id": "23V-687",
+   "rcdate": "20231013",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "MUSTANG MACH E"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM)"
+   ],
+   "mfr_comp_name": [
+    "Bussed Electrical Center"
+   ],
+   "potaff": 34762,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V687",
+   "case": "PE027",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C10"
+  },
+  {
+   "campno": "23V841000",
+   "nhtsa_id": "23V-841",
+   "rcdate": "20231213",
+   "mfgname": "Porsche Cars North America, Inc.",
+   "makes": [
+    "PORSCHE"
+   ],
+   "models": [
+    "CAYENNE E-HYBRID",
+    "CAYENNE TURBO E-HYBRID",
+    "CAYENNE TURBO S E-HYBRID",
+    "PANAMERA 4 E-HYBRID",
+    "PANAMERA 4S E-HYBRID",
+    "PANAMERA TURBO S E-HYBRID",
+    "TAYCAN",
+    "TAYCAN 4 CROSS TURISMO",
+    "TAYCAN 4S",
+    "TAYCAN 4S CROSS TURISMO",
+    "TAYCAN GTS",
+    "TAYCAN GTS SPORT TURISMO",
+    "TAYCAN TURBO",
+    "TAYCAN TURBO CROSS TURISM",
+    "TAYCAN TURBO S",
+    "TAYCAN TURBO S CROSS TURI",
+    "redundant CAYENNE E-HYBRID"
+   ],
+   "years": "2019-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:CABLE/CORD:ONBOARD"
+   ],
+   "mfr_comp_name": [
+    "NEMA charging cable"
+   ],
+   "potaff": 41345,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V841",
+   "case": "PE028",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C22"
+  },
+  {
+   "campno": "23V846000",
+   "nhtsa_id": "23V-846",
+   "rcdate": "20231214",
+   "mfgname": "Daimler Trucks North America, LLC",
+   "makes": [
+    "THOMAS BUILT BUSES"
+   ],
+   "models": [
+    "SAF-T-LINER C2 JOULEY"
+   ],
+   "years": "2021-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "High Voltage Junction Box"
+   ],
+   "potaff": 701,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V846",
+   "case": "PE029",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C23"
+  },
+  {
+   "campno": "23V879000",
+   "nhtsa_id": "23V-879",
+   "rcdate": "20231221",
+   "mfgname": "Daimler Trucks North America, LLC",
+   "makes": [
+    "FCCC",
+    "THOMAS BUILT BUSES"
+   ],
+   "models": [
+    "MT50E",
+    "SAF-T-LINER C2 JOULEY"
+   ],
+   "years": "2023-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "High Voltage Junction Box"
+   ],
+   "potaff": 26,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V879",
+   "case": "PE030",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C23"
+  },
+  {
+   "campno": "24V072000",
+   "nhtsa_id": "24V-072",
+   "rcdate": "20240206",
+   "mfgname": "Mitsubishi Fuso Truck of America, Inc.",
+   "makes": [
+    "MITSUBISHI FUSO"
+   ],
+   "models": [
+    "RIZON FEC7K (E16)",
+    "RIZON FEC9K (E18)"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER"
+   ],
+   "mfr_comp_name": [
+    "Vehicle software"
+   ],
+   "potaff": 175,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V072",
+   "case": "PE031",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C24"
+  },
+  {
+   "campno": "24V144000",
+   "nhtsa_id": "24V-144",
+   "rcdate": "20240223",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "F-150 LIGHTNING BEV"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "BEC Module Negative",
+    "BEC Module Positive",
+    "Bolt nut",
+    "Bus-Bar Link"
+   ],
+   "potaff": 216,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V144",
+   "case": "PE032",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C25"
+  },
+  {
+   "campno": "24V200000",
+   "nhtsa_id": "24V-200",
+   "rcdate": "20240314",
+   "mfgname": "Kia America, Inc.",
+   "makes": [
+    "KIA"
+   ],
+   "models": [
+    "EV6"
+   ],
+   "years": "2022-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:12V/24V/48V BATTERY"
+   ],
+   "mfr_comp_name": [
+    "ICCU ASSY"
+   ],
+   "potaff": 48232,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V200",
+   "case": "PE033",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C26"
+  },
+  {
+   "campno": "24V204000",
+   "nhtsa_id": "24V-204",
+   "rcdate": "20240315",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "GENESIS",
+    "HYUNDAI"
+   ],
+   "models": [
+    "GV60",
+    "GV70 ELECTRIFIED",
+    "IONIQ 5",
+    "IONIQ 6"
+   ],
+   "years": "2022-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "ICCU ASSEMBLY"
+   ],
+   "potaff": 99055,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V204",
+   "case": "PE034",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C27"
+  },
+  {
+   "campno": "24V372000",
+   "nhtsa_id": "24V-372",
+   "rcdate": "20240528",
+   "mfgname": "Mercedes-Benz USA, LLC",
+   "makes": [
+    "MERCEDES-BENZ",
+    "MERCEDES-MAYBACH"
+   ],
+   "models": [
+    "AMG EQE 53 4MATIC",
+    "AMG EQE SUV 53 4MATIC",
+    "AMG EQS 53 4MATIC",
+    "EQE 350 4MATIC",
+    "EQE 350+",
+    "EQE 500",
+    "EQE SUV 350 4MATIC",
+    "EQE SUV 350+",
+    "EQE SUV 500 4MATIC",
+    "EQS 450+",
+    "EQS 580",
+    "EQS SUV 450 4MATIC",
+    "EQS SUV 450+",
+    "EQS SUV 580 4MATIC",
+    "EQS SUV 680 4MATIC",
+    "redundant EQS 450"
+   ],
+   "years": "2023-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "SW BAT.MGMT"
+   ],
+   "potaff": 14912,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V372",
+   "case": "PE035",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C18"
+  },
+  {
+   "campno": "24V399000",
+   "nhtsa_id": "24V-399",
+   "rcdate": "20240604",
+   "mfgname": "Mack Trucks, Inc.",
+   "makes": [
+    "MACK"
+   ],
+   "models": [
+    "MD (ELECTRIC)"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Software"
+   ],
+   "potaff": 24,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V399",
+   "case": "PE036",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C28"
+  },
+  {
+   "campno": "24V404000",
+   "nhtsa_id": "24V-404",
+   "rcdate": "20240605",
+   "mfgname": "Fisker Group Inc",
+   "makes": [
+    "FISKER"
+   ],
+   "models": [
+    "OCEAN"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "VCU Module"
+   ],
+   "potaff": 6864,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V404",
+   "case": "PE037",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C29"
+  },
+  {
+   "campno": "24V475000",
+   "nhtsa_id": "24V-475",
+   "rcdate": "20240625",
+   "mfgname": "SEA Electric LLC",
+   "makes": [
+    "SEA ELECTRIC"
+   ],
+   "models": [
+    "5E",
+    "FORD F59",
+    "HINO 195",
+    "ISUZU NRR"
+   ],
+   "years": "2019-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Software"
+   ],
+   "potaff": 174,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V475",
+   "case": "PE038",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C30"
+  },
+  {
+   "campno": "24V499000",
+   "nhtsa_id": "24V-499",
+   "rcdate": "20240702",
+   "mfgname": "Fisker Group Inc",
+   "makes": [
+    "FISKER"
+   ],
+   "models": [
+    "OCEAN"
+   ],
+   "years": "2023-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM)"
+   ],
+   "mfr_comp_name": [
+    "LHS Cabin Electric Water Pump"
+   ],
+   "potaff": 7545,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V499",
+   "case": "PE039",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C29"
+  },
+  {
+   "campno": "24V546000",
+   "nhtsa_id": "24V-546",
+   "rcdate": "20240722",
+   "mfgname": "Motiv Power Systems",
+   "makes": [
+    "MOTIV"
+   ],
+   "models": [
+    "E-450 BEV CHASSIS",
+    "F-53 BEV CHASSIS",
+    "F-59 BEV CHASSIS"
+   ],
+   "years": "2019-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Vehicle Control Software"
+   ],
+   "potaff": 200,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V546",
+   "case": "PE040",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C31"
+  },
+  {
+   "campno": "24V547000",
+   "nhtsa_id": "24V-547",
+   "rcdate": "20240722",
+   "mfgname": "Motiv Power Systems",
+   "makes": [
+    "MOTIV"
+   ],
+   "models": [
+    "E-450 BEV CHASSIS"
+   ],
+   "years": "2021-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER",
+    "ELECTRICAL SYSTEM:WIRING"
+   ],
+   "mfr_comp_name": [
+    "Loopback DCFC Signal Connector"
+   ],
+   "potaff": 78,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V547",
+   "case": "PE041",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C32"
+  },
+  {
+   "campno": "24V560000",
+   "nhtsa_id": "24V-560",
+   "rcdate": "20240725",
+   "mfgname": "Nissan North America, Inc.",
+   "makes": [
+    "NISSAN"
+   ],
+   "models": [
+    "ARIYA"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "Inverter \u2013 Power Electronics Box (PEB)"
+   ],
+   "potaff": 1188,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V560",
+   "case": "PE042",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C21"
+  },
+  {
+   "campno": "24V602000",
+   "nhtsa_id": "24V-602",
+   "rcdate": "20240812",
+   "mfgname": "Motiv Power Systems",
+   "makes": [
+    "MOTIV"
+   ],
+   "models": [
+    "E-450 BEV CHASSIS SCHOOL BUS",
+    "F-59 BEV CHASSIS SCHOOL BUS"
+   ],
+   "years": "2020-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 28,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V602",
+   "case": "PE043",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C33"
+  },
+  {
+   "campno": "24V603000",
+   "nhtsa_id": "24V-603",
+   "rcdate": "20240812",
+   "mfgname": "Motiv Power Systems",
+   "makes": [
+    "MOTIV"
+   ],
+   "models": [
+    "E-450 BEV CHASSIS SCHOOL BUS"
+   ],
+   "years": "2021-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER"
+   ],
+   "mfr_comp_name": [
+    "Loopback DCFC Signal Connector"
+   ],
+   "potaff": 6,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V603",
+   "case": "PE044",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C34"
+  },
+  {
+   "campno": "24V601000",
+   "nhtsa_id": "24V-601",
+   "rcdate": "20240812",
+   "mfgname": "LIVEWIRE EV, LLC",
+   "makes": [
+    "LIVEWIRE"
+   ],
+   "models": [
+    "S2 DEL MAR",
+    "S2 MULHOLLAND"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS"
+   ],
+   "mfr_comp_name": [
+    "Fuse, High Voltage"
+   ],
+   "potaff": 788,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V601",
+   "case": "PE045",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C35"
+  },
+  {
+   "campno": "24V700000",
+   "nhtsa_id": "24V-700",
+   "rcdate": "20240919",
+   "mfgname": "Nissan North America, Inc.",
+   "makes": [
+    "NISSAN"
+   ],
+   "models": [
+    "LEAF"
+   ],
+   "years": "2019-2020",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "BAT ASSY-MAIN B"
+   ],
+   "potaff": 25704,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V700",
+   "case": "PE046",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C36"
+  },
+  {
+   "campno": "24V715000",
+   "nhtsa_id": "24V-715",
+   "rcdate": "20240926",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "RAM"
+   ],
+   "models": [
+    "PROMASTER BEV"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Power Inverter Module"
+   ],
+   "potaff": 336,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V715",
+   "case": "PE047",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C37"
+  },
+  {
+   "campno": "24V832000",
+   "nhtsa_id": "24V-832",
+   "rcdate": "20241105",
+   "mfgname": "Tesla, Inc.",
+   "makes": [
+    "TESLA"
+   ],
+   "models": [
+    "CYBERTRUCK"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "ASY, DRIVE INV, 4DU, 850V+"
+   ],
+   "potaff": 2431,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V832",
+   "case": "PE048",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C38"
+  },
+  {
+   "campno": "24V867000",
+   "nhtsa_id": "24V-867",
+   "rcdate": "20241118",
+   "mfgname": "Kia America, Inc.",
+   "makes": [
+    "KIA"
+   ],
+   "models": [
+    "EV6"
+   ],
+   "years": "2022-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "ICCU ASSY"
+   ],
+   "potaff": 62872,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V867",
+   "case": "PE049",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C26"
+  },
+  {
+   "campno": "24V868000",
+   "nhtsa_id": "24V-868",
+   "rcdate": "20241118",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "GENESIS",
+    "HYUNDAI"
+   ],
+   "models": [
+    "GV60",
+    "GV70 ELECTRIFIED",
+    "IONIQ 5",
+    "IONIQ 6"
+   ],
+   "years": "2022-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "ICCU ASSEMBLY"
+   ],
+   "potaff": 145642,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V868",
+   "case": "PE050",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C27"
+  },
+  {
+   "campno": "24V932000",
+   "nhtsa_id": "24V-932",
+   "rcdate": "20241216",
+   "mfgname": "Mitsubishi Fuso Truck of America, Inc.",
+   "makes": [
+    "MITSUBISHI FUSO"
+   ],
+   "models": [
+    "RIZON FEC7K (E16)",
+    "RIZON FEC9K (E18)"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER"
+   ],
+   "mfr_comp_name": [
+    "EL.WIR.HARNSS CAB"
+   ],
+   "potaff": 243,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V932",
+   "case": "PE051",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C24"
+  },
+  {
+   "campno": "24V940000",
+   "nhtsa_id": "24V-940",
+   "rcdate": "20241218",
+   "mfgname": "Polestar Automotive USA, Inc.",
+   "makes": [
+    "POLESTAR"
+   ],
+   "models": [
+    "POLESTAR 3"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM"
+   ],
+   "mfr_comp_name": [
+    "High to Low Voltage Converter Module (HLCM)"
+   ],
+   "potaff": 6,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V940",
+   "case": "PE052",
+   "groups": [
+    "DC-DC converter"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C39"
+  },
+  {
+   "campno": "25V050000",
+   "nhtsa_id": "25V-050",
+   "rcdate": "20250207",
+   "mfgname": "Mercedes-Benz USA, LLC",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "EQB 250",
+    "EQB 250+",
+    "EQB 300 4MATIC",
+    "EQB 350 4MATIC"
+   ],
+   "years": "2022-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "Battery Management Software"
+   ],
+   "potaff": 12236,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V050",
+   "case": "PE053",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C40"
+  },
+  {
+   "campno": "25V125000",
+   "nhtsa_id": "25V-125",
+   "rcdate": "20250228",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "AUDI",
+    "VOLKSWAGEN"
+   ],
+   "models": [
+    "ID.4",
+    "Q4 E-TRON",
+    "Q4 SPORTBACK E-TRON"
+   ],
+   "years": "2024-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:DC/DC CONVERTER"
+   ],
+   "mfr_comp_name": [
+    "OCDC control unit"
+   ],
+   "potaff": 13769,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V125",
+   "case": "PE054",
+   "groups": [
+    "DC-DC converter",
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C41"
+  },
+  {
+   "campno": "25V130000",
+   "nhtsa_id": "25V-130",
+   "rcdate": "20250228",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "MUSTANG MACH E"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Battery Energy Control Module Software",
+    "Secondary On-Board Diagnostic Control Module Softw"
+   ],
+   "potaff": 626,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V130",
+   "case": "PE055",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C10"
+  },
+  {
+   "campno": "25V261000",
+   "nhtsa_id": "25V-261",
+   "rcdate": "20250418",
+   "mfgname": "Motiv Power Systems",
+   "makes": [
+    "MOTIV"
+   ],
+   "models": [
+    "F-53 BEV CHASSIS",
+    "F-59 BEV CHASSIS"
+   ],
+   "years": "2019-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS",
+    "STRUCTURE:CRITICAL FASTENERS"
+   ],
+   "mfr_comp_name": [
+    "Fuse box / Shut off switch Bracket"
+   ],
+   "potaff": 139,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V261",
+   "case": "PE056",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C42"
+  },
+  {
+   "campno": "25V262000",
+   "nhtsa_id": "25V-262",
+   "rcdate": "20250421",
+   "mfgname": "Motiv Power Systems",
+   "makes": [
+    "MOTIV"
+   ],
+   "models": [
+    "F-59 BEV CHASSIS SCHOOL BUS"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS",
+    "STRUCTURE:CRITICAL FASTENERS"
+   ],
+   "mfr_comp_name": [
+    "Fuse box / Shut off switch Bracket"
+   ],
+   "potaff": 3,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V262",
+   "case": "PE057",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C43"
+  },
+  {
+   "campno": "25V272000",
+   "nhtsa_id": "25V-272",
+   "rcdate": "20250423",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "F-150 LIGHTNING BEV"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "BEC Module Negative",
+    "BEC Module Positive",
+    "Bolt Nut",
+    "Bus-Bar Link"
+   ],
+   "potaff": 3,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V272",
+   "case": "PE058",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C25"
+  },
+  {
+   "campno": "25V319000",
+   "nhtsa_id": "25V-319",
+   "rcdate": "20250516",
+   "mfgname": "Isuzu Motors Limited",
+   "makes": [
+    "ISUZU"
+   ],
+   "models": [
+    "NRR EV"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "BLOCK ASM; DRV MOT PWR INV MDL CBL JUNC"
+   ],
+   "potaff": 73,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V319",
+   "case": "PE059",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C44"
+  },
+  {
+   "campno": "25V441000",
+   "nhtsa_id": "25V-441",
+   "rcdate": "20250627",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "MUSTANG MACH E"
+   ],
+   "years": "2022-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM)"
+   ],
+   "mfr_comp_name": [
+    "Bussed Electrical Center"
+   ],
+   "potaff": 239,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V441",
+   "case": "PE060",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C10"
+  },
+  {
+   "campno": "25V395000",
+   "nhtsa_id": "25V-395",
+   "rcdate": "20250723",
+   "mfgname": "BMW of North America, LLC",
+   "makes": [
+    "BMW"
+   ],
+   "models": [
+    "I4",
+    "I4 EDRIVE35",
+    "I4 EDRIVE40",
+    "I5",
+    "I7",
+    "IX"
+   ],
+   "years": "2022-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Electric Drive Motor Software"
+   ],
+   "potaff": 71286,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V395",
+   "case": "PE061",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C45"
+  },
+  {
+   "campno": "25V566000",
+   "nhtsa_id": "25V-566",
+   "rcdate": "20250829",
+   "mfgname": "New Flyer of America, Inc.",
+   "makes": [
+    "NEW FLYER"
+   ],
+   "models": [
+    "XE35",
+    "XE40",
+    "XE60",
+    "XHE40",
+    "XHE60"
+   ],
+   "years": "2013-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "HV module"
+   ],
+   "potaff": 1170,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V566",
+   "case": "PE062",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C46"
+  },
+  {
+   "campno": "25V567000",
+   "nhtsa_id": "25V-567",
+   "rcdate": "20250829",
+   "mfgname": "Motor Coach Industries",
+   "makes": [
+    "MCI"
+   ],
+   "models": [
+    "D45CRTE",
+    "D45CRTELE",
+    "J4500E"
+   ],
+   "years": "2020-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "HV module"
+   ],
+   "potaff": 59,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V567",
+   "case": "PE063",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C47"
+  },
+  {
+   "campno": "25V655000",
+   "nhtsa_id": "25V-655",
+   "rcdate": "20250930",
+   "mfgname": "Nissan North America, Inc.",
+   "makes": [
+    "NISSAN"
+   ],
+   "models": [
+    "LEAF"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:CHARGING:MODULE:SOFTWARE",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "BAT ASSY-MAIN B"
+   ],
+   "potaff": 19077,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V655",
+   "case": "PE064",
+   "groups": [
+    "OBC / charging control"
+   ],
+   "plugin_rule": "P1",
+   "cluster": "C36"
+  },
+  {
+   "campno": "25V690000",
+   "nhtsa_id": "25V-690",
+   "rcdate": "20251010",
+   "mfgname": "Tesla, Inc.",
+   "makes": [
+    "TESLA"
+   ],
+   "models": [
+    "MODEL 3",
+    "MODEL Y"
+   ],
+   "years": "2025-2026",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS"
+   ],
+   "mfr_comp_name": [
+    "Pack Contactor"
+   ],
+   "potaff": 12963,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V690",
+   "case": "PE065",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C19"
+  },
+  {
+   "campno": "25V710000",
+   "nhtsa_id": "25V-710",
+   "rcdate": "20251017",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "JEEP"
+   ],
+   "models": [
+    "WRANGLER 4XE"
+   ],
+   "years": "2023-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:HYBRID MANAGEMENT:POWER CONTROL UNIT/MODULE (HPCU):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "TBM Software"
+   ],
+   "potaff": 24238,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V710",
+   "case": "PE066",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C48"
+  },
+  {
+   "campno": "25V834000",
+   "nhtsa_id": "25V-834",
+   "rcdate": "20251202",
+   "mfgname": "Zero Motorcycles Inc.",
+   "makes": [
+    "ZERO"
+   ],
+   "models": [
+    "DSR/X"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER"
+   ],
+   "mfr_comp_name": [
+    "Motor Controller"
+   ],
+   "potaff": 7,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V834",
+   "case": "PE067",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C49"
+  },
+  {
+   "campno": "25V875000",
+   "nhtsa_id": "25V-875",
+   "rcdate": "20251217",
+   "mfgname": "Autocar, LLC",
+   "makes": [
+    "AUTOCAR"
+   ],
+   "models": [
+    "E-ACTT"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "Autocar Power Inverter",
+    "Autocar Traction Motor"
+   ],
+   "potaff": 1,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V875",
+   "case": "PE068",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C50"
+  },
+  {
+   "campno": "25V894000",
+   "nhtsa_id": "25V-894",
+   "rcdate": "20251219",
+   "mfgname": "Mercedes-Benz USA, LLC",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "EQB 250",
+    "EQB 300 4MATIC",
+    "EQB 350 4MATIC"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "BMS Software"
+   ],
+   "potaff": 169,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V894",
+   "case": "PE069",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C40"
+  },
+  {
+   "campno": "26V030000",
+   "nhtsa_id": "26V-030",
+   "rcdate": "20260121",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "VOLKSWAGEN"
+   ],
+   "models": [
+    "ID.4"
+   ],
+   "years": "2023-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY"
+   ],
+   "mfr_comp_name": [
+    "HV Battery Management Controller (BMCe) SW V.1030",
+    "HV Cell Module"
+   ],
+   "potaff": 43881,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V030",
+   "case": "PE070",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C14"
+  },
+  {
+   "campno": "26V126000",
+   "nhtsa_id": "26V-126",
+   "rcdate": "20260305",
+   "mfgname": "Mitsubishi Fuso Truck of America, Inc.",
+   "makes": [
+    "MITSUBISHI FUSO"
+   ],
+   "models": [
+    "RIZON FEC7K (E16)",
+    "RIZON FEC9K (E18)",
+    "RIZON FECXK (E18)"
+   ],
+   "years": "2024-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER",
+    "ELECTRICAL SYSTEM:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "BMS Software",
+    "DCB ECU Software"
+   ],
+   "potaff": 244,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V126",
+   "case": "PE071",
+   "groups": [
+    "HV BMS / contactor unit",
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C24"
+  },
+  {
+   "campno": "26V151000",
+   "nhtsa_id": "26V-151",
+   "rcdate": "20260313",
+   "mfgname": "New Flyer of America, Inc.",
+   "makes": [
+    "NEW FLYER"
+   ],
+   "models": [
+    "XE35",
+    "XE40",
+    "XE60",
+    "XHE40",
+    "XHE60"
+   ],
+   "years": "2021-2026",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "Motor inverters"
+   ],
+   "potaff": 1196,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V151",
+   "case": "PE072",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C07"
+  },
+  {
+   "campno": "26V309000",
+   "nhtsa_id": "26V-309",
+   "rcdate": "20260513",
+   "mfgname": "Lucid USA, Inc.",
+   "makes": [
+    "LUCID"
+   ],
+   "models": [
+    "AIR"
+   ],
+   "years": "2024-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER"
+   ],
+   "mfr_comp_name": [
+    "Inverter Assemblies"
+   ],
+   "potaff": 2039,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V309",
+   "case": "PE073",
+   "groups": [
+    "Traction inverter / motor controller"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C51"
+  },
+  {
+   "campno": "26V311000",
+   "nhtsa_id": "26V-311",
+   "rcdate": "20260518",
+   "mfgname": "Oshkosh Corporation",
+   "makes": [
+    "OSHKOSH"
+   ],
+   "models": [
+    "NGDV ELECTRIC"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS"
+   ],
+   "mfr_comp_name": [
+    "Battery"
+   ],
+   "potaff": 76,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V311",
+   "case": "PE074",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C52"
+  },
+  {
+   "campno": "26V582000",
+   "nhtsa_id": "26V-582",
+   "rcdate": "20260909",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "MUSTANG MACH E"
+   ],
+   "years": "2023-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "BECM",
+    "BECM Software"
+   ],
+   "potaff": 86,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V582",
+   "case": "PE075",
+   "groups": [
+    "HV BMS / contactor unit"
+   ],
+   "plugin_rule": "P2",
+   "cluster": "C10"
+  }
+ ],
+ "unresolved": [
+  {
+   "campno": "18V704000",
+   "nhtsa_id": "18V-704",
+   "rcdate": "20181005",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "IONIQ HYBRID"
+   ],
+   "years": "2017-2018",
+   "compname": [
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 10575,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V704",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "20V369000",
+   "nhtsa_id": "20V-369",
+   "rcdate": "20200624",
+   "mfgname": "Toyota Motor Engineering & Manufacturing",
+   "makes": [
+    "TOYOTA"
+   ],
+   "models": [
+    "PRIUS",
+    "PRIUS V"
+   ],
+   "years": "2013-2017",
+   "compname": [
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [
+    "Computer, Power Management Control"
+   ],
+   "potaff": 266638,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V369",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "21V109000",
+   "nhtsa_id": "21V-109",
+   "rcdate": "20210224",
+   "mfgname": "Volvo Car USA, LLC",
+   "makes": [
+    "VOLVO"
+   ],
+   "models": [
+    "XC40"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "BECM software with updated micro-processor operati"
+   ],
+   "potaff": 2278,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V109",
+   "groups": [
+    "HV BMS / contactor unit"
+   ]
+  },
+  {
+   "campno": "21V253000",
+   "nhtsa_id": "21V-253",
+   "rcdate": "20210412",
+   "mfgname": "Blue Bird Body Company",
+   "makes": [
+    "BLUE BIRD"
+   ],
+   "models": [
+    "ALL AMERICAN",
+    "ALL AMERICAN SCHOOL BUS",
+    "VISION",
+    "VISION SCHOOL BUS"
+   ],
+   "years": "2018-2021",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS",
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:SHOCK PROTECTION",
+    "ELECTRICAL SYSTEM:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Box, High Voltage Junction",
+    "Module, Energy Distribution",
+    "Software, Control"
+   ],
+   "potaff": 292,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V253",
+   "groups": [
+    "HV BMS / contactor unit"
+   ]
+  },
+  {
+   "campno": "21V774000",
+   "nhtsa_id": "21V-774",
+   "rcdate": "20211004",
+   "mfgname": "Nissan North America, Inc.",
+   "makes": [
+    "INFINITI",
+    "NISSAN"
+   ],
+   "models": [
+    "MURANO HYBRID",
+    "PATHFINDER HYBRID",
+    "QX60 HYBRID"
+   ],
+   "years": "2014-2017",
+   "compname": [
+    "ENGINE AND ENGINE COOLING:ENGINE:ENGINE CONTROL MODULE (ECU/ECM):SOFTWARE",
+    "HYBRID PROPULSION SYSTEM"
+   ],
+   "mfr_comp_name": [
+    "HPCM Software Program Version",
+    "Hybrid Power Control Unit Module"
+   ],
+   "potaff": 7634,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V774",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "23V010000",
+   "nhtsa_id": "23V-010",
+   "rcdate": "20230117",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "CHRYSLER"
+   ],
+   "models": [
+    "PACIFICA"
+   ],
+   "years": "2017-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:WIRING:CONNECTORS/PLUGS/RECEPTACLES",
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [
+    "Harness Assembly",
+    "Transaxle"
+   ],
+   "potaff": 67117,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V010",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "23V440000",
+   "nhtsa_id": "23V-440",
+   "rcdate": "20230623",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "FUSION"
+   ],
+   "years": "2019-2020",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM)"
+   ],
+   "mfr_comp_name": [
+    "High Voltage Battery"
+   ],
+   "potaff": 14452,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V440",
+   "groups": [
+    "HV BMS / contactor unit"
+   ]
+  },
+  {
+   "campno": "24V727000",
+   "nhtsa_id": "24V-727",
+   "rcdate": "20240930",
+   "mfgname": "Nova Bus (US) Inc.",
+   "makes": [
+    "NOVA BUS"
+   ],
+   "models": [
+    "LFS"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER",
+    "ELECTRICAL SYSTEM:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "IQ_GEN4E___00"
+   ],
+   "potaff": 40,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V727",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "24V816000",
+   "nhtsa_id": "24V-816",
+   "rcdate": "20241031",
+   "mfgname": "Mazda North American Operations",
+   "makes": [
+    "MAZDA"
+   ],
+   "models": [
+    "CX-90"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM):SOFTWARE",
+    "POWER TRAIN:AUTOMATIC TRANSMISSION:CONTROL MODULE (TCM/PCM/TECM)"
+   ],
+   "mfr_comp_name": [
+    "BECM",
+    "PCM"
+   ],
+   "potaff": 38926,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V816",
+   "groups": [
+    "HV BMS / contactor unit"
+   ]
+  },
+  {
+   "campno": "24V817000",
+   "nhtsa_id": "24V-817",
+   "rcdate": "20241031",
+   "mfgname": "Mazda North American Operations",
+   "makes": [
+    "MAZDA"
+   ],
+   "models": [
+    "CX-70",
+    "CX-90"
+   ],
+   "years": "2024-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER",
+    "ELECTRICAL SYSTEM:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Inverter"
+   ],
+   "potaff": 14902,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V817",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "24V954000",
+   "nhtsa_id": "24V-954",
+   "rcdate": "20241220",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD",
+    "LINCOLN"
+   ],
+   "models": [
+    "CORSAIR",
+    "ESCAPE"
+   ],
+   "years": "2020-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION BATTERY:MANAGEMENT SYSTEM/ENERGY CONTROL MODULE (BMS/BECM)"
+   ],
+   "mfr_comp_name": [
+    "UNT ASY BAT H/V TRCT"
+   ],
+   "potaff": 20484,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V954",
+   "groups": [
+    "HV BMS / contactor unit"
+   ]
+  },
+  {
+   "campno": "25V199000",
+   "nhtsa_id": "25V-199",
+   "rcdate": "20250328",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "F-150 HYBRID"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:FUSES, RELAYS, CONTACTS, AND SHUNTS"
+   ],
+   "mfr_comp_name": [
+    "FS BAT H/V TRCT"
+   ],
+   "potaff": 47,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V199",
+   "groups": [
+    "HV BMS / contactor unit"
+   ]
+  },
+  {
+   "campno": "25V418000",
+   "nhtsa_id": "25V-418",
+   "rcdate": "20250618",
+   "mfgname": "Mazda North American Operations",
+   "makes": [
+    "MAZDA"
+   ],
+   "models": [
+    "CX-50 HYBRID"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:HYBRID MANAGEMENT:POWER CONTROL UNIT/MODULE (HPCU):SOFTWARE",
+    "ENGINE AND ENGINE COOLING:ENGINE:ENGINE CONTROL MODULE (ECU/ECM)"
+   ],
+   "mfr_comp_name": [
+    "Control Unit, Hybrid",
+    "Module, Engine Control",
+    "Unit, Power Control"
+   ],
+   "potaff": 22,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V418",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "25V665000",
+   "nhtsa_id": "25V-665",
+   "rcdate": "20251006",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "RAM"
+   ],
+   "models": [
+    "PROMASTER"
+   ],
+   "years": "2024-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:TRACTION MOTOR:CONTROLLER:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "EDM"
+   ],
+   "potaff": 790,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V665",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "25V785000",
+   "nhtsa_id": "25V-785",
+   "rcdate": "20251113",
+   "mfgname": "Honda (American Honda Motor Co.)",
+   "makes": [
+    "HONDA"
+   ],
+   "models": [
+    "ACCORD HYBRID"
+   ],
+   "years": "2023-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:HYBRID MANAGEMENT:POWER CONTROL UNIT/MODULE (HPCU):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "INTEGRATED CONTROL MODULE"
+   ],
+   "potaff": 256603,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V785",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "25V811000",
+   "nhtsa_id": "25V-811",
+   "rcdate": "20251124",
+   "mfgname": "Bentley Motors, Inc.",
+   "makes": [
+    "BENTLEY"
+   ],
+   "models": [
+    "BENTAYGA HYBRID"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:HYBRID MANAGEMENT:POWER CONTROL UNIT/MODULE (HPCU):SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Battery Management Controller",
+    "High Voltage Battery"
+   ],
+   "potaff": 120,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V811",
+   "groups": [
+    "HV BMS / contactor unit",
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "25V869000",
+   "nhtsa_id": "25V-869",
+   "rcdate": "20251216",
+   "mfgname": "Toyota Motor Engineering & Manufacturing",
+   "makes": [
+    "TOYOTA"
+   ],
+   "models": [
+    "CAMRY HYBRID",
+    "COROLLA CROSS HYBRID"
+   ],
+   "years": "2025-2026",
+   "compname": [
+    "HYBRID PROPULSION SYSTEM: INVERTER"
+   ],
+   "mfr_comp_name": [
+    "Inverter Assy, Hybrid Motor Control"
+   ],
+   "potaff": 55405,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V869",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "25V905000",
+   "nhtsa_id": "25V-905",
+   "rcdate": "20251223",
+   "mfgname": "Tiffin Motorhomes, Inc.",
+   "makes": [
+    "TIFFIN"
+   ],
+   "models": [
+    "OPEN TRAIL"
+   ],
+   "years": "2025-2026",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER",
+    "ELECTRICAL SYSTEM:WIRING"
+   ],
+   "mfr_comp_name": [
+    "Wire harness between battery and inverter"
+   ],
+   "potaff": 18,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V905",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "26V144000",
+   "nhtsa_id": "26V-144",
+   "rcdate": "20260312",
+   "mfgname": "Gillig, LLC",
+   "makes": [
+    "GILLIG"
+   ],
+   "models": [
+    "LOW FLOOR"
+   ],
+   "years": "2023-2026",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM: CABLES"
+   ],
+   "mfr_comp_name": [
+    "High-voltage drive cable"
+   ],
+   "potaff": 424,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V144",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "26V248000",
+   "nhtsa_id": "26V-248",
+   "rcdate": "20260417",
+   "mfgname": "Jaguar Land Rover North America, LLC",
+   "makes": [
+    "JAGUAR",
+    "LAND ROVER"
+   ],
+   "models": [
+    "DEFENDER",
+    "DISCOVERY",
+    "DISCOVERY SPORT",
+    "E-PACE",
+    "F-PACE",
+    "RANGE ROVER",
+    "RANGE ROVER EVOQUE",
+    "RANGE ROVER SPORT",
+    "RANGE ROVER VELAR"
+   ],
+   "years": "2019-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:DC/DC CONVERTER"
+   ],
+   "mfr_comp_name": [
+    "DCDC Converter"
+   ],
+   "potaff": 170169,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V248",
+   "groups": [
+    "DC-DC converter"
+   ]
+  },
+  {
+   "campno": "26V275000",
+   "nhtsa_id": "26V-275",
+   "rcdate": "20260430",
+   "mfgname": "Nova Bus (US) Inc.",
+   "makes": [
+    "NOVA BUS"
+   ],
+   "models": [
+    "LFS"
+   ],
+   "years": "2022-2025",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:HYBRID MANAGEMENT:POWER CONTROL UNIT/MODULE (HPCU)"
+   ],
+   "mfr_comp_name": [
+    "Module MC43"
+   ],
+   "potaff": 50,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V275",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "26V308000",
+   "nhtsa_id": "26V-308",
+   "rcdate": "20260514",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "ELANTRA HYBRID"
+   ],
+   "years": "2024-2026",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:HYBRID MANAGEMENT:POWER CONTROL UNIT/MODULE (HPCU)"
+   ],
+   "mfr_comp_name": [
+    "HPCU RESERVOIR MODULE"
+   ],
+   "potaff": 54337,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V308",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "26V429000",
+   "nhtsa_id": "26V-429",
+   "rcdate": "20260702",
+   "mfgname": "Altec Industries, Inc.",
+   "makes": [
+    "ALTEC"
+   ],
+   "models": [
+    "SERVICE BODY"
+   ],
+   "years": "2022-2026",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:INVERTER",
+    "ELECTRICAL SYSTEM:WIRING"
+   ],
+   "mfr_comp_name": [
+    "Electrical receptacle enclosure; 1 gang open face;"
+   ],
+   "potaff": 277,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V429",
+   "groups": [
+    "Traction inverter / motor controller"
+   ]
+  },
+  {
+   "campno": "26V599000",
+   "nhtsa_id": "26V-599",
+   "rcdate": "20260917",
+   "mfgname": "Jaguar Land Rover North America, LLC",
+   "makes": [
+    "JAGUAR",
+    "LAND ROVER"
+   ],
+   "models": [
+    "DEFENDER",
+    "DISCOVERY",
+    "DISCOVERY SPORT",
+    "E-PACE",
+    "F-PACE",
+    "RANGE ROVER",
+    "RANGE ROVER EVOQUE",
+    "RANGE ROVER SPORT",
+    "RANGE ROVER VELAR"
+   ],
+   "years": "2019-2024",
+   "compname": [
+    "ELECTRICAL SYSTEM:PROPULSION SYSTEM:DC/DC CONVERTER"
+   ],
+   "mfr_comp_name": [
+    "Vehicle load balancing software"
+   ],
+   "potaff": 23677,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V599",
+   "groups": [
+    "DC-DC converter"
+   ]
+  }
+ ],
+ "base_rate": [
+  {
+   "campno": "18V021000",
+   "nhtsa_id": "18V-021",
+   "rcdate": "20180109",
+   "mfgname": "Chrysler (FCA US LLC)",
+   "makes": [
+    "CHRYSLER",
+    "DODGE",
+    "JEEP",
+    "RAM"
+   ],
+   "models": [
+    "2500",
+    "300",
+    "3500",
+    "4500",
+    "5500",
+    "ASPEN",
+    "CHALLENGER",
+    "CHARGER",
+    "DAKOTA",
+    "DURANGO",
+    "RAM 3500",
+    "WRANGLER",
+    "redundant 4500",
+    "redundant 5500"
+   ],
+   "years": "2009-2013",
+   "compname": [
+    "AIR BAGS:FRONTAL:PASSENGER SIDE:INFLATOR MODULE"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 328177,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V021",
+   "case": "BR001",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "18V102000",
+   "nhtsa_id": "18V-102",
+   "rcdate": "20180209",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "VOLKSWAGEN"
+   ],
+   "models": [
+    "TIGUAN"
+   ],
+   "years": "2017-2018",
+   "compname": [
+    "AIR BAGS:FRONTAL"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 3768,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V102",
+   "case": "BR002",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "18V195000",
+   "nhtsa_id": "18V-195",
+   "rcdate": "20180326",
+   "mfgname": "Polaris Industries, Inc.",
+   "makes": [
+    "POLARIS"
+   ],
+   "models": [
+    "SLINGSHOT"
+   ],
+   "years": "2015-2018",
+   "compname": [
+    "SEAT BELTS",
+    "SEATS"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 24235,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V195",
+   "case": "BR003",
+   "class": [
+    "body",
+    "restraint"
+   ]
+  },
+  {
+   "campno": "18V278000",
+   "nhtsa_id": "18V-278",
+   "rcdate": "20180501",
+   "mfgname": "Chrysler (FCA US LLC)",
+   "makes": [
+    "JEEP"
+   ],
+   "models": [
+    "LIBERTY"
+   ],
+   "years": "2004-2007",
+   "compname": [
+    "SUSPENSION:REAR"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 239904,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V278",
+   "case": "BR004",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "18V365000",
+   "nhtsa_id": "18V-365",
+   "rcdate": "20180518",
+   "mfgname": "Van-Con, Inc.",
+   "makes": [
+    "VAN-CON"
+   ],
+   "models": [
+    "33803 DUAL REAR-WHEEL"
+   ],
+   "years": "2016-2016",
+   "compname": [
+    "STRUCTURE",
+    "STRUCTURE:BODY"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 5,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V365",
+   "case": "BR005",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "18V439000",
+   "nhtsa_id": "18V-439",
+   "rcdate": "20180628",
+   "mfgname": "BMW of North America, LLC",
+   "makes": [
+    "BMW"
+   ],
+   "models": [
+    "X5",
+    "X6"
+   ],
+   "years": "2018-2018",
+   "compname": [
+    "SUSPENSION:FRONT:CONTROL ARM:LOWER ARM"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 43,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V439",
+   "case": "BR006",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "18V519000",
+   "nhtsa_id": "18V-519",
+   "rcdate": "20180806",
+   "mfgname": "Garden State Bus Group",
+   "makes": [
+    "GARDEN STATE"
+   ],
+   "models": [
+    "DOUBLE DECK BUS"
+   ],
+   "years": "2015-2015",
+   "compname": [
+    "STRUCTURE:EMERGENCY:ESCAPE/EGRESS/EXIT"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 20,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V519",
+   "case": "BR007",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "18V618000",
+   "nhtsa_id": "18V-618",
+   "rcdate": "20180912",
+   "mfgname": "Jayco, Inc.",
+   "makes": [
+    "JAYCO TRAVEL TRAILER"
+   ],
+   "models": [
+    "JAY FLIGHT",
+    "JAY FLIGHT SLX",
+    "WHITE HAWK"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "SUSPENSION:REAR:AXLE:NON-POWERED AXLE ASSEMBLY"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 416,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V618",
+   "case": "BR008",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "18V698000",
+   "nhtsa_id": "18V-698",
+   "rcdate": "20181005",
+   "mfgname": "Daimler Trucks North America LLC",
+   "makes": [
+    "THOMAS BUILT BUSES"
+   ],
+   "models": [
+    "MINOTOUR"
+   ],
+   "years": "2015-2019",
+   "compname": [
+    "STRUCTURE:EMERGENCY:ESCAPE/EGRESS/EXIT"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 701,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V698",
+   "case": "BR009",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "18V798000",
+   "nhtsa_id": "18V-798",
+   "rcdate": "20181112",
+   "mfgname": "Champion Bus, Inc.",
+   "makes": [
+    "CHAMPION",
+    "GOSHEN"
+   ],
+   "models": [
+    "CHALLENGER",
+    "DEFENDER",
+    "G-FORCE",
+    "IMPULSE",
+    "LF TRANSPORT"
+   ],
+   "years": "2017-2018",
+   "compname": [
+    "SEATS"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 76,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V798",
+   "case": "BR010",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "18V876000",
+   "nhtsa_id": "18V-876",
+   "rcdate": "20181210",
+   "mfgname": "Forest River, Inc.",
+   "makes": [
+    "FOREST RIVER"
+   ],
+   "models": [
+    "ROCKPORT"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "SUSPENSION:REAR:AXLE:NON-POWERED AXLE ASSEMBLY"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 142,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=18V876",
+   "case": "BR011",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "19V014000",
+   "nhtsa_id": "19V-014",
+   "rcdate": "20190111",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "AUDI",
+    "VOLKSWAGEN"
+   ],
+   "models": [
+    "CC",
+    "EOS",
+    "PASSAT",
+    "R8 SPYDER",
+    "TT ROADSTER"
+   ],
+   "years": "2015-2017",
+   "compname": [
+    "AIR BAGS:FRONTAL:DRIVER SIDE:INFLATOR MODULE"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 119394,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V014",
+   "case": "BR012",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "19V150000",
+   "nhtsa_id": "19V-150",
+   "rcdate": "20190301",
+   "mfgname": "Forest River, Inc.",
+   "makes": [
+    "ELKHART"
+   ],
+   "models": [
+    "ECE3",
+    "ECE4"
+   ],
+   "years": "2016-2019",
+   "compname": [
+    "SEATS"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 36,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V150",
+   "case": "BR013",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "19V246000",
+   "nhtsa_id": "19V-246",
+   "rcdate": "20190328",
+   "mfgname": "Chrysler (FCA US LLC)",
+   "makes": [
+    "DODGE"
+   ],
+   "models": [
+    "CHARGER"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "AIR BAGS"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 1097,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V246",
+   "case": "BR014",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "19V346000",
+   "nhtsa_id": "19V-346",
+   "rcdate": "20190507",
+   "mfgname": "Hercules Enterprises",
+   "makes": [
+    "HERCULES ENTERPRISES"
+   ],
+   "models": [
+    "CONTAINER CHASSIS"
+   ],
+   "years": "2018-2018",
+   "compname": [
+    "SUSPENSION:REAR:AXLE:NON-POWERED AXLE ASSEMBLY"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 160,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V346",
+   "case": "BR015",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "19V450000",
+   "nhtsa_id": "19V-450",
+   "rcdate": "20190613",
+   "mfgname": "Erwin Hymer Group North America, Inc.",
+   "makes": [
+    "ROADTREK"
+   ],
+   "models": [
+    "CS ADVENTUROUS",
+    "E-TREK",
+    "RS ADVENTUROUS",
+    "TS ADVENTUROUS"
+   ],
+   "years": "2013-2019",
+   "compname": [
+    "SEATS"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 1701,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V450",
+   "case": "BR016",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "19V530000",
+   "nhtsa_id": "19V-530",
+   "rcdate": "20190714",
+   "mfgname": "BYD Coach & Bus",
+   "makes": [
+    "BYD"
+   ],
+   "models": [
+    "C8M"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "STRUCTURE:EMERGENCY:ESCAPE/EGRESS/EXIT"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 6,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V530",
+   "case": "BR017",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "19V594000",
+   "nhtsa_id": "19V-594",
+   "rcdate": "20190813",
+   "mfgname": "Kia Motors America",
+   "makes": [
+    "KIA"
+   ],
+   "models": [
+    "TELLURIDE"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "SEAT BELTS:FRONT",
+    "SEAT BELTS:REAR/OTHER"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 30168,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V594",
+   "case": "BR018",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "19V683000",
+   "nhtsa_id": "19V-683",
+   "rcdate": "20190927",
+   "mfgname": "Bombardier Recreational Products Inc.",
+   "makes": [
+    "CAN-AM"
+   ],
+   "models": [
+    "RYKER"
+   ],
+   "years": "2019-2020",
+   "compname": [
+    "WHEELS:LUGS/NUTS/BOLTS/STUDS"
+   ],
+   "mfr_comp_name": [
+    "center lock wheel nut"
+   ],
+   "potaff": 11378,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V683",
+   "case": "BR019",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "19V766000",
+   "nhtsa_id": "19V-766",
+   "rcdate": "20191025",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "EDGE"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "SEAT BELTS:FRONT:ANCHORAGE",
+    "SEAT BELTS:FRONT:WEBBING",
+    "SEAT BELTS:PRETENSIONER"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 366,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V766",
+   "case": "BR020",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "19V867000",
+   "nhtsa_id": "19V-867",
+   "rcdate": "20191206",
+   "mfgname": "Mercedes-Benz USA, LLC.",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "GLE 450"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "SEATS:MID/REAR ASSEMBLY"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 1,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=19V867",
+   "case": "BR021",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "20V025000",
+   "nhtsa_id": "20V-025",
+   "rcdate": "20200117",
+   "mfgname": "Isuzu Technical Center of America, Inc.",
+   "makes": [
+    "CHEVROLET",
+    "ISUZU"
+   ],
+   "models": [
+    "4500HD",
+    "4500XD",
+    "5500HD",
+    "5500XD",
+    "NPR",
+    "NPR HD",
+    "NPR XD",
+    "NQR",
+    "NRR"
+   ],
+   "years": "2019-2020",
+   "compname": [
+    "SEAT BELTS:FRONT:WEBBING"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 1138,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V025",
+   "case": "BR022",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "20V145000",
+   "nhtsa_id": "20V-145",
+   "rcdate": "20200313",
+   "mfgname": "Nissan North America, Inc.",
+   "makes": [
+    "INFINITI"
+   ],
+   "models": [
+    "Q60"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "SEAT BELTS:REAR/OTHER"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 275,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V145",
+   "case": "BR023",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "20V273000",
+   "nhtsa_id": "20V-273",
+   "rcdate": "20200513",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "AUDI"
+   ],
+   "models": [
+    "Q3"
+   ],
+   "years": "2019-2019",
+   "compname": [
+    "AIR BAGS:FRONTAL:PASSENGER SIDE:INFLATOR MODULE"
+   ],
+   "mfr_comp_name": [
+    "Instrument Panel"
+   ],
+   "potaff": 3024,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V273",
+   "case": "BR024",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "20V378000",
+   "nhtsa_id": "20V-378",
+   "rcdate": "20200630",
+   "mfgname": "Volvo Car USA LLC",
+   "makes": [
+    "VOLVO"
+   ],
+   "models": [
+    "S60",
+    "S60CC",
+    "S60L",
+    "S80",
+    "S80L",
+    "V60",
+    "V60CC",
+    "V70",
+    "XC60",
+    "XC70"
+   ],
+   "years": "2007-2020",
+   "compname": [
+    "SEAT BELTS:FRONT"
+   ],
+   "mfr_comp_name": [
+    "Seat belt cable fastening"
+   ],
+   "potaff": 308260,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V378",
+   "case": "BR025",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "20V480000",
+   "nhtsa_id": "20V-480",
+   "rcdate": "20200814",
+   "mfgname": "Mercedes-Benz USA, LLC.",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "GLB 250"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "STRUCTURE:BODY"
+   ],
+   "mfr_comp_name": [
+    "Rear Spoiler"
+   ],
+   "potaff": 10644,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V480",
+   "case": "BR026",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "20V613000",
+   "nhtsa_id": "20V-613",
+   "rcdate": "20201005",
+   "mfgname": "Volvo Trucks North America",
+   "makes": [
+    "VOLVO"
+   ],
+   "models": [
+    "VNL"
+   ],
+   "years": "2020-2020",
+   "compname": [
+    "STRUCTURE:BODY"
+   ],
+   "mfr_comp_name": [
+    "Sleeper Bunk Window"
+   ],
+   "potaff": 8456,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V613",
+   "case": "BR027",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "20V708000",
+   "nhtsa_id": "20V-708",
+   "rcdate": "20201117",
+   "mfgname": "Altec Industries Inc.",
+   "makes": [
+    "ALTEC"
+   ],
+   "models": [
+    "AH125",
+    "AH150"
+   ],
+   "years": "2006-2020",
+   "compname": [
+    "SUSPENSION: ADJUSTMENT:AUTOMATIC ELECTRICAL/HYDRAULIC"
+   ],
+   "mfr_comp_name": [
+    "Counterbalance Valve"
+   ],
+   "potaff": 13,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=20V708",
+   "case": "BR028",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "21V015000",
+   "nhtsa_id": "21V-015",
+   "rcdate": "20210120",
+   "mfgname": "Keystone RV Company",
+   "makes": [
+    "KEYSTONE"
+   ],
+   "models": [
+    "CROSSROADS REDWOOD"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "SUSPENSION:FRONT:SPRINGS:LEAF SPRING ASSEMBLY:U-BOLT, LEAF SPRING TO AXLE",
+    "SUSPENSION:REAR:SPRINGS:LEAF SPRING ASSEMBLY:U-BOLT, LEAF SPRING TO AXLE"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 209,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V015",
+   "case": "BR029",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "21V106000",
+   "nhtsa_id": "21V-106",
+   "rcdate": "20210223",
+   "mfgname": "Daimler Vans USA, LLC",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "METRIS"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "SEATS"
+   ],
+   "mfr_comp_name": [
+    "Seat Adjuster"
+   ],
+   "potaff": 4,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V106",
+   "case": "BR030",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "21V197000",
+   "nhtsa_id": "21V-197",
+   "rcdate": "20210319",
+   "mfgname": "Mercedes-Benz USA, LLC",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "AMG C43",
+    "AMG C63",
+    "AMG CLA45",
+    "AMG GLA45",
+    "AMG GLC43",
+    "AMG GLC63",
+    "AMG GLE43",
+    "AMG GLE63",
+    "AMG S63",
+    "AMG S65",
+    "C 300",
+    "C 350 E",
+    "C300",
+    "C350E",
+    "C400",
+    "C450",
+    "CLA 250",
+    "CLA250",
+    "GLA 250",
+    "GLC 300",
+    "GLC300",
+    "GLC350E",
+    "GLE450",
+    "S 450",
+    "S550",
+    "S560",
+    "S600"
+   ],
+   "years": "2014-2020",
+   "compname": [
+    "STRUCTURE:BODY:ROOF AND PILLARS"
+   ],
+   "mfr_comp_name": [
+    "Cover OSR"
+   ],
+   "potaff": 15096,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V197",
+   "case": "BR031",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "21V265000",
+   "nhtsa_id": "21V-265",
+   "rcdate": "20210415",
+   "mfgname": "Tiffin Motorhomes, Inc.",
+   "makes": [
+    "TIFFIN"
+   ],
+   "models": [
+    "PHAETON"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "STRUCTURE:BODY:ROOF AND PILLARS"
+   ],
+   "mfr_comp_name": [
+    "Fairing"
+   ],
+   "potaff": 215,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V265",
+   "case": "BR032",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "21V377000",
+   "nhtsa_id": "21V-377",
+   "rcdate": "20210524",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "EDGE"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "SEAT BELTS:FRONT:RETRACTOR",
+    "SEAT BELTS:PRETENSIONER"
+   ],
+   "mfr_comp_name": [
+    "Front Driver Seat Belt"
+   ],
+   "potaff": 82,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V377",
+   "case": "BR033",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "21V480000",
+   "nhtsa_id": "21V-480",
+   "rcdate": "20210625",
+   "mfgname": "Winnebago Industries, Inc.",
+   "makes": [
+    "WINNEBAGO"
+   ],
+   "models": [
+    "EKKO",
+    "SOLIS",
+    "TRAVATO"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "SEAT BELTS:REAR/OTHER:RETRACTOR"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 1566,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V480",
+   "case": "BR034",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "21V574000",
+   "nhtsa_id": "21V-574",
+   "rcdate": "20210727",
+   "mfgname": "Mack Trucks, Inc.",
+   "makes": [
+    "MACK"
+   ],
+   "models": [
+    "MD"
+   ],
+   "years": "2022-2022",
+   "compname": [
+    "SUSPENSION:FRONT:SPRINGS:LEAF SPRING ASSEMBLY:HANGER,BRACKET"
+   ],
+   "mfr_comp_name": [
+    "Bolt"
+   ],
+   "potaff": 60,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V574",
+   "case": "BR035",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "21V661000",
+   "nhtsa_id": "21V-661",
+   "rcdate": "20210825",
+   "mfgname": "Daimler Trucks North America, LLC",
+   "makes": [
+    "THOMAS BUILT BUSES"
+   ],
+   "models": [
+    "MINOTOUR"
+   ],
+   "years": "2022-2022",
+   "compname": [
+    "STRUCTURE"
+   ],
+   "mfr_comp_name": [
+    "Interior side panel"
+   ],
+   "potaff": 669,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V661",
+   "case": "BR036",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "21V772000",
+   "nhtsa_id": "21V-772",
+   "rcdate": "20211001",
+   "mfgname": "Corp. Micro Bird, Inc.",
+   "makes": [
+    "MICRO BIRD"
+   ],
+   "models": [
+    "G5 TRANSIT BUS"
+   ],
+   "years": "2022-2022",
+   "compname": [
+    "WHEELS"
+   ],
+   "mfr_comp_name": [
+    "Wheel alignment"
+   ],
+   "potaff": 1,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V772",
+   "case": "BR037",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "21V870000",
+   "nhtsa_id": "21V-870",
+   "rcdate": "20211110",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD",
+    "LINCOLN"
+   ],
+   "models": [
+    "AVIATOR",
+    "EXPLORER"
+   ],
+   "years": "2021-2021",
+   "compname": [
+    "SUSPENSION:REAR"
+   ],
+   "mfr_comp_name": [
+    "Rear Suspension Module"
+   ],
+   "potaff": 20,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V870",
+   "case": "BR038",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "21V983000",
+   "nhtsa_id": "21V-983",
+   "rcdate": "20211216",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "F-150"
+   ],
+   "years": "2018-2018",
+   "compname": [
+    "LATCHES/LOCKS/LINKAGES:TAILGATE:LATCH"
+   ],
+   "mfr_comp_name": [
+    "Tailgate Latch"
+   ],
+   "potaff": 57591,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=21V983",
+   "case": "BR039",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "22V115000",
+   "nhtsa_id": "22V-115",
+   "rcdate": "20220301",
+   "mfgname": "Volvo Trucks North America",
+   "makes": [
+    "VOLVO"
+   ],
+   "models": [
+    "VN"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "STRUCTURE:CRITICAL FASTENERS"
+   ],
+   "mfr_comp_name": [
+    "Flange Bolt",
+    "Flange Bolt plus Washer"
+   ],
+   "potaff": 209,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V115",
+   "case": "BR040",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "22V240000",
+   "nhtsa_id": "22V-240",
+   "rcdate": "20220413",
+   "mfgname": "BMW of North America, LLC",
+   "makes": [
+    "BMW"
+   ],
+   "models": [
+    "IX"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "AIR BAGS: AIR BAG/RESTRAINT CONTROL MODULE:SOFTWARE"
+   ],
+   "mfr_comp_name": [
+    "Air Bag Control Unit Software"
+   ],
+   "potaff": 3166,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V240",
+   "case": "BR041",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "22V419000",
+   "nhtsa_id": "22V-419",
+   "rcdate": "20220613",
+   "mfgname": "KENTUCKY TRAILER MANUFACTURING",
+   "makes": [
+    "KENTUCKY TRAILER"
+   ],
+   "models": [
+    "MV",
+    "PV"
+   ],
+   "years": "2014-2021",
+   "compname": [
+    "STRUCTURE:BODY"
+   ],
+   "mfr_comp_name": [
+    "Truck body walk board rack mount"
+   ],
+   "potaff": 2944,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V419",
+   "case": "BR042",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "22V523000",
+   "nhtsa_id": "22V-523",
+   "rcdate": "20220721",
+   "mfgname": "Jaguar Land Rover North America, LLC",
+   "makes": [
+    "LAND ROVER"
+   ],
+   "models": [
+    "DEFENDER",
+    "DISCOVERY",
+    "DISCOVERY SPORT",
+    "RANGE ROVER SPORT",
+    "RANGE ROVER VELAR"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "SEAT BELTS:PRETENSIONER"
+   ],
+   "mfr_comp_name": [
+    "Seat Belt Assembly"
+   ],
+   "potaff": 4927,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V523",
+   "case": "BR043",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "22V655000",
+   "nhtsa_id": "22V-655",
+   "rcdate": "20220830",
+   "mfgname": "REV Recreation Group",
+   "makes": [
+    "FLEETWOOD",
+    "HOLIDAY RAMBLER"
+   ],
+   "models": [
+    "ADMIRAL",
+    "ARMADA",
+    "AUGUSTA",
+    "BOUNDER",
+    "DISCOVERY",
+    "DISCOVERY LXE",
+    "ECLIPSE",
+    "ENDEAVOR",
+    "FLAIR",
+    "FLEX",
+    "FORTIS",
+    "FRONTIER",
+    "INVICTA",
+    "JAMBOREE",
+    "NAUTICA",
+    "NAVIGATOR",
+    "PACE ARROW",
+    "PACE ARROW LXE",
+    "SOUTHWIND",
+    "VACATIONER",
+    "VESTA"
+   ],
+   "years": "2018-2023",
+   "compname": [
+    "SUSPENSION: ADJUSTMENT:AUTOMATIC ELECTRICAL/HYDRAULIC"
+   ],
+   "mfr_comp_name": [],
+   "potaff": 4395,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V655",
+   "case": "BR044",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "22V766000",
+   "nhtsa_id": "22V-766",
+   "rcdate": "20221013",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "JEEP",
+    "RAM"
+   ],
+   "models": [
+    "1500",
+    "GLADIATOR",
+    "WRANGLER"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "SEAT BELTS:PRETENSIONER"
+   ],
+   "mfr_comp_name": [
+    "FRONT SEAT"
+   ],
+   "potaff": 2802,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V766",
+   "case": "BR045",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "22V910000",
+   "nhtsa_id": "22V-910",
+   "rcdate": "20221208",
+   "mfgname": "Navistar, Inc.",
+   "makes": [
+    "IC BUS",
+    "INTERNATIONAL"
+   ],
+   "models": [
+    "CE",
+    "RE"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "SUSPENSION:MULTIPLE AXLE:TORQUE ARM"
+   ],
+   "mfr_comp_name": [
+    "Bolt and Hex Nut"
+   ],
+   "potaff": 46,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=22V910",
+   "case": "BR046",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "23V067000",
+   "nhtsa_id": "23V-067",
+   "rcdate": "20230210",
+   "mfgname": "Nissan North America, Inc.",
+   "makes": [
+    "NISSAN"
+   ],
+   "models": [
+    "ARMADA",
+    "FRONTIER",
+    "PATHFINDER",
+    "QUEST",
+    "TITAN",
+    "XTERRA"
+   ],
+   "years": "2008-2011",
+   "compname": [
+    "AIR BAGS:FRONTAL"
+   ],
+   "mfr_comp_name": [
+    "Armada \u2013 Stone Interior",
+    "Frontier \u2013 Beige Interior",
+    "Frontier \u2013 Graphite / Red Interior",
+    "Frontier \u2013 Steel Interior",
+    "Frontier, Xterra, Pathfinder \u2013 Beige Interior",
+    "Frontier, Xterra, Pathfinder \u2013 Graphite Interior",
+    "Quest - Beige Interior",
+    "Quest - Gray Interior",
+    "Titan, Armada \u2013 Almond Interior",
+    "Titan, Armada \u2013 Charcoal Interior"
+   ],
+   "potaff": 404690,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V067",
+   "case": "BR047",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "23V166000",
+   "nhtsa_id": "23V-166",
+   "rcdate": "20230314",
+   "mfgname": "REV Recreation Group",
+   "makes": [
+    "AMERICAN COACH",
+    "FLEETWOOD",
+    "HOLIDAY RAMBLER"
+   ],
+   "models": [
+    "ADMIRAL",
+    "AMERICAN TRADITION",
+    "ARMADA",
+    "BOUNDER",
+    "DISCOVERY",
+    "DISCOVERY LXE",
+    "ECLIPSE",
+    "ENDEAVOR",
+    "FLAIR",
+    "FLEX",
+    "FORTIS",
+    "FRONTIER",
+    "FRONTIER GTX",
+    "INVICTA",
+    "NAUTICA",
+    "NAVIGATOR",
+    "PACE ARROW",
+    "SOUTHWIND",
+    "VACATIONER"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "LATCHES/LOCKS/LINKAGES:DOORS:LOCK"
+   ],
+   "mfr_comp_name": [
+    "Global Latch by Global Link Distribution, Corp"
+   ],
+   "potaff": 479,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V166",
+   "case": "BR048",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "23V252000",
+   "nhtsa_id": "23V-252",
+   "rcdate": "20230406",
+   "mfgname": "Jaguar Land Rover North America, LLC",
+   "makes": [
+    "LAND ROVER"
+   ],
+   "models": [
+    "RANGE ROVER"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "SEATS:MID/REAR ASSEMBLY"
+   ],
+   "mfr_comp_name": [
+    "Rear Seat Base - Frame"
+   ],
+   "potaff": 500,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V252",
+   "case": "BR049",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "23V350000",
+   "nhtsa_id": "23V-350",
+   "rcdate": "20230517",
+   "mfgname": "Nova Bus (US) Inc.",
+   "makes": [
+    "NOVA BUS"
+   ],
+   "models": [
+    "LFS"
+   ],
+   "years": "2012-2022",
+   "compname": [
+    "SEAT BELTS:FRONT"
+   ],
+   "mfr_comp_name": [
+    "Seat"
+   ],
+   "potaff": 166,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V350",
+   "case": "BR050",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "23V456000",
+   "nhtsa_id": "23V-456",
+   "rcdate": "20230629",
+   "mfgname": "Hino Motors Sales U.S.A., Inc.",
+   "makes": [
+    "HINO"
+   ],
+   "models": [
+    "NE7A",
+    "NE7B",
+    "NJ7A",
+    "NJ7B",
+    "NV7A",
+    "NV7B"
+   ],
+   "years": "2022-2023",
+   "compname": [
+    "SUSPENSION:FRONT:SPRINGS:LEAF SPRING ASSEMBLY:U-BOLT, LEAF SPRING TO AXLE"
+   ],
+   "mfr_comp_name": [
+    "Spacer, Leaf SPG",
+    "Spring Assy, FR",
+    "U bolt, Leaf SPG"
+   ],
+   "potaff": 1865,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V456",
+   "case": "BR051",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "23V599000",
+   "nhtsa_id": "23V-599",
+   "rcdate": "20230825",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "PALISADE"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION:FRONT PASSENGER"
+   ],
+   "mfr_comp_name": [
+    "OCCUPANT DETECTION SYSTEM"
+   ],
+   "potaff": 63,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V599",
+   "case": "BR052",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "23V715000",
+   "nhtsa_id": "23V-715",
+   "rcdate": "20231025",
+   "mfgname": "Porsche Cars North America, Inc.",
+   "makes": [
+    "PORSCHE"
+   ],
+   "models": [
+    "911 CARRERA 4 GTS",
+    "911 CARRERA GTS",
+    "911 CARRERA T",
+    "911 DAKAR",
+    "911 GT3",
+    "911 GT3 RS",
+    "911 GT3 TOURING",
+    "911 TURBO",
+    "911 TURBO S"
+   ],
+   "years": "2021-2024",
+   "compname": [
+    "AIR BAGS"
+   ],
+   "mfr_comp_name": [
+    "Airbag Control Unit"
+   ],
+   "potaff": 2923,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V715",
+   "case": "BR053",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "23V822000",
+   "nhtsa_id": "23V-822",
+   "rcdate": "20231207",
+   "mfgname": "Keystone RV Company",
+   "makes": [
+    "DUTCHMEN"
+   ],
+   "models": [
+    "COLEMAN"
+   ],
+   "years": "2021-2022",
+   "compname": [
+    "SUSPENSION:FRONT:SPRINGS:LEAF SPRING ASSEMBLY:LEAF"
+   ],
+   "mfr_comp_name": [
+    "Axle Leaf Spring"
+   ],
+   "potaff": 366,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=23V822",
+   "case": "BR054",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "24V019000",
+   "nhtsa_id": "24V-019",
+   "rcdate": "20240117",
+   "mfgname": "Newmar Corporation",
+   "makes": [
+    "NEWMAR"
+   ],
+   "models": [
+    "DUTCH STAR",
+    "ESSEX",
+    "LONDON AIRE",
+    "MOUNTAIN AIRE"
+   ],
+   "years": "2016-2023",
+   "compname": [
+    "SEATS"
+   ],
+   "mfr_comp_name": [
+    "Seat pedestal"
+   ],
+   "potaff": 160,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V019",
+   "case": "BR055",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "24V146000",
+   "nhtsa_id": "24V-146",
+   "rcdate": "20240223",
+   "mfgname": "Hyundai Motor America",
+   "makes": [
+    "HYUNDAI"
+   ],
+   "models": [
+    "ELANTRA"
+   ],
+   "years": "2015-2016",
+   "compname": [
+    "LATCHES/LOCKS/LINKAGES:TRUNK LID:LATCH"
+   ],
+   "mfr_comp_name": [
+    "LATCH ASSY-TRUNK LID"
+   ],
+   "potaff": 186588,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V146",
+   "case": "BR056",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "24V312000",
+   "nhtsa_id": "24V-312",
+   "rcdate": "20240502",
+   "mfgname": "Jayco, Inc.",
+   "makes": [
+    "ENTEGRA",
+    "JAYCO"
+   ],
+   "models": [
+    "ETHOS",
+    "ETHOS LI",
+    "SWIFT",
+    "SWIFT LI"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "SEAT BELTS:FRONT:BUCKLE ASSEMBLY"
+   ],
+   "mfr_comp_name": [
+    "Buckle Assembly"
+   ],
+   "potaff": 33,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V312",
+   "case": "BR057",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "24V400000",
+   "nhtsa_id": "24V-400",
+   "rcdate": "20240604",
+   "mfgname": "Kia America, Inc.",
+   "makes": [
+    "KIA"
+   ],
+   "models": [
+    "EV9"
+   ],
+   "years": "2024-2024",
+   "compname": [
+    "STRUCTURE:INTERIOR PANELS:CEILING"
+   ],
+   "mfr_comp_name": [
+    "HEADLINING ASSY"
+   ],
+   "potaff": 2401,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V400",
+   "case": "BR058",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "24V492000",
+   "nhtsa_id": "24V-492",
+   "rcdate": "20240628",
+   "mfgname": "Delco Trailers LLC",
+   "makes": [
+    "DELCO TRAILERS"
+   ],
+   "models": [
+    "BUMPER HORSE"
+   ],
+   "years": "2019-2024",
+   "compname": [
+    "LATCHES/LOCKS/LINKAGES:DOORS:LATCH"
+   ],
+   "mfr_comp_name": [
+    "H-Series Gate"
+   ],
+   "potaff": 187,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V492",
+   "case": "BR059",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "24V574000",
+   "nhtsa_id": "24V-574",
+   "rcdate": "20240801",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "DODGE"
+   ],
+   "models": [
+    "CHARGER"
+   ],
+   "years": "2023-2023",
+   "compname": [
+    "SEATS:CRITICAL FASTENERS"
+   ],
+   "mfr_comp_name": [
+    "Seat Back Latch Striker"
+   ],
+   "potaff": 898,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V574",
+   "case": "BR060",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "24V703000",
+   "nhtsa_id": "24V-703",
+   "rcdate": "20240919",
+   "mfgname": "General Motors, LLC",
+   "makes": [
+    "CHEVROLET",
+    "GMC"
+   ],
+   "models": [
+    "CANYON",
+    "COLORADO"
+   ],
+   "years": "2023-2024",
+   "compname": [
+    "SEAT BELTS:CRITICAL FASTENERS"
+   ],
+   "mfr_comp_name": [
+    "BUCKLE KIT-F/SEAT BELT"
+   ],
+   "potaff": 151,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V703",
+   "case": "BR061",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "24V855000",
+   "nhtsa_id": "24V-855",
+   "rcdate": "20241108",
+   "mfgname": "VANCRAFT LLC",
+   "makes": [
+    "VANCRAFT"
+   ],
+   "models": [
+    "ALLTREK",
+    "LWB",
+    "LWB XL",
+    "ROVER",
+    "ROVER XL",
+    "SWB"
+   ],
+   "years": "2014-2024",
+   "compname": [
+    "SEAT BELTS: REAR/OTHER:BUCKLE ASSEMBLY",
+    "SEAT BELTS:CRITICAL FASTENERS",
+    "SEATS",
+    "SEATS:CRITICAL FASTENERS"
+   ],
+   "mfr_comp_name": [
+    "Hor. Bench Frame",
+    "Legacy Hor. Bench Frame",
+    "Seatbelt Anchor Bolts",
+    "Ver. Bench Frame"
+   ],
+   "potaff": 255,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=24V855",
+   "case": "BR062",
+   "class": [
+    "body",
+    "restraint"
+   ]
+  },
+  {
+   "campno": "25V010000",
+   "nhtsa_id": "25V-010",
+   "rcdate": "20250116",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "RAM"
+   ],
+   "models": [
+    "1500",
+    "2500",
+    "3500",
+    "3500 CAB CHASSIS"
+   ],
+   "years": "2016-2020",
+   "compname": [
+    "AIR BAGS:SIDE/WINDOW:CURTAIN:INFLATOR"
+   ],
+   "mfr_comp_name": [
+    "Left Side Curtain",
+    "Right Side Curtain"
+   ],
+   "potaff": 6066,
+   "influenced_by": [
+    "ODI"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V010",
+   "case": "BR063",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "25V128000",
+   "nhtsa_id": "25V-128",
+   "rcdate": "20250319",
+   "mfgname": "Vermeer Manufacturing Company",
+   "makes": [
+    "VERMEER"
+   ],
+   "models": [
+    "LPSDT",
+    "LPSGT",
+    "LPXDT"
+   ],
+   "years": "2020-2025",
+   "compname": [
+    "STRUCTURE"
+   ],
+   "mfr_comp_name": [
+    "Trailer Frame"
+   ],
+   "potaff": 472,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V128",
+   "case": "BR064",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "25V269000",
+   "nhtsa_id": "25V-269",
+   "rcdate": "20250515",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "VOLKSWAGEN"
+   ],
+   "models": [
+    "ID. BUZZ"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "SEATS:MID/REAR ASSEMBLY"
+   ],
+   "mfr_comp_name": [
+    "third-row rear bench"
+   ],
+   "potaff": 5644,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V269",
+   "case": "BR065",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "25V341000",
+   "nhtsa_id": "25V-341",
+   "rcdate": "20250523",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "F-150 LIGHTNING BEV"
+   ],
+   "years": "2024-2025",
+   "compname": [
+    "SUSPENSION:FRONT:CONTROL ARM:UPPER BALL JOINT"
+   ],
+   "mfr_comp_name": [
+    "Nut & Wshr M12 Hf Ptp Con 10"
+   ],
+   "potaff": 29501,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V341",
+   "case": "BR066",
+   "class": [
+    "chassis"
+   ]
+  },
+  {
+   "campno": "25V421000",
+   "nhtsa_id": "25V-421",
+   "rcdate": "20250619",
+   "mfgname": "Supreme Corporation",
+   "makes": [
+    "SUPREME"
+   ],
+   "models": [
+    "WABASH TRUCK"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "STRUCTURE:BODY:HATCHBACK/LIFTGATE"
+   ],
+   "mfr_comp_name": [
+    "Lift Gate"
+   ],
+   "potaff": 2,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V421",
+   "case": "BR067",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "25V554000",
+   "nhtsa_id": "25V-554",
+   "rcdate": "20250826",
+   "mfgname": "Tiffin Motorhomes, Inc.",
+   "makes": [
+    "TIFFIN"
+   ],
+   "models": [
+    "GT1"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "SEAT BELTS:REAR/OTHER"
+   ],
+   "mfr_comp_name": [
+    "3 PT BLACK DUAL ELR 154\" W/L BRACKET"
+   ],
+   "potaff": 20,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V554",
+   "case": "BR068",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "25V642000",
+   "nhtsa_id": "25V-642",
+   "rcdate": "20250925",
+   "mfgname": "Chrysler (FCA US, LLC)",
+   "makes": [
+    "JEEP"
+   ],
+   "models": [
+    "GRAND WAGONEER",
+    "WAGONEER"
+   ],
+   "years": "2022-2024",
+   "compname": [
+    "STRUCTURE:EXTERIOR TRIM"
+   ],
+   "mfr_comp_name": [
+    "Quarter Window"
+   ],
+   "potaff": 123396,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V642",
+   "case": "BR069",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "25V774000",
+   "nhtsa_id": "25V-774",
+   "rcdate": "20251111",
+   "mfgname": "Wabash National Corporation",
+   "makes": [
+    "WABASH"
+   ],
+   "models": [
+    "STEPDECK"
+   ],
+   "years": "2025-2026",
+   "compname": [
+    "STRUCTURE:BODY"
+   ],
+   "mfr_comp_name": [
+    "Bumper tube"
+   ],
+   "potaff": 158,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V774",
+   "case": "BR070",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "25V884000",
+   "nhtsa_id": "25V-884",
+   "rcdate": "20251218",
+   "mfgname": "Ford Motor Company",
+   "makes": [
+    "FORD"
+   ],
+   "models": [
+    "MAVERICK"
+   ],
+   "years": "2025-2026",
+   "compname": [
+    "STRUCTURE:INTERIOR PANELS:DASHBOARD"
+   ],
+   "mfr_comp_name": [
+    "Instrument Panel Topper"
+   ],
+   "potaff": 6897,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=25V884",
+   "case": "BR071",
+   "class": [
+    "body"
+   ]
+  },
+  {
+   "campno": "26V070000",
+   "nhtsa_id": "26V-070",
+   "rcdate": "20260206",
+   "mfgname": "Daimler Vans USA, LLC",
+   "makes": [
+    "MERCEDES-BENZ"
+   ],
+   "models": [
+    "METRIS"
+   ],
+   "years": "2020-2023",
+   "compname": [
+    "AIR BAGS: AIR BAG/RESTRAINT CONTROL MODULE"
+   ],
+   "mfr_comp_name": [
+    "Protective Cover"
+   ],
+   "potaff": 52360,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V070",
+   "case": "BR072",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "26V166000",
+   "nhtsa_id": "26V-166",
+   "rcdate": "20260319",
+   "mfgname": "General Motors, LLC",
+   "makes": [
+    "CHEVROLET",
+    "GMC"
+   ],
+   "models": [
+    "SIERRA 1500",
+    "SIERRA 2500",
+    "SIERRA 3500",
+    "SILVERADO 1500",
+    "SILVERADO 2500",
+    "SILVERADO 3500"
+   ],
+   "years": "2018-2019",
+   "compname": [
+    "AIR BAGS"
+   ],
+   "mfr_comp_name": [
+    "AIRBAG ASM-FRT & RR ROW R/RAIL"
+   ],
+   "potaff": 2819,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V166",
+   "case": "BR073",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "26V266000",
+   "nhtsa_id": "26V-266",
+   "rcdate": "20260424",
+   "mfgname": "Volkswagen Group of America, Inc.",
+   "makes": [
+    "AUDI"
+   ],
+   "models": [
+    "Q5",
+    "Q5 SPORTBACK",
+    "SQ5",
+    "SQ5 SPORTBACK"
+   ],
+   "years": "2025-2025",
+   "compname": [
+    "SEAT BELTS:PRETENSIONER"
+   ],
+   "mfr_comp_name": [
+    "Front seat belt assembly"
+   ],
+   "potaff": 7425,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V266",
+   "case": "BR074",
+   "class": [
+    "restraint"
+   ]
+  },
+  {
+   "campno": "26V350000",
+   "nhtsa_id": "26V-350",
+   "rcdate": "20260528",
+   "mfgname": "Volvo Trucks North America",
+   "makes": [
+    "VOLVO"
+   ],
+   "models": [
+    "VAH",
+    "VHD",
+    "VN",
+    "VNL (4)",
+    "VNR (4)"
+   ],
+   "years": "2026-2027",
+   "compname": [
+    "WHEELS:LUGS/NUTS/BOLTS/STUDS"
+   ],
+   "mfr_comp_name": [
+    "Wheel Nuts"
+   ],
+   "potaff": 205,
+   "influenced_by": [
+    "MFR"
+   ],
+   "url": "https://www.nhtsa.gov/recalls?nhtsaId=26V350",
+   "case": "BR075",
+   "class": [
+    "chassis"
+   ]
+  }
+ ]
+}
