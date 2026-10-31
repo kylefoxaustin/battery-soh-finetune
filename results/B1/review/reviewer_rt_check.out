@@ -1,0 +1,15 @@
+r1 P1: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 1.001/1.020/1.011  worst_block = 1.005/1.053/1.099  RT_DISTURBED=no
+r1 P2: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 1.000/0.996/1.010  worst_block = 1.005/1.085/1.111  RT_DISTURBED=no
+r1 P3: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 0.999/1.020/1.018  worst_block = 1.001/1.053/1.041  RT_DISTURBED=no
+r1 P4: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 0.999/1.028/1.017  worst_block = 1.007/1.109/1.083  RT_DISTURBED=no
+r1 P5: n_e1=9 n_l96=5 n_l3564=4 gates_ok=True median_ratio e1/L96/L3564 = 1.002/1.028/1.007  worst_block = 1.007/1.061/1.037  RT_DISTURBED=no
+r2 P1: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 0.999/1.033/1.045  worst_block = 1.002/1.058/1.077  RT_DISTURBED=no
+r2 P2: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 1.000/1.013/1.038  worst_block = 1.001/1.083/1.082  RT_DISTURBED=no
+r2 P3: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 0.999/1.017/1.038  worst_block = 1.001/1.058/1.104  RT_DISTURBED=no
+r2 P4: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 0.999/1.004/1.049  worst_block = 1.005/1.108/1.122  RT_DISTURBED=no
+r2 P5: n_e1=9 n_l96=5 n_l3564=4 gates_ok=True median_ratio e1/L96/L3564 = 1.000/1.050/1.063  worst_block = 1.006/1.149/1.117  RT_DISTURBED=no
+r3 P1: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 1.000/1.020/1.008  worst_block = 1.004/1.081/1.069  RT_DISTURBED=no
+r3 P2: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 1.001/1.024/1.037  worst_block = 1.003/1.106/1.096  RT_DISTURBED=no
+r3 P3: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 0.999/1.016/1.021  worst_block = 1.002/1.098/1.063  RT_DISTURBED=no
+r3 P4: n_e1=29 n_l96=14 n_l3564=15 gates_ok=True median_ratio e1/L96/L3564 = 0.998/1.004/1.027  worst_block = 1.006/1.106/1.106  RT_DISTURBED=no
+max median ratios: {'e1': 1.002, 'L96': 1.05, 'L3564': 1.063, 'e1w': 1.007, 'L96w': 1.149, 'L3564w': 1.122}

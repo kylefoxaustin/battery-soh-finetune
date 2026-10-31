@@ -38,6 +38,18 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > only its *spread*; and score the quantity a controller would act on (the issued bound, the admitted current), never a
 > margin alone.
 
+> **Status 2026-10-31.** **B1 is DONE** (`0c4b61e`; [`results/B1/results_B1.md`](../../results/B1/results_B1.md)):
+> all 14 cells hit 3.2 / 32 / 60 MB/s with 0 drops; a 2 GB LPDDR ring holds **671 / 67 / 36 s** by sequence span;
+> every dump that fitted the ring verified (26 of 26); the real-time loops stayed within 6.3 % (median p99) of
+> baseline; the CPU producer cost ≤ 3.1 % of one core (upper bound on a DMA path); eMMC sustains 164 MB/s but would
+> wear out as a ring medium in 0.05–0.95 years (DERIVED, endurance ASSUMED). Reviewer re-derived the rates, depths,
+> gates and RT ratios from `results/B1/raw/` and they match. **The capability is measured; its value now hinges on FR1**
+> (how long a pre-event window real root causes need), so FR1 moves up. The order is now **DC1 → FR1 (parallel) → X8 →
+> O1 → R1**. Full Build Briefs: [`briefs/DC1/README.md`](../DC1/README.md), [`briefs/FR1/README.md`](../FR1/README.md).
+> The tier line for FR1 is **80 s** (an MCU with 256 MB SDRAM at 3.2 MB/s, DERIVED); B1's 671 s is the number that
+> clears it. Design rule from B1: a whole-ring freeze with a running producer needs at least one burst of headroom over
+> the window (two 60 MB/s dumps lost exactly one 1 ms burst at the oldest edge).
+
 ---
 
 ## 1. How the reviewer starts one
@@ -54,9 +66,11 @@ Paste this into `NEXT_TASK.md`, replacing `<ID>` and the brief path, and set Sta
 After approval the reviewer edits the brief's START HERE box to "APPROVED, run it now" (as was done for X6), and the
 session runs exactly what was pre-registered, commits results, README and dossier updates, sets `DONE <hash>`, and stops.
 
-**X7** ([`briefs/X7/README.md`](../X7/README.md), closed) and **B1** ([`briefs/B1/README.md`](../B1/README.md)) have full
-Build Briefs. The others below are skeletons at the level of X6's §3–§4; promote one to a Build Brief before naming it
-in `NEXT_TASK.md`. B1 is a capability measurement: its brief fixes the protocol in advance and lets the session continue
+**X7** ([`briefs/X7/README.md`](../X7/README.md), closed), **B1** ([`briefs/B1/README.md`](../B1/README.md), done),
+**DC1** ([`briefs/DC1/README.md`](../DC1/README.md)) and **FR1** ([`briefs/FR1/README.md`](../FR1/README.md)) have full
+Build Briefs. FR1 is documentary and may run in a parallel session; it records its state in its own brief's Status line
+and never touches `NEXT_TASK.md`. The others below are skeletons at the level of X6's §3–§4; promote one to a Build
+Brief before naming it in `NEXT_TASK.md`. B1 is a capability measurement: its brief fixes the protocol in advance and lets the session continue
 from the census to the measurement without a stop when every census gate passes.
 
 ---
