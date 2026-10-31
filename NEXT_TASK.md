@@ -33,4 +33,4 @@ Build Brief at [`briefs/X8/README.md`](briefs/X8/README.md) and is next after th
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN
+**Status:** AWAITING APPROVAL 765d1f1
