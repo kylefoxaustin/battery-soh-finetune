@@ -159,4 +159,4 @@ reports verdict first, with the licence and the "judgemental" caveat, and one ro
 
 *Fix the list blind. Pre-register the thresholds against the measured windows. Rate twice. Report the disagreement.*
 
-**Status:** APPROVED 2026-10-31 — rating in progress (rater A first)
+**Status:** RATER A DONE f736331

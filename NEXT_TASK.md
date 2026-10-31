@@ -34,4 +34,4 @@ branches exist a session merges them and runs the pre-registered agreement analy
 Edit only the **Status** line below to `RATER A DONE <branch-hash>` or `BLOCKED: <one-line reason>`, then commit and
 push `main`.
 
-**Status:** OPEN
+**Status:** RATER A DONE f736331
