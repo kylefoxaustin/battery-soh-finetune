@@ -1,0 +1,21 @@
+{
+ "seed": 3,
+ "rule": "5 per kappa stratum of rater A item 3, shuffled; strata withheld",
+ "cases": [
+  "PE007",
+  "PE020",
+  "PE041",
+  "PE025",
+  "PE044",
+  "PE012",
+  "PE017",
+  "PE070",
+  "PE037",
+  "PE074",
+  "PE001",
+  "PE010",
+  "PE011",
+  "PE015",
+  "PE042"
+ ]
+}
