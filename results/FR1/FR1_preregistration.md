@@ -254,7 +254,13 @@ A clean "most causes need ≤ 1 s" is a result (brief rule 7). No dollar figure 
   stratified subset of 15 PE cases (5 per window category by rater A, drawn by `default_rng(3)`) rated by the reviewer
   after both machine ratings are committed; κ(A, human) on that subset is reported as a calibration, non-deciding.
 
-Any further change after this commit is a numbered deviation (D-4, …). After any rating has been written, none of the
+- **D-4 (reviewer, 2026-11-01; clarifies D-3's draw, before any human rating).** The human spot-check subset is **5
+  cases per κ stratum** of rater A's item 3 (≤ 1 s / (1, 80] s / > 80 s; *cannot judge* excluded), 15 in all, drawn
+  with `numpy.random.default_rng(3)` and presented shuffled. The stratum key is withheld from the human rater and from
+  `main` until the agreement analysis. Packet: branch `fr1-rater-h`, `results/FR1/human_spotcheck/`. κ(A, H) and
+  κ(B, H) on the 15 are reported as calibration, non-deciding.
+
+Any further change after this commit is a numbered deviation (D-5, …). After any rating has been written, none of the
 following moves:
 
 - the case list (apart from a reviewer move of unresolved cases before rating, §2);
