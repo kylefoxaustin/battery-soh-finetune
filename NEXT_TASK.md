@@ -50,4 +50,4 @@ analysis (pre-registration §5–§6). The reviewer may add the optional 15-case
 Edit only the **Status** line below to `RATER B DONE <branch-hash>` or `BLOCKED: <one-line reason>`, then commit and
 push `main`.
 
-**Status:** OPEN (rater B)
+**Status:** RATER B DONE 77e3613 (branch `fr1-rater-b`)
