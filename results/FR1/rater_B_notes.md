@@ -120,3 +120,32 @@ contactor command and feedback, cell voltages, coolant temperature, CAN state) a
   committed.
 - `results/FR1/ratings_B.csv`: one row per case, columns as in `NEXT_TASK.md` step 5.
 - `analysis/FR1_rater_B_fetch.py`: the order and the fetcher.
+
+## Process notes added after rating (the conventions above were committed before any document was opened)
+
+- **Documents fetched.** Per campaign: every NHTSA document listed as a Part 573 report or a chronology, plus
+  manufacturer-format Defect Information Reports (the Part 573 content with its chronology) attached as
+  miscellaneous documents, which several current Part 573s point to with "see attached Part 573 / DIR for the
+  chronology". Bare "Miscellaneous Document" attachments were also fetched and kept only if their heading showed a
+  DIR or chronology; owner letters, FAQs, cover letters and part lists were not used. `used_for_rating` and
+  `use_note` in `rater_B_documents.json` record this per document (MEASURED: 389 documents fetched, 0 failed).
+- **Image-only documents.** Two DIRs with no text layer were read as rendered page images (25V-560 / PE042 and
+  23V-657 / PE026). Five other image-only attachments, and one ODI opening résumé whose text layer is unreadable
+  (PE23-011), were not read; each of those cases was rated from its other, readable documents (Part 573 text and,
+  for PE034, the closing résumé).
+- **ODI résumés.** Used for PE012, PE027, PE033, PE034 (ODI-initiated), and BR001 and BR031 (Part 573 or its
+  chronology cites the investigation). For BR012 the API links EA15-001 but the campaign is not ODI-initiated and its
+  Part 573 does not cite it, so the résumé was not used (§4.1).
+- **Item 3 *cannot judge*.** One case, PE021: all documents opened, but no cause or mechanism is stated anywhere, so
+  there was nothing to map; its no-cause flag is set. No case was rated *cannot judge* because a document could not
+  be opened.
+- **Out-of-scope flag, vehicle-level controllers.** Where the defective part is a vehicle control unit, hybrid
+  vehicle control ECU, telematics module or other vehicle-level software rather than the BMS, inverter / motor
+  controller, OBC or DC-DC converter, the out-of-scope flag was set (PE014, PE020, PE031, PE040, PE043, PE066). Cells
+  and modules, harnesses, connectors, brackets, a charging cable, a water pump and a motor slip ring were also
+  flagged out of scope.
+- **Rereading of the window rule for slow mechanisms.** Where the documents tie the cause to an operating or
+  environmental history (charge sessions, repeated events, months of exposure), item 3 is > 700 s and the free text
+  names the low data rate needed. Where the cause is a static property of a part (assembly, torque, weld, wrong
+  part, a design weakness under normal use) that a snapshot or teardown identifies, item 3 is ≤ 1 s even when the
+  failure itself develops over time.
