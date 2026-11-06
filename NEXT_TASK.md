@@ -37,4 +37,4 @@ below is an independent re-derivation by this session before anything else. Plan
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN
+**Status:** AWAITING APPROVAL 600b296 (FR1 re-derivation 1fda86b: all match; X8 first stage)
