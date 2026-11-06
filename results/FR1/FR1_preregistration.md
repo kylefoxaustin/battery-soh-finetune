@@ -260,7 +260,13 @@ A clean "most causes need ≤ 1 s" is a result (brief rule 7). No dollar figure 
   `main` until the agreement analysis. Packet: branch `fr1-rater-h`, `results/FR1/human_spotcheck/`. κ(A, H) and
   κ(B, H) on the 15 are reported as calibration, non-deciding.
 
-Any further change after this commit is a numbered deviation (D-5, …). After any rating has been written, none of the
+- **D-5 (reviewer, 2026-11-06).** The human spot-check (D-3/D-4) is **not rated**; the reviewer could not allocate the
+  time. κ(A, B) stands alone, with the D-3 disclosure. The packet remains on branch `fr1-rater-h` for the record.
+- **D-6 (disclosed by rater B before rating; accepted by the reviewer 2026-11-06).** Rater B was launched as a
+  fresh-context sub-agent from the rater A session, in a separate clone containing only `main` (no `fr1-rater-a` ref
+  ever fetched), rather than "started by the reviewer" (§4.2 / D-2). Blindness held by construction.
+
+Any further change after this commit is a numbered deviation (D-7, …). After any rating has been written, none of the
 following moves:
 
 - the case list (apart from a reviewer move of unresolved cases before rating, §2);

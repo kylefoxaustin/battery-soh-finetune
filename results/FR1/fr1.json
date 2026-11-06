@@ -1,0 +1,1429 @@
+{
+ "generated": "2026-11-06T14:42:43+00:00",
+ "provenance": "DERIVED-judgemental ratings; NHTSA, public domain",
+ "n_cases": 150,
+ "n_PE": 75,
+ "n_BR": 75,
+ "exclusions": {
+  "both_rater_flags": {
+   "no_cause": 4,
+   "software_only": 17,
+   "out_of_scope": 23
+  },
+  "n_excluded": 41,
+  "excluded_cases": [
+   "BR057",
+   "BR070",
+   "BR073",
+   "PE002",
+   "PE003",
+   "PE004",
+   "PE007",
+   "PE010",
+   "PE011",
+   "PE012",
+   "PE014",
+   "PE019",
+   "PE020",
+   "PE021",
+   "PE023",
+   "PE026",
+   "PE028",
+   "PE031",
+   "PE035",
+   "PE037",
+   "PE039",
+   "PE040",
+   "PE041",
+   "PE042",
+   "PE043",
+   "PE044",
+   "PE046",
+   "PE047",
+   "PE051",
+   "PE053",
+   "PE056",
+   "PE057",
+   "PE062",
+   "PE063",
+   "PE064",
+   "PE066",
+   "PE069",
+   "PE070",
+   "PE071",
+   "PE072",
+   "PE076"
+  ],
+  "single_rater_flags_reported_not_excluding": {
+   "no_cause": 4,
+   "software_only": 6,
+   "out_of_scope": 3
+  },
+  "n_PE_after_exclusions": 37
+ },
+ "readouts": {
+  "PE": {
+   "conservative": {
+    "n": 36,
+    "gt80": [
+     0.2777777777777778,
+     0.1584833786805556,
+     0.439924901305613
+    ],
+    "gt40": [
+     0.2777777777777778,
+     0.1584833786805556,
+     0.439924901305613
+    ],
+    "gt1": [
+     0.4166666666666667,
+     0.27140561953340225,
+     0.577997485461411
+    ],
+    "dist": {
+     "<=1 s": 21,
+     "(1,40] s": 5,
+     "(40,80] s": 0,
+     "(80,700] s": 2,
+     ">700 s": 8
+    }
+   },
+   "conservative_cj_low": {
+    "n": 37,
+    "gt80": [
+     0.2702702702702703,
+     0.15397461440966215,
+     0.42978168456560734
+    ],
+    "gt40": [
+     0.2702702702702703,
+     0.15397461440966215,
+     0.42978168456560734
+    ],
+    "gt1": [
+     0.40540540540540543,
+     0.26346518096567406,
+     0.5651403539064959
+    ],
+    "dist": {
+     "<=1 s": 22,
+     "(1,40] s": 5,
+     "(40,80] s": 0,
+     "(80,700] s": 2,
+     ">700 s": 8
+    }
+   },
+   "raterA": {
+    "n": 36,
+    "gt80": [
+     0.5,
+     0.3447432529897015,
+     0.6552567470102986
+    ],
+    "gt40": [
+     0.5,
+     0.3447432529897015,
+     0.6552567470102986
+    ],
+    "gt1": [
+     0.6388888888888888,
+     0.4757507535888593,
+     0.7752440714197851
+    ],
+    "dist": {
+     "<=1 s": 13,
+     "(1,40] s": 5,
+     "(40,80] s": 0,
+     "(80,700] s": 6,
+     ">700 s": 12
+    }
+   },
+   "raterB": {
+    "n": 37,
+    "gt80": [
+     0.2972972972972973,
+     0.1748947857415188,
+     0.45783136041313083
+    ],
+    "gt40": [
+     0.2972972972972973,
+     0.1748947857415188,
+     0.45783136041313083
+    ],
+    "gt1": [
+     0.4594594594594595,
+     0.3103856970050248,
+     0.6161595322259052
+    ],
+    "dist": {
+     "<=1 s": 20,
+     "(1,40] s": 6,
+     "(40,80] s": 0,
+     "(80,700] s": 0,
+     ">700 s": 11
+    }
+   },
+   "cannot_judge_either": 1
+  },
+  "BR": {
+   "conservative": {
+    "n": 72,
+    "gt80": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "gt40": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "gt1": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "dist": {
+     "<=1 s": 67,
+     "(1,40] s": 0,
+     "(40,80] s": 0,
+     "(80,700] s": 0,
+     ">700 s": 5
+    }
+   },
+   "conservative_cj_low": {
+    "n": 72,
+    "gt80": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "gt40": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "gt1": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "dist": {
+     "<=1 s": 67,
+     "(1,40] s": 0,
+     "(40,80] s": 0,
+     "(80,700] s": 0,
+     ">700 s": 5
+    }
+   },
+   "raterA": {
+    "n": 72,
+    "gt80": [
+     0.9583333333333334,
+     0.8845072317804198,
+     0.9857291926441228
+    ],
+    "gt40": [
+     0.9583333333333334,
+     0.8845072317804198,
+     0.9857291926441228
+    ],
+    "gt1": [
+     0.9583333333333334,
+     0.8845072317804198,
+     0.9857291926441228
+    ],
+    "dist": {
+     "<=1 s": 3,
+     "(1,40] s": 0,
+     "(40,80] s": 0,
+     "(80,700] s": 0,
+     ">700 s": 69
+    }
+   },
+   "raterB": {
+    "n": 72,
+    "gt80": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "gt40": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "gt1": [
+     0.06944444444444445,
+     0.030025381375726246,
+     0.1524797956800065
+    ],
+    "dist": {
+     "<=1 s": 67,
+     "(1,40] s": 0,
+     "(40,80] s": 0,
+     "(80,700] s": 0,
+     ">700 s": 5
+    }
+   },
+   "cannot_judge_either": 0
+  }
+ },
+ "agreement": {
+  "gate_k3_all_rated": {
+   "kappa": 0.1918641896220372,
+   "n": 145,
+   "observed_agreement": 0.4
+  },
+  "k3_PE": {
+   "kappa": 0.5541267942583731,
+   "n": 71,
+   "observed_agreement": 0.704225352112676
+  },
+  "k3_BR": {
+   "kappa": 0.0061050061050061085,
+   "n": 74,
+   "observed_agreement": 0.10810810810810811
+  },
+  "k3_PE_after_exclusions": {
+   "kappa": 0.5176613885505481,
+   "n": 36,
+   "observed_agreement": 0.6944444444444444
+  },
+  "k6_all": {
+   "kappa": 0.18658892128279883,
+   "n": 150,
+   "observed_agreement": 0.38
+  },
+  "k6_PE": {
+   "kappa": 0.512256128064032,
+   "n": 75,
+   "observed_agreement": 0.6533333333333333
+  },
+  "k1_cause_all": {
+   "kappa": 0.8702646600934095,
+   "n": 150,
+   "observed_agreement": 0.9333333333333333
+  },
+  "k1_cause_PE": {
+   "kappa": 0.9025467775467776,
+   "n": 75,
+   "observed_agreement": 0.9333333333333333
+  }
+ },
+ "crosstab_collapsed_A_x_B": {
+  "A=(1,80] s|B=(1,80] s": 12,
+  "A=(1,80] s|B=<=1 s": 2,
+  "A=<=1 s|B=(1,80] s": 1,
+  "A=<=1 s|B=<=1 s": 23,
+  "A=<=1 s|B=>80 s": 1,
+  "A=>80 s|B=(1,80] s": 1,
+  "A=>80 s|B=<=1 s": 82,
+  "A=>80 s|B=>80 s": 23,
+  "A=cj|B=<=1 s": 4,
+  "A=cj|B=cj": 1
+ },
+ "by_group": {
+  "DC-DC converter": {
+   "n": 4,
+   "gt80": 0.25,
+   "gt40": 0.25,
+   "gt1": 0.25
+  },
+  "HV BMS / contactor unit": {
+   "n": 16,
+   "gt80": 0.25,
+   "gt40": 0.25,
+   "gt1": 0.438
+  },
+  "OBC / charging control": {
+   "n": 6,
+   "gt80": 0.833,
+   "gt40": 0.833,
+   "gt1": 0.833
+  },
+  "Traction inverter / motor controller": {
+   "n": 12,
+   "gt80": 0.083,
+   "gt40": 0.083,
+   "gt1": 0.333
+  }
+ },
+ "by_year": {
+  "2019": {
+   "n": 1,
+   "gt80": 0.0,
+   "gt40": 0.0,
+   "gt1": 1.0
+  },
+  "2020": {
+   "n": 1,
+   "gt80": 0.0,
+   "gt40": 0.0,
+   "gt1": 0.0
+  },
+  "2021": {
+   "n": 3,
+   "gt80": 0.0,
+   "gt40": 0.0,
+   "gt1": 0.333
+  },
+  "2022": {
+   "n": 4,
+   "gt80": 0.25,
+   "gt40": 0.25,
+   "gt1": 0.25
+  },
+  "2023": {
+   "n": 6,
+   "gt80": 0.167,
+   "gt40": 0.167,
+   "gt1": 0.167
+  },
+  "2024": {
+   "n": 9,
+   "gt80": 0.556,
+   "gt40": 0.556,
+   "gt1": 0.778
+  },
+  "2025": {
+   "n": 9,
+   "gt80": 0.222,
+   "gt40": 0.222,
+   "gt1": 0.333
+  },
+  "2026": {
+   "n": 3,
+   "gt80": 0.333,
+   "gt40": 0.333,
+   "gt1": 0.333
+  }
+ },
+ "one_per_cluster": {
+  "n": 25,
+  "gt80": [
+   0.24,
+   0.11496313626452448,
+   0.4342968351708788
+  ],
+  "gt40": [
+   0.24,
+   0.11496313626452448,
+   0.4342968351708788
+  ],
+  "gt1": [
+   0.4,
+   0.2340330227270205,
+   0.5926054278250577
+  ],
+  "dist": {
+   "<=1 s": 15,
+   "(1,40] s": 4,
+   "(40,80] s": 0,
+   "(80,700] s": 1,
+   ">700 s": 5
+  }
+ },
+ "evidence": {
+  "A": {
+   "not stated": 8,
+   "bench reproduction": 8,
+   "DTC freeze-frame": 2,
+   "fleet statistics": 12,
+   "waveform or high-rate capture": 1,
+   "teardown only": 6
+  },
+  "B": {
+   "not stated": 4,
+   "teardown only": 13,
+   "bench reproduction": 4,
+   "DTC freeze-frame": 2,
+   "fleet statistics": 13,
+   "waveform or high-rate capture": 1
+  }
+ },
+ "cause_dist": {
+  "A": {
+   "software or calibration": 7,
+   "manufacturing or component defect": 20,
+   "transient electrical": 2,
+   "thermal cycling or thermal overload": 4,
+   "unknown / mixed": 4
+  },
+  "B": {
+   "software or calibration": 6,
+   "manufacturing or component defect": 20,
+   "transient electrical": 2,
+   "thermal cycling or thermal overload": 5,
+   "unknown / mixed": 4
+  }
+ },
+ "disagreements": [
+  {
+   "case": "BR002",
+   "nhtsa": "18V-102",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; wrong part fitted"
+  },
+  {
+   "case": "BR003",
+   "nhtsa": "18V-195",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weld and tooling"
+  },
+  {
+   "case": "BR005",
+   "nhtsa": "18V-365",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; assembly workmanship"
+  },
+  {
+   "case": "BR006",
+   "nhtsa": "18V-439",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; heat treatment"
+  },
+  {
+   "case": "BR007",
+   "nhtsa": "18V-519",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; exit location"
+  },
+  {
+   "case": "BR008",
+   "nhtsa": "18V-618",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; missing bearing cup"
+  },
+  {
+   "case": "BR009",
+   "nhtsa": "18V-698",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; geometric interference"
+  },
+  {
+   "case": "BR010",
+   "nhtsa": "18V-798",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weldment dimension"
+  },
+  {
+   "case": "BR011",
+   "nhtsa": "18V-876",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; placard data error"
+  },
+  {
+   "case": "BR013",
+   "nhtsa": "19V-150",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weldment dimension"
+  },
+  {
+   "case": "BR014",
+   "nhtsa": "19V-246",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; wrong labels"
+  },
+  {
+   "case": "BR015",
+   "nhtsa": "19V-346",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; static assembly condition"
+  },
+  {
+   "case": "BR016",
+   "nhtsa": "19V-450",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; bracket strength"
+  },
+  {
+   "case": "BR017",
+   "nhtsa": "19V-530",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; glass edge defect"
+  },
+  {
+   "case": "BR018",
+   "nhtsa": "19V-594",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; wrong part"
+  },
+  {
+   "case": "BR019",
+   "nhtsa": "19V-683",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; extrusion defect"
+  },
+  {
+   "case": "BR020",
+   "nhtsa": "19V-766",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; crimp strength"
+  },
+  {
+   "case": "BR021",
+   "nhtsa": "19V-867",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; part version"
+  },
+  {
+   "case": "BR022",
+   "nhtsa": "20V-025",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; assembly angle"
+  },
+  {
+   "case": "BR023",
+   "nhtsa": "20V-145",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; static assembly condition"
+  },
+  {
+   "case": "BR024",
+   "nhtsa": "20V-273",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; missing score-line"
+  },
+  {
+   "case": "BR025",
+   "nhtsa": "20V-378",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; cable design"
+  },
+  {
+   "case": "BR026",
+   "nhtsa": "20V-480",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; missing weld"
+  },
+  {
+   "case": "BR027",
+   "nhtsa": "20V-613",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; mechanical hinge strength"
+  },
+  {
+   "case": "BR028",
+   "nhtsa": "20V-708",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; wrong valve part number"
+  },
+  {
+   "case": "BR029",
+   "nhtsa": "21V-015",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; U-bolt torque"
+  },
+  {
+   "case": "BR030",
+   "nhtsa": "21V-106",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weld quality"
+  },
+  {
+   "case": "BR031",
+   "nhtsa": "21V-197",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; repair bonding"
+  },
+  {
+   "case": "BR032",
+   "nhtsa": "21V-265",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; fairing attachment"
+  },
+  {
+   "case": "BR033",
+   "nhtsa": "21V-377",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; missing parts"
+  },
+  {
+   "case": "BR034",
+   "nhtsa": "21V-480",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "retractor lock state; static assembly error"
+  },
+  {
+   "case": "BR035",
+   "nhtsa": "21V-574",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; fastener torque"
+  },
+  {
+   "case": "BR036",
+   "nhtsa": "21V-661",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; adhesive application"
+  },
+  {
+   "case": "BR037",
+   "nhtsa": "21V-772",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; alignment ring angle"
+  },
+  {
+   "case": "BR038",
+   "nhtsa": "21V-870",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; mislabelled part"
+  },
+  {
+   "case": "BR039",
+   "nhtsa": "21V-983",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "tailgate-ajar switch would only show the opening instant",
+   "B_signals": "none useful; latch design"
+  },
+  {
+   "case": "BR040",
+   "nhtsa": "22V-115",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; missing washers"
+  },
+  {
+   "case": "BR042",
+   "nhtsa": "22V-419",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; fastener loosening"
+  },
+  {
+   "case": "BR043",
+   "nhtsa": "22V-523",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; damaged part fitted"
+  },
+  {
+   "case": "BR044",
+   "nhtsa": "22V-655",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; hose routing"
+  },
+  {
+   "case": "BR045",
+   "nhtsa": "22V-766",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weld"
+  },
+  {
+   "case": "BR046",
+   "nhtsa": "22V-910",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; fastener torque"
+  },
+  {
+   "case": "BR047",
+   "nhtsa": "23V-067",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; emblem resin durability"
+  },
+  {
+   "case": "BR048",
+   "nhtsa": "23V-166",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; latch design change"
+  },
+  {
+   "case": "BR049",
+   "nhtsa": "23V-252",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weld defect"
+  },
+  {
+   "case": "BR050",
+   "nhtsa": "23V-350",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; geometric interference"
+  },
+  {
+   "case": "BR051",
+   "nhtsa": "23V-456",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; U-bolt axial force"
+  },
+  {
+   "case": "BR054",
+   "nhtsa": "23V-822",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; wrong part fitted"
+  },
+  {
+   "case": "BR055",
+   "nhtsa": "24V-019",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weld"
+  },
+  {
+   "case": "BR056",
+   "nhtsa": "24V-146",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; latch material (ambient temperature in a snapshot)"
+  },
+  {
+   "case": "BR057",
+   "nhtsa": "24V-312",
+   "A": "cannot judge",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "buckle-switch state",
+   "B_signals": "buckle switch state snapshot"
+  },
+  {
+   "case": "BR058",
+   "nhtsa": "24V-400",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; energy absorption"
+  },
+  {
+   "case": "BR059",
+   "nhtsa": "24V-492",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; missing latch design"
+  },
+  {
+   "case": "BR060",
+   "nhtsa": "24V-574",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; striker alignment"
+  },
+  {
+   "case": "BR061",
+   "nhtsa": "24V-703",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; bolt torque"
+  },
+  {
+   "case": "BR062",
+   "nhtsa": "24V-855",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; wrong hardware"
+  },
+  {
+   "case": "BR063",
+   "nhtsa": "25V-010",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; moisture introduced at manufacture"
+  },
+  {
+   "case": "BR065",
+   "nhtsa": "25V-269",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; seat width design"
+  },
+  {
+   "case": "BR066",
+   "nhtsa": "25V-341",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; fastener torque"
+  },
+  {
+   "case": "BR067",
+   "nhtsa": "25V-421",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; lubrication at manufacture"
+  },
+  {
+   "case": "BR068",
+   "nhtsa": "25V-554",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; wrong part"
+  },
+  {
+   "case": "BR069",
+   "nhtsa": "25V-642",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; trim retention"
+  },
+  {
+   "case": "BR070",
+   "nhtsa": "25V-774",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "none",
+   "B_signals": "none useful; design compliance"
+  },
+  {
+   "case": "BR071",
+   "nhtsa": "25V-884",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; weld adhesion"
+  },
+  {
+   "case": "BR073",
+   "nhtsa": "26V-166",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "none",
+   "B_signals": "none useful pre-event; inflator rupture without deployment command while parked; lot traceability"
+  },
+  {
+   "case": "BR074",
+   "nhtsa": "26V-266",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful (pyrotechnic event is milliseconds)"
+  },
+  {
+   "case": "BR075",
+   "nhtsa": "26V-350",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none",
+   "B_signals": "none useful; masking left in place"
+  },
+  {
+   "case": "PE003",
+   "nhtsa": "20V-624",
+   "A": "cannot judge",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "unknown",
+   "B_signals": "OBC software state and shutdown-request flags at the shutdown, CAN at ~100 Hz"
+  },
+  {
+   "case": "PE013",
+   "nhtsa": "21V-944",
+   "A": "<=1 s",
+   "B": "(1,40] s",
+   "excluded": false,
+   "A_signals": "chassis-ground potential and CAN error frames at >= 10 kHz around fail-safe entry; pedal position at 100 Hz for the following sequence",
+   "B_signals": "ground potential / bus noise at high rate (>=10 kHz) at fail-safe entry, CAN error counters, pedal position and torque command at ~100 Hz ov"
+  },
+  {
+   "case": "PE016",
+   "nhtsa": "22V-459",
+   "A": "(80,700] s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "PRA / relay-terminal temperature and pack current at 1 Hz over a drive",
+   "B_signals": "relay contact voltage drop / PRA temperature snapshot, ~1 Hz"
+  },
+  {
+   "case": "PE017",
+   "nhtsa": "22V-899",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "EPCU coolant level / controller fault counters at 0.1 Hz over weeks",
+   "B_signals": "EPCU fault DTC / isolation snapshot; coolant ingress is a static sealing defect"
+  },
+  {
+   "case": "PE018",
+   "nhtsa": "22V-941",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "EPCU coolant level / controller insulation or fault counters at 0.1 Hz over weeks",
+   "B_signals": "EPCU fault DTC snapshot; coolant ingress is a static sealing defect"
+  },
+  {
+   "case": "PE023",
+   "nhtsa": "23V-309",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "BMS diagnostic-status flags at 1 Hz over many drive cycles",
+   "B_signals": "BMS diagnostic-function status and warning-request flags snapshot"
+  },
+  {
+   "case": "PE024",
+   "nhtsa": "23V-434",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "none; pyro-disconnect firing circuit status only",
+   "B_signals": "none useful; non-functioning disconnect is a static part condition"
+  },
+  {
+   "case": "PE025",
+   "nhtsa": "23V-478",
+   "A": "(1,40] s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "DC-DC 12 V-side current at 10 Hz around key-off and while parked",
+   "B_signals": "DC-DC internal-short DTC with 12 V reverse current snapshot; the fire path additionally needed charge-state, battery-heater and converter te"
+  },
+  {
+   "case": "PE031",
+   "nhtsa": "24V-072",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "key-cycle count and charging-box sequence counter per key cycle over a day",
+   "B_signals": "the shutdown counter value in a freeze-frame (the count accumulates over many key cycles)"
+  },
+  {
+   "case": "PE034",
+   "nhtsa": "24V-204",
+   "A": "(80,700] s",
+   "B": ">700 s",
+   "excluded": false,
+   "A_signals": "ICCU LDC current and HV input voltage at kHz near end of charge; FET / coolant temperature and pump state at 1 Hz over the charge or drive",
+   "B_signals": "ICCU HV input and LV output voltage/current at charge start/end at >= 10 kHz, FET and coolant temperature and pump state over the charge and"
+  },
+  {
+   "case": "PE036",
+   "nhtsa": "24V-399",
+   "A": "(80,700] s",
+   "B": "(1,40] s",
+   "excluded": false,
+   "A_signals": "cell voltages, SOC and regen current at 10 Hz over a long downhill descent (minutes)",
+   "B_signals": "cell voltages, SoC and regen current at ~10-100 Hz over the regen on a downhill grade at high SoC"
+  },
+  {
+   "case": "PE041",
+   "nhtsa": "24V-547",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "CAN error frames at bus rate would show only the dropout itself",
+   "B_signals": "CAN loss-of-communication DTC; static chafe"
+  },
+  {
+   "case": "PE044",
+   "nhtsa": "24V-603",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "CAN error frames at bus rate would show only the dropout itself",
+   "B_signals": "CAN bus-off / loss-of-communication DTC; static chafe"
+  },
+  {
+   "case": "PE047",
+   "nhtsa": "24V-715",
+   "A": "cannot judge",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "unknown",
+   "B_signals": "inverter software state and propulsion-disable reason at the event"
+  },
+  {
+   "case": "PE048",
+   "nhtsa": "24V-832",
+   "A": "cannot judge",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "unknown",
+   "B_signals": "inverter fault code and phase-current/DC-link snapshot at the torque loss"
+  },
+  {
+   "case": "PE050",
+   "nhtsa": "24V-868",
+   "A": "(80,700] s",
+   "B": ">700 s",
+   "excluded": false,
+   "A_signals": "ICCU HV input voltage at kHz at start and end of charge; MOSFET / coolant temperature at 1 Hz over the charge or drive",
+   "B_signals": "ICCU HV input and LV output voltage/current at charge start and end at >= 10 kHz, FET/coolant temperature over the charge and drive at ~1 Hz"
+  },
+  {
+   "case": "PE051",
+   "nhtsa": "24V-932",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "C6 connector current and pin temperature at 1 Hz over ~20,000 km",
+   "B_signals": "current through cab-harness connector C6 vs its rating (a continuous over-current is visible in a snapshot), ~1 Hz"
+  },
+  {
+   "case": "PE055",
+   "nhtsa": "25V-130",
+   "A": "<=1 s",
+   "B": ">700 s",
+   "excluded": false,
+   "A_signals": "installed BECM / SOBDMC software part numbers, one snapshot",
+   "B_signals": "pack/contactor current and contactor temperature over DC fast-charge sessions and repeated wide-open-pedal events, ~10 Hz"
+  },
+  {
+   "case": "PE056",
+   "nhtsa": "25V-261",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "HV bus voltage at kHz would show only the short itself",
+   "B_signals": "HV shutdown / isolation fault snapshot; cause is bracket fatigue"
+  },
+  {
+   "case": "PE057",
+   "nhtsa": "25V-262",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "HV bus voltage at kHz would show only the short itself",
+   "B_signals": "HV shutdown / isolation fault snapshot; cause is bracket fatigue"
+  },
+  {
+   "case": "PE059",
+   "nhtsa": "25V-319",
+   "A": "(80,700] s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "sub-junction-box bus-bar temperature or voltage drop vs current at 1-10 Hz over a drive; isolation-resistance DTC",
+   "B_signals": "junction-box joint resistance/temperature and isolation DTC snapshot; static design gap"
+  },
+  {
+   "case": "PE062",
+   "nhtsa": "25V-566",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "module voltages and temperatures at 1 Hz over many drives (high-resistance trend)",
+   "B_signals": "string-open / fuse-blown warning code and module temperature snapshot; static weld defect"
+  },
+  {
+   "case": "PE063",
+   "nhtsa": "25V-567",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "module voltages and temperatures at 1 Hz over many drives (high-resistance trend)",
+   "B_signals": "string-open / fuse-blown warning code and module temperature snapshot; static weld defect"
+  },
+  {
+   "case": "PE066",
+   "nhtsa": "25V-710",
+   "A": "(1,40] s",
+   "B": "<=1 s",
+   "excluded": true,
+   "A_signals": "TBM-HCP CAN messages and HCP reset reason at 10-100 Hz over seconds",
+   "B_signals": "inter-module message exchange and HCP reset reason at the reset, CAN at bus rate"
+  },
+  {
+   "case": "PE068",
+   "nhtsa": "25V-875",
+   "A": "(80,700] s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "cable-terminal temperature or voltage drop vs current at 1-10 Hz over a drive",
+   "B_signals": "connection resistance / inverter terminal temperature snapshot; static assembly defect"
+  },
+  {
+   "case": "PE075",
+   "nhtsa": "26V-582",
+   "A": ">700 s",
+   "B": "<=1 s",
+   "excluded": false,
+   "A_signals": "BECM SOH and SOC at 1 Hz across the service event and later drive/charge cycles",
+   "B_signals": "BECM SOH value and replacement event in a snapshot"
+  }
+ ],
+ "n_disagreements": 93,
+ "decision": {
+  "verdict": "UNGATED",
+  "gate_kappa_used": 0.1918641896220372,
+  "gate_alternatives": {
+   "k3_PE": [
+    0.554,
+    71
+   ],
+   "k3_BR": [
+    0.006,
+    74
+   ],
+   "k3_PE_after_exclusions": [
+    0.518,
+    36
+   ]
+  },
+  "n_PE_denominator": 36
+ },
+ "exploratory_post_hoc_UNGATED": {
+  "regex_A": "not observable|no in-vehicle signal|no field data|none;",
+  "regex_B": "static|teardown|snapshot|inspection|cause is (a |the )?(fastener|bracket|weld|torque|wrong|mis)",
+  "crosstab_A_notobs_x_B_notobs": {
+   "A=False,B=False": 50,
+   "A=False,B=True": 30,
+   "A=True,B=False": 51,
+   "A=True,B=True": 19
+  },
+  "k3_on_cases_neither_flagged_notobs": [
+   0.8365785813630041,
+   47,
+   0.8936170212765957
+  ],
+  "k3_PE_neither_flagged": [
+   0.8604282315622521,
+   44,
+   0.9090909090909091
+  ],
+  "n_both_obs": 50,
+  "PE_fractions_conservative_on_observable_cases": {
+   "n": 20,
+   "gt80": [
+    0.5,
+    0.2992980068701797,
+    0.7007019931298203
+   ],
+   "gt40": [
+    0.5,
+    0.2992980068701797,
+    0.7007019931298203
+   ],
+   "gt1": [
+    0.75,
+    0.5312991206074114,
+    0.8881382993000237
+   ],
+   "dist": {
+    "<=1 s": 5,
+    "(1,40] s": 5,
+    "(40,80] s": 0,
+    "(80,700] s": 2,
+    ">700 s": 8
+   }
+  },
+  "PE_fractions_A_on_its_observable_cases": {
+   "n": 35,
+   "gt80": [
+    0.4857142857142857,
+    0.32994235892786083,
+    0.64431195517872
+   ],
+   "gt40": [
+    0.4857142857142857,
+    0.32994235892786083,
+    0.64431195517872
+   ],
+   "gt1": [
+    0.6285714285714286,
+    0.4633693671638196,
+    0.7683418058769521
+   ],
+   "dist": {
+    "<=1 s": 13,
+    "(1,40] s": 5,
+    "(40,80] s": 0,
+    "(80,700] s": 6,
+    ">700 s": 11
+   }
+  },
+  "PE_fractions_B_on_its_observable_cases": {
+   "n": 20,
+   "gt80": [
+    0.55,
+    0.3420853410191274,
+    0.7418021429623598
+   ],
+   "gt40": [
+    0.55,
+    0.3420853410191274,
+    0.7418021429623598
+   ],
+   "gt1": [
+    0.85,
+    0.6395811333571357,
+    0.9476312545132735
+   ],
+   "dist": {
+    "<=1 s": 3,
+    "(1,40] s": 6,
+    "(40,80] s": 0,
+    "(80,700] s": 0,
+    ">700 s": 11
+   }
+  },
+  "k4_notobs_as_category_all": [
+   0.19736408566721578,
+   145,
+   0.4206896551724138
+  ]
+ },
+ "deviations_applied": [
+  "D-1 list edits",
+  "D-2 branch blindness",
+  "D-3 disclosure (both raters are language-model sessions)",
+  "D-4 human subset drawn",
+  "D-5 human subset NOT rated (reviewer decision 2026-11-06)",
+  "D-6 rater B launched as a fresh-context sub-agent from the rater A session in a main-only clone (disclosed by B)"
+ ]
+}

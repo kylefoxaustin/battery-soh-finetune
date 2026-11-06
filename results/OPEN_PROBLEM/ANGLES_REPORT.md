@@ -203,6 +203,18 @@ tail**. The same arithmetic applies to the data-centre shelf, where a fleet-wide
 **What kills it.** A review of the last N root-cause reports showing the needed pre-event window is ≤ 1 s (today's
 UDS snapshot plus statistics). Design in §C.3.
 
+> **Update 2026-11-06 (FR1, `results/FR1/results_FR1.md`).** Run as §C.3 on 75 NHTSA HV power-electronics recalls plus
+> 75 base-rate recalls, two blind language-model raters. **UNGATED**: κ = 0.19, because the rating scheme in this
+> section had no state for "not observable in field data at any window" and the raters mapped it to opposite ends of
+> the scale; the base-rate control is what exposed that. Cause-type agreement was 0.87–0.90. Pre-registered PE fraction
+> > 80 s: 28 % [16, 44] of 36, no verdict. Exploratory (post hoc): among cases both raters consider observable in field
+> data, half need > 80 s and three-quarters > 1 s — but the windows named are mostly **long and low-rate** (1–10 Hz over
+> fast-charge sessions, cycles, days), i.e. the flash/cloud retention leg, not the MB/s DRAM ring buffer B1 measured;
+> ≥ kHz needs appear in 4–6 of 36 rows, the ICCU end-of-charge pair the clearest (a triggered kHz capture **plus** long
+> low-rate history). Read: the necessity argument for DRAM retention is not supported by the public record as a
+> recurring need; it is supported as an event-triggered capture in the costliest single campaign. FR1-R (six-state
+> scheme, same documents) is defined and would gate.
+
 **Note, 2026-10-30: B1 measured the application-processor half of this table** ([`results/B1/results_B1.md`](../B1/results_B1.md)).
 
 - **Ring buffer (MEASURED, FRDM-IMX95-PRO).** The ring sustained 3.2, 32 and 60 MB/s with 0 drops. Measured depth

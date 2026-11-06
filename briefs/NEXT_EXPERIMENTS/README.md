@@ -69,6 +69,17 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > real-world case. **Order now: FR1 → X8 → O1 → R1.** X8 has a full Build Brief at [`briefs/X8/README.md`](../X8/README.md);
 > it needs no label fix (it is a voltage/current replay) and can run before O1.
 
+> **Status 2026-11-06. FR1 is DONE — UNGATED** ([`results/FR1/results_FR1.md`](../../results/FR1/results_FR1.md)).
+> Two blind language-model raters (separate branches; D-2/D-6) agreed on cause type (κ 0.87–0.90) but not on the window
+> (κ 0.19): the scheme had no state for "not observable in field data at any window" and the two raters' pre-written
+> conventions mapped it to opposite ends. The base-rate control exposed it. Pre-registered PE fraction > 80 s: 28 %
+> [16, 44] of 36, no verdict. Exploratory: on cases both raters consider observable, 50 % > 80 s and 75 % > 1 s, but the
+> long windows are mostly 1–10 Hz over sessions, cycles or days — the flash/cloud leg — with ≥ kHz needs in 4–6 of 36.
+> Human spot-check not rated (D-5). **Lesson for every rating scheme from now on:** give "not observable / not
+> applicable" its own state, and make the data-rate class a closed list, not free text. **FR1-R** (re-rate the same 150
+> cases from the already-fetched documents with a six-state item 3 and a rate class) is defined in results §7, not
+> scheduled; it would gate at one session-day per rater. **Order now: X8 → O1 → R1; FR1-R and DC2 are documentary seeds.**
+
 ---
 
 ## 1. How the reviewer starts one

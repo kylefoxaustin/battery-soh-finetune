@@ -4,7 +4,13 @@
 ([`results/OPEN_PROBLEM/ANGLES_REPORT.md`](../../results/OPEN_PROBLEM/ANGLES_REPORT.md)); promoted after B1 measured
 the window the application-processor tier can hold.
 
-> ## ▶ APPROVED 2026-10-31 — rate now, as two blind raters on two branches (D-1 to D-3 in the pre-registration §8)
+> ## ▶ DONE 2026-11-06 — UNGATED (κ = 0.19; scheme lacked a "not observable in field data" state)
+>
+> Results: [`results/FR1/results_FR1.md`](../../results/FR1/results_FR1.md); `fr1.json`; analysis
+> `analysis/FR1_agreement.py`. Both rater branches merged. Human spot-check not rated (D-5). Follow-up FR1-R defined in
+> results §7 (six-state item 3; same documents). The approval text is kept below for the record.
+>
+> ## ▶ APPROVED 2026-10-31 — rate now, as two blind raters on two branches (D-1 to D-3 in the pre-registration §8) (superseded: done)
 >
 > The first stage (`765d1f1`: 75 power-electronics cases from NHTSA component fields, 75 base-rate cases, the rating
 > scheme) is accepted. FR1-P1 to P5 are accepted as written. The reviewer made three pre-rating changes, recorded in
@@ -159,4 +165,4 @@ reports verdict first, with the licence and the "judgemental" caveat, and one ro
 
 *Fix the list blind. Pre-register the thresholds against the measured windows. Rate twice. Report the disagreement.*
 
-**Status:** RATER B DONE 77e3613 (branch `fr1-rater-b`); rater A done f736331 (branch `fr1-rater-a`)
+**Status:** DONE 2026-11-06 — UNGATED; see results/FR1/results_FR1.md

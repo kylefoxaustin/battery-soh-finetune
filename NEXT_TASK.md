@@ -1,53 +1,40 @@
 # ▶ NEXT TASK: read this first, then do it. No other prompt is needed.
 
-**Updated:** 2026-11-01. **Owner of this file:** the reviewer. The running session only *reads* it, except for the
+**Updated:** 2026-11-06. **Owner of this file:** the reviewer. The running session only *reads* it, except for the
 Status line.
 
-**FR1 rater A is done** (branch `fr1-rater-a`, `f736331`; reviewed for process only: 150 rows, 75 PE + 75 BR, PE006 out,
-PE076 in, documents manifested, conventions written before rating). **This session is Rater B.** It must stay blind to
-rater A (pre-registration D-2).
-
-## Blindness rules for this session — read before anything else
-- Work from `main` only. Fetch only `main`: `git fetch origin main` (never a bare `git fetch`, never `git pull --all`).
-  If `origin/fr1-rater-a` is already present in this clone, do not check it out, `git show` it, diff it or list its
-  files.
-- Do not open, search for or read any file whose name contains `rater_A` or `ratings_A`, anywhere, in any branch.
-- Do not read `briefs/FR1/README.md` beyond its APPROVED box and the brief body; do not read any FR1 chat or notes you
-  did not write.
+**Previous task — FR1: DONE, UNGATED** (both rater branches merged; analysis `analysis/FR1_agreement.py`; write-up
+[`results/FR1/results_FR1.md`](results/FR1/results_FR1.md)). The reviewer session wrote and ran the analysis, so step 1
+below is an independent re-derivation by this session before anything else. Plan:
+[`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/README.md) (order now X8 → O1 → R1).
 
 ## Do these steps, in order
 
-1. `git fetch origin main && git checkout main && git reset --hard origin/main`. Read the APPROVED box in
-   [`briefs/FR1/README.md`](briefs/FR1/README.md), then `results/FR1/FR1_preregistration.md` (all of it, including §8
-   D-1 to D-3) and `results/FR1/FR1_cases.md`.
-2. Create branch `fr1-rater-b` from `main`.
-3. **Before opening any rating document,** write `results/FR1/rater_B_notes.md`: your own reading of pre-registration §3
-   (how you will map what a document describes onto the five window categories; how you will set the flags). Commit it
-   with "rater B conventions, before any document" in the message.
-4. Fetch each case's documents per pre-registration §4.1 (the Part 573 Safety Recall Report and any chronology
-   attachment; the ODI résumé only where §4.1 allows). Keep a manifest with URLs and SHA-256 as
-   `results/FR1/rater_B_documents.json`. Nothing else is a rating source: no TSBs, press, papers or memory of a case.
-5. Rate every PE case (PE001–PE005, PE007–PE076) and every BR case in the `numpy.random.default_rng(2)` order, using the
-   closed lists in pre-registration §3; items 1–5 plus the free-text signals and rate; *cannot judge* where a document
-   cannot be opened. Write `results/FR1/ratings_B.csv` with the columns
-   `order, case, list, nhtsa_id, rating_documents, odi_resume, item1_cause_type, item2_evidence, item3_window,
-   item3_signals_and_rate, item4_confidence, item5_no_cause_stated, item5_software_only, item5_component_out_of_scope,
-   rater_note, rater, provenance, source` (rater = B; provenance = DERIVED-judgemental; source = NHTSA, public domain).
-6. Commit and push **the branch only**. Do not merge to `main`. Do not write or run any agreement analysis.
-7. Set the Status line below (on `main`) to `RATER B DONE <branch-hash>`, mirror it in the FR1 brief's Status line, push
-   `main`, and stop.
-
-After this, a session (any) merges `fr1-rater-a` and `fr1-rater-b` into `main` and runs the pre-registered agreement
-analysis (pre-registration §5–§6). The reviewer may add the optional 15-case human spot-check (D-3) before that.
+1. `git pull` on `main`. **Re-derive FR1 from the two CSVs with your own code** (do not import or modify
+   `analysis/FR1_agreement.py`): the both-rater exclusions (4 / 17 / 23; 41 cases), the PE denominator (36), the
+   3-way κ over all rated cases (0.19) and over PE (0.55), the conservative PE fraction > 80 s (28 %, Wilson
+   [16, 44]), and the base-rate fractions (A 96 % vs B 7 %). Write `results/FR1/review/rederivation.md` with your
+   numbers beside the published ones; if any differ, stop with `BLOCKED: FR1 rederivation <item>` and push. Commit the
+   re-derivation.
+2. Open [`briefs/X8/README.md`](briefs/X8/README.md) and follow its START HERE box. **First stage only:** the profile
+   (`results/X/X8_profile.md`, brief §3) and the pre-registration (`results/X/X8_preregistration.md`, brief §4 with every
+   threshold filled in), then STOP. Reuse the McMaster/Changan loaders and the per-cell R identification, κ calibration
+   and held-out safety scoring in `analysis/X2F_replay.py`.
+3. Commit both with "before limiter code" in the commit message. **Write no limiter or scoring code.**
+4. Set the Status line below to `AWAITING APPROVAL <commit-hash>`, push, and stop.
 
 ## Rules that always apply
-- Rate from the cited documents only. Every rating is DERIVED-judgemental and says so.
-- Nothing in the case list, categories, thresholds or decision table moves. Any change is a numbered deviation (D-4, …).
-- Carry the source (NHTSA, public domain) on every table. No dollar figures.
+- Pre-register before analysis code. Never move a threshold after seeing results. Number every deviation.
+- Tag every number MEASURED / DERIVED / ASSUMED / SOURCED / UNGATED.
+- X8 uses Changan (CC BY-NC-SA, research only); carry that onto every verdict. Beihang (CC BY) only if the profile
+  shows current and per-cell voltage at low SOC during discharge.
+- X8's resolution gate (brief §3.4) comes before its power gate: median sag at the admitted current ≥ 10 voltage LSB.
+- Lessons now standing for every rating or replay design: give "not observable / not applicable" its own state;
+  closed lists, not free text, for anything that will be counted.
 - Do not start any experiment this file does not name.
 
 ## When you finish
-Edit only the **Status** line below to `RATER B DONE <branch-hash>` or `BLOCKED: <one-line reason>`, then commit and
-push `main`.
+Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
+and push.
 
-**Status:** RATER B DONE 77e3613 (branch `fr1-rater-b`)
+**Status:** OPEN
