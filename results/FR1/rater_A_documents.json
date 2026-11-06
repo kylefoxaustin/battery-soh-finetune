@@ -1,0 +1,2466 @@
+{
+ "source": "NHTSA, public domain",
+ "seed": 1,
+ "order": [
+  "PE067",
+  "PE046",
+  "PE024",
+  "BR059",
+  "PE049",
+  "PE061",
+  "PE031",
+  "BR027",
+  "BR007",
+  "PE075",
+  "BR049",
+  "PE034",
+  "PE010",
+  "PE040",
+  "PE007",
+  "PE033",
+  "PE045",
+  "BR017",
+  "BR033",
+  "BR031",
+  "PE054",
+  "PE026",
+  "BR051",
+  "PE063",
+  "BR004",
+  "PE022",
+  "BR065",
+  "BR063",
+  "BR039",
+  "PE015",
+  "BR038",
+  "PE008",
+  "BR009",
+  "BR054",
+  "BR048",
+  "PE065",
+  "BR015",
+  "BR001",
+  "PE056",
+  "PE028",
+  "BR037",
+  "PE009",
+  "BR053",
+  "PE025",
+  "PE023",
+  "PE036",
+  "BR035",
+  "PE021",
+  "PE029",
+  "PE042",
+  "BR022",
+  "BR046",
+  "PE019",
+  "BR006",
+  "BR023",
+  "BR057",
+  "PE030",
+  "PE050",
+  "PE018",
+  "PE037",
+  "BR030",
+  "BR032",
+  "PE068",
+  "PE069",
+  "BR056",
+  "BR066",
+  "PE016",
+  "BR005",
+  "PE057",
+  "PE072",
+  "PE047",
+  "PE032",
+  "BR040",
+  "BR016",
+  "BR075",
+  "BR067",
+  "PE002",
+  "PE062",
+  "BR010",
+  "PE066",
+  "BR047",
+  "PE017",
+  "PE041",
+  "BR050",
+  "BR069",
+  "BR070",
+  "PE058",
+  "BR025",
+  "PE004",
+  "BR008",
+  "BR036",
+  "BR052",
+  "PE064",
+  "BR043",
+  "BR062",
+  "BR071",
+  "PE076",
+  "BR012",
+  "BR021",
+  "BR029",
+  "BR042",
+  "PE070",
+  "BR014",
+  "PE035",
+  "BR058",
+  "PE043",
+  "BR068",
+  "PE027",
+  "PE011",
+  "PE059",
+  "BR018",
+  "BR061",
+  "BR026",
+  "BR020",
+  "PE001",
+  "BR013",
+  "BR045",
+  "PE073",
+  "BR044",
+  "BR003",
+  "BR060",
+  "PE051",
+  "BR041",
+  "PE020",
+  "BR034",
+  "PE005",
+  "BR011",
+  "PE039",
+  "BR019",
+  "BR055",
+  "PE013",
+  "PE014",
+  "BR064",
+  "BR072",
+  "BR073",
+  "PE012",
+  "PE060",
+  "BR074",
+  "PE048",
+  "PE055",
+  "PE052",
+  "BR024",
+  "PE003",
+  "PE044",
+  "BR002",
+  "PE053",
+  "PE038",
+  "PE071",
+  "PE074",
+  "BR028"
+ ],
+ "cases": {
+  "PE001": {
+   "nhtsa": "19V-833",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-19V833-4326.PDF",
+     "summary": "Recall 573 Report - 1/28/2020",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V833-4326.PDF",
+     "sha256": "6f264dc8aa7f293721f850918f2d001d9490491f2265565a1862187fc5b87385"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE002": {
+   "nhtsa": "19V-834",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-19V834-8613.PDF",
+     "summary": "Recall 573 Report - 10/28/20",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V834-8613.PDF",
+     "sha256": "57de78d85c6e6acdaf0f6098364fa83cb66c9813274a4961ab0fe3cf8446ebea"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE003": {
+   "nhtsa": "20V-624",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-20V624-4145.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V624-4145.PDF",
+     "sha256": "322f0ffa7755578f3a5a5a9e788368ddcd62e3a90fb5e42d253b640693490c74"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE004": {
+   "nhtsa": "20V-630",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-20V630-1434.PDF",
+     "summary": "Recall 573 Report - Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V630-1434.PDF",
+     "sha256": "cd7c5ebb0c07d9c1c6d82fd1b97f74694502a9a7b4ee68384b32181756f07a6c"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE005": {
+   "nhtsa": "20V-640",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-20V640-9393.PDF",
+     "summary": "Recall 573 Report-Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V640-9393.PDF",
+     "sha256": "8523b91f12e250d69fdc7baa6caf77436dbd21056dfa73f89184b4e49af2bc6f"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE007": {
+   "nhtsa": "21V-110",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-21V110-3871.PDF",
+     "summary": "Recall 573 Report-Amendment",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V110-3871.PDF",
+     "sha256": "431a35dd2f07a737c7d3e106e249237b5e283a71b94bf69c4ae2e9d38486ae41"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE008": {
+   "nhtsa": "21V-191",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-21V191-5811.PDF",
+     "summary": "Recall 573 Report - 6/23/21",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V191-5811.PDF",
+     "sha256": "248613a879029cef9aea227711b183fb5f8fc863232af3d8e66cbee59fd89e23"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE009": {
+   "nhtsa": "21V-242",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-21V242-9349.PDF",
+     "summary": "Recall 573 Report - 6/23/21",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V242-9349.PDF",
+     "sha256": "2077ca727145fe1c73ccc7d9f0e0511f1cfa7ec57d831015c998b2c5fd8eea58"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE010": {
+   "nhtsa": "21V-244",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-21V244-7005.PDF",
+     "summary": "Recall 573 Report- Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V244-7005.PDF",
+     "sha256": "7736a486f4eeed18e7f55da49774a6de477d49f40c5b689648adf0c7518e0d2e"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE011": {
+   "nhtsa": "21V-311",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-21V311-3328.PDF",
+     "summary": "Recall 573 Report - 6/23/21",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V311-3328.PDF",
+     "sha256": "7db05b0d2b6dc8fa480f37adea353219e3d89310befa015f87c8d2e500bb4df2"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE012": {
+   "nhtsa": "21V-486",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-21V486-9519.PDF",
+     "summary": "Recall 573 Report-Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V486-9519.PDF",
+     "sha256": "b22a69cbac187f9ffcccc4f9b62e4f3dae57b62d11194ae158a5b2b48c9f403a"
+    }
+   ],
+   "resume": [
+    "PE21013"
+   ],
+   "missing": []
+  },
+  "PE013": {
+   "nhtsa": "21V-944",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-21V944-3861.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V944-3861.PDF",
+     "sha256": "25a8aec649771b63149b785d363fd7462ea7616aabea8f601792401114872d30"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE014": {
+   "nhtsa": "22V-223",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-22V223-5780.PDF",
+     "summary": "Recall 573 Report - 4/6/22",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V223-5780.PDF",
+     "sha256": "f533211e80c2ae471c661d536b5274420aa0be178ebb1ede66880f4ccba746c6"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE015": {
+   "nhtsa": "22V-412",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-22V412-9551.PDF",
+     "summary": "Recall 573 Report - 6/21/22",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V412-9551.PDF",
+     "sha256": "7f9d6dfa847a251c02ef2fedb709c48402705aa5174aa0040380750cd3007aad"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE016": {
+   "nhtsa": "22V-459",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-22V459-7197.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V459-7197.PDF",
+     "sha256": "f8ed13b33f800926334bbe2d31be9d42ca52a0fb98a291bb596664f6e6050b10"
+    },
+    {
+     "file": "RMISC-22V459-9707.pdf",
+     "summary": "ATTACHMENT A: CHRONOLOGY",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RMISC-22V459-9707.pdf",
+     "sha256": "01dd192af19ffbdd8ccba7cb2bbc5bbc5327d88b573d2d10c4f8967ad694d78c"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE017": {
+   "nhtsa": "22V-899",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-22V899-6222.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V899-6222.PDF",
+     "sha256": "47101a15a13a159f30fc3825d882f659be38fab5e235fe950c1dbdf20cc20c93"
+    },
+    {
+     "file": "RMISC-22V899-9233.pdf",
+     "summary": "2020MY Niro EV Electric Power Control Unit Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RMISC-22V899-9233.pdf",
+     "sha256": "12c2b31a09911ff5a117523ba4b6d5ee0910e3709d02873356cf5672913eb80c"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE018": {
+   "nhtsa": "22V-941",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-22V941-1708.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V941-1708.PDF",
+     "sha256": "dab881efbeed9089d1f96248d66acac89afeb2e9aa2ef1e2e50beba5c44b3b11"
+    },
+    {
+     "file": "RMISC-22V941-8449.pdf",
+     "summary": "Attachment A- Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RMISC-22V941-8449.pdf",
+     "sha256": "6b28bdb465d09c07fddf002f17eba25b970ba873b76cd468c5dcee04ce6a7fc2"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE019": {
+   "nhtsa": "23V-040",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V040-5903.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V040-5903.PDF",
+     "sha256": "6bd86c2e840a9fb22db7632d7cee39a72c576c0b8232536a6f440db55f413a48"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE020": {
+   "nhtsa": "23V-041",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V041-3277.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V041-3277.PDF",
+     "sha256": "5756a1e1cbea397dadd26356b10f734e69b0c256101574239220ddb51ea7d775"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE021": {
+   "nhtsa": "23V-095",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V095-6996.PDF",
+     "summary": "Recall 573 Report-Amendment 4 - 04/21/2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V095-6996.PDF",
+     "sha256": "03e5b85254b18be57273177614cd4901e0db7e2eb7ee48af73728f675366ae12"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE022": {
+   "nhtsa": "23V-110",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V110-1553.PDF",
+     "summary": "Recall 573 Report-Amendment 2 - 10/16/2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V110-1553.PDF",
+     "sha256": "442a128e6439e7bd07c2c2e75f98151af9a38f4c42086c49a588d50ecf3c7330"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE023": {
+   "nhtsa": "23V-309",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V309-7646.PDF",
+     "summary": "Recall 573 Report - September 19, 2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V309-7646.PDF",
+     "sha256": "6ceb2ec6af7151d370d4098c522bccb54578eeb013f79f5bb6754a30afffec9a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE024": {
+   "nhtsa": "23V-434",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V434-8034.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V434-8034.PDF",
+     "sha256": "988d0972b82f8ba160bce1a30f3af7389e2c8971291673b49c91ac462119d20a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE025": {
+   "nhtsa": "23V-478",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V478-2832.PDF",
+     "summary": "Recall 573 Report - February 23, 2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V478-2832.PDF",
+     "sha256": "7b7f5d78e80b3677b58821e6dbe651347a5454415f003b4ff51f87e73cdf13bd"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE026": {
+   "nhtsa": "23V-657",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V657-1155.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V657-1155.PDF",
+     "sha256": "3c0c74633efff602470d819c97df28a7b306831c65fa4adecdad753ab37f5f46"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE027": {
+   "nhtsa": "23V-687",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-23V687-1334.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V687-1334.PDF",
+     "sha256": "73e52250d3e2113ad91e11c663790264e217ea05fab74691e30b1580c9e9661e"
+    },
+    {
+     "file": "RMISC-23V687-5070.pdf",
+     "summary": "Miscellaneous Document - Chronology of Defect",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RMISC-23V687-5070.pdf",
+     "sha256": "573085349c147ebca4da4f40cf66bbd5f1409081dd8333b54d29d72614ed4ddd"
+    }
+   ],
+   "resume": [
+    "RQ23004"
+   ],
+   "missing": []
+  },
+  "PE028": {
+   "nhtsa": "23V-841",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V841-5733.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V841-5733.PDF",
+     "sha256": "65d2d846c13cae81e2b615d50153d4769cc6e3affdeb7ac283d74d98892800b6"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE029": {
+   "nhtsa": "23V-846",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V846-1372.PDF",
+     "summary": "Recall 573 Report - March 13, 2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V846-1372.PDF",
+     "sha256": "0e28f3e67db1517c7728ae5922b40eb6268e5f2a98c6979e4aff3897a9f3079e"
+    },
+    {
+     "file": "RMISC-23V846-2769.pdf",
+     "summary": "Amended Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RMISC-23V846-2769.pdf",
+     "sha256": "b35ad6396e1f50d53e8dbbd1adbaf8240580edabb2ed9465877fa912e6beb3aa"
+    },
+    {
+     "file": "RMISC-23V846-0604.pdf",
+     "summary": "Amended Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RMISC-23V846-0604.pdf",
+     "sha256": "8eb81828e623c3cb103c3d2721e02e7d4f75d452c44485e9cd8e8fd6c2b02896"
+    },
+    {
+     "file": "RMISC-23V846-8767.pdf",
+     "summary": "Amended Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RMISC-23V846-8767.pdf",
+     "sha256": "21aefca958ac182c6ea37ff5e7f0906e51d7289117f6e383c0bf76ac558a70ee"
+    },
+    {
+     "file": "RMISC-23V846-1025.pdf",
+     "summary": "Amended Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RMISC-23V846-1025.pdf",
+     "sha256": "fbe85ea71dc26c0eaa9d8cf8385c82046d3c95889dcdc5d10174c79952cde4d0"
+    },
+    {
+     "file": "RMISC-23V846-8656.pdf",
+     "summary": "Amended Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RMISC-23V846-8656.pdf",
+     "sha256": "709e040f856963fd2da9899e48a91c414e65effb201067af77a60caf465f891a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE030": {
+   "nhtsa": "23V-879",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-23V879-4966.PDF",
+     "summary": "Recall 573 Report - January 17, 2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V879-4966.PDF",
+     "sha256": "d7d3bb9657356d15c383fb2b1673cfd167e601da3cc64a7df704d7573e09d85a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE031": {
+   "nhtsa": "24V-072",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V072-9129.PDF",
+     "summary": "Recall 573 Report - 02/16/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V072-9129.PDF",
+     "sha256": "eae3c9dc898297a3f679e96b70ccaf0ba1248bad8145be3ac704fc91ecef3e05"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE032": {
+   "nhtsa": "24V-144",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V144-5392.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V144-5392.PDF",
+     "sha256": "9ac292957070ecc368af916570067ecf9d0825e2b148add30472b6272e70fd8a"
+    },
+    {
+     "file": "RMISC-24V144-0704.pdf",
+     "summary": "Chronology of Defect / Noncompliance Determination",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V144-0704.pdf",
+     "sha256": "4e2acfd40085424a8f7f79b3de64894725b8d8179cafd1a10f00d69d8dd4f8c2"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE033": {
+   "nhtsa": "24V-200",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-24V200-2390.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V200-2390.PDF",
+     "sha256": "3eb0ad0ba2957e53427985b3c124d012e79faf140bbdce4ca24c0af2aa05648a"
+    },
+    {
+     "file": "RMISC-24V200-5381.pdf",
+     "summary": "2022-2024MY EV6 ICCU Assembly Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V200-5381.pdf",
+     "sha256": "8d98e4ef70d5f0d08280755b650ce4d806e8b35f181dc05546395199bb0c921b"
+    }
+   ],
+   "resume": [
+    "PE23012"
+   ],
+   "missing": []
+  },
+  "PE034": {
+   "nhtsa": "24V-204",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-24V204-7802.PDF",
+     "summary": "Recall 573 Report-Amendment 2 - 05/03/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V204-7802.PDF",
+     "sha256": "eb17fa8ae64e983eef0b1786ca62b752ae1340113a12f1c9fa7cfe8a7e1e07d9"
+    },
+    {
+     "file": "RMISC-24V204-0136.pdf",
+     "summary": "Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V204-0136.pdf",
+     "sha256": "84fb8d0a3fb953cd71c3bbceea549a0a5dfc85a80548964e61c76317eb589dc2"
+    }
+   ],
+   "resume": [
+    "PE23011"
+   ],
+   "missing": []
+  },
+  "PE035": {
+   "nhtsa": "24V-372",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V372-7338.PDF",
+     "summary": "Recall 573 Report-07/08/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V372-7338.PDF",
+     "sha256": "982eb3ed41b900efdb3f356bcad7f8ac280cfc9585179ec4852355825ceaf544"
+    },
+    {
+     "file": "RMISC-24V372-0984.pdf",
+     "summary": "Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V372-0984.pdf",
+     "sha256": "4929bb39f520c49f80e4cdf543846a1e25ccecb2b42577bce05bb6bbd0777889"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE036": {
+   "nhtsa": "24V-399",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V399-4189.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V399-4189.PDF",
+     "sha256": "e98de14167064a69b0876b9b0b5f307ca102665baa87e2c37e15f8442adbca5f"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE037": {
+   "nhtsa": "24V-404",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-24V404-4629.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V404-4629.PDF",
+     "sha256": "96eedab331ea7efe040be3c7f8855ca582a6b4f91d1eed6b3a8d8d3991d1f821"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE038": {
+   "nhtsa": "24V-475",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V475-3888.PDF",
+     "summary": "Recall 573 Report-Amendment - 07/02/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V475-3888.PDF",
+     "sha256": "2ae0ed222b2d8473da70021d8ff448a25196a8daac15c78e4ade4ce16b27f29b"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE039": {
+   "nhtsa": "24V-499",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-24V499-7295.PDF",
+     "summary": "Recall 573 Report-Amendment 1 - 07/10/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V499-7295.PDF",
+     "sha256": "0725fae9bf3230d0eb09dc7d1b5a2ccf85ee4c26698b6572877c5d472ae99da4"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE040": {
+   "nhtsa": "24V-546",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V546-7454.PDF",
+     "summary": "Recall 573 Report-Amendment 1 - 08/12/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V546-7454.PDF",
+     "sha256": "1f252319afafb6495552dbcd94a8c25acb3909590b62373c8a1885ab9b0218db"
+    },
+    {
+     "file": "RMISC-24V546-1338.pdf",
+     "summary": "Motiv MVN1093 Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V546-1338.pdf",
+     "sha256": "8e020fe843575cc68e1d8f9f6e396fd4e171a356568909aa837376e11230cde0"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE041": {
+   "nhtsa": "24V-547",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V547-5691.PDF",
+     "summary": "Recall 573 Report-Amendment 1 - 08/12/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V547-5691.PDF",
+     "sha256": "ccec22971ed27d9c573570f47f6ed08c0bdbf803b784978dc336860183111451"
+    },
+    {
+     "file": "RMISC-24V547-0771.pdf",
+     "summary": "Motiv MVN1176 Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V547-0771.pdf",
+     "sha256": "68b654f186997626aec4a389e480e86d3ecdff9949ba1e6818835afddf798ada"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE042": {
+   "nhtsa": "24V-560",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V560-5361.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V560-5361.PDF",
+     "sha256": "a5a1c7ea243f12ac0ba9a6539c2a21cfc894e71d74291e835a8b1489700a3b80"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE043": {
+   "nhtsa": "24V-602",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V602-6896.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V602-6896.PDF",
+     "sha256": "c16765aa2247605714f8169d5b87b494059687047dffbe8d5651c1b923cd0b04"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE044": {
+   "nhtsa": "24V-603",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V603-2189.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V603-2189.PDF",
+     "sha256": "5754fb5cff8f6d55e4dcdf56ce6103568b8988a9368c7c62b0e8657bc87177d3"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE045": {
+   "nhtsa": "24V-601",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V601-7399.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V601-7399.PDF",
+     "sha256": "9576ab57877a8901bb472cd0b7de0dd58975b40d01d31da812c28bad0509ee6c"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE046": {
+   "nhtsa": "24V-700",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-24V700-8406.pdf",
+     "summary": "Recall 573 Report - 4/29/2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V700-8406.pdf",
+     "sha256": "5101a4ac704680b52fa217df64b706f668f55a9794926e0a05e856d0d400fbf5"
+    },
+    {
+     "file": "RMISC-24V700-2120.pdf",
+     "summary": "Miscellaneous Document",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V700-2120.pdf",
+     "sha256": "19e8c770b3c9daa8217027cd5b6130b16c34fe201e0984fe9a6a5186b49f69ca"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE047": {
+   "nhtsa": "24V-715",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V715-7859.PDF",
+     "summary": "Recall 573 Report - October 8, 2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V715-7859.PDF",
+     "sha256": "62bc943184eacf92a04332354eda7e4416328e4d179d5be538229039944d1413"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE048": {
+   "nhtsa": "24V-832",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V832-7628.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V832-7628.PDF",
+     "sha256": "14c10637ac5c4aa74d7220c7f40d046d5520e2edef779103c0a8a7dbb853bf1b"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE049": {
+   "nhtsa": "24V-867",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-24V867-8124.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V867-8124.PDF",
+     "sha256": "a6b0da45fede1f53f8cbf41fdfddc51bbf09e5807c07efcf55ef8e871135294e"
+    },
+    {
+     "file": "RMISC-24V867-4581.pdf",
+     "summary": "Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V867-4581.pdf",
+     "sha256": "477b32c74040e9079a9ba6f07d8a2631a20e4a2d312377bb3397cc64512a2797"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE050": {
+   "nhtsa": "24V-868",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-24V868-1279.PDF",
+     "summary": "Recall 573 Report - December 17, 2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V868-1279.PDF",
+     "sha256": "f8358f74c24c509553c60aa28f0fa6db3604c7bc827782d02e5465dda5c1c1d5"
+    },
+    {
+     "file": "RMISC-24V868-4397.pdf",
+     "summary": "Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V868-4397.pdf",
+     "sha256": "2b879d6eb75591b1dbe397d1e12a4503160506ab99515c433b70ebef86c3f19f"
+    },
+    {
+     "file": "RMISC-24V868-6331.pdf",
+     "summary": "Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V868-6331.pdf",
+     "sha256": "47a0b00ace4e3244e548d74add22282a38908ce348e67be2d3dba3ef6cf12777"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE051": {
+   "nhtsa": "24V-932",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V932-9700.PDF",
+     "summary": "Recall 573 Report - 01/08/2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V932-9700.PDF",
+     "sha256": "6ebe3fc3013e19ff5d114cd64d6552953d36badfb716b05e922c0356af641240"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE052": {
+   "nhtsa": "24V-940",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-24V940-8922.PDF",
+     "summary": "Recall 573 Report-Amendment 1 - 01/02/2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V940-8922.PDF",
+     "sha256": "4347703331f0dd5c76485a5c5d05677180dd6348626e234310aad7431820b1da"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE053": {
+   "nhtsa": "25V-050",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V050-5763.pdf",
+     "summary": "Recall 573 Report - February 18, 2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V050-5763.pdf",
+     "sha256": "e4cc1baef1429cac20ae9076fbb995a9e5531be14797e80df0a3900df9100dee"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE054": {
+   "nhtsa": "25V-125",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V125-6194.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V125-6194.PDF",
+     "sha256": "923a322ff4e9c2fe4d2d26321ba26ae10e8fddf5d339cc9ed6608d359016b83b"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE055": {
+   "nhtsa": "25V-130",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-25V130-6940.pdf",
+     "summary": "Recall 573 Report - December 18, 2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V130-6940.pdf",
+     "sha256": "0dd6df5cd3b4dc4afd9fbec61585bcff2046b45e766949e419da4c3069c6c5b7"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE056": {
+   "nhtsa": "25V-261",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V261-7595.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V261-7595.pdf",
+     "sha256": "4df332cbc1df66c872fba579d2574dd68ffa5782f26e2b4815f7870cb863d873"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE057": {
+   "nhtsa": "25V-262",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V262-2857.PDF",
+     "summary": "Recall 573 Report-Amendment 04/21/2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V262-2857.PDF",
+     "sha256": "4ba652ed44ed344376d2d6f2943bec95787e1c701993849b81470b5c28ccbd6d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE058": {
+   "nhtsa": "25V-272",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V272-3424.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V272-3424.PDF",
+     "sha256": "52e032cc0b2b6653daf2bfb81595327bd532bf4e13fed600e321eb50376b3a8a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE059": {
+   "nhtsa": "25V-319",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V319-1940.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V319-1940.pdf",
+     "sha256": "22a60122ede9c426697024f3de6a73996c09adc8b468e1403813f86d263cbfb0"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE060": {
+   "nhtsa": "25V-441",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V441-5547.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V441-5547.pdf",
+     "sha256": "b7b0358e830da61cab05943804bd27a984c569d99854e4a204080a6500d71b60"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE061": {
+   "nhtsa": "25V-395",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V395-0855.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V395-0855.pdf",
+     "sha256": "e5bd7a5fd3a043920a2a410418aff8b9c09baaa177da781072dc5da712d4d8f3"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE062": {
+   "nhtsa": "25V-566",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V566-4543.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V566-4543.pdf",
+     "sha256": "7c05b4605935ed0918a2ad58f6120b13ca305cd6680400d06bf74550a9844a02"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE063": {
+   "nhtsa": "25V-567",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V567-3332.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V567-3332.pdf",
+     "sha256": "379d0d94d2fec04e80057ce812f998c65fa8793e38f8288834a5c0c54255ed1d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE064": {
+   "nhtsa": "25V-655",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-25V655-5573.pdf",
+     "summary": "Recall 573 Report - Sep 30, 2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V655-5573.pdf",
+     "sha256": "e7d567bd8a85ee7c544c1ed67942c4ff0f281878a98e8ff8fe3223e5d26634b6"
+    },
+    {
+     "file": "RMISC-25V655-2975.pdf",
+     "summary": "Miscellaneous Document",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RMISC-25V655-2975.pdf",
+     "sha256": "911ca7f01344440501eaf99ebff0c610602ec2ae633caf92899547c4145e5514"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE065": {
+   "nhtsa": "25V-690",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V690-8658.pdf",
+     "summary": "Recall 573 Report - 10/21/2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V690-8658.pdf",
+     "sha256": "cc00f7625452ad5a02af63e016e47ccd4adae32a3abd4d5f38dd3e2a1c2b5889"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE066": {
+   "nhtsa": "25V-710",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-25V710-9276.pdf",
+     "summary": "Recall 573 Report - June 16, 2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V710-9276.pdf",
+     "sha256": "c4af1983cf17ffee2d20722b50aa611f201f234e785c5e47bf910f2275fbfbcf"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE067": {
+   "nhtsa": "25V-834",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V834-3517.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V834-3517.pdf",
+     "sha256": "6fca2be80b6006acbb9f759511639164c8d40cabedfba3acc6caf6e350676ee9"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE068": {
+   "nhtsa": "25V-875",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V875-3849.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V875-3849.pdf",
+     "sha256": "b2dcb8b3c15d3f11f17ab5fd5d8317ed0b40c832a03cfb14543a0d511113ced5"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE069": {
+   "nhtsa": "25V-894",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V894-6350.pdf",
+     "summary": "Recall 573 Report - February 18, 2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V894-6350.pdf",
+     "sha256": "f1ef81111a52da62c08a58e7e02dfaa76c1309fda95b4f0bbeec4baa802624a9"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE070": {
+   "nhtsa": "26V-030",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-26V030-0889.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V030-0889.pdf",
+     "sha256": "0c2194aa33db3abb2a073199369b84aa2423d6e5c913cb4d16039f82e528613a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE071": {
+   "nhtsa": "26V-126",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-26V126-1137.pdf",
+     "summary": "Recall 573 Report - 03/19/2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V126-1137.pdf",
+     "sha256": "17ca222b2f3d70f8d64495a23d242260f48e885068945cb86eff1a71395c92b4"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE072": {
+   "nhtsa": "26V-151",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-26V151-7801.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V151-7801.pdf",
+     "sha256": "25959cd3ffd0621f32d83b760f29180857f53985a9f57ecab7332d3eaa22638d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE073": {
+   "nhtsa": "26V-309",
+   "init": "ODI",
+   "docs": [
+    {
+     "file": "RCLRPT-26V309-7781.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V309-7781.pdf",
+     "sha256": "e2e270adc876c5ac54815301f9af2505558d8cd862ec286c964bd75bbecb2b21"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE074": {
+   "nhtsa": "26V-311",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-26V311-6844.pdf",
+     "summary": "Recall 573 Report - 05/21/2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V311-6844.pdf",
+     "sha256": "9fe09a2fc908e077538925fe50b278d62fb67bd0d18680d1184149383046e8fb"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE075": {
+   "nhtsa": "26V-582",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-26V582-7531.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V582-7531.pdf",
+     "sha256": "d94dc87f80ef4232526db06e08044e7282e8904daf3cdb6c6484afd05bb0c54c"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "PE076": {
+   "nhtsa": "25V-811",
+   "init": "MFR",
+   "docs": [
+    {
+     "file": "RCLRPT-25V811-5669.pdf",
+     "summary": "Recall 573 Report - April 23, 2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V811-5669.pdf",
+     "sha256": "826663d3533a1322bedfeb528ab0e7d302688912bd81a9be15159a8397c6cfee"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR001": {
+   "nhtsa": "18V-021",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-18V021-1089.pdf",
+     "summary": "Recall 573 Report - January 29, 2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V021-1089.pdf",
+     "sha256": "abbff193ab2cd6120b1c87b1a24915bef2813cf349a72bda4882637acfbbc65d"
+    },
+    {
+     "file": "RMISC-18V021-2383.pdf",
+     "summary": "Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RMISC-18V021-2383.pdf",
+     "sha256": "cb78d91c675371e12b6ce657257755fef3ef38663ea75e9c6918b9cb6ead92df"
+    }
+   ],
+   "resume": [
+    "EA15001"
+   ],
+   "missing": []
+  },
+  "BR002": {
+   "nhtsa": "18V-102",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-18V102-7540.PDF",
+     "summary": "Non-Compliance Notice 573 Report/FMVSS 208",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V102-7540.PDF",
+     "sha256": "203e7c831a011d32584f54b168078822237b5f29e9504ef28a29463294e87038"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR003": {
+   "nhtsa": "18V-195",
+   "init": "body; restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-18V195-2581.PDF",
+     "summary": "Recall 573 Report - AMENDMENT 2",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V195-2581.PDF",
+     "sha256": "99ca51bf1baa0fb9af8b4bbad39de97e38fc75a1b197d8a565f6e323c7457186"
+    },
+    {
+     "file": "RMISC-18V195-9676.pdf",
+     "summary": "Miscellaneous Document - May 25, 2018 - Campaign 18V-195  Warranty Timelines",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RMISC-18V195-9676.pdf",
+     "sha256": "83935a92706df39215e1b33993d5482544c1fafb328fa167c54f102991802a5e"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR004": {
+   "nhtsa": "18V-278",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-18V278-6812.pdf",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V278-6812.pdf",
+     "sha256": "21dfd6c3e3f1ccfe23aa85de49c6cfbd21db5e890b0f041f26fc52573655dfbe"
+    },
+    {
+     "file": "RMISC-18V278-8158.pdf",
+     "summary": "Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RMISC-18V278-8158.pdf",
+     "sha256": "770866d726dcbb22f37b4dd8e83bd6be0ca796921a6c221a15bd54b687f3e409"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR005": {
+   "nhtsa": "18V-365",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-18V365-8198.PDF",
+     "summary": "Recall 573 Report- Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V365-8198.PDF",
+     "sha256": "d8f1b0fb8678db1966efb38e15cb1009212dacbdc9581292cb6c4261a01df2d5"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR006": {
+   "nhtsa": "18V-439",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-18V439-1192.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V439-1192.PDF",
+     "sha256": "01c2c4315e0b758ba84506294179f712844d438e482bb48e79682eeb7b314560"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR007": {
+   "nhtsa": "18V-519",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-18V519-9863.pdf",
+     "summary": "Non-Compliance Notice 573 Report/FMVSS 217",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V519-9863.pdf",
+     "sha256": "523425d269b2c0bed2a4debf64c4e85679c6e8786831958f5e9a28916a0e4f20"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR008": {
+   "nhtsa": "18V-618",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-18V618-9664.PDF",
+     "summary": "Recall 573 Report- Amendment 2",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V618-9664.PDF",
+     "sha256": "4cc4e8307922e99ea5958e599742866a5d9cc2aad8600ae375bc2509be7ffff0"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR009": {
+   "nhtsa": "18V-698",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-18V698-2366.PDF",
+     "summary": "Recall 573 Report- Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V698-2366.PDF",
+     "sha256": "5b4a1203c3ef61c4a903a6b36b1e4cc04cde87966007b2730ce952297c928d94"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR010": {
+   "nhtsa": "18V-798",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-18V798-3138.PDF",
+     "summary": "Non-Compliance Notice 573 Report/FMVSS 207, 210",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V798-3138.PDF",
+     "sha256": "8fa18db06b1c9fa57f135d5ecfccd9023b18a1b407e01756e09b51de4c9fda3f"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR011": {
+   "nhtsa": "18V-876",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-18V876-2145.PDF",
+     "summary": "Defect Notice 573 Report/Part 567",
+     "url": "https://static.nhtsa.gov/odi/rcl/2018/RCLRPT-18V876-2145.PDF",
+     "sha256": "bc5d12eb183b347fe0431e4842ec42812cf22e636d6891b828d90127ab45c90a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR012": {
+   "nhtsa": "19V-014",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-19V014-5016.PDF",
+     "summary": "Recall 573 Report-Amendment 2",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V014-5016.PDF",
+     "sha256": "739622a0a5f7b342d7c8b6a1e4c27096ef93cb36a1669f84f6702f4e7e38cdbf"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR013": {
+   "nhtsa": "19V-150",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-19V150-7441.PDF",
+     "summary": "Non-Compliance Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V150-7441.PDF",
+     "sha256": "7c0cec2160d04f024ac8dd686c0c7134600ba54956d4349dc504c7e3acedc26d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR014": {
+   "nhtsa": "19V-246",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-19V246-5872.PDF",
+     "summary": "Non-Compliance Notice 573 Report FMVSS 208",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V246-5872.PDF",
+     "sha256": "85d2eda648703ae0332fabf997d7609fa9a8011b05552f2821a0d46d7908e812"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR015": {
+   "nhtsa": "19V-346",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-19V346-2591.PDF",
+     "summary": "Recall 573 Report- Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V346-2591.PDF",
+     "sha256": "48dc5dc855bc2ca90ade4645deb298a9b8b9a561aaad983a69b928b55c56ae7a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR016": {
+   "nhtsa": "19V-450",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-19V450-7804.PDF",
+     "summary": "Recall 573 Report- Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V450-7804.PDF",
+     "sha256": "25568bce9392d622c8e41545e448820b3d7ed05138013837ce888e06cab027da"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR017": {
+   "nhtsa": "19V-530",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-19V530-9845.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V530-9845.PDF",
+     "sha256": "ee935b048606650fe707f2798ef3cd03250dc22e56d8b6a8ef324829ce8f203f"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR018": {
+   "nhtsa": "19V-594",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-19V594-8072.PDF",
+     "summary": "Recall 573 Report - Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V594-8072.PDF",
+     "sha256": "2cf6ec9b02d681777881e837e3d3ebf3c476d8e2909a153190a8ba525ef49cab"
+    },
+    {
+     "file": "RMISC-19V594-3492.pdf",
+     "summary": "Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RMISC-19V594-3492.pdf",
+     "sha256": "cc19bae3584e4794a09a528913706f55fb31635365cacd3422504674e5d3ce6a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR019": {
+   "nhtsa": "19V-683",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-19V683-5176.PDF",
+     "summary": "Recall 573 Report - AMENDMENT 5",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V683-5176.PDF",
+     "sha256": "e6bb24b7895f66b34cfb24e9c0316b1dad00ddabdb49d39bffbcb4133678de4d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR020": {
+   "nhtsa": "19V-766",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-19V766-4160.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V766-4160.PDF",
+     "sha256": "a9d3b7125360f0344bb622cde04e6d69f5a0a2e138a8f70b4ff0de226c5ea732"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR021": {
+   "nhtsa": "19V-867",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-19V867-4682.PDF",
+     "summary": "Recall 573 Report - Amendment 2",
+     "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V867-4682.PDF",
+     "sha256": "b832e413d293ec6597414c788531722a007280e63fddf07c2a6573169b61ccb9"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR022": {
+   "nhtsa": "20V-025",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-20V025-7692.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V025-7692.PDF",
+     "sha256": "cafcb3e8d4d200d9d324dd5aeb8f34945b0395a61916c8e229d7c29a9e7d767d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR023": {
+   "nhtsa": "20V-145",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-20V145-6179.PDF",
+     "summary": "Recall 573 Report - AMENDMENT 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V145-6179.PDF",
+     "sha256": "64477143f727b2360bd782f20f7d7b0a53707431f5977dad14a58adb2cbf5de3"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR024": {
+   "nhtsa": "20V-273",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-20V273-9468.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V273-9468.PDF",
+     "sha256": "f8db17a2efd60814faca9a662ee3dc189ae435a6881b0953268c9b072be43ba2"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR025": {
+   "nhtsa": "20V-378",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-20V378-1545.PDF",
+     "summary": "Recall 573 Report - January 4, 2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V378-1545.PDF",
+     "sha256": "b210e8473ce8304e73ca09baa9850e90bf0017bd30a11497b875123fa006aa9c"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR026": {
+   "nhtsa": "20V-480",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-20V480-4043.PDF",
+     "summary": "Recall 573 Report - Amendment 3",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V480-4043.PDF",
+     "sha256": "44f5148fc142fa8278db213dc3832faeeaf0e70884b128a6c2e77c28e8352064"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR027": {
+   "nhtsa": "20V-613",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-20V613-8907.PDF",
+     "summary": "Recall 573 Report- Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V613-8907.PDF",
+     "sha256": "c641671ab428e382d296484f4ec10dbf3b3b11fbc8a7783dee9b8fd7f143399a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR028": {
+   "nhtsa": "20V-708",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-20V708-7541.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V708-7541.PDF",
+     "sha256": "c9c8db97af36a1d5915f52cc4403d9f6eb2d11387363147857c033808056baa9"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR029": {
+   "nhtsa": "21V-015",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-21V015-6241.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V015-6241.PDF",
+     "sha256": "5ca29f7c5c8b0e46fc38531bc2f1294d9338766470c63ef941fb1704d3654c03"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR030": {
+   "nhtsa": "21V-106",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-21V106-9608.PDF",
+     "summary": "Recall 573 Report- Amendment 4",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V106-9608.PDF",
+     "sha256": "a24c974779442209e48aaa8b904163f6134990e9bd62afaf75b4fa4194fa65c3"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR031": {
+   "nhtsa": "21V-197",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-21V197-5309.PDF",
+     "summary": "Recall 573 Report - AMENDMENT 7",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V197-5309.PDF",
+     "sha256": "c7f73145333447e8d4449548c4b6f04044ea1b4e626c6bff8eec0fdcc9ecc965"
+    },
+    {
+     "file": "RMISC-21V197-0643.pdf",
+     "summary": "Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RMISC-21V197-0643.pdf",
+     "sha256": "e7f0effdd578a6bc53045decd7177124552c74b63dd2ed53ebdc6aae3d40fbb3"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR032": {
+   "nhtsa": "21V-265",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-21V265-3856.PDF",
+     "summary": "Recall 573 Report - Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V265-3856.PDF",
+     "sha256": "a12bc48752877d25c3a995ed5f1e9ffe75c3483c7a8fb05c68b4aabdeebe9be1"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR033": {
+   "nhtsa": "21V-377",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-21V377-1125.PDF",
+     "summary": "Noncompliance Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V377-1125.PDF",
+     "sha256": "4df9934eeb31a08a5b7daef8c45a3c85da857ba5471cd1397e149b3718afb03d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR034": {
+   "nhtsa": "21V-480",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-21V480-9278.PDF",
+     "summary": "Recall 573 Report - Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V480-9278.PDF",
+     "sha256": "73e043f0fc2b1fa1df56c4e335ea1b36ba54c6279d18767cd7ae44fd7e4c7ff3"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR035": {
+   "nhtsa": "21V-574",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-21V574-6721.PDF",
+     "summary": "Recall 573 Report- Amendment 2",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V574-6721.PDF",
+     "sha256": "e3ed5dcbf5e35602e32879a2779cb2f5db103e644302bd2d8cc0a42348472dd6"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR036": {
+   "nhtsa": "21V-661",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-21V661-5981.PDF",
+     "summary": "Recall 573 Report- Amendment 1",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V661-5981.PDF",
+     "sha256": "de4ef2fcc2d034ae55c9a466da09b4dfbe17d88d89d8347c3fe6038077a52344"
+    },
+    {
+     "file": "RMISC-21V661-9836.pdf",
+     "summary": "Miscellaneous Document- Amended Defect Information Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RMISC-21V661-9836.pdf",
+     "sha256": "ef4b58a05c958ab2b91253f1c9e1f2e0faddd5192e2dd322387b0a3960459670"
+    },
+    {
+     "file": "RMISC-21V661-7522.pdf",
+     "summary": "Miscellaneous Document- 573- Defect Information Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RMISC-21V661-7522.pdf",
+     "sha256": "6e2ad7542e24cf03ded0a82e2e8681a439b180c415225734ffa65eb843ff8be8"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR037": {
+   "nhtsa": "21V-772",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-21V772-8954.PDF",
+     "summary": "Recall 573 Report- 05/17/2022",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V772-8954.PDF",
+     "sha256": "893f3c47593b266bded86202ade23f3f9454a1991f6a6c8e82d2b6be65172063"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR038": {
+   "nhtsa": "21V-870",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-21V870-5622.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V870-5622.PDF",
+     "sha256": "e4acf18e83b6e3eda58a626a1e1a83cd7752734a6c4656a371ef8d4029ac3364"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR039": {
+   "nhtsa": "21V-983",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-21V983-9156.PDF",
+     "summary": "Recall 573 Report - 7/22/22",
+     "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V983-9156.PDF",
+     "sha256": "af2c758e388d447e3dc48dc4b10d55e5c7896e5268ef03be9f2dfa1f948bbb71"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR040": {
+   "nhtsa": "22V-115",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-22V115-7249.PDF",
+     "summary": "Recall 573 Report-  03/07/2022",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V115-7249.PDF",
+     "sha256": "09030c7075ab3c75ff0d8e815663e10d6d089ed1bd1849c3bf655ba58af8ddcd"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR041": {
+   "nhtsa": "22V-240",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-22V240-3996.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V240-3996.PDF",
+     "sha256": "1f41599e72423592a352b1d5b525b4ca44ab2c2551455ae7a3baed47f3657c89"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR042": {
+   "nhtsa": "22V-419",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-22V419-6455.PDF",
+     "summary": "Recall 573 Report- 06/29/2022",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V419-6455.PDF",
+     "sha256": "9653a9662bd754e9ee80b0d905bd54ab432b8a4290379f6d601003865add6e5d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR043": {
+   "nhtsa": "22V-523",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-22V523-2498.PDF",
+     "summary": "Recall 573 Report - August 3, 2022",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V523-2498.PDF",
+     "sha256": "0e611231fca607a429564006c79c8ef0637b1ae1cfdd7de6a0a2a7b125f49953"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR044": {
+   "nhtsa": "22V-655",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-22V655-9842.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V655-9842.pdf",
+     "sha256": "a77243b39cacae4e671d2294ef4d4359ad808e01904d0cd9de6a7035d46d84d3"
+    },
+    {
+     "file": "RMISC-22V655-1725.pdf",
+     "summary": "Miscellaneous Document- Chronology of Defect",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RMISC-22V655-1725.pdf",
+     "sha256": "f3e2ee845ff8f266667552e1c1c553d297d1373bbe4fcfcdc8b7e6db23e903dc"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR045": {
+   "nhtsa": "22V-766",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-22V766-2351.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V766-2351.PDF",
+     "sha256": "e38cbac1f32eb1931a44d09ce6e8650472e8b8444d72dd7910fc4c9ebf5a1c45"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR046": {
+   "nhtsa": "22V-910",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-22V910-7653.PDF",
+     "summary": "Recall 573 Report - December 13, 2022",
+     "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V910-7653.PDF",
+     "sha256": "8a66618f7fb1cd89e0b096a2be5be7a3d08d5bc5be4bde4d049db8b48265f400"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR047": {
+   "nhtsa": "23V-067",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-23V067-4482.PDF",
+     "summary": "Recall 573 Report-Amendment 3 - 11/27/2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V067-4482.PDF",
+     "sha256": "61c03090133849c18872d9075f0eb1b58b1dff1e3c4aa08bc0fee0dd6b31d891"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR048": {
+   "nhtsa": "23V-166",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-23V166-3966.PDF",
+     "summary": "Recall 573 Report - 5/4/2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V166-3966.PDF",
+     "sha256": "be60ab00de17a30a902e4a08fc551d847a95102c76128619ada8ddf2c57e50c9"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR049": {
+   "nhtsa": "23V-252",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-23V252-7552.PDF",
+     "summary": "Recall 573 Report - May 19, 2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V252-7552.PDF",
+     "sha256": "16ccbcf2e2ce99701a5780a0fbb8eac66f56952fbcf9682838e1c2999b909566"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR050": {
+   "nhtsa": "23V-350",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-23V350-5218.PDF",
+     "summary": "Recall 573 Report - 07/12/2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V350-5218.PDF",
+     "sha256": "befa439b7791002e6cdb7e4dd74d152a720f7ca85ba1c4cf71eadc0418bfc304"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR051": {
+   "nhtsa": "23V-456",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-23V456-7771.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V456-7771.PDF",
+     "sha256": "68a5cf571dba54ec3520879676fb94ee98507d759e26089b173f33fb088c8473"
+    },
+    {
+     "file": "RMISC-23V456-1359.pdf",
+     "summary": "Chronology of Defect Determination",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RMISC-23V456-1359.pdf",
+     "sha256": "b6f4f7e078c809719d775069faf899d4a61184ef7ad2c20649c0cfb2cdf8a8ec"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR052": {
+   "nhtsa": "23V-599",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-23V599-4679.PDF",
+     "summary": "Noncompliance Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V599-4679.PDF",
+     "sha256": "4c385c2cf5a1e826a461b40347abfea225959cced88f22b055f28afd6839d1f7"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR053": {
+   "nhtsa": "23V-715",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-23V715-6006.PDF",
+     "summary": "Recall 573 Report - October 27, 2023",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V715-6006.PDF",
+     "sha256": "f69e47b4b913bb43524644691f804e26c4a56356d23d4d8e6fa4ae17b1c34eb5"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR054": {
+   "nhtsa": "23V-822",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-23V822-5035.PDF",
+     "summary": "Defect Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V822-5035.PDF",
+     "sha256": "0ce83ec6a81aea3cd5a409d2f36deddf33e4025611825fdeb80a65943144e64f"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR055": {
+   "nhtsa": "24V-019",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-24V019-3130.PDF",
+     "summary": "Noncompliance Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V019-3130.PDF",
+     "sha256": "3c28929534e29a3d6e58309e2afcfc59365efdc52a0e6569b4aa5998b0af35c5"
+    },
+    {
+     "file": "RMISC-24V019-7921.pdf",
+     "summary": "Miscellaneous Document - 573 Non-Compliance Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V019-7921.pdf",
+     "sha256": "9fc2683b56da636df16169c3c1f9e8303e03732f4f03df429dcc130e3faa7350"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR056": {
+   "nhtsa": "24V-146",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-24V146-9129.PDF",
+     "summary": "Noncompliance Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V146-9129.PDF",
+     "sha256": "56ef4e457e4d3dcbb1db34bb38441145b8b3c6c3cd0f6e286edd2d3499373e54"
+    },
+    {
+     "file": "RMISC-24V146-5153.pdf",
+     "summary": "Attachment A Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V146-5153.pdf",
+     "sha256": "4a45b55acd8f663e6534989a7fa2baaf1f5037e3c68b6c68ecae15d1a89b44ce"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR057": {
+   "nhtsa": "24V-312",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-24V312-6323.PDF",
+     "summary": "Noncompliance Notice 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V312-6323.PDF",
+     "sha256": "809c02ee54e1b92789a71177215a3b4f02df9721be715a55a59d8287024bcd3f"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR058": {
+   "nhtsa": "24V-400",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-24V400-2357.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V400-2357.PDF",
+     "sha256": "b69178213df3505987cbbc8e8a86c72afab395196f99a8e41bee7b16f5477201"
+    },
+    {
+     "file": "RMISC-24V400-2303.pdf",
+     "summary": "2024MY EV9 Headliner Chronology",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RMISC-24V400-2303.pdf",
+     "sha256": "da32e37973ffed7af3037cfecde1fef8c68ceca7896a1d517353c58e496a7857"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR059": {
+   "nhtsa": "24V-492",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-24V492-1647.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V492-1647.PDF",
+     "sha256": "02b8c33402e606c39dda54406b9bbd84923221739745c87456ddd94df21356ff"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR060": {
+   "nhtsa": "24V-574",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-24V574-6858.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V574-6858.PDF",
+     "sha256": "3fb5aff5b1aacde074dafd11500bc65f71ed6e6af32454bda9bf5c938c0d2d4d"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR061": {
+   "nhtsa": "24V-703",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-24V703-1428.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V703-1428.PDF",
+     "sha256": "cf0db402b86db7f30e73c593ad6a2ab141ecd903be21a3001ed57741f7b0b405"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR062": {
+   "nhtsa": "24V-855",
+   "init": "body; restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-24V855-8596.PDF",
+     "summary": "Recall 573 Report - 12/04/2024",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V855-8596.PDF",
+     "sha256": "cd1b18987d7927372373401425e4fd2c8cd35ec1634d42579e730acb68660074"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR063": {
+   "nhtsa": "25V-010",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-25V010-9597.PDF",
+     "summary": "Recall 573 Report - January 30, 2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V010-9597.PDF",
+     "sha256": "a1344462bf52df82fdd127414c6a48fe3bc3ecca54a7026e48bbcd920ae58e43"
+    },
+    {
+     "file": "RMISC-25V010-1441.pdf",
+     "summary": "Chronology Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RMISC-25V010-1441.pdf",
+     "sha256": "9e7b39557530315936cffa962fae608f847b9d5347ee9300b6270f4cb28327e8"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR064": {
+   "nhtsa": "25V-128",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-25V128-9400.PDF",
+     "summary": "Recall 573 Report - 04/01/2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V128-9400.PDF",
+     "sha256": "ac06ceb7b3b4f62673ae2a7910d091d36e98e5c25a388d80d090db6cf5b5c4b2"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR065": {
+   "nhtsa": "25V-269",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-25V269-3442.PDF",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V269-3442.PDF",
+     "sha256": "d83e6e73122aaa018046fb8c0540aa3842806dee38b9843f2e45672775654f93"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR066": {
+   "nhtsa": "25V-341",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-25V341-1716.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V341-1716.pdf",
+     "sha256": "2e2ffcccc846b5be25f20e34404a573f2ade41f490bca81c1ee87df72a63364f"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR067": {
+   "nhtsa": "25V-421",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-25V421-8481.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V421-8481.pdf",
+     "sha256": "f7fe5f1f04d6cc9361e4a5e60d5381bae7e19f6ca8f96ace2abfaf43711975b4"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR068": {
+   "nhtsa": "25V-554",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-25V554-2228.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V554-2228.pdf",
+     "sha256": "e6ed8a57c4a8a472753e92af31a876801232c4ea4f587a31733bcaa6779c3c2e"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR069": {
+   "nhtsa": "25V-642",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-25V642-5321.pdf",
+     "summary": "Recall 573 Report - November 20, 2025",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V642-5321.pdf",
+     "sha256": "fec1ddbb0da3b076ae2aa335b39ccb5d23718eb471da131eb72c9bece938ed2b"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR070": {
+   "nhtsa": "25V-774",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-25V774-8863.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V774-8863.pdf",
+     "sha256": "626f4df27e3bfdf68f6e43efa37c62dba0a68d696a11aa10a45c2a14ed2c9f59"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR071": {
+   "nhtsa": "25V-884",
+   "init": "body",
+   "docs": [
+    {
+     "file": "RCLRPT-25V884-1854.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25V884-1854.pdf",
+     "sha256": "041f926bd10b25f55ce930bea58222f9105638f2de5080015464ca4b63556caa"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR072": {
+   "nhtsa": "26V-070",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-26V070-4662.pdf",
+     "summary": "Recall 573 Report - May 5, 2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V070-4662.pdf",
+     "sha256": "bf919dc8f2b35cd04075f969ceb035d51f06654df18232fb089f8c3cee8ca9ee"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR073": {
+   "nhtsa": "26V-166",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-26V166-6823.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V166-6823.pdf",
+     "sha256": "e91905f5cb28bb3d6a6fd49aacfb3c59fad6f728f4b7dcda23471ea384710f1a"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR074": {
+   "nhtsa": "26V-266",
+   "init": "restraint",
+   "docs": [
+    {
+     "file": "RCLRPT-26V266-9154.pdf",
+     "summary": "Recall 573 Report",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V266-9154.pdf",
+     "sha256": "5e63ebedae9eb4ad033fe4e744d425703139c04ec7329b102c8219efa9913b85"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  },
+  "BR075": {
+   "nhtsa": "26V-350",
+   "init": "chassis",
+   "docs": [
+    {
+     "file": "RCLRPT-26V350-8207.pdf",
+     "summary": "Recall 573 Report - 6/15/2026",
+     "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V350-8207.pdf",
+     "sha256": "ee0952b997d0b88800a803eee3c02b03fc4190c63e65f802d7b3928eaf14d479"
+    }
+   ],
+   "resume": [],
+   "missing": []
+  }
+ }
+}
