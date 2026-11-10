@@ -111,8 +111,96 @@ sequence, `10 Hz-1 kHz`. If thermal or ageing, `<=10 Hz` unless a faster signal 
 
 ## 2. Problems, hash mismatches and unfetchable URLs
 
-(written at the end)
+(Written after rating. Sections 2 and 3 were added after the conventions commit; section 1 is unchanged.)
+
+**Fetch.** 364 of 364 URLs in `FR1R_documents.json` fetched with a plain GET (User-Agent
+`FR1R-rater-B research fetch (public NHTSA documents)`, 60 s timeout, 0.5 s pacing), on 2026-11-10. Every
+response was a PDF. **Hash mismatches: 0.** Every fetched SHA-256 equals `sha256_A` or `sha256_B` (whichever is
+non-null). **Unfetchable URLs: 0**, so `docs_missing` is empty for every case. Record: `rater_B_fetch.json`.
+
+**Text extraction.** `pdftotext -layout` on every file. Two attachments returned no usable text. Both look like
+image-only PDFs. Nothing was OCR'd: rating used only the extracted text.
+- `PE026__RMISC-23V657-1502.pdf`: the chronology attachment for 23V-657.
+- `PE042__RMISC-24V560-1690.pdf`: the chronology attachment for 24V-560.
+
+Both cases were rated from their Part 573 reports. For neither did the cause depend on the missing chronology.
+
+**Reading method.** For each case, a script (`show.py`, in the scripts directory) printed the extracted text of
+every fetched document in turn.
+- A line identical to one already printed for the same case was suppressed, with a count of the lines suppressed.
+  Lines of 25 characters or fewer were always shown.
+- Amended Part 573 reports mostly repeat the original, so the reduced text covers every distinct line.
+- For long cases, repeated vehicle-list boilerplate was also filtered from the display (Body Style, Power Train,
+  VIN ranges and similar). The defect, cause, chronology and remedy text was always read in full.
+
+**Mechanics.**
+- Each row was appended immediately after the case was rated, by a script (`add.py`) that checks every closed-list
+  value and the rating order.
+- Commits came after cases 26, 51, 76, 100 and 125, then the final commit. They are one or two cases off the exact
+  multiples of 25 because I committed at the first pause after each 25-case mark.
+- `git add` needed `--sparse` because `results/FR1R/` new files sit outside the sparse-checkout patterns. This adds
+  files to the index only. It does not change the sparse-checkout definition. No other git operation was used.
+- No document was opened that is not in `FR1R_documents.json`. No other source and no memory of these recalls was
+  used.
+
+**Totals (all DERIVED-judgemental).**
+- Item 3, all 150 cases: `not observable` 96, `<=1 s` 15, `(1,40] s` 15, `(40,80] s` 1, `(80,700] s` 3,
+  `>700 s` 18, `cannot judge` 2.
+- Item 3, PE cases only: `not observable` 25, `<=1 s` 12, `(1,40] s` 15, `(40,80] s` 1, `(80,700] s` 3, `>700 s` 18,
+  `cannot judge` 1.
+- `cannot judge`: 2 (PE021, BR057). Both also carry `flag_no_cause`.
+- `flag_software_only` (4): PE014, PE023, PE031, PE071.
+- `flag_out_of_scope` (17): PE004, PE028, PE039, PE041, PE044, PE046, PE051, PE053, PE056, PE057, PE062, PE063,
+  PE064, PE066, PE069, PE070, PE076.
 
 ## 3. Per-case remarks
 
-(written during rating)
+Applying the conventions:
+- **Evidence when the cause came from supplier or plant records.** When the documents say only that the cause was
+  found by a supplier notification, a process review or a records audit, item 2 is `not stated`; none of the closed
+  values fits. When they describe inspecting parts, it is `teardown only`. When they describe testing, it is
+  `bench reproduction`.
+- **Cause field `NR` but the cause stated elsewhere.** Several reports leave the "Description of the Cause" field
+  `NR` but state the cause in the defect description or the chronology. That counts as a stated cause, so
+  `flag_no_cause` is blank. Examples: BR004, BR006, BR007, BR015, BR023, BR030, BR042, BR043, BR045, BR064, PE001,
+  PE026, PE037, PE042, PE048.
+- **Defects in cells or modules.** These carry `flag_out_of_scope`: cell robustness, lithium deposits, self-discharge
+  and the module J-bar busbar. Where the documents name an in-vehicle signal that shows the defect progressing, I
+  rated the window `>700 s` and `<=10 Hz`: the BMS self-discharge or SOC-fluctuation detection and the module
+  voltage/temperature signature. That applies to PE004, PE046, PE062, PE063, PE064, PE070 and PE076. Where no such
+  signal is named, I rated `not observable`: PE053 and PE069.
+- **Contactor overheating campaigns (Ford Mach-E).** PE015, PE027 and PE060 cover cumulative contactor heat damage,
+  so `>700 s`. PE055 is a different cause: the earlier remedy software was not actually installed. A snapshot of the
+  installed software identifies it, so `<=1 s`. The underlying contactor mechanism is unchanged.
+- **PE069.** The cause field restates the 25V-050 cell-robustness cause, so it is rated like PE053. Its
+  supplemental chronology adds that these vehicles missed the correct BMS update.
+- **PE052.** The 12 V voltage fluctuations damaged the DC-DC phase during an earlier software-update session. The
+  window ending at the later loss of propulsion therefore reaches back to that session (`>700 s`). Confidence is low:
+  if the damage itself is taken as the event, the window would be seconds.
+- **PE026.** The momentary slip-ring short is captured in a sub-second high-rate record at the trip. I rated
+  `<=1 s`, which has no rate class under the scheme; the high rate is noted in `signals`.
+- **PE022.** The only case with `waveform or high-rate capture` evidence: the double-dip contactor-closing current
+  signature. The documents state a rolling 100-closing screening window, so `>700 s` and `>=1 kHz`.
+- **Stated time scales.**
+  - PE014: "twice in one minute", so `(40,80] s`.
+  - PE031: excessive key cycles through the day, so `>700 s`.
+  - PE033 and PE049: damage "over time", so `>700 s`. The related Hyundai ICCU cases, PE034 and PE050, state no
+    time scale. Their mechanism is end-of-charge voltage peaks plus thermal loading, which I rated `(80,700] s` at
+    `>=1 kHz`.
+  - PE061: shutdown 15-20 s after the warning, so `(1,40] s`.
+- **The two `cannot judge` cases.**
+  - PE021: no cause in any amendment or the chronology; the remedy is repurchase.
+  - BR057: a pass-through whose chronology refers to FCA's 24V-129, which is not in the document set. The cause is
+    `NR`, and the defect text is only the symptom.
+- **Chronology attachments not in the document set.** BR047 and BR057 refer to separate chronology attachments that
+  are not in the document set. BR047 was still rated from its defect text.
+- **PE047.** The incorrect motor-controller software is identified by its version, so `<=1 s` with low confidence.
+  The mechanism ("certain circumstances") is not described.
+- **Software-only flag.** I set it only where the software fault causes no electrical event in the power
+  electronics:
+  - PE071: SoC misread from CAN ID conflicts.
+  - PE014: charge relay latched off by firmware.
+  - PE023: BMS warning failure.
+  - PE031: counter-triggered shutdown.
+
+  Inverter, BMS or contactor shutdowns caused by software were left unflagged, following §1.5.
