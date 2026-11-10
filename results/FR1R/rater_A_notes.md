@@ -113,8 +113,75 @@ résumés (US Government works, public domain). No dollar figure appears in this
 
 ## 2. Problems, hash mismatches and unfetchable URLs
 
-(written after fetching and rating)
+**Fetch** (record: `rater_A_fetch.json`; 2026-11-10 17:59:40Z to 18:04:32Z; plain GET, the stated User-Agent, 60 s
+timeout, 0.5 s pacing).
+
+- **364 of 364 URLs fetched.** Every response was a PDF.
+- **Hash mismatches: none.** All 364 SHA-256 values match the expected `sha256_A` and/or `sha256_B` in
+  `FR1R_documents.json` (where only one side was non-null, the match is against that side).
+- **Unfetchable URLs: none.** `docs_missing` is empty for every case.
+- **Text extraction** (`pdftotext -layout`): two attachments are image-only and returned no text:
+  `RMISC-24V560-1690.pdf` (PE042) and `RMISC-23V657-1502.pdf` (PE026). Both cases were rated from their Part 573
+  reports, which carry the defect and cause text. No OCR was attempted (the procedure specifies text extraction).
+- Every case had at least one Part 573 report (`RCLRPT`) fetched, so no case was set to `cannot judge` for want of a
+  Part 573.
+
+**Reading aid (disclosed).** Many cases have several near-identical amended Part 573 reports. I read each case's
+documents through a display script that prints each document in full but skips a line already printed for the same
+case (after whitespace normalisation) and four boilerplate footer patterns, so each distinct line of every document was
+read once. For a few long reports (BR031, BR026, BR003, BR064, PE053) I also suppressed repetitive vehicle-list lines
+(VIN ranges, per-model population lines, repeated software part numbers) on screen; the defect, cause, chronology and
+remedy text was read in full.
+
+**Other.** No document contained instructions addressed to a reader; nothing in any document was executed. No other
+source, search or memory was used.
+
+**Counts (for the record; DERIVED-judgemental).** 150 cases rated. Window: `not observable` 98 (PE 26, BR 72);
+`<=1 s` 13 (PE 10, BR 3); `(1,40] s` 15; `(40,80] s` 1; `(80,700] s` 5; `>700 s` 16; `cannot judge` 2 (PE021, PE023).
+Flags: no cause 5 (PE021, PE023, BR057, BR070, BR073); software-only 17; out of scope 24.
 
 ## 3. Per-case remarks
 
-(appended during rating)
+Each row's `note` column carries the case-specific reasoning. The points below are the unusual ones.
+
+**Conventions as applied (clarifications that arose during rating; none changes §1).**
+
+- **Vehicle-level controllers and the out-of-scope flag.** Where the defect sits in a vehicle-level controller (HEV
+  ECU, VCU, powertrain controller, telematics box) rather than in one of the four in-scope units, I set
+  `flag_out_of_scope = yes`, even when that controller commands the contactors or reads battery limits: PE014, PE020,
+  PE031, PE040, PE043, PE066. Low confidence on the flag in each. Where BMS or inverter/motor-controller software is a
+  co-component (PE037, PE071), I did not flag.
+- **Cell-level defects whose stated mechanism is a signal-level trend.** When the documents' stated mechanism is
+  itself a measurable trend (self-discharge, SOC fluctuation, internal-short onset) and the remedy software detects it
+  from vehicle data, I rated the window of that trend (`>700 s`, `<=10 Hz`) rather than state 0, and flagged the cells
+  out of scope: PE004, PE046, PE064, PE070, PE076. When the stated cause is a static physical property (weld
+  penetration, fastener torque, coating, part damage, debris), I rated state 0 even if a remedy detects the
+  consequence: PE062, PE063 (busbar weld), PE065 (coil termination), PE026 (slip-ring shavings).
+- **Signature identifies the defect itself.** PE022 (contactor double-dip closing-current signature over a rolling
+  100-closing window, used for fleet screening): rated `>700 s`, `>=1 kHz`, though the cause is a component defect.
+  PE073 (fretting on gate-driver contacts; failures flagged about 100 miles ahead): rated as cumulative degradation.
+- **Two-leg causes.** ICCU cases name a transient and a thermal leg (`unknown / mixed`): PE034 and PE050 rated
+  `(80,700] s` (thermal loading within operation); PE033 and PE049 rated `>700 s` because those documents say the
+  damage builds "over time" with "thermal cycling". Mercedes EQB (PE053, PE069): production variation plus charging
+  ripple and high-SOC dwell, `>700 s`, `>=1 kHz`.
+- **Mach-E contactor family.** PE015 (no accumulation stated) `(80,700] s`; PE027 and PE060 (documents state
+  accumulated heat damage and wear) `>700 s`; PE055 (remedy software not actually installed) rated on the underlying
+  mechanism as PE015, low confidence.
+- **Charge/regen protection trips** (current or voltage limit exceeded, contactor opened by the BMS) are treated as
+  electrical events, so not software-only: PE001, PE009, PE036, PE038.
+- **Boundary judgements, noted in the CSV:** PE042 (`(1,40] s` vs `<=1 s`; the ripple-frequency gap needs a high-rate
+  current trace), PE052 (event taken as the converter-phase damage, not the later propulsion loss), PE075 (snapshot of
+  a wrongly initialised SOH vs the many-cycle plating leg), PE031 (a recorded counter value could shorten the stated
+  day-long key-cycle window), PE008 (heat over a drive plus a high-rate coil-PWM capture), PE035 and PE066 (bus-traffic
+  sequence of unstated length; lowest sequence state by the tie rule).
+
+**Duplicate or related campaigns rated alike** (each still rated from its own documents): PE040/PE043; PE041/PE044;
+PE056/PE057; PE029/PE030; PE032/PE058; PE062/PE063; PE002/PE011; PE046/PE064; PE053/PE069; PE027/PE060;
+BR010/BR013; BR001/BR012 (Takata).
+
+**No-cause flags with a mapped state.** BR057, BR070 and BR073 have the cause field empty, "TBD" or "under
+investigation", but the defect is a part or structural property, so state 0 is mappable; flagged and rated 0. PE021
+(loss of propulsion; no mechanism in five reports) and PE023 (BMS diagnostic function impaired over time; cause NR)
+are `cannot judge`.
+
+**Image-only attachments.** PE042 and PE026 (see §2).
