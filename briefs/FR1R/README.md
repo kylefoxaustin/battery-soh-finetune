@@ -4,7 +4,15 @@
 ([`results/FR1/results_FR1.md`](../../results/FR1/results_FR1.md)); SYNTHESIS §5. Same 150 cases, same documents, same
 two-rater two-branch procedure as [`briefs/FR1/README.md`](../FR1/README.md); only the rating scheme changes.
 
-> ## ▶ APPROVED 2026-11-10 — rate now (`2541d02`), both raters as fresh sub-agents in sparse main-only clones
+> ## ▶ DONE 2026-11-10 — `99c65ce`: gated (κ 0.90); retention UNCLEAR; shape MIXED (reviewer accepted)
+>
+> Results: [`results/FR1R/results_FR1R.md`](../../results/FR1R/results_FR1R.md). The reviewer re-derived from the two
+> ratings files, with its own code (`results/FR1R/review/`): exclusions 17/4/1, denominator 35, P80 11/35 = 31.4 %
+> [18.6, 48.0], RB 6/35 = 17.1 % [8.1, 32.7], P1 24/35, κ 0.897 (n 147; PE 0.849; seven-way 0.867; cause 0.856; rate
+> class 1.0), the same six ring-buffer-shaped cases, 71 base-rate cases not observable, verdict UNCLEAR / MIXED. All
+> match. The approval text is kept below for the record.
+>
+> ## ▶ APPROVED 2026-11-10 — rate now (`2541d02`), both raters as fresh sub-agents in sparse main-only clones (superseded: done)
 >
 > The pre-registration is accepted **without changes**. Two of its choices improve on FR1 and are endorsed: the
 > **union document set** (identical inputs for both raters, so coverage cannot cause a disagreement) and the

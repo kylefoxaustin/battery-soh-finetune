@@ -90,6 +90,17 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > the ceiling of public data on every battery mechanism; the Tier-A-specific legs left are documentary. **Order now:
 > FR1-R (full brief, [`briefs/FR1R/README.md`](../FR1R/README.md)) → L1 (requirement ledger) → DC2 (spec audit) → O1 → R1.**
 
+> **Status 2026-11-10 (later). FR1-R is DONE — gated at κ 0.90; retention UNCLEAR, shape MIXED**
+> ([`results/FR1R/results_FR1R.md`](../../results/FR1R/results_FR1R.md); reviewer re-derived every headline). Of 35
+> field-observable in-scope causes, 31 % [19, 48] need > 80 s and 17 % [8, 33] are ring-buffer shaped (seconds to
+> minutes at ≥ 1 kHz), concentrated in the charging path; a third of in-scope causes are not observable at any window;
+> the long windows are per-event signatures over months (flash/cloud) with a triggered high-rate capture in a few.
+> **The retention leg of ANGLES §B.3 now stands on a gated rating: the B1 ring buffer is the right tool for about one
+> public root cause in six, not a necessity.** Adding the missing state took κ from 0.19 to 0.90 with the headline
+> fraction unchanged (28 % → 31 %). **Next: L1**, the requirement-arrival ledger behind ANGLES §B.1 — the only
+> Tier-A-specific leg never tested — now has a full brief at [`briefs/L1/README.md`](../L1/README.md). Order: L1 → DC2
+> → O1 → R1.**
+
 ---
 
 ## 1. How the reviewer starts one
