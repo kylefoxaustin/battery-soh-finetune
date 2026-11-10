@@ -4,7 +4,36 @@
 ([`briefs/OPEN_PROBLEM/README.md`](../OPEN_PROBLEM/README.md) §9) and ANGLES §1.1 / §B; item 4 in
 [`briefs/NEXT_EXPERIMENTS/README.md`](../NEXT_EXPERIMENTS/README.md). The mirror image of X2-F.
 
-> ## ▶ START HERE (first stage: profile and pre-registration only, then STOP)
+> ## ▶ APPROVED 2026-11-10 — run it now, exactly as pre-registered (`600b296`)
+>
+> The first stage ([`results/X/X8_profile.md`](../../results/X/X8_profile.md),
+> [`results/X/X8_preregistration.md`](../../results/X/X8_preregistration.md)) is accepted **without changes**. The
+> pre-registration mirrors X2-F faithfully, names every departure (no 0.05 C floor; driving-only steps; the 10 s
+> horizon as min over t and t+1; every-frame loader), passes both gates on Changan (36.8 LSB at the admitted-current
+> approximation; 300 vehicles) and on both Beihang arms, and makes the dither check binding. The FR1 re-derivation
+> (`1fda86b`) matched every published number, so the running session's step 1 is closed.
+>
+> **Profile finding worth carrying to the write-up:** at low SOC the minimum-voltage cell is almost never the highest-R
+> cell (median 2 % of frames). That reverses the brief's stated expectation and is the mechanism by which a per-cell
+> limiter could beat min/max here; it is also why S might be larger at the bottom than X2-F's +2.5 % at the top.
+>
+> **Three expectations recorded now, before results, so they cannot be post hoc:**
+> 1. **Zero-reference frames.** With V_cut at the p0.1 of the observed minimum and no floor, some frames will have
+>    I_ref = 0 while a limiter issues > 0; no κ can fix those, so they push κ toward 2.00. If NOT INTERPRETABLE is
+>    triggered, the write-up must state whether zero-reference frames alone drove it (the reported I_ref = 0 fraction
+>    against the 0.05 % bar). That would be X8's version of X7's resolution ceiling — a result, not a reason to change
+>    the pre-registration.
+> 2. **Headroom, not realised current.** The admissible currents will be of order 3 C (≈ 200 mV of headroom over
+>    ≈ 0.5 mΩ), far above the fleet's p95 of 0.65 C. S is therefore a ratio of *estimated headroom*, as X2-F's was at
+>    the top but more so. Say this in the verdict paragraph; do not describe S as a discharge-rate gain.
+> 3. **The dither check is binding** (per-cell R spread ≈ 10 LSB at the p95 current). If S moves by more than its CI
+>    width under ± 0.5 LSB dither, the verdict carries the "rounding" label whatever S says.
+>
+> Run order: write `analysis/X8_bottom.py`; run Changan primary, then DTI, then QAS; commit `results/X/X8/results_X8.md`
+> (verdict first with the NC-SA caveat and the three notes above addressed), `x8.json`, the margin table and plots, the
+> index rows and the ANGLES §1.1 / §B note; set `NEXT_TASK.md` Status to `DONE <hash>`; push; stop.
+>
+> ## ▶ START HERE (superseded: first stage done at `600b296`; see the APPROVED box above)
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief end to end, then `results/X/X2F_preregistration.md` and `results/X/X2F/results_X2F.md` (the design

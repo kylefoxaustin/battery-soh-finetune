@@ -1,40 +1,37 @@
 # ▶ NEXT TASK: read this first, then do it. No other prompt is needed.
 
-**Updated:** 2026-11-06. **Owner of this file:** the reviewer. The running session only *reads* it, except for the
+**Updated:** 2026-11-10. **Owner of this file:** the reviewer. The running session only *reads* it, except for the
 Status line.
 
-**Previous task — FR1: DONE, UNGATED** (both rater branches merged; analysis `analysis/FR1_agreement.py`; write-up
-[`results/FR1/results_FR1.md`](results/FR1/results_FR1.md)). The reviewer session wrote and ran the analysis, so step 1
-below is an independent re-derivation by this session before anything else. Plan:
-[`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/README.md) (order now X8 → O1 → R1).
+**X8 first stage (`600b296`) is APPROVED without changes.** The FR1 re-derivation (`1fda86b`) matched every published
+number and is closed. Read the APPROVED box in [`briefs/X8/README.md`](briefs/X8/README.md): it records three
+expectations (zero-reference frames; headroom not realised current; the binding dither check) that the write-up must
+address. Plan: [`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/README.md).
 
 ## Do these steps, in order
 
-1. `git pull` on `main`. **Re-derive FR1 from the two CSVs with your own code** (do not import or modify
-   `analysis/FR1_agreement.py`): the both-rater exclusions (4 / 17 / 23; 41 cases), the PE denominator (36), the
-   3-way κ over all rated cases (0.19) and over PE (0.55), the conservative PE fraction > 80 s (28 %, Wilson
-   [16, 44]), and the base-rate fractions (A 96 % vs B 7 %). Write `results/FR1/review/rederivation.md` with your
-   numbers beside the published ones; if any differ, stop with `BLOCKED: FR1 rederivation <item>` and push. Commit the
-   re-derivation.
-2. Open [`briefs/X8/README.md`](briefs/X8/README.md) and follow its START HERE box. **First stage only:** the profile
-   (`results/X/X8_profile.md`, brief §3) and the pre-registration (`results/X/X8_preregistration.md`, brief §4 with every
-   threshold filled in), then STOP. Reuse the McMaster/Changan loaders and the per-cell R identification, κ calibration
-   and held-out safety scoring in `analysis/X2F_replay.py`.
-3. Commit both with "before limiter code" in the commit message. **Write no limiter or scoring code.**
-4. Set the Status line below to `AWAITING APPROVAL <commit-hash>`, push, and stop.
+1. `git pull` on `main`. Read the APPROVED box, then `results/X/X8_preregistration.md` once more.
+2. Write `analysis/X8_bottom.py` and run the Changan primary exactly as pre-registered (§2–§7 of the pre-registration):
+   both fold directions, every limiter's κ curve (calibration and held-out), S / S_sh / D with vehicle-bootstrap CIs,
+   the reported-not-deciding quantities (binding-cell fraction, I_ref = 0 fraction, SOC < 10 % and cold subsets,
+   usable depth), the sensitivities (V_cut ± 50 mV, 20 s horizon, R held vs re-estimated, 0.1 % and 0.5 % bars) and
+   the **dither check**.
+3. Run the Beihang **DTI** arm, then **QAS**, with their own V_cut, folds and gates; each gets its own verdict.
+4. Commit `results/X/X8/results_X8.md` (verdict first, Changan then DTI then QAS; the NC-SA caveat on Changan; the
+   three APPROVED-box expectations each answered in a sentence), `results/X/X8/x8.json`, the margin table, the plots
+   (κ vs unsafe fraction per limiter and direction; the S distribution; one session's admissible currents), one row
+   each in `results/X/README.md` and `results/RESEARCH_DOSSIER.md` §9, and a dated note under ANGLES §1.1 / §B.
+5. Set the Status line below to `DONE <commit-hash>`, push, and stop. Do not start O1.
 
 ## Rules that always apply
-- Pre-register before analysis code. Never move a threshold after seeing results. Number every deviation.
-- Tag every number MEASURED / DERIVED / ASSUMED / SOURCED / UNGATED.
-- X8 uses Changan (CC BY-NC-SA, research only); carry that onto every verdict. Beihang (CC BY) only if the profile
-  shows current and per-cell voltage at low SOC during discharge.
-- X8's resolution gate (brief §3.4) comes before its power gate: median sag at the admitted current ≥ 10 voltage LSB.
-- Lessons now standing for every rating or replay design: give "not observable / not applicable" its own state;
-  closed lists, not free text, for anything that will be counted.
+- Nothing in the pre-registration moves after results are seen; any change is a numbered deviation (X8-D1, …).
+- Tag every number DERIVED (replay) / ASSUMED (V_cut, 1 C, limits). No kWh, range, cost or C2 percentage.
+- Carry the licence: Changan CC BY-NC-SA, research only; Beihang CC BY 4.0, citable.
+- If the dither check moves S by more than its CI width, the verdict carries the "rounding" label.
+- Report the κ each limiter needed and whether min/max's margin transferred, as X2-F did.
 - Do not start any experiment this file does not name.
 
 ## When you finish
-Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
-and push.
+Edit only the **Status** line below to `DONE <commit-hash>` or `BLOCKED: <one-line reason>`, then commit and push.
 
-**Status:** AWAITING APPROVAL 600b296 (FR1 re-derivation 1fda86b: all match; X8 first stage)
+**Status:** OPEN
