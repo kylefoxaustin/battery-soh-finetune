@@ -1,0 +1,3166 @@
+{
+ "preregistration": "results/FR1R/FR1R_preregistration.md (2541d02)",
+ "tags": "every rating DERIVED-judgemental; source NHTSA, public domain; both raters are language-model sessions",
+ "validation_problems": {
+  "A": [],
+  "B": []
+ },
+ "verdict": "UNCLEAR",
+ "shape": "MIXED",
+ "gate": {
+  "kappa4": {
+   "kappa": 0.8970047293746716,
+   "n": 147,
+   "observed_agreement": 0.9455782312925171
+  },
+  "pe_denominator": 35,
+  "pass": true
+ },
+ "kappa": {
+  "item3_four_class": {
+   "kappa": 0.8970047293746716,
+   "n": 147,
+   "observed_agreement": 0.9455782312925171
+  },
+  "item3_seven_way": {
+   "kappa": 0.8665480427046264,
+   "n": 150,
+   "observed_agreement": 0.9266666666666666
+  },
+  "item1": {
+   "kappa": 0.8561013046815042,
+   "n": 150,
+   "observed_agreement": 0.9333333333333333
+  },
+  "item3b_both_states_2_5": {
+   "kappa": 1.0,
+   "n": 34,
+   "observed_agreement": 1.0
+  }
+ },
+ "PE": {
+  "n_cases": 75,
+  "excluded": [
+   "PE004",
+   "PE014",
+   "PE021",
+   "PE023",
+   "PE028",
+   "PE031",
+   "PE039",
+   "PE041",
+   "PE044",
+   "PE046",
+   "PE051",
+   "PE053",
+   "PE056",
+   "PE057",
+   "PE062",
+   "PE063",
+   "PE064",
+   "PE066",
+   "PE069",
+   "PE070",
+   "PE071",
+   "PE076"
+  ],
+  "cannot_judge": [],
+  "not_observable_one": [
+   "PE026"
+  ],
+  "not_observable_both": [
+   "PE005",
+   "PE016",
+   "PE017",
+   "PE018",
+   "PE024",
+   "PE025",
+   "PE029",
+   "PE030",
+   "PE032",
+   "PE048",
+   "PE054",
+   "PE058",
+   "PE059",
+   "PE065",
+   "PE067",
+   "PE068",
+   "PE074"
+  ],
+  "denominator": 35,
+  "P80": {
+   "k": 11,
+   "n": 35,
+   "p": 0.3142857142857143,
+   "lo": 0.18550658059782457,
+   "hi": 0.47980071879251973
+  },
+  "P40": {
+   "k": 11,
+   "n": 35,
+   "p": 0.3142857142857143,
+   "lo": 0.18550658059782457,
+   "hi": 0.47980071879251973
+  },
+  "RB": {
+   "k": 6,
+   "n": 35,
+   "p": 0.17142857142857143,
+   "lo": 0.08102529944856719,
+   "hi": 0.3268260763958882
+  },
+  "P1": {
+   "k": 24,
+   "n": 35,
+   "p": 0.6857142857142857,
+   "lo": 0.5201992812074803,
+   "hi": 0.8144934194021753
+  },
+  "conservative_state_distribution": {
+   "1": 11,
+   "2": 13,
+   "4": 4,
+   "5": 7
+  },
+  "conservative_rate_distribution_states_2_5": {
+   "1": 14,
+   "2": 10
+  },
+  "cases": {
+   "PE001": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE002": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE003": {
+    "state": 1,
+    "rate": null
+   },
+   "PE007": {
+    "state": 1,
+    "rate": null
+   },
+   "PE008": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE009": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE010": {
+    "state": 1,
+    "rate": null
+   },
+   "PE011": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE012": {
+    "state": 1,
+    "rate": null
+   },
+   "PE013": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE015": {
+    "state": 4,
+    "rate": 1
+   },
+   "PE019": {
+    "state": 1,
+    "rate": null
+   },
+   "PE020": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE022": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE027": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE033": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE034": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE035": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE036": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE037": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE038": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE040": {
+    "state": 1,
+    "rate": null
+   },
+   "PE042": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE043": {
+    "state": 1,
+    "rate": null
+   },
+   "PE045": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE047": {
+    "state": 1,
+    "rate": null
+   },
+   "PE049": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE050": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE052": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE055": {
+    "state": 1,
+    "rate": null
+   },
+   "PE060": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE061": {
+    "state": 1,
+    "rate": null
+   },
+   "PE072": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE073": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE075": {
+    "state": 1,
+    "rate": null
+   }
+  }
+ },
+ "BR": {
+  "n_cases": 75,
+  "excluded": [
+   "BR057"
+  ],
+  "cannot_judge": [],
+  "not_observable_one": [],
+  "not_observable_both": [
+   "BR001",
+   "BR002",
+   "BR003",
+   "BR004",
+   "BR005",
+   "BR006",
+   "BR007",
+   "BR008",
+   "BR009",
+   "BR010",
+   "BR011",
+   "BR012",
+   "BR013",
+   "BR014",
+   "BR015",
+   "BR016",
+   "BR017",
+   "BR018",
+   "BR019",
+   "BR020",
+   "BR021",
+   "BR022",
+   "BR023",
+   "BR024",
+   "BR025",
+   "BR026",
+   "BR027",
+   "BR028",
+   "BR029",
+   "BR030",
+   "BR031",
+   "BR032",
+   "BR033",
+   "BR034",
+   "BR035",
+   "BR036",
+   "BR037",
+   "BR038",
+   "BR039",
+   "BR040",
+   "BR042",
+   "BR043",
+   "BR044",
+   "BR045",
+   "BR046",
+   "BR047",
+   "BR048",
+   "BR049",
+   "BR050",
+   "BR051",
+   "BR054",
+   "BR055",
+   "BR056",
+   "BR058",
+   "BR059",
+   "BR060",
+   "BR061",
+   "BR062",
+   "BR063",
+   "BR064",
+   "BR065",
+   "BR066",
+   "BR067",
+   "BR068",
+   "BR069",
+   "BR070",
+   "BR071",
+   "BR072",
+   "BR073",
+   "BR074",
+   "BR075"
+  ],
+  "denominator": 3,
+  "P80": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "P40": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "RB": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "P1": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "conservative_state_distribution": {
+   "1": 3
+  },
+  "conservative_rate_distribution_states_2_5": {},
+  "cases": {
+   "BR041": {
+    "state": 1,
+    "rate": null
+   },
+   "BR052": {
+    "state": 1,
+    "rate": null
+   },
+   "BR053": {
+    "state": 1,
+    "rate": null
+   }
+  }
+ },
+ "sensitivity_A_one_rater_not_observable_takes_other": {
+  "n_cases": 75,
+  "excluded": [
+   "PE004",
+   "PE014",
+   "PE021",
+   "PE023",
+   "PE028",
+   "PE031",
+   "PE039",
+   "PE041",
+   "PE044",
+   "PE046",
+   "PE051",
+   "PE053",
+   "PE056",
+   "PE057",
+   "PE062",
+   "PE063",
+   "PE064",
+   "PE066",
+   "PE069",
+   "PE070",
+   "PE071",
+   "PE076"
+  ],
+  "cannot_judge": [],
+  "not_observable_one": [],
+  "not_observable_both": [
+   "PE005",
+   "PE016",
+   "PE017",
+   "PE018",
+   "PE024",
+   "PE025",
+   "PE029",
+   "PE030",
+   "PE032",
+   "PE048",
+   "PE054",
+   "PE058",
+   "PE059",
+   "PE065",
+   "PE067",
+   "PE068",
+   "PE074"
+  ],
+  "denominator": 36,
+  "P80": {
+   "k": 11,
+   "n": 36,
+   "p": 0.3055555555555556,
+   "lo": 0.18004270282805354,
+   "hi": 0.46856578679083716
+  },
+  "P40": {
+   "k": 11,
+   "n": 36,
+   "p": 0.3055555555555556,
+   "lo": 0.18004270282805354,
+   "hi": 0.46856578679083716
+  },
+  "RB": {
+   "k": 6,
+   "n": 36,
+   "p": 0.16666666666666666,
+   "lo": 0.07870340628564097,
+   "hi": 0.3189111473467432
+  },
+  "P1": {
+   "k": 24,
+   "n": 36,
+   "p": 0.6666666666666666,
+   "lo": 0.5033369709296683,
+   "hi": 0.7978557522541395
+  },
+  "conservative_state_distribution": {
+   "1": 12,
+   "2": 13,
+   "4": 4,
+   "5": 7
+  },
+  "conservative_rate_distribution_states_2_5": {
+   "1": 14,
+   "2": 10
+  },
+  "cases": {
+   "PE001": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE002": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE003": {
+    "state": 1,
+    "rate": null
+   },
+   "PE007": {
+    "state": 1,
+    "rate": null
+   },
+   "PE008": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE009": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE010": {
+    "state": 1,
+    "rate": null
+   },
+   "PE011": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE012": {
+    "state": 1,
+    "rate": null
+   },
+   "PE013": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE015": {
+    "state": 4,
+    "rate": 1
+   },
+   "PE019": {
+    "state": 1,
+    "rate": null
+   },
+   "PE020": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE022": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE026": {
+    "state": 1,
+    "rate": null
+   },
+   "PE027": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE033": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE034": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE035": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE036": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE037": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE038": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE040": {
+    "state": 1,
+    "rate": null
+   },
+   "PE042": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE043": {
+    "state": 1,
+    "rate": null
+   },
+   "PE045": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE047": {
+    "state": 1,
+    "rate": null
+   },
+   "PE049": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE050": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE052": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE055": {
+    "state": 1,
+    "rate": null
+   },
+   "PE060": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE061": {
+    "state": 1,
+    "rate": null
+   },
+   "PE072": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE073": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE075": {
+    "state": 1,
+    "rate": null
+   }
+  }
+ },
+ "sensitivity_B_cannot_judge_as_le1s": {
+  "n_cases": 75,
+  "excluded": [
+   "PE004",
+   "PE014",
+   "PE021",
+   "PE023",
+   "PE028",
+   "PE031",
+   "PE039",
+   "PE041",
+   "PE044",
+   "PE046",
+   "PE051",
+   "PE053",
+   "PE056",
+   "PE057",
+   "PE062",
+   "PE063",
+   "PE064",
+   "PE066",
+   "PE069",
+   "PE070",
+   "PE071",
+   "PE076"
+  ],
+  "cannot_judge": [],
+  "not_observable_one": [
+   "PE026"
+  ],
+  "not_observable_both": [
+   "PE005",
+   "PE016",
+   "PE017",
+   "PE018",
+   "PE024",
+   "PE025",
+   "PE029",
+   "PE030",
+   "PE032",
+   "PE048",
+   "PE054",
+   "PE058",
+   "PE059",
+   "PE065",
+   "PE067",
+   "PE068",
+   "PE074"
+  ],
+  "denominator": 35,
+  "P80": {
+   "k": 11,
+   "n": 35,
+   "p": 0.3142857142857143,
+   "lo": 0.18550658059782457,
+   "hi": 0.47980071879251973
+  },
+  "P40": {
+   "k": 11,
+   "n": 35,
+   "p": 0.3142857142857143,
+   "lo": 0.18550658059782457,
+   "hi": 0.47980071879251973
+  },
+  "RB": {
+   "k": 6,
+   "n": 35,
+   "p": 0.17142857142857143,
+   "lo": 0.08102529944856719,
+   "hi": 0.3268260763958882
+  },
+  "P1": {
+   "k": 24,
+   "n": 35,
+   "p": 0.6857142857142857,
+   "lo": 0.5201992812074803,
+   "hi": 0.8144934194021753
+  },
+  "conservative_state_distribution": {
+   "1": 11,
+   "2": 13,
+   "4": 4,
+   "5": 7
+  },
+  "conservative_rate_distribution_states_2_5": {
+   "1": 14,
+   "2": 10
+  },
+  "cases": {
+   "PE001": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE002": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE003": {
+    "state": 1,
+    "rate": null
+   },
+   "PE007": {
+    "state": 1,
+    "rate": null
+   },
+   "PE008": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE009": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE010": {
+    "state": 1,
+    "rate": null
+   },
+   "PE011": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE012": {
+    "state": 1,
+    "rate": null
+   },
+   "PE013": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE015": {
+    "state": 4,
+    "rate": 1
+   },
+   "PE019": {
+    "state": 1,
+    "rate": null
+   },
+   "PE020": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE022": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE027": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE033": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE034": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE035": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE036": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE037": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE038": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE040": {
+    "state": 1,
+    "rate": null
+   },
+   "PE042": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE043": {
+    "state": 1,
+    "rate": null
+   },
+   "PE045": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE047": {
+    "state": 1,
+    "rate": null
+   },
+   "PE049": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE050": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE052": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE055": {
+    "state": 1,
+    "rate": null
+   },
+   "PE060": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE061": {
+    "state": 1,
+    "rate": null
+   },
+   "PE072": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE073": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE075": {
+    "state": 1,
+    "rate": null
+   }
+  }
+ },
+ "own": {
+  "A": {
+   "denominator": 47,
+   "P80": {
+    "k": 21,
+    "n": 47,
+    "p": 0.44680851063829785,
+    "lo": 0.31410747474911305,
+    "hi": 0.5875478626124176
+   },
+   "RB": {
+    "k": 6,
+    "n": 47,
+    "p": 0.1276595744680851,
+    "lo": 0.059845227802024795,
+    "hi": 0.25174213372869025
+   }
+  },
+  "B": {
+   "denominator": 49,
+   "P80": {
+    "k": 21,
+    "n": 49,
+    "p": 0.42857142857142855,
+    "lo": 0.3002310889895705,
+    "hi": 0.5672975248298444
+   },
+   "RB": {
+    "k": 5,
+    "n": 49,
+    "p": 0.10204081632653061,
+    "lo": 0.044378892487039884,
+    "hi": 0.21756624164970087
+   }
+  }
+ },
+ "state_distribution_PE": {
+  "A": {
+   "not observable": 26,
+   ">700 s": 16,
+   "(1,40] s": 15,
+   "<=1 s": 10,
+   "(80,700] s": 5,
+   "cannot judge": 2,
+   "(40,80] s": 1
+  },
+  "B": {
+   "not observable": 25,
+   ">700 s": 18,
+   "(1,40] s": 15,
+   "<=1 s": 12,
+   "(80,700] s": 3,
+   "(40,80] s": 1,
+   "cannot judge": 1
+  }
+ },
+ "state_distribution_BR": {
+  "A": {
+   "not observable": 72,
+   "<=1 s": 3
+  },
+  "B": {
+   "not observable": 71,
+   "<=1 s": 3,
+   "cannot judge": 1
+  }
+ },
+ "rate_distribution_PE_states_2_5": {
+  "A": {
+   "10 Hz-1 kHz": 17,
+   "<=10 Hz": 8,
+   ">=1 kHz": 12
+  },
+  "B": {
+   "10 Hz-1 kHz": 16,
+   "<=10 Hz": 11,
+   ">=1 kHz": 10
+  }
+ },
+ "cause_distribution_PE": {
+  "A": {
+   "manufacturing or component defect": 34,
+   "software or calibration": 26,
+   "unknown / mixed": 7,
+   "thermal": 6,
+   "transient electrical": 2
+  },
+  "B": {
+   "manufacturing or component defect": 34,
+   "software or calibration": 27,
+   "unknown / mixed": 5,
+   "transient electrical": 5,
+   "thermal": 4
+  }
+ },
+ "evidence_distribution_PE": {
+  "A": {
+   "teardown only": 27,
+   "not stated": 21,
+   "bench reproduction": 10,
+   "fleet statistics": 9,
+   "DTC freeze-frame": 5,
+   "waveform or high-rate capture": 3
+  },
+  "B": {
+   "teardown only": 26,
+   "not stated": 20,
+   "bench reproduction": 14,
+   "fleet statistics": 8,
+   "DTC freeze-frame": 6,
+   "waveform or high-rate capture": 1
+  }
+ },
+ "evidence_distribution_BR": {
+  "A": {
+   "teardown only": 28,
+   "not stated": 24,
+   "bench reproduction": 21,
+   "fleet statistics": 1,
+   "DTC freeze-frame": 1
+  },
+  "B": {
+   "not stated": 30,
+   "teardown only": 23,
+   "bench reproduction": 19,
+   "fleet statistics": 2,
+   "DTC freeze-frame": 1
+  }
+ },
+ "flags_single_rater": {
+  "A": {
+   "flag_no_cause": [
+    "BR070",
+    "BR073",
+    "PE023"
+   ],
+   "flag_software_only": [
+    "PE002",
+    "PE003",
+    "PE007",
+    "PE010",
+    "PE011",
+    "PE012",
+    "PE019",
+    "PE020",
+    "PE035",
+    "PE037",
+    "PE047",
+    "PE066",
+    "PE072"
+   ],
+   "flag_out_of_scope": [
+    "PE014",
+    "PE020",
+    "PE026",
+    "PE031",
+    "PE040",
+    "PE042",
+    "PE043"
+   ]
+  },
+  "B": {
+   "flag_no_cause": [],
+   "flag_software_only": [],
+   "flag_out_of_scope": []
+  }
+ },
+ "by_component_group": {
+  "DC-DC converter": {
+   "n_cases": 4,
+   "excluded": [],
+   "cannot_judge": [],
+   "not_observable_one": [],
+   "not_observable_both": [
+    "PE005",
+    "PE025",
+    "PE054"
+   ],
+   "denominator": 1,
+   "P80": {
+    "k": 0,
+    "n": 1,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.7934567085261071
+   },
+   "P40": {
+    "k": 0,
+    "n": 1,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.7934567085261071
+   },
+   "RB": {
+    "k": 1,
+    "n": 1,
+    "p": 1.0,
+    "lo": 0.20654329147389294,
+    "hi": 1.0
+   },
+   "P1": {
+    "k": 1,
+    "n": 1,
+    "p": 1.0,
+    "lo": 0.20654329147389294,
+    "hi": 1.0
+   },
+   "conservative_state_distribution": {
+    "2": 1
+   },
+   "conservative_rate_distribution_states_2_5": {
+    "2": 1
+   },
+   "cases": {
+    "PE052": {
+     "state": 2,
+     "rate": 2
+    }
+   }
+  },
+  "HV BMS / contactor unit": {
+   "n_cases": 34,
+   "excluded": [
+    "PE004",
+    "PE014",
+    "PE021",
+    "PE023",
+    "PE039",
+    "PE053",
+    "PE056",
+    "PE057",
+    "PE062",
+    "PE063",
+    "PE069",
+    "PE070",
+    "PE071",
+    "PE076"
+   ],
+   "cannot_judge": [],
+   "not_observable_one": [],
+   "not_observable_both": [
+    "PE024",
+    "PE032",
+    "PE058",
+    "PE065",
+    "PE074"
+   ],
+   "denominator": 15,
+   "P80": {
+    "k": 6,
+    "n": 15,
+    "p": 0.4,
+    "lo": 0.19824228082594664,
+    "hi": 0.642535572434923
+   },
+   "P40": {
+    "k": 6,
+    "n": 15,
+    "p": 0.4,
+    "lo": 0.19824228082594664,
+    "hi": 0.642535572434923
+   },
+   "RB": {
+    "k": 1,
+    "n": 15,
+    "p": 0.06666666666666667,
+    "lo": 0.011866588606194856,
+    "hi": 0.2981707755242399
+   },
+   "P1": {
+    "k": 11,
+    "n": 15,
+    "p": 0.7333333333333333,
+    "lo": 0.4804911034231324,
+    "hi": 0.8910272389681718
+   },
+   "conservative_state_distribution": {
+    "1": 4,
+    "2": 5,
+    "4": 2,
+    "5": 4
+   },
+   "conservative_rate_distribution_states_2_5": {
+    "1": 9,
+    "2": 2
+   },
+   "cases": {
+    "PE007": {
+     "state": 1,
+     "rate": null
+    },
+    "PE008": {
+     "state": 4,
+     "rate": 2
+    },
+    "PE009": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE015": {
+     "state": 4,
+     "rate": 1
+    },
+    "PE019": {
+     "state": 1,
+     "rate": null
+    },
+    "PE022": {
+     "state": 5,
+     "rate": 2
+    },
+    "PE027": {
+     "state": 5,
+     "rate": 1
+    },
+    "PE035": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE036": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE037": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE038": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE045": {
+     "state": 5,
+     "rate": 1
+    },
+    "PE055": {
+     "state": 1,
+     "rate": null
+    },
+    "PE060": {
+     "state": 5,
+     "rate": 1
+    },
+    "PE075": {
+     "state": 1,
+     "rate": null
+    }
+   }
+  },
+  "OBC / charging control": {
+   "n_cases": 13,
+   "excluded": [
+    "PE014",
+    "PE028",
+    "PE046",
+    "PE064"
+   ],
+   "cannot_judge": [],
+   "not_observable_one": [],
+   "not_observable_both": [
+    "PE054"
+   ],
+   "denominator": 8,
+   "P80": {
+    "k": 4,
+    "n": 8,
+    "p": 0.5,
+    "lo": 0.21521252682444186,
+    "hi": 0.7847874731755582
+   },
+   "P40": {
+    "k": 4,
+    "n": 8,
+    "p": 0.5,
+    "lo": 0.21521252682444186,
+    "hi": 0.7847874731755582
+   },
+   "RB": {
+    "k": 3,
+    "n": 8,
+    "p": 0.375,
+    "lo": 0.13684175946152105,
+    "hi": 0.6942621454161981
+   },
+   "P1": {
+    "k": 5,
+    "n": 8,
+    "p": 0.625,
+    "lo": 0.30573785458380187,
+    "hi": 0.863158240538479
+   },
+   "conservative_state_distribution": {
+    "1": 3,
+    "2": 1,
+    "4": 2,
+    "5": 2
+   },
+   "conservative_rate_distribution_states_2_5": {
+    "2": 5
+   },
+   "cases": {
+    "PE003": {
+     "state": 1,
+     "rate": null
+    },
+    "PE013": {
+     "state": 2,
+     "rate": 2
+    },
+    "PE033": {
+     "state": 5,
+     "rate": 2
+    },
+    "PE034": {
+     "state": 4,
+     "rate": 2
+    },
+    "PE040": {
+     "state": 1,
+     "rate": null
+    },
+    "PE043": {
+     "state": 1,
+     "rate": null
+    },
+    "PE049": {
+     "state": 5,
+     "rate": 2
+    },
+    "PE050": {
+     "state": 4,
+     "rate": 2
+    }
+   }
+  },
+  "Traction inverter / motor controller": {
+   "n_cases": 31,
+   "excluded": [
+    "PE021",
+    "PE031",
+    "PE041",
+    "PE044",
+    "PE051",
+    "PE066",
+    "PE071",
+    "PE076"
+   ],
+   "cannot_judge": [],
+   "not_observable_one": [
+    "PE026"
+   ],
+   "not_observable_both": [
+    "PE016",
+    "PE017",
+    "PE018",
+    "PE029",
+    "PE030",
+    "PE048",
+    "PE059",
+    "PE067",
+    "PE068"
+   ],
+   "denominator": 13,
+   "P80": {
+    "k": 1,
+    "n": 13,
+    "p": 0.07692307692307693,
+    "lo": 0.013710066379696323,
+    "hi": 0.3331453392824736
+   },
+   "P40": {
+    "k": 1,
+    "n": 13,
+    "p": 0.07692307692307693,
+    "lo": 0.013710066379696323,
+    "hi": 0.3331453392824736
+   },
+   "RB": {
+    "k": 1,
+    "n": 13,
+    "p": 0.07692307692307693,
+    "lo": 0.013710066379696323,
+    "hi": 0.3331453392824736
+   },
+   "P1": {
+    "k": 8,
+    "n": 13,
+    "p": 0.6153846153846154,
+    "lo": 0.35522480972268555,
+    "hi": 0.8229055341876319
+   },
+   "conservative_state_distribution": {
+    "1": 5,
+    "2": 7,
+    "5": 1
+   },
+   "conservative_rate_distribution_states_2_5": {
+    "1": 6,
+    "2": 2
+   },
+   "cases": {
+    "PE001": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE002": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE009": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE010": {
+     "state": 1,
+     "rate": null
+    },
+    "PE011": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE012": {
+     "state": 1,
+     "rate": null
+    },
+    "PE019": {
+     "state": 1,
+     "rate": null
+    },
+    "PE020": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE042": {
+     "state": 2,
+     "rate": 2
+    },
+    "PE047": {
+     "state": 1,
+     "rate": null
+    },
+    "PE061": {
+     "state": 1,
+     "rate": null
+    },
+    "PE072": {
+     "state": 2,
+     "rate": 1
+    },
+    "PE073": {
+     "state": 5,
+     "rate": 2
+    }
+   }
+  }
+ },
+ "one_case_per_cluster": {
+  "n_cases": 52,
+  "excluded": [
+   "PE004",
+   "PE021",
+   "PE023",
+   "PE028",
+   "PE031",
+   "PE041",
+   "PE044",
+   "PE046",
+   "PE053",
+   "PE056",
+   "PE057",
+   "PE062",
+   "PE063",
+   "PE066",
+   "PE076"
+  ],
+  "cannot_judge": [],
+  "not_observable_one": [
+   "PE026"
+  ],
+  "not_observable_both": [
+   "PE005",
+   "PE016",
+   "PE017",
+   "PE018",
+   "PE024",
+   "PE025",
+   "PE029",
+   "PE032",
+   "PE048",
+   "PE054",
+   "PE059",
+   "PE067",
+   "PE068",
+   "PE074"
+  ],
+  "denominator": 22,
+  "P80": {
+   "k": 6,
+   "n": 22,
+   "p": 0.2727272727272727,
+   "lo": 0.1315058201581444,
+   "hi": 0.4815212369900198
+  },
+  "P40": {
+   "k": 6,
+   "n": 22,
+   "p": 0.2727272727272727,
+   "lo": 0.1315058201581444,
+   "hi": 0.4815212369900198
+  },
+  "RB": {
+   "k": 3,
+   "n": 22,
+   "p": 0.13636363636363635,
+   "lo": 0.04748917264236269,
+   "hi": 0.3333541187947
+  },
+  "P1": {
+   "k": 13,
+   "n": 22,
+   "p": 0.5909090909090909,
+   "lo": 0.38734477382893806,
+   "hi": 0.7674444033117963
+  },
+  "conservative_state_distribution": {
+   "1": 9,
+   "2": 7,
+   "4": 2,
+   "5": 4
+  },
+  "conservative_rate_distribution_states_2_5": {
+   "1": 7,
+   "2": 6
+  },
+  "cases": {
+   "PE001": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE003": {
+    "state": 1,
+    "rate": null
+   },
+   "PE007": {
+    "state": 1,
+    "rate": null
+   },
+   "PE010": {
+    "state": 1,
+    "rate": null
+   },
+   "PE012": {
+    "state": 1,
+    "rate": null
+   },
+   "PE013": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE015": {
+    "state": 4,
+    "rate": 1
+   },
+   "PE019": {
+    "state": 1,
+    "rate": null
+   },
+   "PE020": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE022": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE033": {
+    "state": 5,
+    "rate": 2
+   },
+   "PE034": {
+    "state": 4,
+    "rate": 2
+   },
+   "PE036": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE037": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE038": {
+    "state": 2,
+    "rate": 1
+   },
+   "PE040": {
+    "state": 1,
+    "rate": null
+   },
+   "PE043": {
+    "state": 1,
+    "rate": null
+   },
+   "PE045": {
+    "state": 5,
+    "rate": 1
+   },
+   "PE047": {
+    "state": 1,
+    "rate": null
+   },
+   "PE052": {
+    "state": 2,
+    "rate": 2
+   },
+   "PE061": {
+    "state": 1,
+    "rate": null
+   },
+   "PE073": {
+    "state": 5,
+    "rate": 2
+   }
+  },
+  "clusters": 52
+ },
+ "signals_named": {
+  "BR001": {
+   "A": "none (no in-vehicle signal measures propellant state; climate history would show exposure only)",
+   "B": "none; propellant state not sensed"
+  },
+  "BR002": {
+   "A": "none (no in-vehicle signal: part variant)",
+   "B": "none"
+  },
+  "BR003": {
+   "A": "none (locates only: seat movement / bracket dislodged)",
+   "B": "none"
+  },
+  "BR004": {
+   "A": "none (locates only: control-arm fracture)",
+   "B": "none; corrosion over years not sensed"
+  },
+  "BR005": {
+   "A": "none (no in-vehicle signal: joint strength)",
+   "B": "none"
+  },
+  "BR006": {
+   "A": "none (locates only: control-arm fracture)",
+   "B": "none"
+  },
+  "BR007": {
+   "A": "none (no in-vehicle signal: exit location)",
+   "B": "none"
+  },
+  "BR008": {
+   "A": "none (locates only: hub heat / wheel wobble)",
+   "B": "none"
+  },
+  "BR009": {
+   "A": "none (no in-vehicle signal: door opening geometry)",
+   "B": "none"
+  },
+  "BR010": {
+   "A": "none (no in-vehicle signal: seat-back engagement)",
+   "B": "none"
+  },
+  "BR011": {
+   "A": "none (no in-vehicle signal: placard data)",
+   "B": "none"
+  },
+  "BR012": {
+   "A": "none (no in-vehicle signal measures propellant state; cabin humidity/temperature history would show exposure only)",
+   "B": "none; propellant state not sensed"
+  },
+  "BR013": {
+   "A": "none (no in-vehicle signal: seat-back engagement)",
+   "B": "none"
+  },
+  "BR014": {
+   "A": "none (no in-vehicle signal: label content)",
+   "B": "none"
+  },
+  "BR015": {
+   "A": "none (locates only: wheel-end looseness / wheel-off)",
+   "B": "none"
+  },
+  "BR016": {
+   "A": "none (no in-vehicle signal: anchorage strength)",
+   "B": "none"
+  },
+  "BR017": {
+   "A": "none (locates only: roof-hatch glass breakage)",
+   "B": "none"
+  },
+  "BR018": {
+   "A": "none (no in-vehicle signal: belt variant)",
+   "B": "none"
+  },
+  "BR019": {
+   "A": "none (locates only: wheel-nut crack / wheel looseness)",
+   "B": "none"
+  },
+  "BR020": {
+   "A": "none (no in-vehicle signal: anchor crimp strength)",
+   "B": "none"
+  },
+  "BR021": {
+   "A": "none (no in-vehicle signal: headrest design)",
+   "B": "none"
+  },
+  "BR022": {
+   "A": "none (no in-vehicle signal: webbing-lock function)",
+   "B": "none"
+  },
+  "BR023": {
+   "A": "none (no in-vehicle signal: webbing-sensor lock)",
+   "B": "none"
+  },
+  "BR024": {
+   "A": "none (locates only: airbag deployment anomaly in a crash)",
+   "B": "none"
+  },
+  "BR025": {
+   "A": "none (locates only: loose belt cable fastener)",
+   "B": "none"
+  },
+  "BR026": {
+   "A": "none (locates only: spoiler noise / detachment)",
+   "B": "none"
+  },
+  "BR027": {
+   "A": "none (locates only: window detachment)",
+   "B": "none"
+  },
+  "BR028": {
+   "A": "none (no in-vehicle signal: valve part number / relief setting)",
+   "B": "none"
+  },
+  "BR029": {
+   "A": "none (locates only: axle shift on spring)",
+   "B": "none"
+  },
+  "BR030": {
+   "A": "none (no in-vehicle signal: weld seams)",
+   "B": "none"
+  },
+  "BR031": {
+   "A": "none (locates only: wind noise / panel detachment)",
+   "B": "none"
+  },
+  "BR032": {
+   "A": "none (locates only: fairing detachment)",
+   "B": "none"
+  },
+  "BR033": {
+   "A": "none (locates only: pretensioner non-deployment in a crash)",
+   "B": "none"
+  },
+  "BR034": {
+   "A": "none (locates only: retractor lock-up on incline)",
+   "B": "none"
+  },
+  "BR035": {
+   "A": "none (locates only: front-end noise, suspension failure)",
+   "B": "none"
+  },
+  "BR036": {
+   "A": "none (no in-vehicle signal: joint strength)",
+   "B": "none"
+  },
+  "BR037": {
+   "A": "none (locates only: misalignment / steering pull)",
+   "B": "none"
+  },
+  "BR038": {
+   "A": "none (locates only: handling / ride-height anomaly)",
+   "B": "none"
+  },
+  "BR039": {
+   "A": "none (locates only: tailgate-ajar state while moving)",
+   "B": "none; ajar switch would at most locate the opening"
+  },
+  "BR040": {
+   "A": "none (locates only: cabinet detachment in a crash)",
+   "B": "none"
+  },
+  "BR041": {
+   "A": "airbag-control-unit stored DTC versus warning-lamp / cluster message state",
+   "B": "airbag control unit DTC present with warning-lamp request absent; software version"
+  },
+  "BR042": {
+   "A": "none (locates only: loose walk-board rack)",
+   "B": "none"
+  },
+  "BR043": {
+   "A": "none (locates only: pretensioner non-function in a crash)",
+   "B": "none"
+  },
+  "BR044": {
+   "A": "none (locates only: leveller alarm / fluid loss)",
+   "B": "none; leveler alarm would only locate a leak"
+  },
+  "BR045": {
+   "A": "none (locates only: pretensioner non-function in a crash)",
+   "B": "none"
+  },
+  "BR046": {
+   "A": "none (locates only: axle shift / clunk)",
+   "B": "none"
+  },
+  "BR047": {
+   "A": "none (no in-vehicle signal: emblem post cracks)",
+   "B": "none"
+  },
+  "BR048": {
+   "A": "none (locates only: door latch failure)",
+   "B": "none"
+  },
+  "BR049": {
+   "A": "none (locates only: seat non-latch warning)",
+   "B": "seat unlatched warning only shows the latch state"
+  },
+  "BR050": {
+   "A": "none (no in-vehicle signal: belt retraction geometry)",
+   "B": "none"
+  },
+  "BR051": {
+   "A": "none (locates only: steering drift / loose U-bolts)",
+   "B": "none; U-bolt axial force not sensed"
+  },
+  "BR052": {
+   "A": "occupant-detection classification and seat-sensor reading at the event; airbag-suppression state",
+   "B": "ODS occupant classification with seat occupied; ODS calibration ID vs seat trim; airbag-off lamp state"
+  },
+  "BR053": {
+   "A": "crash-sensor pulse and ACU deployment decision recorded at the event (EDR)",
+   "B": "airbag control unit crash pulse and deployment decision (EDR record of the crash)"
+  },
+  "BR054": {
+   "A": "none (locates only: flattened springs / handling)",
+   "B": "none"
+  },
+  "BR055": {
+   "A": "none (no in-vehicle signal: weld quality)",
+   "B": "none"
+  },
+  "BR056": {
+   "A": "none (no in-vehicle signal: pawl material)",
+   "B": "none"
+  },
+  "BR057": {
+   "A": "none (locates only: buckle-switch state disagreeing with occupant)",
+   "B": "none identifiable"
+  },
+  "BR058": {
+   "A": "none (no in-vehicle signal: headliner energy absorption)",
+   "B": "none"
+  },
+  "BR059": {
+   "A": "none (locates only: gate swinging open)",
+   "B": "none; design lacks a secondary gate latch"
+  },
+  "BR060": {
+   "A": "none (locates only: seat back not latching)",
+   "B": "none"
+  },
+  "BR061": {
+   "A": "none (locates only: buckle rattle / restraint performance in a crash)",
+   "B": "none"
+  },
+  "BR062": {
+   "A": "none (no in-vehicle signal: seat and anchorage strength)",
+   "B": "none"
+  },
+  "BR063": {
+   "A": "none (locates only: inflator rupture at deployment)",
+   "B": "none"
+  },
+  "BR064": {
+   "A": "none (no in-vehicle signal on the trailer frame; crack found by inspection)",
+   "B": "none"
+  },
+  "BR065": {
+   "A": "none (no in-vehicle signal: seat geometry)",
+   "B": "none"
+  },
+  "BR066": {
+   "A": "none (locates only: clunk / control-arm separation)",
+   "B": "none"
+  },
+  "BR067": {
+   "A": "none (locates only: liftgate seizure)",
+   "B": "none"
+  },
+  "BR068": {
+   "A": "none (no in-vehicle signal: belt length; buckle cannot be latched)",
+   "B": "none"
+  },
+  "BR069": {
+   "A": "none (locates only: trim separation)",
+   "B": "none"
+  },
+  "BR070": {
+   "A": "none (no in-vehicle signal: guard strength)",
+   "B": "none"
+  },
+  "BR071": {
+   "A": "none (locates only: panel detachment at airbag deployment)",
+   "B": "none"
+  },
+  "BR072": {
+   "A": "none (locates only: airbag warning lamp / connector fault)",
+   "B": "none for the cause; airbag lamp DTC only locates the connector fault"
+  },
+  "BR073": {
+   "A": "none (locates only: inflator rupture)",
+   "B": "none"
+  },
+  "BR074": {
+   "A": "none (locates only: belt slack in a crash)",
+   "B": "none"
+  },
+  "BR075": {
+   "A": "none (locates only: wheel-nut torque loss / wheel-end looseness)",
+   "B": "none"
+  },
+  "PE001": {
+   "A": "inverter phase/DC current versus broadcast current limit; battery current; contactor state; SOC (regen at high SOC)",
+   "B": "inverter current vs broadcast current limit through the overshoot; BMS over-current flag; isolation contactor state"
+  },
+  "PE002": {
+   "A": "inter-inverter CAN messages (missing frames, time-out); inverter fault state; traction contactor state",
+   "B": "inverter-to-inverter CAN frames and missing-frame count; inverter blocking fault; traction contactor state"
+  },
+  "PE003": {
+   "A": "OBC fault / shutdown-request code and OBC state at the shutdown",
+   "B": "OBC shutdown request and fault code at the powertrain shutdown; OBC software version"
+  },
+  "PE004": {
+   "A": "cell voltages and self-discharge / internal-short indicators while parked at high SOC, across days",
+   "B": "cell voltages and self-discharge while parked at full SOC (hours)"
+  },
+  "PE005": {
+   "A": "none (locates only: DC-DC output drop under high 12 V load)",
+   "B": "none for the cause; 12 V drop at DC-DC shutoff would only locate the event"
+  },
+  "PE007": {
+   "A": "BECM micro-processor reset event / reset cause and contactor-open state at the trip",
+   "B": "BECM reset event and reset reason; contactor-open state at the trip"
+  },
+  "PE008": {
+   "A": "contactor economizer-coil current PWM waveform; pack current; battery thermistor nearest the contactor (repeated thermal throttling); fuse state",
+   "B": "contactor economizer coil current PWM waveform; pack current; battery thermistor nearest the contactor rising over minutes of driving; thermal-throttle events"
+  },
+  "PE009": {
+   "A": "battery charge current versus BMS current-charge-limit (CCL) during regen; inverter regen torque; BMS over-current fault; contactor state",
+   "B": "pack current vs BMS charge current limit through repeated regen excursions; BMS over-current fault; main contactor state"
+  },
+  "PE010": {
+   "A": "inverter \"Trap10\" error code and state at the shutdown",
+   "B": "inverter Trap10 error code at the shutdown; firmware version"
+  },
+  "PE011": {
+   "A": "inter-inverter CAN messages (missing frames, time-out); inverter fault state; traction contactor state",
+   "B": "inverter-to-inverter CAN frames and missing-frame count; inverter blocking fault; traction contactor state"
+  },
+  "PE012": {
+   "A": "end-to-end communication-monitor error-memory entry and the safety-ECU message counters/CRC status at the trip",
+   "B": "inverter error memory entry for end-to-end communication fault at the shutdown; software version"
+  },
+  "PE013": {
+   "A": "ground-offset / electrical noise on the CAN bus and CAN error events at fail-safe entry; accelerator-pedal sequence (rapid cycling, sustained 100 %, abrupt release); motor torque",
+   "B": "ground potential and electrical noise on CAN at fail-safe entry; CAN error frames; accelerator pedal sequence and motor torque over the event"
+  },
+  "PE014": {
+   "A": "battery temperature crossing 0 C; charge-enable-relay (CER) disable/enable events; VCU charge-inhibit latch state",
+   "B": "battery temperature crossings of 0 C and charge-enable relay command and state over the preceding minute"
+  },
+  "PE015": {
+   "A": "pack / contactor current during DC fast charge and wide-open-pedal events; contactor temperature and resistance",
+   "B": "pack current through DC fast-charge sessions and wide-open-pedal events; contactor temperature; contactor resistance trend"
+  },
+  "PE016": {
+   "A": "none (locates only: HEV warning / relay heat)",
+   "B": "none; HEV warning light only locates the fault"
+  },
+  "PE017": {
+   "A": "none (locates only: EPCU fault / stall; coolant level drop)",
+   "B": "none for the cause; EV system warning and stall only locate the event"
+  },
+  "PE018": {
+   "A": "none (locates only: EPCU fault / fail-safe mode; coolant loss)",
+   "B": "none for the cause; fail-safe DTC only locates the event"
+  },
+  "PE019": {
+   "A": "BMS reset / self-diagnosis fault entry and pulse-inverter deactivation fault entry at the event",
+   "B": "BMS reset and inverter deactivation fault entries with software versions"
+  },
+  "PE020": {
+   "A": "HEV ECU output-limit value versus BMS output-limit demand; HV battery and cell voltage; accelerator pedal position; EV-mode flag; battery temperature",
+   "B": "HV battery output-limit demand vs HEV ECU output-limit value and actual output; cell voltages; accelerator pedal; through the rapid acceleration after cold EV-mode driving"
+  },
+  "PE021": {
+   "A": "unknown (inverter / BMS fault state at the loss of propulsion)",
+   "B": "none identifiable; no cause stated"
+  },
+  "PE022": {
+   "A": "contactor coil/closing current signature (single vs double dip) at each closing; rolling 100-closing window; ambient temperature",
+   "B": "contactor coil/closing current waveform at each startup (double-dip signature) over a rolling 100-closing window"
+  },
+  "PE023": {
+   "A": "unclear (BMS diagnostic fault states)",
+   "B": "BMS diagnostic-function status and fault memory; BMS software version; warning-lamp request"
+  },
+  "PE024": {
+   "A": "none (locates only: disconnect fails to fire at a crash or battery event)",
+   "B": "none; disconnect is latent until commanded"
+  },
+  "PE025": {
+   "A": "none (locates only: DC-DC internal-short DTC and heat)",
+   "B": "DC-DC internal short DTC only locates the failure; ESD damage to the chip is not sensed"
+  },
+  "PE026": {
+   "A": "none (locates only: momentary over-current trip in the inverter)",
+   "B": "inverter over-current trip record with the momentary rotor slip-ring current transient (milliseconds, high-rate) at the torque cut"
+  },
+  "PE027": {
+   "A": "pack / contactor current during wide-open-pedal and DC fast-charge events; contactor temperature and resistance history across sessions",
+   "B": "pack current across DC fast-charge and wide-open-pedal events; contactor temperature; contactor resistance trend over many cycles"
+  },
+  "PE028": {
+   "A": "AC input voltage and current at the on-board charger across charge sessions (resistance-induced voltage drop); plug/cable temperature if sensed",
+   "B": "OBC AC input voltage and current through each Level 1/2 session (voltage sag from rising plug resistance) over many sessions"
+  },
+  "PE029": {
+   "A": "none (locates only: arc detection / HV shutdown at the junction box)",
+   "B": "arc detection at the event would only locate it"
+  },
+  "PE030": {
+   "A": "none (locates only: arc detection / HV shutdown at the junction box)",
+   "B": "arc detection at the event would only locate it"
+  },
+  "PE031": {
+   "A": "key-cycle (ignition on/off) events across the day; control-unit sequential counter value; shutdown state",
+   "B": "key-cycle count and DC-box sequential counter value across a day of short trips; SoC gauge"
+  },
+  "PE032": {
+   "A": "none (locates only: arcing DTC / loss of HV at the junction box)",
+   "B": "arcing DTCs at the event only locate it"
+  },
+  "PE033": {
+   "A": "ICCU / LDC voltage peaks and over-current transients; power-stage temperature history across charge and drive cycles; 12 V battery voltage",
+   "B": "ICCU/LDC DC-link voltage transient peaks (end of charge); ICCU temperature cycling over many charge and drive cycles; LDC current"
+  },
+  "PE034": {
+   "A": "LDC/ICCU current and output voltage (over-current, end-of-charge overvoltage peak); power-stage and coolant temperature, water-pump state over charge or drive; ICCU fuse state",
+   "B": "LDC FET current and DC-link voltage transients (overcurrent; end-of-charge voltage peak); ICCU coolant and FET temperature over the preceding minutes"
+  },
+  "PE035": {
+   "A": "diagnostic-request traffic to the BMS on the vehicle bus; BMS reset / memory-overflow event; contactor state",
+   "B": "CAN diagnostic request traffic to the BMS; BMS reset event; contactor state"
+  },
+  "PE036": {
+   "A": "regen current and pack/cell voltage at high SOC; SOC; regen torque; BMS overcharge fault and contactor state",
+   "B": "SOC; pack voltage and regen current; BMS overcharge flag; contactor state over the downhill regen before shutdown"
+  },
+  "PE037": {
+   "A": "motor torque request and actual; wheel speeds (slip); vehicle speed; accel/decel sequence; drive-unit fault-monitor states; supply voltage",
+   "B": "wheel speeds; torque request and delivered torque; accelerator and brake; drive-unit fault monitor flags over the manoeuvre"
+  },
+  "PE038": {
+   "A": "regen current and cell voltage versus the safety limit at high SOC; SOC; BMS shutdown command",
+   "B": "SOC; cell voltages; regen current command over the braking event before shutdown"
+  },
+  "PE039": {
+   "A": "none (locates only: LIN6 communication loss and BMS limp mode)",
+   "B": "LIN6 communication-loss fault and BMS limp mode only locate the event"
+  },
+  "PE040": {
+   "A": "isolation-fault DTC and fault-severity class at the trip; HV shutdown state; gear state",
+   "B": "isolation fault and its software severity classification at the HV shutdown; gear state"
+  },
+  "PE041": {
+   "A": "none (locates only: CAN loss / bus-off at the event)",
+   "B": "CAN loss at the event only locates it"
+  },
+  "PE042": {
+   "A": "current-sensor (BJB) phase-current ripple waveform at high motor speed; motor speed; PEB torque-cut / fail-safe state",
+   "B": "battery junction box current sensor waveform (motor current ripple frequency) at high speed; inverter diagnostic flag; motor speed"
+  },
+  "PE043": {
+   "A": "isolation-fault DTC and fault-severity class at the trip; HV shutdown state; gear state",
+   "B": "isolation fault and its software severity classification at the HV shutdown; gear state"
+  },
+  "PE044": {
+   "A": "none (locates only: CAN loss / bus-off at the event)",
+   "B": "CAN loss at the event only locates it"
+  },
+  "PE045": {
+   "A": "HV pack current during repeated rapid-acceleration events across rides (fuse I2t history)",
+   "B": "pack current peaks of each rapid acceleration over many rides (cumulative fuse stress); fuse-open fault"
+  },
+  "PE046": {
+   "A": "battery SOC and cell-voltage fluctuation across a full discharge cycle; cell/pack temperature during quick charge",
+   "B": "SOC fluctuation and cell resistance across drive and charge cycles before the L3 charge; battery temperature during quick charge"
+  },
+  "PE047": {
+   "A": "MCPA (motor control processor) software version and fault state at the loss of propulsion",
+   "B": "inverter MCPA software part number at the event; loss-of-propulsion fault state"
+  },
+  "PE048": {
+   "A": "none (locates only: inverter fault / torque loss at the event)",
+   "B": "inverter fault at torque loss only locates the event"
+  },
+  "PE049": {
+   "A": "ICCU / LDC output and HV-side voltage transients; power-stage temperature history across charge and drive cycles; 12 V battery voltage",
+   "B": "ICCU/LDC voltage transient peaks; ICCU temperature cycling over many charge and drive cycles; LDC current"
+  },
+  "PE050": {
+   "A": "LDC (12 V converter) output voltage at charge-cycle start and end; MOSFET / power-stage temperature; coolant and fan state over the charge or drive; ICCU fuse state",
+   "B": "LDC output voltage overshoot at start and end of HV charging; MOSFET current; ICCU coolant and fan state over the preceding minutes"
+  },
+  "PE051": {
+   "A": "none (locates only: connector C6 damage / VCU malfunction)",
+   "B": "none logged for that connector circuit; VCU malfunction only locates the event"
+  },
+  "PE052": {
+   "A": "12 V rail voltage transients during the HLCM software upgrade; HLCM phase current and status (DTC)",
+   "B": "12 V bus voltage transients during the earlier software-update session; HLCM phase currents and phase-fault DTC at the event"
+  },
+  "PE053": {
+   "A": "SOC dwell at high state of charge across sessions; charging-current ripple from the charging infrastructure; cell voltages and temperatures",
+   "B": "none named; cell robustness at high SOC is a production property"
+  },
+  "PE054": {
+   "A": "none (locates only: OCDC fault / 12 V not charging)",
+   "B": "none for the cause; 12 V charging failure DTC only locates the event"
+  },
+  "PE055": {
+   "A": "software part number (snapshot); pack / contactor current during DC fast charge and wide-open-pedal events; contactor temperature and resistance",
+   "B": "installed SOBDMC and BECM software part numbers vs remedy release"
+  },
+  "PE056": {
+   "A": "none (locates only: HV shutdown / short at disconnect-switch terminals)",
+   "B": "none; HV shutdown record would only locate the event"
+  },
+  "PE057": {
+   "A": "none (locates only: HV shutdown / short at disconnect-switch terminals)",
+   "B": "none; HV shutdown record would only locate the event"
+  },
+  "PE058": {
+   "A": "none (locates only: arcing / loss of HV at the junction box)",
+   "B": "none; arcing and Stop Safely Now only locate the event"
+  },
+  "PE059": {
+   "A": "none (locates only: isolation / over-temperature DTC at the sub-junction box)",
+   "B": "none for the cause; isolation-resistance DTC at the event only locates it"
+  },
+  "PE060": {
+   "A": "pack / contactor current during wide-open-pedal and DC fast-charge events; contactor temperature and resistance history across sessions",
+   "B": "pack current across DC fast-charge and wide-open-pedal events; contactor temperature; contactor resistance trend over many cycles"
+  },
+  "PE061": {
+   "A": "isolation-monitor DTC (single vs double isolation) and isolation-resistance values at the warning; HV shutdown state",
+   "B": "HV isolation-resistance measurements and isolation-fault flags from warning onset to shutdown (15-20 s); drive-motor software version"
+  },
+  "PE062": {
+   "A": "none (locates only: string-open / fuse-blown warning, abnormal module voltage and temperature)",
+   "B": "module voltages and temperatures (high-resistance connection signature) as the J-bar weld separates over time; string-open warning code"
+  },
+  "PE063": {
+   "A": "none (locates only: string-open / fuse-blown warning, abnormal module voltage and temperature)",
+   "B": "module voltages and temperatures (high-resistance connection signature) as the J-bar weld separates over time; string-open warning code"
+  },
+  "PE064": {
+   "A": "battery SOC and cell-voltage fluctuation across a full discharge cycle (drive to 20 % SOC); cell/pack temperature during quick charge",
+   "B": "SOC fluctuation and cell resistance over a full discharge monitoring cycle; battery temperature in L3 charging"
+  },
+  "PE065": {
+   "A": "none (locates only: contactor open / cannot enter drive)",
+   "B": "none named in the documents; contactor-open fault only locates the event"
+  },
+  "PE066": {
+   "A": "TBM-to-HCP message exchange on the vehicle bus before the HCP reset; HCP reset event; software version",
+   "B": "CAN messages between telematics box and hybrid control processor before the HCP reset; TBM software version"
+  },
+  "PE067": {
+   "A": "none (locates only: overvoltage event and MPPU open at the trip)",
+   "B": "overvoltage trip would show at the event but not the loose busbar joint behind it"
+  },
+  "PE068": {
+   "A": "none (locates only: connection heating / stall)",
+   "B": "none; record would show the stall only"
+  },
+  "PE069": {
+   "A": "SOC dwell at high state of charge across sessions; charging-current ripple from the charging infrastructure; cell voltages and temperatures",
+   "B": "none named for the cell robustness cause; BMS software version would show only the missed update"
+  },
+  "PE070": {
+   "A": "cell-module voltage and self-discharge trend across parked periods and charge cycles; module temperature",
+   "B": "cell-module voltages and self-discharge across parked and drive periods (SDD signature weeks to months before)"
+  },
+  "PE071": {
+   "A": "CAN traffic at ECU initialization: DC-box ECU error frames, BMS message ID and timing; VCU SoC signal",
+   "B": "CAN traffic at BMS and DC-box initialization: error frames and ID conflict; SoC signal to VCU"
+  },
+  "PE072": {
+   "A": "accelerator-pedal torque request versus inverter applied torque on CAN; operator input sequence; brake state",
+   "B": "CAN log of accelerator torque request vs inverter applied torque and the operator input sequence"
+  },
+  "PE073": {
+   "A": "gate-driver signal interruptions / switching-module fault events; neighbouring-signal temperature deviation trend over the last ~100 miles; motor vibration",
+   "B": "intermittent gate-driver signal interruptions; neighbouring-signal temperature deviation in the inverter over at least 100 miles before failure"
+  },
+  "PE074": {
+   "A": "none (locates only: contactor open under load at -40 C)",
+   "B": "none; contactor-open fault at -40 C only locates the event"
+  },
+  "PE075": {
+   "A": "BECM SOH value versus pack age/odometer; displayed SOC versus cell voltages at the power limitation",
+   "B": "BECM SOH value vs pack age and service record of BECM replacement; displayed vs actual SOC"
+  },
+  "PE076": {
+   "A": "cell-module voltage and self-discharge trend across charge cycles and parked periods; module temperature during and after charging",
+   "B": "cell-module voltages and self-discharge across parked and charge periods"
+  }
+ },
+ "fetch": {
+  "A": {
+   "records": 364,
+   "not_ok": [],
+   "hash_mismatch": []
+  },
+  "B": {
+   "records": 364,
+   "not_ok": [],
+   "hash_mismatch": []
+  }
+ },
+ "docs_missing": {
+  "A": {},
+  "B": {}
+ },
+ "disagreements": [
+  {
+   "case": "BR001",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal measures propellant state; climate history would show exposure only)",
+   "signals_B": "none; propellant state not sensed"
+  },
+  {
+   "case": "BR005",
+   "differs": {
+    "evidence": [
+     "bench reproduction",
+     "teardown only"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal: joint strength)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR012",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal measures propellant state; cabin humidity/temperature history would show exposure only)",
+   "signals_B": "none; propellant state not sensed"
+  },
+  {
+   "case": "BR013",
+   "differs": {
+    "evidence": [
+     "not stated",
+     "teardown only"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal: seat-back engagement)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR021",
+   "differs": {
+    "evidence": [
+     "bench reproduction",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal: headrest design)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR030",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal: weld seams)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR031",
+   "differs": {
+    "evidence": [
+     "bench reproduction",
+     "teardown only"
+    ]
+   },
+   "signals_A": "none (locates only: wind noise / panel detachment)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR032",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: fairing detachment)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR035",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: front-end noise, suspension failure)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR036",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal: joint strength)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR038",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: handling / ride-height anomaly)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR043",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: pretensioner non-function in a crash)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR045",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: pretensioner non-function in a crash)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR050",
+   "differs": {
+    "evidence": [
+     "not stated",
+     "bench reproduction"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal: belt retraction geometry)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR052",
+   "differs": {
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "occupant-detection classification and seat-sensor reading at the event; airbag-suppression state",
+   "signals_B": "ODS occupant classification with seat occupied; ODS calibration ID vs seat trim; airbag-off lamp state"
+  },
+  {
+   "case": "BR057",
+   "differs": {
+    "cause_type": [
+     "manufacturing or component defect",
+     "unknown / mixed"
+    ],
+    "window": [
+     "not observable",
+     "cannot judge"
+    ],
+    "confidence": [
+     "medium",
+     "low"
+    ]
+   },
+   "signals_A": "none (locates only: buckle-switch state disagreeing with occupant)",
+   "signals_B": "none identifiable"
+  },
+  {
+   "case": "BR060",
+   "differs": {
+    "evidence": [
+     "not stated",
+     "fleet statistics"
+    ]
+   },
+   "signals_A": "none (locates only: seat back not latching)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR061",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: buckle rattle / restraint performance in a crash)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR064",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal on the trailer frame; crack found by inspection)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR070",
+   "differs": {
+    "flag_no_cause": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "none (no in-vehicle signal: guard strength)",
+   "signals_B": "none"
+  },
+  {
+   "case": "BR072",
+   "differs": {
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "none (locates only: airbag warning lamp / connector fault)",
+   "signals_B": "none for the cause; airbag lamp DTC only locates the connector fault"
+  },
+  {
+   "case": "BR073",
+   "differs": {
+    "flag_no_cause": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "none (locates only: inflator rupture)",
+   "signals_B": "none"
+  },
+  {
+   "case": "PE002",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "inter-inverter CAN messages (missing frames, time-out); inverter fault state; traction contactor state",
+   "signals_B": "inverter-to-inverter CAN frames and missing-frame count; inverter blocking fault; traction contactor state"
+  },
+  {
+   "case": "PE003",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "OBC fault / shutdown-request code and OBC state at the shutdown",
+   "signals_B": "OBC shutdown request and fault code at the powertrain shutdown; OBC software version"
+  },
+  {
+   "case": "PE004",
+   "differs": {
+    "cause_type": [
+     "manufacturing or component defect",
+     "unknown / mixed"
+    ],
+    "evidence": [
+     "not stated",
+     "teardown only"
+    ]
+   },
+   "signals_A": "cell voltages and self-discharge / internal-short indicators while parked at high SOC, across days",
+   "signals_B": "cell voltages and self-discharge while parked at full SOC (hours)"
+  },
+  {
+   "case": "PE007",
+   "differs": {
+    "evidence": [
+     "fleet statistics",
+     "not stated"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "BECM micro-processor reset event / reset cause and contactor-open state at the trip",
+   "signals_B": "BECM reset event and reset reason; contactor-open state at the trip"
+  },
+  {
+   "case": "PE008",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "contactor economizer-coil current PWM waveform; pack current; battery thermistor nearest the contactor (repeated thermal throttling); fuse state",
+   "signals_B": "contactor economizer coil current PWM waveform; pack current; battery thermistor nearest the contactor rising over minutes of driving; thermal-throttle events"
+  },
+  {
+   "case": "PE009",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ]
+   },
+   "signals_A": "battery charge current versus BMS current-charge-limit (CCL) during regen; inverter regen torque; BMS over-current fault; contactor state",
+   "signals_B": "pack current vs BMS charge current limit through repeated regen excursions; BMS over-current fault; main contactor state"
+  },
+  {
+   "case": "PE010",
+   "differs": {
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "inverter \"Trap10\" error code and state at the shutdown",
+   "signals_B": "inverter Trap10 error code at the shutdown; firmware version"
+  },
+  {
+   "case": "PE011",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "inter-inverter CAN messages (missing frames, time-out); inverter fault state; traction contactor state",
+   "signals_B": "inverter-to-inverter CAN frames and missing-frame count; inverter blocking fault; traction contactor state"
+  },
+  {
+   "case": "PE012",
+   "differs": {
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "end-to-end communication-monitor error-memory entry and the safety-ECU message counters/CRC status at the trip",
+   "signals_B": "inverter error memory entry for end-to-end communication fault at the shutdown; software version"
+  },
+  {
+   "case": "PE013",
+   "differs": {
+    "evidence": [
+     "waveform or high-rate capture",
+     "DTC freeze-frame"
+    ],
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "ground-offset / electrical noise on the CAN bus and CAN error events at fail-safe entry; accelerator-pedal sequence (rapid cycling, sustained 100 %, abrupt release); motor torque",
+   "signals_B": "ground potential and electrical noise on CAN at fail-safe entry; CAN error frames; accelerator pedal sequence and motor torque over the event"
+  },
+  {
+   "case": "PE014",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ],
+    "flag_out_of_scope": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "battery temperature crossing 0 C; charge-enable-relay (CER) disable/enable events; VCU charge-inhibit latch state",
+   "signals_B": "battery temperature crossings of 0 C and charge-enable relay command and state over the preceding minute"
+  },
+  {
+   "case": "PE015",
+   "differs": {
+    "window": [
+     "(80,700] s",
+     ">700 s"
+    ]
+   },
+   "signals_A": "pack / contactor current during DC fast charge and wide-open-pedal events; contactor temperature and resistance",
+   "signals_B": "pack current through DC fast-charge sessions and wide-open-pedal events; contactor temperature; contactor resistance trend"
+  },
+  {
+   "case": "PE016",
+   "differs": {
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "none (locates only: HEV warning / relay heat)",
+   "signals_B": "none; HEV warning light only locates the fault"
+  },
+  {
+   "case": "PE019",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "BMS reset / self-diagnosis fault entry and pulse-inverter deactivation fault entry at the event",
+   "signals_B": "BMS reset and inverter deactivation fault entries with software versions"
+  },
+  {
+   "case": "PE020",
+   "differs": {
+    "confidence": [
+     "medium",
+     "high"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ],
+    "flag_out_of_scope": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "HEV ECU output-limit value versus BMS output-limit demand; HV battery and cell voltage; accelerator pedal position; EV-mode flag; battery temperature",
+   "signals_B": "HV battery output-limit demand vs HEV ECU output-limit value and actual output; cell voltages; accelerator pedal; through the rapid acceleration after cold EV-mode driving"
+  },
+  {
+   "case": "PE021",
+   "differs": {
+    "confidence": [
+     "high",
+     "low"
+    ]
+   },
+   "signals_A": "unknown (inverter / BMS fault state at the loss of propulsion)",
+   "signals_B": "none identifiable; no cause stated"
+  },
+  {
+   "case": "PE023",
+   "differs": {
+    "evidence": [
+     "not stated",
+     "bench reproduction"
+    ],
+    "window": [
+     "cannot judge",
+     "<=1 s"
+    ],
+    "flag_no_cause": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "unclear (BMS diagnostic fault states)",
+   "signals_B": "BMS diagnostic-function status and fault memory; BMS software version; warning-lamp request"
+  },
+  {
+   "case": "PE024",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "bench reproduction"
+    ]
+   },
+   "signals_A": "none (locates only: disconnect fails to fire at a crash or battery event)",
+   "signals_B": "none; disconnect is latent until commanded"
+  },
+  {
+   "case": "PE025",
+   "differs": {
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "none (locates only: DC-DC internal-short DTC and heat)",
+   "signals_B": "DC-DC internal short DTC only locates the failure; ESD damage to the chip is not sensed"
+  },
+  {
+   "case": "PE026",
+   "differs": {
+    "cause_type": [
+     "manufacturing or component defect",
+     "transient electrical"
+    ],
+    "window": [
+     "not observable",
+     "<=1 s"
+    ],
+    "confidence": [
+     "low",
+     "medium"
+    ],
+    "flag_out_of_scope": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "none (locates only: momentary over-current trip in the inverter)",
+   "signals_B": "inverter over-current trip record with the momentary rotor slip-ring current transient (milliseconds, high-rate) at the torque cut"
+  },
+  {
+   "case": "PE030",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: arc detection / HV shutdown at the junction box)",
+   "signals_B": "arc detection at the event would only locate it"
+  },
+  {
+   "case": "PE031",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ],
+    "flag_out_of_scope": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "key-cycle (ignition on/off) events across the day; control-unit sequential counter value; shutdown state",
+   "signals_B": "key-cycle count and DC-box sequential counter value across a day of short trips; SoC gauge"
+  },
+  {
+   "case": "PE034",
+   "differs": {
+    "cause_type": [
+     "unknown / mixed",
+     "transient electrical"
+    ],
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "LDC/ICCU current and output voltage (over-current, end-of-charge overvoltage peak); power-stage and coolant temperature, water-pump state over charge or drive; ICCU fuse state",
+   "signals_B": "LDC FET current and DC-link voltage transients (overcurrent; end-of-charge voltage peak); ICCU coolant and FET temperature over the preceding minutes"
+  },
+  {
+   "case": "PE035",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "diagnostic-request traffic to the BMS on the vehicle bus; BMS reset / memory-overflow event; contactor state",
+   "signals_B": "CAN diagnostic request traffic to the BMS; BMS reset event; contactor state"
+  },
+  {
+   "case": "PE037",
+   "differs": {
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "motor torque request and actual; wheel speeds (slip); vehicle speed; accel/decel sequence; drive-unit fault-monitor states; supply voltage",
+   "signals_B": "wheel speeds; torque request and delivered torque; accelerator and brake; drive-unit fault monitor flags over the manoeuvre"
+  },
+  {
+   "case": "PE040",
+   "differs": {
+    "evidence": [
+     "DTC freeze-frame",
+     "bench reproduction"
+    ],
+    "flag_out_of_scope": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "isolation-fault DTC and fault-severity class at the trip; HV shutdown state; gear state",
+   "signals_B": "isolation fault and its software severity classification at the HV shutdown; gear state"
+  },
+  {
+   "case": "PE042",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ],
+    "flag_out_of_scope": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "current-sensor (BJB) phase-current ripple waveform at high motor speed; motor speed; PEB torque-cut / fail-safe state",
+   "signals_B": "battery junction box current sensor waveform (motor current ripple frequency) at high speed; inverter diagnostic flag; motor speed"
+  },
+  {
+   "case": "PE043",
+   "differs": {
+    "evidence": [
+     "DTC freeze-frame",
+     "bench reproduction"
+    ],
+    "flag_out_of_scope": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "isolation-fault DTC and fault-severity class at the trip; HV shutdown state; gear state",
+   "signals_B": "isolation fault and its software severity classification at the HV shutdown; gear state"
+  },
+  {
+   "case": "PE045",
+   "differs": {
+    "cause_type": [
+     "thermal",
+     "manufacturing or component defect"
+    ]
+   },
+   "signals_A": "HV pack current during repeated rapid-acceleration events across rides (fuse I2t history)",
+   "signals_B": "pack current peaks of each rapid acceleration over many rides (cumulative fuse stress); fuse-open fault"
+  },
+  {
+   "case": "PE047",
+   "differs": {
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "MCPA (motor control processor) software version and fault state at the loss of propulsion",
+   "signals_B": "inverter MCPA software part number at the event; loss-of-propulsion fault state"
+  },
+  {
+   "case": "PE050",
+   "differs": {
+    "cause_type": [
+     "unknown / mixed",
+     "transient electrical"
+    ],
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "LDC (12 V converter) output voltage at charge-cycle start and end; MOSFET / power-stage temperature; coolant and fan state over the charge or drive; ICCU fuse state",
+   "signals_B": "LDC output voltage overshoot at start and end of HV charging; MOSFET current; ICCU coolant and fan state over the preceding minutes"
+  },
+  {
+   "case": "PE051",
+   "differs": {
+    "evidence": [
+     "bench reproduction",
+     "teardown only"
+    ]
+   },
+   "signals_A": "none (locates only: connector C6 damage / VCU malfunction)",
+   "signals_B": "none logged for that connector circuit; VCU malfunction only locates the event"
+  },
+  {
+   "case": "PE052",
+   "differs": {
+    "evidence": [
+     "not stated",
+     "DTC freeze-frame"
+    ],
+    "window": [
+     "(1,40] s",
+     ">700 s"
+    ]
+   },
+   "signals_A": "12 V rail voltage transients during the HLCM software upgrade; HLCM phase current and status (DTC)",
+   "signals_B": "12 V bus voltage transients during the earlier software-update session; HLCM phase currents and phase-fault DTC at the event"
+  },
+  {
+   "case": "PE053",
+   "differs": {
+    "cause_type": [
+     "unknown / mixed",
+     "manufacturing or component defect"
+    ],
+    "window": [
+     ">700 s",
+     "not observable"
+    ],
+    "rate_class": [
+     ">=1 kHz",
+     "n/a"
+    ]
+   },
+   "signals_A": "SOC dwell at high state of charge across sessions; charging-current ripple from the charging infrastructure; cell voltages and temperatures",
+   "signals_B": "none named; cell robustness at high SOC is a production property"
+  },
+  {
+   "case": "PE054",
+   "differs": {
+    "evidence": [
+     "fleet statistics",
+     "bench reproduction"
+    ],
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "none (locates only: OCDC fault / 12 V not charging)",
+   "signals_B": "none for the cause; 12 V charging failure DTC only locates the event"
+  },
+  {
+   "case": "PE055",
+   "differs": {
+    "cause_type": [
+     "thermal",
+     "software or calibration"
+    ],
+    "window": [
+     "(80,700] s",
+     "<=1 s"
+    ],
+    "rate_class": [
+     "10 Hz-1 kHz",
+     "n/a"
+    ],
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "software part number (snapshot); pack / contactor current during DC fast charge and wide-open-pedal events; contactor temperature and resistance",
+   "signals_B": "installed SOBDMC and BECM software part numbers vs remedy release"
+  },
+  {
+   "case": "PE058",
+   "differs": {
+    "evidence": [
+     "teardown only",
+     "not stated"
+    ]
+   },
+   "signals_A": "none (locates only: arcing / loss of HV at the junction box)",
+   "signals_B": "none; arcing and Stop Safely Now only locate the event"
+  },
+  {
+   "case": "PE059",
+   "differs": {
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "none (locates only: isolation / over-temperature DTC at the sub-junction box)",
+   "signals_B": "none for the cause; isolation-resistance DTC at the event only locates it"
+  },
+  {
+   "case": "PE061",
+   "differs": {
+    "window": [
+     "<=1 s",
+     "(1,40] s"
+    ],
+    "rate_class": [
+     "n/a",
+     "<=10 Hz"
+    ]
+   },
+   "signals_A": "isolation-monitor DTC (single vs double isolation) and isolation-resistance values at the warning; HV shutdown state",
+   "signals_B": "HV isolation-resistance measurements and isolation-fault flags from warning onset to shutdown (15-20 s); drive-motor software version"
+  },
+  {
+   "case": "PE062",
+   "differs": {
+    "window": [
+     "not observable",
+     ">700 s"
+    ],
+    "rate_class": [
+     "n/a",
+     "<=10 Hz"
+    ]
+   },
+   "signals_A": "none (locates only: string-open / fuse-blown warning, abnormal module voltage and temperature)",
+   "signals_B": "module voltages and temperatures (high-resistance connection signature) as the J-bar weld separates over time; string-open warning code"
+  },
+  {
+   "case": "PE063",
+   "differs": {
+    "window": [
+     "not observable",
+     ">700 s"
+    ],
+    "rate_class": [
+     "n/a",
+     "<=10 Hz"
+    ]
+   },
+   "signals_A": "none (locates only: string-open / fuse-blown warning, abnormal module voltage and temperature)",
+   "signals_B": "module voltages and temperatures (high-resistance connection signature) as the J-bar weld separates over time; string-open warning code"
+  },
+  {
+   "case": "PE066",
+   "differs": {
+    "evidence": [
+     "not stated",
+     "fleet statistics"
+    ],
+    "confidence": [
+     "low",
+     "medium"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "TBM-to-HCP message exchange on the vehicle bus before the HCP reset; HCP reset event; software version",
+   "signals_B": "CAN messages between telematics box and hybrid control processor before the HCP reset; TBM software version"
+  },
+  {
+   "case": "PE067",
+   "differs": {
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "none (locates only: overvoltage event and MPPU open at the trip)",
+   "signals_B": "overvoltage trip would show at the event but not the loose busbar joint behind it"
+  },
+  {
+   "case": "PE068",
+   "differs": {
+    "confidence": [
+     "high",
+     "medium"
+    ]
+   },
+   "signals_A": "none (locates only: connection heating / stall)",
+   "signals_B": "none; record would show the stall only"
+  },
+  {
+   "case": "PE069",
+   "differs": {
+    "cause_type": [
+     "unknown / mixed",
+     "manufacturing or component defect"
+    ],
+    "window": [
+     ">700 s",
+     "not observable"
+    ],
+    "rate_class": [
+     ">=1 kHz",
+     "n/a"
+    ]
+   },
+   "signals_A": "SOC dwell at high state of charge across sessions; charging-current ripple from the charging infrastructure; cell voltages and temperatures",
+   "signals_B": "none named for the cell robustness cause; BMS software version would show only the missed update"
+  },
+  {
+   "case": "PE070",
+   "differs": {
+    "cause_type": [
+     "manufacturing or component defect",
+     "unknown / mixed"
+    ],
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "cell-module voltage and self-discharge trend across parked periods and charge cycles; module temperature",
+   "signals_B": "cell-module voltages and self-discharge across parked and drive periods (SDD signature weeks to months before)"
+  },
+  {
+   "case": "PE071",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "CAN traffic at ECU initialization: DC-box ECU error frames, BMS message ID and timing; VCU SoC signal",
+   "signals_B": "CAN traffic at BMS and DC-box initialization: error frames and ID conflict; SoC signal to VCU"
+  },
+  {
+   "case": "PE072",
+   "differs": {
+    "evidence": [
+     "waveform or high-rate capture",
+     "DTC freeze-frame"
+    ],
+    "confidence": [
+     "medium",
+     "high"
+    ],
+    "flag_software_only": [
+     "yes",
+     ""
+    ]
+   },
+   "signals_A": "accelerator-pedal torque request versus inverter applied torque on CAN; operator input sequence; brake state",
+   "signals_B": "CAN log of accelerator torque request vs inverter applied torque and the operator input sequence"
+  },
+  {
+   "case": "PE075",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "BECM SOH value versus pack age/odometer; displayed SOC versus cell voltages at the power limitation",
+   "signals_B": "BECM SOH value vs pack age and service record of BECM replacement; displayed vs actual SOC"
+  },
+  {
+   "case": "PE076",
+   "differs": {
+    "confidence": [
+     "low",
+     "medium"
+    ]
+   },
+   "signals_A": "cell-module voltage and self-discharge trend across charge cycles and parked periods; module temperature during and after charging",
+   "signals_B": "cell-module voltages and self-discharge across parked and charge periods"
+  }
+ ]
+}

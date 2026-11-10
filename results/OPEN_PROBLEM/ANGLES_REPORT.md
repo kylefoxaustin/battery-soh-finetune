@@ -227,6 +227,21 @@ UDS snapshot plus statistics). Design in §C.3.
 > recurring need; it is supported as an event-triggered capture in the costliest single campaign. FR1-R (six-state
 > scheme, same documents) is defined and would gate.
 
+> **Update 2026-11-10 (FR1-R, `results/FR1R/results_FR1R.md`).** Same 150 cases, a six-state window with
+> `not observable`, a closed data-rate list, the union of both FR1 raters' documents, and two fresh blind
+> language-model raters. **Gated: κ = 0.90** (PE only 0.85; reproducibility, not independence). **Retention UNCLEAR,
+> shape MIXED.** Of 35 field-observable in-scope PE causes:
+> - **31 % [19, 48] need > 80 s**, below the 50 % NECESSITY bar;
+> - **17 % [8, 33] are ring-buffer shaped** (seconds to minutes at ≥ 1 kHz), below the 25 % bar, concentrated in the
+>   charging path (E-GMP ICCU end-of-charge overshoot) plus a few contactor-coil, current-sensor and 12 V transient
+>   cases;
+> - 31 % need only the trip snapshot.
+>
+> The long windows are mostly per-event signatures repeated over many cycles: the flash/cloud leg, with a triggered
+> high-rate capture per event in four cases. A third of in-scope causes (17 of 53) are not observable at any window.
+> **Read:** the B1 ring buffer is the right tool for about one root cause in six in the public record, not a
+> necessity; FR1's exploratory reading now stands on a gated rating.
+
 **Note, 2026-10-30: B1 measured the application-processor half of this table** ([`results/B1/results_B1.md`](../B1/results_B1.md)).
 
 - **Ring buffer (MEASURED, FRDM-IMX95-PRO).** The ring sustained 3.2, 32 and 60 MB/s with 0 drops. Measured depth

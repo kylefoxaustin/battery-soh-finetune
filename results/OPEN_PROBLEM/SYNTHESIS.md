@@ -33,6 +33,12 @@ measured or explicitly documentary, and the counter-evidence is on the table.
 | **FR1** | How long a pre-event window do public HV power-electronics root causes need? | **UNGATED** (κ 0.19; scheme lacked a "not observable" state). Exploratory: of causes field data could show, ½ need > 80 s, ¾ > 1 s, but the windows are mostly 1–10 Hz over sessions/cycles/days; ≥ kHz in 4–6 of 36 | Partly (NHTSA public domain; UNGATED, so direction only) | DRAM retention: supported as event-triggered capture (ICCU class), not as a recurring need |
 | **X8** | Does per-cell R admit more low-SOC discharge current than min/max at equal safety? | **NOT INTERPRETABLE** ×3 (min/max cannot be made safe at κ 2.00). Readings: per-cell < shuffled < min/max at every κ; the per-cell edge over shuffled is ≈ 1 pp and 40 % quantisation; bottom reserve not demand-limited (96–97 % of sessions never bind) | Changan **no** (NC-SA); Beihang DTI/QAS **yes** (CC BY), both NOT INTERPRETABLE | C2-as-power-reserve not supported in these fleets; the gain is R *spread*, which an MCU can carry as a max-R table |
 
+> **Update 2026-11-10 — FR1-R** ([`../FR1R/results_FR1R.md`](../FR1R/results_FR1R.md)). FR1 re-rated with a
+> `not observable` state: **gated (κ 0.90), retention UNCLEAR, shape MIXED.** P80 31 % [19, 48] and ring-buffer-shaped
+> 17 % [8, 33] of 35 field-observable in-scope causes; 17 of 53 in-scope causes not observable at any window. The FR1
+> row's reading (DRAM retention as an event-triggered capture in the charging path, not a recurring need) now stands
+> gated. NHTSA public domain; DERIVED-judgemental, two language-model raters.
+
 Earlier, from the programme proper: **X2-F** (per-cell R is stable and removes margin at the top of charge: κ 1.10 vs
 1.35–1.45, min/max's margin does not transfer) and **X5/X6** (per-vehicle history does not beat a frozen fleet model on
 usable energy; knees set the reserve) stand unchanged.
