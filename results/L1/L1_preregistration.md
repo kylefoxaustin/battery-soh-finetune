@@ -376,3 +376,107 @@ moves:
 - the matching rule;
 - the gates;
 - the decision table.
+
+---
+
+## 9. Reviewer approval and deviations L-1 … L-5 (2026-11-10, stage 1 → stage 2; before any change history is read)
+
+Stage 1 (`af2d5cb`) is **approved**. The reviewer checked: the seed list is the brief's own; the 12 additions each
+carry a citing clause and the three test outcomes; the instrument table carries no edition year, amendment date or
+change description (the only years in it are act identifiers and repealed-regulation numbers inside EU titles, and the
+1958/1998 Agreements); `L1_screen.json` holds no amendment dates (the only ISO dates in it are the eCFR versioner
+fetch date); the two rating orders reproduce from `default_rng(21)` / `default_rng(22)` over the 63 sorted IDs
+(longest same-domain run 8 and 5); the screener's blind-reading breaches D5 (a)–(e) are disclosed and the screener is
+not a rater. The three choices flagged in the status line are decided below. **These deviations bind both raters;
+they are part of this file, which is in the raters' sparse clones.**
+
+### L-1. Vehicle-level instruments: V2 is the primary for N_S and R (was: domain B only)
+
+UN R155, UN R156, GB 44495 and GB 44496 bind every ECU that is updatable or connected, which includes the seat and
+occupancy ECUs. They are real obligations of the domain-B ECU, so their events stay in domain B and **N_B, MC and H are
+unchanged**. For the comparison they are the common floor, not what is specific to B, and counting them on one side
+only would manufacture R. So:
+
+- **Primary:** each matched event of a vehicle-level instrument is counted once in N_B **and** once in N_S.
+  R = N_B / N_S with that N_S. The decision table is applied to these numbers.
+- **V1 (sensitivity):** the brief's listing, vehicle-level events in domain B only (the former primary).
+- **V0 (sensitivity):** vehicle-level events in neither domain.
+- The raters write one row per vehicle-level event, `domain = B`, classified for the domain-B ECU. The domain-S class
+  fractions (non-deciding) are reported twice: without the vehicle-level events, and with them carrying the B class
+  over (not re-rated).
+
+This moves R toward 1 and therefore works against VOLATILE. It is decided before any change history is read.
+
+### L-2. ACCESS-LIMITED is a qualifier with bound logic, not a terminal verdict (was: "R is not read")
+
+A domain is **access-limited** when both raters record `history_access = none` for ≥ 1/3 of its seed instruments
+(B: ≥ 12 of 35; S: ≥ 6 of 16). More events can only raise a limited domain's N, so N of that domain is a **lower
+bound**, and the decision table is read as follows:
+
+| Limited | What can be established | What cannot (reads **UNCLEAR (ACCESS-LIMITED)**) |
+|---|---|---|
+| **B only** | N_B ≥ 11; R ≥ 3 (R is then a lower bound, R_lb = N_B,lb / N_S) — so **VOLATILE DOMAIN** is reachable | N_B ≤ 5 (STABLE by count); the kill R < 1.5 |
+| **S only** | N_B conditions; R < 1.5 and STABLE (R is an upper bound) | R ≥ 3, so VOLATILE is not reachable |
+| **both** | N_B ≥ 11; MC and H | R in either direction |
+
+- A verdict reached while a domain is limited carries the qualifier in its name, e.g. `VOLATILE DOMAIN
+  (ACCESS-LIMITED, B: 14 of 35 seeds unread)`.
+- MC and H are computed on the recorded events. They are not bounds in either direction. The verdict line states
+  their basis: "MC on N events from k of 35 seed instruments; unread: <list>". The write-up names the unread
+  instruments and gives no number for them.
+- The ACC sensitivity (§5) stays as pre-registered.
+- The gates (§5) are computed over the events both raters could reach; an instrument with `none` from both raters
+  contributes no events and does not enter identification agreement.
+
+### L-3. Access states, and events under partial access
+
+`history_access` per instrument and rater:
+
+| State | Meaning |
+|---|---|
+| `full` | the body's own change history (editions / amendments with dates) was read, **and** the text or the body's own summary of each change |
+| `partial` | edition or amendment identifiers and dates were read from the body's own catalogue, metadata or notice pages, but not what changed |
+| `none` | no body-published history reachable by an allowed route (§3b rule 2) |
+
+**Events under `partial` access.** A new edition or amendment found under `partial` access is an event **only when the
+body's own catalogue entry (title, abstract or amendment title) shows that its subject is (a), (b) or (c)** of §2 —
+data, telemetry, communication protocol, cybersecurity, software update, monitoring. Then `class = cannot judge` unless
+the abstract allows more, and `confidence = low`. A new edition of an instrument whose title names only hardware,
+mechanical or crash safety, with no readable content, is logged in `rater_<A|B>_notes.md` as `unreadable edition` and
+**not** counted. The same rule applies in both domains.
+
+**Search-engine listings** of a publisher's page may be recorded in `sources_tried` and may locate an edition; they
+never source an event (the status of trade press, brief rule 4).
+
+### L-4. Act identifiers and matching
+
+So that the identification gate measures the ledgers and not the raters' naming, `act_id` is written in one of these
+forms:
+
+| Source | `act_id` form | `adoption_date` |
+|---|---|---|
+| EU act | CELEX number, e.g. `32025R1707` | the adoption date printed on the act |
+| UN regulation | `R100-03` (series of amendments); `R100-02-S5` (Supplement 5 to the 02 series) | the WP.29 adoption date; if only the OJ or EIF date is found, that date, with `note = EIF date` |
+| UN GTR | `GTR22-A1` (Amendment 1); `GTR22` (establishment) | the AC.3 / WP.29 adoption date |
+| FMVSS | the Federal Register citation of the final rule, `89 FR 100660` | the Federal Register publication date |
+| Standard | identifier with its edition date, `ISO 15118-20:2022`, `SAE J3400_202412`, `GB/T 32960.3-2025` | the publication date |
+
+Matching (§5) proceeds in two passes within each `instrument_id`: **(1)** identical `act_id` after normalisation
+(case, whitespace and punctuation removed); **(2)** the pre-registered ± 90-day rule on `adoption_date` for the events
+still unmatched. Pass 1 is added because WP.29 adoption and entry into force are typically six to eight months apart,
+and two raters recording different dates of the same act must still match.
+
+### L-5. Seed list primary: confirmed; what the verdict line carries
+
+The seed list (51 instruments) is the primary, as §3b proposes: the S3 additions depend on which texts were readable,
+and that readability is concentrated in domain S. The verdict line reports the primary verdict and, when they differ,
+the verdicts under **FULL** (63 instruments) and **V1**, each in one clause. The kill is evaluated under the primary;
+if it fires under V1 or FULL only, that is stated beside it.
+
+### Stage 2 order (binding)
+
+1. `analysis/L1_agreement.py` is written and committed on `main` **before** either rater branch is fetched; it
+   implements §5 with L-1, L-2 and L-4.
+2. The rater launch prompt is committed as `results/L1/L1_rater_prompt.md` on `main` **before** rater A is launched.
+3. Rater A (`l1-rater-a`), then rater B (`l1-rater-b`), as §4.
+4. The rest as §7.

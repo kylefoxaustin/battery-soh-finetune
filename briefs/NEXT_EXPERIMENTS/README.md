@@ -101,6 +101,16 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > Tier-A-specific leg never tested — now has a full brief at [`briefs/L1/README.md`](../L1/README.md). Order: L1 → DC2
 > → O1 → R1.**
 
+> **Status 2026-11-10 (later still). L1 stage 1 APPROVED at `af2d5cb`** — 63 instruments fixed blind (51 seed + 12
+> one-level normative-reference additions; the additions are asymmetric by text access, so the seed list is primary and
+> FULL is a sensitivity). Reviewer deviations L-1 … L-5 in
+> [`results/L1/L1_preregistration.md` §9](../../results/L1/L1_preregistration.md): the four vehicle-level instruments
+> (R155, R156, GB 44495, GB 44496) count in both domains for R; ACCESS-LIMITED is a bound qualifier (B limited → VOLATILE
+> reachable, STABLE and the kill not; S limited → the reverse); `partial` access counts an edition only when the body's
+> catalogue shows a data / protocol / cyber / update subject; `act_id`-first matching. **Expect domain B to be
+> access-limited** (ISO, SAE and most GB texts are unreachable without bypassing): the result will be a lower bound on
+> N_B. Stage 2 (two blind raters) is running.
+
 ---
 
 ## 1. How the reviewer starts one

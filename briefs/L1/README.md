@@ -4,19 +4,27 @@
 item 5 — the one Tier-A-specific leg still standing after X7, B1, DC1, FR1, FR1-R and X8, and the only one that has
 never been tested. Documentary; no compute; needs web access.
 
-> ## ▶ START HERE (first stage: pre-registration and the search protocol only, then STOP)
+> ## ▶ START HERE — stage 1 APPROVED (reviewer, 2026-11-10, `af2d5cb`); stage 2 is the rating
 >
-> 1. `git pull` on `main`.
-> 2. Read this brief, ANGLES §B.1 and §C.1, and `results/FR1R/FR1R_preregistration.md` §4 (the two-rater, two-branch
->    procedure to reuse, including fresh-context sub-agents in sparse clones).
-> 3. **Stage 1.** Write `results/L1/L1_preregistration.md`: the event definition, the classification lists, the two
->    domains and their instrument lists (§2), the search protocol (§3), the readouts and the decision table (§4) with
->    every threshold filled in; and `results/L1/L1_instruments.md`, the **fixed list of instruments to be read**, built
->    by the §3 protocol **before any instrument's change history is read**. Commit with "before reading" in the
->    message; set the Status line in `NEXT_TASK.md` to `AWAITING APPROVAL <hash>`; push; stop.
+> **Approved with deviations L-1 … L-5**, written into
+> [`results/L1/L1_preregistration.md` §9](../../results/L1/L1_preregistration.md) before any change history is read:
 >
-> The reviewer approves by editing this box. Then two blind raters build the ledger from the instrument list, each on
-> its own branch; the analysis runs after both exist.
+> - **L-1** the four vehicle-level instruments (R155, R156, GB 44495, GB 44496) count in **both** domains for N_S and
+>   R (V2 is primary; the brief's B-only listing is sensitivity V1). Works against VOLATILE; decided blind.
+> - **L-2** ACCESS-LIMITED is a qualifier with bound logic: a limited domain's N is a lower bound, so with B limited
+>   VOLATILE stays reachable and STABLE / the R < 1.5 kill do not fire; with S limited the reverse.
+> - **L-3** `full` / `partial` / `none` defined; under `partial` access an edition is an event only when the body's own
+>   catalogue entry shows its subject is data, protocol, cybersecurity, software update or monitoring (then
+>   `cannot judge`, low confidence); search listings locate, never source.
+> - **L-4** canonical `act_id` forms (CELEX; `R100-03`, `R100-02-S5`; `GTR22-A1`; `89 FR 100660`; `ISO 15118-20:2022`)
+>   and matching by `act_id` first, then the ± 90-day rule.
+> - **L-5** seed list primary confirmed; the verdict line carries FULL and V1 when they differ.
+>
+> **Stage 2, in this order:** (1) write and commit `analysis/L1_agreement.py` on `main` **before** any rater branch
+> is fetched; (2) commit the rater launch prompt `results/L1/L1_rater_prompt.md` on `main`; (3) rater A on
+> `l1-rater-a`, push; (4) rater B on `l1-rater-b`, never fetching A; (5) merge both branches, run the script, write
+> `results/L1/results_L1.md` (verdict first), `l1.json`, index rows, dated notes under ANGLES §B.1 and SYNTHESIS §2;
+> (6) `NEXT_TASK.md` Status → `AWAITING APPROVAL <hash>`. Details in `NEXT_TASK.md`.
 
 ---
 
