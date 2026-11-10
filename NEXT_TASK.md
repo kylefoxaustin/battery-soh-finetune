@@ -30,4 +30,4 @@ re-derived from the JSON by the reviewer). Where the programme stands after X7, 
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN
+**Status:** AWAITING APPROVAL 2541d02 (FR1-R pre-registration; both raters proposed as fresh sub-agents in sparse clones, §4)
