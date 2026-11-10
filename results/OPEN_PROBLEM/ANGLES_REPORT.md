@@ -8,6 +8,9 @@ audit and the convsim / lifecost code. **Licence:** public domain (CC0).
 (minutes, no data download); code and output are in [`exploratory/`](exploratory/). No pre-registered experiment was
 started. Where a SOURCED figure comes from a web page rather than a paper or regulation, the source is named inline.
 
+> **2026-11-10.** The experiments that followed this report (X7, B1, DC1, FR1, X8) and where the question now
+> stands are synthesised in [`SYNTHESIS.md`](SYNTHESIS.md). Dated notes under §B.2, §B.3 and §B.5 point to each result.
+
 **Scope note.** The brief's Tier A is "A-core + LPDDR + the same real-time engine". The programme owner's framing of the
 customer's words is "NPU/MPU instead of MCU for the 1 µs loop". Nothing in the customer's claims C1–C6 puts the 1 µs
 interrupt *on* an NPU, and neither tier does; §A.8 and §D treat "NPU" as a word that needs disambiguating, not as a

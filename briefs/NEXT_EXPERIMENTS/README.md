@@ -80,6 +80,16 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > cases from the already-fetched documents with a six-state item 3 and a rate class) is defined in results §7, not
 > scheduled; it would gate at one session-day per rater. **Order now: X8 → O1 → R1; FR1-R and DC2 are documentary seeds.**
 
+> **Status 2026-11-10. X8 is DONE — NOT INTERPRETABLE on all three arms** ([`results/X/X8/results_X8.md`](../../results/X/X8/results_X8.md));
+> reviewer re-derived every headline from the JSON. Min/max cannot be calibrated to the 0.05 % bar at κ 2.00, so S is
+> not read; the margin ordering per-cell < shuffled < min/max holds at every κ on every arm; the per-cell edge over a
+> *shuffled* per-cell limiter is ≈ 1 pp with 40 % of it at the 1 mV quantisation; the bottom reserve is not
+> demand-limited (estimated headroom exceeds p95 demand in 96–97 % of sessions). One fragile sensitivity (V_cut − 50 mV)
+> reads positive. **Where the programme stands after five experiments is written up in
+> [`results/OPEN_PROBLEM/SYNTHESIS.md`](../../results/OPEN_PROBLEM/SYNTHESIS.md).** The code experiments have reached
+> the ceiling of public data on every battery mechanism; the Tier-A-specific legs left are documentary. **Order now:
+> FR1-R (full brief, [`briefs/FR1R/README.md`](../FR1R/README.md)) → L1 (requirement ledger) → DC2 (spec audit) → O1 → R1.**
+
 ---
 
 ## 1. How the reviewer starts one

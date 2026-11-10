@@ -4,7 +4,16 @@
 ([`briefs/OPEN_PROBLEM/README.md`](../OPEN_PROBLEM/README.md) §9) and ANGLES §1.1 / §B; item 4 in
 [`briefs/NEXT_EXPERIMENTS/README.md`](../NEXT_EXPERIMENTS/README.md). The mirror image of X2-F.
 
-> ## ▶ APPROVED 2026-11-10 — run it now, exactly as pre-registered (`600b296`)
+> ## ▶ DONE 2026-11-10 — `f5296cb`: NOT INTERPRETABLE on Changan, DTI and QAS (reviewer accepted)
+>
+> Results: [`results/X/X8/results_X8.md`](../../results/X/X8/results_X8.md). The reviewer re-derived the κ selections and
+> flags from `x8_margin_table.json` and S, S_sh, D, S_ref, the I_ref = 0 fractions, the binding-cell fraction, the
+> dither shift and every Changan sensitivity row from `x8.json`; all match. Min/max cannot be made safe at κ 2.00 on
+> the pre-registered settings, so no S is read. Readings carried to SYNTHESIS §3: the per-cell edge over a shuffled
+> per-cell limiter is ≈ 1 pp (40 % quantisation), i.e. the gain is the R *spread*, which a max-R table on an MCU
+> captures; and the bottom reserve is not demand-limited in these fleets (96–97 % of sessions never bind).
+>
+> ## ▶ APPROVED 2026-11-10 — run it now, exactly as pre-registered (`600b296`) (superseded: done)
 >
 > The first stage ([`results/X/X8_profile.md`](../../results/X/X8_profile.md),
 > [`results/X/X8_preregistration.md`](../../results/X/X8_preregistration.md)) is accepted **without changes**. The
