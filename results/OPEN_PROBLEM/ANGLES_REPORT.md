@@ -90,6 +90,15 @@ training) rather than Tier M with SDRAM/HyperRAM and factory calibration. Each e
 Mechanisms that are valuable but **tier-neutral** are listed separately in §B.7, because the brief's question is about
 the tier, and pretending otherwise would repeat mistake 11.
 
+> **Update 2026-11-10 (X8, `results/X/X8/results_X8.md`).** C2's "20 % reserve" read as a **bottom (low-SOC)
+> power reserve** was tested as the mirror image of X2-F: per-cell R vs min/max admissible discharge current at SOC < 20 %,
+> each with its own margin against an independent per-cell reference. **NOT INTERPRETABLE** on Changan and on both
+> Beihang arms: min/max cannot be made safe by κ 2.00, and every limiter needs a far larger margin at the bottom
+> (per-cell κ 1.80–1.95) than at the top (1.10). The margin ordering per-cell < shuffled < min/max repeats, but the
+> shuffle is almost as good, so what helps is knowing the **spread** of cell R, not which cell has it. The admissible
+> currents are headroom (median 2.6 C) far above the fleet's demand (p95 0.65 C): the bottom reserve in this fleet is
+> not a power limit that drivers reach. Changan CC BY-NC-SA, research only; Beihang CC BY.
+
 ### B.1 Requirement volatility: the fair form of the isolation argument, and it is priceable
 
 **Mechanism.** The battery/charging/power-conversion box receives new software-visible requirements *after* SOP at a

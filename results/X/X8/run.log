@@ -1,0 +1,156 @@
+changan base NOT INTERPRETABLE S -0.0836 S_sh -0.0845 D 0.0113
+changan vcut-50 PER-CELL HELPS AT THE BOTTOM S 0.0360 S_sh 0.0340 D 0.0117
+changan vcut+50 NOT INTERPRETABLE S -0.1224 S_sh -0.0947 D -0.0154
+changan horizon20s NOT INTERPRETABLE S -0.1420 S_sh -0.1198 D -0.0120
+changan R_held NOT INTERPRETABLE S -0.1471 S_sh -0.1424 D 0.0013
+changan dither NOT INTERPRETABLE S -0.0879 S_sh -0.0844 D 0.0069
+DTI base NOT INTERPRETABLE S -0.0927 S_sh -0.0827 D -0.0054
+DTI vcut-50 NOT INTERPRETABLE S -0.0942 S_sh -0.0844 D -0.0048
+DTI vcut+50 NOT INTERPRETABLE S -0.0913 S_sh -0.0805 D -0.0059
+DTI R_held NOT INTERPRETABLE S -0.1383 S_sh -0.1235 D -0.0038
+DTI dither NOT INTERPRETABLE S -0.0956 S_sh -0.0846 D -0.0047
+QAS base NOT INTERPRETABLE S 0.0040 S_sh 0.0399 D -0.0284
+QAS vcut-50 NO BENEFIT S 0.0157 S_sh 0.0457 D -0.0218
+QAS vcut+50 NOT INTERPRETABLE S -0.0515 S_sh -0.0129 D -0.0320
+QAS R_held NO BENEFIT S 0.0081 S_sh 0.0299 D -0.0174
+QAS dither NOT INTERPRETABLE S 0.0026 S_sh 0.0408 D -0.0318
+{
+ "changan": {
+  "base": {
+   "S": -0.08355867220885807,
+   "S_sh": -0.08446471711364154,
+   "D": 0.01131611501358376,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "bar0.1%": {
+   "S": 0.013560921049090457,
+   "S_sh": 0.017432091487780466,
+   "D": 0.007818060493747864,
+   "verdict_same_rules": "NO BENEFIT"
+  },
+  "bar0.5%": {
+   "S": 0.08751974485959096,
+   "S_sh": 0.08595345533702997,
+   "D": 0.013940348880393527,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "vcut-50": {
+   "S": 0.03595237933484474,
+   "S_sh": 0.03397609172901661,
+   "D": 0.01168197434536275,
+   "verdict_same_rules": "PER-CELL HELPS AT THE BOTTOM"
+  },
+  "vcut+50": {
+   "S": -0.12241866068164906,
+   "S_sh": -0.09474708038630716,
+   "D": -0.01544665010722776,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "horizon20s": {
+   "S": -0.14198934501948363,
+   "S_sh": -0.11983709705504395,
+   "D": -0.011958430926925473,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "R_held": {
+   "S": -0.14710591510691848,
+   "S_sh": -0.14239133858835262,
+   "D": 0.0012669372223413355,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "dither": {
+   "S": -0.08793806856099404,
+   "S_sh": -0.08435795962768078,
+   "D": 0.006857842218590066,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  }
+ },
+ "DTI": {
+  "base": {
+   "S": -0.09272047583687015,
+   "S_sh": -0.0827267168446029,
+   "D": -0.005391585690202261,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "bar0.1%": {
+   "S": -0.09272047583687015,
+   "S_sh": -0.0827267168446029,
+   "D": -0.005391585690202261,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "bar0.5%": {
+   "S": -0.07628750162832398,
+   "S_sh": -0.0827267168446029,
+   "D": 0.011036807903029022,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "vcut-50": {
+   "S": -0.09415862791921781,
+   "S_sh": -0.08438124516960072,
+   "D": -0.004830456224925339,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "vcut+50": {
+   "S": -0.0913069806894646,
+   "S_sh": -0.08054185056807794,
+   "D": -0.005871002300285755,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "R_held": {
+   "S": -0.13830303246147957,
+   "S_sh": -0.12348932896802378,
+   "D": -0.003814732469771126,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "dither": {
+   "S": -0.09555610859305724,
+   "S_sh": -0.08464626386086746,
+   "D": -0.004655622541264337,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  }
+ },
+ "QAS": {
+  "base": {
+   "S": 0.003972177192678061,
+   "S_sh": 0.03990110239650446,
+   "D": -0.028388717487628834,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "bar0.1%": {
+   "S": 0.003972177192678061,
+   "S_sh": 0.03990110239650446,
+   "D": -0.028388717487628834,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "bar0.5%": {
+   "S": -0.0278829645285473,
+   "S_sh": -0.034250701902195924,
+   "D": 0.014341170763763428,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "vcut-50": {
+   "S": 0.015703283656694322,
+   "S_sh": 0.045657502160101615,
+   "D": -0.021837463447165473,
+   "verdict_same_rules": "NO BENEFIT"
+  },
+  "vcut+50": {
+   "S": -0.05147954600222021,
+   "S_sh": -0.012898996874265767,
+   "D": -0.03198602565648773,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  },
+  "R_held": {
+   "S": 0.008128487466989798,
+   "S_sh": 0.029868204194412662,
+   "D": -0.017422819663123035,
+   "verdict_same_rules": "NO BENEFIT"
+  },
+  "dither": {
+   "S": 0.002590588919293535,
+   "S_sh": 0.04082776763102075,
+   "D": -0.031837096495956674,
+   "verdict_same_rules": "NOT INTERPRETABLE"
+  }
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "tag": "EXPLORATORY, not pre-registered, decides nothing; DERIVED replay",
+ "changan": {
+  "vehicles_with_sessions": 300,
+  "vehicles_ge20_scored_frames": 300,
+  "frac_frames_ref_lt_0.1C": 0.0026026089209448366,
+  "frac_frames_ref_lt_0.5C": 0.0036061106262922217,
+  "ref_p50_A": 317.2021179199219,
+  "ref_p50_C": 2.6433510780334473,
+  "A->B_cell": {
+   "kappa": 1.8,
+   "unsafe_frames": 1733,
+   "unsafe_ref_p50_A": 37.08872985839844,
+   "unsafe_with_ref0": 419,
+   "unsafe_with_ref_lt_0.1C": 643,
+   "unsafe_soc_p50": 6.0
+  },
+  "A->B_mm": {
+   "kappa": 2.0,
+   "unsafe_frames": 2154,
+   "unsafe_ref_p50_A": 98.57180786132812,
+   "unsafe_with_ref0": 400,
+   "unsafe_with_ref_lt_0.1C": 606,
+   "unsafe_soc_p50": 9.0
+  },
+  "A->B_sh": {
+   "kappa": 1.85,
+   "unsafe_frames": 1723,
+   "unsafe_ref_p50_A": 39.26688003540039,
+   "unsafe_with_ref0": 408,
+   "unsafe_with_ref_lt_0.1C": 631,
+   "unsafe_soc_p50": 6.0
+  },
+  "B->A_cell": {
+   "kappa": 1.95,
+   "unsafe_frames": 983,
+   "unsafe_ref_p50_A": 24.27499771118164,
+   "unsafe_with_ref0": 272,
+   "unsafe_with_ref_lt_0.1C": 395,
+   "unsafe_soc_p50": 5.0
+  },
+  "B->A_mm": {
+   "kappa": 2.0,
+   "unsafe_frames": 1663,
+   "unsafe_ref_p50_A": 99.82168579101562,
+   "unsafe_with_ref0": 269,
+   "unsafe_with_ref_lt_0.1C": 389,
+   "unsafe_soc_p50": 9.0
+  },
+  "B->A_sh": {
+   "kappa": 2.0,
+   "unsafe_frames": 1020,
+   "unsafe_ref_p50_A": 27.308704376220703,
+   "unsafe_with_ref0": 274,
+   "unsafe_with_ref_lt_0.1C": 398,
+   "unsafe_soc_p50": 5.0
+  }
+ },
+ "DTI": {
+  "vehicles_with_sessions": 49,
+  "vehicles_ge20_scored_frames": 45,
+  "frac_frames_ref_lt_0.1C": 0.0018739459054281967,
+  "frac_frames_ref_lt_0.5C": 0.0024361296770566555,
+  "ref_p50_A": 1875.4638671875,
+  "ref_p50_C": 13.33900260925293,
+  "A->B_cell": {
+   "kappa": 2.0,
+   "unsafe_frames": 54,
+   "unsafe_ref_p50_A": 385.92779541015625,
+   "unsafe_with_ref0": 2,
+   "unsafe_with_ref_lt_0.1C": 2,
+   "unsafe_soc_p50": 16.0
+  },
+  "A->B_mm": {
+   "kappa": 2.0,
+   "unsafe_frames": 187,
+   "unsafe_ref_p50_A": 470.22222900390625,
+   "unsafe_with_ref0": 2,
+   "unsafe_with_ref_lt_0.1C": 2,
+   "unsafe_soc_p50": 16.100000381469727
+  },
+  "A->B_sh": {
+   "kappa": 2.0,
+   "unsafe_frames": 83,
+   "unsafe_ref_p50_A": 384.70001220703125,
+   "unsafe_with_ref0": 2,
+   "unsafe_with_ref_lt_0.1C": 2,
+   "unsafe_soc_p50": 15.600000381469727
+  },
+  "B->A_cell": {
+   "kappa": 2.0,
+   "unsafe_frames": 30,
+   "unsafe_ref_p50_A": 149.0299072265625,
+   "unsafe_with_ref0": 8,
+   "unsafe_with_ref_lt_0.1C": 10,
+   "unsafe_soc_p50": 12.850000381469727
+  },
+  "B->A_mm": {
+   "kappa": 2.0,
+   "unsafe_frames": 157,
+   "unsafe_ref_p50_A": 671.7625122070312,
+   "unsafe_with_ref0": 8,
+   "unsafe_with_ref_lt_0.1C": 10,
+   "unsafe_soc_p50": 15.399999618530273
+  },
+  "B->A_sh": {
+   "kappa": 2.0,
+   "unsafe_frames": 38,
+   "unsafe_ref_p50_A": 188.41891479492188,
+   "unsafe_with_ref0": 8,
+   "unsafe_with_ref_lt_0.1C": 10,
+   "unsafe_soc_p50": 13.199999809265137
+  }
+ },
+ "QAS": {
+  "vehicles_with_sessions": 30,
+  "vehicles_ge20_scored_frames": 19,
+  "frac_frames_ref_lt_0.1C": 0.0,
+  "frac_frames_ref_lt_0.5C": 0.0,
+  "ref_p50_A": 160.85926818847656,
+  "ref_p50_C": 1.9059154987335205,
+  "A->B_cell": {
+   "kappa": 1.71,
+   "unsafe_frames": 0,
+   "unsafe_ref_p50_A": null,
+   "unsafe_with_ref0": 0,
+   "unsafe_with_ref_lt_0.1C": 0,
+   "unsafe_soc_p50": null
+  },
+  "A->B_mm": {
+   "kappa": 2.0,
+   "unsafe_frames": 0,
+   "unsafe_ref_p50_A": null,
+   "unsafe_with_ref0": 0,
+   "unsafe_with_ref_lt_0.1C": 0,
+   "unsafe_soc_p50": null
+  },
+  "A->B_sh": {
+   "kappa": 1.69,
+   "unsafe_frames": 0,
+   "unsafe_ref_p50_A": null,
+   "unsafe_with_ref0": 0,
+   "unsafe_with_ref_lt_0.1C": 0,
+   "unsafe_soc_p50": null
+  },
+  "B->A_cell": {
+   "kappa": 1.6,
+   "unsafe_frames": 1,
+   "unsafe_ref_p50_A": 135.5574493408203,
+   "unsafe_with_ref0": 0,
+   "unsafe_with_ref_lt_0.1C": 0,
+   "unsafe_soc_p50": 18.0
+  },
+  "B->A_mm": {
+   "kappa": 1.77,
+   "unsafe_frames": 1,
+   "unsafe_ref_p50_A": 135.5574493408203,
+   "unsafe_with_ref0": 0,
+   "unsafe_with_ref_lt_0.1C": 0,
+   "unsafe_soc_p50": 18.0
+  },
+  "B->A_sh": {
+   "kappa": 1.57,
+   "unsafe_frames": 1,
+   "unsafe_ref_p50_A": 135.5574493408203,
+   "unsafe_with_ref0": 0,
+   "unsafe_with_ref_lt_0.1C": 0,
+   "unsafe_soc_p50": 18.0
+  }
+ }
+}
