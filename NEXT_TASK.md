@@ -31,4 +31,4 @@ every headline re-derived by the reviewer from the two ratings files, `results/F
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN
+**Status:** AWAITING APPROVAL af2d5cb (L1 pre-registration + instrument list; three choices for the reviewer: seed-list primary, access rules + ACCESS-LIMITED, vehicle-level V2/V0)
