@@ -1,0 +1,975 @@
+{
+ "preregistration": "results/L1/L1_preregistration.md (af2d5cb; deviations L-1..L-5, e98f8b3)",
+ "tags": "events SOURCED; classifications DERIVED-judgemental; both raters are language-model sessions",
+ "validation_problems": {
+  "ledger_A": [],
+  "ledger_B": [],
+  "instruments_A": [],
+  "instruments_B": []
+ },
+ "access": {
+  "A": {
+   "B01": "full",
+   "B02": "full",
+   "B03": "full",
+   "B04": "full",
+   "B05": "full",
+   "B06": "full",
+   "B07": "full",
+   "B08": "full",
+   "B09": "full",
+   "B10": "full",
+   "B11": "full",
+   "B12": "full",
+   "B13": "full",
+   "B14": "full",
+   "B15": "full",
+   "B16": "none",
+   "B17": "none",
+   "B18": "none",
+   "B19": "none",
+   "B20": "none",
+   "B21": "none",
+   "B22": "none",
+   "B23": "none",
+   "B24": "none",
+   "B25": "none",
+   "B26": "none",
+   "B27": "none",
+   "B28": "none",
+   "B29": "full",
+   "B30": "full",
+   "B31": "full",
+   "B32": "full",
+   "B33": "full",
+   "B34": "full",
+   "B35": "full",
+   "B36": "full",
+   "B37": "full",
+   "S01": "full",
+   "S02": "full",
+   "S03": "full",
+   "S04": "full",
+   "S05": "full",
+   "S06": "full",
+   "S07": "full",
+   "S08": "full",
+   "S09": "full",
+   "S10": "full",
+   "S11": "full",
+   "S12": "full",
+   "S13": "full",
+   "S14": "full",
+   "S15": "full",
+   "S16": "full",
+   "S17": "full",
+   "S18": "full",
+   "S19": "full",
+   "S20": "full",
+   "S21": "full",
+   "S22": "full",
+   "S23": "full",
+   "S24": "full",
+   "S25": "full",
+   "S26": "full"
+  },
+  "B": {
+   "B01": "full",
+   "B02": "full",
+   "B03": "full",
+   "B04": "full",
+   "B05": "full",
+   "B06": "full",
+   "B07": "full",
+   "B08": "full",
+   "B09": "full",
+   "B10": "full",
+   "B11": "full",
+   "B12": "full",
+   "B13": "full",
+   "B14": "full",
+   "B15": "full",
+   "B16": "none",
+   "B17": "none",
+   "B18": "none",
+   "B19": "none",
+   "B20": "none",
+   "B21": "none",
+   "B22": "none",
+   "B23": "none",
+   "B24": "none",
+   "B25": "none",
+   "B26": "none",
+   "B27": "none",
+   "B28": "none",
+   "B29": "full",
+   "B30": "full",
+   "B31": "full",
+   "B32": "full",
+   "B33": "full",
+   "B34": "full",
+   "B35": "full",
+   "B36": "full",
+   "B37": "full",
+   "S01": "full",
+   "S02": "full",
+   "S03": "full",
+   "S04": "full",
+   "S05": "full",
+   "S06": "full",
+   "S07": "full",
+   "S08": "full",
+   "S09": "full",
+   "S10": "full",
+   "S11": "full",
+   "S12": "full",
+   "S13": "full",
+   "S14": "full",
+   "S15": "full",
+   "S16": "full",
+   "S17": "full",
+   "S18": "full",
+   "S19": "full",
+   "S20": "full",
+   "S21": "full",
+   "S22": "full",
+   "S23": "full",
+   "S24": "full",
+   "S25": "full",
+   "S26": "full"
+  },
+  "counts": {
+   "B_seed": {
+    "full/full": 22,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 0,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 0,
+    "none/none": 13
+   },
+   "S_seed": {
+    "full/full": 16,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 0,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 0,
+    "none/none": 0
+   }
+  },
+  "unread_B_seed": [
+   "B16",
+   "B17",
+   "B18",
+   "B19",
+   "B20",
+   "B21",
+   "B22",
+   "B23",
+   "B24",
+   "B25",
+   "B26",
+   "B27",
+   "B28"
+  ],
+  "unread_S_seed": [],
+  "limited_B": true,
+  "limited_S": false
+ },
+ "ledger_sizes_raw": {
+  "A": 7,
+  "B": 7
+ },
+ "primary_V2": {
+  "M": 7,
+  "n_A": 7,
+  "n_B": 7,
+  "identification": 1.0,
+  "kappa": {
+   "kappa": 1.0,
+   "n": 7,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 7
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 3,
+  "MC_B": {
+   "k": 1,
+   "n": 3,
+   "p": 0.3333333333333333,
+   "lo": 0.0614903152761605,
+   "hi": 0.7923450448735121
+  },
+  "H_B": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "cannot_judge_B": 0,
+  "class_B": {
+   "memory-or-crypto": 1,
+   "software-only": 2
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 0,
+   "2024": 3,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_B": {
+   "2024": 3
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 1,
+   "B03": 1
+  },
+  "union_B": 3,
+  "N_S": 4,
+  "MC_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "H_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "software-only": 4
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1
+  },
+  "union_S": 4,
+  "R": 0.75,
+  "by_jurisdiction": {
+   "non-China": 7
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: B)",
+  "kill": false,
+  "decision_notes": [
+   "N_B <= 5 but N_B is a lower bound (B access-limited): STABLE by count cannot fire",
+   "R < 1.5 but R is a lower bound (B access-limited): the kill on R cannot fire"
+  ],
+  "unmatched_A": [],
+  "unmatched_B": [],
+  "class_disagreements": [],
+  "window_straddling": [],
+  "S_without_vehicle_level": {
+   "N_S": 4,
+   "MC_S": {
+    "k": 0,
+    "n": 4,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.48990002040399916
+   },
+   "H_S": {
+    "k": 0,
+    "n": 4,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.48990002040399916
+   },
+   "class_S": {
+    "software-only": 4
+   }
+  }
+ },
+ "V1": {
+  "M": 7,
+  "n_A": 7,
+  "n_B": 7,
+  "identification": 1.0,
+  "kappa": {
+   "kappa": 1.0,
+   "n": 7,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 7
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 3,
+  "MC_B": {
+   "k": 1,
+   "n": 3,
+   "p": 0.3333333333333333,
+   "lo": 0.0614903152761605,
+   "hi": 0.7923450448735121
+  },
+  "H_B": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "cannot_judge_B": 0,
+  "class_B": {
+   "memory-or-crypto": 1,
+   "software-only": 2
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 0,
+   "2024": 3,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_B": {
+   "2024": 3
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 1,
+   "B03": 1
+  },
+  "union_B": 3,
+  "N_S": 4,
+  "MC_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "H_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "software-only": 4
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1
+  },
+  "union_S": 4,
+  "R": 0.75,
+  "by_jurisdiction": {
+   "non-China": 7
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: B)",
+  "kill": false,
+  "decision_notes": [
+   "N_B <= 5 but N_B is a lower bound (B access-limited): STABLE by count cannot fire",
+   "R < 1.5 but R is a lower bound (B access-limited): the kill on R cannot fire"
+  ]
+ },
+ "V0": {
+  "M": 7,
+  "n_A": 7,
+  "n_B": 7,
+  "identification": 1.0,
+  "kappa": {
+   "kappa": 1.0,
+   "n": 7,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 7
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 3,
+  "MC_B": {
+   "k": 1,
+   "n": 3,
+   "p": 0.3333333333333333,
+   "lo": 0.0614903152761605,
+   "hi": 0.7923450448735121
+  },
+  "H_B": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "cannot_judge_B": 0,
+  "class_B": {
+   "memory-or-crypto": 1,
+   "software-only": 2
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 0,
+   "2024": 3,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_B": {
+   "2024": 3
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 1,
+   "B03": 1
+  },
+  "union_B": 3,
+  "N_S": 4,
+  "MC_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "H_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "software-only": 4
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1
+  },
+  "union_S": 4,
+  "R": 0.75,
+  "by_jurisdiction": {
+   "non-China": 7
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: B)",
+  "kill": false,
+  "decision_notes": [
+   "N_B <= 5 but N_B is a lower bound (B access-limited): STABLE by count cannot fire",
+   "R < 1.5 but R is a lower bound (B access-limited): the kill on R cannot fire"
+  ]
+ },
+ "CN0": {
+  "M": 7,
+  "n_A": 7,
+  "n_B": 7,
+  "identification": 1.0,
+  "kappa": {
+   "kappa": 1.0,
+   "n": 7,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 7
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 3,
+  "MC_B": {
+   "k": 1,
+   "n": 3,
+   "p": 0.3333333333333333,
+   "lo": 0.0614903152761605,
+   "hi": 0.7923450448735121
+  },
+  "H_B": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "cannot_judge_B": 0,
+  "class_B": {
+   "memory-or-crypto": 1,
+   "software-only": 2
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 0,
+   "2024": 3,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_B": {
+   "2024": 3
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 1,
+   "B03": 1
+  },
+  "union_B": 3,
+  "N_S": 4,
+  "MC_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "H_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "software-only": 4
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1
+  },
+  "union_S": 4,
+  "R": 0.75,
+  "by_jurisdiction": {
+   "non-China": 7
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: B)",
+  "kill": false,
+  "decision_notes": [
+   "N_B <= 5 but N_B is a lower bound (B access-limited): STABLE by count cannot fire",
+   "R < 1.5 but R is a lower bound (B access-limited): the kill on R cannot fire"
+  ]
+ },
+ "FULL": {
+  "M": 7,
+  "n_A": 7,
+  "n_B": 7,
+  "identification": 1.0,
+  "kappa": {
+   "kappa": 1.0,
+   "n": 7,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 7
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 3,
+  "MC_B": {
+   "k": 1,
+   "n": 3,
+   "p": 0.3333333333333333,
+   "lo": 0.0614903152761605,
+   "hi": 0.7923450448735121
+  },
+  "H_B": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "cannot_judge_B": 0,
+  "class_B": {
+   "memory-or-crypto": 1,
+   "software-only": 2
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 0,
+   "2024": 3,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_B": {
+   "2024": 3
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 1,
+   "B03": 1
+  },
+  "union_B": 3,
+  "N_S": 4,
+  "MC_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "H_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "software-only": 4
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1
+  },
+  "union_S": 4,
+  "R": 0.75,
+  "by_jurisdiction": {
+   "non-China": 7
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: B)",
+  "kill": false,
+  "decision_notes": [
+   "N_B <= 5 but N_B is a lower bound (B access-limited): STABLE by count cannot fire",
+   "R < 1.5 but R is a lower bound (B access-limited): the kill on R cannot fire"
+  ]
+ },
+ "ACC": {
+  "M": 7,
+  "n_A": 7,
+  "n_B": 7,
+  "identification": 1.0,
+  "kappa": {
+   "kappa": 1.0,
+   "n": 7,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 7
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 3,
+  "MC_B": {
+   "k": 1,
+   "n": 3,
+   "p": 0.3333333333333333,
+   "lo": 0.0614903152761605,
+   "hi": 0.7923450448735121
+  },
+  "H_B": {
+   "k": 0,
+   "n": 3,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.5615060804490177
+  },
+  "cannot_judge_B": 0,
+  "class_B": {
+   "memory-or-crypto": 1,
+   "software-only": 2
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 0,
+   "2024": 3,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_B": {
+   "2024": 3
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 1,
+   "B03": 1
+  },
+  "union_B": 3,
+  "N_S": 4,
+  "MC_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "H_S": {
+   "k": 0,
+   "n": 4,
+   "p": 0.0,
+   "lo": 0.0,
+   "hi": 0.48990002040399916
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "software-only": 4
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1
+  },
+  "union_S": 4,
+  "R": 0.75,
+  "by_jurisdiction": {
+   "non-China": 7
+  },
+  "verdict": "STABLE DOMAIN",
+  "kill": true,
+  "decision_notes": []
+ },
+ "own": {
+  "A": {
+   "B": {
+    "n": 3,
+    "MC": {
+     "k": 1,
+     "n": 3,
+     "p": 0.3333333333333333,
+     "lo": 0.0614903152761605,
+     "hi": 0.7923450448735121
+    },
+    "H": {
+     "k": 0,
+     "n": 3,
+     "p": 0.0,
+     "lo": 0.0,
+     "hi": 0.5615060804490177
+    },
+    "class": {
+     "memory-or-crypto": 1,
+     "software-only": 2
+    }
+   },
+   "S": {
+    "n": 4,
+    "MC": {
+     "k": 0,
+     "n": 4,
+     "p": 0.0,
+     "lo": 0.0,
+     "hi": 0.48990002040399916
+    },
+    "H": {
+     "k": 0,
+     "n": 4,
+     "p": 0.0,
+     "lo": 0.0,
+     "hi": 0.48990002040399916
+    },
+    "class": {
+     "software-only": 4
+    }
+   }
+  },
+  "B": {
+   "B": {
+    "n": 3,
+    "MC": {
+     "k": 1,
+     "n": 3,
+     "p": 0.3333333333333333,
+     "lo": 0.0614903152761605,
+     "hi": 0.7923450448735121
+    },
+    "H": {
+     "k": 0,
+     "n": 3,
+     "p": 0.0,
+     "lo": 0.0,
+     "hi": 0.5615060804490177
+    },
+    "class": {
+     "memory-or-crypto": 1,
+     "software-only": 2
+    }
+   },
+   "S": {
+    "n": 4,
+    "MC": {
+     "k": 0,
+     "n": 4,
+     "p": 0.0,
+     "lo": 0.0,
+     "hi": 0.48990002040399916
+    },
+    "H": {
+     "k": 0,
+     "n": 4,
+     "p": 0.0,
+     "lo": 0.0,
+     "hi": 0.48990002040399916
+    },
+    "class": {
+     "software-only": 4
+    }
+   }
+  }
+ },
+ "verdict_line": "UNCLEAR (ACCESS-LIMITED: B)",
+ "kill_line": {
+  "primary": false,
+  "V1": false,
+  "FULL": false
+ }
+}
