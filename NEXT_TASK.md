@@ -35,4 +35,4 @@ Status line.
 ## When you finish
 Edit only the **Status** line below to `DONE <commit-hash>` or `BLOCKED: <one-line reason>`, then commit and push.
 
-**Status:** OPEN
+**Status:** DONE 99c65ce (FR1-R: gated, κ 0.90; retention UNCLEAR, shape MIXED)
