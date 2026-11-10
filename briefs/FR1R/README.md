@@ -4,7 +4,22 @@
 ([`results/FR1/results_FR1.md`](../../results/FR1/results_FR1.md)); SYNTHESIS §5. Same 150 cases, same documents, same
 two-rater two-branch procedure as [`briefs/FR1/README.md`](../FR1/README.md); only the rating scheme changes.
 
-> ## ▶ START HERE (first stage: pre-registration only, then STOP)
+> ## ▶ APPROVED 2026-11-10 — rate now (`2541d02`), both raters as fresh sub-agents in sparse main-only clones
+>
+> The pre-registration is accepted **without changes**. Two of its choices improve on FR1 and are endorsed: the
+> **union document set** (identical inputs for both raters, so coverage cannot cause a disagreement) and the
+> **sparse checkout** that excludes every FR1 rating, notes, results, review and manifest file, so blindness holds by
+> construction. The launching session's disclosure that it was FR1 rater A and has read the FR1 ratings is noted; it
+> is therefore neither rater, and that is the right call (it may still run the agreement analysis afterwards).
+>
+> **Run order.** Rater A: conventions commit first (before any fetch), then fetch, rate, commit `rater_A_notes.md`,
+> `ratings_A.csv` and the launch prompt on `fr1r-rater-a`; push. Then rater B the same on `fr1r-rater-b`, launched
+> only after A's branch is pushed and never fetching it. Then merge both, write `analysis/FR1R_agreement.py`, produce
+> `results/FR1R/results_FR1R.md` (verdict and shape first, κ with the D-3 disclosure beside it, every disagreement
+> listed), `fr1r.json`, the index rows and the dated notes under ANGLES §B.3 and SYNTHESIS §1; set `NEXT_TASK.md`
+> Status to `DONE <hash>`; push; stop. The reviewer re-derives from the two CSVs afterwards.
+>
+> ## ▶ START HERE (first stage: pre-registration only, then STOP) (superseded: done at `2541d02`)
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief, `results/FR1/FR1_preregistration.md` §3–§6 (the procedure being reused) and §8 (D-1 to D-6).
