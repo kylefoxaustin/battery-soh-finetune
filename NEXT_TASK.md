@@ -34,4 +34,4 @@ address. Plan: [`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/REA
 ## When you finish
 Edit only the **Status** line below to `DONE <commit-hash>` or `BLOCKED: <one-line reason>`, then commit and push.
 
-**Status:** OPEN
+**Status:** DONE f5296cb (X8: NOT INTERPRETABLE on Changan, DTI and QAS)
