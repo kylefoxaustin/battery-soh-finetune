@@ -1,0 +1,76 @@
+== t1
+count: SPECIFIC BY COUNT | kind: STACK-SPECIFIC | calibration: CALIBRATED
+  note: L1B-D1: share k_L/n_L = 1/2 >= k_B/n_B = 4/27, but n_L < 10: share clause not applied
+gates: identification 0.8888888888888888 (M 8, n_A 9, n_B 8); kappa class 1.0 (n 8); kappa stack 1.0 (n 59)
+calibration: N_S,specific 6 vs N_S1 6 (diff 0); E_S1 covered 6/6
+N_B 35  N_L 10  N_S 14  R_BL 3.50 [1.76, 6.97]  R_BS 2.50 [1.36, 4.60]
+stack: B 4/27 = 14.8 % [5.9, 32.5]  L 1/2 = 50.0 % [9.5, 90.5]  S 0/6 = 0.0 % [0.0, 39.0]  Fisher B>L p 0.9753694581280788
+unread seeds: L 0 []; S 0 []
+  V1: SPECIFIC BY COUNT / STACK-SPECIFIC; N_B 35 N_L 2 N_S 6 R_BL 17.50 [4.65, 65.89]
+  V0: SPECIFIC BY COUNT / STACK-SPECIFIC; N_B 27 N_L 2 N_S 6 R_BL 13.50 [3.55, 51.30]
+  CN0: SPECIFIC BY COUNT / STACK-SPECIFIC; N_B 25 N_L 6 N_S 10 R_BL 4.17 [1.76, 9.89]
+  FULL: SPECIFIC BY COUNT / STACK-SPECIFIC; N_B 35 N_L 10 N_S 14 R_BL 3.50 [1.76, 6.97]
+  ACC: SPECIFIC BY COUNT / STACK-SPECIFIC; N_B 35 N_L 10 N_S 14 R_BL 3.50 [1.76, 6.97]
+== t2
+count: NOT SPECIFIC BY COUNT | kind: NOT STACK-SPECIFIC | calibration: MISCALIBRATED
+gates: identification 1.0 (M 22, n_A 22, n_B 22); kappa class 1.0 (n 22); kappa stack 1.0 (n 73)
+calibration: N_S,specific 2 vs N_S1 6 (diff 4); E_S1 covered 2/6
+N_B 35  N_L 28  N_S 10  R_BL 1.25 [0.76, 2.04]  R_BS 3.50 [1.76, 6.97]
+stack: B 4/27 = 14.8 % [5.9, 32.5]  L 3/20 = 15.0 % [5.2, 36.0]  S 0/2 = 0.0 % [0.0, 65.8]  Fisher B>L p 0.6702643548057267
+unread seeds: L 0 []; S 0 []
+  V1: UNCLEAR BY COUNT / NOT STACK-SPECIFIC; N_B 35 N_L 20 N_S 2 R_BL 1.75 [1.02, 3.01]
+  V0: NOT SPECIFIC BY COUNT / NOT STACK-SPECIFIC; N_B 27 N_L 20 N_S 2 R_BL 1.35 [0.76, 2.39]
+  CN0: NOT SPECIFIC BY COUNT / NOT STACK-SPECIFIC; N_B 25 N_L 24 N_S 6 R_BL 1.04 [0.60, 1.81]
+  FULL: NOT SPECIFIC BY COUNT / NOT STACK-SPECIFIC; N_B 35 N_L 28 N_S 10 R_BL 1.25 [0.76, 2.04]
+  ACC: NOT SPECIFIC BY COUNT / NOT STACK-SPECIFIC; N_B 35 N_L 28 N_S 10 R_BL 1.25 [0.76, 2.04]
+== t3
+count: UNCLEAR BY COUNT | kind: UNCLEAR IN KIND | calibration: CALIBRATED
+  note: L1B-D1: share k_L/n_L = 1/5 >= k_B/n_B = 2/27, but n_L < 10: share clause not applied
+gates: identification 1.0 (M 11, n_A 11, n_B 11); kappa class 1.0 (n 11); kappa stack 1.0 (n 62)
+calibration: N_S,specific 6 vs N_S1 6 (diff 0); E_S1 covered 6/6
+N_B 35  N_L 13  N_S 14  R_BL 2.69 [1.44, 5.04]  R_BS 2.50 [1.36, 4.60]
+stack: B 2/27 = 7.4 % [2.1, 23.4]  L 1/5 = 20.0 % [3.6, 62.4]  S 0/6 = 0.0 % [0.0, 39.0]  Fisher B>L p 0.9435483870967742
+unread seeds: L 0 []; S 0 []
+  V1: SPECIFIC BY COUNT / UNCLEAR IN KIND; N_B 35 N_L 5 N_S 6 R_BL 7.00 [2.83, 17.32]
+  V0: SPECIFIC BY COUNT / UNCLEAR IN KIND; N_B 27 N_L 5 N_S 6 R_BL 5.40 [2.15, 13.57]
+  CN0: UNCLEAR BY COUNT / UNCLEAR IN KIND; N_B 25 N_L 9 N_S 10 R_BL 2.78 [1.32, 5.85]
+  FULL: UNCLEAR BY COUNT / UNCLEAR IN KIND; N_B 35 N_L 13 N_S 14 R_BL 2.69 [1.44, 5.04]
+  ACC: UNCLEAR BY COUNT / UNCLEAR IN KIND; N_B 35 N_L 13 N_S 14 R_BL 2.69 [1.44, 5.04]
+== t4
+count: UNCLEAR BY COUNT | kind: NOT STACK-SPECIFIC | calibration: CALIBRATED
+gates: identification 1.0 (M 19, n_A 19, n_B 19); kappa class 1.0 (n 19); kappa stack 1.0 (n 70)
+calibration: N_S,specific 9 vs N_S1 6 (diff 3); E_S1 covered 5/6
+N_B 35  N_L 18  N_S 17  R_BL 1.94 [1.11, 3.41]  R_BS 2.06 [1.16, 3.65]
+stack: B 1/27 = 3.7 % [0.7, 18.3]  L 1/10 = 10.0 % [1.8, 40.4]  S 0/9 = 0.0 % [0.0, 29.9]  Fisher B>L p 0.9324324324324325
+unread seeds: L 0 []; S 0 []
+  V1: SPECIFIC BY COUNT / NOT STACK-SPECIFIC; N_B 35 N_L 10 N_S 9 R_BL 3.50 [1.76, 6.97]
+  V0: UNCLEAR BY COUNT / NOT STACK-SPECIFIC; N_B 27 N_L 10 N_S 9 R_BL 2.70 [1.33, 5.49]
+  CN0: UNCLEAR BY COUNT / NOT STACK-SPECIFIC; N_B 25 N_L 14 N_S 13 R_BL 1.79 [0.94, 3.40]
+  FULL: UNCLEAR BY COUNT / NOT STACK-SPECIFIC; N_B 35 N_L 18 N_S 17 R_BL 1.94 [1.11, 3.41]
+  ACC: UNCLEAR BY COUNT / NOT STACK-SPECIFIC; N_B 35 N_L 18 N_S 17 R_BL 1.94 [1.11, 3.41]
+== t5
+count: UNCLEAR BY COUNT (ACCESS-LIMITED: L) | kind: STACK-SPECIFIC | calibration: CALIBRATED
+  note: R_BL >= 3 with lower bound > 1.5, but R_BL is an upper bound (L access-limited)
+  note: L1B-D1: share k_L/n_L = 1/2 >= k_B/n_B = 4/27, but n_L < 10: share clause not applied
+gates: identification 0.8888888888888888 (M 8, n_A 9, n_B 8); kappa class 1.0 (n 8); kappa stack 1.0 (n 59)
+calibration: N_S,specific 6 vs N_S1 6 (diff 0); E_S1 covered 6/6
+N_B 35  N_L 10  N_S 14  R_BL 3.50 [1.76, 6.97]  R_BS 2.50 [1.36, 4.60]
+stack: B 4/27 = 14.8 % [5.9, 32.5]  L 1/2 = 50.0 % [9.5, 90.5]  S 0/6 = 0.0 % [0.0, 39.0]  Fisher B>L p 0.9753694581280788
+unread seeds: L 8 ['L13', 'L14', 'L15', 'L16', 'L17', 'L18', 'L19', 'L20']; S 0 []
+  V1: UNCLEAR BY COUNT (ACCESS-LIMITED: L) / STACK-SPECIFIC; N_B 35 N_L 2 N_S 6 R_BL 17.50 [4.65, 65.89]
+  V0: UNCLEAR BY COUNT (ACCESS-LIMITED: L) / STACK-SPECIFIC; N_B 27 N_L 2 N_S 6 R_BL 13.50 [3.55, 51.30]
+  CN0: UNCLEAR BY COUNT (ACCESS-LIMITED: L) / STACK-SPECIFIC; N_B 25 N_L 6 N_S 10 R_BL 4.17 [1.76, 9.89]
+  FULL: UNCLEAR BY COUNT (ACCESS-LIMITED: L) / STACK-SPECIFIC; N_B 35 N_L 10 N_S 14 R_BL 3.50 [1.76, 6.97]
+  ACC: SPECIFIC BY COUNT / STACK-SPECIFIC; N_B 35 N_L 10 N_S 14 R_BL 3.50 [1.76, 6.97]
+== t6
+count: UNGATED | kind: UNGATED | calibration: CALIBRATED
+gates: identification 0.8888888888888888 (M 8, n_A 9, n_B 8); kappa class 1.0 (n 8); kappa stack 0.10606060606060601 (n 59)
+calibration: N_S,specific 6 vs N_S1 6 (diff 0); E_S1 covered 6/6
+N_B 35  N_L 10  N_S 14  R_BL 3.50 [1.76, 6.97]  R_BS 2.50 [1.36, 4.60]
+stack: B 4/27 = 14.8 % [5.9, 32.5]  L 1/2 = 50.0 % [9.5, 90.5]  S 0/6 = 0.0 % [0.0, 39.0]  Fisher B>L p 0.9753694581280788
+unread seeds: L 0 []; S 0 []
+  V1: UNGATED / UNGATED; N_B 35 N_L 2 N_S 6 R_BL 17.50 [4.65, 65.89]
+  V0: UNGATED / UNGATED; N_B 27 N_L 2 N_S 6 R_BL 13.50 [3.55, 51.30]
+  CN0: UNGATED / UNGATED; N_B 25 N_L 6 N_S 10 R_BL 4.17 [1.76, 9.89]
+  FULL: UNGATED / UNGATED; N_B 35 N_L 10 N_S 14 R_BL 3.50 [1.76, 6.97]
+  ACC: UNGATED / UNGATED; N_B 35 N_L 10 N_S 14 R_BL 3.50 [1.76, 6.97]

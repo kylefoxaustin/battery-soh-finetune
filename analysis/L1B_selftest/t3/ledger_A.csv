@@ -1,0 +1,12 @@
+event_id,instrument_id,domain,act_id,adoption_date,application_date,jurisdiction,what_changed,class,confidence,source_url,source_type,note,stack
+1,S01,S,SREF1,2019-01-10,,x,synthetic,software-only,medium,https://example.invalid,primary,,no
+2,S02,S,SREF2,2019-02-10,,x,synthetic,memory-or-crypto,medium,https://example.invalid,primary,,no
+3,S03,S,SREF3,2019-03-10,,x,synthetic,hardware-or-recert,medium,https://example.invalid,primary,,no
+4,S04,S,SREF4,2019-04-10,,x,synthetic,software-only,medium,https://example.invalid,primary,,no
+5,S05,S,SREF5,2019-05-10,,x,synthetic,memory-or-crypto,medium,https://example.invalid,primary,,no
+6,S06,S,SREF6,2019-06-10,,x,synthetic,hardware-or-recert,medium,https://example.invalid,primary,,no
+7,L01,L,LACT0,2017-05-01,,x,synthetic,software-only,medium,https://example.invalid,primary,,yes
+8,L02,L,LACT1,2018-05-02,,x,synthetic,memory-or-crypto,medium,https://example.invalid,primary,,no
+9,L03,L,LACT2,2019-05-03,,x,synthetic,hardware-or-recert,medium,https://example.invalid,primary,,no
+10,L04,L,LACT3,2020-05-04,,x,synthetic,software-only,medium,https://example.invalid,primary,,no
+11,L05,L,LACT4,2021-05-05,,x,synthetic,memory-or-crypto,medium,https://example.invalid,primary,,no

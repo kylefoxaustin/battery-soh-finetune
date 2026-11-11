@@ -1,0 +1,1843 @@
+{
+ "preregistration": "results/L1B/L1B_preregistration.md (7c3896c; approved with L1B-D1, b56f1b4)",
+ "tags": "events SOURCED; classes and stack DERIVED-judgemental; both raters are language-model sessions",
+ "validation_problems": {
+  "ledger_A": [],
+  "ledger_B": [],
+  "stack_B_A": [],
+  "stack_B_B": [],
+  "instruments_A": [],
+  "instruments_B": []
+ },
+ "access": {
+  "A": {
+   "L01": "full",
+   "L02": "full",
+   "L03": "full",
+   "L04": "full",
+   "L05": "full",
+   "L06": "full",
+   "L07": "full",
+   "L08": "full",
+   "L09": "full",
+   "L10": "full",
+   "L11": "full",
+   "L12": "full",
+   "L13": "full",
+   "L14": "full",
+   "L15": "full",
+   "L16": "full",
+   "L17": "full",
+   "L18": "full",
+   "L19": "full",
+   "L20": "full",
+   "L21": "full",
+   "L22": "full",
+   "L23": "full",
+   "L24": "full",
+   "L25": "full",
+   "L26": "full",
+   "L27": "full",
+   "L28": "full",
+   "L29": "full",
+   "L30": "full",
+   "L31": "full",
+   "L32": "full",
+   "L33": "full",
+   "L34": "full",
+   "L35": "full",
+   "L36": "full",
+   "L37": "full",
+   "L38": "full",
+   "L39": "full",
+   "L40": "full",
+   "L41": "full",
+   "L42": "full",
+   "L43": "full",
+   "L44": "full",
+   "L45": "full",
+   "L46": "full",
+   "L47": "full",
+   "S01": "full",
+   "S02": "full",
+   "S03": "full",
+   "S04": "full",
+   "S05": "full",
+   "S06": "full",
+   "S07": "full",
+   "S08": "full",
+   "S09": "full",
+   "S10": "full",
+   "S11": "full",
+   "S12": "full",
+   "S13": "full",
+   "S14": "full",
+   "S15": "full",
+   "S16": "full",
+   "S17": "full",
+   "S18": "full",
+   "S19": "full",
+   "S20": "full",
+   "S21": "full",
+   "S22": "full",
+   "S23": "full",
+   "S24": "full",
+   "S25": "full",
+   "S26": "full"
+  },
+  "B": {
+   "L01": "full",
+   "L02": "full",
+   "L03": "full",
+   "L04": "full",
+   "L05": "full",
+   "L06": "full",
+   "L07": "full",
+   "L08": "full",
+   "L09": "full",
+   "L10": "full",
+   "L11": "full",
+   "L12": "full",
+   "L13": "full",
+   "L14": "full",
+   "L15": "full",
+   "L16": "full",
+   "L17": "full",
+   "L18": "full",
+   "L19": "full",
+   "L20": "full",
+   "L21": "full",
+   "L22": "full",
+   "L23": "full",
+   "L24": "full",
+   "L25": "full",
+   "L26": "full",
+   "L27": "full",
+   "L28": "full",
+   "L29": "full",
+   "L30": "full",
+   "L31": "full",
+   "L32": "full",
+   "L33": "full",
+   "L34": "full",
+   "L35": "full",
+   "L36": "full",
+   "L37": "full",
+   "L38": "full",
+   "L39": "full",
+   "L40": "full",
+   "L41": "full",
+   "L42": "full",
+   "L43": "full",
+   "L44": "full",
+   "L45": "full",
+   "L46": "full",
+   "L47": "full",
+   "S01": "full",
+   "S02": "full",
+   "S03": "full",
+   "S04": "full",
+   "S05": "full",
+   "S06": "full",
+   "S07": "full",
+   "S08": "full",
+   "S09": "full",
+   "S10": "full",
+   "S11": "full",
+   "S12": "full",
+   "S13": "full",
+   "S14": "full",
+   "S15": "full",
+   "S16": "full",
+   "S17": "full",
+   "S18": "full",
+   "S19": "full",
+   "S20": "full",
+   "S21": "full",
+   "S22": "full",
+   "S23": "full",
+   "S24": "full",
+   "S25": "full",
+   "S26": "full"
+  },
+  "counts": {
+   "L_seed": {
+    "full/full": 22,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 0,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 0,
+    "none/none": 0
+   },
+   "S_seed": {
+    "full/full": 16,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 0,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 0,
+    "none/none": 0
+   }
+  },
+  "unread_L_seed": [],
+  "unread_S_seed": [],
+  "limited_L": false,
+  "limited_S": false,
+  "thresholds": {
+   "L": ">= 8 of 22",
+   "S": ">= 6 of 16"
+  }
+ },
+ "ledger_sizes_raw": {
+  "A": 19,
+  "B": 19
+ },
+ "stack_B_rows": {
+  "expected": 51,
+  "A": 51,
+  "B": 51,
+  "both": 51
+ },
+ "primary_V2": {
+  "M": 19,
+  "n_A": 19,
+  "n_B": 19,
+  "identification": 1.0,
+  "kappa_class": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 19
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 70,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 9,
+  "N_S": 17,
+  "MC_S": {
+   "k": 5,
+   "n": 9,
+   "p": 0.5555555555555556,
+   "lo": 0.2666473457440297,
+   "hi": 0.811224570528086
+  },
+  "H_S": {
+   "k": 2,
+   "n": 9,
+   "p": 0.2222222222222222,
+   "lo": 0.06322376231222723,
+   "hi": 0.5474166563271946
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 5,
+   "2020": 0,
+   "2021": 4,
+   "2022": 0,
+   "2023": 0,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2019": 5,
+   "2021": 4
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1,
+   "S05": 1,
+   "S10": 1,
+   "S11": 1,
+   "S12": 1,
+   "S13": 1
+  },
+  "union_S": 17,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 9,
+   "n_events": 9,
+   "share": {
+    "k": 0,
+    "n": 9,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.2991527535509594
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 10,
+  "N_L": 18,
+  "MC_L": {
+   "k": 6,
+   "n": 10,
+   "p": 0.6,
+   "lo": 0.3126695474501864,
+   "hi": 0.8318224187964902
+  },
+  "H_L": {
+   "k": 3,
+   "n": 10,
+   "p": 0.3,
+   "lo": 0.10778928748621183,
+   "hi": 0.6032267800204347
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 3
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_L": {
+   "L01": 1,
+   "L02": 1,
+   "L03": 1,
+   "L04": 1,
+   "L05": 1,
+   "L06": 1,
+   "L07": 1,
+   "L08": 1,
+   "L09": 1,
+   "L10": 1
+  },
+  "union_L": 18,
+  "stack_L": {
+   "k": 1,
+   "n_judged": 10,
+   "n_events": 10,
+   "share": {
+    "k": 1,
+    "n": 10,
+    "p": 0.1,
+    "lo": 0.01787574951572113,
+    "hi": 0.4041563854975721
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 4,
+   "2019": 4,
+   "2020": 4,
+   "2021": 3,
+   "2022": 7,
+   "2023": 7,
+   "2024": 3,
+   "2025": 3,
+   "2026": 0
+  },
+  "stack_B": {
+   "k": 1,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 1,
+    "n": 27,
+    "p": 0.037037037037037035,
+    "lo": 0.006567976533097597,
+    "hi": 0.1828385393415652
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 0.9324324324324325,
+  "R_BL": {
+   "R": 1.9444444444444444,
+   "lo": 1.1094614796676716,
+   "hi": 3.407837285764423,
+   "N_num": 35,
+   "N_den": 18
+  },
+  "R_BS": {
+   "R": 2.0588235294117645,
+   "lo": 1.1624396623112903,
+   "hi": 3.6464295418409587,
+   "N_num": 35,
+   "N_den": 17
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 19
+  },
+  "gates": {
+   "values": {
+    "identification": 1.0,
+    "kappa_class": 1.0,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": true,
+    "kappa_class": true,
+    "kappa_stack": true
+   },
+   "all_pass": true
+  },
+  "verdict_count": "UNCLEAR BY COUNT",
+  "verdict_kind": "NOT STACK-SPECIFIC",
+  "decision_notes_count": [],
+  "decision_notes_kind": [],
+  "calibration": {
+   "N_S_specific": 9,
+   "N_S1": 6,
+   "abs_diff": 3,
+   "count_ok": true,
+   "E_S1_size": 6,
+   "E_S1_covered": 5,
+   "acts_ok": true,
+   "status": "CALIBRATED",
+   "E_S1_not_covered": [
+    {
+     "instrument_id": "S06",
+     "keys": [
+      "sref6"
+     ]
+    }
+   ]
+  },
+  "unmatched_A": [],
+  "unmatched_B": [],
+  "class_disagreements": [],
+  "stack_disagreements_SL": [],
+  "window_straddling": []
+ },
+ "V1": {
+  "M": 19,
+  "n_A": 19,
+  "n_B": 19,
+  "identification": 1.0,
+  "kappa_class": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 19
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 70,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 9,
+  "N_S": 9,
+  "MC_S": {
+   "k": 5,
+   "n": 9,
+   "p": 0.5555555555555556,
+   "lo": 0.2666473457440297,
+   "hi": 0.811224570528086
+  },
+  "H_S": {
+   "k": 2,
+   "n": 9,
+   "p": 0.2222222222222222,
+   "lo": 0.06322376231222723,
+   "hi": 0.5474166563271946
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 5,
+   "2020": 0,
+   "2021": 4,
+   "2022": 0,
+   "2023": 0,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2019": 5,
+   "2021": 4
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1,
+   "S05": 1,
+   "S10": 1,
+   "S11": 1,
+   "S12": 1,
+   "S13": 1
+  },
+  "union_S": 9,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 9,
+   "n_events": 9,
+   "share": {
+    "k": 0,
+    "n": 9,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.2991527535509594
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 10,
+  "N_L": 10,
+  "MC_L": {
+   "k": 6,
+   "n": 10,
+   "p": 0.6,
+   "lo": 0.3126695474501864,
+   "hi": 0.8318224187964902
+  },
+  "H_L": {
+   "k": 3,
+   "n": 10,
+   "p": 0.3,
+   "lo": 0.10778928748621183,
+   "hi": 0.6032267800204347
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 3
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_L": {
+   "L01": 1,
+   "L02": 1,
+   "L03": 1,
+   "L04": 1,
+   "L05": 1,
+   "L06": 1,
+   "L07": 1,
+   "L08": 1,
+   "L09": 1,
+   "L10": 1
+  },
+  "union_L": 10,
+  "stack_L": {
+   "k": 1,
+   "n_judged": 10,
+   "n_events": 10,
+   "share": {
+    "k": 1,
+    "n": 10,
+    "p": 0.1,
+    "lo": 0.01787574951572113,
+    "hi": 0.4041563854975721
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 4,
+   "2019": 4,
+   "2020": 4,
+   "2021": 3,
+   "2022": 7,
+   "2023": 7,
+   "2024": 3,
+   "2025": 3,
+   "2026": 0
+  },
+  "stack_B": {
+   "k": 1,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 1,
+    "n": 27,
+    "p": 0.037037037037037035,
+    "lo": 0.006567976533097597,
+    "hi": 0.1828385393415652
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 0.9324324324324325,
+  "R_BL": {
+   "R": 3.5,
+   "lo": 1.7571319298841537,
+   "hi": 6.971588070115844,
+   "N_num": 35,
+   "N_den": 10
+  },
+  "R_BS": {
+   "R": 3.888888888888889,
+   "lo": 1.8984781633932253,
+   "hi": 7.966094676112943,
+   "N_num": 35,
+   "N_den": 9
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 19
+  },
+  "gates": {
+   "values": {
+    "identification": 1.0,
+    "kappa_class": 1.0,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": true,
+    "kappa_class": true,
+    "kappa_stack": true
+   },
+   "all_pass": true
+  },
+  "verdict_count": "SPECIFIC BY COUNT",
+  "verdict_kind": "NOT STACK-SPECIFIC",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "V0": {
+  "M": 19,
+  "n_A": 19,
+  "n_B": 19,
+  "identification": 1.0,
+  "kappa_class": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 19
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 70,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 27,
+  "N_S_specific": 9,
+  "N_S": 9,
+  "MC_S": {
+   "k": 5,
+   "n": 9,
+   "p": 0.5555555555555556,
+   "lo": 0.2666473457440297,
+   "hi": 0.811224570528086
+  },
+  "H_S": {
+   "k": 2,
+   "n": 9,
+   "p": 0.2222222222222222,
+   "lo": 0.06322376231222723,
+   "hi": 0.5474166563271946
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 5,
+   "2020": 0,
+   "2021": 4,
+   "2022": 0,
+   "2023": 0,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2019": 5,
+   "2021": 4
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1,
+   "S05": 1,
+   "S10": 1,
+   "S11": 1,
+   "S12": 1,
+   "S13": 1
+  },
+  "union_S": 9,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 9,
+   "n_events": 9,
+   "share": {
+    "k": 0,
+    "n": 9,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.2991527535509594
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 10,
+  "N_L": 10,
+  "MC_L": {
+   "k": 6,
+   "n": 10,
+   "p": 0.6,
+   "lo": 0.3126695474501864,
+   "hi": 0.8318224187964902
+  },
+  "H_L": {
+   "k": 3,
+   "n": 10,
+   "p": 0.3,
+   "lo": 0.10778928748621183,
+   "hi": 0.6032267800204347
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 3
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_L": {
+   "L01": 1,
+   "L02": 1,
+   "L03": 1,
+   "L04": 1,
+   "L05": 1,
+   "L06": 1,
+   "L07": 1,
+   "L08": 1,
+   "L09": 1,
+   "L10": 1
+  },
+  "union_L": 10,
+  "stack_L": {
+   "k": 1,
+   "n_judged": 10,
+   "n_events": 10,
+   "share": {
+    "k": 1,
+    "n": 10,
+    "p": 0.1,
+    "lo": 0.01787574951572113,
+    "hi": 0.4041563854975721
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 4,
+   "2019": 4,
+   "2020": 4,
+   "2021": 3,
+   "2022": 3,
+   "2023": 3,
+   "2024": 3,
+   "2025": 3,
+   "2026": 0
+  },
+  "stack_B": {
+   "k": 1,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 1,
+    "n": 27,
+    "p": 0.037037037037037035,
+    "lo": 0.006567976533097597,
+    "hi": 0.1828385393415652
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 0.9324324324324325,
+  "R_BL": {
+   "R": 2.7,
+   "lo": 1.3267460955118904,
+   "hi": 5.494645904488113,
+   "N_num": 27,
+   "N_den": 10
+  },
+  "R_BS": {
+   "R": 3.0,
+   "lo": 1.4348217878794762,
+   "hi": 6.272555989898302,
+   "N_num": 27,
+   "N_den": 9
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 19
+  },
+  "gates": {
+   "values": {
+    "identification": 1.0,
+    "kappa_class": 1.0,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": true,
+    "kappa_class": true,
+    "kappa_stack": true
+   },
+   "all_pass": true
+  },
+  "verdict_count": "UNCLEAR BY COUNT",
+  "verdict_kind": "NOT STACK-SPECIFIC",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "CN0": {
+  "M": 19,
+  "n_A": 19,
+  "n_B": 19,
+  "identification": 1.0,
+  "kappa_class": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 19
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 70,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 25,
+  "N_S_specific": 9,
+  "N_S": 13,
+  "MC_S": {
+   "k": 5,
+   "n": 9,
+   "p": 0.5555555555555556,
+   "lo": 0.2666473457440297,
+   "hi": 0.811224570528086
+  },
+  "H_S": {
+   "k": 2,
+   "n": 9,
+   "p": 0.2222222222222222,
+   "lo": 0.06322376231222723,
+   "hi": 0.5474166563271946
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 5,
+   "2020": 0,
+   "2021": 4,
+   "2022": 0,
+   "2023": 0,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2019": 5,
+   "2021": 4
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1,
+   "S05": 1,
+   "S10": 1,
+   "S11": 1,
+   "S12": 1,
+   "S13": 1
+  },
+  "union_S": 13,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 9,
+   "n_events": 9,
+   "share": {
+    "k": 0,
+    "n": 9,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.2991527535509594
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 10,
+  "N_L": 14,
+  "MC_L": {
+   "k": 6,
+   "n": 10,
+   "p": 0.6,
+   "lo": 0.3126695474501864,
+   "hi": 0.8318224187964902
+  },
+  "H_L": {
+   "k": 3,
+   "n": 10,
+   "p": 0.3,
+   "lo": 0.10778928748621183,
+   "hi": 0.6032267800204347
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 3
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_L": {
+   "L01": 1,
+   "L02": 1,
+   "L03": 1,
+   "L04": 1,
+   "L05": 1,
+   "L06": 1,
+   "L07": 1,
+   "L08": 1,
+   "L09": 1,
+   "L10": 1
+  },
+  "union_L": 14,
+  "stack_L": {
+   "k": 1,
+   "n_judged": 10,
+   "n_events": 10,
+   "share": {
+    "k": 1,
+    "n": 10,
+    "p": 0.1,
+    "lo": 0.01787574951572113,
+    "hi": 0.4041563854975721
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 3,
+   "2019": 3,
+   "2020": 3,
+   "2021": 3,
+   "2022": 5,
+   "2023": 4,
+   "2024": 2,
+   "2025": 2,
+   "2026": 0
+  },
+  "stack_B": {
+   "k": 1,
+   "n_judged": 21,
+   "n_events": 21,
+   "share": {
+    "k": 1,
+    "n": 21,
+    "p": 0.047619047619047616,
+    "lo": 0.008455769471923294,
+    "hi": 0.22669816586235464
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 0,
+    "n_judged": 4,
+    "n_events": 4
+   },
+   "S": {
+    "k": 0,
+    "n_judged": 4,
+    "n_events": 4
+   },
+   "L": {
+    "k": 0,
+    "n_judged": 4,
+    "n_events": 4
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 0.9032258064516129,
+  "R_BL": {
+   "R": 1.7857142857142858,
+   "lo": 0.9386556310772728,
+   "hi": 3.3971729403513002,
+   "N_num": 25,
+   "N_den": 14
+  },
+  "R_BS": {
+   "R": 1.9230769230769231,
+   "lo": 0.9956818087245705,
+   "hi": 3.7142637534056093,
+   "N_num": 25,
+   "N_den": 13
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 19
+  },
+  "gates": {
+   "values": {
+    "identification": 1.0,
+    "kappa_class": 1.0,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": true,
+    "kappa_class": true,
+    "kappa_stack": true
+   },
+   "all_pass": true
+  },
+  "verdict_count": "UNCLEAR BY COUNT",
+  "verdict_kind": "NOT STACK-SPECIFIC",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "FULL": {
+  "M": 19,
+  "n_A": 19,
+  "n_B": 19,
+  "identification": 1.0,
+  "kappa_class": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 19
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 70,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 9,
+  "N_S": 17,
+  "MC_S": {
+   "k": 5,
+   "n": 9,
+   "p": 0.5555555555555556,
+   "lo": 0.2666473457440297,
+   "hi": 0.811224570528086
+  },
+  "H_S": {
+   "k": 2,
+   "n": 9,
+   "p": 0.2222222222222222,
+   "lo": 0.06322376231222723,
+   "hi": 0.5474166563271946
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 5,
+   "2020": 0,
+   "2021": 4,
+   "2022": 0,
+   "2023": 0,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2019": 5,
+   "2021": 4
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1,
+   "S05": 1,
+   "S10": 1,
+   "S11": 1,
+   "S12": 1,
+   "S13": 1
+  },
+  "union_S": 17,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 9,
+   "n_events": 9,
+   "share": {
+    "k": 0,
+    "n": 9,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.2991527535509594
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 10,
+  "N_L": 18,
+  "MC_L": {
+   "k": 6,
+   "n": 10,
+   "p": 0.6,
+   "lo": 0.3126695474501864,
+   "hi": 0.8318224187964902
+  },
+  "H_L": {
+   "k": 3,
+   "n": 10,
+   "p": 0.3,
+   "lo": 0.10778928748621183,
+   "hi": 0.6032267800204347
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 3
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_L": {
+   "L01": 1,
+   "L02": 1,
+   "L03": 1,
+   "L04": 1,
+   "L05": 1,
+   "L06": 1,
+   "L07": 1,
+   "L08": 1,
+   "L09": 1,
+   "L10": 1
+  },
+  "union_L": 18,
+  "stack_L": {
+   "k": 1,
+   "n_judged": 10,
+   "n_events": 10,
+   "share": {
+    "k": 1,
+    "n": 10,
+    "p": 0.1,
+    "lo": 0.01787574951572113,
+    "hi": 0.4041563854975721
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 4,
+   "2019": 4,
+   "2020": 4,
+   "2021": 3,
+   "2022": 7,
+   "2023": 7,
+   "2024": 3,
+   "2025": 3,
+   "2026": 0
+  },
+  "stack_B": {
+   "k": 1,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 1,
+    "n": 27,
+    "p": 0.037037037037037035,
+    "lo": 0.006567976533097597,
+    "hi": 0.1828385393415652
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 0.9324324324324325,
+  "R_BL": {
+   "R": 1.9444444444444444,
+   "lo": 1.1094614796676716,
+   "hi": 3.407837285764423,
+   "N_num": 35,
+   "N_den": 18
+  },
+  "R_BS": {
+   "R": 2.0588235294117645,
+   "lo": 1.1624396623112903,
+   "hi": 3.6464295418409587,
+   "N_num": 35,
+   "N_den": 17
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 19
+  },
+  "gates": {
+   "values": {
+    "identification": 1.0,
+    "kappa_class": 1.0,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": true,
+    "kappa_class": true,
+    "kappa_stack": true
+   },
+   "all_pass": true
+  },
+  "verdict_count": "UNCLEAR BY COUNT",
+  "verdict_kind": "NOT STACK-SPECIFIC",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "ACC": {
+  "M": 19,
+  "n_A": 19,
+  "n_B": 19,
+  "identification": 1.0,
+  "kappa_class": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "matched_by": {
+   "act_id": 19
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 70,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": 1.0,
+   "n": 19,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 9,
+  "N_S": 17,
+  "MC_S": {
+   "k": 5,
+   "n": 9,
+   "p": 0.5555555555555556,
+   "lo": 0.2666473457440297,
+   "hi": 0.811224570528086
+  },
+  "H_S": {
+   "k": 2,
+   "n": 9,
+   "p": 0.2222222222222222,
+   "lo": 0.06322376231222723,
+   "hi": 0.5474166563271946
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 5,
+   "2020": 0,
+   "2021": 4,
+   "2022": 0,
+   "2023": 0,
+   "2024": 0,
+   "2025": 0,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2019": 5,
+   "2021": 4
+  },
+  "by_instrument_S": {
+   "S01": 1,
+   "S02": 1,
+   "S03": 1,
+   "S04": 1,
+   "S05": 1,
+   "S10": 1,
+   "S11": 1,
+   "S12": 1,
+   "S13": 1
+  },
+  "union_S": 17,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 9,
+   "n_events": 9,
+   "share": {
+    "k": 0,
+    "n": 9,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.2991527535509594
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 10,
+  "N_L": 18,
+  "MC_L": {
+   "k": 6,
+   "n": 10,
+   "p": 0.6,
+   "lo": 0.3126695474501864,
+   "hi": 0.8318224187964902
+  },
+  "H_L": {
+   "k": 3,
+   "n": 10,
+   "p": 0.3,
+   "lo": 0.10778928748621183,
+   "hi": 0.6032267800204347
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 4,
+   "memory-or-crypto": 3,
+   "hardware-or-recert": 3
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_L": {
+   "L01": 1,
+   "L02": 1,
+   "L03": 1,
+   "L04": 1,
+   "L05": 1,
+   "L06": 1,
+   "L07": 1,
+   "L08": 1,
+   "L09": 1,
+   "L10": 1
+  },
+  "union_L": 18,
+  "stack_L": {
+   "k": 1,
+   "n_judged": 10,
+   "n_events": 10,
+   "share": {
+    "k": 1,
+    "n": 10,
+    "p": 0.1,
+    "lo": 0.01787574951572113,
+    "hi": 0.4041563854975721
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 0,
+   "2018": 4,
+   "2019": 4,
+   "2020": 4,
+   "2021": 3,
+   "2022": 7,
+   "2023": 7,
+   "2024": 3,
+   "2025": 3,
+   "2026": 0
+  },
+  "stack_B": {
+   "k": 1,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 1,
+    "n": 27,
+    "p": 0.037037037037037035,
+    "lo": 0.006567976533097597,
+    "hi": 0.1828385393415652
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 0,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 0.9324324324324325,
+  "R_BL": {
+   "R": 1.9444444444444444,
+   "lo": 1.1094614796676716,
+   "hi": 3.407837285764423,
+   "N_num": 35,
+   "N_den": 18
+  },
+  "R_BS": {
+   "R": 2.0588235294117645,
+   "lo": 1.1624396623112903,
+   "hi": 3.6464295418409587,
+   "N_num": 35,
+   "N_den": 17
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 19
+  },
+  "gates": {
+   "values": {
+    "identification": 1.0,
+    "kappa_class": 1.0,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": true,
+    "kappa_class": true,
+    "kappa_stack": true
+   },
+   "all_pass": true
+  },
+  "verdict_count": "UNCLEAR BY COUNT",
+  "verdict_kind": "NOT STACK-SPECIFIC",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "stack_disagreements_B_rows": [],
+ "own": {
+  "A": {
+   "S": {
+    "n": 9,
+    "MC": {
+     "k": 5,
+     "n": 9,
+     "p": 0.5555555555555556,
+     "lo": 0.2666473457440297,
+     "hi": 0.811224570528086
+    },
+    "H": {
+     "k": 2,
+     "n": 9,
+     "p": 0.2222222222222222,
+     "lo": 0.06322376231222723,
+     "hi": 0.5474166563271946
+    },
+    "class": {
+     "software-only": 4,
+     "memory-or-crypto": 3,
+     "hardware-or-recert": 2
+    },
+    "stack": {
+     "no": 9
+    }
+   },
+   "L": {
+    "n": 10,
+    "MC": {
+     "k": 6,
+     "n": 10,
+     "p": 0.6,
+     "lo": 0.3126695474501864,
+     "hi": 0.8318224187964902
+    },
+    "H": {
+     "k": 3,
+     "n": 10,
+     "p": 0.3,
+     "lo": 0.10778928748621183,
+     "hi": 0.6032267800204347
+    },
+    "class": {
+     "software-only": 4,
+     "memory-or-crypto": 3,
+     "hardware-or-recert": 3
+    },
+    "stack": {
+     "yes": 1,
+     "no": 9
+    }
+   },
+   "stack_B_rows": {
+    "B": {
+     "yes": 1,
+     "no": 34
+    },
+    "S": {
+     "no": 8
+    },
+    "L": {
+     "no": 8
+    }
+   }
+  },
+  "B": {
+   "S": {
+    "n": 9,
+    "MC": {
+     "k": 5,
+     "n": 9,
+     "p": 0.5555555555555556,
+     "lo": 0.2666473457440297,
+     "hi": 0.811224570528086
+    },
+    "H": {
+     "k": 2,
+     "n": 9,
+     "p": 0.2222222222222222,
+     "lo": 0.06322376231222723,
+     "hi": 0.5474166563271946
+    },
+    "class": {
+     "software-only": 4,
+     "memory-or-crypto": 3,
+     "hardware-or-recert": 2
+    },
+    "stack": {
+     "no": 9
+    }
+   },
+   "L": {
+    "n": 10,
+    "MC": {
+     "k": 6,
+     "n": 10,
+     "p": 0.6,
+     "lo": 0.3126695474501864,
+     "hi": 0.8318224187964902
+    },
+    "H": {
+     "k": 3,
+     "n": 10,
+     "p": 0.3,
+     "lo": 0.10778928748621183,
+     "hi": 0.6032267800204347
+    },
+    "class": {
+     "software-only": 4,
+     "memory-or-crypto": 3,
+     "hardware-or-recert": 3
+    },
+    "stack": {
+     "yes": 1,
+     "no": 9
+    }
+   },
+   "stack_B_rows": {
+    "B": {
+     "yes": 1,
+     "no": 34
+    },
+    "S": {
+     "no": 8
+    },
+    "L": {
+     "no": 8
+    }
+   }
+  }
+ },
+ "verdict_line": {
+  "count": "UNCLEAR BY COUNT",
+  "kind": "NOT STACK-SPECIFIC",
+  "calibration": "CALIBRATED",
+  "sensitivities_differing": {
+   "V1": {
+    "count": "SPECIFIC BY COUNT",
+    "kind": "NOT STACK-SPECIFIC"
+   }
+  }
+ }
+}

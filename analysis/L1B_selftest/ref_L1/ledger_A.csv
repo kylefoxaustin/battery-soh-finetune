@@ -1,0 +1,7 @@
+event_id,instrument_id,domain,act_id,adoption_date,application_date,jurisdiction,what_changed,class,confidence,source_url,source_type,note
+1,S01,S,SREF1,2019-01-10,,x,synthetic,software-only,medium,https://example.invalid,primary,
+2,S02,S,SREF2,2019-02-10,,x,synthetic,memory-or-crypto,medium,https://example.invalid,primary,
+3,S03,S,SREF3,2019-03-10,,x,synthetic,hardware-or-recert,medium,https://example.invalid,primary,
+4,S04,S,SREF4,2019-04-10,,x,synthetic,software-only,medium,https://example.invalid,primary,
+5,S05,S,SREF5,2019-05-10,,x,synthetic,memory-or-crypto,medium,https://example.invalid,primary,
+6,S06,S,SREF6,2019-06-10,,x,synthetic,hardware-or-recert,medium,https://example.invalid,primary,
