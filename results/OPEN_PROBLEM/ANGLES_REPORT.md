@@ -144,6 +144,13 @@ in-service RTOS image. If that is common, the option is worth ~$0 and §E stands
 > **Read:** the arrival process this section describes is real and accelerating. Its excess over a low-volatility
 > domain is about 2× beyond the vehicle-wide cyber / update floor, not the "no such arrival process" for body ECUs
 > written above.
+>
+> **Reviewer, same day** (`results/L1/review/README.md`): accepted; every number re-derived. Exploratory: R lies in
+> [1.2, 3.9] at this sample size, so the 3× bar is neither met nor excluded; and of the ten above-software events, the
+> five that name a cryptographic, update, data-access, retention or telemetry requirement are UN R155, UN R156, the
+> Batteries Regulation, Euro 7 and its OBM / OTA implementing act (19 % [9, 38] of judged). The "five regimes in eight
+> years" this section was written from is, counted, five large acts in six years with thirty smaller events around
+> them. The option value in this section should be priced on those five, not on the 3-a-year rate.
 
 ### B.2 The data-centre analogue of C2: provisioned-power margin and rack stabilisation, where the money is public
 

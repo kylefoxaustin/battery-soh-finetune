@@ -111,6 +111,18 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > access-limited** (ISO, SAE and most GB texts are unreachable without bypassing): the result will be a lower bound on
 > N_B. Stage 2 (two blind raters) is running.
 
+> **Status 2026-11-10 (end of day). L1 is DONE — gated (identification 0.84, κ 0.82); UNCLEAR [V1: VOLATILE DOMAIN];
+> kill does not fire** ([`results/L1/results_L1.md`](../../results/L1/results_L1.md); reviewer re-derived every number,
+> `results/L1/review/`). Domain B: 35 matched events 2016–2026 (3.2 / yr, 22 in 2023–25), MC 38 % [22, 57] of 26 judged;
+> battery / seat ratio 2.2 with the vehicle-level cyber / update instruments on both sides (L-1), 4.4 / 3.4 without —
+> the 3× bar fails only under the symmetric count, and R ∈ [1.2, 3.9] at this sample size. Not access-limited (the 10
+> SAE seeds unread; N_B a floor). Reviewer's exploratory split: the events that put a stack on the ECU are **five
+> acts** — UN R155, UN R156, the Batteries Regulation, Euro 7 and its OBM / OTA implementing act (19 % [9, 38]); the
+> other thirty are supplements, warnings, scope extensions and re-approvals. **ANGLES §B.1 is counted: real, 2–4× a
+> quiet domain, and sized by five acts, not by the drizzle.** [`SYNTHESIS.md`](../../results/OPEN_PROBLEM/SYNTHESIS.md)
+> refreshed ("after seven experiments"). **Next: DC2**, the ramp-spec audit, full brief at
+> [`briefs/DC2/README.md`](../DC2/README.md). Order: DC2 → O1 → R1.
+
 ---
 
 ## 1. How the reviewer starts one

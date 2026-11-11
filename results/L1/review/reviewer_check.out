@@ -1,0 +1,38 @@
+ledger sizes: n_A=45 n_B=49
+matched M=43 ({'act_id': 40, 'date': 3}); identification=0.843; kappa=0.820 (observed 0.884)
+unmatched A: [('S02', 'R16-07-S1', '2017-06-21'), ('S02', 'R16-10-S3', '2026-06-24')]
+unmatched B: [('S08', '87 FR 18560', '2022-03-30'), ('B17', 'ISO 15118-20:2022', '2022-04-26'), ('B17', 'ISO 15118-20:2022/Amd 1:2026', '2026-07-13'), ('S13', '32019R2144', '2019-11-27'), ('B18', 'ISO 15118-8:2018', '2018-02-27'), ('B18', 'ISO 15118-8:2020', '2020-09-21')]
+class disagreements: [('82 FR 44945', 'hardware-or-recert', 'software-only'), ('32025R1706', 'software-only', 'hardware-or-recert'), ('32025R1707', 'memory-or-crypto', 'hardware-or-recert'), ('32026R1764', 'software-only', 'hardware-or-recert'), ('89 FR 67869', 'hardware-or-recert', 'software-only')]
+  domain B: M=35 n_A=35 n_B=39 ident=0.897 kappa=0.828
+  domain S: M=8 n_A=10 n_B=10 ident=0.667 kappa=0.750
+access none/none: B 10/35 (limited=False); S 0/16 (limited=False)
+access table: {('B', 'full', 'full'): 13, ('B', 'none', 'none'): 10, ('B', 'partial', 'partial'): 8, ('B', 'none', 'partial'): 4, ('S', 'full', 'full'): 13, ('S', 'partial', 'partial'): 3}
+
+variant        N_B  N_S     R   judged  MC        H         verdict / kill
+primary V2      35   16   2.19     26  38.5% [22.4,57.5]  34.6% [19.4,53.8]  UNCLEAR / kill=no
+V1              35    8   4.38     26  38.5% [22.4,57.5]  34.6% [19.4,53.8]  VOLATILE DOMAIN / kill=no
+V0              27    8   3.38     20  30.0% [14.5,51.9]  25.0% [11.2,46.9]  VOLATILE DOMAIN / kill=no
+CN0             26   14   1.86     26  38.5% [22.4,57.5]  34.6% [19.4,53.8]  UNCLEAR / kill=no
+FULL            35   16   2.19     26  38.5% [22.4,57.5]  34.6% [19.4,53.8]  UNCLEAR / kill=no
+ACC             35   16   2.19     26  38.5% [22.4,57.5]  34.6% [19.4,53.8]  UNCLEAR / kill=no
+
+per-year B: [3, 2, 0, 0, 3, 0, 2, 5, 8, 9, 3] sum 35
+per-year S(V2): [1, 0, 1, 0, 4, 0, 1, 2, 4, 2, 1] sum 16
+vehicle-level matched events: 8
+B by instrument: [('B04', 8), ('B05', 4), ('B02', 4), ('B33', 2), ('B10', 2), ('B08', 2), ('B09', 2), ('B06', 2), ('B03', 2), ('B22', 1), ('B01', 1), ('B21', 1), ('B14', 1), ('B20', 1), ('B13', 1), ('B15', 1)]
+B classes (conservative): {'software-only': 16, 'hardware-or-recert': 9, 'cannot judge': 9, 'memory-or-crypto': 1}
+B events 2023-2025: 22
+China-only matched events: 9
+rater A own: B 35 (MC 11/26 = 42.3%), S 10
+rater B own: B 39 (MC 14/28 = 50.0%), S 10
+union B: 39 union S(V2): 20
+
+l1.json top keys: ['preregistration', 'tags', 'validation_problems', 'access', 'ledger_sizes_raw', 'primary_V2', 'V1', 'V0', 'CN0', 'FULL', 'ACC', 'own', 'verdict_line', 'kill_line']
+
+=== exploratory (reviewer; not pre-registered) ===
+R = 35/16 = 2.19; binomial (Wilson) 95% interval on R: [1.22, 3.92]
+above-software B events: 10; coded stack: 5, recert-or-function: 5
+stack / judged = 5/26 = 19.2% Wilson [8.5, 37.9]
+stack events: ['32023R1542', 'R155-00', 'R156-00', '32024R1257', '32025R1707']
+unique changes (parallel supplements once): N_B 33, N_S(V2) 15, R 2.20, MC 10/24 = 41.7%
+no scope-extension events: N_B 30, N_S(V2) 15, R 2.00, MC 9/21 = 42.9%

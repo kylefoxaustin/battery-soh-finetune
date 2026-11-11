@@ -247,5 +247,18 @@ history was read.
 
 ---
 
+## Reviewer acceptance (2026-11-10)
+
+Accepted at `a03164b`. Every number above was re-derived by the reviewer from the two ledgers and the two instruments
+files with independent code ([`review/reviewer_check.py`](review/reviewer_check.py), output
+[`review/reviewer_check.out`](review/reviewer_check.out)); agreement is exact. Process checks (script before raters,
+conventions before reading, no post-merge edits, no hypothesis in the launch prompt) and the reviewer's exploratory
+readings are in [`review/README.md`](review/README.md): a binomial interval on R of [1.2, 3.9]; a split of the ten
+above-software events into **five `stack` events (R155, R156, 2023/1542, 2024/1257, 2025/1707; 19 % [9, 38] of judged)**
+and five re-approval / function events; and two counting-rule sensitivities (R 2.0–2.2). None is pre-registered and none
+changes the verdict.
+
+---
+
 *Events SOURCED (UNECE / UN ODS, EUR-Lex, eCFR / Federal Register, IEC, SAMR / openstd, ISO open data). Classifications
 DERIVED-judgemental, by two language-model raters (D-3). No dollar figures.*

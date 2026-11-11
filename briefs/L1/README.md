@@ -4,7 +4,15 @@
 item 5 — the one Tier-A-specific leg still standing after X7, B1, DC1, FR1, FR1-R and X8, and the only one that has
 never been tested. Documentary; no compute; needs web access.
 
-> ## ▶ START HERE — stage 1 APPROVED (reviewer, 2026-11-10, `af2d5cb`); stage 2 is the rating
+> ## ▶ DONE 2026-11-10 — `a03164b`: gated (identification 0.84, κ 0.82); UNCLEAR [V1: VOLATILE DOMAIN]; kill does not fire (reviewer accepted)
+>
+> Results: [`results/L1/results_L1.md`](../../results/L1/results_L1.md). The reviewer re-derived every number from the
+> two ledgers with its own code (`results/L1/review/`): M 43, N_B 35, N_S 16 (8 vehicle-level), R 2.19, MC 10/26 =
+> 38.5 % [22.4, 57.5], H 9/26, V1 4.38 / V0 3.38 (VOLATILE), CN0 1.86, not access-limited (10 of 35 B seeds unread).
+> All match. Exploratory (reviewer): R ∈ [1.2, 3.9]; the five events that force a stack are R155, R156, 2023/1542,
+> 2024/1257 and 2025/1707 (19 % [9, 38] of judged). The approval text is kept below for the record.
+>
+> ## ▶ APPROVED (reviewer, 2026-11-10, `af2d5cb`); stage 2 was the rating (superseded: done)
 >
 > **Approved with deviations L-1 … L-5**, written into
 > [`results/L1/L1_preregistration.md` §9](../../results/L1/L1_preregistration.md) before any change history is read:
