@@ -61,4 +61,4 @@ primary confirmed). Read §9 before anything else: it binds the raters and the a
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN (L1 stage 2: analysis script, rater prompt, two blind raters, results)
+**Status:** AWAITING APPROVAL a03164b (L1: gated; UNCLEAR [V1: VOLATILE]; kill does not fire)
