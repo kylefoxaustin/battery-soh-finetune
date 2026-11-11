@@ -6,7 +6,20 @@ history pays (a 5× looser violation budget: SD 1.27×, W* 30 s) "is a reason to
 spec allows". Documentary; no compute; needs web access. The last data-centre leg of ANGLES §B.2. Same discipline as
 L1: fixed instrument list before reading any limit, closed extraction fields, two blind raters, κ-gated.
 
-> ## ▶ START HERE — stage 1 APPROVED (reviewer, 2026-11-10, `60f7595`); stage 1b then stage 2
+> ## ▶ DONE 2026-11-11 — `af74b0e`: UNGATED (identification 0.52 < 0.80; κ(window) 0.64) — reviewer accepted; no re-run scheduled
+>
+> Results: [`results/DC2/results_DC2.md`](../../results/DC2/results_DC2.md). The reviewer re-derived every number
+> from the four rater files with its own code (`results/DC2/review/`): M 127 = 113 + 14 of 204 / 166 rows,
+> identification 0.523, κ(window, M₁ 113) 0.644, 16 binding-deciding pairs from 3 instruments (reactive 11, history 2,
+> cannot judge 2, electronics 1), the two history pairs both ERCOT §6.5.7.11, not access-limited. All match. The gate
+> failed on row granularity of harmonics and ride-through rows (non-deciding); the deciding pairs agree on every
+> class. **Reading (documentary, gate failure beside it):** no public spec found with the window-and-allowance shape in
+> which DC1 found history to pay at the rack; the one statistical clause is a PCLR curtailment-dispatch rule on
+> one-minute averages. **DC2-R** (one-row-per-table convention fixed in advance) would very probably gate and return
+> HISTORY-SHAPED SPEC EXISTS on that clause alone; it is available on request, not scheduled. The approval text is
+> kept below for the record.
+>
+> ## ▶ APPROVED (reviewer, 2026-11-10, `60f7595`); stage 1b then stage 2 (superseded: done)
 >
 > **Approved with deviations DC2-1 and DC2-2**, written into
 > [`results/DC2/DC2_preregistration.md` §10](../../results/DC2/DC2_preregistration.md) before any limit is read:

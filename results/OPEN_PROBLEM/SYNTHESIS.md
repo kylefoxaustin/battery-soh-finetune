@@ -1,7 +1,7 @@
-# Synthesis — the open-problem pass after seven experiments
+# Synthesis — the open-problem pass after eight experiments (close-out)
 
-**Written:** 2026-11-10, after X8; **refreshed 2026-11-10 (later)** after FR1-R and L1, the last two documentary legs.
-**Scope:** what [`ANGLES_REPORT.md`](ANGLES_REPORT.md) (2026-10-30) proposed, what the seven experiments that followed
+**Written:** 2026-11-10, after X8; refreshed after FR1-R and L1; **close-out 2026-11-11** after DC2, the last leg.
+**Scope:** what [`ANGLES_REPORT.md`](ANGLES_REPORT.md) (2026-10-30) proposed, what the eight experiments that followed
 established, and where the question now stands. **Licence:** public domain (CC0); the licence of each cited result is
 carried with it. Every number here is quoted from a write-up that states its tags; nothing new is computed.
 
@@ -11,7 +11,7 @@ The customer's claim set (C1–C6) says an application-processor part with DRAM 
 800 V → 48 V power conversion. The open-problem pass asked what, specifically, the DRAM tier does that an MCU with
 SDRAM or HyperRAM and factory calibration cannot.
 
-**After seven experiments the answer the evidence supports is the null stated in ANGLES §E, in its positive form:**
+**After eight experiments the answer the evidence supports is the null stated in ANGLES §E, in its positive form:**
 
 > The battery and converter computations the programme can test are MCU-class, and per-vehicle learning does not beat a
 > fleet model on them. The DRAM tier's physically necessary capability — a continuous MB/s ring buffer — is MEASURED on
@@ -21,7 +21,9 @@ SDRAM or HyperRAM and factory calibration cannot.
 > updatable domains. L1 has now counted that regulation: 35 sourced events in eleven years, 3.2 a year and accelerating,
 > of which the ones that force the stack are the cyber-security, software-update and EU energy-data acts — a handful of
 > large acts, not the drizzle. The DRAM is sized by that stack. The battery and converter intelligence is upside that an
-> already-present A-core makes free.
+> already-present A-core makes free. On the data-centre side, DC1 and DC2 together leave the anticipation leg without
+> support: a reactive controller holds public training swings inside a ramp spec as well as one with seconds of
+> history, and no public specification was found with the slack, sub-minute shape in which history would have paid.
 
 That is a stronger roadmap position than the one the programme started with, because every leg of it is either
 measured, gated, or explicitly documentary, and the counter-evidence is on the table.
@@ -75,6 +77,7 @@ usable energy; knees set the reserve) stand unchanged.
 | Per-vehicle / per-unit learning beats a fleet model | **Refuted (battery)** | Studies 1–2, X5, X6: knees, not estimation error, set the reserve |
 | Converter efficiency needs a history-fed model | **Refuted (within the model family)** | convsim: static table within 1 %; holds under 100× hard-switching stress |
 | Anticipation at the rack needs seconds of history | **Not supported** | DC1: a 1 s ramp detector matches 30 s of history; reactive suffices at 0.1 % budget |
+| A real spec has the slack, sub-minute shape where history would pay | **Not found** (DC2 UNGATED; documentary reading) | 56 instruments read twice: every binding limit on real-power variation either rater found is a hard limit (Fingrid oscillation bands and ramp / step at the POI, AESO ramp / step, OCP sub-100 ms envelopes), except an ERCOT curtailment-dispatch rule on one-minute averages that does not see the swings |
 | Per-cell *identity* (not just R spread) carries the limiter gain | **Not supported** | X8: shuffled per-cell is within ≈ 1 pp of per-cell; 40 % of that is 1 mV quantisation. **An MCU min/max limiter with a max-R table captures most of the gain** |
 | A bottom power-capability reserve is there to release | **Not supported in these fleets** | X8: estimated headroom exceeds p95 demand in 96–97 % of sessions |
 | Thermal margin from a per-cell observer | **Untestable on public data** | X7 |
@@ -100,17 +103,20 @@ does not is not pushed there by the rest of the ledger.
 
 ## 5. What would still move the position
 
-- **DC2 — spec audit** ([`../../briefs/DC2/README.md`](../../briefs/DC2/README.md)): what compliance window and
-  excursion allowance real large-load ramp specs use; decides whether DC1's sensitivity (history pays at a 0.5 %
-  budget, 1.27× on SD) is the real-world case. The last data-centre leg.
-  **Run 2026-11-11: UNGATED** ([`../DC2/results_DC2.md`](../DC2/results_DC2.md)) on row granularity. A re-run would
-  need a one-row-per-table rule fixed in advance. The only candidate spec, ERCOT §6.5.7.11, would be the input to a
-  DC1b only if it is implemented and binds data centres.
+The programme has run every leg the public record can carry. What is left is either the customer's data or optional
+tidying:
+
 - **Customer data asks** (public data cannot reach these): a phase-level (≥ 1 kHz) rack power trace; per-unit field
   drift of converter envelope parameters over life; the OEM's last twenty root-cause reports with the pre-event window
-  each needed; and, for L1, the OEM's own list of post-SOP requirement changes on a fielded battery ECU with what each
-  one cost (software update, re-approval, or hardware) — the second kill in ANGLES §C.1 that L1 could not test.
-- **O1 / R1** (code; tier-neutral or secondary): close the audit items; test learned telemetry reduction under a budget.
+  each needed; the OEM's own list of post-SOP requirement changes on a fielded battery ECU with what each one cost
+  (software update, re-approval, or hardware) — the second kill in ANGLES §C.1 that L1 could not test; and the
+  violation budget and window of the ramp spec the data-centre customer is actually held to, which DC2 could not find
+  in public.
+- **DC2-R** (optional, one session run): the same audit with a one-row-per-table convention fixed in advance. It would
+  very probably gate, and would return HISTORY-SHAPED SPEC EXISTS on ERCOT §6.5.7.11 alone — a line usable on a slide
+  only with its caveats (`results/DC2/review/README.md`). Not scheduled.
+- **O1 / R1** (code; tier-neutral or secondary): close the audit items; test learned telemetry reduction under a
+  budget. Neither moves the thesis.
 - **A second quiet comparison domain for L1** (lighting or wipers, say) if the 3× ratio is ever to be settled: the
   seat domain gave eight specific events, too few to pin R.
 
@@ -121,3 +127,27 @@ material (public domain; FR1-R gated), L1 (public regulatory record; UN, EU, US 
 and lifecost (own models, ASSUMED inputs stated). **Not usable:** anything computed on Changan (CC BY-NC-SA 4.0), which
 includes X8's primary, X2-F's primary and the Study 2 fleet results — these direct where a licensed test should look;
 they do not go on a slide.
+
+## 7. Close-out: the position to carry
+
+**For the EV customer (800 V → 48 V, battery charging).** Lead with C5 in its honest form: the A-core and its DRAM are
+in the box because UN R155, UN R156, the EU Batteries Regulation and Euro 7 with its OBM / OTA implementing act put a
+Linux-class stack there — cyber-security management, authenticated updates, SoH data access, on-board monitoring with
+OTA transmission — and that stack is sized by five acts in six years, not by the thirty smaller events around them
+(L1). Once the core is there, the battery intelligence is free upside, and the one capability no MCU-class memory can
+match is MEASURED: a 671 s ring of 3.2 MB/s telemetry in 2 GB LPDDR with zero drops (B1), whose forensic value the
+public record puts at about one root cause in six, concentrated in the charging path (FR1-R). Do not lead with
+per-cell analytics, per-vehicle learning or converter history: the programme refutes each on the public data it could
+reach, and the cheapest fix to min/max is a worst-cell resistance table in the limiter, bytes not DRAM (X2-F, X8).
+
+**For the data-centre customer (2000 V → 48 V).** Do not lead with anticipation: on public training traces a reactive
+controller matches seconds of history at tight budgets (DC1), and no public specification was found with the slack,
+sub-minute shape in which history would pay (DC2, documentary). The shelf controller's Tier-A case is the same as the
+EV one — the software it must host (operator telemetry, TLS to the DCIM, vendor / operator firmware isolation, the
+storage element's BMS) — plus whatever the customer's own ramp contract says, which is the first thing to ask for.
+
+**What the customer's belief most likely rests on.** Not on any computation the programme could find. On the cost of
+the stack they already know they must host, on the option value of not re-spinning a board when the next act lands,
+and on a ring buffer they have wanted at least once. Each of those is a real reason; none is "the NPU does the 1 µs
+loop better". Say that, with the numbers above, and ask the one question in ANGLES §D.
+

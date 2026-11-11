@@ -123,6 +123,21 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > refreshed ("after seven experiments"). **Next: DC2**, the ramp-spec audit, full brief at
 > [`briefs/DC2/README.md`](../DC2/README.md). Order: DC2 → O1 → R1.
 
+> **Status 2026-11-11 — CLOSE-OUT. DC2 is DONE, UNGATED** (identification 0.52 < 0.80 on row granularity of
+> non-deciding harmonics / ride-through rows; κ(window) 0.64; reviewer re-derived every number, `results/DC2/review/`).
+> Documentary reading, gate failure beside it: in 56 instruments read twice, every binding limit on a large load's
+> real-power variation that either rater found is a hard limit (Fingrid oscillation bands and ramp / step at the POI,
+> AESO ramp / step, OCP sub-100 ms envelopes) — DC1's reactive regime or the converter's own bandwidth — except ERCOT
+> §6.5.7.11, a PCLR curtailment-dispatch rule on one-minute averages (≥ 90 % of a month's minutes) that does not see
+> the 0.2–3 Hz swings DC1 modelled. **No public spec has the shape in which history pays. The data-centre anticipation
+> leg is closed on public evidence.** Lessons: fix row granularity (one row per table / per curve) in the
+> pre-registration; define `deciding` for supply envelopes; define approved-but-unimplemented text.
+> **The programme has run every leg the public record can carry.** [`SYNTHESIS.md`](../../results/OPEN_PROBLEM/SYNTHESIS.md)
+> §7 carries the close-out position. Nothing is scheduled. Options, on request: **DC2-R** (one-row-per-table re-run;
+> would gate; returns HISTORY-SHAPED on the ERCOT clause alone, with caveats), **O1** and **R1** (code; do not move the
+> thesis), a second quiet L1 domain, or a customer-facing position paper built from the licence-clean results (SYNTHESIS
+> §6 lists what may go on a slide).
+
 ---
 
 ## 1. How the reviewer starts one

@@ -218,6 +218,14 @@ for; (c) the operator wants the data in its own domain and will not pay the shel
 
   Nothing found makes DC1's sensitivity the real-world case.
 
+**Reviewer, 2026-11-11** (`results/DC2/review/README.md`): accepted as UNGATED; every number re-derived. The ERCOT
+clause is a Provisional Controllable Load Resource rule — a *minimum* curtailment speed with a cap, judged on
+telemetered one-minute averages — so it tests dispatch-following, not self-initiated swings, and a one-minute average
+does not see the 0.2–3 Hz oscillation DC1 modelled. With DC1 and DC2 together, the anticipation leg of this section has
+no public support; what remains Tier-A-specific here is the software (telemetry, TLS to the DCIM, firmware isolation,
+the storage element's BMS) and whatever the customer's own ramp contract says. A DC2-R is available on request, not
+scheduled. The programme is closed out in SYNTHESIS §7.
+
 ### B.3 Event-triggered retention: the one place DRAM is physically necessary
 
 **Mechanism.** Keep a rolling window of raw or lightly decimated converter and pack telemetry resident; on a trigger

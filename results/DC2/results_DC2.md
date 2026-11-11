@@ -231,6 +231,17 @@ None after reading (no DC2-3). Disclosed above:
   - at the rack, shelf or PSU: on supply envelopes (OCP). Only rater B counted these as deciding.
 - Everything above rests on documents read by language-model raters (D-3). No number here is MEASURED.
 
+## Reviewer acceptance (2026-11-11)
+
+Accepted at `af74b0e` as **UNGATED**. Every number in §1–§3 and §5 was re-derived by the reviewer from the four rater
+files with independent code ([`review/reviewer_check.py`](review/reviewer_check.py), output
+[`review/reviewer_check.out`](review/reviewer_check.out)); agreement is exact, and every rater-written shape equals the
+computed one. Process checks and the reviewer's reading are in [`review/README.md`](review/README.md): the gate failed
+on row granularity of non-deciding rows; on the 16 deciding pairs the raters agree on every class; the single
+history-shaped clause is a curtailment-dispatch performance rule on one-minute averages that does not see the swings
+DC1 modelled. A DC2-R is not scheduled; the documentary reading is carried into SYNTHESIS with the gate failure beside
+it.
+
 ---
 
 ## Appendix. Every requirement, both raters
