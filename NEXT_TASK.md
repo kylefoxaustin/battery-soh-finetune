@@ -36,4 +36,4 @@ for the Status line.
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN (DC2-R stage 1: pre-registration, before rating)
+**Status:** AWAITING APPROVAL 47ae9f6 (DC2-R stage 1: pre-registration before rating; launching-session exposure disclosed §7; two points for the reviewer §8: rater clone contents, pass-1 matching on `;` category lists)
