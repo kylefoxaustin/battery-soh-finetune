@@ -1,0 +1,1049 @@
+{
+ "preregistration": "results/DC2/DC2_preregistration.md (60f7595; deviations DC2-1, DC2-2, 1dda7d3)",
+ "tags": "requirements SOURCED; classes DERIVED-judgemental; both raters are language-model sessions",
+ "validation_problems": {
+  "requirements_A": [],
+  "requirements_B": [],
+  "instruments_A": [],
+  "instruments_B": []
+ },
+ "gates": {
+  "n_A": 9,
+  "n_B": 9,
+  "M": 9,
+  "M1": 6,
+  "M2": 3,
+  "identification": 1.0,
+  "kappa_window_M1": {
+   "kappa": 1.0,
+   "n": 6,
+   "observed_agreement": 1.0
+  },
+  "kappa_window_all_M (reported; pass-2 pairs agree by construction)": {
+   "kappa": 1.0,
+   "n": 9,
+   "observed_agreement": 1.0
+  },
+  "kappa_allowance_M1": {
+   "kappa": 1.0,
+   "n": 6,
+   "observed_agreement": 1.0
+  },
+  "kappa_computed_shape_M1": {
+   "kappa": 1.0,
+   "n": 6,
+   "observed_agreement": 1.0
+  },
+  "binding_class_all_M": {
+   "kappa": null,
+   "n": 9,
+   "observed_agreement": 1.0
+  },
+  "deciding_all_M": {
+   "kappa": null,
+   "n": 9,
+   "observed_agreement": 1.0
+  },
+  "ungated_reasons": [
+   "M1 6 < 10"
+  ]
+ },
+ "access": {
+  "A": {
+   "G01": "full",
+   "G02": "full",
+   "G03": "full",
+   "G04": "full",
+   "G05": "full",
+   "G06": "full",
+   "G07": "full",
+   "G08": "full",
+   "G09": "full",
+   "G10": "full",
+   "G11": "full",
+   "G12": "full",
+   "G13": "full",
+   "G14": "full",
+   "G15": "full",
+   "G16": "full",
+   "U01": "full",
+   "U02": "full",
+   "U03": "full",
+   "E01": "full",
+   "E02": "full",
+   "E03": "full",
+   "E04": "full",
+   "E05": "full",
+   "E06": "full",
+   "E07": "full",
+   "E08": "full",
+   "E09": "full",
+   "E10": "full",
+   "E11": "full",
+   "Q01": "full",
+   "Q02": "full",
+   "Q03": "full",
+   "Q04": "full",
+   "Q05": "full",
+   "Q06": "full",
+   "V01": "full",
+   "V02": "full",
+   "V03": "full",
+   "V04": "full",
+   "V05": "full",
+   "V06": "full",
+   "V07": "full",
+   "V08": "full",
+   "V09": "full",
+   "V10": "full",
+   "V11": "full",
+   "V12": "full",
+   "V13": "full",
+   "V14": "full",
+   "Q07": "full",
+   "X01": "full"
+  },
+  "B": {
+   "G01": "full",
+   "G02": "full",
+   "G03": "full",
+   "G04": "full",
+   "G05": "full",
+   "G06": "full",
+   "G07": "full",
+   "G08": "full",
+   "G09": "full",
+   "G10": "full",
+   "G11": "full",
+   "G12": "full",
+   "G13": "full",
+   "G14": "full",
+   "G15": "full",
+   "G16": "full",
+   "U01": "full",
+   "U02": "full",
+   "U03": "full",
+   "E01": "full",
+   "E02": "full",
+   "E03": "full",
+   "E04": "full",
+   "E05": "full",
+   "E06": "full",
+   "E07": "full",
+   "E08": "full",
+   "E09": "full",
+   "E10": "full",
+   "E11": "full",
+   "Q01": "full",
+   "Q02": "full",
+   "Q03": "full",
+   "Q04": "full",
+   "Q05": "full",
+   "Q06": "full",
+   "V01": "full",
+   "V02": "full",
+   "V03": "full",
+   "V04": "full",
+   "V05": "full",
+   "V06": "full",
+   "V07": "full",
+   "V08": "full",
+   "V09": "full",
+   "V10": "full",
+   "V11": "full",
+   "V12": "full",
+   "V13": "full",
+   "V14": "full",
+   "Q07": "full",
+   "X01": "full"
+  },
+  "status_A": {
+   "G01": "in force",
+   "G02": "in force",
+   "G03": "in force",
+   "G04": "in force",
+   "G05": "in force",
+   "G06": "in force",
+   "G07": "in force",
+   "G08": "in force",
+   "G09": "in force",
+   "G10": "in force",
+   "G11": "in force",
+   "G12": "in force",
+   "G13": "in force",
+   "G14": "in force",
+   "G15": "in force",
+   "G16": "in force",
+   "U01": "in force",
+   "U02": "in force",
+   "U03": "in force",
+   "E01": "in force",
+   "E02": "in force",
+   "E03": "in force",
+   "E04": "in force",
+   "E05": "in force",
+   "E06": "in force",
+   "E07": "in force",
+   "E08": "in force",
+   "E09": "in force",
+   "E10": "in force",
+   "E11": "in force",
+   "Q01": "in force",
+   "Q02": "in force",
+   "Q03": "in force",
+   "Q04": "in force",
+   "Q05": "in force",
+   "Q06": "in force",
+   "V01": "in force",
+   "V02": "in force",
+   "V03": "in force",
+   "V04": "in force",
+   "V05": "in force",
+   "V06": "in force",
+   "V07": "in force",
+   "V08": "in force",
+   "V09": "in force",
+   "V10": "in force",
+   "V11": "in force",
+   "V12": "in force",
+   "V13": "in force",
+   "V14": "in force",
+   "Q07": "in force",
+   "X01": "in force"
+  },
+  "status_B": {
+   "G01": "in force",
+   "G02": "in force",
+   "G03": "in force",
+   "G04": "in force",
+   "G05": "in force",
+   "G06": "in force",
+   "G07": "in force",
+   "G08": "in force",
+   "G09": "in force",
+   "G10": "in force",
+   "G11": "in force",
+   "G12": "in force",
+   "G13": "in force",
+   "G14": "in force",
+   "G15": "in force",
+   "G16": "in force",
+   "U01": "in force",
+   "U02": "in force",
+   "U03": "in force",
+   "E01": "in force",
+   "E02": "in force",
+   "E03": "in force",
+   "E04": "in force",
+   "E05": "in force",
+   "E06": "in force",
+   "E07": "in force",
+   "E08": "in force",
+   "E09": "in force",
+   "E10": "in force",
+   "E11": "in force",
+   "Q01": "in force",
+   "Q02": "in force",
+   "Q03": "in force",
+   "Q04": "in force",
+   "Q05": "in force",
+   "Q06": "in force",
+   "V01": "in force",
+   "V02": "in force",
+   "V03": "in force",
+   "V04": "in force",
+   "V05": "in force",
+   "V06": "in force",
+   "V07": "in force",
+   "V08": "in force",
+   "V09": "in force",
+   "V10": "in force",
+   "V11": "in force",
+   "V12": "in force",
+   "V13": "in force",
+   "V14": "in force",
+   "Q07": "in force",
+   "X01": "in force"
+  },
+  "counts_seed": {
+   "full/full": 50,
+   "full/partial": 0,
+   "full/none": 0,
+   "partial/full": 0,
+   "partial/partial": 0,
+   "partial/none": 0,
+   "none/full": 0,
+   "none/partial": 0,
+   "none/none": 0
+  },
+  "counts_by_group": {
+   "G": {
+    "full/full": 16
+   },
+   "U": {
+    "full/full": 3
+   },
+   "E": {
+    "full/full": 11
+   },
+   "Q": {
+    "full/full": 7
+   },
+   "V": {
+    "full/full": 14
+   },
+   "X": {
+    "full/full": 1
+   }
+  },
+  "unread_seed": [],
+  "threshold": ">= 17 of 50",
+  "limited": false
+ },
+ "additions": [
+  "Q07",
+  "X01"
+ ],
+ "primary": {
+  "binding_deciding_pairs": 9,
+  "instruments_with_binding_deciding": 4,
+  "conservative_shape": {
+   "reactive": 7,
+   "electronics": 2
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "disagree": 0,
+   "A": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "B": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "B": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNGATED (M1 6 < 10)",
+  "consequence": "UNGATED: no reading"
+ },
+ "STATED": {
+  "binding_deciding_pairs": 9,
+  "instruments_with_binding_deciding": 4,
+  "conservative_shape": {
+   "reactive": 7,
+   "electronics": 2
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "disagree": 0,
+   "A": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "B": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "B": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNGATED (M1 6 < 10)",
+  "consequence": "UNGATED: no reading"
+ },
+ "ANY": {
+  "binding_deciding_pairs": 9,
+  "instruments_with_binding_deciding": 4,
+  "conservative_shape": {
+   "reactive": 7,
+   "electronics": 2
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "disagree": 0,
+   "A": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "B": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "B": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNGATED (M1 6 < 10)",
+  "consequence": "UNGATED: no reading"
+ },
+ "SEED": {
+  "binding_deciding_pairs": 9,
+  "instruments_with_binding_deciding": 4,
+  "conservative_shape": {
+   "reactive": 7,
+   "electronics": 2
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "disagree": 0,
+   "A": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "B": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "B": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNGATED (M1 6 < 10)",
+  "consequence": "UNGATED: no reading"
+ },
+ "requirement_table": [
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A001",
+    "instrument_id": "G12",
+    "clause": "9.1(a)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B001",
+    "instrument_id": "G12",
+    "clause": "9.1(a)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A002",
+    "instrument_id": "G12",
+    "clause": "9.1(b)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "> 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B002",
+    "instrument_id": "G12",
+    "clause": "9.1(b)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "> 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A003",
+    "instrument_id": "G12",
+    "clause": "9.2",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B003",
+    "instrument_id": "G12",
+    "clause": "9.2",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A004",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.7",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "≤ 100 ms",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B004",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.7",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "≤ 100 ms",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A005",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.8",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "100 ms – 1 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B005",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.8",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "100 ms – 1 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A006",
+    "instrument_id": "E01",
+    "clause": "Art. 12(3)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B006",
+    "instrument_id": "E01",
+    "clause": "Art. 12(3)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 2,
+   "A": {
+    "req_id": "A007",
+    "instrument_id": "E07",
+    "clause": "1",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B007",
+    "instrument_id": "E07",
+    "clause": "para 1a",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 2,
+   "A": {
+    "req_id": "A008",
+    "instrument_id": "E07",
+    "clause": "2",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B008",
+    "instrument_id": "E07",
+    "clause": "para 2a",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 2,
+   "A": {
+    "req_id": "A009",
+    "instrument_id": "E07",
+    "clause": "3",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B009",
+    "instrument_id": "E07",
+    "clause": "para 3a",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  }
+ ],
+ "unmatched_A": [],
+ "unmatched_B": [],
+ "disagreements": {
+  "window_class": 0,
+  "allowance_class": 0,
+  "binding_class": 0,
+  "quantity": 0,
+  "measurement_point": 0,
+  "deciding": 0,
+  "computed_shape": 0
+ },
+ "written_vs_computed_shape": [],
+ "deciding_vs_quantity": [],
+ "DC2_2_conversions": [],
+ "vendor_capability_rows": [],
+ "power_quality_pairs": [],
+ "own": {
+  "A": {
+   "rows": 9,
+   "binding_deciding": 9,
+   "window": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "allowance": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "computed_shape": {
+    "reactive": 7,
+    "electronics": 2
+   },
+   "instruments": 4
+  },
+  "B": {
+   "rows": 9,
+   "binding_deciding": 9,
+   "window": {
+    "1 – 15 min": 5,
+    "> 15 min": 1,
+    "1 – 60 s": 1,
+    "≤ 100 ms": 1,
+    "100 ms – 1 s": 1
+   },
+   "allowance": {
+    "hard": 6,
+    "tight": 1,
+    "loose": 2
+   },
+   "computed_shape": {
+    "reactive": 7,
+    "electronics": 2
+   },
+   "instruments": 4
+  }
+ },
+ "verdict_line": "UNGATED (M1 6 < 10)",
+ "consequence_line": "UNGATED: no reading"
+}

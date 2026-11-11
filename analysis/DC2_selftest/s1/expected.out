@@ -1,0 +1,9 @@
+verdict: HISTORY-SHAPED SPEC EXISTS — history-shaped requirement at POI / facility only (a weaker match to DC1's node / rack model)
+consequence: re-opens the leg as DC1's sensitivity; the named spec (window, allowance, point) is the input to a pre-registered DC1b re-run, not run here
+identification 0.8823529411764706 (M 15 = 13 + 2, n_A 16, n_B 16); kappa window M1 1.000 (n 13); allowance 0.891 (n 13); shape 0.862 (n 13)
+unread seeds 0 []; limited False
+  primary: HISTORY-SHAPED SPEC EXISTS; binding-deciding pairs 14 from 7 instruments; shapes {'reactive': 9, 'electronics': 3, 'history': 1, 'cannot judge': 1}; either-rater history rows 3
+  STATED: HISTORY-SHAPED SPEC EXISTS; binding-deciding pairs 14 from 7 instruments; shapes {'reactive': 9, 'electronics': 3, 'history': 1, 'cannot judge': 1}; either-rater history rows 3
+  ANY: HISTORY-SHAPED SPEC EXISTS; binding-deciding pairs 14 from 7 instruments; shapes {'reactive': 9, 'electronics': 3, 'history': 1, 'cannot judge': 1}; either-rater history rows 3
+  SEED: UNCLEAR; binding-deciding pairs 13 from 6 instruments; shapes {'reactive': 9, 'electronics': 3, 'cannot judge': 1}; either-rater history rows 1
+unmatched A 1, B 1; disagreements {'window_class': 0, 'allowance_class': 1, 'binding_class': 0, 'quantity': 0, 'measurement_point': 0, 'deciding': 0, 'computed_shape': 1}; written-vs-computed shape 1; DC2-2 rows 1
