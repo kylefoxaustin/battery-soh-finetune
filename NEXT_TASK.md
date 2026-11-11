@@ -61,4 +61,4 @@ and binds the raters and the analysis. Plan: [`briefs/NEXT_EXPERIMENTS/README.md
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN (DC2 stage 1b: DC2-1 title-rule additions; then stage 2: analysis script, rater prompt, two blind raters, results)
+**Status:** AWAITING APPROVAL af74b0e (DC2: UNGATED, identification 0.52 < 0.80 on row granularity; kappa(window) 0.64; exploratory: ERCOT §6.5.7.11 the only history-shaped binding clause, both raters)
