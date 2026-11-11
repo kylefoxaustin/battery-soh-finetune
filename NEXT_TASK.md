@@ -42,4 +42,4 @@ the stack-forcing class pre-registered and rated blind on all three domains. Pla
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN (L1b stage 1: pre-registration + fixed lighting list + B_events.csv, before reading)
+**Status:** AWAITING APPROVAL 7c3896c (L1b stage 1: pre-registration, lighting list 47 / 22 seeds, seat list carried over, B_events.csv 35 by script, before reading; launching-session exposure disclosed §8; five points for the reviewer §8; screen disclosures §3b)
