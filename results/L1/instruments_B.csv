@@ -1,0 +1,11 @@
+instrument_id,history_access,sources_tried,note
+S22,full,"eCFR versioner 571.202; Federal Register API (rules, 49 CFR 571, 2016-)",no amendment in window (only the 2016-12-27 eCFR baseline)
+B31,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+S11,full,eCFR versioner 571.210; Federal Register API,"89 FR 76236 (test device), 91 FR 33091 and correction 91 FR 35147 (obsolete text removal): not ECU-visible"
+S24,full,eCFR versioner 571.213; Federal Register API,"rules 87 FR 39234, 88 FR 84514, 89 FR 81836, 89 FR 96125, 91 FR 57265 concern child restraint products (not a vehicle ECU): no events"
+S25,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+B26,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+S02,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,"5 events (SBR); other supplements/series mechanical, documentation or labels"
+S09,full,eCFR versioner 571.208; Federal Register API and full texts,3 events; 87 FR 18560 counted under S08; 90 FR 9610 delay only
+B22,full,IEC webstore publication pages (lifecycle and abstract with change list),2014 edition and its 2015 corrigendum before window
+B24,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
