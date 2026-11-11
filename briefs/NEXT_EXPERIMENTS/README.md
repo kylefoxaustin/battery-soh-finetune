@@ -157,6 +157,14 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > **Nothing is scheduled.** Remaining options on request: O1 / R1 (code, do not move the thesis); a second quiet L1
 > domain; a DC2-R2 with the two coverage fixes (would probably gate; deciding set would not change).
 
+> **Status 2026-11-11 (night). Kyle chose the second comparison domain: L1b** (brief
+> [`briefs/L1B/README.md`](../L1B/README.md)). Exterior lighting as domain L — the loudest body-ECU domain, the
+> strongest falsification target for the count form of ANGLES §B.1 — with the seat domain re-rated as a calibration,
+> the 35 battery events carried over, and the reviewer's exploratory "stack" split of L1 now a pre-registered class
+> rated blind on all three domains. Two verdicts: SPECIFIC / NOT SPECIFIC BY COUNT (R_BL ≥ 3 / < 1.5, V2) and
+> STACK-SPECIFIC / NOT (B ≥ 3 specific stack events with L and S ≤ 1 / L ≥ 2). The second is what POSITION §1 rests
+> on. Order: L1b → (nothing scheduled after).
+
 ---
 
 ## 1. How the reviewer starts one
