@@ -1,0 +1,1348 @@
+{
+ "preregistration": "results/L1/L1_preregistration.md (af2d5cb; deviations L-1..L-5, e98f8b3)",
+ "tags": "events SOURCED; classifications DERIVED-judgemental; both raters are language-model sessions",
+ "validation_problems": {
+  "ledger_A": [],
+  "ledger_B": [],
+  "instruments_A": [],
+  "instruments_B": []
+ },
+ "access": {
+  "A": {
+   "B22": "full",
+   "B37": "none",
+   "B34": "full",
+   "B17": "none",
+   "B01": "full",
+   "B27": "none",
+   "B19": "none",
+   "S08": "full",
+   "B07": "full",
+   "S13": "full",
+   "S15": "partial",
+   "S10": "full",
+   "B11": "partial",
+   "S17": "full",
+   "S05": "full",
+   "B25": "none",
+   "B23": "none",
+   "S03": "full",
+   "B30": "none",
+   "B21": "full",
+   "B14": "partial",
+   "B10": "partial",
+   "B29": "none",
+   "B08": "partial",
+   "B20": "full",
+   "S04": "full",
+   "S11": "full",
+   "S20": "none",
+   "S02": "full",
+   "S07": "full",
+   "B05": "full",
+   "B26": "none",
+   "B35": "full",
+   "S18": "full",
+   "B13": "partial",
+   "S12": "full",
+   "B18": "none",
+   "S06": "full",
+   "S16": "partial",
+   "B12": "partial",
+   "B28": "none",
+   "S01": "full",
+   "S26": "full",
+   "B24": "none",
+   "B32": "none",
+   "B33": "full",
+   "S19": "none",
+   "S21": "full",
+   "B04": "full",
+   "B15": "partial",
+   "B16": "none",
+   "B09": "partial",
+   "B06": "full",
+   "B02": "full",
+   "S23": "none",
+   "S25": "none",
+   "B31": "none",
+   "S24": "full",
+   "S09": "full",
+   "S22": "full",
+   "B36": "none",
+   "B03": "full",
+   "S14": "partial"
+  },
+  "B": {
+   "S22": "full",
+   "B31": "none",
+   "S11": "full",
+   "S24": "full",
+   "S25": "none",
+   "B26": "none",
+   "S02": "full",
+   "S09": "full",
+   "B22": "full",
+   "B24": "none",
+   "S01": "full",
+   "B25": "none",
+   "B06": "full",
+   "B27": "none",
+   "B36": "partial",
+   "B03": "full",
+   "S15": "partial",
+   "B02": "full",
+   "B28": "none",
+   "B05": "full",
+   "B11": "partial",
+   "S04": "full",
+   "S19": "partial",
+   "B20": "full",
+   "S08": "full",
+   "B04": "full",
+   "S12": "full",
+   "B30": "none",
+   "S17": "full",
+   "B14": "partial",
+   "S21": "full",
+   "B29": "none",
+   "S10": "full",
+   "S18": "full",
+   "B07": "full",
+   "S05": "full",
+   "B32": "none",
+   "B34": "full",
+   "B15": "partial",
+   "S07": "full",
+   "B16": "partial",
+   "B23": "none",
+   "B19": "partial",
+   "B12": "partial",
+   "S26": "full",
+   "B08": "partial",
+   "B17": "partial",
+   "B37": "none",
+   "S13": "full",
+   "S03": "full",
+   "B10": "partial",
+   "S20": "partial",
+   "B35": "full",
+   "B18": "partial",
+   "B13": "partial",
+   "B09": "partial",
+   "S14": "partial",
+   "S16": "partial",
+   "S06": "full",
+   "B33": "full",
+   "B01": "full",
+   "B21": "full",
+   "S23": "none"
+  },
+  "counts": {
+   "B_seed": {
+    "full/full": 13,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 8,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 4,
+    "none/none": 10
+   },
+   "S_seed": {
+    "full/full": 13,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 3,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 0,
+    "none/none": 0
+   }
+  },
+  "unread_B_seed": [
+   "B23",
+   "B24",
+   "B25",
+   "B26",
+   "B27",
+   "B28",
+   "B29",
+   "B30",
+   "B31",
+   "B32"
+  ],
+  "unread_S_seed": [],
+  "limited_B": false,
+  "limited_S": false
+ },
+ "ledger_sizes_raw": {
+  "A": 45,
+  "B": 49
+ },
+ "primary_V2": {
+  "M": 43,
+  "n_A": 45,
+  "n_B": 49,
+  "identification": 0.8431372549019608,
+  "kappa": {
+   "kappa": 0.8203842940685047,
+   "n": 43,
+   "observed_agreement": 0.8837209302325582
+  },
+  "matched_by": {
+   "act_id": 40,
+   "date": 3
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 35,
+  "MC_B": {
+   "k": 10,
+   "n": 26,
+   "p": 0.38461538461538464,
+   "lo": 0.22428359511834428,
+   "hi": 0.5746547996057992
+  },
+  "H_B": {
+   "k": 9,
+   "n": 26,
+   "p": 0.34615384615384615,
+   "lo": 0.19412014972852126,
+   "hi": 0.5377977099036699
+  },
+  "cannot_judge_B": 9,
+  "class_B": {
+   "hardware-or-recert": 9,
+   "software-only": 16,
+   "memory-or-crypto": 1,
+   "cannot judge (either rater)": 9
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "per_year_application_B": {
+   "2016": 3,
+   "2017": 2,
+   "2020": 3,
+   "2022": 2,
+   "2023": 3,
+   "2024": 7,
+   "2025": 8,
+   "2026": 6,
+   "2027": 1
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 4,
+   "B03": 2,
+   "B04": 8,
+   "B05": 4,
+   "B06": 2,
+   "B08": 2,
+   "B09": 2,
+   "B10": 2,
+   "B13": 1,
+   "B14": 1,
+   "B15": 1,
+   "B20": 1,
+   "B21": 1,
+   "B22": 1,
+   "B33": 2
+  },
+  "union_B": 39,
+  "N_S": 16,
+  "MC_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "H_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "cannot_judge_S": 2,
+  "class_S": {
+   "software-only": 7,
+   "hardware-or-recert": 7,
+   "cannot judge (either rater)": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 1,
+   "2019": 0,
+   "2020": 4,
+   "2021": 0,
+   "2022": 1,
+   "2023": 2,
+   "2024": 4,
+   "2025": 2,
+   "2026": 1
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2018": 1,
+   "2020": 4,
+   "2022": 1,
+   "2023": 2,
+   "2024": 2,
+   "2025": 2,
+   "2026": 2,
+   "2028": 1
+  },
+  "by_instrument_S": {
+   "B05": 4,
+   "B06": 2,
+   "B14": 1,
+   "B15": 1,
+   "S02": 5,
+   "S09": 3
+  },
+  "union_S": 20,
+  "R": 2.1875,
+  "by_jurisdiction": {
+   "non-China": 34,
+   "China": 9
+  },
+  "verdict": "UNCLEAR",
+  "kill": false,
+  "decision_notes": [],
+  "unmatched_A": [
+   {
+    "event_id": "A012",
+    "instrument_id": "S02",
+    "act_id": "R16-07-S1",
+    "adoption_date": "2017-06-21",
+    "application_date": "",
+    "class": "software-only",
+    "confidence": "low",
+    "what_changed": "Supplement 1 to 07 series: safety-belt reminder not compulsory on removable rear seats (para. 15.4.2), other clarifications",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2017/60&l=en&t=pdf"
+   },
+   {
+    "event_id": "A017",
+    "instrument_id": "S02",
+    "act_id": "R16-10-S3",
+    "adoption_date": "2026-06-24",
+    "application_date": "",
+    "class": "software-only",
+    "confidence": "low",
+    "what_changed": "Supplement 3 to 10 series: extension to vehicles without driver controls (category X); retractor-related signal may be transmitted as a logic signal to the ADS (6.2.5.3.1.5)",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/62&l=en&t=pdf"
+   }
+  ],
+  "unmatched_B": [
+   {
+    "event_id": "B-036",
+    "instrument_id": "B17",
+    "act_id": "ISO 15118-20:2022",
+    "adoption_date": "2022-04-26",
+    "application_date": "",
+    "class": "memory-or-crypto",
+    "confidence": "low",
+    "what_changed": "First edition: 2nd-generation V2G network and application layer (bidirectional power transfer messages, wireless and ACD communication)",
+    "source_url": "https://isopublicstorageprod.blob.core.windows.net/opendata/_latest/iso_deliverables_metadata/json/iso_deliverables_metadata.jsonl"
+   },
+   {
+    "event_id": "B-037",
+    "instrument_id": "B17",
+    "act_id": "ISO 15118-20:2022/Amd 1:2026",
+    "adoption_date": "2026-07-13",
+    "application_date": "",
+    "class": "cannot judge",
+    "confidence": "low",
+    "what_changed": "Amendment 1: AC DER service, MCS service and improved security concept (title only)",
+    "source_url": "https://isopublicstorageprod.blob.core.windows.net/opendata/_latest/iso_deliverables_metadata/json/iso_deliverables_metadata.jsonl"
+   },
+   {
+    "event_id": "B-041",
+    "instrument_id": "B18",
+    "act_id": "ISO 15118-8:2018",
+    "adoption_date": "2018-02-27",
+    "application_date": "",
+    "class": "hardware-or-recert",
+    "confidence": "low",
+    "what_changed": "First edition: physical and data-link layer for wireless high-level V2G communication (alternative to wired PLC)",
+    "source_url": "https://isopublicstorageprod.blob.core.windows.net/opendata/_latest/iso_deliverables_metadata/json/iso_deliverables_metadata.jsonl"
+   },
+   {
+    "event_id": "B-042",
+    "instrument_id": "B18",
+    "act_id": "ISO 15118-8:2020",
+    "adoption_date": "2020-09-21",
+    "application_date": "",
+    "class": "cannot judge",
+    "confidence": "low",
+    "what_changed": "Second edition (what changed not shown)",
+    "source_url": "https://isopublicstorageprod.blob.core.windows.net/opendata/_latest/iso_deliverables_metadata/json/iso_deliverables_metadata.jsonl"
+   },
+   {
+    "event_id": "B-023",
+    "instrument_id": "S08",
+    "act_id": "87 FR 18560",
+    "adoption_date": "2022-03-30",
+    "application_date": "2022-09-26",
+    "class": "hardware-or-recert",
+    "confidence": "medium",
+    "what_changed": "Occupant protection for ADS vehicles without manual controls: advanced air-bag (occupant classification/suppression) and separate suppression telltales for both front outboard seats; motion suppression when child detected",
+    "source_url": "https://www.federalregister.gov/documents/2022-05426"
+   },
+   {
+    "event_id": "B-038",
+    "instrument_id": "S13",
+    "act_id": "32019R2144",
+    "adoption_date": "2019-11-27",
+    "application_date": "2022-07-06",
+    "class": "hardware-or-recert",
+    "confidence": "medium",
+    "what_changed": "GSR2 base act: safety-belt reminders per UN R16 (Annex II A6) and seating/restraint requirements made mandatory for M/N categories by stated dates",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R2144"
+   }
+  ],
+  "class_disagreements": [
+   {
+    "A": {
+     "event_id": "A038",
+     "instrument_id": "B02",
+     "act_id": "32025R1706",
+     "adoption_date": "2025-07-25",
+     "application_date": "",
+     "class": "software-only",
+     "confidence": "medium",
+     "what_changed": "Implementing act: type-approval procedures incl. in-vehicle battery durability; prohibition of software/calibration updates manipulating battery durability data and duty to disclose updates affecting that data",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1706"
+    },
+    "B": {
+     "event_id": "B-015",
+     "instrument_id": "B02",
+     "act_id": "32025R1706",
+     "adoption_date": "2025-07-25",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "confidence": "low",
+     "what_changed": "Implementing rules incl. anti-manipulation/data-integrity obligations for battery durability data, disclosure of software/calibration updates, cybersecurity mitigations (secure update, access control)",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1706"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A039",
+     "instrument_id": "B02",
+     "act_id": "32025R1707",
+     "adoption_date": "2025-07-25",
+     "application_date": "",
+     "class": "memory-or-crypto",
+     "confidence": "medium",
+     "what_changed": "Implementing act: OBM system and data incl. battery durability parameters (on-board SOCE/SOCR, odometer), storage, OBD access and over-the-air transmission of OBM data to manufacturer servers with R155 cybersecurity; EVP format and communication",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1707"
+    },
+    "B": {
+     "event_id": "B-016",
+     "instrument_id": "B02",
+     "act_id": "32025R1707",
+     "adoption_date": "2025-07-25",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "confidence": "medium",
+     "what_changed": "OBM data incl. battery durability parameters on the data link connector and over-the-air transmission with hashing; EVP data format and 20-year off-board access",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1707"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A040",
+     "instrument_id": "B02",
+     "act_id": "32026R1764",
+     "adoption_date": "2026-07-13",
+     "application_date": "",
+     "class": "software-only",
+     "confidence": "low",
+     "what_changed": "Amends 2025/1706: methods, requirements and tests for in-vehicle battery durability aligned with UN R154 04 / R83 09, in-service conformity of battery durability, templates",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1764"
+    },
+    "B": {
+     "event_id": "B-017",
+     "instrument_id": "B02",
+     "act_id": "32026R1764",
+     "adoption_date": "2026-07-13",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "confidence": "low",
+     "what_changed": "Amends 2025/1706 to add in-vehicle battery durability methods and requirements (per UN R154-04/R83-09), templates; defers PEV OBFCM to 2030",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1764"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A023",
+     "instrument_id": "B33",
+     "act_id": "82 FR 44945",
+     "adoption_date": "2017-09-27",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "confidence": "medium",
+     "what_changed": "FMVSS 305 amended (GTR 13 electrical safety): electrical isolation monitoring with driver warning (fuel-cell DC sources), shock protection during charging, indicators of possible active driving mode and drive-away prevention while connected to external charging",
+     "source_url": "https://www.federalregister.gov/documents/2017/09/27/2017-20350"
+    },
+    "B": {
+     "event_id": "B-046",
+     "instrument_id": "B33",
+     "act_id": "82 FR 44945",
+     "adoption_date": "2017-09-27",
+     "application_date": "",
+     "class": "software-only",
+     "confidence": "low",
+     "what_changed": "FMVSS 305 extended to normal operation (GTR 13): isolation monitoring with warning (fuel-cell HV), active-driving-mode indicators, drive-away prevention while charging",
+     "source_url": "https://www.federalregister.gov/documents/2017-20350"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A041",
+     "instrument_id": "S09",
+     "act_id": "89 FR 67869",
+     "adoption_date": "2024-08-22",
+     "application_date": "2026-09-01",
+     "class": "hardware-or-recert",
+     "confidence": "medium",
+     "what_changed": "FMVSS 208 appendix A-1 child restraint list updated for testing advanced air bag suppression / occupant classification (phase-in 40% from 2025-09-01, all from 2026-09-01)",
+     "source_url": "https://www.federalregister.gov/documents/2024/08/22/2024-18114"
+    },
+    "B": {
+     "event_id": "B-006",
+     "instrument_id": "S09",
+     "act_id": "89 FR 67869",
+     "adoption_date": "2024-08-22",
+     "application_date": "2024-10-21",
+     "class": "software-only",
+     "confidence": "low",
+     "what_changed": "Updates the child restraint systems used to test advanced air-bag suppression / low-risk deployment (occupant classification)",
+     "source_url": "https://www.federalregister.gov/documents/2024-18114"
+    }
+   }
+  ],
+  "window_straddling": [],
+  "S_without_vehicle_level": {
+   "N_S": 8,
+   "MC_S": {
+    "k": 3,
+    "n": 8,
+    "p": 0.375,
+    "lo": 0.13684175946152105,
+    "hi": 0.6942621454161981
+   },
+   "H_S": {
+    "k": 3,
+    "n": 8,
+    "p": 0.375,
+    "lo": 0.13684175946152105,
+    "hi": 0.6942621454161981
+   },
+   "class_S": {
+    "hardware-or-recert": 3,
+    "software-only": 5
+   }
+  }
+ },
+ "V1": {
+  "M": 43,
+  "n_A": 45,
+  "n_B": 49,
+  "identification": 0.8431372549019608,
+  "kappa": {
+   "kappa": 0.8203842940685047,
+   "n": 43,
+   "observed_agreement": 0.8837209302325582
+  },
+  "matched_by": {
+   "act_id": 40,
+   "date": 3
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 35,
+  "MC_B": {
+   "k": 10,
+   "n": 26,
+   "p": 0.38461538461538464,
+   "lo": 0.22428359511834428,
+   "hi": 0.5746547996057992
+  },
+  "H_B": {
+   "k": 9,
+   "n": 26,
+   "p": 0.34615384615384615,
+   "lo": 0.19412014972852126,
+   "hi": 0.5377977099036699
+  },
+  "cannot_judge_B": 9,
+  "class_B": {
+   "hardware-or-recert": 9,
+   "software-only": 16,
+   "memory-or-crypto": 1,
+   "cannot judge (either rater)": 9
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "per_year_application_B": {
+   "2016": 3,
+   "2017": 2,
+   "2020": 3,
+   "2022": 2,
+   "2023": 3,
+   "2024": 7,
+   "2025": 8,
+   "2026": 6,
+   "2027": 1
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 4,
+   "B03": 2,
+   "B04": 8,
+   "B05": 4,
+   "B06": 2,
+   "B08": 2,
+   "B09": 2,
+   "B10": 2,
+   "B13": 1,
+   "B14": 1,
+   "B15": 1,
+   "B20": 1,
+   "B21": 1,
+   "B22": 1,
+   "B33": 2
+  },
+  "union_B": 39,
+  "N_S": 8,
+  "MC_S": {
+   "k": 3,
+   "n": 8,
+   "p": 0.375,
+   "lo": 0.13684175946152105,
+   "hi": 0.6942621454161981
+  },
+  "H_S": {
+   "k": 3,
+   "n": 8,
+   "p": 0.375,
+   "lo": 0.13684175946152105,
+   "hi": 0.6942621454161981
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 5
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 1,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 1
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2018": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2028": 1
+  },
+  "by_instrument_S": {
+   "S02": 5,
+   "S09": 3
+  },
+  "union_S": 12,
+  "R": 4.375,
+  "by_jurisdiction": {
+   "non-China": 34,
+   "China": 9
+  },
+  "verdict": "VOLATILE DOMAIN",
+  "kill": false,
+  "decision_notes": []
+ },
+ "V0": {
+  "M": 43,
+  "n_A": 45,
+  "n_B": 49,
+  "identification": 0.8431372549019608,
+  "kappa": {
+   "kappa": 0.8203842940685047,
+   "n": 43,
+   "observed_agreement": 0.8837209302325582
+  },
+  "matched_by": {
+   "act_id": 40,
+   "date": 3
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 27,
+  "MC_B": {
+   "k": 6,
+   "n": 20,
+   "p": 0.3,
+   "lo": 0.14547527396899385,
+   "hi": 0.5189767762289793
+  },
+  "H_B": {
+   "k": 5,
+   "n": 20,
+   "p": 0.25,
+   "lo": 0.11186005278940309,
+   "hi": 0.4687050099580636
+  },
+  "cannot_judge_B": 7,
+  "class_B": {
+   "hardware-or-recert": 5,
+   "software-only": 14,
+   "memory-or-crypto": 1,
+   "cannot judge (either rater)": 7
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 0,
+   "2022": 1,
+   "2023": 4,
+   "2024": 5,
+   "2025": 8,
+   "2026": 3
+  },
+  "per_year_application_B": {
+   "2016": 3,
+   "2017": 2,
+   "2020": 1,
+   "2022": 1,
+   "2023": 2,
+   "2024": 6,
+   "2025": 7,
+   "2026": 4,
+   "2027": 1
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 4,
+   "B03": 2,
+   "B04": 8,
+   "B08": 2,
+   "B09": 2,
+   "B10": 2,
+   "B13": 1,
+   "B20": 1,
+   "B21": 1,
+   "B22": 1,
+   "B33": 2
+  },
+  "union_B": 31,
+  "N_S": 8,
+  "MC_S": {
+   "k": 3,
+   "n": 8,
+   "p": 0.375,
+   "lo": 0.13684175946152105,
+   "hi": 0.6942621454161981
+  },
+  "H_S": {
+   "k": 3,
+   "n": 8,
+   "p": 0.375,
+   "lo": 0.13684175946152105,
+   "hi": 0.6942621454161981
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 5
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 1,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 1
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2018": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2028": 1
+  },
+  "by_instrument_S": {
+   "S02": 5,
+   "S09": 3
+  },
+  "union_S": 12,
+  "R": 3.375,
+  "by_jurisdiction": {
+   "non-China": 34,
+   "China": 9
+  },
+  "verdict": "VOLATILE DOMAIN",
+  "kill": false,
+  "decision_notes": []
+ },
+ "CN0": {
+  "M": 34,
+  "n_A": 36,
+  "n_B": 40,
+  "identification": 0.8095238095238095,
+  "kappa": {
+   "kappa": 0.7094017094017094,
+   "n": 34,
+   "observed_agreement": 0.8529411764705882
+  },
+  "matched_by": {
+   "act_id": 31,
+   "date": 3
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 26,
+  "MC_B": {
+   "k": 10,
+   "n": 26,
+   "p": 0.38461538461538464,
+   "lo": 0.22428359511834428,
+   "hi": 0.5746547996057992
+  },
+  "H_B": {
+   "k": 9,
+   "n": 26,
+   "p": 0.34615384615384615,
+   "lo": 0.19412014972852126,
+   "hi": 0.5377977099036699
+  },
+  "cannot_judge_B": 0,
+  "class_B": {
+   "hardware-or-recert": 9,
+   "software-only": 16,
+   "memory-or-crypto": 1
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 4,
+   "2024": 6,
+   "2025": 6,
+   "2026": 3
+  },
+  "per_year_application_B": {
+   "2017": 2,
+   "2020": 3,
+   "2022": 2,
+   "2023": 3,
+   "2024": 6,
+   "2025": 6,
+   "2026": 3,
+   "2027": 1
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 4,
+   "B03": 2,
+   "B04": 8,
+   "B05": 4,
+   "B06": 2,
+   "B20": 1,
+   "B21": 1,
+   "B22": 1,
+   "B33": 2
+  },
+  "union_B": 30,
+  "N_S": 14,
+  "MC_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "H_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "cannot_judge_S": 0,
+  "class_S": {
+   "software-only": 7,
+   "hardware-or-recert": 7
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 1,
+   "2019": 0,
+   "2020": 4,
+   "2021": 0,
+   "2022": 1,
+   "2023": 2,
+   "2024": 2,
+   "2025": 2,
+   "2026": 1
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2018": 1,
+   "2020": 4,
+   "2022": 1,
+   "2023": 2,
+   "2024": 2,
+   "2025": 2,
+   "2028": 1
+  },
+  "by_instrument_S": {
+   "B05": 4,
+   "B06": 2,
+   "S02": 5,
+   "S09": 3
+  },
+  "union_S": 18,
+  "R": 1.8571428571428572,
+  "by_jurisdiction": {
+   "non-China": 34
+  },
+  "verdict": "UNCLEAR",
+  "kill": false,
+  "decision_notes": []
+ },
+ "FULL": {
+  "M": 43,
+  "n_A": 45,
+  "n_B": 49,
+  "identification": 0.8431372549019608,
+  "kappa": {
+   "kappa": 0.8203842940685047,
+   "n": 43,
+   "observed_agreement": 0.8837209302325582
+  },
+  "matched_by": {
+   "act_id": 40,
+   "date": 3
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 35,
+  "MC_B": {
+   "k": 10,
+   "n": 26,
+   "p": 0.38461538461538464,
+   "lo": 0.22428359511834428,
+   "hi": 0.5746547996057992
+  },
+  "H_B": {
+   "k": 9,
+   "n": 26,
+   "p": 0.34615384615384615,
+   "lo": 0.19412014972852126,
+   "hi": 0.5377977099036699
+  },
+  "cannot_judge_B": 9,
+  "class_B": {
+   "hardware-or-recert": 9,
+   "software-only": 16,
+   "memory-or-crypto": 1,
+   "cannot judge (either rater)": 9
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "per_year_application_B": {
+   "2016": 3,
+   "2017": 2,
+   "2020": 3,
+   "2022": 2,
+   "2023": 3,
+   "2024": 7,
+   "2025": 8,
+   "2026": 6,
+   "2027": 1
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 4,
+   "B03": 2,
+   "B04": 8,
+   "B05": 4,
+   "B06": 2,
+   "B08": 2,
+   "B09": 2,
+   "B10": 2,
+   "B13": 1,
+   "B14": 1,
+   "B15": 1,
+   "B20": 1,
+   "B21": 1,
+   "B22": 1,
+   "B33": 2
+  },
+  "union_B": 39,
+  "N_S": 16,
+  "MC_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "H_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "cannot_judge_S": 2,
+  "class_S": {
+   "software-only": 7,
+   "hardware-or-recert": 7,
+   "cannot judge (either rater)": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 1,
+   "2019": 0,
+   "2020": 4,
+   "2021": 0,
+   "2022": 1,
+   "2023": 2,
+   "2024": 4,
+   "2025": 2,
+   "2026": 1
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2018": 1,
+   "2020": 4,
+   "2022": 1,
+   "2023": 2,
+   "2024": 2,
+   "2025": 2,
+   "2026": 2,
+   "2028": 1
+  },
+  "by_instrument_S": {
+   "B05": 4,
+   "B06": 2,
+   "B14": 1,
+   "B15": 1,
+   "S02": 5,
+   "S09": 3
+  },
+  "union_S": 20,
+  "R": 2.1875,
+  "by_jurisdiction": {
+   "non-China": 34,
+   "China": 9
+  },
+  "verdict": "UNCLEAR",
+  "kill": false,
+  "decision_notes": []
+ },
+ "ACC": {
+  "M": 43,
+  "n_A": 45,
+  "n_B": 45,
+  "identification": 0.9148936170212766,
+  "kappa": {
+   "kappa": 0.8203842940685047,
+   "n": 43,
+   "observed_agreement": 0.8837209302325582
+  },
+  "matched_by": {
+   "act_id": 40,
+   "date": 3
+  },
+  "window_straddling_pairs": 0,
+  "N_B": 35,
+  "MC_B": {
+   "k": 10,
+   "n": 26,
+   "p": 0.38461538461538464,
+   "lo": 0.22428359511834428,
+   "hi": 0.5746547996057992
+  },
+  "H_B": {
+   "k": 9,
+   "n": 26,
+   "p": 0.34615384615384615,
+   "lo": 0.19412014972852126,
+   "hi": 0.5377977099036699
+  },
+  "cannot_judge_B": 9,
+  "class_B": {
+   "hardware-or-recert": 9,
+   "software-only": 16,
+   "memory-or-crypto": 1,
+   "cannot judge (either rater)": 9
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "per_year_application_B": {
+   "2016": 3,
+   "2017": 2,
+   "2020": 3,
+   "2022": 2,
+   "2023": 3,
+   "2024": 7,
+   "2025": 8,
+   "2026": 6,
+   "2027": 1
+  },
+  "by_instrument_B": {
+   "B01": 1,
+   "B02": 4,
+   "B03": 2,
+   "B04": 8,
+   "B05": 4,
+   "B06": 2,
+   "B08": 2,
+   "B09": 2,
+   "B10": 2,
+   "B13": 1,
+   "B14": 1,
+   "B15": 1,
+   "B20": 1,
+   "B21": 1,
+   "B22": 1,
+   "B33": 2
+  },
+  "union_B": 35,
+  "N_S": 16,
+  "MC_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "H_S": {
+   "k": 7,
+   "n": 14,
+   "p": 0.5,
+   "lo": 0.2679886791947528,
+   "hi": 0.7320113208052472
+  },
+  "cannot_judge_S": 2,
+  "class_S": {
+   "software-only": 7,
+   "hardware-or-recert": 7,
+   "cannot judge (either rater)": 2
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 1,
+   "2019": 0,
+   "2020": 4,
+   "2021": 0,
+   "2022": 1,
+   "2023": 2,
+   "2024": 4,
+   "2025": 2,
+   "2026": 1
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2018": 1,
+   "2020": 4,
+   "2022": 1,
+   "2023": 2,
+   "2024": 2,
+   "2025": 2,
+   "2026": 2,
+   "2028": 1
+  },
+  "by_instrument_S": {
+   "B05": 4,
+   "B06": 2,
+   "B14": 1,
+   "B15": 1,
+   "S02": 5,
+   "S09": 3
+  },
+  "union_S": 20,
+  "R": 2.1875,
+  "by_jurisdiction": {
+   "non-China": 34,
+   "China": 9
+  },
+  "verdict": "UNCLEAR",
+  "kill": false,
+  "decision_notes": []
+ },
+ "own": {
+  "A": {
+   "B": {
+    "n": 35,
+    "MC": {
+     "k": 11,
+     "n": 26,
+     "p": 0.4230769230769231,
+     "lo": 0.255441899027294,
+     "hi": 0.6105170307888017
+    },
+    "H": {
+     "k": 10,
+     "n": 26,
+     "p": 0.38461538461538464,
+     "lo": 0.22428359511834428,
+     "hi": 0.5746547996057992
+    },
+    "class": {
+     "software-only": 15,
+     "hardware-or-recert": 10,
+     "cannot judge": 9,
+     "memory-or-crypto": 1
+    }
+   },
+   "S": {
+    "n": 10,
+    "MC": {
+     "k": 4,
+     "n": 10,
+     "p": 0.4,
+     "lo": 0.16817758120350967,
+     "hi": 0.6873304525498135
+    },
+    "H": {
+     "k": 4,
+     "n": 10,
+     "p": 0.4,
+     "lo": 0.16817758120350967,
+     "hi": 0.6873304525498135
+    },
+    "class": {
+     "hardware-or-recert": 4,
+     "software-only": 6
+    }
+   }
+  },
+  "B": {
+   "B": {
+    "n": 39,
+    "MC": {
+     "k": 14,
+     "n": 28,
+     "p": 0.5,
+     "lo": 0.3263284683244634,
+     "hi": 0.6736715316755366
+    },
+    "H": {
+     "k": 13,
+     "n": 28,
+     "p": 0.4642857142857143,
+     "lo": 0.29531303739659587,
+     "hi": 0.6418760485789833
+    },
+    "class": {
+     "software-only": 14,
+     "hardware-or-recert": 13,
+     "cannot judge": 11,
+     "memory-or-crypto": 1
+    }
+   },
+   "S": {
+    "n": 10,
+    "MC": {
+     "k": 5,
+     "n": 10,
+     "p": 0.5,
+     "lo": 0.23658959361548731,
+     "hi": 0.7634104063845126
+    },
+    "H": {
+     "k": 5,
+     "n": 10,
+     "p": 0.5,
+     "lo": 0.23658959361548731,
+     "hi": 0.7634104063845126
+    },
+    "class": {
+     "hardware-or-recert": 5,
+     "software-only": 5
+    }
+   }
+  }
+ },
+ "verdict_line": "UNCLEAR [V1: VOLATILE DOMAIN]",
+ "kill_line": {
+  "primary": false,
+  "V1": false,
+  "FULL": false
+ }
+}

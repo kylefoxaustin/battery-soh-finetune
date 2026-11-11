@@ -58,6 +58,13 @@ usable energy; knees set the reserve) stand unchanged.
 5. **Regulatory volatility of the battery/charging box** (five software-visible regimes in ~8 years; ANGLES §B.1) is
    the mechanism that explains *why some designs need Tier A and most do not*. It is documentary and **untested** (L1).
 
+   > **Update 2026-11-10 — L1** ([`../L1/results_L1.md`](../L1/results_L1.md)). Now counted. **UNCLEAR** (gated:
+   > identification 0.84, κ 0.82; the kill does not fire). Domain B has 35 matched events in 2016–2026 (3.2 a year,
+   > 22 in 2023–25), and MC is 38 % [22, 57]. The battery / seat ratio is 2.2 with R155 / R156 / GB 44495 / GB 44496
+   > counted on both sides (L-1), and 3.4–4.4 without them. Volatility is established; specificity beyond the
+   > vehicle-wide cyber / update floor is about 2×, short of the pre-registered 3×. Events are SOURCED and
+   > classifications DERIVED-judgemental, from two language-model raters.
+
 ## 3. What fell — the counter-evidence, stated plainly
 
 | Claim | Status | Evidence |

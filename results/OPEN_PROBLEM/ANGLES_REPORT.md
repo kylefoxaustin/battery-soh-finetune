@@ -130,6 +130,21 @@ designs need Tier A and most do not**: body, seat and HVAC ECUs have no such arr
 alone, with the safety case intact and no hardware change — e.g. an OEM shipping passport read-out and 15118-20 onto an
 in-service RTOS image. If that is common, the option is worth ~$0 and §E stands alone.
 
+> **Update 2026-11-10 (L1, `results/L1/results_L1.md`).** §C.1 run as a two-rater blind ledger over 51 seed
+> instruments. **UNCLEAR** (gates pass: identification 0.84, κ 0.82); the kill does not fire.
+> - The battery / charging domain received **35 dated, sourced events** in 2016–2026, 3.2 a year, with 22 of them in
+>   2023–2025.
+> - **38 % [22, 57]** of the judged events are `memory-or-crypto` or above, mostly the class that includes re-approval
+>   by date.
+> - The specificity bar (≥ 3× the seat domain) is met when cybersecurity and software-update management count on the
+>   battery side only (R = 4.4) or on neither (3.4).
+> - It is not met when they count on both sides as a common floor (R = 2.2, the pre-registered primary, L-1).
+>
+> The count is a floor: the 10 SAE charging and communication standards were unreadable without bypassing.
+> **Read:** the arrival process this section describes is real and accelerating. Its excess over a low-volatility
+> domain is about 2× beyond the vehicle-wide cyber / update floor, not the "no such arrival process" for body ECUs
+> written above.
+
 ### B.2 The data-centre analogue of C2: provisioned-power margin and rack stabilisation, where the money is public
 
 **Mechanism.** A data centre's breakers, transformers and UPS are provisioned for a peak that the load rarely reaches;
