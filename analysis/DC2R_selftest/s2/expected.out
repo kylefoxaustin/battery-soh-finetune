@@ -1,0 +1,10 @@
+verdict: NO HISTORY-SHAPED SPEC
+consequence: closes the anticipation leg of ANGLES §B.2: DC1's primary regime is the real one
+identification 1.0 (M 12 = 12 + 0, n_A 12, n_B 12); kappa window M1 1.000 (n 12); allowance 1.000 (n 12); shape 1.000 (n 12)
+unread seeds 0 []; limited False
+  primary: NO HISTORY-SHAPED SPEC; binding-deciding pairs 12 from 5 instruments; shapes {'reactive': 8, 'electronics': 4}; either-rater history rows 0
+  STATED: NO HISTORY-SHAPED SPEC; binding-deciding pairs 12 from 5 instruments; shapes {'cannot judge': 1, 'reactive': 7, 'electronics': 4}; either-rater history rows 0
+  ANY: NO HISTORY-SHAPED SPEC; binding-deciding pairs 12 from 5 instruments; shapes {'reactive': 8, 'electronics': 4}; either-rater history rows 0
+  SEED: NO HISTORY-SHAPED SPEC; binding-deciding pairs 12 from 5 instruments; shapes {'reactive': 8, 'electronics': 4}; either-rater history rows 0
+unmatched A 0, B 0; disagreements {'window_class': 0, 'allowance_class': 0, 'binding_class': 0, 'quantity': 0, 'measurement_point': 0, 'deciding': 0, 'computed_shape': 0}; written-vs-computed shape 0; DC2-2 rows 0
+DC2R-4 awaiting implementation rows 0 (confidence above medium 0); deciding vs quantity mismatches 0

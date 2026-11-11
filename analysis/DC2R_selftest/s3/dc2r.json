@@ -1,0 +1,1258 @@
+{
+ "preregistration": "results/DC2R/DC2R_preregistration.md (47ae9f6; DC2R-1 ... DC2R-4; DC2R-D1, 64dbfe8), carrying results/DC2/DC2_preregistration.md (60f7595; DC2-1, DC2-2) by reference",
+ "tags": "requirements SOURCED; classes DERIVED-judgemental; both raters are language-model sessions",
+ "validation_problems": {
+  "requirements_A": [],
+  "requirements_B": [],
+  "instruments_A": [],
+  "instruments_B": []
+ },
+ "gates": {
+  "n_A": 12,
+  "n_B": 12,
+  "M": 12,
+  "M1": 12,
+  "M2": 0,
+  "identification": 1.0,
+  "kappa_window_M1": {
+   "kappa": 1.0,
+   "n": 12,
+   "observed_agreement": 1.0
+  },
+  "kappa_window_all_M (reported; pass-2 pairs agree by construction)": {
+   "kappa": 1.0,
+   "n": 12,
+   "observed_agreement": 1.0
+  },
+  "kappa_allowance_M1": {
+   "kappa": 1.0,
+   "n": 12,
+   "observed_agreement": 1.0
+  },
+  "kappa_computed_shape_M1": {
+   "kappa": 1.0,
+   "n": 12,
+   "observed_agreement": 1.0
+  },
+  "binding_class_all_M": {
+   "kappa": null,
+   "n": 12,
+   "observed_agreement": 1.0
+  },
+  "deciding_all_M": {
+   "kappa": null,
+   "n": 12,
+   "observed_agreement": 1.0
+  },
+  "ungated_reasons": []
+ },
+ "access": {
+  "A": {
+   "G01": "none",
+   "G02": "none",
+   "G03": "none",
+   "G04": "none",
+   "G05": "none",
+   "G06": "none",
+   "G07": "none",
+   "G08": "none",
+   "G09": "none",
+   "G10": "none",
+   "G11": "none",
+   "G12": "full",
+   "G13": "full",
+   "G14": "full",
+   "G15": "full",
+   "G16": "full",
+   "U01": "full",
+   "U02": "none",
+   "U03": "none",
+   "E01": "full",
+   "E02": "none",
+   "E03": "none",
+   "E04": "full",
+   "E05": "none",
+   "E06": "none",
+   "E07": "full",
+   "E08": "full",
+   "E09": "full",
+   "E10": "full",
+   "E11": "full",
+   "Q01": "full",
+   "Q02": "full",
+   "Q03": "full",
+   "Q04": "full",
+   "Q05": "full",
+   "Q06": "full",
+   "V01": "full",
+   "V02": "full",
+   "V03": "full",
+   "V04": "full",
+   "V05": "full",
+   "V06": "full",
+   "V07": "full",
+   "V08": "full",
+   "V09": "full",
+   "V10": "full",
+   "V11": "full",
+   "V12": "full",
+   "V13": "full",
+   "V14": "full",
+   "Q07": "full",
+   "X01": "full"
+  },
+  "B": {
+   "G01": "none",
+   "G02": "none",
+   "G03": "none",
+   "G04": "none",
+   "G05": "none",
+   "G06": "none",
+   "G07": "none",
+   "G08": "none",
+   "G09": "none",
+   "G10": "none",
+   "G11": "none",
+   "G12": "full",
+   "G13": "full",
+   "G14": "full",
+   "G15": "full",
+   "G16": "full",
+   "U01": "full",
+   "U02": "none",
+   "U03": "none",
+   "E01": "full",
+   "E02": "none",
+   "E03": "none",
+   "E04": "full",
+   "E05": "none",
+   "E06": "none",
+   "E07": "full",
+   "E08": "full",
+   "E09": "full",
+   "E10": "full",
+   "E11": "full",
+   "Q01": "full",
+   "Q02": "full",
+   "Q03": "full",
+   "Q04": "full",
+   "Q05": "full",
+   "Q06": "full",
+   "V01": "full",
+   "V02": "full",
+   "V03": "full",
+   "V04": "full",
+   "V05": "full",
+   "V06": "full",
+   "V07": "full",
+   "V08": "full",
+   "V09": "full",
+   "V10": "full",
+   "V11": "full",
+   "V12": "full",
+   "V13": "full",
+   "V14": "full",
+   "Q07": "full",
+   "X01": "full"
+  },
+  "status_A": {
+   "G01": "in force",
+   "G02": "in force",
+   "G03": "in force",
+   "G04": "in force",
+   "G05": "in force",
+   "G06": "in force",
+   "G07": "in force",
+   "G08": "in force",
+   "G09": "in force",
+   "G10": "in force",
+   "G11": "in force",
+   "G12": "in force",
+   "G13": "in force",
+   "G14": "in force",
+   "G15": "in force",
+   "G16": "in force",
+   "U01": "in force",
+   "U02": "in force",
+   "U03": "in force",
+   "E01": "in force",
+   "E02": "in force",
+   "E03": "in force",
+   "E04": "in force",
+   "E05": "in force",
+   "E06": "in force",
+   "E07": "in force",
+   "E08": "in force",
+   "E09": "in force",
+   "E10": "in force",
+   "E11": "in force",
+   "Q01": "in force",
+   "Q02": "in force",
+   "Q03": "in force",
+   "Q04": "in force",
+   "Q05": "in force",
+   "Q06": "in force",
+   "V01": "in force",
+   "V02": "in force",
+   "V03": "in force",
+   "V04": "in force",
+   "V05": "in force",
+   "V06": "in force",
+   "V07": "in force",
+   "V08": "in force",
+   "V09": "in force",
+   "V10": "in force",
+   "V11": "in force",
+   "V12": "in force",
+   "V13": "in force",
+   "V14": "in force",
+   "Q07": "in force",
+   "X01": "in force"
+  },
+  "status_B": {
+   "G01": "in force",
+   "G02": "in force",
+   "G03": "in force",
+   "G04": "in force",
+   "G05": "in force",
+   "G06": "in force",
+   "G07": "in force",
+   "G08": "in force",
+   "G09": "in force",
+   "G10": "in force",
+   "G11": "in force",
+   "G12": "in force",
+   "G13": "in force",
+   "G14": "in force",
+   "G15": "in force",
+   "G16": "in force",
+   "U01": "in force",
+   "U02": "in force",
+   "U03": "in force",
+   "E01": "in force",
+   "E02": "in force",
+   "E03": "in force",
+   "E04": "in force",
+   "E05": "in force",
+   "E06": "in force",
+   "E07": "in force",
+   "E08": "in force",
+   "E09": "in force",
+   "E10": "in force",
+   "E11": "in force",
+   "Q01": "in force",
+   "Q02": "in force",
+   "Q03": "in force",
+   "Q04": "in force",
+   "Q05": "in force",
+   "Q06": "in force",
+   "V01": "in force",
+   "V02": "in force",
+   "V03": "in force",
+   "V04": "in force",
+   "V05": "in force",
+   "V06": "in force",
+   "V07": "in force",
+   "V08": "in force",
+   "V09": "in force",
+   "V10": "in force",
+   "V11": "in force",
+   "V12": "in force",
+   "V13": "in force",
+   "V14": "in force",
+   "Q07": "in force",
+   "X01": "in force"
+  },
+  "counts_seed": {
+   "full/full": 33,
+   "full/partial": 0,
+   "full/none": 0,
+   "partial/full": 0,
+   "partial/partial": 0,
+   "partial/none": 0,
+   "none/full": 0,
+   "none/partial": 0,
+   "none/none": 17
+  },
+  "counts_by_group": {
+   "G": {
+    "none/none": 11,
+    "full/full": 5
+   },
+   "U": {
+    "full/full": 1,
+    "none/none": 2
+   },
+   "E": {
+    "full/full": 7,
+    "none/none": 4
+   },
+   "Q": {
+    "full/full": 7
+   },
+   "V": {
+    "full/full": 14
+   },
+   "X": {
+    "full/full": 1
+   }
+  },
+  "unread_seed": [
+   "E02",
+   "E03",
+   "E05",
+   "E06",
+   "G01",
+   "G02",
+   "G03",
+   "G04",
+   "G05",
+   "G06",
+   "G07",
+   "G08",
+   "G09",
+   "G10",
+   "G11",
+   "U02",
+   "U03"
+  ],
+  "threshold": ">= 17 of 50",
+  "limited": true
+ },
+ "additions": [
+  "Q07",
+  "X01"
+ ],
+ "primary": {
+  "binding_deciding_pairs": 12,
+  "instruments_with_binding_deciding": 5,
+  "conservative_shape": {
+   "reactive": 8,
+   "electronics": 4
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "disagree": 0,
+   "A": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "B": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "B": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   },
+   "Utility": {
+    "A": "1 – 15 min",
+    "B": "1 – 15 min"
+   },
+   "Vendor": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: 17 of 50 seeds unread; NO HISTORY-SHAPED SPEC cannot be established)",
+  "consequence": "the leg stays where DC1 left it"
+ },
+ "STATED": {
+  "binding_deciding_pairs": 12,
+  "instruments_with_binding_deciding": 5,
+  "conservative_shape": {
+   "cannot judge": 1,
+   "reactive": 7,
+   "electronics": 4
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "not stated": 1,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2,
+    "1 – 15 min": 2
+   },
+   "disagree": 0,
+   "A": {
+    "not stated": 1,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2,
+    "1 – 15 min": 2
+   },
+   "B": {
+    "not stated": 1,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2,
+    "1 – 15 min": 2
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "B": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   },
+   "Utility": {
+    "A": "1 – 15 min",
+    "B": "1 – 15 min"
+   },
+   "Vendor": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: 17 of 50 seeds unread; NO HISTORY-SHAPED SPEC cannot be established)",
+  "consequence": "the leg stays where DC1 left it"
+ },
+ "ANY": {
+  "binding_deciding_pairs": 12,
+  "instruments_with_binding_deciding": 5,
+  "conservative_shape": {
+   "reactive": 8,
+   "electronics": 4
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "disagree": 0,
+   "A": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "B": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "B": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   },
+   "Utility": {
+    "A": "1 – 15 min",
+    "B": "1 – 15 min"
+   },
+   "Vendor": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: 17 of 50 seeds unread; NO HISTORY-SHAPED SPEC cannot be established)",
+  "consequence": "the leg stays where DC1 left it"
+ },
+ "SEED": {
+  "binding_deciding_pairs": 12,
+  "instruments_with_binding_deciding": 5,
+  "conservative_shape": {
+   "reactive": 8,
+   "electronics": 4
+  },
+  "history_pairs": [],
+  "history_measurement_points": [],
+  "history_at_poi_or_facility_only": false,
+  "either_rater_history_rows": [],
+  "window_class_table": {
+   "agree": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "disagree": 0,
+   "A": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "B": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   }
+  },
+  "allowance_class_table": {
+   "agree": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "disagree": 0,
+   "A": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "B": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   }
+  },
+  "fastest_binding_window_per_body": {
+   "Grid body 12": {
+    "A": "1 – 60 s",
+    "B": "1 – 60 s"
+   },
+   "EU body": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   },
+   "Utility": {
+    "A": "1 – 15 min",
+    "B": "1 – 15 min"
+   },
+   "Vendor": {
+    "A": "≤ 100 ms",
+    "B": "≤ 100 ms"
+   }
+  },
+  "verdict": "UNCLEAR (ACCESS-LIMITED: 17 of 50 seeds unread; NO HISTORY-SHAPED SPEC cannot be established)",
+  "consequence": "the leg stays where DC1 left it"
+ },
+ "requirement_table": [
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A001",
+    "instrument_id": "G12",
+    "clause": "9.1(a)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "unit: MW/min",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B001",
+    "instrument_id": "G12",
+    "clause": "9.1(a)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "unit: MW/min",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A002",
+    "instrument_id": "G12",
+    "clause": "9.1(b)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "> 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B002",
+    "instrument_id": "G12",
+    "clause": "9.1(b)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "> 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A003",
+    "instrument_id": "G12",
+    "clause": "9.2",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B003",
+    "instrument_id": "G12",
+    "clause": "9.2",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A004",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.7",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "≤ 100 ms",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B004",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.7",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "≤ 100 ms",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A005",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.8",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "100 ms – 1 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B005",
+    "instrument_id": "E04",
+    "clause": "CC.6.1.8",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "100 ms – 1 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A006",
+    "instrument_id": "E01",
+    "clause": "Art. 12(3)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B006",
+    "instrument_id": "E01",
+    "clause": "Art. 12(3)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A007",
+    "instrument_id": "E01",
+    "clause": "Art. 13",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B007",
+    "instrument_id": "E01",
+    "clause": "Art. 13",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A008",
+    "instrument_id": "U01",
+    "clause": "Sheet 2, 4(c)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "very loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B008",
+    "instrument_id": "U01",
+    "clause": "Sheet 2, 4(c)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "very loose",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A009",
+    "instrument_id": "U01",
+    "clause": "Sheet 2, 4(d)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "> 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B009",
+    "instrument_id": "U01",
+    "clause": "Sheet 2, 4(d)",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "> 15 min",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A010",
+    "instrument_id": "V01",
+    "clause": "5.3.2",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "≤ 100 ms",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B010",
+    "instrument_id": "V01",
+    "clause": "5.3.2",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "≤ 100 ms",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A011",
+    "instrument_id": "V01",
+    "clause": "5.3.3",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B011",
+    "instrument_id": "V01",
+    "clause": "5.3.3",
+    "category": "",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "1 – 60 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "hard",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "reactive",
+    "written_shape": "reactive",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  },
+  {
+   "pass": 1,
+   "A": {
+    "req_id": "A012",
+    "instrument_id": "V01",
+    "clause": "Table 7",
+    "category": "row 1",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "100 ms – 1 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "B": {
+    "req_id": "B012",
+    "instrument_id": "V01",
+    "clause": "Table 7",
+    "category": "row 1",
+    "measurement_point": "POI",
+    "quantity": "ramp rate",
+    "limit": "SYNTHETIC",
+    "window_class": "100 ms – 1 s",
+    "window_as_printed": "SYNTHETIC",
+    "allowance_class": "tight",
+    "allowance_as_printed": "SYNTHETIC",
+    "binding_class": "mandatory",
+    "deciding": "yes",
+    "computed_shape": "electronics",
+    "written_shape": "electronics",
+    "confidence": "high",
+    "source_url": "https://example.invalid/synthetic",
+    "quote": "synthetic",
+    "note": ""
+   },
+   "disagree_on": []
+  }
+ ],
+ "unmatched_A": [],
+ "unmatched_B": [],
+ "disagreements": {
+  "window_class": 0,
+  "allowance_class": 0,
+  "binding_class": 0,
+  "quantity": 0,
+  "measurement_point": 0,
+  "deciding": 0,
+  "computed_shape": 0
+ },
+ "written_vs_computed_shape": [],
+ "deciding_vs_quantity": [],
+ "DC2_2_conversions": [],
+ "DC2R_4_awaiting_implementation": [],
+ "DC2R_4_confidence_above_medium": [],
+ "vendor_capability_rows": [],
+ "power_quality_pairs": [],
+ "own": {
+  "A": {
+   "rows": 12,
+   "binding_deciding": 12,
+   "window": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "allowance": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "computed_shape": {
+    "reactive": 8,
+    "electronics": 4
+   },
+   "instruments": 5
+  },
+  "B": {
+   "rows": 12,
+   "binding_deciding": 12,
+   "window": {
+    "1 – 15 min": 3,
+    "> 15 min": 2,
+    "1 – 60 s": 3,
+    "≤ 100 ms": 2,
+    "100 ms – 1 s": 2
+   },
+   "allowance": {
+    "hard": 6,
+    "tight": 3,
+    "loose": 2,
+    "very loose": 1
+   },
+   "computed_shape": {
+    "reactive": 8,
+    "electronics": 4
+   },
+   "instruments": 5
+  }
+ },
+ "verdict_line": "UNCLEAR (ACCESS-LIMITED: 17 of 50 seeds unread; NO HISTORY-SHAPED SPEC cannot be established)",
+ "consequence_line": "the leg stays where DC1 left it"
+}

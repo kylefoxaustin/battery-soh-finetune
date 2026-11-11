@@ -1,0 +1,10 @@
+verdict: UNCLEAR [ANY: HISTORY-SHAPED SPEC EXISTS]
+consequence: the leg stays where DC1 left it
+identification 1.0 (M 13 = 13 + 0, n_A 13, n_B 13); kappa window M1 1.000 (n 13); allowance 1.000 (n 13); shape 1.000 (n 13)
+unread seeds 0 []; limited False
+  primary: UNCLEAR; binding-deciding pairs 12 from 5 instruments; shapes {'reactive': 8, 'electronics': 4}; either-rater history rows 1
+  STATED: UNCLEAR; binding-deciding pairs 12 from 5 instruments; shapes {'reactive': 8, 'electronics': 4}; either-rater history rows 1
+  ANY: HISTORY-SHAPED SPEC EXISTS; binding-deciding pairs 13 from 6 instruments; shapes {'reactive': 8, 'electronics': 4, 'history': 1}; either-rater history rows 1
+  SEED: UNCLEAR; binding-deciding pairs 12 from 5 instruments; shapes {'reactive': 8, 'electronics': 4}; either-rater history rows 1
+unmatched A 0, B 0; disagreements {'window_class': 0, 'allowance_class': 0, 'binding_class': 1, 'quantity': 0, 'measurement_point': 0, 'deciding': 0, 'computed_shape': 0}; written-vs-computed shape 0; DC2-2 rows 0
+DC2R-4 awaiting implementation rows 0 (confidence above medium 0); deciding vs quantity mismatches 0

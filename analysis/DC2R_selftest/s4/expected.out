@@ -1,0 +1,10 @@
+verdict: UNGATED (M1 6 < 10)
+consequence: UNGATED: no reading
+identification 1.0 (M 9 = 6 + 3, n_A 9, n_B 9); kappa window M1 1.000 (n 6); allowance 1.000 (n 6); shape 1.000 (n 6)
+unread seeds 0 []; limited False
+  primary: UNGATED (M1 6 < 10); binding-deciding pairs 9 from 4 instruments; shapes {'reactive': 7, 'electronics': 2}; either-rater history rows 0
+  STATED: UNGATED (M1 6 < 10); binding-deciding pairs 9 from 4 instruments; shapes {'reactive': 7, 'electronics': 2}; either-rater history rows 0
+  ANY: UNGATED (M1 6 < 10); binding-deciding pairs 9 from 4 instruments; shapes {'reactive': 7, 'electronics': 2}; either-rater history rows 0
+  SEED: UNGATED (M1 6 < 10); binding-deciding pairs 9 from 4 instruments; shapes {'reactive': 7, 'electronics': 2}; either-rater history rows 0
+unmatched A 0, B 0; disagreements {'window_class': 0, 'allowance_class': 0, 'binding_class': 0, 'quantity': 0, 'measurement_point': 0, 'deciding': 0, 'computed_shape': 0}; written-vs-computed shape 0; DC2-2 rows 0
+DC2R-4 awaiting implementation rows 0 (confidence above medium 0); deciding vs quantity mismatches 0

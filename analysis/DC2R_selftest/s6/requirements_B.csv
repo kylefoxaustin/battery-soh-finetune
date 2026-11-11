@@ -1,0 +1,18 @@
+req_id,instrument_id,clause,category,measurement_point,quantity,limit,basis,window_class,window_as_printed,allowance_class,allowance_as_printed,binding_class,deciding,shape,source_url,quote,confidence,note
+B001,G12,9.1(a),,POI,ramp rate,SYNTHETIC,,1 – 15 min,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B002,G12,9.1(b),,POI,ramp rate,SYNTHETIC,,> 15 min,SYNTHETIC,tight,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B003,G12,9.2,,POI,ramp rate,SYNTHETIC,,1 – 60 s,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B004,E04,CC.6.1.7,,POI,ramp rate,SYNTHETIC,,≤ 100 ms,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
+B005,E04,CC.6.1.8,,POI,ramp rate,SYNTHETIC,,100 ms – 1 s,SYNTHETIC,loose,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
+B006,E01,Art. 12(3),,POI,ramp rate,SYNTHETIC,,1 – 15 min,SYNTHETIC,loose,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B007,E01,Art. 13,,POI,ramp rate,SYNTHETIC,,1 – 60 s,SYNTHETIC,tight,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B008,U01,"Sheet 2, 4(c)",,POI,ramp rate,SYNTHETIC,,1 – 15 min,SYNTHETIC,very loose,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B009,U01,"Sheet 2, 4(d)",,POI,ramp rate,SYNTHETIC,,> 15 min,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B010,V01,5.3.2,,POI,ramp rate,SYNTHETIC,,≤ 100 ms,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
+B011,V01,5.3.3,,POI,ramp rate,SYNTHETIC,,1 – 60 s,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B012,V01,Table 7,row 1,POI,ramp rate,SYNTHETIC,,100 ms – 1 s,SYNTHETIC,tight,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
+B013,Q02,Table 3,2nd; 3rd; 5th order,POI,harmonics,SYNTHETIC,,≤ 100 ms,SYNTHETIC,hard,SYNTHETIC,planning level,no,electronics,https://example.invalid/synthetic,synthetic,high,
+B014,Q03,Fig 2,voltage-time curve,POI,ride-through,SYNTHETIC,,100 ms – 1 s,SYNTHETIC,hard,SYNTHETIC,mandatory,no,electronics,https://example.invalid/synthetic,synthetic,high,
+B015,V03,Table 4,step load,shelf or PSU,other,SYNTHETIC,,≤ 100 ms,SYNTHETIC,hard,SYNTHETIC,mandatory,no,electronics,https://example.invalid/synthetic,synthetic,high,
+B016,G12,9.5,band one,POI,ramp rate,SYNTHETIC,,1 – 15 min,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+B017,G14,4.1,,POI,ramp rate,SYNTHETIC,,1 – 15 min,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,awaiting implementation

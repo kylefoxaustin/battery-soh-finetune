@@ -1,0 +1,13 @@
+req_id,instrument_id,clause,category,measurement_point,quantity,limit,basis,window_class,window_as_printed,allowance_class,allowance_as_printed,binding_class,deciding,shape,source_url,quote,confidence,note
+A001,G12,9.1(a),,POI,ramp rate,SYNTHETIC,,1 – 15 min,unit: MW/min,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A002,G12,9.1(b),,POI,ramp rate,SYNTHETIC,,> 15 min,SYNTHETIC,tight,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A003,G12,9.2,,POI,ramp rate,SYNTHETIC,,1 – 60 s,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A004,E04,CC.6.1.7,,POI,ramp rate,SYNTHETIC,,≤ 100 ms,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
+A005,E04,CC.6.1.8,,POI,ramp rate,SYNTHETIC,,100 ms – 1 s,SYNTHETIC,loose,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
+A006,E01,Art. 12(3),,POI,ramp rate,SYNTHETIC,,1 – 15 min,SYNTHETIC,loose,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A007,E01,Art. 13,,POI,ramp rate,SYNTHETIC,,1 – 60 s,SYNTHETIC,tight,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A008,U01,"Sheet 2, 4(c)",,POI,ramp rate,SYNTHETIC,,1 – 15 min,SYNTHETIC,very loose,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A009,U01,"Sheet 2, 4(d)",,POI,ramp rate,SYNTHETIC,,> 15 min,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A010,V01,5.3.2,,POI,ramp rate,SYNTHETIC,,≤ 100 ms,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
+A011,V01,5.3.3,,POI,ramp rate,SYNTHETIC,,1 – 60 s,SYNTHETIC,hard,SYNTHETIC,mandatory,yes,reactive,https://example.invalid/synthetic,synthetic,high,
+A012,V01,Table 7,row 1,POI,ramp rate,SYNTHETIC,,100 ms – 1 s,SYNTHETIC,tight,SYNTHETIC,mandatory,yes,electronics,https://example.invalid/synthetic,synthetic,high,
