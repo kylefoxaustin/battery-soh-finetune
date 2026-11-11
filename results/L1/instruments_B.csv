@@ -49,3 +49,13 @@ B17,partial,iso.org (HTTP 403); ISO open-data catalogue,2 events
 B37,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
 S13,full,EUR-Lex ALL page (modified-by list); Publications Office SPARQL; EUR-Lex texts,1 event (base act)
 S03,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,R17 series 09-12 and supplements: strength/head-restraint tests and labels: no events
+B10,partial,openstd.samr.gov.cn metadata and catalogue list,2 events (cannot judge)
+S20,partial,iso.org (HTTP 403); ISO open-data catalogue,no edition or amendment in window
+B35,full,EUR-Lex ALL page; Publications Office SPARQL; EUR-Lex texts,base act and 2025/656 impose obligations on recharging points only (vehicle side only in a recital): no events
+B18,partial,iso.org (HTTP 403); ISO open-data catalogue,2 events
+B13,partial,openstd.samr.gov.cn metadata and catalogue list,1 event (cannot judge)
+B09,partial,openstd.samr.gov.cn metadata and catalogue list,2 events (cannot judge)
+S14,partial,openstd.samr.gov.cn metadata and catalogue list,"GB 14167-2024 dated; anchorage title: unreadable edition, not counted"
+S16,partial,openstd.samr.gov.cn metadata and catalogue list,only 2009 edition (now abolished): no events in window
+S06,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,"R129 acts concern child restraint products (incl. CRS-side warning options): no events; Corr. 2016/104, 2019/58, 2019/59 not retrievable"
+B33,full,eCFR versioner 571.305; Federal Register API and full texts,2 events; 84 FR 44254 (connector clarification) and 90 FR 9609 (delay) not events
