@@ -19,3 +19,13 @@ S15,partial,openstd.samr.gov.cn metadata and catalogue list,"GB 15083-2019 dated
 B02,full,EUR-Lex ALL page (modified-by list); Publications Office SPARQL (based-on/amends); EUR-Lex texts,"4 events; 2026/1214, 2026/1216, 2026/1762 (brake/HD durability multipliers) not battery: not events"
 B28,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
 B05,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,4 events
+B11,partial,openstd.samr.gov.cn metadata and catalogue list,"GB 38031-2020 and -2025 dated; title names traction battery safety only: unreadable editions, not counted"
+S04,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,R25 Suppl. 2 to 04 (2024) mechanical: no events
+S19,partial,iso.org (HTTP 403); ISO open-data catalogue,only 2005 edition published; DIS in progress: no events
+B20,full,IEC webstore publication pages (lifecycle and abstract with change list),"1 event; COR1:2023 content not shown (corrigendum, not counted)"
+S08,full,eCFR versioner 571.207; Federal Register API and full text,87 FR 18560 counted here; 91 FR 33098 obsolete-text removal not an event
+B04,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,"9 events; non-events: 01-S5, 02-S4 (TPs), 03-S1, 03-S2 (definitions/test refs), 02-S5 and 03-S3 (crush test), 04 series (emergency labels only), corrigenda"
+S12,full,eCFR versioner 571.225; Federal Register API,"87 FR 18560 counted under S08; 90 FR 1288 (anchorage ease of use, mechanical) and corrections: no events"
+B30,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+S17,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,R80 acts in window mechanical: no events
+B14,partial,openstd.samr.gov.cn metadata; std.samr.gov.cn record,1 event (cannot judge)
