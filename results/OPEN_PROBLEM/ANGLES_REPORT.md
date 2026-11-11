@@ -200,6 +200,24 @@ for; (c) the operator wants the data in its own domain and will not pay the shel
 - **What this does to the window argument above.** The window argument above (10 s at 100 MB/s ≈ 1 GB) gets no
   support from the 0.2–2.5 Hz band at this resolution. Its case rests on the phase-level band DC1 could not see.
 
+**Note, 2026-11-11: DC2 audited the real specs** ([`results/DC2/results_DC2.md`](../DC2/results_DC2.md)).
+
+- **Verdict (pre-registered): UNGATED.** 56 instruments (grid codes, ERCOT / NERC / PJM / PUCT / FERC, utility
+  tariffs, the EU Demand Connection Code, GB Grid Code, VDE and D-A-CH-CZ rules, IEC / IEEE / EN power-quality
+  standards, OCP and NVIDIA rack documents, and the AESO, Fingrid and IESO large-load requirements) were read by two
+  blind language-model raters. Identification agreement was 0.52 against a 0.80 gate, because the raters split
+  harmonics and ride-through tables into rows differently. κ on the window class was 0.64.
+- **Consequence (pre-registered): no reading.** The anticipation leg stays where DC1 left it.
+- **Exploratory, not a verdict.** The binding limits on real-power variation either rater found are `hard` (no
+  excursion allowed): ramp rate, oscillation amplitude and step size at the POI (Fingrid, AESO), and supply envelopes
+  at the rack (OCP). The one exception both raters recorded identically is **ERCOT Protocols §6.5.7.11**:
+  - a PCLR ramp band in % per minute, judged on one-minute intervals, with 10 % of a month's minutes allowed to fail;
+  - it is history-shaped by the pre-registered class rule;
+  - it is approved but not yet implemented, binds a registration category, sits exactly at the 60 s class edge, and is
+    far slacker than DC1's 0.5 %-of-5 Hz-samples sensitivity.
+
+  Nothing found makes DC1's sensitivity the real-world case.
+
 ### B.3 Event-triggered retention: the one place DRAM is physically necessary
 
 **Mechanism.** Keep a rolling window of raw or lightly decimated converter and pack telemetry resident; on a trigger
