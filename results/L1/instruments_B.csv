@@ -9,3 +9,13 @@ S02,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 sessi
 S09,full,eCFR versioner 571.208; Federal Register API and full texts,3 events; 87 FR 18560 counted under S08; 90 FR 9610 delay only
 B22,full,IEC webstore publication pages (lifecycle and abstract with change list),2014 edition and its 2015 corrigendum before window
 B24,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+S01,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,all R14 acts in window mechanical or corrigenda: no events
+B25,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+B06,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,"Supplement 1 to original version (2026-06-24, 2026/169) changes only certificate/declaration models: not counted"
+B27,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+B36,partial,iso.org (HTTP 403); ISO open-data deliverables catalogue (isopublicstorageprod blob),"editions 2019 and Amd 1:2022 dated in catalogue; titles name RESS safety / thermal propagation: unreadable editions, not counted"
+B03,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents; AC.3 sections of session reports,"GTR 22 and Amendment 1; Amendment 2 adopted by GRPE 2026, not yet voted by AC.3 as of the last report read"
+S15,partial,openstd.samr.gov.cn metadata and catalogue list,"GB 15083-2019 dated; title names seat strength only: unreadable edition, not counted"
+B02,full,EUR-Lex ALL page (modified-by list); Publications Office SPARQL (based-on/amends); EUR-Lex texts,"4 events; 2026/1214, 2026/1216, 2026/1762 (brake/HD durability multipliers) not battery: not events"
+B28,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+B05,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,4 events
