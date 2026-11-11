@@ -137,10 +137,127 @@ is included with both dates.
 - Judged from `what_changed`; where that does not allow the call, from the event's source through the allowed
   routes only. No B event is added, removed or re-dated.
 
-## 2. Per-instrument remarks
+## 2. How the change histories were read (written after rating)
 
-(filled in during rating)
+- **UN regulations (all UN instruments, L and S).** unece.org returned HTTP 403 (Cloudflare block) to every fetch, so
+  the per-regulation amendment pages and the "informal updated" status document could not be read. The history was
+  rebuilt from the UN Official Document System (documents.un.org), the body's own documents:
+  - the WP.29 annotated provisional agendas ECE/TRANS/WP.29/1119 … 1193 (sessions 168–200) give each proposal's
+    symbol and title;
+  - the WP.29 session reports ECE/TRANS/WP.29/1120 … 1192 (sessions 168–199) contain the AC.1 vote tables; a document
+    was treated as adopted only if it appears in a vote table with a vote result; the adoption date is the AC.1
+    session date stated in the report (for the 2020–2022 written procedures, the date of the AC.1 session that
+    closed the vote);
+  - every adopted proposal document for the 41 UN regulations on the lists (376 PDFs) was downloaded and its
+    amendment text read (short documents in full; long consolidated texts and new series through their instruction
+    lists, transitional provisions and keyword passages on switching, activation, failure, tell-tales, signals,
+    sensors, reminders and warnings).
+  - The 200th session (17–20 November 2026) has not yet been held; nothing from its agenda is counted.
+  - Entry-into-force dates could not be read (unece.org blocked), so `application_date` is blank for UN events,
+    except that transitional dates are given in the note where they decide the class.
+- **EU acts (L10, L11, S13).** EUR-Lex HTML texts, and the Publications Office SPARQL endpoint behind EUR-Lex for
+  the complete list of acts based on, amending, correcting or repealing 32019R2144 and 32009R0661.
+- **FMVSS and Part 564.** Federal Register API (all RULE documents citing 49 CFR 571 since 2016-01-01: 67) with their
+  abstracts and, where needed, full texts; the eCFR versioner (version dates per section, and full-text diffs where a
+  version date had no matching final rule).
+- **GB standards.** std.samr.gov.cn and openstd.samr.gov.cn catalogue entries (edition, publication and withdrawal
+  dates, replacement relations). Full texts sit behind an online viewer with a verification step; not attempted.
+- **IEC 60809.** The IEC webstore page (identifiers of all editions and amendments; abstract of the 2021 edition).
+- **ISO and SAE.** iso.org answered HTTP 403 (Cloudflare challenge) and sae.org serves a script shell loading an
+  AWS WAF captcha; both tried with curl and once with WebFetch; not bypassed.
 
-## 3. Blocked routes, `unreadable edition` entries, and departures
+## 3. Per-instrument remarks
 
-(filled in during rating)
+Detailed remarks per instrument (documents read, what was not counted and why) are in the `note` column of
+`instruments_A.csv`; the principal judgements are repeated here.
+
+- **L01 UN R48 (44 events).** Parallel series (03–09) receive separate supplements at the same session; each is a
+  separate document and was counted separately when its text met the definition (one act, one event). Counted:
+  failure-tell-tale obligations (2016), direction-indicator mode rules (2017), automatic dipped-beam switching
+  (06-S10), bend-lighting activation conditions (2018), the 07 series (emergency stop signal; re-opens type
+  approval), the 08 series (automatic headlamp/DRL logic; re-opens type approval), Driver Assistance Projection
+  rules (2022–2025), manoeuvring-lamp automatic switching (2022), failure tell-tales (2023), DRL/position-lamp logic
+  (2024), the 09 series (automatic levelling; re-opens type approval), reversing projection (2025), automatic
+  direction-indicator operation (2026) and ADS-actuated lamps / direction-indicator projection (2026). Not counted:
+  lamp numbers, heights, visibility, colour, apparent surface, flux, LED-substitute statements, the restated
+  tell-tale signal references of 2025/30-32, external status indicator permission alone, and the 177th-session
+  restructuring supplements (R148/149/150 references in a rewritten text with no identifiable new logic).
+- **L38 UN R53 (19), L39 R74 (3), L40 R86 (2).** Same approach as R48 for the L-category, moped and tractor
+  installation regulations. The R53 supplements adopted at the 177th session carry corrected titles (report 1145,
+  paras. 106–108); the act_ids follow the corrected titles. R86 01 series (2016) not counted (presence and geometry).
+- **Device regulations (R6, R7, R23, R38, R50, R77, R87, R91, R119, R123, R148, R149).** Counted where the lamp
+  itself must produce a failure signal for the vehicle tell-tale, generate sequential direction-indicator flashes, or
+  reach an automatic safe state on failure (AFS); not counted for photometry, marking, light-source references and
+  the 2019 freezes. The new R148 and R149 (2019) count as first adoptions (failure signals, AFS control signals).
+- **Light-source and passive-device regulations (R3, R4, R37, R98, R99, R104, R112, R113, R128, R150, IEC 60809).**
+  No obligation on a control unit; no events. LED replacement/substitute light sources (R37 Supp 48, R128) were
+  judged product requirements on the light source, not on the lamp controller.
+- **UN R1, R8, R20, R31.** No amendment in any agenda or vote table 2016–2026; `full` with zero events.
+- **L10 Regulation (EU) 2019/2144 (3).** Base act (emergency stop signal mandatory), Delegated Regulation 2022/1398
+  (R48 07 series referenced, R148–150 added), Implementing Regulation 2022/1426 (ADS shall generate hazard-warning
+  and direction-indicator activation signals). The base act is recorded once under L10 and once under S13 (L1b §1).
+- **L11 Regulation (EC) 661/2009 (1).** Regulation 2019/543 (R48 06-S10, R119, R123 rows). 2016/1004 has no lighting
+  rows.
+- **L12 FMVSS 108 (1).** 87 FR 9916 (ADB permitted; malfunction detection and reversion to manual mode).
+- **S02 UN R16 (6).** The 07 series (SBR for all seating positions), its transitional/exemption supplement, the
+  second-level warning redefinition, the rear-SBR visual-warning supplements to the 07 and 08 series (occupancy-based
+  suppression) and the 09 series. The 10 series (2024) moves SBR provisions out of R16 into new UN Regulations not on
+  the list; nothing new is required by R16, so it is not counted. For 2020/113 the vote table says "Suppl.3 to 08";
+  the document and agenda say Supplement 2; the document's own title is used.
+- **S09 FMVSS 208 (3).** 89 FR 67869 (CRS list for air-bag suppression tests; occupant classification consequence;
+  low confidence), 90 FR 390 (rear-seat belt warning; its effective-date delay 90 FR 9610 is the same act), 91 FR
+  17144 (interim final rule; unified 2028 compliance and warning clarifications).
+- **S13 Regulation (EU) 2019/2144 (1).** Base act (SBR per R16 for all M and N categories). The EDR delegated acts
+  (2022/545, 2024/2220) were considered and not counted: they name the event data recorder and UN R160/R169 data
+  elements, not a seat or belt ECU obligation. 2025/1122 (listed by S1) updates the R25 row only (mechanical).
+- **Child-restraint product regulations (R44, R129, R170, FMVSS 213, 213b).** No vehicle-side ECU obligation;
+  CRS-borne misuse warnings and ISOFIX indications are on the child restraint itself.
+- **Seat/anchorage strength (R14, R17, R25, R80, R145, FMVSS 202, 202a, 207, 209, 210, 225).** Mechanical; no events.
+
+## 4. Blocked routes
+
+| Route | Result | Instruments affected |
+|---|---|---|
+| unece.org (all pages) | HTTP 403, Cloudflare "you have been blocked" | all UN regulations (history rebuilt from documents.un.org instead) |
+| iso.org | HTTP 403, Cloudflare "Just a moment" challenge (curl and WebFetch) | S19 ISO 17373, S20 ISO 13216-1 → `none` |
+| sae.org | 200 with a client-side shell loading an AWS WAF captcha SDK (curl and WebFetch) | L20 J3069, L21 J578, L22 J1383, S23 J826, S25 J800 → `none` |
+| openstd.samr.gov.cn / std.samr.gov.cn full text | online viewer behind a verification step (not attempted) | all GB instruments → `partial` (catalogue only) |
+| documents.un.org | HTML error page for four corrigenda (2016/100, 2016/104, 2019/58, 2019/59, also as /Rev.1) | R44, R129 (corrigenda are not events) |
+| IEC webstore history table | rendered client-side; identifiers present in page source | L37 → `partial` |
+
+## 5. `unreadable edition` entries (L-3; not counted)
+
+| Instrument | Edition | Publication date |
+|---|---|---|
+| L13 GB 4785 | GB 4785-2019 | 2019-12-17 |
+| L14 GB 4599 | GB 4599-2024 | 2024-09-29 |
+| L16 GB 23255 | GB 23255-2019 | 2019-04-04 |
+| L18 GB 5920 | GB 5920-2019 | 2019-04-04 |
+| L18 GB 5920 | GB 5920-2024 | 2024-09-29 |
+| L37 IEC 60809 | IEC 60809:2014/AMD1:2017, AMD2:2017, AMD3:2019; IEC 60809:2021/AMD1:2023 | years only |
+| S14 GB 14167 | GB 14167-2024 | 2024-09-29 |
+| S15 GB 15083 | GB 15083-2019 | 2019-10-14 |
+
+(IEC 60809:2021 itself was read through its abstract and is not an event; GB 17509, GB 25991, GB/T 30036 and
+GB 11550 have no edition published in the window.)
+
+## 6. What I could not follow exactly, and what I did instead
+
+1. **Commit cadence.** The first ledger commit came after 14 instruments instead of 10 (and one later after 43
+   instead of 40); the other commits fell at 20, 30, 50, 60 and 73. No rating was changed by this.
+2. **Order of reading.** To build the UN amendment index I downloaded all agendas, reports and adopted proposal
+   documents before rating; the documents of each instrument were then read and rated in order A.
+3. **UN entry-into-force dates** could not be read (unece.org blocked); `application_date` is blank for UN events
+   and the adoption date is the AC.1 vote date (noted in each row).
+4. **Completeness of the vote-table parse.** The vote tables were parsed by script and cross-checked against the
+   agenda titles; rows whose regulation number could not be tied to a title were checked by hand. New regulations
+   adopted without a regulation number in their agenda title were added by hand (R148, R149, R150, R170); the
+   original adoption of R145 (mechanical) was not located in the window's tables. One document titled "Regulation
+   No. 44" (2020/24) is an R144 document and was excluded.
+5. **Elaborations of the conventions made while rating** (applied to both domains): a change that only permits
+   ("may") a behaviour is not counted unless it also sets a condition the controller must enforce; requirements
+   placed on child restraints, light sources and passive reflective devices are not obligations of the domain ECU;
+   for parallel UN series, each supplement is its own act.
+6. **Stack on S and L events.** Every S and L event was rated `no`: none of the acts read names a cryptographic,
+   authenticated-update, data-retention/access, telemetry or external-protocol obligation for the seat or lamp ECU.
+   The only such obligations reaching those ECUs are the vehicle-level acts, rated in `stack_B_A.csv`.
