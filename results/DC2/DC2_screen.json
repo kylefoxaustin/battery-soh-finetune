@@ -1,0 +1,3694 @@
+{
+ "study": "DC2",
+ "screener": "fresh-context screener sub-agent",
+ "date": "2026-11-10",
+ "protocol": "results/DC2/DC2_preregistration.md §2–§3",
+ "instruments": [
+  {
+   "instrument_id": "G01",
+   "group": "G",
+   "identifier": "ERCOT Planning Guide (current; Section 9 dated July 11, 2026)",
+   "title": "ERCOT Planning Guide",
+   "issuing_body": "ERCOT",
+   "jurisdiction": "US-TX (ERCOT)",
+   "landing_url": "https://www.ercot.com/mktrules/guides/planning/current",
+   "scope": "“This Section defines the requirements and processes used to facilitate new or modified Large Load interconnections with the ERCOT System.” (Section 9.1(1))",
+   "headings": "9 Large Load Interconnection or Modification; 9.2.4 Load Commissioning Plan; 9.2.5 Required Interconnection Equipment; 9.3.2 Batch Zero Interconnection Study Methodology; 9.6 Initial Energization and Continuing Operations for Large Loads; 9.6.1 Additional Energization and Operation Requirements for PCLRs; 9.6.2 … for WLPUNs; 9.8.4.3 Legacy Dynamic and Transient Stability Analysis",
+   "access": "full",
+   "status": "in force (incorporates approved PGRR115, PGRR145)",
+   "origin": "seed",
+   "references": "read 34 (Section 9 keyword-headed clauses); 0 pass"
+  },
+  {
+   "instrument_id": "G02",
+   "group": "G",
+   "identifier": "ERCOT Nodal Protocols (current; Section 1 dated Nov 6, 2026)",
+   "title": "ERCOT Nodal Protocols",
+   "issuing_body": "ERCOT",
+   "jurisdiction": "US-TX (ERCOT)",
+   "landing_url": "https://www.ercot.com/mktrules/nprotocols/current",
+   "scope": "“[The ERCOT Protocols] means the document adopted by ERCOT … that contains the scheduling, operating, planning, reliability, and Settlement (including Customer registration) policies, rules, guidelines, procedures, standards, and criteria of ERCOT.” (Section 1.1(1))",
+   "headings": "3.2.7 Large Load Interconnection Status Report; 3.7.1.2 Load Resource Parameters; 3.22.1.4 Large Load Interconnection Assessment; 6.5.7.11 Provisional Controllable Load Resource (PCLR) Ramp Rate Requirements (gray-boxed pending system implementation per NPRR1325); 6.6.5.3 / 6.6.5.3.1 Controllable Load Resource Set Point Deviation Charges",
+   "access": "full",
+   "status": "in force (incorporates approved NPRR1234, NPRR1267, NPRR1308, NPRR1325; some NPRR1325 sections pending system implementation, as printed)",
+   "origin": "seed",
+   "references": "read 13 (Sections 3 and 6 keyword-headed clauses); 0 pass"
+  },
+  {
+   "instrument_id": "G03",
+   "group": "G",
+   "identifier": "ERCOT Nodal Operating Guide (current; Section 2 dated Nov 1, 2026)",
+   "title": "ERCOT Nodal Operating Guides",
+   "issuing_body": "ERCOT",
+   "jurisdiction": "US-TX (ERCOT)",
+   "landing_url": "https://www.ercot.com/mktrules/guides/noperating/current",
+   "scope": "“These ERCOT Operating Guides supplement the Protocols. The Operating Guides provide more detail and establish additional operating requirements for those organizations and Entities operating in, or potentially impacting the reliability of the ERCOT Transmission Grid in the ERCOT Region. … Organizations and Entities are obligated to comply with the Operating Guides.” (Section 1.1)",
+   "headings": "2.6.4 Frequency Ride-Through Requirements for Large Computational Loads; 2.15 Voltage Ride-Through Requirements for Large Computational Loads",
+   "access": "full",
+   "status": "in force (incorporates NOGRR282, effective 08/01/2026)",
+   "origin": "seed",
+   "references": "read 7 (Section 2 keyword-headed clauses); 0 pass"
+  },
+  {
+   "instrument_id": "G04",
+   "group": "G",
+   "identifier": "PGRR144",
+   "title": "Dynamic Model Submission and Review Requirements for Large Loads including Large Computational Loads",
+   "issuing_body": "ERCOT",
+   "jurisdiction": "US-TX (ERCOT)",
+   "landing_url": "https://www.ercot.com/mktrules/issues/PGRR144",
+   "scope": "Planning Guide Sections Requiring Revision (as printed): “6.2, Dynamics Model Development; 9.2.1, Applicability of the Batch Zero Study Process; 9.2.1.5, Review of Existing Large Computational Load Modifications Potentially Impacting Ride Through Performance (new); 9.6, Initial Energization and Continuing Operations for Large Loads”",
+   "headings": "",
+   "access": "full",
+   "status": "approved 11/05/2026 (PUCT); Effective Date December 1, 2026 (as printed) — not yet in the Planning Guide",
+   "origin": "seed (ERCOT ‘any 2025–2026 large-load protocol revision’)",
+   "references": "read 35 (whole report); 0 pass"
+  },
+  {
+   "instrument_id": "G05",
+   "group": "G",
+   "identifier": "NERC Reliability Guideline (May 2026)",
+   "title": "Risk Mitigation for Emerging Large Loads — Large Loads Working Group Reliability Guideline",
+   "issuing_body": "NERC",
+   "jurisdiction": "North America",
+   "landing_url": "https://www.nerc.com/globalassets/our-work/guidelines/reliability/RG_Risk-Mitigation-For-Emerging-Large-Loads.pdf",
+   "scope": "“This reliability guideline shares initial recommended practices, technical insights, and lessons learned for maintaining BPS reliability while integrating emerging large loads. This guideline will suggest mitigations for risks discussed in the prior LLWG white papers.” (Purpose)",
+   "headings": "Ch. 4 Operations and Balancing (Real-Time Monitoring; Balancing and Reserves); Ch. 5 Stability (Voltage and Frequency Disturbance Performance; Oscillation Mitigation); Ch. 6 Power Quality (Harmonics; Power Quality Monitoring and Analysis); Appendix A High-Level Recommendations",
+   "access": "full",
+   "status": "published May 2026",
+   "origin": "seed",
+   "references": "read 6 (Ch. 4–6, chapter-scoped); 0 pass"
+  },
+  {
+   "instrument_id": "G06",
+   "group": "G",
+   "identifier": "NERC Alert — Industry Recommendation (Level 2), initial distribution Sep 9, 2025",
+   "title": "Large Load Interconnection, Study, Commissioning, and Operations",
+   "issuing_body": "NERC",
+   "jurisdiction": "North America",
+   "landing_url": "https://www.nerc.com/pa/rrm/bpsa/Alerts%20DL/NERC%20Alert%20Level%202%20%20Large%20Loads.pdf",
+   "scope": "“The purpose of this alert is to address the risks observed from the analyzed large load behavior and to assess the status of industry preparedness in relation to large loads.”",
+   "headings": "",
+   "access": "full",
+   "status": "issued Sep 9, 2025",
+   "origin": "seed",
+   "references": "read 4 (whole document); 0 pass"
+  },
+  {
+   "instrument_id": "G07",
+   "group": "G",
+   "identifier": "NERC CLO-001-1, Draft 1 (Project 2026-02), Aug 2026",
+   "title": "Computational Load Interconnection, Studies, & Modeling Data",
+   "issuing_body": "NERC",
+   "jurisdiction": "North America",
+   "landing_url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-001-1-draft-1-clean.pdf",
+   "scope": "“To establish interconnection requirements for Computational Load Sites, to study the impact of interconnecting new or changed Computational Load Sites, and to establish modeling data requirements, verification, and reporting procedures for development of planning horizon cases necessary to support analysis of the reliability of the interconnected transmission system.” (Purpose; Facilities: Computational Load Sites ≥ 50 MW total connected Load, as printed)",
+   "headings": "",
+   "access": "full",
+   "status": "pending (as printed: Draft 1, formal comment period Aug 19–Sep 18, 2026; Board adoption not yet)",
+   "origin": "seed (NERC ‘any large-load standards project’)",
+   "references": "read 29 (whole document); 0 pass"
+  },
+  {
+   "instrument_id": "G08",
+   "group": "G",
+   "identifier": "NERC CLO-002-1, Draft 1 (Project 2026-02), Aug 2026",
+   "title": "Computational Load Operational Data and Communications",
+   "issuing_body": "NERC",
+   "jurisdiction": "North America",
+   "landing_url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-002-1-draft-1-clean.pdf",
+   "scope": "“To ensure that each Transmission Operator, Balancing Authority, and Reliability Coordinator has the Computational Load Site data and information it needs to plan, monitor, and assess the reliable operation of the bulk power system; and to establish Interpersonal Communication capabilities at Computational Load Sites …” (Purpose)",
+   "headings": "",
+   "access": "full",
+   "status": "pending (as printed: Draft 1)",
+   "origin": "seed (NERC ‘any large-load standards project’)",
+   "references": "read 24 (whole document); 0 pass"
+  },
+  {
+   "instrument_id": "G09",
+   "group": "G",
+   "identifier": "NERC CLO-003-1, Draft 1 (Project 2026-02), Aug 2026",
+   "title": "Computational Load Protection Coordination & Disturbance Monitoring",
+   "issuing_body": "NERC",
+   "jurisdiction": "North America",
+   "landing_url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-003-1-draft-1-clean.pdf",
+   "scope": "“To maintain the coordination of Protection Systems at Computational Load Sites and to have adequate data available from Computational Load Sites to facilitate analysis of System Disturbances.” (Purpose)",
+   "headings": "",
+   "access": "full",
+   "status": "pending (as printed: Draft 1)",
+   "origin": "seed (NERC ‘any large-load standards project’)",
+   "references": "read 20 (whole document); 0 pass (IEEE C37.111 cited for file naming only)"
+  },
+  {
+   "instrument_id": "G10",
+   "group": "G",
+   "identifier": "PJM Board Decisional Letter, Jan 16, 2026",
+   "title": "Board Decisional Letter on Critical Issue Fast Path - Large Load Additions",
+   "issuing_body": "PJM Interconnection (Board of Managers)",
+   "jurisdiction": "US (PJM)",
+   "landing_url": "https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260116-pjm-board-letter-re-results-of-the-cifp-process-large-load-additions.pdf",
+   "scope": "“After significant deliberation, the Board is issuing this decisional letter that reflects components of the various presentations.”",
+   "headings": "",
+   "access": "full",
+   "status": "issued Jan 16, 2026",
+   "origin": "seed",
+   "references": "read 0 (no citing sentence naming another document); 0 pass"
+  },
+  {
+   "instrument_id": "G11",
+   "group": "G",
+   "identifier": "PJM draft M14B Attachment D-2 and tariff (Sept 1, 2026 draft)",
+   "title": "PJM Draft of Ride Through Tariff and Manual Revisions for Large Computational Loads",
+   "issuing_body": "PJM Interconnection",
+   "jurisdiction": "US (PJM)",
+   "landing_url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/pc/2026/20260908/20260908-item-05---2-large-load-ride-through---redline.pdf",
+   "scope": "“Large Computational Loads (“LCLs”), including data centers and other computational facilities whose demand is substantially supplied through power electronic conversion equipment, connected at ≥ 100 kV and that aggregate to ≥ 50 MW, may significantly influence Bulk Electric System (BES) voltage performance and dynamic behavior during …” (D-2.1 Purpose)",
+   "headings": "",
+   "access": "full",
+   "status": "pending (as printed: “September 1, 2026 Draft / Remains Under Development and Subject to Revision by PJM”)",
+   "origin": "seed (PJM large-load documents 2025–2026)",
+   "references": "read 2 (whole document); 0 pass"
+  },
+  {
+   "instrument_id": "G12",
+   "group": "G",
+   "identifier": "16 TAC §25.194 (PUCT Project No. 58481)",
+   "title": "Large Load Interconnection Standards",
+   "issuing_body": "Public Utility Commission of Texas",
+   "jurisdiction": "US-TX",
+   "landing_url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.194/25.194.pdf",
+   "scope": "“(a) Purpose and Scope. This section sets forth the standards and criteria for an electric utility, a municipally owned utility, and electric cooperative to interconnect a large load customer to the ERCOT system.”",
+   "headings": "(a) Purpose and Scope; (b) Applicability; (d) Intermediate agreement; (e) Interconnection study; (f) SLLIA; (h) Batch zero load",
+   "access": "full",
+   "status": "in force (adopted rule, current PDF)",
+   "origin": "seed",
+   "references": "read 36 (whole rule); 0 pass"
+  },
+  {
+   "instrument_id": "G13",
+   "group": "G",
+   "identifier": "16 TAC §25.205 (PUCT Project No. 58479)",
+   "title": "Net Metering Arrangements Involving a Large Load Customer Co-Located with an Existing Generation Resource",
+   "issuing_body": "Public Utility Commission of Texas",
+   "jurisdiction": "US-TX",
+   "landing_url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.205/25.205.pdf",
+   "scope": "“(a) Applicability. This section applies to a net metering arrangement involving a large load customer and an existing generation resource in the ERCOT region.”",
+   "headings": "(h) General requirements of ERCOT study; (k) Commission decision; (m) Periodic evaluation of conditions imposed",
+   "access": "full",
+   "status": "in force",
+   "origin": "seed",
+   "references": "read 24 (whole rule); 0 pass"
+  },
+  {
+   "instrument_id": "G14",
+   "group": "G",
+   "identifier": "16 TAC §25.370",
+   "title": "ERCOT Large Load Forecasting Criteria",
+   "issuing_body": "Public Utility Commission of Texas",
+   "jurisdiction": "US-TX",
+   "landing_url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.370/25.370.pdf",
+   "scope": "“(a) Purpose. The purpose of this section is to establish criteria for including the load of a large load customer in ERCOT’s load forecasts used for identifying transmission planning needs and performing resource adequacy assessments.”",
+   "headings": "",
+   "access": "full",
+   "status": "in force",
+   "origin": "seed",
+   "references": "read 11 (whole rule); 0 pass"
+  },
+  {
+   "instrument_id": "G15",
+   "group": "G",
+   "identifier": "PUCT Project No. 59999, Item 5 (filed Nov 5, 2026)",
+   "title": "ERCOT Standard Large Load Interconnection Agreement (proposed SLLIA, staff recommendation)",
+   "issuing_body": "Public Utility Commission of Texas",
+   "jurisdiction": "US-TX",
+   "landing_url": "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59999&ItemMatch=Equal&DocumentType=ALL&SortOrder=Ascending",
+   "scope": "Case style (as printed): “Rulemaking to Adopt a Standard Large Load Interconnection Agreement”. No scope sentence read.",
+   "headings": "Article 7 Facilities and Equipment; Article 8 Operation and Maintenance; Article 9 Performance Obligation and Cost Responsibility",
+   "access": "full",
+   "status": "pending (as printed: “Proposal Notice of Draft Standardized Large Load Interconnection Agreement (SLLIA)”; Texas Register issue of 11.20.2026)",
+   "origin": "seed (PUCT SB 6 rules)",
+   "references": "read 10 (keyword-headed clauses); 0 pass"
+  },
+  {
+   "instrument_id": "G16",
+   "group": "G",
+   "identifier": "193 FERC ¶ 61,217 (Docket No. EL25-49-000 et al.), issued Dec 18, 2025",
+   "title": "Order on Show Cause Proceeding, Directing Compliance Filings, Establishing Paper Hearing, and Granting in Part and Denying in Part Complaint (PJM Interconnection, L.L.C.)",
+   "issuing_body": "Federal Energy Regulatory Commission",
+   "jurisdiction": "US (PJM)",
+   "landing_url": "https://www.ferc.gov/sites/default/files/2025-12/E-1%20EL25-49-000.pdf",
+   "scope": "“The Show Cause Order directed PJM and the transmission owners to either: (1) show cause as to why the [Tariff] remains just and reasonable … without provisions addressing with sufficient clarity or consistency the rates, terms, and conditions of service that apply to Co-Location Arrangements; or (2) explain what changes to the Tariff would remedy the identified concerns …”",
+   "headings": "",
+   "access": "full",
+   "status": "issued Dec 18, 2025 (later orders in the docket exist, e.g. EL25-49-002)",
+   "origin": "seed",
+   "references": "read 0 (no clause heading names a keyword); 0 pass"
+  },
+  {
+   "instrument_id": "U01",
+   "group": "U",
+   "identifier": "Ohio Power Company (AEP Ohio) Schedule DCT, issued Aug 28, 2026 (Case Nos. 25-392-EL-AIR, 26-113-EL-ATA)",
+   "title": "Schedule DCT (Data Center Tariff)",
+   "issuing_body": "AEP Ohio (Ohio Power Company); approved by PUCO",
+   "jurisdiction": "US-OH",
+   "landing_url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+   "scope": "“Service pursuant to this schedule is available for general service to customers that operate a Data Center (both Existing Load and New Load) that will use, within the initial contract term, a monthly maximum demand of greater than 25,000 kW at a Single Location or an aggregated Total Customer Contract Capacity in Service Territory of greater than 25,000 kW as described below.” (Availability of Service)",
+   "headings": "Availability of Service; Monthly Rate; Minimum Charges; Customer-Owned Generation and Emergency Conditions; Special Terms and Conditions (Schedule DCT inside the November 2026 Ohio Power Tariff Book)",
+   "access": "full",
+   "status": "in force (effective Aug 28, 2026)",
+   "origin": "seed",
+   "references": "read 14 (whole schedule); 0 pass"
+  },
+  {
+   "instrument_id": "U02",
+   "group": "U",
+   "identifier": "Virginia SCC Final Order, Case No. PUR-2025-00058 (Nov 25, 2025) — Rate Schedule GS-5 (large-load class)",
+   "title": "Final Order: Application of Virginia Electric and Power Company for a 2025 biennial review of the rates, terms and conditions …",
+   "issuing_body": "Virginia State Corporation Commission / Dominion Energy Virginia",
+   "jurisdiction": "US-VA",
+   "landing_url": "https://www.scc.virginia.gov/docketsearch/DOCS/89g601!.PDF",
+   "scope": "“This proceeding is a biennial review of Virginia Electric and Power Company’s (“Dominion” or “Company”) rates, terms, and conditions for the provision of generation, distribution, and transmission services pursuant to § 56-585.1 A of the Code of Virginia (“Code”). … Dominion also proposed certain changes to its rate schedules and its terms and conditions of service.”",
+   "headings": "",
+   "access": "partial",
+   "status": "approved; the GS-5 rate schedule text was not found on dominionenergy.com’s Virginia tariff pages (two direct URLs 404; not in the tariff table of contents)",
+   "origin": "seed",
+   "references": "read 0 (no keyword-headed clause in the order); 0 pass"
+  },
+  {
+   "instrument_id": "U03",
+   "group": "U",
+   "identifier": "Georgia Power Company Rules, Regulations and Rate Schedules for Electric Service (current PDF)",
+   "title": "Rules and Regulations for Electric Service (Rules, Regulations and Rate Schedules for Retail Electric Service)",
+   "issuing_body": "Georgia Power Company; approved by Georgia PSC",
+   "jurisdiction": "US-GA",
+   "landing_url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/tariffs/rules-regs.pdf",
+   "scope": "“All rules, regulations, and rate schedules are subject to change by the Georgia Public Service Commission in the manner prescribed by law.” (cover page)",
+   "headings": "A. General Rules; B. Credit Regulations; C./D. Line Extension and Service Connection Regulations; E. Metering and Billing; F. Contract and Enforcement Regulations; G. Customer Generation",
+   "access": "full",
+   "status": "in force",
+   "origin": "seed",
+   "references": "read 9 (whole document); 0 pass (IEEE 1547-2018 cited for customer generation only)"
+  },
+  {
+   "instrument_id": "E01",
+   "group": "E",
+   "identifier": "Commission Regulation (EU) 2016/1388",
+   "title": "Network Code on Demand Connection",
+   "issuing_body": "European Commission",
+   "jurisdiction": "EU",
+   "landing_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32016R1388",
+   "scope": "“1. This Regulation establishes a network code which lays down the requirements for grid connection of: (a) transmission-connected demand facilities; (b) transmission-connected distribution facilities; (c) distribution systems, including closed distribution systems; (d) demand units, used by a demand facility or a closed distribution system to provide demand response services to relevant system operators and relevant TSOs.” (Art. 1)",
+   "headings": "Art. 12 General frequency requirements; Art. 13 General voltage requirements; Art. 17 Control requirements; Art. 19 Demand disconnection and demand reconnection; Art. 20 Power quality; Art. 28–30 Demand response provisions; Annex I–II",
+   "access": "full",
+   "status": "in force (EUR-Lex: ‘In force’, no end date)",
+   "origin": "seed",
+   "references": "read 0 (Art. 20 contains no citing sentence); 0 pass"
+  },
+  {
+   "instrument_id": "E02",
+   "group": "E",
+   "identifier": "ENTSO-E Implementation Guidance Documents (connection network codes), current versions whose Code(s) field names the DCC — 14 documents",
+   "title": "Implementation Guidance Documents (CNC IGDs): Compliance Verification – Simulation models (2023); Compliance Verification – Compliance Testing and use of Equipment Certificates (2021); Demand Response – System Frequency Control (2021); Frequency Ranges (2021); Harmonisation; HPoPEIPS; Instrumentation, simulation models and protection; Making non-mandatory requirements mandatory; Parameters of non-exhaustive requirements (2021); Parameters related to frequency stability; RoCoF withstand capability; Reactive power management at T/D interface; Real time data and communication; Voltage related parameters",
+   "issuing_body": "ENTSO-E",
+   "jurisdiction": "EU",
+   "landing_url": "https://www.entsoe.eu/network_codes/cnc/cnc-igds/",
+   "scope": "Non-binding guidance on implementation of the connection network codes (DCC Art. 56). No single scope sentence; each IGD names its codes and articles.",
+   "headings": "",
+   "access": "full",
+   "status": "published (versions as listed on the page; archives excluded)",
+   "origin": "seed",
+   "references": "read 4 (keyword-headed clauses across 14 IGDs); 0 pass"
+  },
+  {
+   "instrument_id": "E03",
+   "group": "E",
+   "identifier": "ACER Recommendation No 01/2025, Annex 4a — amended DC Network Code (draft COMMISSION REGULATION (EU) …/…)",
+   "title": "Commission Regulation (EU) …/… establishing a Network Code on Demand Connection (amended draft)",
+   "issuing_body": "ACER (proposal to the European Commission)",
+   "jurisdiction": "EU",
+   "landing_url": "https://www.acer.europa.eu/sites/default/files/documents/Recommendations_annex/ACER_Recommendation_01-2025_DR_NC-Annex4a_Amended_DC_Regulation_TC.pdf.pdf",
+   "scope": "Title only (draft regulation text).",
+   "headings": "",
+   "access": "full",
+   "status": "pending (recommendation to the Commission; not adopted as of screening)",
+   "origin": "seed (pending proposal found while resolving E01)",
+   "references": "read 0 (power-quality article has no cited document); 0 pass"
+  },
+  {
+   "instrument_id": "E04",
+   "group": "E",
+   "identifier": "The Grid Code, Issue 6 Revision 47 (29 Oct 2026; complete) + Revision 48 (3 Nov 2026; General Conditions only)",
+   "title": "The Grid Code — Connection Conditions (CC) and European Connection Conditions (ECC)",
+   "issuing_body": "NESO (National Energy System Operator)",
+   "jurisdiction": "GB",
+   "landing_url": "https://www.neso.energy/industry-information/codes/grid-code-gc/grid-code-documents",
+   "scope": "“The Connection Conditions (“CC”) specify both: (a) the minimum technical, design and operational criteria which must be complied with by: (i) any GB Code User connected to or seeking connection with the National Electricity Transmission System …” (CC.1.1; ECC.1.1 is parallel for EU Code Users)",
+   "headings": "CC.6.1.7 Voltage changes at a Point of Common Coupling on the Onshore Transmission System; CC.6.1.8 Voltage fluctuations at a Point of Common Coupling with a fluctuating Load …; ECC.6.1.7; ECC.6.1.8; CC.6.4 / ECC.6.4 General Network Operator and Non-Embedded Customer Requirements; Demand Response Services Code (DRSC)",
+   "access": "full",
+   "status": "in force",
+   "origin": "seed",
+   "references": "read 8 (keyword-headed clauses); 1 added (EREC P28)"
+  },
+  {
+   "instrument_id": "E05",
+   "group": "E",
+   "identifier": "VDE-AR-N 4120:2018-11 with VDE-AR-N 4120/A1:2024-04 (in force); successor VDE-AR-N 4120:2026-12 listed with Erscheinungsdatum 2026-11-20 and withdrawal of the 2018-11 edition 2026-12-01 (as printed)",
+   "title": "Technische Regeln für den Anschluss von Kundenanlagen an das Hochspannungsnetz und deren Betrieb (TAR Hochspannung)",
+   "issuing_body": "VDE FNN",
+   "jurisdiction": "DE",
+   "landing_url": "https://www.vde.com/de/fnn/themen/tar/tar-hochspannung-vde-ar-n-4120",
+   "scope": "“Diese VDE-Anwendungsregel legt die Technischen Regeln (TAR) für Planung, Errichtung, Betrieb und Änderung von Kundenanlagen (Bezugs- und Erzeugungsanlagen, Speicher sowie Mischanlagen) fest, die am Netzanschlusspunkt an das Hochspannungsnetz eines Netzbetreibers der allgemeinen Versorgung angeschlossen werden. […]” (VDE Verlag catalogue description)",
+   "headings": "",
+   "access": "partial",
+   "status": "in force (raters re-check edition on reading date)",
+   "origin": "seed",
+   "references": "not accessible (catalogue page only)"
+  },
+  {
+   "instrument_id": "E06",
+   "group": "E",
+   "identifier": "E VDE-AR-N 4120/A1:2026-05 (draft amendment)",
+   "title": "Entwurf der Ergänzung zur TAR Hochspannung (Novelle 2025) (E VDE-AR-N 4120/A1)",
+   "issuing_body": "VDE FNN",
+   "jurisdiction": "DE",
+   "landing_url": "https://www.vde.com/de/fnn/themen/tar/tar-hochspannung-vde-ar-n-4120/tar-hochspannung-vde-ar-n-4120",
+   "scope": "“Der Entwurf der Ergänzung zur TAR Hochspannung (Novelle 2025) (E VDE-AR-N 4120/A1) steht zur Konsultation bereit.” (VDE FNN page)",
+   "headings": "",
+   "access": "partial",
+   "status": "pending (as printed: Entwurf)",
+   "origin": "seed (pending proposal found while resolving E05)",
+   "references": "not accessible"
+  },
+  {
+   "instrument_id": "E07",
+   "group": "E",
+   "identifier": "VDE-AR-N 4130:2018-11 with VDE-AR-N 4130/A1 (in force 1 June 2026, as printed)",
+   "title": "Technische Regeln für den Anschluss von Kundenanlagen an das Höchstspannungsnetz und deren Betrieb (TAR Höchstspannung)",
+   "issuing_body": "VDE FNN",
+   "jurisdiction": "DE",
+   "landing_url": "https://www.vde.com/de/fnn/themen/tar/tar-hoechstspannung-vde-ar-n-4130",
+   "scope": "“VDE/FNN beschreibt darin erstmals bundesweit einheitliche Anforderungen an alle Kundenanlagen mit Anschluss an das Höchstspannungsnetz. … Damit wird es künftig einheitliche Anforderungen an alle Arten von Kundenanlagen in der Höchstspannung geben: Erzeuger, Verbraucher, Speicher und Mischanlagen. Die neue Anwendungsregel gestaltet außerdem die relevanten Europäischen Network Codes (RfG, DCC) für diese Spannungsebene in Deutschland aus.” (VDE Verlag description)",
+   "headings": "",
+   "access": "partial",
+   "status": "in force (a revision draft is announced by VDE FNN for Oct 2026; no draft document located)",
+   "origin": "seed",
+   "references": "not accessible (catalogue page only)"
+  },
+  {
+   "instrument_id": "E08",
+   "group": "E",
+   "identifier": "D-A-CH-CZ Technische Regeln, Teil A, 3. Ausgabe 2021",
+   "title": "Technische Regeln für die Beurteilung von Netzrückwirkungen — Teil A: Grundlagen",
+   "issuing_body": "D-A-CH-CZ working group EMC & Power Quality; published by Oesterreichs Energie, VSE, VDE FNN, CSRES",
+   "jurisdiction": "DE/AT/CH/CZ",
+   "landing_url": "https://www.vde.com/de/fnn/arbeitsgebiete/versorgungsqualitaet/spannungsqualitaet/netzruckwirkungen",
+   "scope": "“Die Technischen Regeln dienen grundsätzlich der Festlegung von Grenzwerten für genehmigungspflichtige Großgeräte und Anlagen von Netzbenutzern mit einer Anschlussleistung größer 52 kVA.” (2.4 Anwendungsbereich)",
+   "headings": "2.4 Anwendungsbereich; 2.11 Normative Bezüge; 4 Spannungsänderungen und Flicker (4.1 Spannungsänderungen; 4.2 Flicker; 4.4 Bewertungsgrößen; 4.6 Messtechnischer Nachweis)",
+   "access": "full",
+   "status": "in force (3rd edition)",
+   "origin": "seed",
+   "references": "read 30 (2.11 normative references clause + 15 citing sentences in clause 4); 2 added (EN 61000-3-3, EN 61000-3-11)"
+  },
+  {
+   "instrument_id": "E09",
+   "group": "E",
+   "identifier": "D-A-CH-CZ Technische Regeln, Teil B Abschnitt I, 3. Ausgabe 2021",
+   "title": "Technische Regeln für die Beurteilung von Netzrückwirkungen — Teil B: Anforderungen und Beurteilung, Abschnitt I: Niederspannung",
+   "issuing_body": "D-A-CH-CZ (as E08)",
+   "jurisdiction": "DE/AT/CH/CZ",
+   "landing_url": "https://www.vde.com/de/fnn/arbeitsgebiete/versorgungsqualitaet/spannungsqualitaet/netzruckwirkungen",
+   "scope": "“Das vorliegende Dokument fasst die Beurteilungsverfahren und die Berechnung der Emissionsgrenzwerte für Anlagen von Netzbenutzern zum Anschluss an das öffentliche Niederspannungsnetz zusammen.” (Vorwort)",
+   "headings": "1 Spannungsänderungen und Flicker (1.1 Spannungsänderungen; 1.2 Flicker; 1.3 Beurteilung); Normenverzeichnis",
+   "access": "full",
+   "status": "in force",
+   "origin": "seed",
+   "references": "read 11 (Normenverzeichnis + 1 citing sentence); 0 new (EN 61000-3-3/-3-11 already added; EN 61000-4-15 already listed)"
+  },
+  {
+   "instrument_id": "E10",
+   "group": "E",
+   "identifier": "D-A-CH-CZ Technische Regeln, Teil B Abschnitt II, 3. Ausgabe 2022",
+   "title": "Technische Regeln für die Beurteilung von Netzrückwirkungen — Teil B: Anforderungen und Beurteilung, Abschnitt II: Mittelspannung",
+   "issuing_body": "D-A-CH-CZ (as E08)",
+   "jurisdiction": "DE/AT/CH/CZ",
+   "landing_url": "https://www.vde.com/de/fnn/arbeitsgebiete/versorgungsqualitaet/spannungsqualitaet/netzruckwirkungen",
+   "scope": "“Das vorliegende Dokument fasst die Beurteilungsverfahren und die Berechnung der Grenzwerte für Anlagen von Netzbenutzern zum Anschluss an das Mittelspannungsnetz zusammen.” (Vorwort)",
+   "headings": "1 Spannungsänderungen und Flicker (1.2.1 Planungspegel und anteiliger Beitrag; 1.2.2 Emissionsgrenzwerte; 1.3 Beurteilung); Normenverzeichnis",
+   "access": "full",
+   "status": "in force",
+   "origin": "seed",
+   "references": "read 8 (Normenverzeichnis + 1 citing sentence); 0 new (IEC TR 61000-3-7, EN 61000-4-15 already listed)"
+  },
+  {
+   "instrument_id": "E11",
+   "group": "E",
+   "identifier": "D-A-CH-CZ Technische Regeln, Teil B Abschnitt III, 3. Ausgabe 2023",
+   "title": "Technische Regeln für die Beurteilung von Netzrückwirkungen — Teil B: Anforderungen und Beurteilung, Abschnitt III: Hochspannung",
+   "issuing_body": "D-A-CH-CZ (as E08)",
+   "jurisdiction": "DE/AT/CH/CZ",
+   "landing_url": "https://www.vde.com/de/fnn/arbeitsgebiete/versorgungsqualitaet/spannungsqualitaet/netzruckwirkungen",
+   "scope": "“Das vorliegende Dokument fasst die Beurteilungsverfahren und die Berechnung der Grenzwerte für Anlagen von Netzbenutzern zum Anschluss an das Hochspannungsnetz zusammen.” (Vorwort)",
+   "headings": "1 Spannungsänderungen und Flicker (1.2.1 Planungspegel und anteiliger Beitrag; 1.2.2 Emissionsgrenzwerte; 1.3 Beurteilung; 1.4 Messtechnischer Nachweis); Normenverzeichnis",
+   "access": "full",
+   "status": "in force",
+   "origin": "seed",
+   "references": "read 5 (Normenverzeichnis + 1 citing sentence); 0 new (EN 61000-4-15 already listed)"
+  },
+  {
+   "instrument_id": "Q01",
+   "group": "Q",
+   "identifier": "IEC TR 61000-3-7:2008 (Ed. 2.0)",
+   "title": "Electromagnetic compatibility (EMC) - Part 3-7: Limits - Assessment of emission limits for the connection of fluctuating installations to MV, HV and EHV power systems",
+   "issuing_body": "IEC",
+   "jurisdiction": "International",
+   "landing_url": "https://webstore.iec.ch/en/publication/4156",
+   "scope": "“This part of IEC 61000 provides guidance on principles which can be used as the basis for determining the requirements for the connection of fluctuating installations to MV, HV and EHV public power systems (LV installations are covered in other IEC documents). For the purposes of this report, a fluctuating installation means an installation (which may be a load or a generator) that produces voltage flicker and / or rapid voltage changes. The primary objective is to provide guidance to system operators or owners on engineering practices which will facilitate the provision of adequate service quality for all connected customers.”",
+   "headings": "",
+   "access": "partial",
+   "status": "published 2008-02-22; stability date 2026",
+   "origin": "seed",
+   "references": "not accessible (abstract only; preview PDF 403)"
+  },
+  {
+   "instrument_id": "Q02",
+   "group": "Q",
+   "identifier": "IEC 61000-4-30:2025 (Ed. 4.0)",
+   "title": "Electromagnetic compatibility (EMC) - Part 4-30: Testing and measurement techniques - Power quality measurement methods",
+   "issuing_body": "IEC",
+   "jurisdiction": "International",
+   "landing_url": "https://webstore.iec.ch/en/publication/71611",
+   "scope": "“Measurement methods are described for each relevant parameter in terms that give reliable and repeatable results, regardless of the method’s implementation. This document addresses measurement methods for in-situ measurements. … The power quality parameters considered in this document are power frequency, magnitude of the supply voltage, flicker, supply voltage dips and swells, voltage interruptions, transient voltages, supply voltage unbalance, voltage harmonics and interharmonics, rapid voltage changes, …”",
+   "headings": "",
+   "access": "partial",
+   "status": "published 2025-10-24",
+   "origin": "seed",
+   "references": "not accessible (abstract only)"
+  },
+  {
+   "instrument_id": "Q03",
+   "group": "Q",
+   "identifier": "IEC 61000-4-15:2010 (Ed. 2.0) with COR1:2012 and ISH1:2017",
+   "title": "Electromagnetic compatibility (EMC) - Part 4-15: Testing and measurement techniques - Flickermeter - Functional and design specifications",
+   "issuing_body": "IEC",
+   "jurisdiction": "International",
+   "landing_url": "https://webstore.iec.ch/en/publication/4173",
+   "scope": "“IEC 61000-4-15:2010 gives a functional and design specification for flicker measuring apparatus intended to indicate the correct flicker perception level for all practical voltage fluctuation waveforms. Information is presented to enable such an instrument to be constructed. A method is given for the evaluation of flicker severity on the basis of the output of flickermeters complying with this standard.”",
+   "headings": "",
+   "access": "partial",
+   "status": "published 2010-08-24; stability date 2026",
+   "origin": "seed",
+   "references": "not accessible (abstract only)"
+  },
+  {
+   "instrument_id": "Q04",
+   "group": "Q",
+   "identifier": "IEEE 519-2022",
+   "title": "IEEE Standard for Harmonic Control in Electric Power Systems",
+   "issuing_body": "IEEE SA",
+   "jurisdiction": "International (US origin)",
+   "landing_url": "https://standards.ieee.org/ieee/519/10677/",
+   "scope": "“Goals for the design of electrical systems that include both linear and nonlinear loads are established in this standard. … This standard addresses steady-state limitations. … This document sets the quality of power that is to be provided at the point of common coupling.”",
+   "headings": "",
+   "access": "partial",
+   "status": "Active Standard (published 2022-08-05); revision project P519 active (no draft public)",
+   "origin": "seed",
+   "references": "not accessible (abstract only)"
+  },
+  {
+   "instrument_id": "Q05",
+   "group": "Q",
+   "identifier": "IEEE 1453-2022",
+   "title": "IEEE Standard for Measurement and Limits of Voltage Fluctuations and Associated Light Flicker on AC Power Systems",
+   "issuing_body": "IEEE SA",
+   "jurisdiction": "International (US origin)",
+   "landing_url": "https://standards.ieee.org/ieee/1453/10459/",
+   "scope": "“Background information on supply voltage fluctuations caused by fluctuations in power demands of installations is provided by this standard. … For different system voltages, planning levels for flicker that the utilities need their system to be limited to in order to reduce customer complaints are defined in this standard. The procedure for determining emission limits for individual installations at the point of common coupling (PCC) so that the planning levels can be achieved in practice is defined in this standard.”",
+   "headings": "",
+   "access": "partial",
+   "status": "Active Standard (published 2023-02-27; supersedes 1453-2015)",
+   "origin": "seed",
+   "references": "not accessible (abstract only)"
+  },
+  {
+   "instrument_id": "Q06",
+   "group": "Q",
+   "identifier": "EN 50160:2022 with EN 50160:2022/A1:2025",
+   "title": "Voltage characteristics of electricity supplied by public electricity networks",
+   "issuing_body": "CENELEC (CLC/TC 8X)",
+   "jurisdiction": "Europe",
+   "landing_url": "https://standards.cencenelec.eu/ords/f?p=CENELEC:110:::::FSP_PROJECT:71003&cs=18A352BF203027ECCA5F79274EFAC20F4",
+   "scope": "“This document specifies the main characteristics of the voltage at a network user's supply terminals in public low voltage, medium, high, and extra-high voltage …” (1.1 Application, catalogue abstract; truncated as displayed). “NOTE 4 This document can be superseded in total or in part by the terms of a contract between the individual network user and the network operator.”",
+   "headings": "",
+   "access": "partial",
+   "status": "Published (DOR 2022-11-07); A1:2025 listed under TC 8X published standards",
+   "origin": "seed",
+   "references": "read 1 (catalogue normative reference: EN 61000-4-30:2015 → already listed Q02)"
+  },
+  {
+   "instrument_id": "Q07",
+   "group": "Q",
+   "identifier": "IEC 61000-3-3:2013+AMD1:2017+AMD2:2021 (cited as EN 61000-3-3:2013)",
+   "title": "Electromagnetic compatibility (EMC) - Part 3-3: Limits - Limitation of voltage changes, voltage fluctuations and flicker in public low-voltage supply systems, for equipment with rated current ≤16 A per phase and not subject to conditional connection",
+   "issuing_body": "IEC (EN version: CENELEC)",
+   "jurisdiction": "International / Europe",
+   "landing_url": "https://webstore.iec.ch/en/publication/4150",
+   "scope": "“IEC 61000-3-3:2013 is concerned with the limitation of voltage fluctuations and flicker impressed on the public low-voltage system. It specifies limits of voltage changes which may be produced by an equipment tested under specified conditions and gives guidance on methods of assessment.”",
+   "headings": "",
+   "access": "partial",
+   "status": "in force (consolidated CSV 3.2; ISH1:2025 exists)",
+   "origin": "added via E08 clause 2.11",
+   "references": "not screened (one level)"
+  },
+  {
+   "instrument_id": "Q08",
+   "group": "Q",
+   "identifier": "IEC 61000-3-11:2017 (Ed. 2.0) (cited as EN 61000-3-11:2000)",
+   "title": "Electromagnetic compatibility (EMC) - Part 3-11: Limits - Limitation of voltage changes, voltage fluctuations and flicker in public low-voltage supply systems - Equipment with rated current ≤ 75 A and subject to conditional connection",
+   "issuing_body": "IEC (EN version: CENELEC)",
+   "jurisdiction": "International / Europe",
+   "landing_url": "https://webstore.iec.ch/en/publication/27902",
+   "scope": "“IEC 61000-3-11:2017 is concerned with the emission of voltage changes, voltage fluctuations and flicker produced by equipment and impressed on the public low-voltage supply system. It specifies the limits of voltage changes produced by equipment tested under specified conditions.”",
+   "headings": "",
+   "access": "partial",
+   "status": "in force (2017 edition; the cited EN 61000-3-11:2000 edition is superseded)",
+   "origin": "added via E08 clause 2.11",
+   "references": "not screened (one level)"
+  },
+  {
+   "instrument_id": "Q09",
+   "group": "Q",
+   "identifier": "EREC P28 Issue 2 (May 2019)",
+   "title": "Voltage fluctuations and the connection of disturbing equipment to transmission systems and distribution networks in the United Kingdom",
+   "issuing_body": "Energy Networks Association (ENA)",
+   "jurisdiction": "GB",
+   "landing_url": "https://www.ena-eng.org/ENA-Docs/Index.aspx?Action=ViewDetail&EID=99789&tab=introduction",
+   "scope": "“This EREC defines planning levels and compatibility levels for the assessment of voltage fluctuations from customer disturbing equipment and fluctuating installations to be connected to transmission systems and distribution networks in the United Kingdom. This EREC only applies to the proposed connection of customer disturbing equipment and fluctuating installations. … The scope of voltage fluctuations in this EREC applies to flicker or RVCs emitted onto the public electricity supply system by customer equipment, i.e. customer owned demand, generation, energy storage, or other types of disturbing equipment that may be connected.”",
+   "headings": "",
+   "access": "partial",
+   "status": "Current (catalogue)",
+   "origin": "added via E04 clause CC.6.1.7 / ECC.6.1.7 (also CC data clause ‘Demand fluctuations greater than those permitted under [P28]’)",
+   "references": "not screened (one level)"
+  },
+  {
+   "instrument_id": "V01",
+   "group": "V",
+   "identifier": "OCP Open Rack V3 Base Specification, Rev 1.1",
+   "title": "Open Rack V3 Base Specification",
+   "issuing_body": "Open Compute Project",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/open-rack-base-specification-version-3-rev1-1-030524-pdf/",
+   "scope": "“This document defines technical specifications for all components within the Open Rack Frame V3 family used in the Open Compute Project. This document is intended to define all of the requirements needed to ensure intermateability of IT Gear across different racks and power systems developed by the community. Compliance with this specification is required for any products intended to operate with Open Rack V3.” (4. Scope)",
+   "headings": "",
+   "access": "full",
+   "status": "published",
+   "origin": "seed",
+   "references": "read 0 (keyword-headed clauses); 0 pass"
+  },
+  {
+   "instrument_id": "V02",
+   "group": "V",
+   "identifier": "OCP Open Rack V3 Power Shelf, Rev 1.0 (file rev 1.0.1, dated 11/10/2022)",
+   "title": "Open Rack V3 Power Shelf",
+   "issuing_body": "Open Compute Project",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/ocp-open-rack-v3-power-shelf-rev-1-0-1-pdf/",
+   "scope": "“This document defines the technical specifications for Open Rack V3 Power Shelves used in the Open Compute Project.” (1. Scope)",
+   "headings": "",
+   "access": "full",
+   "status": "published",
+   "origin": "seed",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V03",
+   "group": "V",
+   "identifier": "OCP Open Rack V3 HPR V2 72kW Power Shelf, Rev 1.0.0 (12 June 2026)",
+   "title": "Open Rack V3 HPR V2 72kW Power Shelf",
+   "issuing_body": "Open Compute Project",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/open-rack-v3-hpr-v2-72kw-power-shelf-spec-v1-0-0-pdf/",
+   "scope": "“This document defines the technical specifications for Open Rack V3 72kW Power Shelf used in the Open Compute Project.” (2. Scope)",
+   "headings": "5.5.2 Pulse_Mgmt_L Signal; 5.6 Peak Load requirements; 5.7 Parallel Operation Mode with Multiple Shelves",
+   "access": "full",
+   "status": "published",
+   "origin": "seed",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V04",
+   "group": "V",
+   "identifier": "OCP Open Rack V3 BBU Shelf, Rev 1.1",
+   "title": "Open Rack V3 BBU Shelf",
+   "issuing_body": "Open Compute Project",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/open-rack-v3-bbu-shelf-spec-rev1-1-pdf-1/",
+   "scope": "“This document defines the technical specifications for Open Rack V3 BBU Shelves used in the Open Compute Project.” (3 Scope)",
+   "headings": "",
+   "access": "full",
+   "status": "published",
+   "origin": "seed",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V05",
+   "group": "V",
+   "identifier": "OCP Open Rack V3 48V BBU, Rev 1.4",
+   "title": "Open Rack V3 48V BBU (BBU module)",
+   "issuing_body": "Open Compute Project",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/open-rack-v3-bbu-module-spec-1-4-pdf/",
+   "scope": "“This document defines the technical specifications for the Open Rack V3 BBU (Battery Backup Unit) used in the Open Compute Project.” (1. Scope)",
+   "headings": "",
+   "access": "full",
+   "status": "published",
+   "origin": "seed",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V06",
+   "group": "V",
+   "identifier": "OCP Diablo 400 Project: Rack and Power, 0.7.0 Base Specification (effective March 1st, 2026) — ‘Mt Diablo’ ±400 VDC",
+   "title": "Diablo 400 Project: Rack and Power",
+   "issuing_body": "Open Compute Project (authors Microsoft, Meta, Google)",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/ocp-specification-diablo-400-v0-7-0-final-pdf/",
+   "scope": "“With increased rack power (from 33kW to 100’s of kW), size and power of AI accelerators, and rack/POD size growth, there are significant challenges with interconnect density, power delivery and overall system integration. To solve this, the disaggregated power rack (also known as sidecar) provides a flexible and evolving infrastructure solution.” (5 Scope)",
+   "headings": "7.1.3 AC Loss (Holdup and ride-through); 7.2 Energy Storage Solutions (BBU; Capacitor Bank Option CBU); 7.3.3 DC Output – Dynamic loading; 9.2 Telemetry",
+   "access": "full",
+   "status": "published (v0.7.0)",
+   "origin": "seed",
+   "references": "read 1; 0 pass (IEC 61000-4-34 cited for line sag ride-through)"
+  },
+  {
+   "instrument_id": "V07",
+   "group": "V",
+   "identifier": "OCP Open Rack V3 HVDC-LVDC 100kW Power Shelf Design Specification, Version 1.0.0",
+   "title": "Open Rack V3 HVDC-LVDC 100kW Power Shelf Design Specification",
+   "issuing_body": "Open Compute Project",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/orv3-hvdc-lvdc-100kw-power-shelf-spec-1-0-0-pdf/",
+   "scope": "“This document defines the technical specifications for Open Rack V3 HVDC 100kW Power Shelf used in the Open Compute Project.” (1. Scope)",
+   "headings": "",
+   "access": "full",
+   "status": "published",
+   "origin": "seed (800 VDC specifications)",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V08",
+   "group": "V",
+   "identifier": "OCP Open Rack V3 +/- 400V to 50V 18kW PSU Design Specification, Version 1.0.0",
+   "title": "Open Rack V3 +/- 400V to 50V 18kW PSU Design Specification",
+   "issuing_body": "Open Compute Project",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/hvdc-lvdc-psu-18kw-spec-1-0-0-pdf/",
+   "scope": "“This document defines the technical specifications for Open Rack V3 HVDC IT Rack HVDC input power supply used in the Open Compute Project.” (1. Scope)",
+   "headings": "",
+   "access": "full",
+   "status": "published",
+   "origin": "seed (800 VDC specifications)",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V09",
+   "group": "V",
+   "identifier": "OCP Base Specification Version 1.0.0 (effective September 17, 2026)",
+   "title": "Data Center Facility Project: Interface Specification Between Hyperscalers and Utility Grid for Disturbance Performance",
+   "issuing_body": "Open Compute Project (authors Google, Microsoft, Meta, NVIDIA)",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/documents/ocp-base-spec-interface-specification-between-hyperscalers-and-utility-grid-for-disturbance-performance-pdf/",
+   "scope": "“This OCP Base Specification establishes the interface requirements between hyperscale operators and the utility grid for performance during grid disturbances. The primary objective is to maintain grid stability and reliability through efficient power delivery that accommodates the dynamic demands of advanced computing infrastructure.” (4.1 Description)",
+   "headings": "4.2 Past and Upcoming Utility Requirements; 4.4 Voltage Ride-Through and Post Fault Active Power Recovery (4.4.3 Proposed specification); 4.6.1 Future requirements; 5 References",
+   "access": "full",
+   "status": "published",
+   "origin": "seed (OCP ‘any power-stabilisation … requirements document’; title names data center)",
+   "references": "read 19 (References clause 4 entries + 15 citing sentences); 0 new (IEEE 1453, IEEE 519, NOGRR282 already listed)"
+  },
+  {
+   "instrument_id": "V10",
+   "group": "V",
+   "identifier": "OCP Open Data Center: Next-Generation ML Infrastructure Design Principles, Revision 0.7.0 (effective Aug 27, 2026)",
+   "title": "Open Data Center: Next-Generation ML Infrastructure Design Principles (Datacenter design specification)",
+   "issuing_body": "Open Compute Project (authors AMD, Google, Meta, Nvidia)",
+   "jurisdiction": "Industry (global)",
+   "landing_url": "https://www.opencompute.org/wp-content/uploads/2026/10/Open-Data-center-Spec-Revision-0.7.0-4.pdf",
+   "scope": "“This specification outlines the unified data center design standards developed in collaboration with Google, Meta, Nvidia, and AMD. This iteration focuses on the 2027-2028 timeline and emphasizes flexible, first principles guidelines to support next-generation AI and ML workloads. The standards herein govern structural, power, and cooling infrastructure to ensure industry wide adaptability and scalability.” (3. Specifications)",
+   "headings": "5. Power and Density Requirements (5.1 Cluster and Power Density Targets; 5.2 Power Architecture and Interfaces)",
+   "access": "full",
+   "status": "published (Rev 0.7.0; supersedes 0.3/0.5)",
+   "origin": "seed (OCP ‘any …’; title names data center)",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V11",
+   "group": "V",
+   "identifier": "NVIDIA Technical Blog, Jul 28, 2025",
+   "title": "How New GB300 NVL72 Features Provide Steady Power for AI",
+   "issuing_body": "NVIDIA",
+   "jurisdiction": "Vendor (global)",
+   "landing_url": "https://developer.nvidia.com/blog/how-new-gb300-nvl72-features-provide-steady-power-for-ai/",
+   "scope": "“NVIDIA introduces a comprehensive power smoothing solution in the GB300 NVL72 platform, combining programmable power caps, integrated electrolytic capacitors for energy storage, and a hardware power burner with software …” (opening paragraph, truncated as displayed)",
+   "headings": "",
+   "access": "full",
+   "status": "published",
+   "origin": "seed (GB200/GB300 NVL72 power-smoothing and power-capping documentation)",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V12",
+   "group": "V",
+   "identifier": "NVIDIA System Management Interface manual (nvidia-smi), docs.nvidia.com/deploy/nvidia-smi",
+   "title": "nvidia-smi — NVIDIA System Management Interface program (manual)",
+   "issuing_body": "NVIDIA",
+   "jurisdiction": "Vendor (global)",
+   "landing_url": "https://docs.nvidia.com/deploy/nvidia-smi/index.html",
+   "scope": "“nvidia-smi (also NVSMI) provides monitoring and management capabilities for each of NVIDIA's Tesla, Quadro, GRID and GeForce devices from Fermi and higher architecture families.” (DESCRIPTION)",
+   "headings": "DEVICE MODIFICATION OPTIONS: -pl, --power-limit; GPU ATTRIBUTES: Power Smoothing, Energy Storage Power Smoothing, GPU/Module Power Limits; command section ‘nvidia-smi power-smoothing’",
+   "access": "full",
+   "status": "current web edition",
+   "origin": "seed (power-smoothing / power-capping documentation)",
+   "references": "read 0; 0 pass"
+  },
+  {
+   "instrument_id": "V13",
+   "group": "V",
+   "identifier": "NVIDIA GB200 NVL Multi-Node Tuning Guide — chapter ‘Power and Thermals’",
+   "title": "Power and Thermals — NVIDIA GB200 NVL Multi-Node Tuning Guide",
+   "issuing_body": "NVIDIA",
+   "jurisdiction": "Vendor (global)",
+   "landing_url": "https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/power-thermals.html",
+   "scope": "“This chapter provides information about CPU power and thermal management settings.” … “Power Smoothing has been implemented to handle these situations, and customers can refer to the application note for more information.”",
+   "headings": "Power Tunings",
+   "access": "full",
+   "status": "current web edition (the application note it mentions is not linked and was not located)",
+   "origin": "seed",
+   "references": "read 3; 0 pass"
+  },
+  {
+   "instrument_id": "V14",
+   "group": "V",
+   "identifier": "NVIDIA white paper (Jared Huntington & Mike Tu)",
+   "title": "800 VDC Architecture for Next-Generation AI Infrastructure",
+   "issuing_body": "NVIDIA",
+   "jurisdiction": "Vendor (global)",
+   "landing_url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/",
+   "scope": "Title page: “The Architectural Imperative of 800 VDC and Integrated Energy Storage”. No scope sentence (white paper).",
+   "headings": "Load Swings and Energy Storage; Grid Interconnect Requirements; 800 VDC MGX Architecture; Datacenter Reference design",
+   "access": "full",
+   "status": "published (PDF linked from nvidia.com as ‘Read Whitepaper 1’)",
+   "origin": "seed",
+   "references": "read 0; 0 pass"
+  }
+ ],
+ "locators": [
+  {
+   "name": "NERC white paper (seed locator)",
+   "title": "Characteristics and Risks of Emerging Large Loads — Large Loads Task Force White Paper, July 2025",
+   "url": "https://www.nerc.com/globalassets/who-we-are/standing-committees/rstc/3_doc_white-paper-characteristics-and-risks-of-emerging-large-loads.pdf",
+   "kind": "S0 locator",
+   "citing": 99,
+   "refs": "footnotes (no reference section detected)",
+   "candidates": "BAL-001 (CPS1/BAAL: BA ACE, not a load limit) — fails test 2",
+   "added": 0
+  },
+  {
+   "name": "NERC gap white paper (seed locator)",
+   "title": "Assessment of Gaps in Existing Practices, Requirements, and Reliability Standards for Emerging Large Loads — NERC LLWG White Paper, March 2026",
+   "url": "https://www.nysrc.org/wp-content/uploads/2026/02/NYSRC-LLWG-2-Att.-6.pdf (NYSRC-hosted copy; nerc.com page JS-rendered, PDF URL not found)",
+   "kind": "S0 locator",
+   "citing": 229,
+   "refs": "footnotes",
+   "candidates": "BAL-001, TOP standards cited as lacking ramp constraints — fail test 2",
+   "added": 0
+  },
+  {
+   "name": "OCP Open Data Center for AI (seed locator)",
+   "title": "Open Data Center for AI — A Strategic Initiative of the Open Compute Project (white paper, April 2026)",
+   "url": "https://www.opencompute.org/documents/ocp-open-data-center-for-ai-whitepaper-final-pdf",
+   "kind": "S0 locator (kept by title under OCP ‘any …’; white paper)",
+   "citing": 4,
+   "refs": "3 entries",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "OCP DCF LVDC white paper (seed locator)",
+   "title": "Data Center Facility – Low Voltage Direct Current Power Distribution, Version 1.1.0 (2 Sept 2026)",
+   "url": "https://www.opencompute.org/wp-content/uploads/2026/10/DCF-Power-Distribution-LVDC-white-paper-version-1.1.0.pdf",
+   "kind": "S0 locator (kept by title under OCP ‘any …’; white paper)",
+   "citing": 214,
+   "refs": "15. References (papers) + numbered sources [12]–[29]",
+   "candidates": "AESO Guide to AESO Connection Requirements for Transmission-Connected Data Centres [24]; EirGrid/SONI FRT papers [25]; Energinet TR 3.4.3 [26]; RTE DTR Art. 8.3.5 [27]; Fingrid large demand facility requirements [28]; SPP HILL FRT requirements [12,13,21]; IESO LCL technical requirements [23]; ATC planning criteria [22] — all cited for ride-through / post-fault active power recovery / RoCoF tables → fail test 2. IEC 61000-3-11 (flicker) → already listed (Q08); IEC 61000-3-12, IEC/TR 61000-3-6 (harmonics) → fail test 2; Regulation (EU) 2016/1388 [29] → already listed (E01).",
+   "added": 0
+  },
+  {
+   "name": "NVIDIA 800 VDC white paper 2 (seed locator)",
+   "title": "800 VDC Architecture: Industry Alignment & Execution (White Paper)",
+   "url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/ (‘Read Whitepaper 2’)",
+   "kind": "S0 locator",
+   "citing": 3,
+   "refs": "none",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "Microsoft blog (seed locator)",
+   "title": "Power stabilization for AI training datacenters (Microsoft Tech Community, Azure Compute blog)",
+   "url": "https://techcommunity.microsoft.com/blog/azurecompute/power-stabilization-for-ai-training-datacenters/4460937",
+   "kind": "S0 locator (kept by title under ‘any Microsoft … requirement’; blog describing the arXiv paper)",
+   "citing": 3,
+   "refs": "links to arXiv 2508.14318",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "arXiv 2508.14318",
+   "title": "Power Stabilization for AI Training Datacenters (Choukse et al.)",
+   "url": "https://arxiv.org/abs/2508.14318",
+   "kind": "S1 locator",
+   "citing": 55,
+   "refs": "23 entries",
+   "candidates": "[1] IEC 61000-3-3:2013 (‘tolerances … informed by grid standards such as [1]’) → passes; already listed (Q07). NERC oscillation reports [11,12], EPRI/GE torsional reports [4,6] → fail test 1. NVIDIA tuning guide [13] → already listed (V13).",
+   "added": 0
+  },
+  {
+   "name": "arXiv 2605.24461",
+   "title": "Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster",
+   "url": "https://arxiv.org/abs/2605.24461",
+   "kind": "S1 locator",
+   "citing": 66,
+   "refs": "51 entries",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "ERCOT-hosted NERC presentation",
+   "title": "260424 NERC Update for ERCOT LLWG (Apr 24, 2026)",
+   "url": "https://www.ercot.com/files/docs/2026/04/23/260424-NERC-Update-for-ERCOT-LLWG.pdf",
+   "kind": "S1 locator (NERC presentation)",
+   "citing": 29,
+   "refs": "none",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "FERC-hosted NERC presentation",
+   "title": "NERC Activities and Plans to Address Reliability Impacts from Large Load Integration (FERC Open Meeting, April 2025)",
+   "url": "https://www.ferc.gov/sites/default/files/2025-04/Presentation%20NERC%20Seeks%20to%20Address%20Reliability%20Impacts%20from%C2%A0Large%20Load%20Integration_1.pdf",
+   "kind": "S1 locator (NERC presentation)",
+   "citing": 1,
+   "refs": "none",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "PJM presentation",
+   "title": "PJM LCL Ride-through Requirements — PJM Interconnection Proposal (Planning Committee, Sept 8, 2026)",
+   "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/pc/2026/20260908/20260908-item-05---1-large-load-ride-through---presentation.pdf",
+   "kind": "S1 locator (ISO presentation)",
+   "citing": 7,
+   "refs": "none",
+   "candidates": "none (mentions FERC EL26-67 show-cause order; future ramp-rate work)",
+   "added": 0
+  },
+  {
+   "name": "NERC LLAP update",
+   "title": "Large Loads Action Plan Q3 2026 Update",
+   "url": "https://www.nerc.com/globalassets/initiatives/large-loads-action-plan/llap-quarterly-update-q3-2026.pdf",
+   "kind": "S1 locator (NERC)",
+   "citing": 17,
+   "refs": "none",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002031504",
+   "title": "White Paper: Grid Flexibility Needs and Data Center Characteristics",
+   "url": "https://www.epri.com/research/products/3002031504 (download: https://restservice.epri.com/publicdownload/000000003002031504/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 1,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002033410",
+   "title": "Texas SB6 Explained: Addressing Large Load Impacts",
+   "url": "https://www.epri.com/research/products/3002033410 (download: https://restservice.epri.com/publicdownload/000000003002033410/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 15,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002033797",
+   "title": "White Paper – Integrating Data Centers into the Grid: Benefits of Flexibility and Strategic Siting",
+   "url": "https://www.epri.com/research/products/3002033797 (download: https://restservice.epri.com/publicdownload/000000003002033797/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 4,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002034099",
+   "title": "Assessing Subsynchronous Torsional Interactions with Respect to AI Training Loads",
+   "url": "https://www.epri.com/research/products/3002034099 (download: https://restservice.epri.com/publicdownload/000000003002034099/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": "references not accessible (download refused: not purchased)",
+   "refs": "—",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002034368",
+   "title": "Quick Insight – NERC Reliability Guideline: Risk Mitigation for Emerging Large Loads",
+   "url": "https://www.epri.com/research/products/3002034368 (download: https://restservice.epri.com/publicdownload/000000003002034368/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 1,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002034369",
+   "title": "Quick Insight – DOE's Section 403 Letter Explained: Large Load Interconnection",
+   "url": "https://www.epri.com/research/products/3002034369 (download: https://restservice.epri.com/publicdownload/000000003002034369/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 0,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002034666",
+   "title": "Quick Insight: Market and Regulatory Responses to Large Load Growth and the Capacity Crunch in PJM",
+   "url": "https://www.epri.com/research/products/3002034666 (download: https://restservice.epri.com/publicdownload/000000003002034666/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 68,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002034667",
+   "title": "Balancing Speed and Affordability: The NIPSCO GenCo Model for Hyperscale Load Growth",
+   "url": "https://www.epri.com/research/products/3002034667 (download: https://restservice.epri.com/publicdownload/000000003002034667/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 8,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036212",
+   "title": "Large Load Ride-Through For Data Centers: Identifying Gaps in Requirements, Interpretation, and Compliance",
+   "url": "https://www.epri.com/research/products/3002036212 (download: https://restservice.epri.com/publicdownload/000000003002036212/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 34,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036213",
+   "title": "Quick Insight: Community Acceptance in Practice",
+   "url": "https://www.epri.com/research/products/3002036213 (download: https://restservice.epri.com/publicdownload/000000003002036213/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 32,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036257",
+   "title": "Quick Insight: Connecting Data Center Growth to the Distribution Grid",
+   "url": "https://www.epri.com/research/products/3002036257 (download: https://restservice.epri.com/publicdownload/000000003002036257/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 3,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036343",
+   "title": "Quick Insight: NERC Level 3 Computational Load Alert: Actions and Pathways for Industry Support",
+   "url": "https://www.epri.com/research/products/3002036343 (download: https://restservice.epri.com/publicdownload/000000003002036343/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 21,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036362",
+   "title": "DCFlex Demonstration of Cleaner Backup Power (HVO)",
+   "url": "https://www.epri.com/research/products/3002036362 (download: https://restservice.epri.com/publicdownload/000000003002036362/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 0,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036374",
+   "title": "Managing Oscillating Load Impacts from Data Centers on Synchronous Machines: A Framework for Estimating Acceptable Load Oscillation Limits to Minimize Turbine-Generator Shaft Impacts",
+   "url": "https://www.epri.com/research/products/3002036374 (download: https://restservice.epri.com/publicdownload/000000003002036374/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 4,
+   "refs": "27 entries",
+   "candidates": "EPRI EL-3083 shaft-oscillation report → fails test 1",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036523",
+   "title": "How Existing Programs and Services Fit Within Flex MOSAIC Classes",
+   "url": "https://www.epri.com/research/products/3002036523 (download: https://restservice.epri.com/publicdownload/000000003002036523/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 11,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036744",
+   "title": "Onsite Generation Options for Data Centers: Implications for Data Center Flexibility",
+   "url": "https://www.epri.com/research/products/3002036744 (download: https://restservice.epri.com/publicdownload/000000003002036744/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": "references not accessible (download refused: not purchased)",
+   "refs": "—",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036753",
+   "title": "Data Center Cooling: Implications for Data Center Flexibility",
+   "url": "https://www.epri.com/research/products/3002036753 (download: https://restservice.epri.com/publicdownload/000000003002036753/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": "references not accessible (download refused: not purchased)",
+   "refs": "—",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036755",
+   "title": "Energy Storage Options for Data Center Flexibility",
+   "url": "https://www.epri.com/research/products/3002036755 (download: https://restservice.epri.com/publicdownload/000000003002036755/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": "references not accessible (download refused: not purchased)",
+   "refs": "—",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036874",
+   "title": "Flex MOSAIC: A Framework to Unlock Large Load Flexibility and Increase Speed to Power",
+   "url": "https://www.epri.com/research/products/3002036874 (download: https://restservice.epri.com/publicdownload/000000003002036874/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 1,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036875",
+   "title": "Designing for Flexibility: How Onsite Generation, Energy Storage, and Flexible Cooling Technologies Align with Different Data Center Flexibility Needs",
+   "url": "https://www.epri.com/research/products/3002036875 (download: https://restservice.epri.com/publicdownload/000000003002036875/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 3,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036876",
+   "title": "Tech In Focus: Jenbacher Spark-Ignition Engines",
+   "url": "https://www.epri.com/research/products/3002036876 (download: https://restservice.epri.com/publicdownload/000000003002036876/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 0,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002036922",
+   "title": "Planning for Data Center Demand: Forecasting Regional Load Growth with Interconnection Queue Data",
+   "url": "https://www.epri.com/research/products/3002036922 (download: https://restservice.epri.com/publicdownload/000000003002036922/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 5,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002037065",
+   "title": "Community Guide to Understanding Water and Data Centers",
+   "url": "https://www.epri.com/research/products/3002037065 (download: https://restservice.epri.com/publicdownload/000000003002037065/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 22,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002037176",
+   "title": "Exec Summary – Smoothing Load Fluctuations from Data Centers: A Comparative Study of Mitigation Technologies",
+   "url": "https://www.epri.com/research/products/3002037176 (download: https://restservice.epri.com/publicdownload/000000003002037176/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": 2,
+   "refs": "endnotes/none detected",
+   "candidates": "none",
+   "added": 0
+  },
+  {
+   "name": "EPRI DCFlex 3002037178",
+   "title": "Smoothing Load Fluctuations from Data Centers: A Comparative Study of Mitigation Technologies (full report)",
+   "url": "https://www.epri.com/research/products/3002037178 (download: https://restservice.epri.com/publicdownload/000000003002037178/0/Product)",
+   "kind": "S1 locator (EPRI DCFlex)",
+   "citing": "references not accessible (download refused: not purchased)",
+   "refs": "—",
+   "candidates": "none",
+   "added": 0
+  }
+ ],
+ "query_log": [
+  {
+   "tool": "WebSearch",
+   "query": "site:ercot.com \"Large Load\" NPRR OR PGRR OR NOGRR 2025 2026 revision request",
+   "hits": 19,
+   "note": "located ERCOT RR documents; systematic listing then taken from ERCOT RR report pages"
+  },
+  {
+   "tool": "ERCOT listing",
+   "query": "https://www.ercot.com/mktrules/issues/reports/nprr — title regex large load|data cent|ramp|step|fluctuat|oscillat|stabili[sz]|smooth|computational",
+   "hits": "1353 rows / 16 title hits",
+   "note": ""
+  },
+  {
+   "tool": "ERCOT listing",
+   "query": "https://www.ercot.com/mktrules/issues/reports/pgrr — same regex",
+   "hits": "147 rows / 9 title hits",
+   "note": ""
+  },
+  {
+   "tool": "ERCOT listing",
+   "query": "https://www.ercot.com/mktrules/issues/reports/nogrr — same regex",
+   "hits": "290 rows / 4 title hits",
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "site:ercot.com SB6 large load curtailment draft NPRR workshop 2026",
+   "hits": 19,
+   "note": "draft RRs presented at Oct 6, 2026 workshop; not filed"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "site:nerc.com large loads task force white paper reliability guideline large loads 2025 2026",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "NERC \"Reliability Guideline\" \"Large Loads\" nerc.com pdf",
+   "hits": 10,
+   "note": "located RG PDF URL"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "NERC Level 2 alert large loads 2025 \"Large Load\" alert nerc.com",
+   "hits": 18,
+   "note": "located Level 2 alert PDF"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "nerc.com \"Characteristics and Risks of Emerging Large Loads\" white paper pdf; \"Assessment of Gaps\" ...",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "\"Assessment of Gaps in Existing Practices, Requirements, and Reliability Standards for Emerging Large Loads\" nerc globalassets",
+   "hits": 10,
+   "note": "no nerc.com PDF found; NYSRC copy used"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "NERC standards project \"Large Loads\" Project 2025 OR 2026 SAR standard drafting team",
+   "hits": 10,
+   "note": "Project 2026-02"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "nerc.com \"Project 2026-02\" \"Computational Loads\" project page (allowed: nerc.com)",
+   "hits": 9,
+   "note": "draft CLO-001/002/003"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "NERC Project 2026-02 ... final ballot OR additional ballot ... (nerc.com)",
+   "hits": 10,
+   "note": "status: balloting, not adopted"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "nerc.com globalassets standards projects 2026-02 final-posting CLO-001-1 clean",
+   "hits": 10,
+   "note": "no final clean draft found"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "pjm.com \"large load additions\" critical issue fast path 2025 2026 board decision manual tariff filing",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "pjm.com large load ride-through OR oscillation OR ramp requirements data center manual 14 2026",
+   "hits": 10,
+   "note": "located PJM draft ride-through redline (summary text leaked values; see deviation DC2-S2)"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "PJM filing large computational load ride-through tariff revisions EL26-67 compliance filing November 2026 docket",
+   "hits": 10,
+   "note": "responses due Nov 16, 2026: still pending"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "ferc.gov co-location order PJM EL25-49 December 18 2025 order",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "ferc.gov \"190 FERC ¶ 61,115\" co-location show cause order February 20 2025 pdf",
+   "hits": 9,
+   "note": "Feb 2025 show-cause order PDF not located"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "puc.texas.gov SB 6 large load rule adopted 16 TAC 25 project large load interconnection standards",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "PUCT index",
+   "query": "https://www.puc.texas.gov/agency/rulesnlaws/subrules/electric/ (215 rule links; title filter large load|SLLIA|data cent|ramp|step|fluctuat|oscillat)",
+   "hits": "4 hits",
+   "note": "§25.194, §25.205, §25.370, SLLIA (Project 59999)"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "aepohio.com tariff data center tariff schedule 2025 PUCO approved \"Data Center\" tariff sheet",
+   "hits": 16,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Dominion Energy Virginia \"GS-5\" rate schedule large load 25 MW tariff SCC final order PUR-2025-00058",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "georgiapower.com \"Rules and Regulations for Electric Service\" large load customers 100 MW pdf",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "utility tariff \"large load\" \"ramp rate\" OR \"load fluctuation\" OR \"step change\" rider schedule data center electric tariff sheet",
+   "hits": 17,
+   "note": "0 IOU tariffs whose title names ramp/step/fluctuation"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "\"fluctuating load\" OR \"fluctuating loads\" electric utility tariff rule large customers data center 2025 2026 investor-owned utility",
+   "hits": 18,
+   "note": "0 kept"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Commission Regulation 2026 \"network code on demand connection\" repealing Regulation (EU) 2016/1388 adopted",
+   "hits": 10,
+   "note": "no repeal; ACER amended-DCC proposal located"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "D-A-CH-CZ \"Technische Regeln zur Beurteilung von Netzrückwirkungen\" 2021 Ausgabe ...",
+   "hits": 18,
+   "note": "publisher pages located"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "webstore.iec.ch IEC TR 61000-3-7 ...",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "webstore.iec.ch IEC 61000-4-30 ...; IEC 61000-4-15 ...",
+   "hits": 9,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "\"IEC 61000-4-15\" flickermeter functional and design specifications webstore.iec.ch publication",
+   "hits": 10,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "standards.ieee.org IEEE 1453 recommended practice analysis of fluctuating installations on power systems",
+   "hits": 9,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "ieeexplore.ieee.org \"IEEE Standard for Harmonic Control in Electric Power Systems\" 519-2022 document",
+   "hits": 9,
+   "note": "no Xplore landing; summary text leaked an allowance remark; see DC2-S2"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "EN 50160:2022 ... CENELEC standards search project",
+   "hits": 9,
+   "note": ""
+  },
+  {
+   "tool": "OCP project page",
+   "query": "https://www.opencompute.org/projects/rack-and-power/ (91 document links)",
+   "hits": "91 titles",
+   "note": "kept per seed names (ORv3 base, power shelves, BBU, Diablo 400, HVDC 800 VDC specs)"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "opencompute.org documents \"power stabilization\" OR \"power smoothing\" AI training data center specification requirements 2025 2026",
+   "hits": 10,
+   "note": "see OCP any-seed log"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "opencompute.org \"AI\" \"power fluctuation\" OR \"load ramp\" OR \"power swing\" rack facility requirements document OCP 2026 workstream",
+   "hits": 10,
+   "note": "see OCP any-seed log (summary leaked values; DC2-S2)"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "docs.nvidia.com power smoothing GB300 NVL72 documentation page title",
+   "hits": 20,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "NVIDIA \"power smoothing\" application note GB200 NVL72 docs.nvidia.com nvidia-smi power smoothing user guide",
+   "hits": 10,
+   "note": "application note not found (summary leaked a setting; DC2-S2)"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "NVIDIA \"800 VDC\" architecture white paper pdf nvidia.com AI factories",
+   "hits": 9,
+   "note": ""
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Microsoft OR Google OR Meta published data center \"power\" requirements \"ramp\" OR \"power smoothing\" OR \"load fluctuation\" specification for suppliers grid",
+   "hits": 9,
+   "note": "see any-operator log"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Google OR Meta \"data center\" \"power\" \"requirements\" ramp rate grid interconnection AI training load published engineering blog specification",
+   "hits": 10,
+   "note": "0 kept (summary leaked a third-party paraphrase of an AESO limit; DC2-S2)"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "standards.cencenelec.eu EN 61000-3-3 limitation of voltage changes voltage fluctuations flicker; EN 61000-3-11",
+   "hits": 9,
+   "note": "CENELEC page needs session checksum (500)"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "webstore.iec.ch \"IEC 61000-3-3\" publication; \"IEC 61000-3-11\" publication",
+   "hits": 10,
+   "note": ""
+  }
+ ],
+ "any_seed_resolution": {
+  "ERCOT — any 2025–2026 large-load protocol revision": {
+   "queries": [
+    "ERCOT RR report pages (NPRR/PGRR/NOGRR) with title regex",
+    "WebSearch site:ercot.com (2 queries)"
+   ],
+   "hit_counts": {
+    "NPRR": "1353 rows / 16 hits",
+    "PGRR": "147 / 9",
+    "NOGRR": "290 / 4"
+   },
+   "kept": [
+    "PGRR144 Dynamic Model Submission and Review Requirements for Large Loads including Large Computational Loads — approved 11/05/2026, effective 12/01/2026 → listed G04",
+    "NPRR1234 Interconnection Requirements for Large Loads and Modeling Standards for Loads 25 MW or Greater — approved 05/15/2025 → incorporated in G02 (resolved to current Protocols)",
+    "PGRR115 Related to NPRR1234 — approved 05/15/2025 → incorporated in G01",
+    "NPRR1267 Large Load Interconnection Status Report — approved 07/31/2025 → incorporated in G02 (3.2.7)",
+    "NPRR1308 Board Priority – Related to NOGRR282, Large Computational Load Ride-Through Requirements — approved 07/09/2026 → incorporated in G02",
+    "NOGRR282 Board Priority – Large Computational Load Ride-Through Requirements — approved 07/09/2026, eff. 08/01/2026 → incorporated in G03 (2.6.4, 2.15)",
+    "NPRR1325 Related to PGRR145, Batch Zero Process for Large Load Interconnections — approved 06/18/2026, eff. 07/11/2026 except 4.4.9.4, 4.4.9.4.4, 6.5.7.3, 6.5.7.11 → incorporated in G02 (gray-boxed parts pending implementation)",
+    "PGRR145 Batch Zero Process for Large Load Interconnections — approved 06/18/2026, eff. 07/11/2026 except 9.6.1(2),(3) → incorporated in G01"
+   ],
+   "dropped": [
+    "NPRR069, NPRR217, NPRR239, NPRR277, NPRR282, NPRR351, NPRR460, NPRR920, NPRR973 — dated 2010–2023 and/or not large-load (generation/SCED ramp, transformer definitions)",
+    "NPRR999 DC Tie Ramp Limitations — DC ties, not large load; pre-2025 by number",
+    "PGRR074, NOGRR026, NOGRR196 — pre-2025 / not large-load",
+    "NPRR1191, NPRR1202, PGRR111, PGRR135, PGRR136, PGRR138, PGRR141, NOGRR256 — Withdrawn",
+    "SB6 Large Load Curtailment draft NPRR/NOGRR/PGRR (Oct 6, 2026 workshop) — drafts presented, not filed; no RR document"
+   ]
+  },
+  "NERC — any large-load standards project": {
+   "queries": [
+    "4 WebSearch queries (see query log)"
+   ],
+   "kept": [
+    "Project 2026-02 Computational Loads: CLO-001-1, CLO-002-1, CLO-003-1 Draft 1 (Aug 2026) → G07–G09, pending"
+   ],
+   "dropped": [
+    "Project 2026-02 FAC-001-5 / FAC-002-5 revisions — titles do not name large loads; not located as documents",
+    "Rules of Procedure ‘Computational Load Entity’ registration changes — registration, not a standards project",
+    "NERC Level 3 Essential Actions alert (May 2026) — not the 2025 alert named by the seed (logged, not listed)",
+    "NERC LLWG ‘Large Load Disturbance Performance’ draft white paper — white paper (locator-type), not located on nerc.com"
+   ]
+  },
+  "Utility — any other IOU large-load tariff whose title names ramp, step or fluctuation": {
+   "queries": [
+    "2 WebSearch queries"
+   ],
+   "hit_counts": {
+    "q1": 17,
+    "q2": 18
+   },
+   "kept": [],
+   "dropped": [
+    "All returned titles were studies, trackers, white papers or news (LBNL, Brattle, E3, Synapse/NM PRC, NASUCA, PA PUC model tariff comments, trade press); none is an IOU tariff whose title names ramp, step or fluctuation"
+   ]
+  },
+  "OCP — any power-stabilisation specification or requirements document (2025–2026)": {
+   "queries": [
+    "OCP Rack & Power project page (91 titles)",
+    "2 WebSearch queries (opencompute.org)"
+   ],
+   "hit_counts": {
+    "project page": 91,
+    "q1": 10,
+    "q2": 10
+   },
+   "kept": [
+    "Data Center Facility Project: Interface Specification Between Hyperscalers and Utility Grid for Disturbance Performance v1.0.0 → V09",
+    "Open Data Center: Next-Generation ML Infrastructure Design Principles Rev 0.7.0 (title names Datacenter) → V10",
+    "Open Data Center for AI (white paper, Apr 2026) → kept by title, classed locator (seed)",
+    "Data Center Facility – LVDC Power Distribution white paper v1.1.0 → kept by title, classed locator (seed)"
+   ],
+   "dropped": [
+    "GW-scale Open AIDC Framework White Paper (Draft) — title does not literally name a keyword; draft white paper",
+    "Colocation Facility Guidelines for Deployment of Open Racks — title names no keyword",
+    "Thermal Boundaries in AI Infrastructure — thermal",
+    "Datacenter Design Guide v0.3 / v0.5 — superseded by Rev 0.7.0",
+    "OCP news article on AI data centre infrastructure — news"
+   ]
+  },
+  "Microsoft / Google / Meta — any published facility power-behaviour requirement found by title": {
+   "queries": [
+    "2 WebSearch queries"
+   ],
+   "hit_counts": {
+    "q1": 9,
+    "q2": 10
+   },
+   "kept": [
+    "Microsoft Tech Community blog ‘Power stabilization for AI training datacenters’ → kept by title, classed locator (blog describing arXiv 2508.14318)"
+   ],
+   "dropped": [
+    "Google patent WO2013059111A1 — patent",
+    "Microsoft Research ASPLOS 2024 paper — paper",
+    "Google Cloud blog ‘Enabling 1 MW IT racks …’ — title names no keyword",
+    "Enchanted Rock SEC filings — not the operator's own publication",
+    "arXiv papers (10) — papers"
+   ]
+  }
+ },
+ "named_seed_resolution": {
+  "ERCOT Planning Guide / Protocols / Operating Guide sections": "Resolved to the three documents (G01–G03); headings located by script from section files (PG §9; NP §3, §6; NOG §2). Resource Registration Glossary not named by the seed; not listed.",
+  "NERC Large Loads task-force reports and guideline(s)": "Reliability Guideline (G05) = instrument; two white papers (Jul 2025; Mar 2026) = locators (seed).",
+  "NERC 2025 large-load alert": "Level 2 Industry Recommendation, Sep 9, 2025 (G06).",
+  "PJM large-load additions documents (2025–2026)": "Kept: Board Decisional Letter Jan 16, 2026 (G10); Sept 1, 2026 draft ride-through tariff/manual revisions for LCLs (G11, pending). Dropped: Aug 8, 2025 Board letter launching the CIFP (process launch, no load-behaviour content by title/scope); Manual 19 load-forecast revisions (forecasting); Expedited Interconnection Track tariff sheets (generation track); 2026 Large Load Forecast Adjustment Methodology (forecasting); Board letter on Reliability Backstop Procurement (capacity procurement); stakeholder survey/comments (not PJM documents).",
+  "Texas PUCT rule(s) implementing SB 6": "§25.194, §25.205, §25.370 (G12–G14); proposed SLLIA, Project 59999 (G15, pending). GRUS petition for a new rule (Item 8) — a third-party petition, not a body proposal; logged, not listed.",
+  "FERC order(s) on large-load co-location (2025)": "Dec 18, 2025 order 193 FERC ¶ 61,217 (G16). Feb 20, 2025 show-cause order (190 FERC ¶ 61,115) — procedural order establishing the proceeding; its PDF was not located on ferc.gov in one query; logged, not listed. 2026 orders (EL25-49-002 rehearing; EL26-67…70 large-load show-cause orders) — outside the seed (2025, co-location); logged.",
+  "AEP Ohio data-centre tariff (2025)": "Schedule DCT, current issue Aug 28, 2026 (U01). ‘DCT Load Study Letter’, NERC questionnaire, AEP Interconnection Requirements Rev6 (linked from the DCT page) — not the tariff; not listed (not cited in the tariff's keyword clauses).",
+  "Dominion Energy Virginia large-load rate schedule (2025)": "SCC Final Order PUR-2025-00058 establishing Rate Schedule GS-5 (U02); schedule text not on utility site.",
+  "Georgia Power large-load rules (2025)": "Rules, Regulations and Rate Schedules for Electric Service, current PDF (U03).",
+  "Regulation (EU) 2016/1388 and ENTSO-E implementation guidance": "E01; E02 (14 current IGDs whose Code(s) field names the DCC; RfG/HVDC-only IGDs and archive versions dropped: Monitoring after operational notification, Automatic connection/reconnection and admissible active power ramp (RfG only), CBA zip, Embedded HVDC, Fault current contribution, FSM, HVDC default parameters, HVDC interactions, LFSM, Max admissible P reduction, Synthetic inertia, Reactive power control modes, Reactive power at low/zero power, Selection of national MW boundary, Type A generators); DCC Implementation Guideline 2013 (pre-adoption, superseded) dropped. Pending: ACER Rec 01/2025 Annex 4a (E03); ACER Rec 03/2023 Annex 2 superseded by it (logged).",
+  "GB Grid Code Connection Conditions": "E04 (Issue 6 Rev 47 complete text; Rev 48 changes General Conditions only). Digitalised Grid Code (dcm.neso.energy) is JS-rendered.",
+  "VDE-AR-N 4120 and 4130": "E05 (4120, edition note), E06 (pending draft amendment E 4120/A1:2026-05), E07 (4130 + A1). E VDE-AR-N 4120:2024-11 draft — superseded by the 2026-12 edition (logged, not listed). 4130 revision draft announced for Oct 2026 — no document located (logged).",
+  "D-A-CH-CZ Technical Rules": "Four parts E08–E11 (VDE FNN download pages; publisher Oesterreichs Energie). Older 2007 Kompendium and 2012 HV supplement superseded; dropped.",
+  "IEC TR 61000-3-7; IEC 61000-4-30; IEC 61000-4-15; IEEE 519; IEEE 1453; EN 50160": "Q01–Q06 at current editions. IEEE P519 revision project (PAR only, no draft public) logged, not listed.",
+  "OCP Open Rack V3 base, power-shelf, BBU; 800 VDC (Mt Diablo)": "V01–V08. Dropped: ORv3 48V PSU spec, ORv3 HPR V2 12kW PSU (PSU module specs, not named), Diablo 400 v0.5.2 (superseded by v0.7.0), ORv3 base V1.0, Meta/Google ORv3 frame implementations (frame variants), connectors/cables/PMM/PMI specs (not power-shelf/BBU).",
+  "NVIDIA GB200/GB300 NVL72 power-smoothing and power-capping documentation; 800 VDC white paper": "V11–V14. Dropped: DGX GB200/GB300 NVL72 release notes (release notes); DGX GB Rack Scale Systems User Guide (no power-smoothing/capping headings); Mission Control PRS FAQ (rack power budgeting). 800 VDC white paper 2 → locator (seed)."
+ },
+ "s3_additions": [
+  {
+   "added": "Q07 IEC 61000-3-3 (cited as EN 61000-3-3:2013)",
+   "citing": "E08 D-A-CH-CZ Teil A",
+   "clause": "2.11 Normative Bezüge",
+   "sentence_masked": "Emissionsgrenzwerte für Harmonische und Spannungsänderungen/Flicker für Einzelgeräte mit einem Bemessungsstrom bis ## A bzw. im Bereich zwischen ## A und ## A sind in [EN #####-#-#] bzw. [EN #####-#-#] sowie [EN #####-#-##] und [EN #####-#-##] aufgeführt.",
+   "tests": {
+    "t1": "pass: power-quality standard limiting equipment voltage changes/flicker",
+    "t2": "pass: cited as the source of voltage-change/flicker emission limits",
+    "t3": "pass: IEC webstore landing (EN page needs CENELEC session checksum)"
+   }
+  },
+  {
+   "added": "Q08 IEC 61000-3-11 (cited as EN 61000-3-11:2000)",
+   "citing": "E08 D-A-CH-CZ Teil A",
+   "clause": "2.11 Normative Bezüge",
+   "sentence_masked": "(same sentence)",
+   "tests": {
+    "t1": "pass",
+    "t2": "pass",
+    "t3": "pass (IEC webstore)"
+   }
+  },
+  {
+   "added": "Q09 ENA EREC P28 Issue 2",
+   "citing": "E04 GB Grid Code",
+   "clause": "CC.6.1.7 / ECC.6.1.7 (Table CC.6.1.7(b) / ECC.6.1.7(b) planning levels for flicker); also CC data clause",
+   "sentence_masked": "Table CC.#.#.#(b) — Planning levels for flicker The values and figures referred to in this paragraph CC.#.#.# are derived from [EREC P##] Issue #. | Details of all loads which may cause Demand fluctuations greater than those permitted under [EREC P##] Issue #, Stage # at a Point of Common Coupling …",
+   "tests": {
+    "t1": "pass: ENA engineering recommendation defining planning levels for voltage fluctuations from customer equipment",
+    "t2": "pass: named as the source of the flicker planning levels and of permitted demand fluctuations",
+    "t3": "pass: ENA document catalogue landing (ena-eng.org)"
+   }
+  }
+ ],
+ "s3_failed_or_already_listed": [
+  "E04: IEC 61400-21 (flicker coefficient data for power park units) — t2 fail (data definition, generators)",
+  "E08 2.11: EN 61000-2-2, EN 61000-2-12 — t2 fail (compatibility levels of the network, not a limit on a load); IEC TR 61000-3-6, IEC TR 61000-3-13, EN 61000-3-2, EN 61000-3-12 — t2 fail (harmonics/unbalance); IEC TR 61000-3-14, IEC TR 61000-3-15 — t2 fail (further assessment procedures, TR status); EN 61000-4-7 — t2 fail (measurement); EN 61000-4-30 → already listed (Q02); EN 61000-4-15 → already listed (Q03; ‘Grenzwerte basieren auf … nach [EN 61000-4-15]’); EN 50160 → already listed (Q06); IEC TR 61000-3-7 → already listed (Q01); IEC 60725 — t2 fail (reference impedance)",
+  "E09–E11 Normenverzeichnis: same documents → already listed or failed as above",
+  "Q06 EN 50160 catalogue normative reference: EN 61000-4-30:2015 → already listed (Q02)",
+  "U03: IEEE 1547-2018 — t2 fail (customer generation interconnection)",
+  "V06: IEC 61000-4-34 — t2 fail (dips/ride-through test method)",
+  "V09: IEEE 1453 → already listed (Q05); IEEE 519 → already listed (Q04); NOGRR 282 → already listed (in G03); ESIG ‘Large Load Performance Requirements’ report — t1 fail (industry report) and t2 fail; IEEE white paper ‘Review of industry efforts and standards of grid readiness for data center deployment’ — t1 fail (white paper); IEEE 1566 — t2 fail (VFD ride-through)",
+  "G09: IEEE C37.111 — t2 fail (data file format)",
+  "G05: Primary Frequency Control Reliability Guideline; TPL-001-5 — t2 fail",
+  "Locator arXiv 2508.14318: IEC 61000-3-3 → passes, already listed (Q07)",
+  "Locator OCP DCF LVDC white paper: AESO guide, EirGrid/SONI FRT papers, Energinet TR 3.4.3, RTE DTR Art. 8.3.5, Fingrid technical requirements for large demand facilities, SPP HILL ride-through requirements, IESO LCL technical requirements, ATC planning criteria — t2 fail (ride-through / post-fault recovery / RoCoF rows); IEC 61000-3-11 → already listed (Q08); Regulation (EU) 2016/1388 → already listed (E01)"
+ ],
+ "references_not_accessible": [
+  "E05",
+  "E06",
+  "E07",
+  "Q01",
+  "Q02",
+  "Q03",
+  "Q04",
+  "Q05",
+  "EPRI 3002034099",
+  "EPRI 3002036744",
+  "EPRI 3002036753",
+  "EPRI 3002036755",
+  "EPRI 3002037178"
+ ],
+ "deviations": [
+  "DC2-S1. Identifier key in masked citing sentences. Masking every digit makes document identifiers unreadable, so the scripts replaced recognised document identifiers (IEC/IEEE/EN numbers, section numbers, docket numbers) by tokens [Rk] before masking and printed the identifiers separately as a key. No value, window or allowance is in the key. Locator sentences in locator.py/locator2.py were fully masked without a key; identifiers there were resolved from the reference list.",
+  "DC2-S2. WebSearch summaries exposed limit content. The WebSearch tool returns a model-written summary with each result list, and on seven queries that summary stated limit-type content I did not request: (a) PJM draft LCL voltage/frequency ride-through table values and a post-fault recovery value (PJM query, G11 — ride-through, pending draft); (b) a remark about the percentile basis on which IEEE 519 limits are applied (IEEE Xplore query, Q04; the percentiles are not repeated here); (c) an OCP Open Data Center spec statement on generator support of ML load fluctuation with a percentage of generator rating, a recurrence interval and a duration, plus news-reported ride-through durations for Ireland and Finland and a peak-reduction figure (OCP query; V10 is affected); (d) a statement that BESS is required for load smoothing in every DC building (OCP query; no value); (e) an NVIDIA release-note power-floor setting (percentages) and an energy-storage-per-GPU figure (NVIDIA query; V11–V13 vendor capability); (f) a third-party paper's paraphrase of an AESO point-of-connection ramp-rate limit for transmission-connected data centres and a NERC-reported measured ramp (Google/Meta query; AESO is not on the list — its guide was later met through the S1 test via the OCP LVDC white paper and failed test 2 because that citation is a RoCoF ride-through row, so AESO was not added); (g) a flicker frequency-range remark for IEC 61000-3-3 (CENELEC query). Also, my own ERCOT listing parser printed the title of NPRR239 (2010, wind-generation ramp limitation, with its value in the title) before the masking regex was fixed; it is not a DC2 instrument. Dollar/price figures also appeared in some summaries and catalogue pages; none is used. None of these affected an inclusion decision.",
+  "DC2-S3. Clause first lines shown while locating headings. In a few large documents the heading-locating step printed the first line of clauses (truncated to ≤ 75–160 characters; digits masked when limit-like): ERCOT PG §9.1 opening paragraphs; EU DCC lines containing ‘Article N’ (before the title-only script); GB Grid Code CC.6.1.x / ECC.6.1.x clause heads; PUCT §25.194 subsection lines from one unfiltered grep (procedural day-counts and dollar amounts, no power-variation limit). The D-A-CH-CZ Part A normative-references clause (2.11) was printed unmasked as the protocol allows; it contains equipment current ratings and a frequency band that are applicability ranges of the cited standards, not limits.",
+  "DC2-S4. Keyword-headed clause scoping was done by script: nearest preceding numbered heading (or the document's TOC headings; chapter level for the NERC guideline). For revision-request reports, PUCT rules, tariffs, the NERC alert, draft standards and the PJM letter/draft, the whole document was scanned, because their headings rarely carry the keywords or the documents are short.",
+  "DC2-S5. Locator display filter. All citing sentences were counted. Displayed were those mentioning ramp, step change, swing, oscillation, flicker, RVC or fluctuation together with a limit or requirement word, plus reference entries naming instrument-type documents. Full reference lists were printed for the two arXiv papers.",
+  "DC2-S6. Hosts outside the S4 list. These were used for locators, landing pages or pending items: nysrc.org (copy of the NERC gap white paper; nerc.com page is JS-rendered and no nerc.com PDF URL was found); acer.europa.eu (E03 pending); ena-eng.org (Q09, ENA's own catalogue); vde-verlag.de (VDE's own publisher; E05, E07 catalogue pages); NVIDIA's asset CDN linked from nvidia.com (V14); utility and commission sites (aepohio.com, dominionenergy.com, georgiapower.com, scc.virginia.gov, interchange/ftp.puc.texas.gov) as the ‘utility's own tariff pages and state commission docket’; EPRI, arXiv and Microsoft Tech Community for locators only.",
+  "DC2-S7. EN 61000-3-3 and EN 61000-3-11 were cited as EN documents. CENELEC catalogue pages need a session checksum (HTTP 500 / ‘session state protection violation’ without one), so Q07 and Q08 point to the IEC originals' webstore pages. Raters should treat the EN and IEC texts as one instrument. The cited EN 61000-3-11:2000 edition is superseded; the current IEC edition is 2017.",
+  "DC2-S8. Approved ERCOT revision requests already in the current Planning Guide, Protocols or Operating Guide were resolved to that document (G01–G03), not listed separately, to avoid double counting. PGRR144 (approved, not yet effective) is listed separately (G04).",
+  "DC2-S9. Grouping. The NERC Project 2026-02 drafts are listed per standard (G07–G09). The 14 DCC-relevant ENTSO-E IGDs are one instrument (E02).",
+  "DC2-S10. The Dominion GS-5 rate schedule text was not found on dominionenergy.com. The landing page is the SCC Final Order (state commission docket), and access is recorded as partial.",
+  "DC2-S11. The IEC preview PDFs (which carry scope, normative references and the TOC) returned 403 at the catalogue preview endpoint; the legacy path redirected to the product list. No other headers or routes were tried. Q01–Q03 are recorded as abstract-only, ‘references not accessible’.",
+  "DC2-S12. Classification of seed-found white papers and blogs. NVIDIA 800 VDC white paper 2, the OCP Open Data Center for AI white paper, the OCP DCF LVDC white paper and the Microsoft blog are locators (seed). NVIDIA 800 VDC white paper 1 is listed as an instrument (V14) because the seed names it. Raters may record ‘no requirement’.",
+  "DC2-S13. ERCOT NPRR999 (DC Tie Ramp Limitations) has no date on the listing page. It was dropped on title (DC ties, not large load) and RR-number sequence, without opening the issue page.",
+  "DC2-S14. Post-fault active power recovery, RoCoF and other ride-through rows in locators were judged ‘ride-through’, not ‘real-power variation’, so S3 test 2 fails for the documents they cite (AESO, EirGrid/SONI, Energinet, RTE, Fingrid, SPP, IESO, ATC). The reviewer may revisit this judgement; it decided no inclusion except by exclusion."
+ ],
+ "fetch_log": [
+  {
+   "url": "https://www.ercot.com/mktrules/guides/planning/current",
+   "out": "ercot_pg_landing",
+   "t": "2026-11-10T21:12:33",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/guides/planning/current",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 60844
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2011/04/28/09-071126.docx",
+   "out": "ercot_pg9",
+   "t": "2026-11-10T21:12:47",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2011/04/28/09-071126.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 82485
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/nprotocols/current",
+   "out": "ercot_np_landing",
+   "t": "2026-11-10T21:13:12",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/nprotocols/current",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 107238
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/guides/noperating/current",
+   "out": "ercot_nog_landing",
+   "t": "2026-11-10T21:13:14",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/guides/noperating/current",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 70442
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2025/09/01/03-110626_Nodal.docx",
+   "out": "ercot_np3",
+   "t": "2026-11-10T21:13:27",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2025/09/01/03-110626_Nodal.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 581541
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2024/06/28/06-110626_Nodal.docx",
+   "out": "ercot_np6",
+   "t": "2026-11-10T21:13:29",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2024/06/28/06-110626_Nodal.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 952645
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2022/12/09/08-110626_Nodal.docx",
+   "out": "ercot_np8",
+   "t": "2026-11-10T21:13:32",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2022/12/09/08-110626_Nodal.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 160459
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2024/06/28/02-110626_Nodal.docx",
+   "out": "ercot_np2",
+   "t": "2026-11-10T21:13:34",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2024/06/28/02-110626_Nodal.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 214142
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2022/11/01/02-110126.docx",
+   "out": "ercot_nog2",
+   "t": "2026-11-10T21:13:47",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2022/11/01/02-110126.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 168937
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2022/03/01/03-120525.docx",
+   "out": "ercot_nog3",
+   "t": "2026-11-10T21:13:49",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2022/03/01/03-120525.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 65940
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2022/03/01/06-080126.docx",
+   "out": "ercot_nog6",
+   "t": "2026-11-10T21:13:51",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2022/03/01/06-080126.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 95881
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2021/07/01/09-080126.docx",
+   "out": "ercot_nog9",
+   "t": "2026-11-10T21:13:53",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2021/07/01/09-080126.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 47496
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/reports/nprr",
+   "out": "ercot_list_nprr",
+   "t": "2026-11-10T21:14:14",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/reports/nprr",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 1541136
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/reports/pgrr",
+   "out": "ercot_list_pgrr",
+   "t": "2026-11-10T21:14:18",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/reports/pgrr",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 153983
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/reports/nogrr",
+   "out": "ercot_list_nogrr",
+   "t": "2026-11-10T21:14:21",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/reports/nogrr",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 272945
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NOGRR282",
+   "out": "ercot_nogrr282",
+   "t": "2026-11-10T21:14:51",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NOGRR282",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 95061
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NPRR1191",
+   "out": "ercot_NPRR1191",
+   "t": "2026-11-10T21:15:20",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NPRR1191",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 71003
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NPRR1202",
+   "out": "ercot_NPRR1202",
+   "t": "2026-11-10T21:15:22",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NPRR1202",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 70306
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NPRR1234",
+   "out": "ercot_NPRR1234",
+   "t": "2026-11-10T21:15:24",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NPRR1234",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 83720
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NPRR1267",
+   "out": "ercot_NPRR1267",
+   "t": "2026-11-10T21:15:26",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NPRR1267",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 73557
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NPRR1308",
+   "out": "ercot_NPRR1308",
+   "t": "2026-11-10T21:15:29",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NPRR1308",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 74259
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NPRR1325",
+   "out": "ercot_NPRR1325",
+   "t": "2026-11-10T21:15:31",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NPRR1325",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 75660
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR111",
+   "out": "ercot_PGRR111",
+   "t": "2026-11-10T21:15:33",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR111",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 64619
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR115",
+   "out": "ercot_PGRR115",
+   "t": "2026-11-10T21:15:36",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR115",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 86578
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR135",
+   "out": "ercot_PGRR135",
+   "t": "2026-11-10T21:15:38",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR135",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 58334
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR136",
+   "out": "ercot_PGRR136",
+   "t": "2026-11-10T21:15:40",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR136",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 59762
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR138",
+   "out": "ercot_PGRR138",
+   "t": "2026-11-10T21:15:42",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR138",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 59637
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR141",
+   "out": "ercot_PGRR141",
+   "t": "2026-11-10T21:15:45",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR141",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 61349
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR144",
+   "out": "ercot_PGRR144",
+   "t": "2026-11-10T21:15:47",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR144",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 78961
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/PGRR145",
+   "out": "ercot_PGRR145",
+   "t": "2026-11-10T21:15:49",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/PGRR145",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 161608
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NOGRR256",
+   "out": "ercot_NOGRR256",
+   "t": "2026-11-10T21:15:52",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NOGRR256",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 63131
+  },
+  {
+   "url": "https://www.ercot.com/mktrules/issues/NOGRR282",
+   "out": "ercot_NOGRR282",
+   "t": "2026-11-10T21:15:54",
+   "status": 200,
+   "final_url": "https://www.ercot.com/mktrules/issues/NOGRR282",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 94926
+  },
+  {
+   "url": "https://www.nerc.com/comm/RSTC/Pages/LLTF.aspx",
+   "out": "nerc_lltf",
+   "t": "2026-11-10T21:16:21",
+   "status": 200,
+   "final_url": "https://www.nerc.com/who-we-are/committees/reliability-and-security-technical-committee-rstc/subcommittees-working-groups-and-task-forces/large-loads-working-group-llwg",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 70730
+  },
+  {
+   "url": "https://www.nerc.com/globalassets/our-work/guidelines/reliability/RG_Risk-Mitigation-For-Emerging-Large-Loads.pdf",
+   "out": "nerc_rg_ll",
+   "t": "2026-11-10T21:17:00",
+   "status": 200,
+   "final_url": "https://www.nerc.com/globalassets/our-work/guidelines/reliability/RG_Risk-Mitigation-For-Emerging-Large-Loads.pdf",
+   "ctype": "application/pdf",
+   "bytes": 1593461
+  },
+  {
+   "url": "https://www.nerc.com/pa/Documents/LL%20Action%20Plan%20Quarterly%20Update.pdf",
+   "out": "nerc_ll_actionplan",
+   "t": "2026-11-10T21:17:03",
+   "status": 404,
+   "error": "Not Found",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://www.nerc.com/pa/rrm/bpsa/Alerts%20DL/NERC%20Alert%20Level%202%20%20Large%20Loads.pdf",
+   "out": "nerc_alert_l2",
+   "t": "2026-11-10T21:17:44",
+   "status": 200,
+   "final_url": "https://www.nerc.com/globalassets/programs/bpsa/alerts/2025/nerc-alert-level-2--large-loads.pdf",
+   "ctype": "application/pdf",
+   "bytes": 457913
+  },
+  {
+   "url": "https://www.nerc.com/globalassets/who-we-are/standing-committees/rstc/3_doc_white-paper-characteristics-and-risks-of-emerging-large-loads.pdf",
+   "out": "nerc_wp1",
+   "t": "2026-11-10T21:18:01",
+   "status": 200,
+   "final_url": "https://www.nerc.com/globalassets/who-we-are/standing-committees/rstc/3_doc_white-paper-characteristics-and-risks-of-emerging-large-loads.pdf",
+   "ctype": "application/pdf",
+   "bytes": 3430203
+  },
+  {
+   "url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-001-1-draft-1-clean.pdf",
+   "out": "nerc_clo001",
+   "t": "2026-11-10T21:18:47",
+   "status": 200,
+   "final_url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-001-1-draft-1-clean.pdf",
+   "ctype": "application/pdf",
+   "bytes": 359410
+  },
+  {
+   "url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-002-1-draft-1-clean.pdf",
+   "out": "nerc_clo002",
+   "t": "2026-11-10T21:18:50",
+   "status": 200,
+   "final_url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-002-1-draft-1-clean.pdf",
+   "ctype": "application/pdf",
+   "bytes": 339850
+  },
+  {
+   "url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-003-1-draft-1-clean.pdf",
+   "out": "nerc_clo003",
+   "t": "2026-11-10T21:18:53",
+   "status": 200,
+   "final_url": "https://www.nerc.com/globalassets/standards/projects/2026-02/formal-posting-1/formal-posting-1/project-2026-02-clo-003-1-draft-1-clean.pdf",
+   "ctype": "application/pdf",
+   "bytes": 319576
+  },
+  {
+   "url": "https://www.pjm.com/committees-and-groups/cifp-lla",
+   "out": "pjm_cifp",
+   "t": "2026-11-10T21:19:46",
+   "status": 200,
+   "final_url": "https://www.pjm.com/committees-and-groups/cifp-lla",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 100909
+  },
+  {
+   "url": "https://www.ferc.gov/sites/default/files/2025-12/E-1%20EL25-49-000.pdf",
+   "out": "ferc_el2549_dec",
+   "t": "2026-11-10T21:20:29",
+   "status": 200,
+   "final_url": "https://www.ferc.gov/sites/default/files/2025-12/E-1%20EL25-49-000.pdf",
+   "ctype": "application/pdf",
+   "bytes": 1621203
+  },
+  {
+   "url": "https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260116-pjm-board-letter-re-results-of-the-cifp-process-large-load-additions.pdf",
+   "out": "pjm_board_0116",
+   "t": "2026-11-10T21:21:08",
+   "status": 200,
+   "final_url": "https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260116-pjm-board-letter-re-results-of-the-cifp-process-large-load-additions.pdf",
+   "ctype": "application/pdf",
+   "bytes": 290845
+  },
+  {
+   "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/pc/2026/20260908/20260908-item-05---2-large-load-ride-through---redline.pdf",
+   "out": "pjm_m14b_d2_redline",
+   "t": "2026-11-10T21:21:10",
+   "status": 200,
+   "final_url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/pc/2026/20260908/20260908-item-05---2-large-load-ride-through---redline.pdf",
+   "ctype": "application/pdf",
+   "bytes": 381878
+  },
+  {
+   "url": "https://www.pjm.com/library/filing-order",
+   "out": "pjm_filings",
+   "t": "2026-11-10T21:21:19",
+   "status": 200,
+   "final_url": "https://www.pjm.com/library/filing-order",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 46935
+  },
+  {
+   "url": "https://www.puc.texas.gov/agency/rulesnlaws/subrules/electric/Electric.aspx",
+   "out": "puct_rules",
+   "t": "2026-11-10T21:21:53",
+   "status": 404,
+   "error": "Not Found",
+   "challenge_hint": true
+  },
+  {
+   "url": "https://www.puc.texas.gov/agency/rulesnlaws/subrules/electric/",
+   "out": "puct_rules2",
+   "t": "2026-11-10T21:22:01",
+   "status": 200,
+   "final_url": "https://www.puc.texas.gov/agency/rulesnlaws/subrules/electric/",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 154445
+  },
+  {
+   "url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.194/",
+   "out": "puct_25194_dir",
+   "t": "2026-11-10T21:22:03",
+   "status": 200,
+   "final_url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.194/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 753
+  },
+  {
+   "url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.194/25.194.pdf",
+   "out": "puct_25.194",
+   "t": "2026-11-10T21:22:22",
+   "status": 200,
+   "final_url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.194/25.194.pdf",
+   "ctype": "application/pdf",
+   "bytes": 240603
+  },
+  {
+   "url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.205/25.205.pdf",
+   "out": "puct_25.205",
+   "t": "2026-11-10T21:22:25",
+   "status": 200,
+   "final_url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.205/25.205.pdf",
+   "ctype": "application/pdf",
+   "bytes": 142929
+  },
+  {
+   "url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.370/25.370.pdf",
+   "out": "puct_25.370",
+   "t": "2026-11-10T21:22:28",
+   "status": 200,
+   "final_url": "https://ftp.puc.texas.gov/public/puct-info/agency/rulesnlaws/subrules/electric/25.370/25.370.pdf",
+   "ctype": "application/pdf",
+   "bytes": 153446
+  },
+  {
+   "url": "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59999&ItemMatch=Equal&DocumentType=ALL&SortOrder=Ascending",
+   "out": "puct_59999",
+   "t": "2026-11-10T21:22:58",
+   "status": 200,
+   "final_url": "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59999&ItemMatch=Equal&DocumentType=ALL&SortOrder=Ascending",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 19235
+  },
+  {
+   "url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+   "out": "aepoh_dct",
+   "t": "2026-11-10T21:23:24",
+   "status": 200,
+   "final_url": "https://www.aepohio.com/company/about/rates/data-center-tariff/",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 187662
+  },
+  {
+   "url": "https://www.aepohio.com/company/about/rates/",
+   "out": "aepoh_rates",
+   "t": "2026-11-10T21:23:34",
+   "status": 200,
+   "final_url": "https://www.aepohio.com/company/about/rates/",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 178673
+  },
+  {
+   "url": "https://www.aepohio.com/lib/docs/ratesandtariffs/Ohio/November_2026_Ohio_Power_Tariff_Book.pdf",
+   "out": "aepoh_tariffbook",
+   "t": "2026-11-10T21:23:42",
+   "status": 200,
+   "final_url": "https://www.aepohio.com/lib/docs/ratesandtariffs/Ohio/November_2026_Ohio_Power_Tariff_Book.pdf",
+   "ctype": "application/pdf",
+   "bytes": 3056574
+  },
+  {
+   "url": "https://www.dominionenergy.com/virginia/rates-and-tariffs/business-rates",
+   "out": "dom_bizrates",
+   "t": "2026-11-10T21:24:24",
+   "status": 200,
+   "final_url": "https://www.dominionenergy.com/virginia/rates-and-tariffs/business-rates",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 221496
+  },
+  {
+   "url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/rates-and-tariffs/pdfs/virginia/shared/table-of-contents.pdf",
+   "out": "dom_toc",
+   "t": "2026-11-10T21:24:34",
+   "status": 200,
+   "final_url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/rates-and-tariffs/pdfs/virginia/shared/table-of-contents.pdf",
+   "ctype": "application/pdf",
+   "bytes": 140136
+  },
+  {
+   "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/large-business/schedule-gs5.pdf",
+   "out": "dom_try_schedule-gs5",
+   "t": "2026-11-10T21:24:57",
+   "status": 404,
+   "error": "Page Not Found",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/large-business/schedule-gs-5.pdf",
+   "out": "dom_try_schedule-gs-5",
+   "t": "2026-11-10T21:24:59",
+   "status": 404,
+   "error": "Page Not Found",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/high-load-customer-terms-and-conditions.pdf",
+   "out": "dom_try_high-load-customer-terms-and-conditions",
+   "t": "2026-11-10T21:25:02",
+   "status": null,
+   "error": "RemoteDisconnected('Remote end closed connection without response')"
+  },
+  {
+   "url": "https://www.dominionenergy.com/virginia/rates-and-tariffs/terms-and-conditions",
+   "out": "dom_tc",
+   "t": "2026-11-10T21:25:08",
+   "status": 200,
+   "final_url": "https://www.dominionenergy.com/virginia/rates-and-tariffs/terms-and-conditions",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 208712
+  },
+  {
+   "url": "https://www.scc.virginia.gov/docketsearch/DOCS/89g601!.PDF",
+   "out": "scc_dev_final",
+   "t": "2026-11-10T21:25:26",
+   "status": 200,
+   "final_url": "https://www.scc.virginia.gov/docketsearch/DOCS/89g601!.PDF",
+   "ctype": "application/pdf",
+   "bytes": 9176854
+  },
+  {
+   "url": "https://www.georgiapower.com/business/billing-and-rates/business-rate-plans/pricing-rate-plans.html",
+   "out": "gp_rates",
+   "t": "2026-11-10T21:25:36",
+   "status": 404,
+   "error": "Not Found",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/tariffs/rules-regs.pdf",
+   "out": "gp_rules",
+   "t": "2026-11-10T21:25:53",
+   "status": 200,
+   "final_url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/tariffs/rules-regs.pdf",
+   "ctype": "application/pdf",
+   "bytes": 1173756
+  },
+  {
+   "url": "https://eur-lex.europa.eu/eli/reg/2016/1388/oj/eng",
+   "out": "eu_dcc_eli",
+   "t": "2026-11-10T21:26:49",
+   "status": null,
+   "error": "URLError(TimeoutError('_ssl.c:990: The handshake operation timed out'))"
+  },
+  {
+   "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32016R1388",
+   "out": "eu_dcc_all",
+   "t": "2026-11-10T21:27:51",
+   "status": 200,
+   "final_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32016R1388",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 660842
+  },
+  {
+   "url": "https://www.acer.europa.eu/sites/default/files/documents/Recommendations_annex/ACER_Recommendation_01-2025_DR_NC-Annex4a_Amended_DC_Regulation_TC.pdf.pdf",
+   "out": "acer_dcc_amend",
+   "t": "2026-11-10T21:28:41",
+   "status": 200,
+   "final_url": "https://www.acer.europa.eu/sites/default/files/documents/Recommendations_annex/ACER_Recommendation_01-2025_DR_NC-Annex4a_Amended_DC_Regulation_TC.pdf.pdf",
+   "ctype": "application/pdf",
+   "bytes": 832838
+  },
+  {
+   "url": "https://www.entsoe.eu/network_codes/dcc/",
+   "out": "entsoe_dcc",
+   "t": "2026-11-10T21:28:47",
+   "status": 200,
+   "final_url": "https://www.entsoe.eu/network_codes/dcc/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 66369
+  },
+  {
+   "url": "https://www.entsoe.eu/network_codes/cnc/cnc-igds/",
+   "out": "entsoe_igds",
+   "t": "2026-11-10T21:28:55",
+   "status": 200,
+   "final_url": "https://www.entsoe.eu/network_codes/cnc/cnc-igds/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 36355
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD_Compliance_Verification_-_Monitoring_after_operational_notification_final_for_publication.pdf",
+   "out": "igd_1",
+   "t": "2026-11-10T21:29:09",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD_Compliance_Verification_-_Monitoring_after_operational_notification_final_for_publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 625430
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD_Compliance_Verification_-_Simulation_models__final_for_publication.pdf",
+   "out": "igd_2",
+   "t": "2026-11-10T21:29:13",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD_Compliance_Verification_-_Simulation_models__final_for_publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 739974
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/210412_IGD_Conditions_for_automatic_reconnection.pdf",
+   "out": "igd_3",
+   "t": "2026-11-10T21:29:16",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/210412_IGD_Conditions_for_automatic_reconnection.pdf",
+   "ctype": "application/pdf",
+   "bytes": 525875
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/210730_IGD_Guidance_on_Compliance_Verification.pdf",
+   "out": "igd_4",
+   "t": "2026-11-10T21:29:20",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/210730_IGD_Guidance_on_Compliance_Verification.pdf",
+   "ctype": "application/pdf",
+   "bytes": 994987
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/210601_IGD_Demand_Response_System_Frequency_Control.pdf",
+   "out": "igd_5",
+   "t": "2026-11-10T21:29:24",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/210601_IGD_Demand_Response_System_Frequency_Control.pdf",
+   "ctype": "application/pdf",
+   "bytes": 589179
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD-Embedded_HVDC%20systems-requency_settings_in_case_of_system_split_final.pdf",
+   "out": "igd_6",
+   "t": "2026-11-10T21:29:27",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD-Embedded_HVDC%20systems-requency_settings_in_case_of_system_split_final.pdf",
+   "ctype": "application/pdf",
+   "bytes": 531953
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Fault%20Current%20Contribution%20from%20PPMs%20%20HVDC_for%20consultation_for%20publication.pdf",
+   "out": "igd_7",
+   "t": "2026-11-10T21:29:31",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Fault%20Current%20Contribution%20from%20PPMs%20%20HVDC_for%20consultation_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 837145
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/210412_IGD_Frequency_ranges.pdf",
+   "out": "igd_8",
+   "t": "2026-11-10T21:29:36",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/210412_IGD_Frequency_ranges.pdf",
+   "ctype": "application/pdf",
+   "bytes": 615330
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD_FSM_final.pdf",
+   "out": "igd_9",
+   "t": "2026-11-10T21:29:40",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD_FSM_final.pdf",
+   "ctype": "application/pdf",
+   "bytes": 594124
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD-HVDC_system_default_parameters_final.pdf",
+   "out": "igd_10",
+   "t": "2026-11-10T21:29:43",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD-HVDC_system_default_parameters_final.pdf",
+   "ctype": "application/pdf",
+   "bytes": 456966
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Harmonization_for%20publication.pdf",
+   "out": "igd_11",
+   "t": "2026-11-10T21:29:47",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Harmonization_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 348015
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/Implementation/CNC/170322_IGD25_HPoPEIPS.pdf",
+   "out": "igd_12",
+   "t": "2026-11-10T21:29:50",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/Implementation/CNC/170322_IGD25_HPoPEIPS.pdf",
+   "ctype": "application/pdf",
+   "bytes": 1711776
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Instrumentation%20simulation%20models%20and%20protection_for%20publication.pdf",
+   "out": "igd_13",
+   "t": "2026-11-10T21:29:54",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Instrumentation%20simulation%20models%20and%20protection_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 734441
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD-Interactions_between_HVDC_Controllers_final.pdf",
+   "out": "igd_14",
+   "t": "2026-11-10T21:29:57",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD-Interactions_between_HVDC_Controllers_final.pdf",
+   "ctype": "application/pdf",
+   "bytes": 344292
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD_LFSM-O-U_final.pdf",
+   "out": "igd_15",
+   "t": "2026-11-10T21:30:01",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD_LFSM-O-U_final.pdf",
+   "ctype": "application/pdf",
+   "bytes": 717905
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Making%20Requirements%20Mandatory%20at%20National%20Level_for%20publication.pdf",
+   "out": "igd_16",
+   "t": "2026-11-10T21:30:04",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Making%20Requirements%20Mandatory%20at%20National%20Level_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 614726
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/210412_IGD_Max_Admissible_P_reduction_at_low_frequencies.pdf",
+   "out": "igd_17",
+   "t": "2026-11-10T21:30:08",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/210412_IGD_Max_Admissible_P_reduction_at_low_frequencies.pdf",
+   "ctype": "application/pdf",
+   "bytes": 880777
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD_Need_for_Synthetic_Inertia_final.pdf",
+   "out": "igd_18",
+   "t": "2026-11-10T21:30:11",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD_Need_for_Synthetic_Inertia_final.pdf",
+   "ctype": "application/pdf",
+   "bytes": 576470
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/Implementation/CNC/210412_IGD_Parameters_of_Non-exhaustive_Requirements.pdf",
+   "out": "igd_19",
+   "t": "2026-11-10T21:30:15",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/Implementation/CNC/210412_IGD_Parameters_of_Non-exhaustive_Requirements.pdf",
+   "ctype": "application/pdf",
+   "bytes": 1241343
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Frequency%20parameters_for%20publication.pdf",
+   "out": "igd_20",
+   "t": "2026-11-10T21:30:19",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Frequency%20parameters_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 900192
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/IGD_RoCoF_withstand_capability_final.pdf",
+   "out": "igd_21",
+   "t": "2026-11-10T21:30:22",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/IGD_RoCoF_withstand_capability_final.pdf",
+   "ctype": "application/pdf",
+   "bytes": 930937
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Reactive%20power%20control%20modes%20PPMs%20%20HVDC_for%20publication.pdf",
+   "out": "igd_22",
+   "t": "2026-11-10T21:30:26",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Reactive%20power%20control%20modes%20PPMs%20%20HVDC_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 581725
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Reactive%20power%20management%20at%20T%20and%20D%20interface_for%20publication.pdf",
+   "out": "igd_23",
+   "t": "2026-11-10T21:30:29",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Reactive%20power%20management%20at%20T%20and%20D%20interface_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 718597
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Reactive%20power%20requirement%20for%20PPMs%20%20HVDC%20at%20low%20zero%20power_for%20publication.pdf",
+   "out": "igd_24",
+   "t": "2026-11-10T21:30:32",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Reactive%20power%20requirement%20for%20PPMs%20%20HVDC%20at%20low%20zero%20power_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 441798
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_RealTimeDataMonitoring_for%20publication.pdf",
+   "out": "igd_25",
+   "t": "2026-11-10T21:30:36",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_RealTimeDataMonitoring_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 421786
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Selecting%20national%20MW%20boundary_for%20publication.pdf",
+   "out": "igd_26",
+   "t": "2026-11-10T21:30:39",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Selecting%20national%20MW%20boundary_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 807389
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Special%20issues%20associated%20with%20type%20A%20generators_for%20publication.pdf",
+   "out": "igd_27",
+   "t": "2026-11-10T21:30:43",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Special%20issues%20associated%20with%20type%20A%20generators_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 439746
+  },
+  {
+   "url": "https://www.entsoe.eu/Documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Parameters%20related%20to%20voltage%20issues_for%20publication.pdf",
+   "out": "igd_28",
+   "t": "2026-11-10T21:30:46",
+   "status": 200,
+   "final_url": "https://eepublicdownloads.entsoe.eu/clean-documents/Network%20codes%20documents/NC%20RfG/161116_IGD_Parameters%20related%20to%20voltage%20issues_for%20publication.pdf",
+   "ctype": "application/pdf",
+   "bytes": 953142
+  },
+  {
+   "url": "https://www.neso.energy/industry-information/codes/grid-code/grid-code-documents",
+   "out": "neso_gc",
+   "t": "2026-11-10T21:31:04",
+   "status": 404,
+   "error": "Not Found",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://www.neso.energy/industry-information/codes/gc",
+   "out": "neso_gc2",
+   "t": "2026-11-10T21:31:14",
+   "status": 200,
+   "final_url": "https://www.neso.energy/industry-information/codes/grid-code-gc",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 1253180
+  },
+  {
+   "url": "https://www.neso.energy/industry-information/codes/grid-code-gc/grid-code-documents",
+   "out": "neso_gcdocs",
+   "t": "2026-11-10T21:31:23",
+   "status": 200,
+   "final_url": "https://www.neso.energy/industry-information/codes/grid-code-gc/grid-code-documents",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 1268955
+  },
+  {
+   "url": "https://www.neso.energy/document/389531/download",
+   "out": "neso_gc_rev48",
+   "t": "2026-11-10T21:31:40",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/389531/download",
+   "ctype": "application/pdf",
+   "bytes": 1022967
+  },
+  {
+   "url": "https://dcm.neso.energy",
+   "out": "neso_dcm",
+   "t": "2026-11-10T21:31:51",
+   "status": 200,
+   "final_url": "https://dcm.neso.energy",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 696
+  },
+  {
+   "url": "https://www.neso.energy/document/219356/download",
+   "out": "neso_doc_219356",
+   "t": "2026-11-10T21:32:10",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/219356/download",
+   "ctype": "application/pdf",
+   "bytes": 1761948
+  },
+  {
+   "url": "https://www.neso.energy/document/380206/download",
+   "out": "neso_doc_380206",
+   "t": "2026-11-10T21:32:14",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/380206/download",
+   "ctype": "application/pdf",
+   "bytes": 440981
+  },
+  {
+   "url": "https://www.neso.energy/document/389341/download",
+   "out": "neso_gc_rev47",
+   "t": "2026-11-10T21:32:26",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/389341/download",
+   "ctype": "application/pdf",
+   "bytes": 22787005
+  },
+  {
+   "url": "https://www.neso.energy/document/388526/download",
+   "out": "neso_gc_rev46",
+   "t": "2026-11-10T21:32:32",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/388526/download",
+   "ctype": "application/pdf",
+   "bytes": 1215607
+  },
+  {
+   "url": "https://www.neso.energy/document/385426/download",
+   "out": "neso_gc_rev45",
+   "t": "2026-11-10T21:32:35",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/385426/download",
+   "ctype": "application/pdf",
+   "bytes": 3177023
+  },
+  {
+   "url": "https://www.neso.energy/document/385336/download",
+   "out": "neso_gc_rev44",
+   "t": "2026-11-10T21:32:40",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/385336/download",
+   "ctype": "application/pdf",
+   "bytes": 11003412
+  },
+  {
+   "url": "https://www.neso.energy/document/384916/download",
+   "out": "neso_gc_rev43",
+   "t": "2026-11-10T21:32:44",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/384916/download",
+   "ctype": "application/pdf",
+   "bytes": 807800
+  },
+  {
+   "url": "https://www.neso.energy/document/384291/download",
+   "out": "neso_gc_rev42",
+   "t": "2026-11-10T21:32:48",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/384291/download",
+   "ctype": "application/pdf",
+   "bytes": 9201356
+  },
+  {
+   "url": "https://www.neso.energy/document/382591/download",
+   "out": "neso_gc_rev41",
+   "t": "2026-11-10T21:32:54",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/382591/download",
+   "ctype": "application/pdf",
+   "bytes": 10921035
+  },
+  {
+   "url": "https://www.neso.energy/document/382376/download",
+   "out": "neso_gc_rev40",
+   "t": "2026-11-10T21:32:59",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/382376/download",
+   "ctype": "application/pdf",
+   "bytes": 1517707
+  },
+  {
+   "url": "https://www.neso.energy/document/381586/download",
+   "out": "neso_gc_rev39",
+   "t": "2026-11-10T21:33:03",
+   "status": 200,
+   "final_url": "https://www.neso.energy/document/381586/download",
+   "ctype": "application/pdf",
+   "bytes": 1388990
+  },
+  {
+   "url": "https://www.vde.com/de/fnn/arbeitsgebiete/tar/tar-hochspannung",
+   "out": "vde_tar-hochspannung",
+   "t": "2026-11-10T21:33:38",
+   "status": 200,
+   "final_url": "https://www.vde.com/de/fnn/themen/tar/tar-hochspannung-vde-ar-n-4120",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 73286
+  },
+  {
+   "url": "https://www.vde.com/de/fnn/arbeitsgebiete/tar/tar-hoechstspannung",
+   "out": "vde_tar-hoechstspannung",
+   "t": "2026-11-10T21:33:43",
+   "status": 404,
+   "error": "",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://www.vde.com/de/fnn/arbeitsgebiete/tar",
+   "out": "vde_tar",
+   "t": "2026-11-10T21:33:45",
+   "status": 200,
+   "final_url": "https://www.vde.com/de/fnn/themen/tar",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 70027
+  },
+  {
+   "url": "https://www.vde.com/de/fnn/themen/tar/tar-hochspannung-vde-ar-n-4120/tar-hochspannung-vde-ar-n-4120",
+   "out": "vde_4120_draft",
+   "t": "2026-11-10T21:34:05",
+   "status": 200,
+   "final_url": "https://www.vde.com/de/fnn/themen/tar/tar-hochspannung-vde-ar-n-4120/tar-hochspannung-vde-ar-n-4120",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 32373
+  },
+  {
+   "url": "https://www.vde.com/de/fnn/themen/tar/tar-hoechstspannung-vde-ar-n-4130",
+   "out": "vde_4130",
+   "t": "2026-11-10T21:34:08",
+   "status": 200,
+   "final_url": "https://www.vde.com/de/fnn/themen/tar/tar-hoechstspannung-vde-ar-n-4130",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 34699
+  },
+  {
+   "url": "https://www.vde-verlag.de/normen/0100493/vde-ar-n-4120-anwendungsregel-2018-11.html",
+   "out": "vdev_4120",
+   "t": "2026-11-10T21:34:20",
+   "status": 200,
+   "final_url": "https://www.vde-verlag.de/p/normen/vde-ar-n-4120-vde-ar-n-4120-anwendungsregel-2018-11/0100493-DE-PR",
+   "ctype": "text/html;charset=utf-8",
+   "bytes": 565101
+  },
+  {
+   "url": "https://www.vde-verlag.de/p/normen/vde-ar-n-4120-vde-ar-n-4120-anwendungsregel-2026-12/0100978",
+   "out": "vdev_4120_2026",
+   "t": "2026-11-10T21:34:50",
+   "status": 200,
+   "final_url": "https://www.vde-verlag.de/p/normen/vde-ar-n-4120-vde-ar-n-4120-anwendungsregel-2026-12/0100978-DE-PR",
+   "ctype": "text/html;charset=utf-8",
+   "bytes": 560831
+  },
+  {
+   "url": "https://www.vde-verlag.de/normen/0100494/vde-ar-n-4130-anwendungsregel-2018-11.html",
+   "out": "vdev_4130",
+   "t": "2026-11-10T21:35:12",
+   "status": 200,
+   "final_url": "https://www.vde-verlag.de/p/normen/vde-ar-n-4130-vde-ar-n-4130-anwendungsregel-2018-11/0100494-DE-PR",
+   "ctype": "text/html;charset=utf-8",
+   "bytes": 571631
+  },
+  {
+   "url": "https://www.vde.com/de/fnn/arbeitsgebiete/versorgungsqualitaet/spannungsqualitaet/netzruckwirkungen",
+   "out": "vde_nrw",
+   "t": "2026-11-10T21:35:51",
+   "status": 200,
+   "final_url": "https://www.vde.com/de/fnn/arbeitsgebiete/versorgungsqualitaet/spannungsqualitaet/netzruckwirkungen",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 48238
+  },
+  {
+   "url": "https://www.vde.com/resource/blob/2243774/835c8e1f4c150c0aeaeae21642fbf0f2/teil-a--technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen-data.pdf",
+   "out": "dach_A",
+   "t": "2026-11-10T21:36:07",
+   "status": 200,
+   "final_url": "https://www.vde.com/resource/blob/2243774/835c8e1f4c150c0aeaeae21642fbf0f2/teil-a--technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen-data.pdf",
+   "ctype": "application/pdf;charset=UTF-8",
+   "bytes": 2122864
+  },
+  {
+   "url": "https://www.vde.com/resource/blob/2243778/f1651a8b6a044d6da6ee821def42ae5c/teil-b--technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen---teil-b--anforderungen-und-beurteilung--abschnitt-i--niederspannung-data.pdf",
+   "out": "dach_B1",
+   "t": "2026-11-10T21:36:11",
+   "status": 200,
+   "final_url": "https://www.vde.com/resource/blob/2243778/f1651a8b6a044d6da6ee821def42ae5c/teil-b--technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen---teil-b--anforderungen-und-beurteilung--abschnitt-i--niederspannung-data.pdf",
+   "ctype": "application/pdf;charset=UTF-8",
+   "bytes": 681961
+  },
+  {
+   "url": "https://www.vde.com/resource/blob/2243760/ea3b351151e23c7d0fac8e562e916553/technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen---teil-b--anforderungen-und-beurteilung--abschnitt-ii--mittelspannung-data.pdf",
+   "out": "dach_B2",
+   "t": "2026-11-10T21:36:15",
+   "status": 200,
+   "final_url": "https://www.vde.com/resource/blob/2243760/ea3b351151e23c7d0fac8e562e916553/technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen---teil-b--anforderungen-und-beurteilung--abschnitt-ii--mittelspannung-data.pdf",
+   "ctype": "application/pdf;charset=UTF-8",
+   "bytes": 1515556
+  },
+  {
+   "url": "https://www.vde.com/resource/blob/2255236/52a3bfe76c938e4b122a3a9688ef9423/technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen-abschnitt-iii--hochspannung-data.pdf",
+   "out": "dach_B3",
+   "t": "2026-11-10T21:36:20",
+   "status": 200,
+   "final_url": "https://www.vde.com/resource/blob/2255236/52a3bfe76c938e4b122a3a9688ef9423/technische-regeln-fuer-die-beurteilung-von-netzrueckwirkungen-abschnitt-iii--hochspannung-data.pdf",
+   "ctype": "application/pdf;charset=UTF-8",
+   "bytes": 827932
+  },
+  {
+   "url": "https://webstore.iec.ch/en/search?q=61000-3-7",
+   "out": "iec_search_337",
+   "t": "2026-11-10T21:36:44",
+   "status": 404,
+   "error": "Not Found",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://webstore.iec.ch/en/publication/4156",
+   "out": "iec_337",
+   "t": "2026-11-10T21:37:02",
+   "status": 200,
+   "final_url": "https://webstore.iec.ch/en/publication/4156",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 482906
+  },
+  {
+   "url": "https://webstore.iec.ch/pub/pdf/preview/info_iectr61000-3-7%7Bed2.0%7Den.pdf",
+   "out": "iecprev_337",
+   "t": "2026-11-10T21:37:21",
+   "status": 404,
+   "error": "Not Found",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llY3RyNjEwMDAtMy03e2VkMi4wfWVuLnBkZg%3D%3D",
+   "out": "iecprev_337",
+   "t": "2026-11-10T21:37:33",
+   "status": 403,
+   "error": "Forbidden",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://webstore.iec.ch/preview/info_iectr61000-3-7%7Bed2.0%7Den.pdf",
+   "out": "iecprev_337",
+   "t": "2026-11-10T21:37:43",
+   "status": 200,
+   "final_url": "https://webstore.iec.ch/en/products/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 451599
+  },
+  {
+   "url": "https://webstore.iec.ch/en/publication/71611",
+   "out": "iec_430",
+   "t": "2026-11-10T21:38:04",
+   "status": 200,
+   "final_url": "https://webstore.iec.ch/en/publication/71611",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 490318
+  },
+  {
+   "url": "https://webstore.iec.ch/en/publication/4173",
+   "out": "iec_415",
+   "t": "2026-11-10T21:38:27",
+   "status": 200,
+   "final_url": "https://webstore.iec.ch/en/publication/4173",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 493980
+  },
+  {
+   "url": "https://standards.ieee.org/ieee/519/10677/",
+   "out": "ieee_519",
+   "t": "2026-11-10T21:38:34",
+   "status": 200,
+   "final_url": "https://standards.ieee.org/ieee/519/10677/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 111011
+  },
+  {
+   "url": "https://standards.ieee.org/ieee/1453/10521/",
+   "out": "ieee_1453",
+   "t": "2026-11-10T21:38:37",
+   "status": 200,
+   "final_url": "https://standards.ieee.org/ieee/1453/10521/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 108406
+  },
+  {
+   "url": "https://standards.ieee.org/ieee/1453/10459/",
+   "out": "ieee_1453_2022",
+   "t": "2026-11-10T21:39:17",
+   "status": 200,
+   "final_url": "https://standards.ieee.org/ieee/1453/10459/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 115416
+  },
+  {
+   "url": "https://standards.ieee.org/ieee/1453/5677/",
+   "out": "ieee_1453_2015",
+   "t": "2026-11-10T21:39:19",
+   "status": 200,
+   "final_url": "https://standards.ieee.org/ieee/1453/5677/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 115079
+  },
+  {
+   "url": "https://standards.cencenelec.eu/ords/f?p=CENELEC:110:::::FSP_PROJECT,FSP_ORG_ID:51993,1258595",
+   "out": "cenelec_50160_2010",
+   "t": "2026-11-10T21:39:56",
+   "status": 200,
+   "final_url": "https://standards.cencenelec.eu/ords/f?p=CENELEC:110:::::FSP_PROJECT,FSP_ORG_ID:51993,1258595",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 11514
+  },
+  {
+   "url": "https://standards.cencenelec.eu/ords/f?cs=10E0A47741675FCEE97E7B83312A7773C&p=CENELEC%3A110%3A%3A%3A%3A%3AFSP_PROJECT%2CFSP_ORG_ID%3A51993%2C1258595",
+   "out": "cenelec_50160_2010",
+   "t": "2026-11-10T21:40:13",
+   "status": 200,
+   "final_url": "https://standards.cencenelec.eu/ords/f?cs=10E0A47741675FCEE97E7B83312A7773C&p=CENELEC%3A110%3A%3A%3A%3A%3AFSP_PROJECT%2CFSP_ORG_ID%3A51993%2C1258595",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 57976
+  },
+  {
+   "url": "https://standards.cencenelec.eu/ords/f?p=CENELEC:110:::::FSP_PROJECT:71003&cs=18A352BF203027ECCA5F79274EFAC20F4",
+   "out": "cenelec_50160_2022",
+   "t": "2026-11-10T21:40:28",
+   "status": 200,
+   "final_url": "https://standards.cencenelec.eu/ords/f?p=CENELEC:110:::::FSP_PROJECT:71003&cs=18A352BF203027ECCA5F79274EFAC20F4",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 58957
+  },
+  {
+   "url": "https://standards.cencenelec.eu/ords/f?p=305:32:::::FSP_ORG_ID,FSP_LANG_ID:1258595,25&cs=1A571FE7D1D220D2EECA52A8B8763C1B4",
+   "out": "cenelec_tc8x_pub",
+   "t": "2026-11-10T21:40:51",
+   "status": 200,
+   "final_url": "https://standards.cencenelec.eu/ords/f?p=305:32:::::FSP_ORG_ID,FSP_LANG_ID:1258595,25&cs=1A571FE7D1D220D2EECA52A8B8763C1B4",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 63990
+  },
+  {
+   "url": "https://standards.cencenelec.eu/ords/f?p=305:22:::::FSP_ORG_ID,FSP_LANG_ID:1258595,25&cs=1A571FE7D1D220D2EECA52A8B8763C1B4",
+   "out": "cenelec_tc8x_wp",
+   "t": "2026-11-10T21:40:54",
+   "status": 200,
+   "final_url": "https://standards.cencenelec.eu/ords/f?p=305:22:::::FSP_ORG_ID,FSP_LANG_ID:1258595,25&cs=1A571FE7D1D220D2EECA52A8B8763C1B4",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 54868
+  },
+  {
+   "url": "https://www.opencompute.org/documents",
+   "out": "ocp_docs",
+   "t": "2026-11-10T21:41:04",
+   "status": 503,
+   "error": "Service Unavailable",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://www.opencompute.org/wiki/Open_Rack/SpecsAndDesigns",
+   "out": "ocp_rackwiki",
+   "t": "2026-11-10T21:41:13",
+   "status": 200,
+   "final_url": "https://www.opencompute.org/projects/rack-and-power/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 204961
+  },
+  {
+   "url": "https://www.opencompute.org/projects/rack-and-power",
+   "out": "ocp_rp",
+   "t": "2026-11-10T21:41:15",
+   "status": 200,
+   "final_url": "https://www.opencompute.org/projects/rack-and-power/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 204961
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-base-specification-version-3-rev1-1-030524-pdf/",
+   "out": "ocp_orv3_base",
+   "t": "2026-11-10T21:42:25",
+   "status": null,
+   "error": "IncompleteRead(9467 bytes read, 1202325 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-open-rack-v3-power-shelf-rev-1-0-1-pdf/",
+   "out": "ocp_orv3_shelf",
+   "t": "2026-11-10T21:42:27",
+   "status": null,
+   "error": "IncompleteRead(10995 bytes read, 5618949 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-v3-hpr-v2-72kw-power-shelf-spec-v1-0-0-pdf/",
+   "out": "ocp_hprv2_shelf",
+   "t": "2026-11-10T21:42:30",
+   "status": null,
+   "error": "IncompleteRead(10490 bytes read, 5360493 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-v3-bbu-shelf-spec-rev1-1-pdf-1/",
+   "out": "ocp_bbu_shelf",
+   "t": "2026-11-10T21:42:32",
+   "status": null,
+   "error": "IncompleteRead(0 bytes read, 1985005 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-v3-bbu-module-spec-1-4-pdf/",
+   "out": "ocp_bbu_module",
+   "t": "2026-11-10T21:42:35",
+   "status": null,
+   "error": "IncompleteRead(11044 bytes read, 1402709 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-specification-diablo-400-v0-7-0-final-pdf/",
+   "out": "ocp_diablo400",
+   "t": "2026-11-10T21:42:37",
+   "status": null,
+   "error": "IncompleteRead(9726 bytes read, 4970007 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/orv3-hvdc-lvdc-100kw-power-shelf-spec-1-0-0-pdf/",
+   "out": "ocp_hvdc_shelf",
+   "t": "2026-11-10T21:42:41",
+   "status": null,
+   "error": "IncompleteRead(0 bytes read, 8279590 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/hvdc-lvdc-psu-18kw-spec-1-0-0-pdf/",
+   "out": "ocp_hvdc_psu",
+   "t": "2026-11-10T21:42:43",
+   "status": null,
+   "error": "IncompleteRead(8621 bytes read, 4405492 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-base-spec-interface-specification-between-hyperscalers-and-utility-grid-for-disturbance-performance-pdf/",
+   "out": "ocp_grid_iface",
+   "t": "2026-11-10T21:42:45",
+   "status": null,
+   "error": "IncompleteRead(10755 bytes read, 677570 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-open-data-center-for-ai-whitepaper-final-pdf",
+   "out": "ocp_odc_wp",
+   "t": "2026-11-10T21:42:48",
+   "status": null,
+   "error": "IncompleteRead(10674 bytes read, 330903 more expected)"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-base-specification-version-3-rev1-1-030524-pdf/",
+   "out": "ocp_orv3_base",
+   "t": "2026-11-10T21:43:07",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/open-rack-base-specification-version-3-rev1-1-030524-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "1211792",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-open-rack-v3-power-shelf-rev-1-0-1-pdf/",
+   "out": "ocp_orv3_shelf",
+   "t": "2026-11-10T21:43:09",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/ocp-open-rack-v3-power-shelf-rev-1-0-1-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "5629944",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-v3-hpr-v2-72kw-power-shelf-spec-v1-0-0-pdf/",
+   "out": "ocp_hprv2_shelf",
+   "t": "2026-11-10T21:43:15",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/open-rack-v3-hpr-v2-72kw-power-shelf-spec-v1-0-0-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "5370983",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-v3-bbu-shelf-spec-rev1-1-pdf-1/",
+   "out": "ocp_bbu_shelf",
+   "t": "2026-11-10T21:43:17",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/open-rack-v3-bbu-shelf-spec-rev1-1-pdf-1/",
+   "ctype": "application/pdf",
+   "bytes": "1985005",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/open-rack-v3-bbu-module-spec-1-4-pdf/",
+   "out": "ocp_bbu_module",
+   "t": "2026-11-10T21:43:20",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/open-rack-v3-bbu-module-spec-1-4-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "1413753",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-specification-diablo-400-v0-7-0-final-pdf/",
+   "out": "ocp_diablo400",
+   "t": "2026-11-10T21:43:22",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/ocp-specification-diablo-400-v0-7-0-final-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "4979733",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/orv3-hvdc-lvdc-100kw-power-shelf-spec-1-0-0-pdf/",
+   "out": "ocp_hvdc_shelf",
+   "t": "2026-11-10T21:43:26",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/orv3-hvdc-lvdc-100kw-power-shelf-spec-1-0-0-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "8279590",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/hvdc-lvdc-psu-18kw-spec-1-0-0-pdf/",
+   "out": "ocp_hvdc_psu",
+   "t": "2026-11-10T21:43:28",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/hvdc-lvdc-psu-18kw-spec-1-0-0-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "4414113",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-base-spec-interface-specification-between-hyperscalers-and-utility-grid-for-disturbance-performance-pdf/",
+   "out": "ocp_grid_iface",
+   "t": "2026-11-10T21:43:31",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/ocp-base-spec-interface-specification-between-hyperscalers-and-utility-grid-for-disturbance-performance-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "688325",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/documents/ocp-open-data-center-for-ai-whitepaper-final-pdf",
+   "out": "ocp_odc_wp",
+   "t": "2026-11-10T21:43:34",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/documents/ocp-open-data-center-for-ai-whitepaper-final-pdf/",
+   "ctype": "application/pdf",
+   "bytes": "341577",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/wp-content/uploads/2026/10/Open-Data-center-Spec-Revision-0.7.0-4.pdf",
+   "out": "ocp_odc_spec",
+   "t": "2026-11-10T21:43:46",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/wp-content/uploads/2026/10/Open-Data-center-Spec-Revision-0.7.0-4.pdf",
+   "ctype": "application/pdf",
+   "bytes": "6301952",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.opencompute.org/wp-content/uploads/2026/10/DCF-Power-Distribution-LVDC-white-paper-version-1.1.0.pdf",
+   "out": "ocp_dcf_lvdc_wp",
+   "t": "2026-11-10T21:43:48",
+   "status": "200",
+   "final_url": "https://www.opencompute.org/wp-content/uploads/2026/10/DCF-Power-Distribution-LVDC-white-paper-version-1.1.0.pdf",
+   "ctype": "application/pdf",
+   "bytes": "14293998",
+   "via": "curl"
+  },
+  {
+   "url": "https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/power-thermals.html",
+   "out": "nv_tuning_pt",
+   "t": "2026-11-10T21:45:06",
+   "status": 200,
+   "final_url": "https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/power-thermals.html",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 18292
+  },
+  {
+   "url": "https://docs.nvidia.com/dgx/dgxgb200-user-guide/dgxgb200-user-guide.pdf",
+   "out": "nv_dgxgb_ug",
+   "t": "2026-11-10T21:45:33",
+   "status": "200",
+   "final_url": "https://docs.nvidia.com/dgx/dgxgb200-user-guide/dgxgb200-user-guide.pdf",
+   "ctype": "application/pdf",
+   "bytes": "14567212",
+   "via": "curl"
+  },
+  {
+   "url": "https://docs.nvidia.com/deploy/nvidia-smi/index.html",
+   "out": "nv_smi",
+   "t": "2026-11-10T21:45:41",
+   "status": 200,
+   "final_url": "https://docs.nvidia.com/deploy/nvidia-smi/index.html",
+   "ctype": "text/html",
+   "bytes": 235840
+  },
+  {
+   "url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/",
+   "out": "nv_800_page",
+   "t": "2026-11-10T21:45:59",
+   "status": 200,
+   "final_url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 304724
+  },
+  {
+   "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/qq0vy0u48xfr0c81i2m1781pwea64n8v.pdf",
+   "out": "nv_800_wp1",
+   "t": "2026-11-10T21:46:08",
+   "status": "200",
+   "final_url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/qq0vy0u48xfr0c81i2m1781pwea64n8v.pdf",
+   "ctype": "application/pdf",
+   "bytes": "1249293",
+   "via": "curl"
+  },
+  {
+   "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/7rj0u54stc41tk6s57dbs2p0qdte5874.pdf",
+   "out": "nv_800_wp2",
+   "t": "2026-11-10T21:46:11",
+   "status": "200",
+   "final_url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/7rj0u54stc41tk6s57dbs2p0qdte5874.pdf",
+   "ctype": "application/pdf",
+   "bytes": "9805744",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2026/11/09/144PGRR-21-PUCT-Report-110526.docx",
+   "out": "ercot_pgrr144_puct",
+   "t": "2026-11-10T21:47:59",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2026/11/09/144PGRR-21-PUCT-Report-110526.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 62555
+  },
+  {
+   "url": "https://www.ena-eng.org/ENA-Docs/",
+   "out": "ena_docs",
+   "t": "2026-11-10T21:50:13",
+   "status": 200,
+   "final_url": "https://www.ena-eng.org/ENA-Docs/",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 287312
+  },
+  {
+   "url": "https://www.energynetworks.org/industry/engineering-documents-and-standards",
+   "out": "ena_eng",
+   "t": "2026-11-10T21:50:17",
+   "status": 403,
+   "error": "Forbidden",
+   "challenge_hint": true
+  },
+  {
+   "url": "https://www.ena-eng.org/ENA-Docs/Index.aspx?Action=ViewDetail&EID=99789&tab=introduction",
+   "out": "ena_p28",
+   "t": "2026-11-10T21:50:30",
+   "status": 200,
+   "final_url": "https://www.ena-eng.org/ENA-Docs/Index?Action=ViewDetail&EID=99789&tab=introduction",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 300755
+  },
+  {
+   "url": "https://standards.cencenelec.eu/dyn/www/f?cs=13878DC282546F2374BD6285D90BD769B&p=CENELEC%3A110%3A%3A%3A%3A%3AFSP_PROJECT%2CFSP_ORG_ID%3A48438%2C1258289",
+   "out": "cenelec_613_3",
+   "t": "2026-11-10T21:51:49",
+   "status": 500,
+   "error": "Internal Server Error",
+   "challenge_hint": false
+  },
+  {
+   "url": "https://standards.cencenelec.eu/ords/f?cs=13878DC282546F2374BD6285D90BD769B&p=CENELEC%3A110%3A%3A%3A%3A%3AFSP_PROJECT%2CFSP_ORG_ID%3A48438%2C1258289",
+   "out": "cenelec_613_3",
+   "t": "2026-11-10T21:51:57",
+   "status": 200,
+   "final_url": "https://standards.cencenelec.eu/ords/f?cs=13878DC282546F2374BD6285D90BD769B&p=CENELEC%3A110%3A%3A%3A%3A%3AFSP_PROJECT%2CFSP_ORG_ID%3A48438%2C1258289",
+   "ctype": "text/html;charset=UTF-8",
+   "bytes": 11512
+  },
+  {
+   "url": "https://webstore.iec.ch/en/publication/4150",
+   "out": "iec_333",
+   "t": "2026-11-10T21:52:18",
+   "status": 200,
+   "final_url": "https://webstore.iec.ch/en/publication/4150",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 517397
+  },
+  {
+   "url": "https://webstore.iec.ch/en/publication/27902",
+   "out": "iec_3311",
+   "t": "2026-11-10T21:52:23",
+   "status": 200,
+   "final_url": "https://webstore.iec.ch/en/publication/27902",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 497069
+  },
+  {
+   "url": "https://arxiv.org/pdf/2508.14318",
+   "out": "loc_arxiv_2508",
+   "t": "2026-11-10T21:53:11",
+   "status": "200",
+   "final_url": "https://arxiv.org/pdf/2508.14318",
+   "ctype": "application/pdf",
+   "bytes": "1055729",
+   "via": "curl"
+  },
+  {
+   "url": "https://arxiv.org/pdf/2605.24461",
+   "out": "loc_arxiv_2605",
+   "t": "2026-11-10T21:53:13",
+   "status": "200",
+   "final_url": "https://arxiv.org/pdf/2605.24461",
+   "ctype": "application/pdf",
+   "bytes": "8611095",
+   "via": "curl"
+  },
+  {
+   "url": "https://dcflex.epri.com/",
+   "out": "epri_dcflex",
+   "t": "2026-11-10T21:53:51",
+   "status": 200,
+   "final_url": "https://dcflex.epri.com/",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 155326
+  },
+  {
+   "url": "https://www.epri.com/dcflex",
+   "out": "epri_dcflex2",
+   "t": "2026-11-10T21:53:54",
+   "status": 200,
+   "final_url": "https://www.epri.com/dcflex",
+   "ctype": "text/html",
+   "bytes": 10488
+  },
+  {
+   "url": "https://dcflex.epri.com/thought-leadership",
+   "out": "epri_thought-leadership",
+   "t": "2026-11-10T21:54:08",
+   "status": 200,
+   "final_url": "https://dcflex.epri.com/thought-leadership",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 383449
+  },
+  {
+   "url": "https://dcflex.epri.com/workstream-3",
+   "out": "epri_workstream-3",
+   "t": "2026-11-10T21:54:11",
+   "status": 200,
+   "final_url": "https://dcflex.epri.com/workstream-3",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 60946
+  },
+  {
+   "url": "https://dcflex.epri.com/workstream-1",
+   "out": "epri_workstream-1",
+   "t": "2026-11-10T21:54:13",
+   "status": 200,
+   "final_url": "https://dcflex.epri.com/workstream-1",
+   "ctype": "text/html; charset=UTF-8",
+   "bytes": 63647
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002031504/0/Product",
+   "out": "epri_3002031504",
+   "t": "2026-11-10T21:54:42",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002031504/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "2068949",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002033410/0/Product",
+   "out": "epri_3002033410",
+   "t": "2026-11-10T21:55:03",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002033410/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1425358",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002033797/0/Product",
+   "out": "epri_3002033797",
+   "t": "2026-11-10T21:55:07",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002033797/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "2147994",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002034099/0/Product",
+   "out": "epri_3002034099",
+   "t": "2026-11-10T21:55:09",
+   "status": "400",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002034099/0/Product",
+   "ctype": "application/json;",
+   "bytes": "charset=utf-8",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002034368/0/Product",
+   "out": "epri_3002034368",
+   "t": "2026-11-10T21:55:12",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002034368/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "3455841",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002034369/0/Product",
+   "out": "epri_3002034369",
+   "t": "2026-11-10T21:55:16",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002034369/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "3065329",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002034666/0/Product",
+   "out": "epri_3002034666",
+   "t": "2026-11-10T21:55:20",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002034666/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1766866",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002034667/0/Product",
+   "out": "epri_3002034667",
+   "t": "2026-11-10T21:55:23",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002034667/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1615518",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036212/0/Product",
+   "out": "epri_3002036212",
+   "t": "2026-11-10T21:55:38",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036212/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "4569504",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036213/0/Product",
+   "out": "epri_3002036213",
+   "t": "2026-11-10T21:55:42",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036213/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1673903",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036257/0/Product",
+   "out": "epri_3002036257",
+   "t": "2026-11-10T21:55:46",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036257/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1633155",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036343/0/Product",
+   "out": "epri_3002036343",
+   "t": "2026-11-10T21:55:59",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036343/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1777553",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036362/0/Product",
+   "out": "epri_3002036362",
+   "t": "2026-11-10T21:56:04",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036362/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1517905",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036374/0/Product",
+   "out": "epri_3002036374",
+   "t": "2026-11-10T21:56:08",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036374/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "2412674",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036523/0/Product",
+   "out": "epri_3002036523",
+   "t": "2026-11-10T21:56:11",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036523/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "2380757",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036744/0/Product",
+   "out": "epri_3002036744",
+   "t": "2026-11-10T21:56:14",
+   "status": "400",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036744/0/Product",
+   "ctype": "application/json;",
+   "bytes": "charset=utf-8",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036753/0/Product",
+   "out": "epri_3002036753",
+   "t": "2026-11-10T21:56:17",
+   "status": "400",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036753/0/Product",
+   "ctype": "application/json;",
+   "bytes": "charset=utf-8",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036755/0/Product",
+   "out": "epri_3002036755",
+   "t": "2026-11-10T21:56:19",
+   "status": "400",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036755/0/Product",
+   "ctype": "application/json;",
+   "bytes": "charset=utf-8",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036874/0/Product",
+   "out": "epri_3002036874",
+   "t": "2026-11-10T21:56:23",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036874/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "6148019",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036875/0/Product",
+   "out": "epri_3002036875",
+   "t": "2026-11-10T21:56:31",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036875/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "2417482",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036876/0/Product",
+   "out": "epri_3002036876",
+   "t": "2026-11-10T21:56:35",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036876/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "2202226",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002036922/0/Product",
+   "out": "epri_3002036922",
+   "t": "2026-11-10T21:56:39",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002036922/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "2506759",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002037065/0/Product",
+   "out": "epri_3002037065",
+   "t": "2026-11-10T21:56:42",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002037065/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "8170371",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002037176/0/Product",
+   "out": "epri_3002037176",
+   "t": "2026-11-10T21:56:46",
+   "status": "200",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002037176/0/Product",
+   "ctype": "application/pdf",
+   "bytes": "1868100",
+   "via": "curl"
+  },
+  {
+   "url": "https://restservice.epri.com/publicdownload/000000003002037178/0/Product",
+   "out": "epri_3002037178",
+   "t": "2026-11-10T21:56:48",
+   "status": "400",
+   "final_url": "https://restservice.epri.com/publicdownload/000000003002037178/0/Product",
+   "ctype": "application/json;",
+   "bytes": "charset=utf-8",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2026/04/23/260424-NERC-Update-for-ERCOT-LLWG.pdf",
+   "out": "loc_ercot_nerc_upd",
+   "t": "2026-11-10T21:56:52",
+   "status": "200",
+   "final_url": "https://www.ercot.com/files/docs/2026/04/23/260424-NERC-Update-for-ERCOT-LLWG.pdf",
+   "ctype": "application/pdf",
+   "bytes": "1090017",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.ferc.gov/sites/default/files/2025-04/Presentation%20NERC%20Seeks%20to%20Address%20Reliability%20Impacts%20from%C2%A0Large%20Load%20Integration_1.pdf",
+   "out": "loc_ferc_nerc_pres",
+   "t": "2026-11-10T21:56:54",
+   "status": "200",
+   "final_url": "https://www.ferc.gov/sites/default/files/2025-04/Presentation%20NERC%20Seeks%20to%20Address%20Reliability%20Impacts%20from%C2%A0Large%20Load%20Integration_1.pdf",
+   "ctype": "application/pdf",
+   "bytes": "801425",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/pc/2026/20260908/20260908-item-05---1-large-load-ride-through---presentation.pdf",
+   "out": "loc_pjm_rt_pres",
+   "t": "2026-11-10T21:56:57",
+   "status": "200",
+   "final_url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/pc/2026/20260908/20260908-item-05---1-large-load-ride-through---presentation.pdf",
+   "ctype": "application/pdf",
+   "bytes": "1712733",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.nerc.com/globalassets/initiatives/large-loads-action-plan/llap-quarterly-update-q3-2026.pdf",
+   "out": "loc_nerc_llap_q3",
+   "t": "2026-11-10T21:57:00",
+   "status": "200",
+   "final_url": "https://www.nerc.com/globalassets/initiatives/large-loads-action-plan/llap-quarterly-update-q3-2026.pdf",
+   "ctype": "application/pdf",
+   "bytes": "6439954",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.nysrc.org/wp-content/uploads/2026/02/NYSRC-LLWG-2-Att.-6.pdf",
+   "out": "loc_nerc_wp2_nysrc",
+   "t": "2026-11-10T21:57:03",
+   "status": "200",
+   "final_url": "https://www.nysrc.org/wp-content/uploads/2026/02/NYSRC-LLWG-2-Att.-6.pdf",
+   "ctype": "application/pdf",
+   "bytes": "2207799",
+   "via": "curl"
+  },
+  {
+   "url": "https://techcommunity.microsoft.com/blog/azurecompute/power-stabilization-for-ai-training-datacenters/4460937",
+   "out": "loc_ms_blog",
+   "t": "2026-11-10T21:57:05",
+   "status": "200",
+   "final_url": "https://techcommunity.microsoft.com/blog/azurecompute/power-stabilization-for-ai-training-datacenters/4460937",
+   "ctype": "text/html;",
+   "bytes": "charset=utf-8",
+   "via": "curl"
+  },
+  {
+   "url": "https://developer.nvidia.com/blog/how-new-gb300-nvl72-features-provide-steady-power-for-ai/",
+   "out": "nv_gb300_blog",
+   "t": "2026-11-10T21:57:09",
+   "status": "200",
+   "final_url": "https://developer.nvidia.com/blog/how-new-gb300-nvl72-features-provide-steady-power-for-ai/",
+   "ctype": "text/html;",
+   "bytes": "charset=UTF-8",
+   "via": "curl"
+  },
+  {
+   "url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=59999&itemNumber=5",
+   "out": "puct_59999_i5",
+   "t": "2026-11-10T21:59:33",
+   "status": 200,
+   "final_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=59999&itemNumber=5",
+   "ctype": "text/html; charset=utf-8",
+   "bytes": 12552
+  },
+  {
+   "url": "https://interchange.puc.texas.gov/Documents/59999_5_1699934.PDF",
+   "out": "puct_sllia_1699934",
+   "t": "2026-11-10T21:59:42",
+   "status": "200",
+   "final_url": "https://interchange.puc.texas.gov/Documents/59999_5_1699934.PDF",
+   "ctype": "application/pdf",
+   "bytes": "2135848",
+   "via": "curl"
+  },
+  {
+   "url": "https://interchange.puc.texas.gov/Documents/59999_5_1699935.PDF",
+   "out": "puct_sllia_1699935",
+   "t": "2026-11-10T21:59:45",
+   "status": "200",
+   "final_url": "https://interchange.puc.texas.gov/Documents/59999_5_1699935.PDF",
+   "ctype": "application/pdf",
+   "bytes": "1662969",
+   "via": "curl"
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2023/01/26/01-110626_Nodal.docx",
+   "out": "ercot_np1",
+   "t": "2026-11-10T22:00:53",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2023/01/26/01-110626_Nodal.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 83014
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2022/04/01/01-020126.docx",
+   "out": "ercot_nog1",
+   "t": "2026-11-10T22:00:56",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2022/04/01/01-020126.docx",
+   "ctype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "bytes": 65690
+  },
+  {
+   "url": "https://www.ercot.com/files/docs/2017/05/01/01-020126.doc",
+   "out": "ercot_pg1",
+   "t": "2026-11-10T22:00:58",
+   "status": 200,
+   "final_url": "https://www.ercot.com/files/docs/2017/05/01/01-020126.doc",
+   "ctype": "application/msword",
+   "bytes": 109568
+  },
+  {
+   "url": "https://techcommunity.microsoft.com/blog/azurecompute/power-stabilization-for-ai-training-datacenters/4460937",
+   "out": "loc_ms_blog2",
+   "via": "curl --compressed",
+   "status": "see stdout"
+  }
+ ]
+}
