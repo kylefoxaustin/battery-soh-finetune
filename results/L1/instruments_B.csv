@@ -39,3 +39,13 @@ B32,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypa
 B34,full,eCFR versioner 571.305a; Federal Register API,establishing rule 89 FR 104318 counted under B33 (never twice); 91 FR 33111 reference deletion only
 B15,partial,openstd.samr.gov.cn metadata; std.samr.gov.cn record,1 event (cannot judge)
 S07,full,eCFR versioner 571.202a; Federal Register API,eCFR shows a 2017-09-05 version with no matching Federal Register rule found (treated as editorial): no events
+B16,partial,iso.org (HTTP 403); ISO open-data catalogue,only 2014 edition published; revision at DIS stage: no events in window
+B23,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+B19,partial,iso.org (HTTP 403); ISO open-data catalogue,"2020 edition dated; title names electrical safety: unreadable edition, not counted"
+B12,partial,openstd.samr.gov.cn metadata and catalogue list,"GB/T 18487.1-2023 dated; title (charging system general requirements) does not show a data/protocol subject: unreadable edition, not counted"
+S26,full,eCFR versioner 571.213b; Federal Register API,213b established by 88 FR 84514 (2023) and amended since; child restraint products: no events
+B08,partial,openstd.samr.gov.cn metadata and catalogue list,2 events (cannot judge)
+B17,partial,iso.org (HTTP 403); ISO open-data catalogue,2 events
+B37,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
+S13,full,EUR-Lex ALL page (modified-by list); Publications Office SPARQL; EUR-Lex texts,1 event (base act)
+S03,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,R17 series 09-12 and supplements: strength/head-restraint tests and labels: no events
