@@ -1,0 +1,24 @@
+written shape == computed shape for every row of both files
+rater A: deciding flag follows quantity for all rows: True []
+rater B: deciding flag follows quantity for all rows: True []
+n_A 99 n_B 100; M 83 = 45 (pass 1) + 38 (pass 2); identification 0.716
+kappa(window, M1=45) 1.000 observed 1.000
+kappa(window, all M) 1.000; allowance(M1) 0.000 obs 0.867; shape(M1) 1.000 obs 1.000; binding(all) 0.957 obs 0.976; deciding(all) 1.000 obs 1.000
+field disagreements over all M: {'allowance_class': 6, 'binding_class': 2, 'measurement_point': 2}
+unmatched A: 16 Counter({'other': 10, 'hold-up': 3, 'ramp rate': 2, 'rapid voltage change': 1})
+unmatched B: 17 Counter({'other': 5, 'ride-through': 5, 'step change': 2, 'hold-up': 2, 'smoothing or capping response': 2, 'harmonics': 1}) deciding among them: 4
+seeds none/none: 1 (limited=False); seed access A/B: Counter({('full', 'full'): 39, ('partial', 'partial'): 9, ('none', 'none'): 1, ('partial', 'full'): 1})
+status counts A: Counter({'in force': 29, 'no requirement': 19, 'pending': 8}) B: Counter({'in force': 29, 'no requirement': 19, 'pending': 8})
+
+GATE: UNGATED (identification 0.716 < 0.80)
+  primary  binding-deciding pairs 23 from 6 instruments; shapes {'cannot judge': 11, 'reactive': 9, 'electronics': 1, 'history': 2}; either-rater history rows 4; would-be verdict HISTORY-SHAPED SPEC EXISTS
+  STATED   binding-deciding pairs 23 from 6 instruments; shapes {'cannot judge': 12, 'reactive': 8, 'electronics': 1, 'history': 2}; either-rater history rows 4; would-be verdict HISTORY-SHAPED SPEC EXISTS
+  ANY      binding-deciding pairs 24 from 6 instruments; shapes {'cannot judge': 11, 'reactive': 10, 'electronics': 1, 'history': 2}; either-rater history rows 4; would-be verdict HISTORY-SHAPED SPEC EXISTS
+  SEED     binding-deciding pairs 11 from 4 instruments; shapes {'cannot judge': 9, 'history': 2}; either-rater history rows 4; would-be verdict HISTORY-SHAPED SPEC EXISTS
+history pairs: [('G02', 'A079', 'B060'), ('G02', 'A080', 'B061')]
+binding-deciding pairs by instrument: Counter({'X02': 11, 'E10': 3, 'E09': 3, 'E11': 3, 'G02': 2, 'X01': 1})
+rater A own binding-deciding rows 25 from 7 instruments; shapes {'cannot judge': 11, 'reactive': 11, 'electronics': 1, 'history': 2}
+rater B own binding-deciding rows 28 from 7 instruments; shapes {'reactive': 11, 'cannot judge': 14, 'history': 2, 'electronics': 1}
+non-binding-deciding pairs: 60 by quantity (A): [('ride-through', 17), ('harmonics', 13), ('other', 9), ('flicker', 7), ('rapid voltage change', 4), ('power factor', 4), ('hold-up', 3), ('ramp rate', 2), ('swing amplitude', 1)]
+top window/allowance (A): [(('not stated', 'hard'), 22), (('≤ 100 ms', 'hard'), 13), (('1 – 60 s', 'hard'), 10), (('1 – 15 min', 'loose'), 6), (('100 ms – 1 s', 'hard'), 4), (('1 – 15 min', 'hard'), 3), (('1 – 60 s', 'loose'), 1), (('1 – 15 min', 'not stated'), 1)]
+exploratory: deciding-row identification 26/(26 + 2 + 4) = 0.81

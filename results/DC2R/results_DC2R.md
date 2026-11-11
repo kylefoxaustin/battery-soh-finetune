@@ -209,6 +209,14 @@ None after any rater read requirement text (no DC2R-D2). The §6 items of the pr
 
   With granularity and these two fixed, the remaining disagreement would be the reading itself.
 
+## Reviewer acceptance (2026-11-11)
+
+Accepted at `5883669` as **UNGATED**; DC1b is not run and the anticipation leg closes on DC2-R (pre-registration §4).
+Every number in §1–§4 was re-derived by the reviewer from the four rater files with independent code
+([`review/reviewer_check.py`](review/reviewer_check.py), output [`review/reviewer_check.out`](review/reviewer_check.out));
+agreement is exact. Process checks, the reading of the coverage failure and the documentary conclusion are in
+[`review/README.md`](review/README.md).
+
 ---
 
 ## Appendix. Every requirement, both raters

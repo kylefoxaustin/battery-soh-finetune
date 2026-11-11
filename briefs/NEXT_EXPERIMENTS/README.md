@@ -146,6 +146,17 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > clause (one-minute-average ramp band, 10 % of intervals may fail). Then the customer-facing position paper from the
 > licence-clean results. Order: DC2-R → (DC1b) → position paper; O1 / R1 remain unscheduled.
 
+> **Status 2026-11-11 (evening). DC2-R is DONE, UNGATED again** (identification 0.72 < 0.80 — now coverage of the
+> 500-page protocols and which non-deciding topics a rater chose; κ(window) 1.00; deciding-row identification 0.81;
+> every class of all 23 binding-deciding pairs agreed; reviewer re-derived every number, `results/DC2R/review/`). Four
+> raters in two blind pairs agree: every binding limit on real-power variation is hard or states no window, except
+> the ERCOT PCLR one-minute curtailment rule. **DC1b not run (pre-declared); the data-centre anticipation leg is closed
+> on public evidence.** Lessons added: a named section list per instrument for very large documents; a rule for
+> tables holding two quantities. **The position paper is written:**
+> [`results/OPEN_PROBLEM/POSITION.md`](../../results/OPEN_PROBLEM/POSITION.md) (CC0; licence-clean numbers only).
+> **Nothing is scheduled.** Remaining options on request: O1 / R1 (code, do not move the thesis); a second quiet L1
+> domain; a DC2-R2 with the two coverage fixes (would probably gate; deciding set would not change).
+
 ---
 
 ## 1. How the reviewer starts one

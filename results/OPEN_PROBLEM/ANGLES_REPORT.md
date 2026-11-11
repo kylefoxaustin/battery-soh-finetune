@@ -238,6 +238,10 @@ with row granularity fixed in advance and DC1b declared as the follow-on.
   except ERCOT §6.5.7.11 (PCLR one-minute-average ramp band, 10 % of intervals may fail, awaiting implementation),
   recorded identically by both raters.
 
+**Reviewer, 2026-11-11 (later)** (`results/DC2R/review/README.md`): accepted as UNGATED; every number re-derived. The
+deciding picture is now reproduced by four raters in two blind pairs. **The anticipation leg of this section is closed
+on public evidence.** No DC2-R2 is scheduled.
+
 ### B.3 Event-triggered retention: the one place DRAM is physically necessary
 
 **Mechanism.** Keep a rolling window of raw or lightly decimated converter and pack telemetry resident; on a trigger

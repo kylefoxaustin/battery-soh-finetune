@@ -6,7 +6,18 @@ instruments, same two-rater two-branch procedure as [`briefs/DC2/README.md`](../
 conventions change, and the follow-on is declared now so that nothing after the verdict is chosen with the verdict in
 hand.
 
-> ## ▶ APPROVED (reviewer, 2026-11-11, `47ae9f6`) — stage 2 runs straight through to results
+> ## ▶ DONE 2026-11-11 — `5883669`: UNGATED (identification 0.72 < 0.80, now on coverage; κ(window) 1.00; deciding rows 0.81, every class agreed) — reviewer accepted; DC1b not run; the leg closes here
+>
+> Results: [`results/DC2R/results_DC2R.md`](../../results/DC2R/results_DC2R.md). The reviewer re-derived every number
+> from the four rater files (`results/DC2R/review/`): M 83 = 45 + 38 of 99 / 100 rows, identification 0.716,
+> κ(window) 1.000, 23 binding-deciding pairs from 6 instruments (reactive 9, electronics 1, cannot judge 11, history
+> 2), the two history pairs again ERCOT §6.5.7.11, not access-limited. All match. The granularity fix worked
+> (deciding-row identification 0.61 → 0.81, κ(window) 0.64 → 1.00); what failed is coverage of very large documents.
+> Four raters in two blind pairs now agree on the deciding picture: every binding limit on real-power variation is
+> hard or states no window, except the ERCOT PCLR curtailment rule on one-minute averages. **The data-centre
+> anticipation leg is closed on public evidence.** No DC2-R2 is scheduled. The approval text is kept below.
+>
+> ## ▶ APPROVED (reviewer, 2026-11-11, `47ae9f6`) — stage 2 runs straight through to results (superseded: done)
 >
 > Approved with one deviation, **DC2R-D1** (pre-registration §9): for non-deciding rows pass-1 matching is on
 > normalised clause + quantity (category is descriptive under DC2R-1); deciding rows match on clause + category as

@@ -1,7 +1,7 @@
-# Synthesis — the open-problem pass after eight experiments (close-out)
+# Synthesis — the open-problem pass after nine experiments (close-out)
 
-**Written:** 2026-11-10, after X8; refreshed after FR1-R and L1; **close-out 2026-11-11** after DC2, the last leg.
-**Scope:** what [`ANGLES_REPORT.md`](ANGLES_REPORT.md) (2026-10-30) proposed, what the eight experiments that followed
+**Written:** 2026-11-10, after X8; refreshed after FR1-R and L1; **close-out 2026-11-11** after DC2 and DC2-R, the last legs.
+**Scope:** what [`ANGLES_REPORT.md`](ANGLES_REPORT.md) (2026-10-30) proposed, what the nine experiments that followed
 established, and where the question now stands. **Licence:** public domain (CC0); the licence of each cited result is
 carried with it. Every number here is quoted from a write-up that states its tags; nothing new is computed.
 
@@ -11,7 +11,7 @@ The customer's claim set (C1–C6) says an application-processor part with DRAM 
 800 V → 48 V power conversion. The open-problem pass asked what, specifically, the DRAM tier does that an MCU with
 SDRAM or HyperRAM and factory calibration cannot.
 
-**After eight experiments the answer the evidence supports is the null stated in ANGLES §E, in its positive form:**
+**After nine experiments the answer the evidence supports is the null stated in ANGLES §E, in its positive form:**
 
 > The battery and converter computations the programme can test are MCU-class, and per-vehicle learning does not beat a
 > fleet model on them. The DRAM tier's physically necessary capability — a continuous MB/s ring buffer — is MEASURED on
@@ -40,6 +40,7 @@ measured, gated, or explicitly documentary, and the counter-evidence is on the t
 | **FR1-R** | FR1 re-rated with a `not observable` state and a closed data-rate list | **Gated (κ 0.90), retention UNCLEAR, shape MIXED.** P80 31 % [19, 48] and ring-buffer-shaped 17 % [8, 33] of 35 field-observable in-scope causes; 17 of 53 in-scope causes not observable at any window; long windows are mostly per-event signatures over many cycles; ring-buffer needs concentrate in the charging path (the ICCU pair) | **Yes** (NHTSA public domain; DERIVED-judgemental, two language-model raters) | DRAM retention stands as an event-triggered capture for about one public cause in six, not a necessity |
 | **L1** | How often do software-visible requirements land on the battery / charging ECU domain, against seats? | **UNCLEAR [V1: VOLATILE]** (gated: identification 0.84, κ 0.82; kill does not fire). 35 matched events 2016–2026, 3.2 / yr, 22 in 2023–25; MC 38 % [22, 57] of 26 judged; battery / seat ratio 2.2 with R155 / R156 / GB 44495 / GB 44496 on both sides (L-1), 4.4 / 3.4 without; N_B a floor (10 SAE instruments unreadable) | **Yes** (public regulatory record; DERIVED-judgemental, two language-model raters) | §B.1's arrival process is counted and real; its excess over a quiet domain is 2–4×, not "no such process elsewhere"; the stack-forcing events are five large acts |
 | **DC2** | What window and excursion allowance do real large-load power specs use; is any shaped so that seconds of history would pay? | **UNGATED** (identification 0.52 < 0.80; κ(window) 0.64). Exploratory: binding real-power-variation limits found are `hard`, except ERCOT §6.5.7.11 (PCLR ramp, one-minute intervals, 10 % may fail), read identically by both raters; gray-boxed, registration-scoped, at the 60 s class edge | No (UNGATED; public documents, DERIVED-judgemental) | The last data-centre leg gets no reading; no spec found that makes DC1's 0.5 % sensitivity the real case |
+| **DC2-R** | DC2 re-rated by two fresh raters with row granularity fixed in advance | **UNGATED** (identification 0.72 < 0.80, now on coverage of very large documents; κ(window) 1.00; deciding-row identification 0.81; every class of all 23 binding-deciding pairs agreed). Same picture: every binding real-power-variation limit `hard` or no window stated, except ERCOT §6.5.7.11 (PCLR, one-minute averages, 10 % may fail) | No (UNGATED; documentary) | Four raters in two blind pairs reproduce the reading; DC1b not run (pre-declared); the anticipation leg closes on public evidence |
 | **DC2-R** | DC2 re-rated by fresh raters with row granularity fixed in advance; DC1b declared if a history-shaped spec gates | **UNGATED** (identification 0.72 < 0.80, on coverage and quantity naming; κ(window) 1.00; deciding rows 0.81, every class agreed). Exploratory: ERCOT §6.5.7.11 again the only history-shaped binding clause, identical in both files | No (UNGATED; public documents, DERIVED-judgemental) | DC1b is not run; the data-centre anticipation leg closes on DC2-R |
 
 Earlier, from the programme proper: **X2-F** (per-cell R is stable and removes margin at the top of charge: κ 1.10 vs
@@ -78,7 +79,7 @@ usable energy; knees set the reserve) stand unchanged.
 | Per-vehicle / per-unit learning beats a fleet model | **Refuted (battery)** | Studies 1–2, X5, X6: knees, not estimation error, set the reserve |
 | Converter efficiency needs a history-fed model | **Refuted (within the model family)** | convsim: static table within 1 %; holds under 100× hard-switching stress |
 | Anticipation at the rack needs seconds of history | **Not supported** | DC1: a 1 s ramp detector matches 30 s of history; reactive suffices at 0.1 % budget |
-| A real spec has the slack, sub-minute shape where history would pay | **Not found** (DC2 UNGATED; documentary reading) | 56 instruments read twice: every binding limit on real-power variation either rater found is a hard limit (Fingrid oscillation bands and ramp / step at the POI, AESO ramp / step, OCP sub-100 ms envelopes), except an ERCOT curtailment-dispatch rule on one-minute averages that does not see the swings |
+| A real spec has the slack, sub-minute shape where history would pay | **Not found** (DC2 and DC2-R both UNGATED on identification; documentary reading reproduced by four raters) | 56 instruments read twice: every binding limit on real-power variation either rater found is a hard limit (Fingrid oscillation bands and ramp / step at the POI, AESO ramp / step, OCP sub-100 ms envelopes), except an ERCOT curtailment-dispatch rule on one-minute averages that does not see the swings |
 | Per-cell *identity* (not just R spread) carries the limiter gain | **Not supported** | X8: shuffled per-cell is within ≈ 1 pp of per-cell; 40 % of that is 1 mV quantisation. **An MCU min/max limiter with a max-R table captures most of the gain** |
 | A bottom power-capability reserve is there to release | **Not supported in these fleets** | X8: estimated headroom exceeds p95 demand in 96–97 % of sessions |
 | Thermal margin from a per-cell observer | **Untestable on public data** | X7 |
@@ -113,9 +114,11 @@ tidying:
   (software update, re-approval, or hardware) — the second kill in ANGLES §C.1 that L1 could not test; and the
   violation budget and window of the ramp spec the data-centre customer is actually held to, which DC2 could not find
   in public.
-- **DC2-R** (optional, one session run): the same audit with a one-row-per-table convention fixed in advance. It would
-  very probably gate, and would return HISTORY-SHAPED SPEC EXISTS on ERCOT §6.5.7.11 alone — a line usable on a slide
-  only with its caveats (`results/DC2/review/README.md`). Not scheduled.
+- **DC2-R — run 2026-11-11, UNGATED again** ([`../DC2R/results_DC2R.md`](../DC2R/results_DC2R.md)): the
+  granularity fix lifted deciding-row agreement to 0.81 and κ(window) to 1.00, but coverage of the 500-page protocols
+  kept identification at 0.72. Four raters in two pairs now agree on the deciding picture; DC1b was pre-declared not
+  to run on UNGATED, and the leg closes here. A DC2-R2 with a named section list per instrument would probably gate;
+  it is not scheduled because the deciding set would not change.
   **Run 2026-11-11 ([`results/DC2R/results_DC2R.md`](../DC2R/results_DC2R.md)): UNGATED** — identification 0.72;
   the granularity fix worked on the deciding rows (0.81, every class agreed), and the gap moved to coverage of large
   documents and quantity naming. DC1b is not run; the leg closes on DC2-R. ERCOT §6.5.7.11 was again the only
@@ -135,6 +138,9 @@ they do not go on a slide.
 
 ## 7. Close-out: the position to carry
 
+*The customer-facing form of this section, with every slide-usable number and its licence, is
+[`POSITION.md`](POSITION.md).*
+
 **For the EV customer (800 V → 48 V, battery charging).** Lead with C5 in its honest form: the A-core and its DRAM are
 in the box because UN R155, UN R156, the EU Batteries Regulation and Euro 7 with its OBM / OTA implementing act put a
 Linux-class stack there — cyber-security management, authenticated updates, SoH data access, on-board monitoring with
@@ -147,7 +153,7 @@ reach, and the cheapest fix to min/max is a worst-cell resistance table in the l
 
 **For the data-centre customer (2000 V → 48 V).** Do not lead with anticipation: on public training traces a reactive
 controller matches seconds of history at tight budgets (DC1), and no public specification was found with the slack,
-sub-minute shape in which history would pay (DC2, documentary). The shelf controller's Tier-A case is the same as the
+sub-minute shape in which history would pay (DC2 and DC2-R, documentary, four raters in two blind pairs). The shelf controller's Tier-A case is the same as the
 EV one — the software it must host (operator telemetry, TLS to the DCIM, vendor / operator firmware isolation, the
 storage element's BMS) — plus whatever the customer's own ramp contract says, which is the first thing to ask for.
 
