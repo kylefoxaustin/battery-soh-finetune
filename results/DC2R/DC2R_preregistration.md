@@ -151,3 +151,38 @@ is disclosed"). The session knows DC2's per-instrument rows, the 16 binding deci
    different words or order will not match in pass 1; they fall to pass 2 (same quantity + window class), which DC2R-1's
    most-restrictive-entry rule makes likely to match. The effect is on M₁ (the κ(window) base), not on identification.
    The matching rule is unchanged here, as the brief requires; the agreement script will apply it as written.
+
+---
+
+## 9. Reviewer approval and deviation DC2R-D1 (2026-11-11, before rating)
+
+Stage 1 (`47ae9f6`) is **approved**. The reviewer checked: §2 carries DC2R-1 … DC2R-4 verbatim from the brief; the
+thresholds, shape table, deciding list, decision table and consequence line are DC2's; the instrument list is the 56
+of DC2; the orders reproduce from `default_rng(41)` / `default_rng(42)` over the same 56 IDs and equal neither DC2
+order; the §4 DC1b fixed points are copied; the launching session's exposure is disclosed (§7). The two points of §8 are
+decided as follows.
+
+**§8.1 — clone contents: the session's proposal is adopted, and extended.** The rater clone contains exactly four
+files: `results/DC2/DC2_preregistration.md`, `results/DC2/DC2_instruments.md`, `results/DC2R/DC2R_orders.json` and
+`results/DC2R/DC2R_rater_rules.md` (this file's §1 and §2 verbatim, nothing else). It contains **no brief** — not
+`briefs/DC2R/README.md` and not `briefs/DC2/README.md`, whose DONE box names the DC2 result — and not this file. The
+rules file is committed on `main` with the analysis script, before either branch, and the results report the `cmp`
+of its text against §1–§2 here. The launch prompt names the four files and nothing about content, instruments or
+expected results (the §7 mitigation: DC2's prompt with mechanical substitutions, its diff committed).
+
+**§8.2 — DC2R-D1, matching for one-row-per-clause rows.** DC2R-1 makes `category` descriptive rather than
+identifying for non-deciding rows, so pass 1 is restated by deciding status, before any reading:
+
+- **non-deciding rows** (quantity not in the deciding list): pass 1 matches on identical normalised `clause` **and
+  identical `quantity`** — `category` is ignored;
+- **deciding rows**: pass 1 matches on identical normalised `clause` and `category`, as DC2 §5;
+- pass 2 (same `quantity` and `window_class`, in file order) is unchanged for the remainder;
+- a pair whose two rows have different `deciding` values (possible only through a quantity disagreement) can form
+  only in pass 2.
+
+This changes which pairs count as M₁ (the κ(window) base), not the identification formula, the gates or the
+thresholds. It is recorded as DC2R-D1 and implemented in `analysis/DC2R_agreement.py` with a self-test that
+exercises it.
+
+**Stage 2 runs straight through** to `AWAITING APPROVAL` on the results; no further approval stop. DC1b, if the
+verdict calls for it, waits for the reviewer's acceptance of DC2-R (brief §6).

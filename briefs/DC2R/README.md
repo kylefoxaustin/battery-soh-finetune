@@ -6,7 +6,18 @@ instruments, same two-rater two-branch procedure as [`briefs/DC2/README.md`](../
 conventions change, and the follow-on is declared now so that nothing after the verdict is chosen with the verdict in
 hand.
 
-> ## ▶ START HERE (first stage: pre-registration only, then STOP)
+> ## ▶ APPROVED (reviewer, 2026-11-11, `47ae9f6`) — stage 2 runs straight through to results
+>
+> Approved with one deviation, **DC2R-D1** (pre-registration §9): for non-deciding rows pass-1 matching is on
+> normalised clause + quantity (category is descriptive under DC2R-1); deciding rows match on clause + category as
+> before. Clone contents adopted as the session proposed and extended: **four files only** — `DC2_preregistration.md`,
+> `DC2_instruments.md`, `DC2R_orders.json`, `DC2R_rater_rules.md` (§1–§2 verbatim) — **no brief and not the DC2-R
+> pre-registration**, since both name the DC2 result. Launch prompt = DC2's with mechanical substitutions, diff
+> committed. Order: `analysis/DC2R_agreement.py` (self-tests incl. DC2R-D1) + rules file on `main` before any branch →
+> prompt → rater A → rater B → merge, run, `results/DC2R/results_DC2R.md`, `dc2r.json`, index rows, dated notes →
+> `NEXT_TASK.md` Status `AWAITING APPROVAL <hash>`. DC1b waits for the reviewer's acceptance.
+>
+> ## ▶ START HERE (first stage: pre-registration only, then STOP) (superseded: done at `47ae9f6`)
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief, `results/DC2/DC2_preregistration.md` (§1–§10: everything here is reused unless §3 below names
