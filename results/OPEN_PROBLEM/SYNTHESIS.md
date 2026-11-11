@@ -40,6 +40,7 @@ measured, gated, or explicitly documentary, and the counter-evidence is on the t
 | **FR1-R** | FR1 re-rated with a `not observable` state and a closed data-rate list | **Gated (κ 0.90), retention UNCLEAR, shape MIXED.** P80 31 % [19, 48] and ring-buffer-shaped 17 % [8, 33] of 35 field-observable in-scope causes; 17 of 53 in-scope causes not observable at any window; long windows are mostly per-event signatures over many cycles; ring-buffer needs concentrate in the charging path (the ICCU pair) | **Yes** (NHTSA public domain; DERIVED-judgemental, two language-model raters) | DRAM retention stands as an event-triggered capture for about one public cause in six, not a necessity |
 | **L1** | How often do software-visible requirements land on the battery / charging ECU domain, against seats? | **UNCLEAR [V1: VOLATILE]** (gated: identification 0.84, κ 0.82; kill does not fire). 35 matched events 2016–2026, 3.2 / yr, 22 in 2023–25; MC 38 % [22, 57] of 26 judged; battery / seat ratio 2.2 with R155 / R156 / GB 44495 / GB 44496 on both sides (L-1), 4.4 / 3.4 without; N_B a floor (10 SAE instruments unreadable) | **Yes** (public regulatory record; DERIVED-judgemental, two language-model raters) | §B.1's arrival process is counted and real; its excess over a quiet domain is 2–4×, not "no such process elsewhere"; the stack-forcing events are five large acts |
 | **DC2** | What window and excursion allowance do real large-load power specs use; is any shaped so that seconds of history would pay? | **UNGATED** (identification 0.52 < 0.80; κ(window) 0.64). Exploratory: binding real-power-variation limits found are `hard`, except ERCOT §6.5.7.11 (PCLR ramp, one-minute intervals, 10 % may fail), read identically by both raters; gray-boxed, registration-scoped, at the 60 s class edge | No (UNGATED; public documents, DERIVED-judgemental) | The last data-centre leg gets no reading; no spec found that makes DC1's 0.5 % sensitivity the real case |
+| **DC2-R** | DC2 re-rated by fresh raters with row granularity fixed in advance; DC1b declared if a history-shaped spec gates | **UNGATED** (identification 0.72 < 0.80, on coverage and quantity naming; κ(window) 1.00; deciding rows 0.81, every class agreed). Exploratory: ERCOT §6.5.7.11 again the only history-shaped binding clause, identical in both files | No (UNGATED; public documents, DERIVED-judgemental) | DC1b is not run; the data-centre anticipation leg closes on DC2-R |
 
 Earlier, from the programme proper: **X2-F** (per-cell R is stable and removes margin at the top of charge: κ 1.10 vs
 1.35–1.45, min/max's margin does not transfer) and **X5/X6** (per-vehicle history does not beat a frozen fleet model on
@@ -115,6 +116,10 @@ tidying:
 - **DC2-R** (optional, one session run): the same audit with a one-row-per-table convention fixed in advance. It would
   very probably gate, and would return HISTORY-SHAPED SPEC EXISTS on ERCOT §6.5.7.11 alone — a line usable on a slide
   only with its caveats (`results/DC2/review/README.md`). Not scheduled.
+  **Run 2026-11-11 ([`results/DC2R/results_DC2R.md`](../DC2R/results_DC2R.md)): UNGATED** — identification 0.72;
+  the granularity fix worked on the deciding rows (0.81, every class agreed), and the gap moved to coverage of large
+  documents and quantity naming. DC1b is not run; the leg closes on DC2-R. ERCOT §6.5.7.11 was again the only
+  history-shaped binding clause, recorded identically by both raters.
 - **O1 / R1** (code; tier-neutral or secondary): close the audit items; test learned telemetry reduction under a
   budget. Neither moves the thesis.
 - **A second quiet comparison domain for L1** (lighting or wipers, say) if the 3× ratio is ever to be settled: the

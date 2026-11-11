@@ -226,6 +226,18 @@ no public support; what remains Tier-A-specific here is the software (telemetry,
 the storage element's BMS) and whatever the customer's own ramp contract says. A DC2-R is available on request, not
 scheduled. The programme is closed out in SYNTHESIS §7.
 
+**Note, 2026-11-11: DC2-R re-rated the same 56 instruments** ([`results/DC2R/results_DC2R.md`](../DC2R/results_DC2R.md)),
+with row granularity fixed in advance and DC1b declared as the follow-on.
+
+- **Verdict (pre-registered): UNGATED.** Identification 0.72 < 0.80; κ(window) 1.00. On the rows that decide,
+  identification was 0.81 and the two fresh raters agreed on every class of all 23 binding deciding pairs; the gap
+  moved to coverage (clauses in the very large ERCOT and GB documents rated by one rater only, and voltage unbalance)
+  and to the quantity named on four clauses.
+- **Consequence (pre-registered): no reading; DC1b is not run, and the anticipation leg closes on DC2-R.**
+- **Exploratory.** The same picture as DC2: binding limits on real-power variation are `hard` or state no window,
+  except ERCOT §6.5.7.11 (PCLR one-minute-average ramp band, 10 % of intervals may fail, awaiting implementation),
+  recorded identically by both raters.
+
 ### B.3 Event-triggered retention: the one place DRAM is physically necessary
 
 **Mechanism.** Keep a rolling window of raw or lightly decimated converter and pack telemetry resident; on a trigger
