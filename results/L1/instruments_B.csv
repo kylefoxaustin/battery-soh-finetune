@@ -59,3 +59,6 @@ S14,partial,openstd.samr.gov.cn metadata and catalogue list,"GB 14167-2024 dated
 S16,partial,openstd.samr.gov.cn metadata and catalogue list,only 2009 edition (now abolished): no events in window
 S06,full,unece.org (HTTP 403 Cloudflare); documents.un.org ECE/TRANS/WP.29 session reports 1120-1192 (AC.1 vote tables) and adopted proposal documents,"R129 acts concern child restraint products (incl. CRS-side warning options): no events; Corr. 2016/104, 2019/58, 2019/59 not retrievable"
 B33,full,eCFR versioner 571.305; Federal Register API and full texts,2 events; 84 FR 44254 (connector clarification) and 90 FR 9609 (delay) not events
+B01,full,EUR-Lex ALL page (modified-by list); Publications Office SPARQL; EUR-Lex texts,1 event (base act)
+B21,full,IEC webstore publication pages (lifecycle and abstract with change list),"1 event; COR1:2016 content not shown (corrigendum, not counted)"
+S23,none,"sae.org standard page (AWS WAF challenge, script-only shell); not bypassed",no body-published history reachable by an allowed route
