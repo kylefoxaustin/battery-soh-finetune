@@ -1,0 +1,52 @@
+act_id,domain,stack,confidence,note
+32023R1542,B,yes,high,BMS must hold SoH/expected-lifetime parameters with read-only access and a software reset; battery passport identifier: data retention and access
+32024R1257,B,yes,high,on-board monitoring and environmental vehicle passport data the vehicle must store and expose; durability monitors
+32025R1706,B,yes,medium,constraints on software/calibration updates that affect battery-durability data and duty to disclose them: data-integrity / update obligation on the battery data
+32025R1707,B,yes,high,"OBM data storage, OBD access and over-the-air transmission to manufacturer servers with R155 cybersecurity; EVP communication"
+32026R1764,B,no,medium,"methods, requirements and tests for in-vehicle battery durability and in-service conformity: monitor/test changes"
+GTR22,B,yes,medium,SOCE/SOCR monitors whose values must be readable from the vehicle: data access
+GTR22-A1,B,yes,low,monitor families and in-use verification are tests; Part C verification of reported virtual distance implies a data element the vehicle reports; judged from what_changed
+R100-03,B,no,high,"warnings (REESS control failure, thermal event, propagation), low-energy warning, isolation monitoring: monitoring/warning functions"
+R100-03-S4,B,no,high,scope extension to category O trailers
+R100-04-S1,B,no,high,scope extension to category O trailers
+R100-05,B,no,medium,"thermal-propagation verification and warning logic; REESS-vehicle communication compatibility is in-vehicle, not external"
+R100-03-S5,B,no,high,"warning condition rewording, display definition, documentation"
+R100-04-S2,B,no,high,same changes as 03-S5
+R100-04-S3,B,no,medium,trailer may (permission) signal warnings to towing vehicle via ISO 11992-2 CAN; not an obligation
+R100-05-S1,B,no,medium,warnings passed as an in-vehicle logic signal to the ADS
+R155-00,B,yes,high,"CSMS and Annex 5 mitigations (secure communication, cryptographic protection, protection of external interfaces incl. charging) bind the connected battery/charging ECUs"
+R155-00,S,yes,medium,"vehicle-type cybersecurity obligations apply to every connected or updatable ECU, incl. seat/occupant ECUs (L-1)"
+R155-00,L,yes,medium,"vehicle-type cybersecurity obligations apply to every connected or updatable ECU, incl. lamp/ADB controllers (L-1)"
+R155-00-S1,B,no,high,legacy relief / transitional dates only
+R155-00-S1,S,no,high,legacy relief / transitional dates only
+R155-00-S1,L,no,high,legacy relief / transitional dates only
+R155-00-S2,B,no,low,"authenticity checks named for V2X/GNSS received messages, not for charging communication"
+R155-00-S2,S,no,medium,V2X/GNSS message authenticity does not reach the seat ECU
+R155-00-S2,L,no,medium,V2X/GNSS message authenticity does not reach the lamp controllers
+R155-00-S3,B,no,medium,scope extension to category L vehicles with legacy relief
+R155-00-S3,S,no,medium,scope extension to category L vehicles
+R155-00-S3,L,no,medium,scope extension to category L vehicles
+R156-00,B,yes,high,"secure and safe (authenticated) software update process, SUMS, RXSWIN for updatable ECUs"
+R156-00,S,yes,medium,authenticated software-update obligation applies to any updatable seat/occupant ECU
+R156-00,L,yes,medium,authenticated software-update obligation applies to any updatable lamp controller
+R156-01,B,yes,medium,dedicated RXSWIN per affected UN approval (e.g. R100) that must be readable; no update without RXSWIN
+R156-01,S,yes,medium,RXSWIN per UN approval affected by software (e.g. R16 SBR) readable from vehicle
+R156-01,L,yes,medium,RXSWIN per UN approval affected by software (e.g. R48) readable from vehicle
+GB/T 32960.1-2016,B,yes,low,EV remote service and management system (telemetry to platform); catalogue title only
+GB/T 32960.1-2025,B,yes,low,revised remote service system general principles (telemetry); catalogue title only
+GB/T 32960.2-2016,B,yes,medium,on-board terminal of the remote service system: transmission off-vehicle; catalogue title only
+GB/T 32960.2-2025,B,yes,medium,revised on-board terminal requirements (telemetry); catalogue title only
+GB/T 32960.3-2016,B,yes,medium,communication protocol and data format for remote telemetry; catalogue title only
+GB/T 32960.3-2025,B,yes,medium,revised telemetry communication protocol and data format; catalogue title only
+GB/T 27930-2023,B,yes,high,digital communication protocol between off-board charger and EV: external charging communication protocol
+GB 44495-2024,B,yes,low,"mandatory vehicle cybersecurity technical requirements; content not readable, cryptographic/secure-communication obligations implied by subject"
+GB 44495-2024,S,yes,low,vehicle-level cybersecurity requirements bind connected/updatable ECUs incl. seat ECUs; content not readable
+GB 44495-2024,L,yes,low,vehicle-level cybersecurity requirements bind connected/updatable ECUs incl. lamp controllers; content not readable
+GB 44496-2024,B,yes,low,mandatory software-update requirements (secure update); catalogue entry only
+GB 44496-2024,S,yes,low,software-update requirements bind any updatable seat ECU; catalogue entry only
+GB 44496-2024,L,yes,low,software-update requirements bind any updatable lamp controller; catalogue entry only
+IEC 61851-1:2017,B,yes,medium,control-pilot sequences and proximity circuits: charging communication between EV and supply equipment
+IEC 61851-23:2023,B,yes,medium,bidirectional power transfer control and communication / energy-transfer process with DC EVSE (V2G)
+IEC 61851-24:2023,B,yes,high,DC charging digital communication (system A/B) between station and EV
+82 FR 44945,B,no,high,"isolation monitoring warning, shock protection during charging, drive-away prevention: monitoring/warning/hardware"
+89 FR 104318,B,no,medium,"REESS protection functions and warnings; documentation is a manufacturer submission (Part 561), not ECU data"
