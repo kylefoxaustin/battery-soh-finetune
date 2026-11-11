@@ -6,7 +6,25 @@ history pays (a 5× looser violation budget: SD 1.27×, W* 30 s) "is a reason to
 spec allows". Documentary; no compute; needs web access. The last data-centre leg of ANGLES §B.2. Same discipline as
 L1: fixed instrument list before reading any limit, closed extraction fields, two blind raters, κ-gated.
 
-> ## ▶ START HERE (first stage: pre-registration and the fixed instrument list only, then STOP)
+> ## ▶ START HERE — stage 1 APPROVED (reviewer, 2026-11-10, `60f7595`); stage 1b then stage 2
+>
+> **Approved with deviations DC2-1 and DC2-2**, written into
+> [`results/DC2/DC2_preregistration.md` §10](../../results/DC2/DC2_preregistration.md) before any limit is read:
+>
+> - **DC2-1** grid-operator documents cited by a listed instrument or an S1 locator are listed **by title** (data
+>   centres / large loads / computational loads + connection or technical requirements) whatever they were cited
+>   for — the AESO, IESO, Fingrid, SPP and similar guides the screener met through the OCP LVDC white paper are
+>   re-screened under that rule as group **X** (additions, excluded by SEED; access threshold unchanged). The
+>   screener's DC2-S14 reading of the *citations* (ride-through, non-deciding) is upheld.
+> - **DC2-2** an event-count allowance that prints both a recurrence and a duration is converted to a share
+>   (duration / recurrence) and classified by the §2 bands; otherwise `event count` stays `cannot judge`.
+>
+> **Order:** stage 1b (fresh-context screener applies DC2-1; commit "before reading"; no second approval needed) →
+> `analysis/DC2_agreement.py` with self-test on `main` before any rater branch → rater prompt → rater A → rater B →
+> merge, run, `results/DC2/results_DC2.md`, `dc2.json`, index rows, dated notes under ANGLES §B.2 and SYNTHESIS →
+> `NEXT_TASK.md` Status `AWAITING APPROVAL <hash>`. Details in `NEXT_TASK.md`.
+>
+> ## ▶ START HERE (first stage: pre-registration and the fixed instrument list only, then STOP) (superseded: done at `60f7595`)
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief, ANGLES §B.2 and §C.2, `results/DC1/results_DC1.md` §1 and the sensitivities table, and

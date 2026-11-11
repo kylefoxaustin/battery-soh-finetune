@@ -515,3 +515,65 @@ the screener's deviations DC2-S1 … S14 are listed there.
    gap white paper), acer.europa.eu, ena-eng.org, vde-verlag.de, NVIDIA's asset CDN, and the utilities' and
    commissions' own sites. Raters source requirements only from the body's own site (§3 S4); ENA, ACER, VDE Verlag and
    the commission dockets are the publishing bodies of the documents concerned.
+
+---
+
+## 10. Reviewer approval and deviations DC2-1, DC2-2 (2026-11-10, stage 1 → stage 2; before any limit is read)
+
+Stage 1 (`60f7595`) is **approved**. The reviewer checked: the 53 instruments carry no limit value, window or allowance
+(regex scan of `DC2_instruments.md` and `DC2_screen.json` for rate units, percentiles, Pst / Plt values and
+percent-of-rating phrases: none); the only figures in the table are applicability thresholds, titles and scope
+descriptions, which §3 S2 allows; the two rating orders reproduce from `default_rng(31)` / `default_rng(32)` over the
+53 sorted IDs; the screener's accidental exposures DC2-S2 (a)–(g) are disclosed, drove no inclusion, and the screener
+is not a rater; the three S3 additions each carry the citing clause and the three tests. The pending rule (§1), the
+rate-unit rule, the `hard` default and the shape table are accepted as written. **DC2-S14 is upheld as a citation
+judgement and corrected as a listing omission (DC2-1).** These deviations bind the screener's stage 1b and both raters.
+
+### DC2-1. Cited grid-operator documents are listed by title (stage 1b, before any limit is read)
+
+The brief's seed table is US- and EU-centric; that was the reviewer's omission, not a design choice. The S1 locators
+cite connection requirements of other grid operators for data-centre and large-load sites, and the screener excluded
+them because the *citing sentences* concerned ride-through, post-fault active-power recovery and RoCoF — a correct
+reading of §2 (`ride-through` is a non-deciding quantity) but the wrong test for whether the *document* is an
+instrument this audit should read. A document's title is content-independent, so:
+
+- **Rule.** A document of a grid operator, TSO, ISO / RTO or energy regulator that is cited by a listed instrument or
+  by an S1 locator — whatever it was cited for — is listed when its **title** names data centres, large loads, large
+  demand facilities, (large) computational loads or high-impact loads **together with** connection, interconnection,
+  technical or performance requirements. The test is on the title alone; a document that fails it is not listed
+  however relevant its content is said to be (brief §7 stands).
+- **Who and how.** A fresh-context screener (the stage-1 prompt plus this section) applies the rule to every citation
+  already recorded in `DC2_screen.json` — at least the OCP DCF LVDC white paper's AESO, EirGrid / SONI, Energinet, RTE,
+  Fingrid, SPP, IESO and ATC entries — and runs §3 S2 on each candidate (landing page on the body's own site, exact
+  title, scope ≤ 3 sentences, access, status). It reads no limit, window or allowance. Each candidate's pass / fail on
+  the title test is logged in `DC2_instruments.md` §5.
+- **Listing.** Added instruments form group **X: other grid operators** (`X01` …), `origin = DC2-1`. They are
+  additions, not seeds: the **SEED** sensitivity excludes them with the S3 additions, and the access threshold stays
+  **≥ 17 of the 50 seed instruments**. `DC2_orders.json` is regenerated with the same seeds over the extended sorted
+  ID list. The stage-1b commit carries "before reading" in its message.
+- **Disclosure.** The screener saw, in one web-search summary, a third-party paraphrase of one AESO limit (DC2-S2 (f)).
+  This rule is written so that the AESO guide is listed on its title alone; it would be listed had nothing been seen.
+  The stage-1b screener is a fresh context.
+
+### DC2-2. Event-count allowances with a stated duration are converted to a share
+
+The shape table reads `1 – 60 s` with an `event count` allowance as `cannot judge`, because DC1's budget is a share of
+samples. When a clause prints **both** a permitted recurrence (a frequency, or a minimum interval between exceedances)
+**and** a maximum duration of each exceedance, the share is defined: *a* = duration / recurrence interval. Then:
+
+- `allowance_class` is set from *a* by the §2 bands (`tight` / `loose` / `very loose`); `allowance_as_printed` keeps
+  the printed form; `note` records the arithmetic;
+- the window is the printed duration unless the clause states an assessment interval;
+- when only one of the two is printed, `event count` stays and the shape is `cannot judge`.
+
+Both raters apply this rule; a disagreement on the conversion is a disagreement on allowance class and is listed.
+
+### Stage 1b and stage 2 order (binding)
+
+1. **Stage 1b (screener, fresh context):** DC2-1; commit `DC2_instruments.md`, `DC2_screen.json`, `DC2_orders.json`
+   with "before reading"; no approval round-trip is needed — the reviewer checks the additions with the results.
+2. `analysis/DC2_agreement.py` with a synthetic self-test, committed on `main` before either rater branch exists
+   (§8); it implements §5–§6 with DC2-2 and the group-X additions in FULL / SEED.
+3. The rater launch prompt, committed before rater A starts.
+4. Rater A (`dc2-rater-a`), then rater B (`dc2-rater-b`), as §7; conventions committed before reading.
+5. The rest as §8.
