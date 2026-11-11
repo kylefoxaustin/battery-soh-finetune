@@ -6,7 +6,19 @@ comparison domain … the seat domain gave eight specific events, too few to pin
 two-rater two-branch procedure and gates as [`briefs/L1/README.md`](../L1/README.md) and
 `results/L1/L1_preregistration.md` (with its §9 deviations L-1 … L-5). Kyle chose this leg on 2026-11-11.
 
-> ## ▶ START HERE (first stage: pre-registration and the fixed instrument list, then STOP)
+> ## ▶ APPROVED (reviewer, 2026-11-11, `7c3896c`) — stage 2 runs straight through to results
+>
+> Approved with one deviation, **L1B-D1** (pre-registration §10): the share clause of NOT STACK-SPECIFIC fires only
+> when n_L ≥ 10; the k_L ≥ 2 clause is unchanged. The session's five choices are accepted: B events rebuilt by script
+> from the L1 ledgers (35, identity + `what_changed` only); three `stack_B` rows per vehicle-level event (rated for the
+> B, S and L ECU); "never twice" within a domain; calibration numbers masked from the rater-visible file; table order.
+> Lighting list 22 seeds + 25 additions, fixed blind; S list carried over; orders reproduce. Order: `analysis/
+> L1B_agreement.py` with self-test on `main` before any branch → prompt (L1's + stack instructions, diff committed) →
+> rater A → rater B → merge, run, `results/L1B/results_L1B.md` (both verdicts first, calibration, consequences),
+> `l1b.json`, index rows, dated notes under ANGLES §B.1, SYNTHESIS and POSITION → `NEXT_TASK.md` Status
+> `AWAITING APPROVAL <hash>`.
+>
+> ## ▶ START HERE (first stage: pre-registration and the fixed instrument list, then STOP) (superseded: done at `7c3896c`)
 >
 > 1. `git pull` on `main`.
 > 2. Read this brief, `results/L1/L1_preregistration.md` (§1–§9: the procedure reused), `results/L1/L1_instruments.md`

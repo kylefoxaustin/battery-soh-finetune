@@ -1,45 +1,55 @@
 # ▶ NEXT TASK: read this first, then do it. No other prompt is needed.
 
-**Updated:** 2026-11-11 (evening, later). **Owner of this file:** the reviewer. The running session only *reads* it,
-except for the Status line.
+**Updated:** 2026-11-11 (late). **Owner of this file:** the reviewer. The running session only *reads* it, except for
+the Status line.
 
-**Kyle chose option 2: a second comparison domain for L1.** Brief: [`briefs/L1B/README.md`](briefs/L1B/README.md) —
-exterior lighting as domain L, the seat domain re-rated as a calibration, the battery ledger carried over from L1, and
-the stack-forcing class pre-registered and rated blind on all three domains. Plan:
-[`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/README.md).
+**Previous task — L1b stage 1: APPROVED at `7c3896c`** with deviation L1B-D1, written into
+[`results/L1B/L1B_preregistration.md` §10](results/L1B/L1B_preregistration.md). Read §10 first.
 
-## Do these steps, in order (L1b stage 1: pre-registration and the fixed lists, then STOP)
+## Do these steps, in order (L1b stage 2, straight through)
 
-1. `git pull` on `main`.
-2. Open [`briefs/L1B/README.md`](briefs/L1B/README.md) and follow its START HERE box. **Do not open**
-   `results/L1/ledger_A.csv`, `ledger_B.csv`, `rater_A_notes.md`, `rater_B_notes.md` or `l1.json` by eye in the
-   session that will launch the raters; `analysis/L1B_b_events.py` reads `l1.json` by script and writes
-   `results/L1B/B_events.csv` with the identity and `what_changed` columns only (brief §4).
-3. Write `results/L1B/L1B_preregistration.md`: L1's procedure by reference (§1–§9, L-1 … L-5), the three domains and
-   their treatment (brief §2), the `stack` class (brief §3), the files and clone contents (brief §4), every readout and
-   both decision tables with thresholds (brief §5), the calibration rule, the orders (`default_rng(51)` / `(52)` over
-   the sorted S and L instrument IDs), branches `l1b-rater-a` / `l1b-rater-b`, and a disclosure of what the launching
-   session has read.
-4. Write `results/L1B/L1B_instruments.md`: the lighting list built by a fresh-context screener under the L1 §3
-   protocol (titles and scope only; additions by the normative-reference rule; access logged; nothing about any
-   instrument's change history read), seeded from brief §6; plus S01–S26 carried over verbatim from
-   `results/L1/L1_instruments.md`. Commit the screen record and prompt beside it.
-5. Commit with "before reading" in the commit message.
-6. Set the Status line below to `AWAITING APPROVAL <commit-hash>`, push, and stop.
+1. `git pull` on `main`. Read `results/L1B/L1B_preregistration.md` in full, §10 included.
+2. **Analysis first.** Write `analysis/L1B_agreement.py` and commit it on `main` **before any rater branch exists**:
+   L1's script extended — domains S and L; matching (L-4) within `instrument_id`; the three gates (identification over
+   S + L seeds; κ on the four classes over matched S + L pairs; κ on `stack` over matched S + L pairs plus the 51
+   `stack_B` rows joined on `act_id` + `domain`); the calibration readout against L1's committed files (N_S1 and E_S1
+   computed by L1's functions, never typed in); N_L, N_S, R_BL, R_BS with intervals; V1, V0, FULL, CN0, ACC; per-year
+   tables; classes with CIs; the stack readouts (specific events, conservative `yes`, judged denominators, shares with
+   Wilson CIs, vehicle-level stack counts per domain, one-sided Fisher B vs L); both decision tables **with L1B-D1**
+   (share clause only when n_L ≥ 10) and the access qualifier (L: ≥ 8 of 22 seeds `none`); every unmatched event, class
+   disagreement and stack disagreement listed; `results/L1B/l1b.json`. Run it on small synthetic ledgers you write
+   yourself (commit them under `analysis/L1B_selftest/`) that exercise calibration pass / fail, both verdict tables,
+   L1B-D1 and the access branch; then commit.
+3. **Launch prompt.** `results/L1B/L1B_rater_prompt.md` = `results/L1/L1_rater_prompt.md` with mechanical
+   substitutions plus the `stack` and `stack_B` instructions of the pre-registration §3–§4; commit it **with its diff
+   against L1's prompt** (`L1B_rater_prompt.diff`) on `main`. It names the five clone files and nothing about any
+   instrument's content, event, count or expected direction.
+4. **Rater A** on `l1b-rater-a`: a new fresh-context sub-agent in a sparse clone of `main` containing exactly
+   `results/L1/L1_preregistration.md`, `results/L1B/L1B_preregistration.md`, `results/L1B/L1B_instruments.md`,
+   `results/L1B/L1B_orders.json`, `results/L1B/B_events.csv`; conventions committed before any change history is read;
+   order A for S and L, then the `stack_B` rows in `B_events.csv` order. Outputs `ledger_A.csv`, `stack_B_A.csv`,
+   `instruments_A.csv`, `rater_A_notes.md`; push. Do not read them.
+5. **Rater B** the same on `l1b-rater-b` with order B, launched after A's branch is pushed, never fetching it; push.
+6. **Merge** both branches, run the script, write `results/L1B/results_L1B.md`: both verdict lines first (count and
+   kind) with the calibration result and the consequences stated beside them; the gates with the D-3 disclosure; the
+   per-year tables; the stack table per domain; the sensitivities; the access table; every disagreement; the §8
+   exposure disclosure repeated. Then `l1b.json`, the index rows (`results/X/README.md`, `results/RESEARCH_DOSSIER.md`),
+   and dated notes under ANGLES §B.1, SYNTHESIS §1 / §3 and POSITION §1 (numbers from `l1b.json`; POSITION's first
+   sentence is rewritten only if the kind verdict says so, and then by the reviewer).
+7. Any departure after a rater has read a change history is a numbered deviation L1B-D2, … in `results_L1B.md`; none
+   of the §9 items may move.
+8. Set the Status line below to `AWAITING APPROVAL <commit-hash>`, push, and stop.
 
 ## Rules that always apply
-- The instrument list is fixed from titles and scope only; additions only by the pre-registered rule, logged.
-- Sources are the publishing body's own texts or summaries; trade press and search listings locate, never source.
-  No bypassing; `none` is a recorded result.
-- Two blind raters, fresh contexts, sparse clones with the five files named in the brief §4 and nothing else; the
-  analysis script is committed before either branch exists; gates as the brief §5, or UNGATED; disagreements
-  reported, never reconciled.
-- Every event SOURCED; every class DERIVED-judgemental; both raters are language-model sessions and the write-up
-  says so. No dollar figures.
+- No bypassing; `none` is a recorded result. Sources are the publishing body's own texts or summaries.
+- Two blind raters, fresh contexts, sparse clones with the five files only; the analysis script is committed before
+  either branch exists; the three gates, or UNGATED; disagreements reported, never reconciled.
+- Every event SOURCED; every class and every `stack` value DERIVED-judgemental; both raters are language-model
+  sessions and the write-up says so. No dollar figures.
 - Do not start any experiment this file does not name.
 
 ## When you finish
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** AWAITING APPROVAL 7c3896c (L1b stage 1: pre-registration, lighting list 47 / 22 seeds, seat list carried over, B_events.csv 35 by script, before reading; launching-session exposure disclosed §8; five points for the reviewer §8; screen disclosures §3b)
+**Status:** OPEN (L1b stage 2: analysis script, prompt, two fresh blind raters, results)

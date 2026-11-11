@@ -319,3 +319,30 @@ moves:
    on title alone. Their scope could not be read, so they are not added.
 4. **Lamp-device regulations.** Most additions are UN device regulations (lamps, light sources, reflex reflectors).
    They are rated under the same event definition and enter FULL only.
+
+---
+
+## 10. Reviewer approval and deviation L1B-D1 (2026-11-11, stage 1 → stage 2; before any change history is read)
+
+Stage 1 (`7c3896c`) is **approved**. The reviewer checked: `B_events.csv` carries 35 rows with identity and
+`what_changed` only (no class, confidence or note), 8 of them vehicle-level, 16 instruments, matching L1's accepted
+primary; the orders reproduce from `default_rng(51)` / `default_rng(52)` over the 73 sorted S and L IDs; the lighting
+list has 22 seeds and 25 one-level additions, each addition with its citing instrument, and no row carries an
+amendment, series, supplement or date; the S list is L1's verbatim; the screener's exposures (L1B-S7, L1B-S8) and the
+session's own (edition years removed from 14 GB identifiers) are disclosed and reach no inclusion decision; the clone
+is five files with no brief and no L1 ledger. **The five points of §8 are accepted as chosen** (B events by script;
+three `stack_B` rows per vehicle-level event; "never twice" within a domain; calibration numbers masked from the
+rater-visible file; table order for the kind verdict), with one amendment:
+
+### L1B-D1. The share clause of NOT STACK-SPECIFIC applies only when n_L ≥ 10
+
+With few judged lighting events the share k_L / n_L is noise (one stack event in two is 50 %). The clause
+"(n_L > 0 and k_L / n_L ≥ k_B / n_B)" is replaced by "(n_L ≥ **10** and k_L / n_L ≥ k_B / n_B)". The count clause
+k_L ≥ 2 is unchanged. With this, the §5 overlap cannot occur (k_L ≤ 1 with n_L ≥ 10 gives a share ≤ 0.10, below any
+k_B ≥ 3 of 27), so the table order no longer decides anything; it is kept as written. Shares and Fisher's test are
+reported regardless.
+
+**Launch prompt.** L1's committed prompt with mechanical substitutions, plus the `stack` / `stack_B` instructions of
+§3–§4 copied in, naming no instrument's content, event, count or expected direction; its diff against L1's prompt is
+committed with it. **Stage 2 runs straight through** to `AWAITING APPROVAL` on the results.
+
