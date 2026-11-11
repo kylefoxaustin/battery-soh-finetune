@@ -138,6 +138,14 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > thesis), a second quiet L1 domain, or a customer-facing position paper built from the licence-clean results (SYNTHESIS
 > §6 lists what may go on a slide).
 
+> **Status 2026-11-11 (afternoon). Kyle: keep going.** Scheduled: **DC2-R** (brief
+> [`briefs/DC2R/README.md`](../DC2R/README.md)) — the same 56 instruments re-rated by fresh raters with granularity
+> fixed in advance (non-deciding quantities one row per clause; deciding quantities one row per table row; supply
+> envelopes `other`; planning-level step tables deciding; adopted-awaiting-implementation text in force) — and, declared
+> now, **DC1b** if DC2-R returns HISTORY-SHAPED SPEC EXISTS: DC1's model re-run on the whole trace under the named
+> clause (one-minute-average ramp band, 10 % of intervals may fail). Then the customer-facing position paper from the
+> licence-clean results. Order: DC2-R → (DC1b) → position paper; O1 / R1 remain unscheduled.
+
 ---
 
 ## 1. How the reviewer starts one

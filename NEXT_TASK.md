@@ -1,36 +1,39 @@
 # ▶ NEXT TASK: read this first, then do it. No other prompt is needed.
 
-**Updated:** 2026-11-11. **Owner of this file:** the reviewer. The running session only *reads* it, except for the
-Status line.
+**Updated:** 2026-11-11 (afternoon). **Owner of this file:** the reviewer. The running session only *reads* it, except
+for the Status line.
 
-**Previous task — DC2: DONE at `af74b0e`, reviewed and accepted as UNGATED** (identification 0.52 < 0.80 on row
-granularity of non-deciding rows; κ(window) 0.64; every number re-derived by the reviewer from the four rater files,
-`results/DC2/review/`). Documentary reading carried into SYNTHESIS with the gate failure beside it: no public spec has
-the shape in which history pays at the rack; the data-centre anticipation leg is closed on public evidence.
+**Previous task — DC2: DONE at `af74b0e`, accepted as UNGATED** (row granularity; every number re-derived,
+`results/DC2/review/`). Kyle chose to keep going: **DC2-R**, the same audit with granularity fixed in advance, with
+**DC1b** declared as its follow-on. Brief: [`briefs/DC2R/README.md`](briefs/DC2R/README.md). Plan:
+[`briefs/NEXT_EXPERIMENTS/README.md`](briefs/NEXT_EXPERIMENTS/README.md).
 
-## The programme is closed out
+## Do these steps, in order (DC2-R stage 1: pre-registration only, then STOP)
 
-Every leg the public record can carry has been run: X7, B1, DC1, FR1 / FR1-R, X8, L1, DC2 (and X2-F, X5 / X6 before
-them). [`results/OPEN_PROBLEM/SYNTHESIS.md`](results/OPEN_PROBLEM/SYNTHESIS.md) §7 carries the position to take to the
-customer; §6 lists what may go on a slide. **Nothing is scheduled. Do not start an experiment.**
-
-## Options Kyle may choose (each needs his word; the reviewer will then write the brief or NEXT_TASK)
-
-1. **DC2-R** — the ramp-spec audit re-run with a one-row-per-table / one-row-per-curve convention fixed in the
-   pre-registration (`results/DC2/review/README.md`, lessons). One session run; would very probably gate; the
-   expected verdict is HISTORY-SHAPED SPEC EXISTS on ERCOT §6.5.7.11 alone, which carries caveats that limit its use.
-2. **A customer-facing position paper** built only from licence-clean results (B1, DC1, FR1-R, L1, convsim / lifecost
-   with ASSUMED inputs stated; nothing computed on Changan): the SYNTHESIS §7 position with its numbers and sources.
-   The reviewer can draft it from the repo; Kyle decides the audience and format.
-3. **O1 / R1** — code-level audit items (shrunken offset + label fix; learned telemetry reduction under a budget).
-   They do not move the thesis.
-4. **A second quiet comparison domain for L1** (lighting or wipers) to pin the battery / seat ratio.
+1. `git pull` on `main`.
+2. Open [`briefs/DC2R/README.md`](briefs/DC2R/README.md) and follow its START HERE box. **Do not open any DC2 rating
+   file** (`results/DC2/requirements_*.csv`, `rater_*_notes.md`, `results_DC2.md`, `dc2.json`, `dc2_selftest/`) in
+   the session that will launch the raters. Read `results/DC2/DC2_preregistration.md` and
+   `results/DC2/review/README.md`.
+3. Write `results/DC2R/DC2R_preregistration.md`: DC2's pre-registration carried over by reference; rules
+   DC2R-1 … DC2R-4 written out exactly as the brief §3 states them; thresholds, gates, shape table, decision table and
+   consequence line unchanged; the instrument list unchanged (56); orders `default_rng(41)` / `default_rng(42)` in
+   `results/DC2R/DC2R_orders.json`; branches `dc2r-rater-a` / `dc2r-rater-b`; the brief §4 DC1b declaration copied in;
+   and a disclosure of what the launching session has read.
+4. Commit with "before rating" in the commit message; set the Status line below to `AWAITING APPROVAL <commit-hash>`;
+   push; stop.
 
 ## Rules that always apply
-- Do not start any experiment this file does not name.
-- If a result file is edited for any reason, the reviewer re-derives it before it is cited.
+- No bypassing; `none` is a recorded result. Sources are the publishing body's own pages.
+- Two blind raters, fresh contexts, sparse clones; the analysis script is committed before either branch exists;
+  κ ≥ 0.6 on the window class (over M₁) and ≥ 80 % identification agreement, or UNGATED; disagreements reported,
+  never reconciled.
+- Every requirement SOURCED; every class DERIVED-judgemental; both raters are language-model sessions and the
+  write-up says so. No dollar figures.
+- Do not start any experiment this file does not name. DC1b waits for the reviewer's acceptance of DC2-R.
 
 ## When you finish
-Nothing to run. Leave the Status line as it is unless Kyle names an option; then the reviewer rewrites this file.
+Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
+and push.
 
-**Status:** CLOSED (programme close-out; no task scheduled; options 1–4 above await Kyle's choice)
+**Status:** OPEN (DC2-R stage 1: pre-registration, before rating)
