@@ -46,4 +46,4 @@ written into [`results/DC2R/DC2R_preregistration.md` §9](results/DC2R/DC2R_prer
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN (DC2-R stage 2: rules file, analysis script, prompt, two fresh blind raters, results)
+**Status:** AWAITING APPROVAL 5883669 (DC2-R: UNGATED, identification 0.72 < 0.80 on coverage and quantity naming; kappa(window) 1.00; deciding rows 0.81, every class agreed; DC1b not run, leg closes on DC2-R; exploratory: ERCOT §6.5.7.11 again the only history-shaped binding clause)
