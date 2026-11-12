@@ -281,3 +281,64 @@ written procedure.
 - L14 GB 4599-2024 (2024-09-29): road illumination devices and systems.
 - L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
   and systems).
+
+## 4. Blocked routes (not bypassed)
+
+- **unece.org**: HTTP 403 on the WP.29 addenda pages. I used the UN Official Document System instead
+  (documents.un.org/api/symbol/access): session agendas and reports, proposal texts, GRE/GRSP reports and base
+  documents.
+- **sae.org standards pages**: an AWS-WAF captcha. I used saemobilus.sae.org product pages (SAE's own catalogue), with
+  the slug pattern `/standards/<code>_<yyyymm>-<title-words>`.
+  - Found: J1383, J3069, J578, J826.
+  - Not found: J800, so access `none` (one false hit, a generic page, rejected).
+- **iso.org (incl. OBP)**: HTTP 403 Cloudflare challenge. I used ISO's own open-data deliverables metadata
+  (isopublicstorageprod.blob.core.windows.net/opendata, published by ISO) for identifiers, dates and stages.
+- **SAMR full texts (GB)**: behind an interactive verification step, not attempted. Only catalogue metadata from
+  std.samr.gov.cn (gbQueryPage search JSON and gbDetailed pages).
+- **ecfr.gov full-text API**: requires compressed transfer. Fetched with `--compressed`, which is not a bypass.
+
+## 5. Things I could not follow exactly, and what I did instead
+
+1. **Session 200 (November 2026).** Its agenda lists R148/R149 supplements (2026/184, /185, /214) and an R129
+   document. The session had not reported by the rating date, so no adoption could be observed and nothing from it is
+   recorded.
+2. **Proposal discovery** was by parsing the 32 annotated agendas, cross-checked against the AC.1 vote tables of the
+   32 reports. The parsing found a few gaps, which I closed by hand:
+   - R48 05-S11 (2017/106) was missing from the agenda parse.
+   - Several combined votes adopted two or three documents as one supplement: R50 Suppl. 20, R53 01-S20 and 02-S2.
+   - R148/R149/R150 had no 'No.' in their agenda titles.
+   A document on no agenda list and absent from every vote table would still be missed.
+3. **AC.1 supplement numbering.** Where the vote table's supplement number differs from the document's title, I used:
+   - the vote table for R53-02-S2, R53-01-S20 and R53-03-S3;
+   - the document title for R16-08-S2. The vote table says Suppl. 3, which collides with 2021/113's Suppl. 3. Noted
+     in the row.
+4. **Parallel documents** for different series of the same regulation are separate acts and separate rows (R48, R53,
+   R74). This inflates L counts relative to a one-change-one-event reading. I chose it in the conventions (1.1) before
+   any history was read.
+5. **Documents restating existing text.** When I could not judge from the amended text alone whether a restated
+   failure/tell-tale or switching clause was new, I read the GRE/GRSP base document's justification or the
+   session report. Corrections and clarifications were not counted. This changed one first-pass row: R149-01-S6 was
+   withdrawn before commit 2.
+6. **Class consistency revision** after instrument 37. I adopted a rule for optional new functions (notes item 37) and
+   changed R50-00-S18 from `software-only` to `hardware-or-recert`, `low`. No other earlier row needed changing.
+7. **stack_B.** Rated from each event's `what_changed` text only. No B source was re-read: the texts allowed a call in
+   every row, with a lower confidence where the summary was a catalogue title.
+   - For the vehicle-level acts, R155-00, R156-00, R156-01, GB 44495 and GB 44496 are rated `yes` for S and L. The
+     rule I applied: their update/cyber obligations reach updatable or networked ECUs of those domains.
+   - R155 supplements that change only relief, scope or V2X/GNSS threats are `no`.
+8. **Unrequested search output.** None. No web search engine was used. All locations came from catalogue pages,
+   ODS symbols, the Federal Register/eCFR APIs and the EU Publications Office SPARQL endpoint.
+
+## 6. Summary
+
+- Events: 86 (L 77, S 9).
+  - On seed instruments: L 44 (L01 34, L03 4, L20 2, L02 1, L06 1, L10 1, L12 1), S 8 (S02 5, S09 2, S08 1).
+  - On additions: L 33, S 1 (S18).
+- `stack` = `no` for every S and L event (86/86).
+- Access, all 73 instruments:
+  - L: `full` 36, `partial` 11, `none` 0.
+  - S: `full` 19, `partial` 6, `none` 1 (S25).
+- Access, seed instruments:
+  - L (22): `full` 12, `partial` 10, `none` 0.
+  - S (16): `full` 13, `partial` 3, `none` 0.
+- stack_B: 51 rows (27 non-vehicle-level B rows + 8 vehicle-level events x 3).
