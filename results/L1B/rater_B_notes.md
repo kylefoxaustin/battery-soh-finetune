@@ -122,4 +122,42 @@ access from outside the vehicle).
 
 ## 2. Per-instrument remarks
 
-(written as rating proceeds)
+Route used for all UN regulations: the UN Official Document System (documents.un.org). unece.org returned HTTP 403.
+The change history was built from the WP.29 annotated provisional agendas and session reports ECE/TRANS/WP.29/1119
+to /1193 (sessions 168, March 2016, to 199, June 2026; agenda of session 200 seen, not yet reported). Every proposal
+for a listed regulation was taken from the agenda lists, and its adoption and AC.1 vote date from the report's AC.1
+vote table. The proposal text (ECE/TRANS/WP.29/YYYY/NN, the version put to the vote) was then read. The adoption date
+is the AC.1 vote date. For the COVID-period sessions 181-188 this is the online AC.1 session date that closed the
+written procedure.
+`full` for a UN regulation means the agenda/report history plus the text of every adopted amendment was read.
+
+1. **L37 IEC 60809**: `partial`. Five editions/amendments in window. Ed. 4 abstract read: LED measurement and editorial,
+   so not an event. Amendments: catalogue titles only.
+2. **L09 R128**: `full`. Eight supplements, all light-source sheets, approval code, colour and LED-substitute provisions.
+   No event.
+3. **L42 R113**: `full`. Headlamp photometry, trade-name, 03-series freeze and R149 alternative. No event.
+4. **L07 R37**: `full`. Filament / LED-replacement light-source component provisions. No event. (2016/76, Suppl. 45,
+   has no AC.1 vote row in the report I parsed; not an event either way.)
+5. **L22 SAE J1383**: `partial` via saemobilus.sae.org (sae.org standards page served an AWS-WAF captcha, not
+   bypassed). One revision in window.
+6. **L12 FMVSS 108**: `full`. One event, the ADB final rule. Its malfunction-detection and fallback requirements are
+   the ECU-reaching part. Class `hardware-or-recert` because the option needs forward sensing and segmented control,
+   which a fielded non-ADB lamp controller lacks; `low`/`medium` judgement, recorded `medium`.
+7. **L18 GB 5920**: `partial` via the SAMR catalogue. GB 5920-2024 also replaces GB 17509-2008 and GB 23255-2019 (L17,
+   L16). It is not counted anywhere, so "never twice" does not arise.
+8. **S11 FMVSS 210**: `full`. No event.
+9. **S06 R129**: `full`. CRS product requirements only. No event.
+10. **L28 R23**: `full`. Supplement 21 counted: the multi-light-source failure provision with its tell-tale signal option.
+    This provision came in one GRE package across several device regulations, adopted in March 2017. Each regulation's
+    supplement is a separate WP.29 document, so a separate act, and each is counted under its own instrument.
+
+(continued below as rating proceeds)
+
+## 3. `unreadable edition` entries (L-3)
+
+- L37 IEC 60809:2014/AMD1:2017 (2017-03-29), /AMD2:2017 (2017-11-10), /AMD3:2019 (2019-03-29), IEC 60809:2021/AMD1:2023
+  (2023-11-08): catalogue titles name only light-source dimensional, electrical and luminous requirements.
+  (IEC 60809:2021, 2021-04-07: abstract read, not an event.)
+- L22 SAE J1383_201805 (2018-05-16): headlamp performance requirements; scope only.
+- L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
+  and systems).
