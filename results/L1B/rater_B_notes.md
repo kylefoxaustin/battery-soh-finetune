@@ -213,6 +213,20 @@ written procedure.
     seat was carried over from R14, so `software-only`, `low`.
 40. **L30 R77**: `full`. Suppl. 17 counted (failure tell-tale signal option).
 
+41. **L38 R53**: `full`. 19 events: ESS, ALU bend-lighting logic, courtesy lamp and anti-theft indicator status,
+    the 03 series (automatic passing beam, R78 stop-lamp signal), position-lamp-off with indicator, ADB/automatic
+    driving beam, RECAS, and AFS for L3. Where AC.1 adopted several documents as one supplement, I record one act
+    under the supplement number in the vote table.
+42. **L24 R4**: `full`. No event.
+43. **L36 R119**: `full`. Suppl. 5 counted (failure tell-tale signal option).
+44. **S22 FMVSS 202**: `full`. No amendment.
+45. **S23 SAE J826**: `partial`. J826_202106 is an unreadable edition.
+46. **L33 R98**: `full`. No event.
+47. **L16 GB 23255**: `partial`. GB 23255-2019 is an unreadable edition.
+48. **S15 GB 15083**: `partial`. GB 15083-2019 is an unreadable edition.
+49. **S03 R17**: `full`. No event. The 10, 11 and 12 series are mechanical or test changes (GTR 7 phase 2).
+50. **S21 R170**: `full`. No event. It is a CRS product regulation.
+
 (continued below as rating proceeds)
 
 ## 3. `unreadable edition` entries (L-3)
@@ -224,5 +238,8 @@ written procedure.
 - S14 GB 14167-2024 (2024-09-29, safety-belt and restraint-system anchorages).
 - L13 GB 4785-2019 (2019-12-17, installation of external lighting and light-signalling devices).
 - L21 SAE J578_201603 (2016-03-08), J578_201902 (2019-02-01), J578_202004 (2020-04-27): colour specification.
+- S23 SAE J826_202106 (2021-06-22): seating-accommodation measuring devices.
+- L16 GB 23255-2019 (2019-04-04): DRL photometry.
+- S15 GB 15083-2019 (2019-10-14): seat, anchorage and head-restraint strength.
 - L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
   and systems).
