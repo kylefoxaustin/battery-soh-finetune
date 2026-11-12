@@ -151,6 +151,24 @@ written procedure.
     This provision came in one GRE package across several device regulations, adopted in March 2017. Each regulation's
     supplement is a separate WP.29 document, so a separate act, and each is counted under its own instrument.
 
+11. **L47 49 CFR Part 564**: `full` (eCFR version list, FR API). No amendment in window.
+12. **L03 R149**: `full`. Events: R149-00 (first adoption), 01 series (ADB for L3, Driver Assistance Projection),
+    01-S3 (AFS for L3) and 01-S5 (failure-detection criteria). I first recorded 01-S6, then withdrew it. Its base
+    document GRE/2025/8 shows that it only renumbers para. 4.11. 00-S3 was checked against the original para. 4.13 and
+    only clarifies the wording.
+    **Lesson applied from here on:** where an amendment restates a failure or logic clause, I read the GRE base
+    document's justification before counting it.
+13. **S04 R25**: `full`. One supplement in window (H-point reference). No event.
+14. **L41 R50**: `full`. Sequential direction-indicator activation: Suppl. 18 (2016) and Suppl. 20 (2017). Suppl. 20
+    was adopted as two documents voted together (2017/80 and 2017/81).
+15. **S14 GB 14167**: `partial` via catalogue. GB 14167-2024 is an unreadable edition.
+16. **L05 R123**: `full`. No event. 01-S8 touched the failure-fallback clauses, but only to correct Emax to Imax
+    (justification in GRE/2016/29).
+17. **L17 GB 17509**: `partial`. No edition in window; replaced by GB 5920-2024.
+18. **S17 R80**: `full`. No event.
+19. **S01 R14**: `full`. No event.
+20. **L29 R38**: `full`. Suppl. 18 (failure tell-tale signal option) counted.
+
 (continued below as rating proceeds)
 
 ## 3. `unreadable edition` entries (L-3)
@@ -159,5 +177,6 @@ written procedure.
   (2023-11-08): catalogue titles name only light-source dimensional, electrical and luminous requirements.
   (IEC 60809:2021, 2021-04-07: abstract read, not an event.)
 - L22 SAE J1383_201805 (2018-05-16): headlamp performance requirements; scope only.
+- S14 GB 14167-2024 (2024-09-29, safety-belt and restraint-system anchorages).
 - L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
   and systems).
