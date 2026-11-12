@@ -189,6 +189,30 @@ written procedure.
     No edition in window.
 30. **S05 R44**: `full`. No event.
 
+31. **L26 R7**: `full`. Suppl. 26 counted (failure tell-tale signal option). Suppl. 25 is not counted: per its
+    justification (GRE/2016/12) it only documents an existing component requirement in the communication form.
+32. **L43 R1**: `full`. No amendment in window.
+33. **L32 R91**: `full`. Suppl. 16 counted (failure tell-tale signal option).
+34. **L21 SAE J578**: `partial`. Three colour-specification revisions, all logged as unreadable editions.
+35. **S10 FMVSS 209**: `full`. No amendment.
+36. **S13 2019/2144 (seat)**: `full`. No event. The safety-belt reminder requirement is re-enacted with date 'A',
+    already obligatory through UN R16. EDR acts are excluded: the recording obligation falls on the recorder (judgement).
+    By contrast, 2019/2144 is an event for lighting (L10), because the emergency stop signal mandate was new EU law.
+37. **L01 R48**: `full`. 34 events. Every WP.29 document is a separate act, including the parallel supplements to the
+    03/04/05/06/07/08/09 series. Each was checked against the AC.1 vote tables. Where a supplement restates
+    tell-tale/failure or switching text, I read the GRE base document or GRE report first.
+    - Not counted, as clarifications: the 2016 and 2023 tell-tale alignments, 06-S10 (residual transitional text),
+      and the 2024 indicator tell-tale reference fix.
+    - Counted: the switching-logic, projection and series changes.
+    - Class rule applied for optional new functions: `hardware-or-recert` when the option needs new lamp or sensor
+      hardware (ADB, projections, levelling); `software-only` when it only constrains the behaviour of an existing
+      function. On the same rule I revised R50-00-S18 (sequential indicators, which need segmented lamps) to
+      `hardware-or-recert`, `low`.
+38. **L35 R112**: `full`. No event.
+39. **S18 R145**: `full`. The first adoption is counted: its airbag de-activation requirement for ISOFIX at a front
+    seat was carried over from R14, so `software-only`, `low`.
+40. **L30 R77**: `full`. Suppl. 17 counted (failure tell-tale signal option).
+
 (continued below as rating proceeds)
 
 ## 3. `unreadable edition` entries (L-3)
@@ -199,5 +223,6 @@ written procedure.
 - L22 SAE J1383_201805 (2018-05-16): headlamp performance requirements; scope only.
 - S14 GB 14167-2024 (2024-09-29, safety-belt and restraint-system anchorages).
 - L13 GB 4785-2019 (2019-12-17, installation of external lighting and light-signalling devices).
+- L21 SAE J578_201603 (2016-03-08), J578_201902 (2019-02-01), J578_202004 (2020-04-27): colour specification.
 - L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
   and systems).
