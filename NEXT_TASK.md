@@ -52,4 +52,4 @@ the Status line.
 Edit only the **Status** line below to `AWAITING APPROVAL <commit-hash>` or `BLOCKED: <one-line reason>`, then commit
 and push.
 
-**Status:** OPEN (L1b stage 2: analysis script, prompt, two fresh blind raters, results)
+**Status:** AWAITING APPROVAL b0226dd (L1b done: UNGATED on count and kind — identification 0.60, κ classes 0.38, κ stack 1.00; calibrated; not access-limited; ungated R_BL 0.73, stack B 16/27 vs L 0/40; script 857134e before either branch; raters l1b-rater-a 4afe7a7, l1b-rater-b b8ad69d; no L1B-D2)
