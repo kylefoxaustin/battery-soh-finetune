@@ -1,0 +1,52 @@
+act_id,domain,stack,confidence,note
+32023R1542,B,yes,high,BMS must hold SoH/expected-lifetime parameters with read-only access and battery passport identifier: data-access/retention obligation
+32024R1257,B,yes,high,"On-board monitoring, battery durability monitors and environmental vehicle passport data: data the ECU must store and expose"
+32025R1706,B,yes,medium,Software/calibration updates must not manipulate battery durability data and updates affecting it must be disclosed: integrity of stored durability data under the update process
+32025R1707,B,yes,high,"OBM data storage, OBD access and over-the-air transmission to manufacturer servers with R155 cybersecurity: data access, telemetry and cryptographic obligations"
+32026R1764,B,no,medium,"Methods, requirements and tests for battery durability and in-service conformity; no new data-access, telemetry or crypto obligation named in the summary"
+GTR22,B,yes,medium,SOCE/SOCR monitor values to be read from vehicles: data the ECU must store and expose
+GTR22-A1,B,yes,medium,Monitor families and Part C verification of reported virtual distance: reported/readable data values
+R100-03,B,no,high,"Warning signals (REESS control failure, thermal event, propagation advance warning) to the driver: on-board warning functions"
+R100-03-S4,B,no,high,Scope extension to category O trailers
+R100-04-S1,B,no,high,Scope extension to category O trailers
+R100-05,B,no,medium,"Thermal propagation verification, warning logic, documentation; REESS-vehicle communication compatibility is on-board"
+R100-03-S5,B,no,high,"Rewording of advance-warning condition, display definition, documentation"
+R100-04-S2,B,no,high,Same changes as 03-S5
+R100-04-S3,B,no,medium,Trailer REESS/isolation warnings signalled to the towing vehicle over the combination CAN (ISO 11992-2): on-board signalling within the vehicle combination (convention 1.6)
+R100-05-S1,B,no,high,Warnings transmitted as a logic signal to the on-board ADS
+R155-00,B,yes,high,CSMS and vehicle-type cybersecurity with Annex 5 mitigations; the charging/BMS ECU with external communication is directly in scope
+R155-00,S,yes,low,Vehicle-type risk assessment and Annex 5 mitigations reach every networked ECU incl. seat/occupant ECUs; whether cryptography is required for them depends on the assessment
+R155-00,L,yes,low,As for S: lighting/body ECUs are on the vehicle network in scope of the risk assessment; cryptographic measures depend on the assessment
+R155-00-S1,B,no,high,Legacy relief and feasibility assessment for types approved before 2024-07-01
+R155-00-S1,S,no,high,Legacy relief only
+R155-00-S1,L,no,high,Legacy relief only
+R155-00-S2,B,no,low,Message-authenticity mitigation targets V2X/GNSS receivers; charging communication is not named
+R155-00-S2,S,no,high,Seat/occupant ECUs do not receive V2X/GNSS messages
+R155-00-S2,L,no,medium,Lighting ECUs do not receive V2X/GNSS messages (ADB uses on-board sensing)
+R155-00-S3,B,no,medium,Scope extension to category L vehicles with legacy relief
+R155-00-S3,S,no,medium,Scope extension
+R155-00-S3,L,no,medium,Scope extension
+R156-00,B,yes,high,"SUMS, RXSWIN and secure, authenticated software update process for any updated ECU incl. BMS/charging"
+R156-00,S,yes,medium,Any software update of an updatable seat/occupant ECU falls under the secure update process and RXSWIN
+R156-00,L,yes,medium,Any software update of an updatable lighting ECU falls under the secure update process and RXSWIN
+R156-01,B,yes,medium,Dedicated RXSWIN per affected UN type approval (e.g. R100): software identification data the vehicle must hold and expose; no update without RXSWIN
+R156-01,S,yes,medium,RXSWIN for approvals such as R16 affected by updates of seat-belt-reminder/occupant software
+R156-01,L,yes,medium,RXSWIN for approvals such as R48 affected by lighting-control software updates
+GB/T 32960.1-2016,B,yes,medium,EV remote service and management system (catalogue title): telemetry to a remote platform
+GB/T 32960.1-2025,B,yes,medium,Revised EV remote service and management system general principles (catalogue title): telemetry
+GB/T 32960.2-2016,B,yes,high,On-board terminal of the EV remote service system (catalogue title): telemetry terminal
+GB/T 32960.2-2025,B,yes,high,Revised on-board terminal (catalogue title): telemetry terminal
+GB/T 32960.3-2016,B,yes,high,Communication protocol and data format of the remote service system: telemetry protocol
+GB/T 32960.3-2025,B,yes,high,Revised communication protocol and data format: telemetry protocol
+GB/T 27930-2023,B,yes,high,Digital communication protocol between off-board charger and EV: external charging communication protocol
+GB 44495-2024,B,yes,medium,Mandatory vehicle cybersecurity technical requirements (catalogue title only)
+GB 44495-2024,S,yes,low,Vehicle-level cybersecurity requirements reach networked seat ECUs (catalogue title only)
+GB 44495-2024,L,yes,low,Vehicle-level cybersecurity requirements reach networked lighting ECUs (catalogue title only)
+GB 44496-2024,B,yes,medium,General technical requirements for vehicle software update (catalogue title only)
+GB 44496-2024,S,yes,low,Software-update requirements reach updatable seat ECUs (catalogue title only)
+GB 44496-2024,L,yes,low,Software-update requirements reach updatable lighting ECUs (catalogue title only)
+IEC 61851-1:2017,B,yes,medium,"Control-pilot sequences, proximity circuits and alternative pilot function: charging communication with the EVSE"
+IEC 61851-23:2023,B,yes,medium,Bidirectional power transfer control and communication/energy-transfer process (Annex GG): charging communication incl. V2G-type discharging
+IEC 61851-24:2023,B,yes,high,DC charging digital communication between EV and charger (systems A and B): external communication protocol
+82 FR 44945,B,no,high,"Isolation monitoring with driver warning, shock protection, active-driving indication, drive-away prevention: on-board monitoring/warning"
+89 FR 104318,B,no,medium,"REESS protection functions and malfunction/thermal warnings; Part 561 documentation is a manufacturer submission, not ECU data"
