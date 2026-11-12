@@ -242,6 +242,24 @@ written procedure.
 60. **L14 GB 4599**: `partial`. GB 4599-2024 is an unreadable edition. It also replaces GB/T 30036 and GB 25991 (L19,
     L15); not counted anywhere.
 
+61. **L46 R31**: `full`. No amendment.
+62. **L02 R148**: `full`. The first adoption is counted, on the same rule as R149-00. Supplements 00-S2 and 00-S3 are
+    error corrections (GRE/2019/25, GRE/82, GRE/2020/9/Rev.1), so not counted.
+63. **S20 ISO 13216-1**: `partial` via ISO open data. No edition in window.
+64. **L11 661/2009**: `full`. Only reference-update acts in window, so no event.
+65. **S26 FMVSS 213b**: `full`. CRS product only. No event.
+66. **L31 R87**: `full`. No event. Suppl. 18 is documentation, consistent with R7 Suppl. 25.
+67. **S09 FMVSS 208**: `full`. Two events: the CRS test list (2024) and rear-seat belt warning (2025). The 2022 ADS rule
+    is recorded under S08, below.
+    - **Never-twice application, flagged:** 87 FR 18560 amends FMVSS 207, 208 and 225, and I recorded it under S08
+      (the first listed). A matcher keyed on `instrument_id` will look for it under S08; another rater may place it
+      under S09.
+68. **L44 R8**: `full`. No amendment.
+69. **S24 FMVSS 213**: `full`. CRS product only. No event.
+70. **S25 SAE J800**: `none`. The sae.org page is captcha-protected. The saemobilus product page could not be reached:
+    the slug is unknown and I tried the date pattern for every month from 1985 to 2026. One false hit, a generic
+    page, was rejected.
+
 (continued below as rating proceeds)
 
 ## 3. `unreadable edition` entries (L-3)
