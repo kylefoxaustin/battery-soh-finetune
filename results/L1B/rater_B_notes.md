@@ -169,6 +169,26 @@ written procedure.
 19. **S01 R14**: `full`. No event.
 20. **L29 R38**: `full`. Suppl. 18 (failure tell-tale signal option) counted.
 
+21. **L13 GB 4785**: `partial`. GB 4785-2019 is an unreadable edition (installation provisions; title only).
+22. **L39 R74**: `full`. Three events: the 02 series (direction indicators mandatory on mopeds above 25 km/h,
+    re-approval by 2028) and the two parallel 2022 supplements on secondary-driving-beam switching logic. The 03
+    series repeats that logic and adds device references only, so it is not counted.
+23. **L20 SAE J3069**: `partial` via saemobilus.sae.org. Both catalogue editions are counted: J3069_201606, the first
+    issue, and J3069_202103. ADB is an automatic sensing and beam-control function, which I treat as the "monitoring"
+    subject of L-3. Class `cannot judge`. Stack `no`, because the scope (test procedures, performance and design
+    guidelines) names no stack subject. **Judgement flagged:** a stricter reading of L-3 would log these two as
+    unreadable editions.
+24. **L27 R19**: `full`. No event.
+25. **S16 GB 11550**: `partial`. No edition in window; withdrawn 2024-05-28.
+26. **L08 R99**: `full`. No event.
+27. **L10 2019/2144 (lighting)**: `full`. The base act itself is counted: the emergency stop signal mandate. Delegated
+    and implementing acts under it were checked by text. 2022/1398 only updates references, so it is noted, not
+    counted.
+28. **L19 GB/T 30036**: `partial`. No edition in window; replaced by GB 4599-2024.
+29. **S19 ISO 17373**: `partial` via the ISO open-data catalogue. iso.org served a Cloudflare challenge, not bypassed.
+    No edition in window.
+30. **S05 R44**: `full`. No event.
+
 (continued below as rating proceeds)
 
 ## 3. `unreadable edition` entries (L-3)
@@ -178,5 +198,6 @@ written procedure.
   (IEC 60809:2021, 2021-04-07: abstract read, not an event.)
 - L22 SAE J1383_201805 (2018-05-16): headlamp performance requirements; scope only.
 - S14 GB 14167-2024 (2024-09-29, safety-belt and restraint-system anchorages).
+- L13 GB 4785-2019 (2019-12-17, installation of external lighting and light-signalling devices).
 - L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
   and systems).
