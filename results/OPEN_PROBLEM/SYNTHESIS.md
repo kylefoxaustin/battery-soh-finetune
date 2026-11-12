@@ -1,7 +1,8 @@
-# Synthesis — the open-problem pass after nine experiments (close-out)
+# Synthesis — the open-problem pass after ten experiments (close-out)
 
-**Written:** 2026-11-10, after X8; refreshed after FR1-R and L1; **close-out 2026-11-11** after DC2 and DC2-R, the last legs.
-**Scope:** what [`ANGLES_REPORT.md`](ANGLES_REPORT.md) (2026-10-30) proposed, what the nine experiments that followed
+**Written:** 2026-11-10, after X8; refreshed after FR1-R and L1; **close-out 2026-11-11** after DC2 and DC2-R, the last legs;
+L1b (2026-11-12, UNGATED) added after the close-out and moves nothing.
+**Scope:** what [`ANGLES_REPORT.md`](ANGLES_REPORT.md) (2026-10-30) proposed, what the ten experiments that followed
 established, and where the question now stands. **Licence:** public domain (CC0); the licence of each cited result is
 carried with it. Every number here is quoted from a write-up that states its tags; nothing new is computed.
 
@@ -11,7 +12,7 @@ The customer's claim set (C1–C6) says an application-processor part with DRAM 
 800 V → 48 V power conversion. The open-problem pass asked what, specifically, the DRAM tier does that an MCU with
 SDRAM or HyperRAM and factory calibration cannot.
 
-**After nine experiments the answer the evidence supports is the null stated in ANGLES §E, in its positive form:**
+**After ten experiments the answer the evidence supports is the null stated in ANGLES §E, in its positive form:**
 
 > The battery and converter computations the programme can test are MCU-class, and per-vehicle learning does not beat a
 > fleet model on them. The DRAM tier's physically necessary capability — a continuous MB/s ring buffer — is MEASURED on
@@ -41,7 +42,6 @@ measured, gated, or explicitly documentary, and the counter-evidence is on the t
 | **L1** | How often do software-visible requirements land on the battery / charging ECU domain, against seats? | **UNCLEAR [V1: VOLATILE]** (gated: identification 0.84, κ 0.82; kill does not fire). 35 matched events 2016–2026, 3.2 / yr, 22 in 2023–25; MC 38 % [22, 57] of 26 judged; battery / seat ratio 2.2 with R155 / R156 / GB 44495 / GB 44496 on both sides (L-1), 4.4 / 3.4 without; N_B a floor (10 SAE instruments unreadable) | **Yes** (public regulatory record; DERIVED-judgemental, two language-model raters) | §B.1's arrival process is counted and real; its excess over a quiet domain is 2–4×, not "no such process elsewhere"; the stack-forcing events are five large acts |
 | **DC2** | What window and excursion allowance do real large-load power specs use; is any shaped so that seconds of history would pay? | **UNGATED** (identification 0.52 < 0.80; κ(window) 0.64). Exploratory: binding real-power-variation limits found are `hard`, except ERCOT §6.5.7.11 (PCLR ramp, one-minute intervals, 10 % may fail), read identically by both raters; gray-boxed, registration-scoped, at the 60 s class edge | No (UNGATED; public documents, DERIVED-judgemental) | The last data-centre leg gets no reading; no spec found that makes DC1's 0.5 % sensitivity the real case |
 | **DC2-R** | DC2 re-rated by two fresh raters with row granularity fixed in advance | **UNGATED** (identification 0.72 < 0.80, now on coverage of very large documents; κ(window) 1.00; deciding-row identification 0.81; every class of all 23 binding-deciding pairs agreed). Same picture: every binding real-power-variation limit `hard` or no window stated, except ERCOT §6.5.7.11 (PCLR, one-minute averages, 10 % may fail) | No (UNGATED; documentary) | Four raters in two blind pairs reproduce the reading; DC1b not run (pre-declared); the anticipation leg closes on public evidence |
-| **DC2-R** | DC2 re-rated by fresh raters with row granularity fixed in advance; DC1b declared if a history-shaped spec gates | **UNGATED** (identification 0.72 < 0.80, on coverage and quantity naming; κ(window) 1.00; deciding rows 0.81, every class agreed). Exploratory: ERCOT §6.5.7.11 again the only history-shaped binding clause, identical in both files | No (UNGATED; public documents, DERIVED-judgemental) | DC1b is not run; the data-centre anticipation leg closes on DC2-R |
 | **L1b** | Against exterior lighting, is the battery domain's requirement arrival specific in count, and in kind (acts forcing the crypto / update / data / telemetry stack)? | **UNGATED** both (identification 0.60, κ classes 0.38; κ `stack` 1.00). Calibrated. Ungated: R_BL 0.73 [0.47, 1.12]; stack B 16 / 27 vs L 0 / 40, S 0 / 6 | No (UNGATED; public regulatory record, DERIVED-judgemental) | No reading. Ungated, the count form of §B.1 looks weaker than L1 and the kind form stronger; see the note under §3 |
 
 Earlier, from the programme proper: **X2-F** (per-cell R is stable and removes margin at the top of charge: κ 1.10 vs
@@ -96,6 +96,12 @@ usable energy; knees set the reserve) stand unchanged.
 > kind, 16 of 27 specific battery events force the stack and **none** of 40 lighting or 6 seat events do, under
 > either rater (Fisher p 1e-8). The vehicle-level acts (R155-00, R156-00/01, GB 44495, GB 44496) were rated `yes`
 > for the lighting and seat ECUs as well. The seat domain calibrated against L1 (6 vs 8).
+>
+> *Reviewer, 2026-11-12 (accepted; [`../L1B/results_L1B.md` §10](../L1B/results_L1B.md)):* the `stack` class counts
+> obligations of five kinds — telemetry, charging communication and data read-out included, several of them MCU-class —
+> so "16 of 27" is not sixteen Linux-class acts: three of the sixteen are the acts named in POSITION §1, and the
+> finding is that the comparison domains carry none of any kind. Under every counting of the two ledgers R_BL lies
+> between 0.44 and 1.3, so the 3× count row is out of reach of this data. Both rows above stand.
 
 Two rows matter most for the MCU-tier story: the cheapest fix to min/max is not per-cell telemetry, it is carrying the
 pack's **worst-cell resistance** in the limiter — bytes, not DRAM; and the regulation that forces a Linux-class stack is

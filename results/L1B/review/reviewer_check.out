@@ -1,0 +1,497 @@
+ledger sizes: n_A=104 n_B=86  (A: L 94, S 10; B: L 77, S 9)
+sanity: window, domains, classes, stack values, 51 stack_B rows joined on act_id+domain, 8 VL x 3 + 27: OK
+
+access none/none: L 0/22 [] (limited=False, threshold 8); S 0/16 [] (limited=False, threshold 6)
+access table (domain, A, B): [(('L', 'full', 'full'), 12), (('L', 'none', 'partial'), 3), (('L', 'partial', 'partial'), 7), (('S', 'full', 'full'), 13), (('S', 'partial', 'partial'), 3)]
+additions access: {'S19': ('none', 'partial'), 'S20': ('none', 'partial'), 'S23': ('none', 'partial'), 'S25': ('none', 'none')}
+
+GATE identification: M=46 ({'act_id': 46}) n_A=71 n_B=52 -> 0.597 (bar 0.80) FAIL
+GATE kappa classes over 46 matched S+L pairs: 0.378 (observed 0.717) (bar 0.60) FAIL
+GATE kappa stack over 97 rows (46 pairs + 51): 1.000 (observed 1.000) (bar 0.60) PASS
+   stack over matched pairs only: Counter({('no', 'no'): 46}); stack_B rows: A Counter({'yes': 31, 'no': 20}), B Counter({'yes': 31, 'no': 20})
+=> UNGATED
+   domain L: M=40 n_A=61 n_B=44 ident=0.615 kappa_class=0.261
+   domain S: M=6 n_A=10 n_B=8 ident=0.500 kappa_class=1.000
+
+unmatched A (seed): 25
+   L01 R48-04-S17 2016-11-16 software-only stack=no
+   L01 R48-05-S10 2016-11-16 software-only stack=no
+   L01 R48-06-S8 2016-11-16 software-only stack=no
+   L01 R48-06-S10 2017-11-15 hardware-or-recert stack=no
+   L01 R48-05-S12 2018-11-14 software-only stack=no
+   L01 R48-06-S18 2023-03-08 software-only stack=no
+   L01 R48-07-S5 2023-03-08 software-only stack=no
+   L01 R48-08-S3 2023-03-08 software-only stack=no
+   L01 R48-06-S20 2024-03-06 software-only stack=no
+   L01 R48-07-S7 2024-03-06 software-only stack=no
+   L01 R48-08-S5 2024-03-06 software-only stack=no
+   L03 R149-00-S3 2021-03-10 software-only stack=no
+   L03 R149-01-S6 2025-11-12 software-only stack=no
+   L10 32022R1398 2022-06-08 hardware-or-recert stack=no
+   L10 32022R1426 2022-08-05 software-only stack=no
+   S09 91 FR 17144 2026-04-06 software-only stack=no
+   S13 32019R2144 2019-11-27 hardware-or-recert stack=no
+   L02 R148-00-S2 2020-03-11 software-only stack=no
+   L02 R148-00-S3 2021-03-10 software-only stack=no
+   L02 R148-00-S4 2022-03-09 software-only stack=no
+   L02 R148-01 2022-06-22 hardware-or-recert stack=no
+   S02 R16-07-S1 2017-06-21 software-only stack=no
+   S02 R16-07-S3 2018-06-20 software-only stack=no
+   L11 32019R0543 2019-04-03 software-only stack=no
+   L05 R123-01-S8 2017-03-15 software-only stack=no
+unmatched B (seed): 6
+   L03 R149-01 2022-06-22 hardware-or-recert stack=no
+   L20 SAE J3069_201606 2016-06-30 cannot judge stack=no
+   L20 SAE J3069_202103 2021-03-25 cannot judge stack=no
+   L01 R48-06-S13 2019-11-13 software-only stack=no
+   S02 R16-10-S3 2026-06-24 software-only stack=no
+   S08 87 FR 18560 2022-03-30 hardware-or-recert stack=no
+class disagreements (seed pairs): 13
+    ('L01', 'R48-06-S16', '2022-06-22', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-07-S3', '2022-06-22', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-08-S1', '2022-06-22', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-06-S22', '2025-11-12', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-07-S9', '2025-11-12', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-08-S7', '2025-11-12', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-09-S2', '2025-11-12', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-06-S24', '2026-06-24', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-07-S11', '2026-06-24', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-08-S9', '2026-06-24', 'software-only', 'hardware-or-recert')
+    ('L01', 'R48-09-S4', '2026-06-24', 'software-only', 'hardware-or-recert')
+    ('L03', 'R149-01-S3', '2024-03-06', 'software-only', 'hardware-or-recert')
+    ('L12', '87 FR 9916', '2022-02-22', 'software-only', 'hardware-or-recert')
+stack disagreements (pairs): [] (stack_B): []
+window-straddling pairs: []
+date-matched pairs with different act_id: []
+
+CALIBRATION: N_S1=8 (L1 matched seat events, non-VL) E_S1=['r1607', 'r1607s3', 'r1607s6', 'r1609', 'r1608s2', '89fr67869', '90fr390', '91fr17144']
+   N_S,specific=6 Counter({'S02': 4, 'S09': 2}); |diff|=2 (bar <=3); E_S1 found=6/8 (bar >=5)
+   not found: [['r1607s3'], ['91fr17144']]
+   => CALIBRATED
+
+variant        N_B  N_L  N_S   R_BL [95%]          R_BS [95%]
+V2 (primary)    35   48   14   0.73 [0.47, 1.12]    2.50 [1.36, 4.60]   ident 0.597 kappa 0.378
+V1              35   40    6   0.88 [0.56, 1.37]    5.83 [2.52, 13.53]   ident 0.597 kappa 0.378
+V0              27   40    6   0.68 [0.42, 1.09]    4.50 [1.91, 10.61]   ident 0.597 kappa 0.378
+CN0             26   46   12   0.57 [0.35, 0.91]    2.17 [1.11, 4.24]   ident 0.597 kappa 0.378
+FULL            35   79   14   0.44 [0.30, 0.66]    2.50 [1.36, 4.60]   ident 0.681 kappa 0.332
+ACC             35   48   14   0.73 [0.47, 1.12]    2.50 [1.36, 4.60]   ident 0.613 kappa 0.378
+
+PRIMARY V2: N_L = 40 matched L seed + 8 = 48; N_S = 6 + 8 = 14; R_BL = 0.729; R_BS = 2.500
+L by instrument: [('L01', 33), ('L03', 3), ('L10', 1), ('L06', 1), ('L12', 1), ('L02', 1)]
+S by instrument: [('S02', 4), ('S09', 2)]
+L classes (conservative): {'software-only': 36, 'hardware-or-recert': 4}; MC_L = 4/40 = 10.0% [4, 23]; H_L = 4 [4, 23]
+S classes (conservative): {'software-only': 3, 'hardware-or-recert': 3}; MC_S = 3/6 = 50.0% [19, 81]
+per-year B (35):       [3, 2, 0, 0, 3, 0, 2, 5, 8, 9, 3] 35
+per-year L specific:   [0, 2, 1, 3, 1, 1, 9, 3, 2, 9, 9] 40
+per-year S specific:   [1, 0, 0, 0, 2, 0, 0, 1, 1, 1, 0] 6
+L by application year (fallback adoption): [0, 2, 1, 2, 1, 1, 10, 3, 2, 9, 9]
+union (either rater) L seed: 65  S seed: 12
+rater A own L (seed): 61 {'software-only': 54, 'hardware-or-recert': 7} stack {'no': 61}
+rater A own S (seed): 10 {'software-only': 6, 'hardware-or-recert': 4} stack {'no': 10}
+rater B own L (seed): 44 {'hardware-or-recert': 18, 'software-only': 24, 'cannot judge': 2} stack {'no': 44}
+rater B own S (seed): 8 {'hardware-or-recert': 4, 'software-only': 4} stack {'no': 8}
+matched events on GB (China) seeds: []
+FULL adds L 31 (by instrument: [('L38', 19), ('L39', 3), ('L26', 1), ('L32', 1), ('L28', 1), ('L29', 1), ('L30', 1), ('L40', 1), ('L41', 1), ('L36', 1), ('L25', 1)]), S 0
+
+COUNT verdict (V2): UNGATED   [table without gates: NOT SPECIFIC BY COUNT; access-limited L: False]
+
+STACK specific (conservative yes): B 16/27 = 59% [41, 75]; L 0/40 [0, 9]; S 0/6 [0, 39]
+   B yes: ['32023R1542', '32024R1257', '32025R1706', '32025R1707', 'GTR22', 'GTR22-A1', 'GB/T 32960.1-2016', 'GB/T 32960.1-2025', 'GB/T 32960.2-2016', 'GB/T 32960.2-2025', 'GB/T 32960.3-2016', 'GB/T 32960.3-2025', 'GB/T 27930-2023', 'IEC 61851-1:2017', 'IEC 61851-23:2023', 'IEC 61851-24:2023']
+   B no: ['32026R1764', 'R100-03', 'R100-03-S4', 'R100-04-S1', 'R100-05', 'R100-03-S5', 'R100-04-S2', 'R100-04-S3', 'R100-05-S1', '82 FR 44945', '89 FR 104318']  cannot judge: []
+   Fisher one-sided B>L: p = 1.16e-08
+   VL stack rated for domain B: 5/8 yes: ['R155-00', 'R156-00', 'R156-01', 'GB 44495-2024', 'GB 44496-2024']
+   VL stack rated for domain S: 5/8 yes: ['R155-00', 'R156-00', 'R156-01', 'GB 44495-2024', 'GB 44496-2024']
+   VL stack rated for domain L: 5/8 yes: ['R155-00', 'R156-00', 'R156-01', 'GB 44495-2024', 'GB 44496-2024']
+   any L/S 'yes' or 'cannot judge' by either rater (all instruments): []
+KIND verdict: UNGATED   [rows met without gates: ['STACK-SPECIFIC']; overlap: False]
+
+EXPLORATORY collapse (one change per instrument per adoption date): L specific 40 -> 19; B specific 27 -> 22; VL 8 -> 8; R_BL (session form, VL kept at 8) = 1.11; with VL collapsed too = 1.11
+
+=== exploratory (reviewer; not pre-registered) ===
+R_BL under every counting of the two ledgers: matched 0.73; A alone 0.51; B alone 0.67; union 0.48; L collapsed to instrument-dates with B as counted 1.30; both collapsed 1.11; FULL 0.44  -> the 3x row is out of reach of this data
+B stack-yes events judged from a catalogue entry only (class 'cannot judge' in L1): 7 ['GB/T 32960.1-2016', 'GB/T 32960.1-2025', 'GB/T 32960.2-2016', 'GB/T 32960.2-2025', 'GB/T 32960.3-2016', 'GB/T 32960.3-2025', 'GB/T 27930-2023']
+k_B without catalogue-only events: 9/20 [26, 66], Fisher p = 1.1e-05; also without the three IEC 61851 charging-communication editions: 6/17 [17, 59], p = 3.4e-04
+Linux-class-forcing subset of POSITION §1 among the 27 specific B events (crypto / authenticated update / data retention with access / OTA): 3/27 ['32023R1542', '32024R1257', '32025R1707'] (R155-00 and R156-00 are vehicle-level, rated yes for all three domains); the other 13 stack-yes events name telemetry, charging communication or data read-out
+events adopted 2025-2026: B 12/35, L specific 18/40, S specific 1/6
+
+l1b.json top keys: ['preregistration', 'tags', 'validation_problems', 'access', 'ledger_sizes_raw', 'stack_B_rows', 'primary_V2', 'V1', 'V0', 'CN0', 'FULL', 'ACC', 'stack_disagreements_B_rows', 'own', 'verdict_line']
+   .stack_B_rows.expected = 51
+   .stack_B_rows.A = 51
+   .stack_B_rows.B = 51
+   .stack_B_rows.both = 51
+   .primary_V2.n_A = 71
+   .primary_V2.n_B = 52
+   .primary_V2.identification = 0.5974025974025974
+   .primary_V2.kappa_class.kappa = 0.37837837837837834
+   .primary_V2.kappa_class.n = 46
+   .primary_V2.kappa_class.observed_agreement = 0.717391304347826
+   .primary_V2.kappa_stack.kappa = 1.0
+   .primary_V2.kappa_stack.n = 97
+   .primary_V2.kappa_stack.observed_agreement = 1.0
+   .primary_V2.kappa_stack_SL_only.n = 46
+   .primary_V2.kappa_stack_SL_only.observed_agreement = 1.0
+   .primary_V2.kappa_stack_B_rows_only.kappa = 1.0
+   .primary_V2.kappa_stack_B_rows_only.n = 51
+   .primary_V2.kappa_stack_B_rows_only.observed_agreement = 1.0
+   .primary_V2.N_B = 35
+   .primary_V2.N_S_specific = 6
+   .primary_V2.N_S = 14
+   .primary_V2.union_S = 20
+   .primary_V2.stack_S.k = 0
+   .primary_V2.stack_S.n_judged = 6
+   .primary_V2.stack_S.n_events = 6
+   .primary_V2.stack_S.share.k = 0
+   .primary_V2.stack_S.share.n = 6
+   .primary_V2.stack_S.share.p = 0.0
+   .primary_V2.stack_S.share.lo = 0.0
+   .primary_V2.stack_S.share.hi = 0.3903430336530645
+   .primary_V2.N_L_specific = 40
+   .primary_V2.N_L = 48
+   .primary_V2.union_L = 73
+   .primary_V2.stack_L.k = 0
+   .primary_V2.stack_L.n_judged = 40
+   .primary_V2.stack_L.n_events = 40
+   .primary_V2.stack_L.share.k = 0
+   .primary_V2.stack_L.share.n = 40
+   .primary_V2.stack_L.share.p = 0.0
+   .primary_V2.stack_L.share.lo = -6.938893903907228e-18
+   .primary_V2.stack_L.share.hi = 0.08762453925039232
+   .primary_V2.stack_B.k = 16
+   .primary_V2.stack_B.n_judged = 27
+   .primary_V2.stack_B.n_events = 27
+   .primary_V2.stack_B.share.k = 16
+   .primary_V2.stack_B.share.n = 27
+   .primary_V2.stack_B.share.p = 0.5925925925925926
+   .primary_V2.stack_B.share.lo = 0.4072638305536409
+   .primary_V2.stack_B.share.hi = 0.7548548662714265
+   .primary_V2.fisher_B_gt_L_one_sided_p = 1.160174002040216e-08
+   .primary_V2.R_BL.R = 0.7291666666666666
+   .primary_V2.R_BL.lo = 0.4732497119051007
+   .primary_V2.R_BL.hi = 1.1234745936504553
+   .primary_V2.R_BL.N_num = 35
+   .primary_V2.R_BL.N_den = 48
+   .primary_V2.R_BS.R = 2.5
+   .primary_V2.R_BS.lo = 1.357981753277322
+   .primary_V2.R_BS.hi = 4.602418246722677
+   .primary_V2.R_BS.N_num = 35
+   .primary_V2.R_BS.N_den = 14
+   .primary_V2.gates.values.identification = 0.5974025974025974
+   .primary_V2.gates.values.kappa_class = 0.37837837837837834
+   .primary_V2.gates.values.kappa_stack = 1.0
+   .primary_V2.verdict_count = UNGATED
+   .primary_V2.verdict_kind = UNGATED
+   .primary_V2.calibration.N_S_specific = 6
+   .primary_V2.calibration.N_S1 = 8
+   .primary_V2.calibration.abs_diff = 2
+   .primary_V2.calibration.E_S1_size = 8
+   .primary_V2.calibration.E_S1_covered = 6
+   .primary_V2.calibration.status = CALIBRATED
+   .V1.n_A = 71
+   .V1.n_B = 52
+   .V1.identification = 0.5974025974025974
+   .V1.kappa_class.kappa = 0.37837837837837834
+   .V1.kappa_class.n = 46
+   .V1.kappa_class.observed_agreement = 0.717391304347826
+   .V1.kappa_stack.kappa = 1.0
+   .V1.kappa_stack.n = 97
+   .V1.kappa_stack.observed_agreement = 1.0
+   .V1.kappa_stack_SL_only.n = 46
+   .V1.kappa_stack_SL_only.observed_agreement = 1.0
+   .V1.kappa_stack_B_rows_only.kappa = 1.0
+   .V1.kappa_stack_B_rows_only.n = 51
+   .V1.kappa_stack_B_rows_only.observed_agreement = 1.0
+   .V1.N_B = 35
+   .V1.N_S_specific = 6
+   .V1.N_S = 6
+   .V1.union_S = 12
+   .V1.stack_S.k = 0
+   .V1.stack_S.n_judged = 6
+   .V1.stack_S.n_events = 6
+   .V1.stack_S.share.k = 0
+   .V1.stack_S.share.n = 6
+   .V1.stack_S.share.p = 0.0
+   .V1.stack_S.share.lo = 0.0
+   .V1.stack_S.share.hi = 0.3903430336530645
+   .V1.N_L_specific = 40
+   .V1.N_L = 40
+   .V1.union_L = 65
+   .V1.stack_L.k = 0
+   .V1.stack_L.n_judged = 40
+   .V1.stack_L.n_events = 40
+   .V1.stack_L.share.k = 0
+   .V1.stack_L.share.n = 40
+   .V1.stack_L.share.p = 0.0
+   .V1.stack_L.share.lo = -6.938893903907228e-18
+   .V1.stack_L.share.hi = 0.08762453925039232
+   .V1.stack_B.k = 16
+   .V1.stack_B.n_judged = 27
+   .V1.stack_B.n_events = 27
+   .V1.stack_B.share.k = 16
+   .V1.stack_B.share.n = 27
+   .V1.stack_B.share.p = 0.5925925925925926
+   .V1.stack_B.share.lo = 0.4072638305536409
+   .V1.stack_B.share.hi = 0.7548548662714265
+   .V1.fisher_B_gt_L_one_sided_p = 1.160174002040216e-08
+   .V1.R_BL.R = 0.875
+   .V1.R_BL.lo = 0.5580087830693023
+   .V1.R_BL.hi = 1.3720662169306974
+   .V1.R_BL.N_num = 35
+   .V1.R_BL.N_den = 40
+   .V1.R_BS.R = 5.833333333333333
+   .V1.R_BS.lo = 2.51571018157476
+   .V1.R_BS.hi = 13.526112040647462
+   .V1.R_BS.N_num = 35
+   .V1.R_BS.N_den = 6
+   .V1.gates.values.identification = 0.5974025974025974
+   .V1.gates.values.kappa_class = 0.37837837837837834
+   .V1.gates.values.kappa_stack = 1.0
+   .V1.verdict_count = UNGATED
+   .V1.verdict_kind = UNGATED
+   .V0.n_A = 71
+   .V0.n_B = 52
+   .V0.identification = 0.5974025974025974
+   .V0.kappa_class.kappa = 0.37837837837837834
+   .V0.kappa_class.n = 46
+   .V0.kappa_class.observed_agreement = 0.717391304347826
+   .V0.kappa_stack.kappa = 1.0
+   .V0.kappa_stack.n = 97
+   .V0.kappa_stack.observed_agreement = 1.0
+   .V0.kappa_stack_SL_only.n = 46
+   .V0.kappa_stack_SL_only.observed_agreement = 1.0
+   .V0.kappa_stack_B_rows_only.kappa = 1.0
+   .V0.kappa_stack_B_rows_only.n = 51
+   .V0.kappa_stack_B_rows_only.observed_agreement = 1.0
+   .V0.N_B = 27
+   .V0.N_S_specific = 6
+   .V0.N_S = 6
+   .V0.union_S = 12
+   .V0.stack_S.k = 0
+   .V0.stack_S.n_judged = 6
+   .V0.stack_S.n_events = 6
+   .V0.stack_S.share.k = 0
+   .V0.stack_S.share.n = 6
+   .V0.stack_S.share.p = 0.0
+   .V0.stack_S.share.lo = 0.0
+   .V0.stack_S.share.hi = 0.3903430336530645
+   .V0.N_L_specific = 40
+   .V0.N_L = 40
+   .V0.union_L = 65
+   .V0.stack_L.k = 0
+   .V0.stack_L.n_judged = 40
+   .V0.stack_L.n_events = 40
+   .V0.stack_L.share.k = 0
+   .V0.stack_L.share.n = 40
+   .V0.stack_L.share.p = 0.0
+   .V0.stack_L.share.lo = -6.938893903907228e-18
+   .V0.stack_L.share.hi = 0.08762453925039232
+   .V0.stack_B.k = 16
+   .V0.stack_B.n_judged = 27
+   .V0.stack_B.n_events = 27
+   .V0.stack_B.share.k = 16
+   .V0.stack_B.share.n = 27
+   .V0.stack_B.share.p = 0.5925925925925926
+   .V0.stack_B.share.lo = 0.4072638305536409
+   .V0.stack_B.share.hi = 0.7548548662714265
+   .V0.fisher_B_gt_L_one_sided_p = 1.160174002040216e-08
+   .V0.R_BL.R = 0.675
+   .V0.R_BL.lo = 0.41623625218945237
+   .V0.R_BL.hi = 1.0946307478105473
+   .V0.R_BL.N_num = 27
+   .V0.R_BL.N_den = 40
+   .V0.R_BS.R = 4.5
+   .V0.R_BS.lo = 1.9079432084696157
+   .V0.R_BS.hi = 10.613523458197056
+   .V0.R_BS.N_num = 27
+   .V0.R_BS.N_den = 6
+   .V0.gates.values.identification = 0.5974025974025974
+   .V0.gates.values.kappa_class = 0.37837837837837834
+   .V0.gates.values.kappa_stack = 1.0
+   .V0.verdict_count = UNGATED
+   .V0.verdict_kind = UNGATED
+   .CN0.n_A = 71
+   .CN0.n_B = 52
+   .CN0.identification = 0.5974025974025974
+   .CN0.kappa_class.kappa = 0.37837837837837834
+   .CN0.kappa_class.n = 46
+   .CN0.kappa_class.observed_agreement = 0.717391304347826
+   .CN0.kappa_stack.kappa = 1.0
+   .CN0.kappa_stack.n = 97
+   .CN0.kappa_stack.observed_agreement = 1.0
+   .CN0.kappa_stack_SL_only.n = 46
+   .CN0.kappa_stack_SL_only.observed_agreement = 1.0
+   .CN0.kappa_stack_B_rows_only.kappa = 1.0
+   .CN0.kappa_stack_B_rows_only.n = 51
+   .CN0.kappa_stack_B_rows_only.observed_agreement = 1.0
+   .CN0.N_B = 26
+   .CN0.N_S_specific = 6
+   .CN0.N_S = 12
+   .CN0.union_S = 18
+   .CN0.stack_S.k = 0
+   .CN0.stack_S.n_judged = 6
+   .CN0.stack_S.n_events = 6
+   .CN0.stack_S.share.k = 0
+   .CN0.stack_S.share.n = 6
+   .CN0.stack_S.share.p = 0.0
+   .CN0.stack_S.share.lo = 0.0
+   .CN0.stack_S.share.hi = 0.3903430336530645
+   .CN0.N_L_specific = 40
+   .CN0.N_L = 46
+   .CN0.union_L = 71
+   .CN0.stack_L.k = 0
+   .CN0.stack_L.n_judged = 40
+   .CN0.stack_L.n_events = 40
+   .CN0.stack_L.share.k = 0
+   .CN0.stack_L.share.n = 40
+   .CN0.stack_L.share.p = 0.0
+   .CN0.stack_L.share.lo = -6.938893903907228e-18
+   .CN0.stack_L.share.hi = 0.08762453925039232
+   .CN0.stack_B.k = 9
+   .CN0.stack_B.n_judged = 20
+   .CN0.stack_B.n_events = 20
+   .CN0.stack_B.share.k = 9
+   .CN0.stack_B.share.n = 20
+   .CN0.stack_B.share.p = 0.45
+   .CN0.stack_B.share.lo = 0.25819502085709295
+   .CN0.stack_B.share.hi = 0.6579179916924003
+   .CN0.fisher_B_gt_L_one_sided_p = 1.136158960668516e-05
+   .CN0.R_BL.R = 0.5652173913043478
+   .CN0.R_BL.lo = 0.35101386216762825
+   .CN0.R_BL.hi = 0.9101369884939974
+   .CN0.R_BL.N_num = 26
+   .CN0.R_BL.N_den = 46
+   .CN0.R_BS.R = 2.1666666666666665
+   .CN0.R_BS.lo = 1.1072125983864936
+   .CN0.R_BS.hi = 4.2398762905023935
+   .CN0.R_BS.N_num = 26
+   .CN0.R_BS.N_den = 12
+   .CN0.gates.values.identification = 0.5974025974025974
+   .CN0.gates.values.kappa_class = 0.37837837837837834
+   .CN0.gates.values.kappa_stack = 1.0
+   .CN0.verdict_count = UNGATED
+   .CN0.verdict_kind = UNGATED
+   .FULL.n_A = 104
+   .FULL.n_B = 86
+   .FULL.identification = 0.6814159292035398
+   .FULL.kappa_class.kappa = 0.3319502074688797
+   .FULL.kappa_class.n = 77
+   .FULL.kappa_class.observed_agreement = 0.7012987012987013
+   .FULL.kappa_stack.kappa = 1.0
+   .FULL.kappa_stack.n = 128
+   .FULL.kappa_stack.observed_agreement = 1.0
+   .FULL.kappa_stack_SL_only.n = 77
+   .FULL.kappa_stack_SL_only.observed_agreement = 1.0
+   .FULL.kappa_stack_B_rows_only.kappa = 1.0
+   .FULL.kappa_stack_B_rows_only.n = 51
+   .FULL.kappa_stack_B_rows_only.observed_agreement = 1.0
+   .FULL.N_B = 35
+   .FULL.N_S_specific = 6
+   .FULL.N_S = 14
+   .FULL.union_S = 21
+   .FULL.stack_S.k = 0
+   .FULL.stack_S.n_judged = 6
+   .FULL.stack_S.n_events = 6
+   .FULL.stack_S.share.k = 0
+   .FULL.stack_S.share.n = 6
+   .FULL.stack_S.share.p = 0.0
+   .FULL.stack_S.share.lo = 0.0
+   .FULL.stack_S.share.hi = 0.3903430336530645
+   .FULL.N_L_specific = 71
+   .FULL.N_L = 79
+   .FULL.union_L = 108
+   .FULL.stack_L.k = 0
+   .FULL.stack_L.n_judged = 71
+   .FULL.stack_L.n_events = 71
+   .FULL.stack_L.share.k = 0
+   .FULL.stack_L.share.n = 71
+   .FULL.stack_L.share.p = 0.0
+   .FULL.stack_L.share.lo = 0.0
+   .FULL.stack_L.share.hi = 0.05132974174790491
+   .FULL.stack_B.k = 16
+   .FULL.stack_B.n_judged = 27
+   .FULL.stack_B.n_events = 27
+   .FULL.stack_B.share.k = 16
+   .FULL.stack_B.share.n = 27
+   .FULL.stack_B.share.p = 0.5925925925925926
+   .FULL.stack_B.share.lo = 0.4072638305536409
+   .FULL.stack_B.share.hi = 0.7548548662714265
+   .FULL.fisher_B_gt_L_one_sided_p = 1.3755779529960572e-11
+   .FULL.R_BL.R = 0.4430379746835443
+   .FULL.R_BL.lo = 0.29834678518124685
+   .FULL.R_BL.hi = 0.6579009956231114
+   .FULL.R_BL.N_num = 35
+   .FULL.R_BL.N_den = 79
+   .FULL.R_BS.R = 2.5
+   .FULL.R_BS.lo = 1.357981753277322
+   .FULL.R_BS.hi = 4.602418246722677
+   .FULL.R_BS.N_num = 35
+   .FULL.R_BS.N_den = 14
+   .FULL.gates.values.identification = 0.6814159292035398
+   .FULL.gates.values.kappa_class = 0.3319502074688797
+   .FULL.gates.values.kappa_stack = 1.0
+   .FULL.verdict_count = UNGATED
+   .FULL.verdict_kind = UNGATED
+   .ACC.n_A = 71
+   .ACC.n_B = 50
+   .ACC.identification = 0.6133333333333333
+   .ACC.kappa_class.kappa = 0.37837837837837834
+   .ACC.kappa_class.n = 46
+   .ACC.kappa_class.observed_agreement = 0.717391304347826
+   .ACC.kappa_stack.kappa = 1.0
+   .ACC.kappa_stack.n = 97
+   .ACC.kappa_stack.observed_agreement = 1.0
+   .ACC.kappa_stack_SL_only.n = 46
+   .ACC.kappa_stack_SL_only.observed_agreement = 1.0
+   .ACC.kappa_stack_B_rows_only.kappa = 1.0
+   .ACC.kappa_stack_B_rows_only.n = 51
+   .ACC.kappa_stack_B_rows_only.observed_agreement = 1.0
+   .ACC.N_B = 35
+   .ACC.N_S_specific = 6
+   .ACC.N_S = 14
+   .ACC.union_S = 20
+   .ACC.stack_S.k = 0
+   .ACC.stack_S.n_judged = 6
+   .ACC.stack_S.n_events = 6
+   .ACC.stack_S.share.k = 0
+   .ACC.stack_S.share.n = 6
+   .ACC.stack_S.share.p = 0.0
+   .ACC.stack_S.share.lo = 0.0
+   .ACC.stack_S.share.hi = 0.3903430336530645
+   .ACC.N_L_specific = 40
+   .ACC.N_L = 48
+   .ACC.union_L = 71
+   .ACC.stack_L.k = 0
+   .ACC.stack_L.n_judged = 40
+   .ACC.stack_L.n_events = 40
+   .ACC.stack_L.share.k = 0
+   .ACC.stack_L.share.n = 40
+   .ACC.stack_L.share.p = 0.0
+   .ACC.stack_L.share.lo = -6.938893903907228e-18
+   .ACC.stack_L.share.hi = 0.08762453925039232
+   .ACC.stack_B.k = 16
+   .ACC.stack_B.n_judged = 27
+   .ACC.stack_B.n_events = 27
+   .ACC.stack_B.share.k = 16
+   .ACC.stack_B.share.n = 27
+   .ACC.stack_B.share.p = 0.5925925925925926
+   .ACC.stack_B.share.lo = 0.4072638305536409
+   .ACC.stack_B.share.hi = 0.7548548662714265
+   .ACC.fisher_B_gt_L_one_sided_p = 1.160174002040216e-08
+   .ACC.R_BL.R = 0.7291666666666666
+   .ACC.R_BL.lo = 0.4732497119051007
+   .ACC.R_BL.hi = 1.1234745936504553
+   .ACC.R_BL.N_num = 35
+   .ACC.R_BL.N_den = 48
+   .ACC.R_BS.R = 2.5
+   .ACC.R_BS.lo = 1.357981753277322
+   .ACC.R_BS.hi = 4.602418246722677
+   .ACC.R_BS.N_num = 35
+   .ACC.R_BS.N_den = 14
+   .ACC.gates.values.identification = 0.6133333333333333
+   .ACC.gates.values.kappa_class = 0.37837837837837834
+   .ACC.gates.values.kappa_stack = 1.0
+   .ACC.verdict_count = UNGATED
+   .ACC.verdict_kind = UNGATED
+   .verdict_line.count = UNGATED
+   .verdict_line.kind = UNGATED
+   .verdict_line.calibration = CALIBRATED

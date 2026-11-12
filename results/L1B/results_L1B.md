@@ -301,3 +301,131 @@ substitutions, plus the `stack` instructions and one blindness line ("do not rea
 web"), and its diff is committed. The B events' `what_changed` text was written by L1's rater A, and the session did
 not edit it. Both L1b raters judged `stack_B` from that text. The session did not read either L1b ledger until both
 branches were merged, and changed nothing in the procedure after that.
+
+---
+
+## 10. Reviewer acceptance (2026-11-12)
+
+**Accepted at `b0226dd` (Status `359df6a`): count UNGATED, kind UNGATED, seat domain CALIBRATED, lighting not
+access-limited — confirmed.** Every number above was re-derived from `ledger_A.csv`, `ledger_B.csv`,
+`instruments_A.csv`, `instruments_B.csv`, `stack_B_A.csv`, `stack_B_B.csv`, `B_events.csv` and L1's two ledgers with the
+reviewer's own code ([`review/reviewer_check.py`](review/reviewer_check.py), output
+[`review/reviewer_check.out`](review/reviewer_check.out)), which reads nothing `L1B_agreement.py` wrote. Agreement is
+exact on: n_A 71, n_B 52, M 46 (all by `act_id`, none by the date rule), identification 0.597, κ(classes) 0.378
+(observed 0.717), κ(`stack`) 1.000 over 97 rows (46 pairs all `no`/`no`; 51 `stack_B` rows 31 `yes` / 20 `no` for each
+rater); N_S1 8 and E_S1 recomputed from L1's ledgers, N_S,specific 6 (S02 ×4, S09 ×2), difference 2, 6 of 8 acts found
+(R16-07-S3 and 91 FR 17144 not); N_L 48 (40 + 8), N_S 14, R_BL 0.73 [0.47, 1.12], R_BS 2.50 [1.36, 4.60]; V1 0.88, V0
+0.68, CN0 26 / 46 / 12 → 0.57, FULL 35 / 79 → 0.44 (identification 0.681, κ 0.332; 31 added events, 19 on R53), ACC
+unchanged (identification 0.613); L01 33 of 40; classes L 36 / 4 (MC_L 10 % [4, 23]), S 3 / 3; all three per-year tables
+and the application-year row; each rater's own counts; the access table (12 / 7 / 3 / 0 and 13 / 3 / 0 / 0; S19, S20,
+S23 `none`/`partial`, S25 `none`/`none`); no matched event on a GB seed; the 25 + 6 unmatched events and the 13 class
+disagreements, row for row; no stack disagreement; no window-straddling pair; stack B 16 / 27 = 59 % [41, 75], L 0 / 40
+[0, 9], S 0 / 6 [0, 39]; Fisher one-sided p = 1.16 × 10⁻⁸; vehicle-level `yes` 5 of 8 in each of B, S and L (the same
+five); the kind table's STACK-SPECIFIC row met with no overlap; the exploratory collapse 40 → 19 and 27 → 22, R_BL ≈ 1.1.
+`l1b.json` carries the same values.
+
+**Process checks.** `analysis/L1B_agreement.py`, its self-test and the launch prompt were committed at `857134e`
+before either branch existed, and never touched again. Both branches fork from `857134e`. Rater A's conventions were
+committed at `267949f` (22:20 UTC, 11 Nov) before its first ledger commit (23:04); rater A finished at `4afe7a7` (23:19).
+Rater B's conventions were committed at `9091fe4` (00:52 UTC, 12 Nov), after A had finished; B's branch contains no A
+file and `4afe7a7` is not an ancestor of `b8ad69d`: B never fetched A. The merges (`7a7130d`, `e894922`) are clean, and
+no rater file changed after them; the session's two later commits add only `results_L1B.md`, `l1b.json`, the index rows
+and dated notes. Each launch prompt differs from the committed `L1B_rater_prompt.md` only in the `{R}` / `{r}`
+substitutions and the clone and scratch paths. No source was bypassed: unece.org (403), iso.org (challenge), sae.org
+(captcha) and the GB full-text viewer are recorded as blocked by both raters, and the UN histories were rebuilt from the
+UN Official Document System. POSITION §1 sentence 1 was not rewritten by the session, as instructed.
+
+### Is the kind readout a reading? No — and what the data does settle anyway
+
+The pre-registration (§5) makes the three gates joint for both verdicts, and two fail. The reviewer does not reopen
+that: UNGATED gives no reading, and the kind row is reported as what the table *would* say. Three reasons, beyond the
+rule itself:
+
+1. **κ(`stack`) = 1.00 carries no information about the seat and lighting events.** All 46 matched pairs are `no` /
+   `no`; κ on them alone is undefined. The gate passes on the 51 battery rows, which both raters judged from the same
+   one-line `what_changed` text (item R-3 below). It measures how reproducibly two readers classify one sentence, not
+   how reproducibly two readers classify the acts.
+2. **The identification gate is the only instrument that bounds recall, and it failed.** No matching choice can put a
+   lighting event into the `yes` column — every one of the 190 S and L rows either rater wrote, additions included, is
+   `no` — so the 0 / 40 is robust to how the ledgers are reconciled. It is not robust to an act both raters missed, and
+   with 25 events found by A only and 6 by B only, the procedure's recall is exactly what the gate was there to vouch
+   for.
+3. **The class gate failed on a definitional boundary** (optional new functions, item R-1), which `stack` does not
+   share. That is why the kind readout looks clean while the class readout does not; it is not a reason to gate one
+   field of a ledger whose rows the two raters did not agree on.
+
+What the two ledgers do settle, ungated and in the reviewer's reading:
+
+- **By count, lighting is not the quiet comparison domain the brief took it for; it is the busier one.** Under every
+  counting the reviewer can construct from these ledgers — matched events (R_BL 0.73), rater A alone (0.51), rater B
+  alone (0.67), the union (0.48), FULL (0.44), one event per instrument per adoption date with the battery count as it
+  stands (1.30) or collapsed the same way (1.11) — R_BL lies between 0.44 and 1.3. The 3× row of the count table is out
+  of reach of this data; what fails is the count form of ANGLES §B.1, in the direction L1 already pointed. The lighting
+  count is also a floor: all seven GB seeds and the three SAE seeds were unreadable in the window.
+- **By kind, the separation is total in both raters' hands:** 16 of 27 specific battery events and 0 of 46 seat and
+  lighting events name an obligation of one of the five kinds; the five vehicle-level cyber-security and update acts
+  were rated `yes` for all three domains alike. This is the second exploratory observation in that direction (L1's
+  reviewer split was the first, on a narrower definition); it is still exploratory.
+
+### Reviewer items (numbered; none is a deviation of the pre-registration, which has only L1B-D1)
+
+- **R-1. Rater B's class rule for optional new functions was adopted at position 37 of order B — which is L01, UN R48
+  itself** — and applied retroactively to one addition row (R50-00-S18, L41). Eleven of the thirteen class disagreements
+  are R48 projection and ADS-activation supplements rated under that rule. The rule was formed after R48's history had
+  been read; rater B disclosed it (notes §5 item 6). Rater A's committed convention reads the other way ("a supplement
+  that is optional does not re-open type approval"; logic on the existing controller is `software-only`). L1 §2 does not
+  settle optional new functions. Both conventions are on the record; the classes are used conservatively (the lower of
+  the pair), so MC_L = 10 % is a floor (rater B's own classes give 18 of 42 judged). A rerun pre-registers the rule.
+- **R-2. Rater A refined three conventions while rating** (notes §6 item 5: permissive "may" changes not counted;
+  obligations on child restraints, light sources and passive reflectors not ECU obligations; each parallel-series
+  supplement its own act). Disclosed. The third coincides with rater B's committed convention 1.1 (4); the first two
+  reduce A's count, and A still recorded 25 seed events B did not.
+- **R-3. Both raters rated `stack_B` from the `what_changed` line alone**, which §3 permits ("may read its source").
+  Seven of the sixteen `yes` events are the GB/T 32960 (×6) and GB/T 27930-2023 catalogue entries, whose class in L1 was
+  `cannot judge` for both raters: their `yes` rests on a title that names a remote service and management system, an
+  on-board terminal, or a charger–vehicle communication protocol, with confidence from `low` to `high`. Without them
+  k_B / n_B is 9 / 20 = 45 % [26, 66] (Fisher p 1.1 × 10⁻⁵); also without the three IEC 61851 charging-communication
+  editions, 6 / 17 = 35 % [17, 59] (p 3.4 × 10⁻⁴). The STACK-SPECIFIC row (k_B ≥ 3) is met in each.
+- **R-4. The `stack` class is broader than the Linux-class-forcing set POSITION §1 names, and the two must not be
+  conflated.** Of the sixteen specific `yes` events, three are POSITION's acts (2023/1542, 2024/1257, 2025/1707; R155-00
+  and R156-00 are vehicle-level). The other thirteen name telemetry (GB/T 32960), charging communication (IEC 61851-1 /
+  -23 / -24, GB/T 27930) or data read-out and update disclosure (GTR 22, GTR 22-A1, 2025/1706). Several of those are
+  MCU-class obligations — a PWM control pilot, a CAN protocol. "16 of 27 force the stack" means "16 of 27 name an
+  external-communication, data, update or cryptographic obligation"; it does not mean sixteen acts force Tier A. The
+  finding is that the comparison domains carry **none of any kind**, under either rater — a statement about what kind
+  of system a battery / charging ECU is made to be by regulation (communicating, data-holding, updatable), not a count
+  of acts that size a DRAM. POSITION §1's "five acts" and "thirty smaller events are software" are class statements and
+  stand; L1b's `stack` is a separate field.
+- **R-5.** The unions in §4 ("L 73, S 20") include the 8 vehicle-level events; the seed-only unions are 65 and 12.
+- **R-6.** Rater A's first ledger commit came after 14 instruments and the next after 43 (prompt: every 10). A commit
+  habit, not a blindness issue.
+- **R-7. Identification by domain: L 0.615, S 0.500** (L1: S 0.667, B 0.897). Over L1 and L1b the 0.80 gate has been met
+  only where the battery domain's CELEX-numbered acts and R100 series dominated the union; both body-ECU domains sit at
+  0.5–0.67 under fresh raters. The split is a granularity and inclusion property of the procedure (one WP.29 adoption =
+  one act per series in force; corrections and clarifications; "may" clauses), as DC2's was, not a rater failing. A
+  rerun fixes it in advance, as DC2-R did for rows.
+- **R-8.** N_L is a floor (seven GB and three SAE seeds unreadable); a floor strengthens only the direction already
+  found.
+- **R-9.** Adoptions in 2025–2026: L 18 of 40 specific events, B 12 of 35, S 1 of 6. The acceleration L1 read on the
+  battery domain has a lighting counterpart (ungated).
+- **R-10.** Housekeeping in this commit: SYNTHESIS §1 carried two DC2-R rows (one from the session's DC2-R write-up, one
+  from the review); merged into one.
+
+### Consequences written in this commit
+
+None of the pre-registered consequences fires. ANGLES §B.1, SYNTHESIS §3 and POSITION §1 stand as they were after L1;
+the session's dated notes are correct and are kept, and the reviewer adds one sentence to each (item R-4) so that
+"16 of 27" is not read as sixteen Linux-class acts. SYNTHESIS is retitled to ten experiments. `NEXT_TASK.md` → CLOSED.
+
+### What would gate the kind verdict (recorded for Kyle's decision; not scheduled)
+
+An **L1b-R** on the same instruments and the same two fixed ledgers' sources would need: (i) the class rule for optional
+new functions, and the counting rule for parallel-series supplements, corrections and "may" clauses, written into the
+pre-registration (R-1, R-7); (ii) identification measured on instrument-dates, the DC2-R fix; (iii) `stack_B` rated from
+the acts' own texts, `cannot judge` where only a catalogue entry is readable (R-3); and (iv), if POSITION §1 is the
+sentence to gate, a second pre-registered tier of `stack` restricted to cryptographic, authenticated-update, data-retention-
+with-access and OTA obligations (R-4). With those, the count verdict would read NOT SPECIFIC BY COUNT under any plausible
+outcome (R_BL ≤ 1.3 in every counting here), and the kind verdict would be whatever two fresh raters find; on this
+evidence, STACK-SPECIFIC. The alternative is to stop here: POSITION already states the thesis at its gated level
+(exploratory on kind), and L1b adds a second ungated observation in the same direction, plus the count result that the
+battery box is not the busiest ECU domain by arrival rate.

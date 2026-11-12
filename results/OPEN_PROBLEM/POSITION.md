@@ -47,6 +47,15 @@ and its licence; nothing here is computed on a dataset that forbids commercial u
 > Sentence 1's 'five acts' was counted on L1's narrower split. Under L1b's `stack` definition both raters also put
 > GTR 22, GB/T 32960 (2016 and 2025), GB/T 27930-2023 and IEC 61851 in the stack set. That is ungated, and a
 > rewording is the reviewer's.
+>
+> *Reviewer, 2026-11-12 (L1b accepted as UNGATED; [`../L1B/results_L1B.md` §10](../L1B/results_L1B.md)):* no
+> rewording. Sentence 1 is a class statement and stands: the five acts are the ones that put cryptography, update
+> images, data retention with access and OTA on the ECU, and the thirty smaller events are software-only in class.
+> L1b's `stack` is a broader field — it also counts telemetry (GB/T 32960), charging communication (IEC 61851,
+> GB/T 27930) and data read-out (GTR 22), several of them MCU-class obligations — and "16 of 27" is a count of
+> those five kinds, not of acts that force Tier A. Its usable content for this paper, still ungated: by arrival
+> *rate* the battery box is not special (a lamp regulation moves as often or more), and no lighting or seat act of
+> any kind reaches the stack, under either rater. Say the five acts; do not say "sixteen".
 
 ## 2. The customer's claims, one by one
 

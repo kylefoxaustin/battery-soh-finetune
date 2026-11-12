@@ -167,6 +167,13 @@ in-service RTOS image. If that is common, the option is worth ~$0 and §E stands
 > - **Read, ungated:** the arrival *rate* is not what sets the battery box apart (a lamp regulation moves as often).
 >   What sets it apart is that its acts carry the stack. That is the kind form of this section, and L1b could not
 >   gate it.
+>
+> *Reviewer, 2026-11-12 (accepted as UNGATED; [`../L1B/results_L1B.md` §10](../L1B/results_L1B.md)):* this section
+> stands as after L1. Two cautions on the ungated numbers: `stack` counts obligations of five kinds (telemetry,
+> charging communication and data read-out included), so "16 of 27" is not sixteen Linux-class acts — three of them
+> are the acts POSITION §1 names; and the lighting count is a floor (GB and SAE seeds unreadable), so R_BL ≤ 0.73 in
+> the primary and ≤ 1.3 under any counting of the two ledgers. The count form of this section is out of reach of this
+> data; the kind form remains exploratory, now observed twice.
 
 ### B.2 The data-centre analogue of C2: provisioned-power margin and rack stabilisation, where the money is public
 

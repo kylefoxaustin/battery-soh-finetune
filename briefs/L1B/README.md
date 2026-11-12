@@ -6,7 +6,21 @@ comparison domain … the seat domain gave eight specific events, too few to pin
 two-rater two-branch procedure and gates as [`briefs/L1/README.md`](../L1/README.md) and
 `results/L1/L1_preregistration.md` (with its §9 deviations L-1 … L-5). Kyle chose this leg on 2026-11-11.
 
-> ## ▶ APPROVED (reviewer, 2026-11-11, `7c3896c`) — stage 2 runs straight through to results
+> ## ▶ DONE 2026-11-12 — `b0226dd`: UNGATED on count and kind (identification 0.60 < 0.80; κ classes 0.38 < 0.60; κ `stack` 1.00); seat domain CALIBRATED (6 vs L1's 8); not access-limited — reviewer accepted; nothing scheduled after
+>
+> Results: [`results/L1B/results_L1B.md`](../../results/L1B/results_L1B.md), acceptance in its §10, reviewer code in
+> [`results/L1B/review/`](../../results/L1B/review/). Every number re-derived from the six rater files, `B_events.csv`
+> and L1's ledgers: M 46 of 71 / 52, κ(classes) 0.378 over 46 pairs (13 disagreements, all optional lamp-projection
+> functions: A `software-only`, B `hardware-or-recert`), κ(`stack`) 1.00 over 97 rows (all its variance from the 51
+> battery rows, judged from one shared line), N_L 48 vs N_B 35 (R_BL 0.73 [0.47, 1.12]; ≤ 1.3 under any counting of
+> the ledgers), stack B 16 / 27 vs L 0 / 40 and S 0 / 6 (Fisher p 1.2 × 10⁻⁸). All match. **No reading under the
+> pre-registration**; ANGLES §B.1, SYNTHESIS §3 and POSITION §1 stand, with one reviewer sentence each: `stack`
+> counts obligations of five kinds (telemetry and charging communication included), so "16 of 27" is not sixteen
+> Linux-class acts. Ungated, the two readouts point opposite ways: lighting is the busier domain by count, and no
+> lighting or seat act of any kind reaches the stack. What a gated rerun (L1b-R) would need is listed in §10; not
+> scheduled. The approval text is kept below.
+>
+> ## ▶ APPROVED (reviewer, 2026-11-11, `7c3896c`) — stage 2 runs straight through to results (superseded: done)
 >
 > Approved with one deviation, **L1B-D1** (pre-registration §10): the share clause of NOT STACK-SPECIFIC fires only
 > when n_L ≥ 10; the k_L ≥ 2 clause is unchanged. The session's five choices are accepted: B events rebuilt by script

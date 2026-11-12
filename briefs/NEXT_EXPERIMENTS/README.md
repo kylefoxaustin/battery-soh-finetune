@@ -165,6 +165,20 @@ bears most on C2:** X8. **What bears most on the data-centre vertical:** DC1.
 > STACK-SPECIFIC / NOT (B ≥ 3 specific stack events with L and S ≤ 1 / L ≥ 2). The second is what POSITION §1 rests
 > on. Order: L1b → (nothing scheduled after).
 
+> **Status 2026-11-12. L1b is DONE — UNGATED on both verdicts** (identification 0.60 < 0.80: rater A counted R48 /
+> R148 parallel supplements rater B did not; κ classes 0.38 < 0.60: optional lamp-projection functions, A `software-only`,
+> B `hardware-or-recert`; κ `stack` 1.00). Seat domain CALIBRATED (6 vs L1's 8); not access-limited. Reviewer accepted
+> ([`results/L1B/results_L1B.md` §10](../../results/L1B/results_L1B.md)); all numbers reproduced. **No reading;
+> nothing moves.** Ungated, for the record: lighting received 48 events to the battery domain's 35 (R_BL 0.73, ≤ 1.3
+> under any counting — the 3× count row is out of reach of this data), and 16 of 27 specific battery events name an
+> obligation of the five `stack` kinds against 0 of 46 lighting and seat events under either rater — a count of
+> obligations of five kinds, not of Linux-class acts (three of the sixteen are POSITION §1's acts). **Nothing is
+> scheduled.** Remaining options on request: **L1b-R** (pre-register the optional-new-function class rule and the
+> parallel-series / correction counting rule, identification on instrument-dates, `stack_B` from the acts' texts, a
+> second `stack` tier for the Linux-class obligations; would most likely gate, and on this evidence read NOT SPECIFIC
+> BY COUNT and STACK-SPECIFIC); O1 / R1 (code, do not move the thesis); DC2-R2 (coverage fixes); rendering
+> POSITION.md for the customer.
+
 ---
 
 ## 1. How the reviewer starts one
