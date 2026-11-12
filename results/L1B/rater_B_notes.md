@@ -227,6 +227,21 @@ written procedure.
 49. **S03 R17**: `full`. No event. The 10, 11 and 12 series are mechanical or test changes (GTR 7 phase 2).
 50. **S21 R170**: `full`. No event. It is a CRS product regulation.
 
+51. **L45 R20**: `full`. No amendment in window.
+52. **S02 R16**: `full`. Five events: the 07 series (safety-belt reminders on all seats), the two 2020 rail-seat
+    display supplements, the 09 series (connector monitoring for removable seats) and 10-S3 (signal to the ADS).
+    The 10 series moved installation and safety-belt reminders into new UN Regulations (R173/R174). Those are not on
+    the instrument list, so their later changes are outside this ledger. Disclosed as a coverage limit.
+53. **L23 R3**: `full`. No event.
+54. **L04 R150**: `full`. No event (passive devices).
+55. **S08 FMVSS 207**: `full`. No event.
+56. **S12 FMVSS 225**: `full`. No event.
+57. **S07 FMVSS 202a**: `full`. No event.
+58. **L34 R104**: `full`. No event.
+59. **L15 GB 25991**: `partial`. No edition in window; replaced by GB 4599-2024.
+60. **L14 GB 4599**: `partial`. GB 4599-2024 is an unreadable edition. It also replaces GB/T 30036 and GB 25991 (L19,
+    L15); not counted anywhere.
+
 (continued below as rating proceeds)
 
 ## 3. `unreadable edition` entries (L-3)
@@ -241,5 +256,6 @@ written procedure.
 - S23 SAE J826_202106 (2021-06-22): seating-accommodation measuring devices.
 - L16 GB 23255-2019 (2019-04-04): DRL photometry.
 - S15 GB 15083-2019 (2019-10-14): seat, anchorage and head-restraint strength.
+- L14 GB 4599-2024 (2024-09-29): road illumination devices and systems.
 - L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
   and systems).
