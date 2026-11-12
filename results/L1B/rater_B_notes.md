@@ -260,7 +260,11 @@ written procedure.
     the slug is unknown and I tried the date pattern for every month from 1985 to 2026. One false hit, a generic
     page, was rejected.
 
-(continued below as rating proceeds)
+71. **L06 R45**: `full`. 01-S14 counted (ADS control of the cleaning device; `software-only`, `low`).
+72. **L25 R6**: `full`. Suppl. 28 counted (revised sequential-indicator conditions, mandatory for new approvals from
+    2018).
+73. **L40 R86**: `full`. The 01 and 02 series are counted. 02-S2/03-S1 are not counted: GRE/2023/12/Rev.1 describes a
+    trailer indicator failure-detection addition, but that item is not in the adopted text I read.
 
 ## 3. `unreadable edition` entries (L-3)
 
