@@ -1,0 +1,344 @@
+# L1b rater B notes
+
+Rater B of study L1b, branch `l1b-rater-b`. A fresh language-model session; the ledger is mine alone. Every event is
+SOURCED; every `class` and every `stack` value is a DERIVED judgement. No dollar figures.
+
+## 1. Conventions (written and committed before any change history is read)
+
+### 1.1 Event definition and counting
+
+- **Event** (L1 §2): a dated adoption, amendment, revision or entry into force of a listed instrument that changes, for
+  the instrument's domain ECU, at least one of (a) data it must produce, store, sign or transmit; (b) functions it
+  must host (protocols, cryptographic services, update mechanisms, monitors); (c) process obligations reaching its
+  software lifecycle (software-update management, cybersecurity management, type approval of software versions).
+- **How I read (b) for the two domains.** I count a change as reaching the ECU when it changes what the controller
+  must **sense, decide or signal**: a monitor or failure-detection function, a tell-tale or warning the ECU must
+  drive, an activation / deactivation / switching logic (automatic switching, adaptive or levelling control, signal
+  flashing or activation conditions), or an interface signal it must produce or accept. Seat domain: seat-belt
+  reminders, occupant detection / classification, airbag suppression logic, belt pretensioner / load-limiter control,
+  powered-seat or head-restraint control, child-restraint detection / interface. Lighting domain: lamp control units,
+  ADB / AFS / levelling controllers, the body-controller functions that drive the signalling lamps.
+- **Not an event:** a change touching only photometry, colour, light-source dimensions or categories, geometric
+  visibility, mounting position, mechanical strength, crash test procedure, anchorage geometry, dummy or test
+  equipment; a vehicle-level test procedure with no ECU-visible consequence; an editorial change, a corrigendum that
+  changes no requirement; a transitional-provisions-only change that sets no new requirement on the ECU. When a single
+  act contains both kinds of change, it is an event if any part meets (a)–(c).
+- **One act, one event:** a series of amendments, a supplement, an amendment, a new edition, a final rule, a
+  delegated or implementing act is one event; its adoption and its entry into force are one event with two dates.
+- **Never twice, within a domain** (L1b §1): if one act amends two listed instruments of the same domain, it is
+  recorded once, under the instrument that comes first in `L1B_instruments.md` (the L list in its table order, then
+  the S list), and the other is noted. An act reaching both the lighting and the seat ECU (e.g. one delegated act
+  under 2019/2144) is recorded once under each domain's instrument.
+- **One document amending two series of the same regulation** (e.g. "Supplement N to the 0x series and Supplement M
+  to the 0y series" in one WP.29 document) is one act, one event. Separate WP.29 documents are separate acts.
+- **EU base acts** (L10, L11, S13): every delegated or implementing act adopted under the base act that meets the
+  event definition for that domain is a candidate event, whether or not listed in `L1B_instruments.md` §2. An EU act
+  that only makes a UN regulation amendment mandatory is recorded under the EU base act only when it itself states a
+  new ECU-reaching requirement or application date beyond the UN text; otherwise the UN amendment is the event and the
+  EU act is noted.
+- **First edition / first adoption** inside the window is an event when it meets (a)–(c).
+
+### 1.2 Classes (L1 §2), and where I draw the lines
+
+Most demanding consequence stated or clearly implied, one of:
+- `software-only`: a change in logic, timing, thresholds, signal patterns, or warning conditions realisable on the
+  existing controller and its existing sensors and actuators, with no new type-approval re-opening.
+- `memory-or-crypto`: materially more storage (e.g. a data-retention or recording obligation), secure element / HSM
+  capability, or a new communication stack.
+- `hardware-or-recert`: a new interface, sensor, lamp / actuator, or compute class needed for the function (e.g. a new
+  seat-belt reminder on seats that had none needs buckle / occupancy sensing; a new mandatory lamp function needs a
+  driver channel), **or** the act re-opens type approval: already-approved types must newly comply by a stated date to
+  stay on the market (a new series of amendments with a "shall refuse / cease to be valid" date for earlier series),
+  **or** it re-opens the functional-safety case of the control software.
+- `cannot judge`: the text read does not allow a reading (default under `partial` access, L-3).
+- A new series of amendments that ends the validity of earlier approvals and carries an ECU-reaching change is
+  `hardware-or-recert`. A supplement (optional for existing approvals) is classed by the substance only.
+
+### 1.3 Access states (L-3)
+
+- `full`: the body's own change history (editions or amendments with dates) read, and the text or the body's own
+  summary of each change.
+- `partial`: identifiers and dates read from the body's own catalogue / metadata / notice pages, not what changed. A
+  new edition found under `partial` is an event only if the body's own catalogue entry (title, abstract, amendment
+  title) shows its subject is data, telemetry, communication protocol, cybersecurity, software update or monitoring;
+  then `class = cannot judge` unless the abstract allows more, `confidence = low`. Otherwise it is logged here as
+  `unreadable edition` and not counted.
+- `none`: no body-published history reachable by an allowed route. Recorded, not a failure.
+- If I read the full texts for some but not all amendments of an instrument, the state is `partial` and the note
+  says which.
+
+### 1.4 `act_id` forms (L-4)
+
+- EU act: CELEX, e.g. `32025R1122`; adoption date as printed on the act.
+- UN regulation: `R48-07` (series), `R48-06-S12` (supplement 12 to the 06 series); a single document covering two
+  series is written by its first-named series and supplement, the other noted; a new regulation `R148-00`.
+  Adoption date = WP.29 (AC.1) vote date; if only an EIF / OJ date is found, that date with `note = EIF date`.
+- FMVSS / 49 CFR: Federal Register citation of the final rule, `89 FR 100660`; date = FR publication date.
+- Standard: identifier with edition date, `SAE J3069_202106`, `IEC 60809:2021`, `GB 4785-2019`; date = publication
+  date.
+- Dates YYYY-MM-DD; `application_date` blank if the same.
+
+### 1.5 Window
+
+Adoption date (standard: publication date) from 2016-01-01 to 2026-12-31 inclusive. Later application included with
+both dates. Acts adopted before 2016 but entering into force in the window are not events.
+
+### 1.6 `stack` class (L1b §3), and where I draw the line
+
+`yes` only when the act names, for the domain's ECU, at least one of: a cryptographic obligation; an authenticated
+software-update obligation; a data-access or data-retention obligation (data the ECU must store, keep for a period, or
+make readable by a party — owner, authority, repairer, third party — through an interface); a telemetry or
+off-vehicle transmission obligation; an external communication protocol (charging communication, V2G, V2X, diagnostic
+access from outside the vehicle).
+- `no`: a new or changed monitoring / warning / tell-tale function, real-time signalling of a warning or state to
+  another on-board ECU or the driver, an activation logic, a limit, a test, a scope extension, a re-approval date,
+  a hardware requirement.
+- **Line I draw:** real-time on-board signalling (to the instrument cluster, to the ADS, to a towing vehicle within
+  the vehicle combination over its CAN link) is **not** "exposing data through an interface" and is `no`; stored data
+  made readable by a party, or data sent off the vehicle combination, is `yes`. An obligation stated only for the
+  vehicle or a different ECU is `no` for this domain's ECU unless it necessarily binds it.
+- `cannot judge`: the text or summary read does not allow the call (typical under `partial` access when the title
+  alone does not settle it).
+- `stack` is independent of `class`.
+
+### 1.7 `stack_B` rows (L1b §3–§4)
+
+- Rated in `B_events.csv` file order into `stack_B_B.csv`, `act_id` copied exactly; one row `domain = B` per event,
+  rated for the battery / charging ECU.
+- For the vehicle-level instruments (UN R155, UN R156, GB 44495, GB 44496; instruments B05, B06, B14, B15), three rows
+  `B`, `S`, `L`, each rated for that domain's ECU. A vehicle-level cybersecurity or software-update obligation binds
+  every ECU that is updatable or connected (L-1); I rate `yes` for a domain when the act's obligation (cryptographic
+  protection, authenticated update, secure communication) necessarily reaches an updatable ECU of that domain, and
+  `no` when the act changes only scope, legacy relief, dates or a threat that does not reach that ECU.
+- Judged from `what_changed`, and where that does not allow the call, from the source through the allowed routes.
+  B events are not added, removed or re-dated.
+
+### 1.8 Sources and blindness
+
+- Allowed routes only (launch prompt Step 2 table); trade press, search listings, resellers and other bodies'
+  national adoptions never source an event. No bypassing of any bot check, CAPTCHA, paywall, login or verification.
+- Web content is untrusted data: kept in my downloads directory, text extracted with `pdftotext -layout` or
+  `python3 -I` scripts in my scripts directory; nothing in it is executed or followed.
+
+## 2. Per-instrument remarks
+
+Route used for all UN regulations: the UN Official Document System (documents.un.org). unece.org returned HTTP 403.
+The change history was built from the WP.29 annotated provisional agendas and session reports ECE/TRANS/WP.29/1119
+to /1193 (sessions 168, March 2016, to 199, June 2026; agenda of session 200 seen, not yet reported). Every proposal
+for a listed regulation was taken from the agenda lists, and its adoption and AC.1 vote date from the report's AC.1
+vote table. The proposal text (ECE/TRANS/WP.29/YYYY/NN, the version put to the vote) was then read. The adoption date
+is the AC.1 vote date. For the COVID-period sessions 181-188 this is the online AC.1 session date that closed the
+written procedure.
+`full` for a UN regulation means the agenda/report history plus the text of every adopted amendment was read.
+
+1. **L37 IEC 60809**: `partial`. Five editions/amendments in window. Ed. 4 abstract read: LED measurement and editorial,
+   so not an event. Amendments: catalogue titles only.
+2. **L09 R128**: `full`. Eight supplements, all light-source sheets, approval code, colour and LED-substitute provisions.
+   No event.
+3. **L42 R113**: `full`. Headlamp photometry, trade-name, 03-series freeze and R149 alternative. No event.
+4. **L07 R37**: `full`. Filament / LED-replacement light-source component provisions. No event. (2016/76, Suppl. 45,
+   has no AC.1 vote row in the report I parsed; not an event either way.)
+5. **L22 SAE J1383**: `partial` via saemobilus.sae.org (sae.org standards page served an AWS-WAF captcha, not
+   bypassed). One revision in window.
+6. **L12 FMVSS 108**: `full`. One event, the ADB final rule. Its malfunction-detection and fallback requirements are
+   the ECU-reaching part. Class `hardware-or-recert` because the option needs forward sensing and segmented control,
+   which a fielded non-ADB lamp controller lacks; `low`/`medium` judgement, recorded `medium`.
+7. **L18 GB 5920**: `partial` via the SAMR catalogue. GB 5920-2024 also replaces GB 17509-2008 and GB 23255-2019 (L17,
+   L16). It is not counted anywhere, so "never twice" does not arise.
+8. **S11 FMVSS 210**: `full`. No event.
+9. **S06 R129**: `full`. CRS product requirements only. No event.
+10. **L28 R23**: `full`. Supplement 21 counted: the multi-light-source failure provision with its tell-tale signal option.
+    This provision came in one GRE package across several device regulations, adopted in March 2017. Each regulation's
+    supplement is a separate WP.29 document, so a separate act, and each is counted under its own instrument.
+
+11. **L47 49 CFR Part 564**: `full` (eCFR version list, FR API). No amendment in window.
+12. **L03 R149**: `full`. Events: R149-00 (first adoption), 01 series (ADB for L3, Driver Assistance Projection),
+    01-S3 (AFS for L3) and 01-S5 (failure-detection criteria). I first recorded 01-S6, then withdrew it. Its base
+    document GRE/2025/8 shows that it only renumbers para. 4.11. 00-S3 was checked against the original para. 4.13 and
+    only clarifies the wording.
+    **Lesson applied from here on:** where an amendment restates a failure or logic clause, I read the GRE base
+    document's justification before counting it.
+13. **S04 R25**: `full`. One supplement in window (H-point reference). No event.
+14. **L41 R50**: `full`. Sequential direction-indicator activation: Suppl. 18 (2016) and Suppl. 20 (2017). Suppl. 20
+    was adopted as two documents voted together (2017/80 and 2017/81).
+15. **S14 GB 14167**: `partial` via catalogue. GB 14167-2024 is an unreadable edition.
+16. **L05 R123**: `full`. No event. 01-S8 touched the failure-fallback clauses, but only to correct Emax to Imax
+    (justification in GRE/2016/29).
+17. **L17 GB 17509**: `partial`. No edition in window; replaced by GB 5920-2024.
+18. **S17 R80**: `full`. No event.
+19. **S01 R14**: `full`. No event.
+20. **L29 R38**: `full`. Suppl. 18 (failure tell-tale signal option) counted.
+
+21. **L13 GB 4785**: `partial`. GB 4785-2019 is an unreadable edition (installation provisions; title only).
+22. **L39 R74**: `full`. Three events: the 02 series (direction indicators mandatory on mopeds above 25 km/h,
+    re-approval by 2028) and the two parallel 2022 supplements on secondary-driving-beam switching logic. The 03
+    series repeats that logic and adds device references only, so it is not counted.
+23. **L20 SAE J3069**: `partial` via saemobilus.sae.org. Both catalogue editions are counted: J3069_201606, the first
+    issue, and J3069_202103. ADB is an automatic sensing and beam-control function, which I treat as the "monitoring"
+    subject of L-3. Class `cannot judge`. Stack `no`, because the scope (test procedures, performance and design
+    guidelines) names no stack subject. **Judgement flagged:** a stricter reading of L-3 would log these two as
+    unreadable editions.
+24. **L27 R19**: `full`. No event.
+25. **S16 GB 11550**: `partial`. No edition in window; withdrawn 2024-05-28.
+26. **L08 R99**: `full`. No event.
+27. **L10 2019/2144 (lighting)**: `full`. The base act itself is counted: the emergency stop signal mandate. Delegated
+    and implementing acts under it were checked by text. 2022/1398 only updates references, so it is noted, not
+    counted.
+28. **L19 GB/T 30036**: `partial`. No edition in window; replaced by GB 4599-2024.
+29. **S19 ISO 17373**: `partial` via the ISO open-data catalogue. iso.org served a Cloudflare challenge, not bypassed.
+    No edition in window.
+30. **S05 R44**: `full`. No event.
+
+31. **L26 R7**: `full`. Suppl. 26 counted (failure tell-tale signal option). Suppl. 25 is not counted: per its
+    justification (GRE/2016/12) it only documents an existing component requirement in the communication form.
+32. **L43 R1**: `full`. No amendment in window.
+33. **L32 R91**: `full`. Suppl. 16 counted (failure tell-tale signal option).
+34. **L21 SAE J578**: `partial`. Three colour-specification revisions, all logged as unreadable editions.
+35. **S10 FMVSS 209**: `full`. No amendment.
+36. **S13 2019/2144 (seat)**: `full`. No event. The safety-belt reminder requirement is re-enacted with date 'A',
+    already obligatory through UN R16. EDR acts are excluded: the recording obligation falls on the recorder (judgement).
+    By contrast, 2019/2144 is an event for lighting (L10), because the emergency stop signal mandate was new EU law.
+37. **L01 R48**: `full`. 34 events. Every WP.29 document is a separate act, including the parallel supplements to the
+    03/04/05/06/07/08/09 series. Each was checked against the AC.1 vote tables. Where a supplement restates
+    tell-tale/failure or switching text, I read the GRE base document or GRE report first.
+    - Not counted, as clarifications: the 2016 and 2023 tell-tale alignments, 06-S10 (residual transitional text),
+      and the 2024 indicator tell-tale reference fix.
+    - Counted: the switching-logic, projection and series changes.
+    - Class rule applied for optional new functions: `hardware-or-recert` when the option needs new lamp or sensor
+      hardware (ADB, projections, levelling); `software-only` when it only constrains the behaviour of an existing
+      function. On the same rule I revised R50-00-S18 (sequential indicators, which need segmented lamps) to
+      `hardware-or-recert`, `low`.
+38. **L35 R112**: `full`. No event.
+39. **S18 R145**: `full`. The first adoption is counted: its airbag de-activation requirement for ISOFIX at a front
+    seat was carried over from R14, so `software-only`, `low`.
+40. **L30 R77**: `full`. Suppl. 17 counted (failure tell-tale signal option).
+
+41. **L38 R53**: `full`. 19 events: ESS, ALU bend-lighting logic, courtesy lamp and anti-theft indicator status,
+    the 03 series (automatic passing beam, R78 stop-lamp signal), position-lamp-off with indicator, ADB/automatic
+    driving beam, RECAS, and AFS for L3. Where AC.1 adopted several documents as one supplement, I record one act
+    under the supplement number in the vote table.
+42. **L24 R4**: `full`. No event.
+43. **L36 R119**: `full`. Suppl. 5 counted (failure tell-tale signal option).
+44. **S22 FMVSS 202**: `full`. No amendment.
+45. **S23 SAE J826**: `partial`. J826_202106 is an unreadable edition.
+46. **L33 R98**: `full`. No event.
+47. **L16 GB 23255**: `partial`. GB 23255-2019 is an unreadable edition.
+48. **S15 GB 15083**: `partial`. GB 15083-2019 is an unreadable edition.
+49. **S03 R17**: `full`. No event. The 10, 11 and 12 series are mechanical or test changes (GTR 7 phase 2).
+50. **S21 R170**: `full`. No event. It is a CRS product regulation.
+
+51. **L45 R20**: `full`. No amendment in window.
+52. **S02 R16**: `full`. Five events: the 07 series (safety-belt reminders on all seats), the two 2020 rail-seat
+    display supplements, the 09 series (connector monitoring for removable seats) and 10-S3 (signal to the ADS).
+    The 10 series moved installation and safety-belt reminders into new UN Regulations (R173/R174). Those are not on
+    the instrument list, so their later changes are outside this ledger. Disclosed as a coverage limit.
+53. **L23 R3**: `full`. No event.
+54. **L04 R150**: `full`. No event (passive devices).
+55. **S08 FMVSS 207**: `full`. No event.
+56. **S12 FMVSS 225**: `full`. No event.
+57. **S07 FMVSS 202a**: `full`. No event.
+58. **L34 R104**: `full`. No event.
+59. **L15 GB 25991**: `partial`. No edition in window; replaced by GB 4599-2024.
+60. **L14 GB 4599**: `partial`. GB 4599-2024 is an unreadable edition. It also replaces GB/T 30036 and GB 25991 (L19,
+    L15); not counted anywhere.
+
+61. **L46 R31**: `full`. No amendment.
+62. **L02 R148**: `full`. The first adoption is counted, on the same rule as R149-00. Supplements 00-S2 and 00-S3 are
+    error corrections (GRE/2019/25, GRE/82, GRE/2020/9/Rev.1), so not counted.
+63. **S20 ISO 13216-1**: `partial` via ISO open data. No edition in window.
+64. **L11 661/2009**: `full`. Only reference-update acts in window, so no event.
+65. **S26 FMVSS 213b**: `full`. CRS product only. No event.
+66. **L31 R87**: `full`. No event. Suppl. 18 is documentation, consistent with R7 Suppl. 25.
+67. **S09 FMVSS 208**: `full`. Two events: the CRS test list (2024) and rear-seat belt warning (2025). The 2022 ADS rule
+    is recorded under S08, below.
+    - **Never-twice application, flagged:** 87 FR 18560 amends FMVSS 207, 208 and 225, and I recorded it under S08
+      (the first listed). A matcher keyed on `instrument_id` will look for it under S08; another rater may place it
+      under S09.
+68. **L44 R8**: `full`. No amendment.
+69. **S24 FMVSS 213**: `full`. CRS product only. No event.
+70. **S25 SAE J800**: `none`. The sae.org page is captcha-protected. The saemobilus product page could not be reached:
+    the slug is unknown and I tried the date pattern for every month from 1985 to 2026. One false hit, a generic
+    page, was rejected.
+
+71. **L06 R45**: `full`. 01-S14 counted (ADS control of the cleaning device; `software-only`, `low`).
+72. **L25 R6**: `full`. Suppl. 28 counted (revised sequential-indicator conditions, mandatory for new approvals from
+    2018).
+73. **L40 R86**: `full`. The 01 and 02 series are counted. 02-S2/03-S1 are not counted: GRE/2023/12/Rev.1 describes a
+    trailer indicator failure-detection addition, but that item is not in the adopted text I read.
+
+## 3. `unreadable edition` entries (L-3)
+
+- L37 IEC 60809:2014/AMD1:2017 (2017-03-29), /AMD2:2017 (2017-11-10), /AMD3:2019 (2019-03-29), IEC 60809:2021/AMD1:2023
+  (2023-11-08): catalogue titles name only light-source dimensional, electrical and luminous requirements.
+  (IEC 60809:2021, 2021-04-07: abstract read, not an event.)
+- L22 SAE J1383_201805 (2018-05-16): headlamp performance requirements; scope only.
+- S14 GB 14167-2024 (2024-09-29, safety-belt and restraint-system anchorages).
+- L13 GB 4785-2019 (2019-12-17, installation of external lighting and light-signalling devices).
+- L21 SAE J578_201603 (2016-03-08), J578_201902 (2019-02-01), J578_202004 (2020-04-27): colour specification.
+- S23 SAE J826_202106 (2021-06-22): seating-accommodation measuring devices.
+- L16 GB 23255-2019 (2019-04-04): DRL photometry.
+- S15 GB 15083-2019 (2019-10-14): seat, anchorage and head-restraint strength.
+- L14 GB 4599-2024 (2024-09-29): road illumination devices and systems.
+- L18 GB 5920-2019 (2019-04-04, photometry of position/stop lamps); GB 5920-2024 (2024-09-29, light-signalling devices
+  and systems).
+
+## 4. Blocked routes (not bypassed)
+
+- **unece.org**: HTTP 403 on the WP.29 addenda pages. I used the UN Official Document System instead
+  (documents.un.org/api/symbol/access): session agendas and reports, proposal texts, GRE/GRSP reports and base
+  documents.
+- **sae.org standards pages**: an AWS-WAF captcha. I used saemobilus.sae.org product pages (SAE's own catalogue), with
+  the slug pattern `/standards/<code>_<yyyymm>-<title-words>`.
+  - Found: J1383, J3069, J578, J826.
+  - Not found: J800, so access `none` (one false hit, a generic page, rejected).
+- **iso.org (incl. OBP)**: HTTP 403 Cloudflare challenge. I used ISO's own open-data deliverables metadata
+  (isopublicstorageprod.blob.core.windows.net/opendata, published by ISO) for identifiers, dates and stages.
+- **SAMR full texts (GB)**: behind an interactive verification step, not attempted. Only catalogue metadata from
+  std.samr.gov.cn (gbQueryPage search JSON and gbDetailed pages).
+- **ecfr.gov full-text API**: requires compressed transfer. Fetched with `--compressed`, which is not a bypass.
+
+## 5. Things I could not follow exactly, and what I did instead
+
+1. **Session 200 (November 2026).** Its agenda lists R148/R149 supplements (2026/184, /185, /214) and an R129
+   document. The session had not reported by the rating date, so no adoption could be observed and nothing from it is
+   recorded.
+2. **Proposal discovery** was by parsing the 32 annotated agendas, cross-checked against the AC.1 vote tables of the
+   32 reports. The parsing found a few gaps, which I closed by hand:
+   - R48 05-S11 (2017/106) was missing from the agenda parse.
+   - Several combined votes adopted two or three documents as one supplement: R50 Suppl. 20, R53 01-S20 and 02-S2.
+   - R148/R149/R150 had no 'No.' in their agenda titles.
+   A document on no agenda list and absent from every vote table would still be missed.
+3. **AC.1 supplement numbering.** Where the vote table's supplement number differs from the document's title, I used:
+   - the vote table for R53-02-S2, R53-01-S20 and R53-03-S3;
+   - the document title for R16-08-S2. The vote table says Suppl. 3, which collides with 2021/113's Suppl. 3. Noted
+     in the row.
+4. **Parallel documents** for different series of the same regulation are separate acts and separate rows (R48, R53,
+   R74). This inflates L counts relative to a one-change-one-event reading. I chose it in the conventions (1.1) before
+   any history was read.
+5. **Documents restating existing text.** When I could not judge from the amended text alone whether a restated
+   failure/tell-tale or switching clause was new, I read the GRE/GRSP base document's justification or the
+   session report. Corrections and clarifications were not counted. This changed one first-pass row: R149-01-S6 was
+   withdrawn before commit 2.
+6. **Class consistency revision** after instrument 37. I adopted a rule for optional new functions (notes item 37) and
+   changed R50-00-S18 from `software-only` to `hardware-or-recert`, `low`. No other earlier row needed changing.
+7. **stack_B.** Rated from each event's `what_changed` text only. No B source was re-read: the texts allowed a call in
+   every row, with a lower confidence where the summary was a catalogue title.
+   - For the vehicle-level acts, R155-00, R156-00, R156-01, GB 44495 and GB 44496 are rated `yes` for S and L. The
+     rule I applied: their update/cyber obligations reach updatable or networked ECUs of those domains.
+   - R155 supplements that change only relief, scope or V2X/GNSS threats are `no`.
+8. **Unrequested search output.** None. No web search engine was used. All locations came from catalogue pages,
+   ODS symbols, the Federal Register/eCFR APIs and the EU Publications Office SPARQL endpoint.
+
+## 6. Summary
+
+- Events: 86 (L 77, S 9).
+  - On seed instruments: L 44 (L01 34, L03 4, L20 2, L02 1, L06 1, L10 1, L12 1), S 8 (S02 5, S09 2, S08 1).
+  - On additions: L 33, S 1 (S18).
+- `stack` = `no` for every S and L event (86/86).
+- Access, all 73 instruments:
+  - L: `full` 36, `partial` 11, `none` 0.
+  - S: `full` 19, `partial` 6, `none` 1 (S25).
+- Access, seed instruments:
+  - L (22): `full` 12, `partial` 10, `none` 0.
+  - S (16): `full` 13, `partial` 3, `none` 0.
+- stack_B: 51 rows (27 non-vehicle-level B rows + 8 vehicle-level events x 3).
