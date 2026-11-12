@@ -1,0 +1,2571 @@
+{
+ "preregistration": "results/L1B/L1B_preregistration.md (7c3896c; approved with L1B-D1, b56f1b4)",
+ "tags": "events SOURCED; classes and stack DERIVED-judgemental; both raters are language-model sessions",
+ "validation_problems": {
+  "ledger_A": [],
+  "ledger_B": [],
+  "stack_B_A": [],
+  "stack_B_B": [],
+  "instruments_A": [],
+  "instruments_B": []
+ },
+ "access": {
+  "A": {
+   "L20": "none",
+   "L26": "full",
+   "L01": "full",
+   "L17": "partial",
+   "L03": "full",
+   "L32": "full",
+   "S17": "full",
+   "L39": "full",
+   "L10": "full",
+   "S06": "full",
+   "L44": "full",
+   "S07": "full",
+   "L28": "full",
+   "L04": "full",
+   "S09": "full",
+   "S10": "full",
+   "S08": "full",
+   "L06": "full",
+   "L14": "partial",
+   "S11": "full",
+   "L35": "full",
+   "L34": "full",
+   "L29": "full",
+   "L46": "full",
+   "S22": "full",
+   "L13": "partial",
+   "S26": "full",
+   "S05": "full",
+   "L23": "full",
+   "L33": "full",
+   "L27": "full",
+   "L30": "full",
+   "L40": "full",
+   "S13": "full",
+   "L07": "full",
+   "S24": "full",
+   "L47": "full",
+   "S19": "none",
+   "S04": "full",
+   "S03": "full",
+   "S21": "full",
+   "L41": "full",
+   "L38": "full",
+   "L12": "full",
+   "S15": "partial",
+   "L09": "full",
+   "L16": "partial",
+   "S23": "none",
+   "L19": "partial",
+   "L36": "full",
+   "S01": "full",
+   "S16": "partial",
+   "L22": "none",
+   "L18": "partial",
+   "L42": "full",
+   "L02": "full",
+   "S02": "full",
+   "L25": "full",
+   "L15": "partial",
+   "S18": "full",
+   "S12": "full",
+   "S25": "none",
+   "L24": "full",
+   "L37": "partial",
+   "L45": "full",
+   "L08": "full",
+   "L21": "none",
+   "L11": "full",
+   "L43": "full",
+   "S20": "none",
+   "L31": "full",
+   "L05": "full",
+   "S14": "partial"
+  },
+  "B": {
+   "L37": "partial",
+   "L09": "full",
+   "L42": "full",
+   "L07": "full",
+   "L22": "partial",
+   "L12": "full",
+   "L18": "partial",
+   "S11": "full",
+   "S06": "full",
+   "L28": "full",
+   "L47": "full",
+   "L03": "full",
+   "S04": "full",
+   "L41": "full",
+   "S14": "partial",
+   "L05": "full",
+   "L17": "partial",
+   "S17": "full",
+   "S01": "full",
+   "L29": "full",
+   "L13": "partial",
+   "L39": "full",
+   "L20": "partial",
+   "L27": "full",
+   "S16": "partial",
+   "L08": "full",
+   "L10": "full",
+   "L19": "partial",
+   "S19": "partial",
+   "S05": "full",
+   "L26": "full",
+   "L43": "full",
+   "L32": "full",
+   "L21": "partial",
+   "S10": "full",
+   "S13": "full",
+   "L01": "full",
+   "L35": "full",
+   "S18": "full",
+   "L30": "full",
+   "L38": "full",
+   "L24": "full",
+   "L36": "full",
+   "S22": "full",
+   "S23": "partial",
+   "L33": "full",
+   "L16": "partial",
+   "S15": "partial",
+   "S03": "full",
+   "S21": "full",
+   "L45": "full",
+   "S02": "full",
+   "L23": "full",
+   "L04": "full",
+   "S08": "full",
+   "S12": "full",
+   "S07": "full",
+   "L34": "full",
+   "L15": "partial",
+   "L14": "partial",
+   "L46": "full",
+   "L02": "full",
+   "S20": "partial",
+   "L11": "full",
+   "S26": "full",
+   "L31": "full",
+   "S09": "full",
+   "L44": "full",
+   "S24": "full",
+   "S25": "none",
+   "L06": "full",
+   "L25": "full",
+   "L40": "full"
+  },
+  "counts": {
+   "L_seed": {
+    "full/full": 12,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 7,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 3,
+    "none/none": 0
+   },
+   "S_seed": {
+    "full/full": 13,
+    "full/partial": 0,
+    "full/none": 0,
+    "partial/full": 0,
+    "partial/partial": 3,
+    "partial/none": 0,
+    "none/full": 0,
+    "none/partial": 0,
+    "none/none": 0
+   }
+  },
+  "unread_L_seed": [],
+  "unread_S_seed": [],
+  "limited_L": false,
+  "limited_S": false,
+  "thresholds": {
+   "L": ">= 8 of 22",
+   "S": ">= 6 of 16"
+  }
+ },
+ "ledger_sizes_raw": {
+  "A": 104,
+  "B": 86
+ },
+ "stack_B_rows": {
+  "expected": 51,
+  "A": 51,
+  "B": 51,
+  "both": 51
+ },
+ "primary_V2": {
+  "M": 46,
+  "n_A": 71,
+  "n_B": 52,
+  "identification": 0.5974025974025974,
+  "kappa_class": {
+   "kappa": 0.37837837837837834,
+   "n": 46,
+   "observed_agreement": 0.717391304347826
+  },
+  "matched_by": {
+   "act_id": 46
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 97,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": null,
+   "n": 46,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 6,
+  "N_S": 14,
+  "MC_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "H_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 3
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_S": {
+   "S02": 4,
+   "S09": 2
+  },
+  "union_S": 20,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 6,
+   "n_events": 6,
+   "share": {
+    "k": 0,
+    "n": 6,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.3903430336530645
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 40,
+  "N_L": 48,
+  "MC_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "H_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 36,
+   "hardware-or-recert": 4
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 3,
+   "2020": 1,
+   "2021": 1,
+   "2022": 9,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 2,
+   "2020": 1,
+   "2021": 1,
+   "2022": 10,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "by_instrument_L": {
+   "L01": 33,
+   "L02": 1,
+   "L03": 3,
+   "L06": 1,
+   "L10": 1,
+   "L12": 1
+  },
+  "union_L": 73,
+  "stack_L": {
+   "k": 0,
+   "n_judged": 40,
+   "n_events": 40,
+   "share": {
+    "k": 0,
+    "n": 40,
+    "p": 0.0,
+    "lo": -6.938893903907228e-18,
+    "hi": 0.08762453925039232
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "stack_B": {
+   "k": 16,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 16,
+    "n": 27,
+    "p": 0.5925925925925926,
+    "lo": 0.4072638305536409,
+    "hi": 0.7548548662714265
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 1.160174002040216e-08,
+  "R_BL": {
+   "R": 0.7291666666666666,
+   "lo": 0.4732497119051007,
+   "hi": 1.1234745936504553,
+   "N_num": 35,
+   "N_den": 48
+  },
+  "R_BS": {
+   "R": 2.5,
+   "lo": 1.357981753277322,
+   "hi": 4.602418246722677,
+   "N_num": 35,
+   "N_den": 14
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 46
+  },
+  "gates": {
+   "values": {
+    "identification": 0.5974025974025974,
+    "kappa_class": 0.37837837837837834,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": false,
+    "kappa_class": false,
+    "kappa_stack": true
+   },
+   "all_pass": false
+  },
+  "verdict_count": "UNGATED",
+  "verdict_kind": "UNGATED",
+  "decision_notes_count": [],
+  "decision_notes_kind": [],
+  "calibration": {
+   "N_S_specific": 6,
+   "N_S1": 8,
+   "abs_diff": 2,
+   "count_ok": true,
+   "E_S1_size": 8,
+   "E_S1_covered": 6,
+   "acts_ok": true,
+   "status": "CALIBRATED",
+   "E_S1_not_covered": [
+    {
+     "instrument_id": "S02",
+     "keys": [
+      "r1607s3"
+     ]
+    },
+    {
+     "instrument_id": "S09",
+     "keys": [
+      "91fr17144"
+     ]
+    }
+   ]
+  },
+  "unmatched_A": [
+   {
+    "event_id": "A002",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-04-S17",
+    "adoption_date": "2016-11-16",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Tell-tale indicating failure made mandatory where the component regulation requires it (stop, position, end-outline, DRL lamps)",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2016/78&l=en&t=pdf"
+   },
+   {
+    "event_id": "A003",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-05-S10",
+    "adoption_date": "2016-11-16",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Tell-tale indicating failure made mandatory where the component regulation requires it (stop, position, end-outline, DRL lamps)",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2016/79&l=en&t=pdf"
+   },
+   {
+    "event_id": "A004",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-06-S8",
+    "adoption_date": "2016-11-16",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Tell-tale indicating failure made mandatory where the component regulation requires it (stop, position, end-outline, DRL lamps)",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2016/80&l=en&t=pdf"
+   },
+   {
+    "event_id": "A007",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-06-S10",
+    "adoption_date": "2017-11-15",
+    "application_date": "",
+    "class": "hardware-or-recert",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Dipped-beam headlamps shall switch ON/OFF automatically relative to ambient light per Annex 13 (alternatives deleted); position-lamp/DRL switching rules",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2017/110&l=en&t=pdf"
+   },
+   {
+    "event_id": "A009",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-05-S12",
+    "adoption_date": "2018-11-14",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Bend lighting by beam movement may be activated only in forward motion; external status indicator allowed",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2018/85&l=en&t=pdf"
+   },
+   {
+    "event_id": "A020",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-06-S18",
+    "adoption_date": "2023-03-08",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Failure tell-tale requirements revised (dipped-beam LED module failure, bend lighting; failure tell-tales for reversing, stop, rear fog, parking, side-marker lamps if required by component regulation)",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2023/28&l=en&t=pdf"
+   },
+   {
+    "event_id": "A021",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-07-S5",
+    "adoption_date": "2023-03-08",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Failure tell-tale requirements revised (dipped-beam LED module failure, bend lighting, other lamps); bend lighting only in forward motion; additional lamps switched ON when hidden by movable components",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2023/29&l=en&t=pdf"
+   },
+   {
+    "event_id": "A022",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-08-S3",
+    "adoption_date": "2023-03-08",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Failure tell-tale requirements revised (dipped-beam LED module failure, bend lighting, other lamps); bend lighting only in forward motion",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2023/30&l=en&t=pdf"
+   },
+   {
+    "event_id": "A026",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-06-S20",
+    "adoption_date": "2024-03-06",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Direction-indicator operating tell-tale activation signal sources revised; rear position lamps no longer required ON with DRL",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2024/19&l=en&t=pdf"
+   },
+   {
+    "event_id": "A027",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-07-S7",
+    "adoption_date": "2024-03-06",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Direction-indicator operating tell-tale activation signal sources revised; position-lamp/DRL switching logic",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2024/20&l=en&t=pdf"
+   },
+   {
+    "event_id": "A028",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-08-S5",
+    "adoption_date": "2024-03-06",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Direction-indicator operating tell-tale activation signal sources revised; rear position lamps with DRL may be OFF above 7,000 lux ambient",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2024/21&l=en&t=pdf"
+   },
+   {
+    "event_id": "A091",
+    "instrument_id": "L02",
+    "domain": "L",
+    "act_id": "R148-00-S2",
+    "adoption_date": "2020-03-11",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Sequential activation of direction indicators (categories 1-2b, 11-12): uniform inboard-to-outboard progression, single uninterrupted signal, gap limits",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2020/32&l=en&t=pdf"
+   },
+   {
+    "event_id": "A092",
+    "instrument_id": "L02",
+    "domain": "L",
+    "act_id": "R148-00-S3",
+    "adoption_date": "2021-03-10",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Failure of multi-source lamps restructured: failure-signal option per lamp function; DRL, direction indicators, plate lamps and L-category stop/position lamps given specific failure rules",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2021/45&l=en&t=pdf"
+   },
+   {
+    "event_id": "A093",
+    "instrument_id": "L02",
+    "domain": "L",
+    "act_id": "R148-00-S4",
+    "adoption_date": "2022-03-09",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "DRL failure of one light source: at least 80% of minimum intensity, or 50% on axis with failure tell-tale required on vehicle",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/37&l=en&t=pdf"
+   },
+   {
+    "event_id": "A094",
+    "instrument_id": "L02",
+    "domain": "L",
+    "act_id": "R148-01",
+    "adoption_date": "2022-06-22",
+    "application_date": "",
+    "class": "hardware-or-recert",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "01 series: change index raised for most lamp functions; failure provisions extended (direction indicators incl. L-category categories 11-12); revised light distribution requirements",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/92&l=en&t=pdf"
+   },
+   {
+    "event_id": "A047",
+    "instrument_id": "L03",
+    "domain": "L",
+    "act_id": "R149-00-S3",
+    "adoption_date": "2021-03-10",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Lamp shall provide a failure signal if a light source and/or LED module has failed (para. 4.13), for the R48 failure tell-tale",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2021/46&l=en&t=pdf"
+   },
+   {
+    "event_id": "A050",
+    "instrument_id": "L03",
+    "domain": "L",
+    "act_id": "R149-01-S6",
+    "adoption_date": "2025-11-12",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Failure behaviour of mechanical/electromechanical and AFS structures restated (automatic safe passing-beam state); system safety analysis (FMEA/FTA) documentation for AFS control",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/119&l=en&t=pdf"
+   },
+   {
+    "event_id": "A104",
+    "instrument_id": "L05",
+    "domain": "L",
+    "act_id": "R123-01-S8",
+    "adoption_date": "2017-03-15",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "AFS failure behaviour: on failure the system shall automatically obtain a passing beam or a safe photometric state (switch-off, dimming, aiming down, functional substitution); same for category 1 bending-mode failures",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2017/41&l=en&t=pdf"
+   },
+   {
+    "event_id": "A056",
+    "instrument_id": "L10",
+    "domain": "L",
+    "act_id": "32022R1398",
+    "adoption_date": "2022-06-08",
+    "application_date": "",
+    "class": "hardware-or-recert",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Delegated act updating Annexes I/II: UN R48 07 series (emergency stop signal, revised automatic switching logic) becomes the referenced series; R148/R149/R150 added; D16 emergency stop signal row re-referenced to R48",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R1398"
+   },
+   {
+    "event_id": "A057",
+    "instrument_id": "L10",
+    "domain": "L",
+    "act_id": "32022R1426",
+    "adoption_date": "2022-08-05",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Implementing act on ADS of fully automated vehicles: ADS shall automatically generate signals to activate/deactivate hazard warning lights and direction indicators per traffic rules",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R1426"
+   },
+   {
+    "event_id": "A102",
+    "instrument_id": "L11",
+    "domain": "L",
+    "act_id": "32019R0543",
+    "adoption_date": "2019-04-03",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Amends Annex IV of 661/2009: UN R48 row updated to Supplement 10 to the 06 series (automatic dipped-beam switching relative to ambient light per Annex 13), R123 AFS row to 01 series Supp 9, R119 row; compulsory for EU type-approval",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0543"
+   },
+   {
+    "event_id": "A096",
+    "instrument_id": "S02",
+    "domain": "S",
+    "act_id": "R16-07-S1",
+    "adoption_date": "2017-06-21",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Transitional provisions for the 07 series: SBR exemptions for removable rear seats and rows with suspension seats until 2022-09-01; acceptance dates",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2017/60&l=en&t=pdf"
+   },
+   {
+    "event_id": "A097",
+    "instrument_id": "S02",
+    "domain": "S",
+    "act_id": "R16-07-S3",
+    "adoption_date": "2018-06-20",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Second-level SBR warning redefined: activated when vehicle operated per 8.4.2.4.1 and a belt is or becomes unfastened, depending on seating-position requirement",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2018/37&l=en&t=pdf"
+   },
+   {
+    "event_id": "A061",
+    "instrument_id": "S09",
+    "domain": "S",
+    "act_id": "91 FR 17144",
+    "adoption_date": "2026-04-06",
+    "application_date": "2028-09-01",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Interim final rule on seat belt warning systems: unified compliance date 2028-09-01; clarifications to front visual warning, audible-warning trigger, occupant-detection size and rear change-of-status deactivation",
+    "source_url": "https://www.federalregister.gov/documents/2026/04/06/2026-06614/federal-motor-vehicle-safety-standards-occupant-crash-protection-seat-belt-reminder-systems"
+   },
+   {
+    "event_id": "A067",
+    "instrument_id": "S13",
+    "domain": "S",
+    "act_id": "32019R2144",
+    "adoption_date": "2019-11-27",
+    "application_date": "2022-07-06",
+    "class": "hardware-or-recert",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "General Safety Regulation adopted: safety-belt reminders per UN R16 (Annex II A6) required for M1, M2, M3, N1, N2, N3 (all front and M1/N1 rear seats per R16 07 series); R14/R16/R17/R145/R129 listed compulsory",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R2144"
+   }
+  ],
+  "unmatched_B": [
+   {
+    "event_id": "B-019",
+    "instrument_id": "L01",
+    "domain": "L",
+    "act_id": "R48-06-S13",
+    "adoption_date": "2019-11-13",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "medium",
+    "what_changed": "Dipped-beam headlamps may switch ON/OFF automatically on other factors (time of day, location, rain, fog); when position lamps are switched ON with DRL, at least the rear position lamps shall be ON; tell-tale exemption for that mode",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2019/84&l=en&t=pdf"
+   },
+   {
+    "event_id": "B-004",
+    "instrument_id": "L03",
+    "domain": "L",
+    "act_id": "R149-01",
+    "adoption_date": "2022-06-22",
+    "application_date": "",
+    "class": "hardware-or-recert",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "01 series: performance-based rewrite; new adaptive driving-beam class for L3 vehicles and Driver Assistance Projection as part of ADB/passing beam (with R48/R53 parallel amendments); approvals to earlier series first issued after 2026-09-01 need not be accepted",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/93&l=en&t=pdf"
+   },
+   {
+    "event_id": "B-013",
+    "instrument_id": "L20",
+    "domain": "L",
+    "act_id": "SAE J3069_201606",
+    "adoption_date": "2016-06-30",
+    "application_date": "",
+    "class": "cannot judge",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "First issue: test procedures, performance requirements and design guidelines for adaptive driving beam and associated equipment (catalogue scope only)",
+    "source_url": "https://saemobilus.sae.org/standards/j3069_201606-adaptive-driving-beam"
+   },
+   {
+    "event_id": "B-014",
+    "instrument_id": "L20",
+    "domain": "L",
+    "act_id": "SAE J3069_202103",
+    "adoption_date": "2021-03-25",
+    "application_date": "",
+    "class": "cannot judge",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Revision, retitled 'Adaptive Driving Beam System': test procedures, performance requirements and design guidelines for ADB and associated equipment (catalogue scope only)",
+    "source_url": "https://saemobilus.sae.org/standards/j3069_202103-adaptive-driving-beam-system"
+   },
+   {
+    "event_id": "B-078",
+    "instrument_id": "S02",
+    "domain": "S",
+    "act_id": "R16-10-S3",
+    "adoption_date": "2026-06-24",
+    "application_date": "",
+    "class": "software-only",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Supplement 3 to 10 series: vehicles of category X (no driver) and ADS: retractor-related warning that would go to the driver is, while an ADSF-2 is active, transmitted as a logic signal to the ADS",
+    "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/62&l=en&t=pdf"
+   },
+   {
+    "event_id": "B-080",
+    "instrument_id": "S08",
+    "domain": "S",
+    "act_id": "87 FR 18560",
+    "adoption_date": "2022-03-30",
+    "application_date": "2022-09-26",
+    "class": "hardware-or-recert",
+    "stack": "no",
+    "confidence": "low",
+    "what_changed": "Occupant protection FMVSSs amended for ADS-equipped vehicles without manual controls: in FMVSS 208 the left front seat becomes a passenger seat, advanced air-bag (suppression) requirements apply to each front outboard passenger seat, and a separate air-bag suppression telltale is required for each front outboard passenger seat",
+    "source_url": "https://www.federalregister.gov/documents/2022/03/30/2022-05426"
+   }
+  ],
+  "class_disagreements": [
+   {
+    "A": {
+     "event_id": "A012",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-06-S16",
+     "adoption_date": "2022-06-22",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Driver Assistance Projection (projected symbols) with manual deactivation and automatic deactivation on detected failure; AFS failure tell-tale activation; auxiliary driving-beam switching rule",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/89&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-022",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-06-S16",
+     "adoption_date": "2022-06-22",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Driver Assistance Projection introduced as part of ADB/passing beam (definitions, risk-of-collision time, manufacturer pattern list, conditions and automatic deactivation in case of failure), auxiliary driving-beam (Class RA) switching only with another driving beam, manufacturer logos",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/89&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A013",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-07-S3",
+     "adoption_date": "2022-06-22",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Driver Assistance Projection with deactivation logic; AFS failure tell-tale activation on failure signal; auxiliary driving-beam switching rule",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/90&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-023",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-07-S3",
+     "adoption_date": "2022-06-22",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Driver Assistance Projection introduced as part of ADB/passing beam (definitions, risk-of-collision time, manufacturer pattern list, conditions and automatic deactivation in case of failure), auxiliary driving-beam (Class RA) switching only with another driving beam, manufacturer logos",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/90&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A014",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-08-S1",
+     "adoption_date": "2022-06-22",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Driver Assistance Projection with deactivation logic; AFS failure tell-tale activation on failure signal; auxiliary driving-beam switching rule",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/91&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-024",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-08-S1",
+     "adoption_date": "2022-06-22",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Driver Assistance Projection introduced as part of ADB/passing beam (definitions, risk-of-collision time, manufacturer pattern list, conditions and automatic deactivation in case of failure), auxiliary driving-beam (Class RA) switching only with another driving beam, manufacturer logos",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2022/91&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A034",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-06-S22",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Reversing projection (optional) with steering/speed/obstacle-dependent variation and wiper-based switch-off/dimming",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/114&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-038",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-06-S22",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Reversing projection (optional): projected ground signal switched ON only with the reversing lamps, may vary with steering angle, speed or obstacle proximity, reduced/OFF with continuous wiper operation, may be deactivated automatically or manually; answer-back signal max 3 s",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/114&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A035",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-07-S9",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Reversing projection (optional) with variation logic and wiper-based switch-off/dimming",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/115&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-039",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-07-S9",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Reversing projection (optional): projected ground signal switched ON only with the reversing lamps, may vary with steering angle, speed or obstacle proximity, reduced/OFF with continuous wiper operation, may be deactivated automatically or manually; answer-back signal max 3 s",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/115&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A036",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-08-S7",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Reversing projection (optional) with variation logic and wiper-based switch-off/dimming",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/116&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-040",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-08-S7",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Reversing projection (optional): projected ground signal switched ON only with the reversing lamps, may vary with steering angle, speed or obstacle proximity, reduced/OFF with continuous wiper operation, may be deactivated automatically or manually; answer-back signal max 3 s",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/116&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A037",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-09-S2",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Reversing projection (optional) with variation logic and wiper-based switch-off/dimming; answer-back signal duration limit",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/117&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-041",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-09-S2",
+     "adoption_date": "2025-11-12",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Reversing projection (optional): projected ground signal switched ON only with the reversing lamps, may vary with steering angle, speed or obstacle proximity, reduced/OFF with continuous wiper operation, may be deactivated automatically or manually; answer-back signal max 3 s",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2025/117&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A042",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-06-S24",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Direction indicator projection (optional) and its operating rules",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/160&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-046",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-06-S24",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Direction indicator projection (optional): ON only with the same-side indicator, flashing in phase, not all ON with hazard warning, only at <=15 km/h, rear projection not with forward gear / front not with reverse gear, reduced/OFF with continuous wiper operation",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/160&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A043",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-07-S11",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Direction indicator projection (optional) and its operating rules",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/161&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-047",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-07-S11",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Direction indicator projection (optional): ON only with the same-side indicator, flashing in phase, not all ON with hazard warning, only at <=15 km/h, rear projection not with forward gear / front not with reverse gear, reduced/OFF with continuous wiper operation",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/161&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A044",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-08-S9",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Lamp switching/activation by an ADS (definitions and requirements); direction indicator projection; DAP inhibited while ADS feature active",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/162&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-048",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-08-S9",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Direction indicator projection (optional): ON only with the same-side indicator, flashing in phase, not all ON with hazard warning, only at <=15 km/h, rear projection not with forward gear / front not with reverse gear, reduced/OFF with continuous wiper operation",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/162&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A045",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-09-S4",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "Lamp switching/activation by an ADS (definitions and requirements); direction indicator projection; DAP inhibited while ADS feature active",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/163&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-049",
+     "instrument_id": "L01",
+     "domain": "L",
+     "act_id": "R48-09-S4",
+     "adoption_date": "2026-06-24",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Direction indicator projection (optional): ON only with the same-side indicator, flashing in phase, not all ON with hazard warning, only at <=15 km/h, rear projection not with forward gear / front not with reverse gear, reduced/OFF with continuous wiper operation",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2026/163&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A048",
+     "instrument_id": "L03",
+     "domain": "L",
+     "act_id": "R149-01-S3",
+     "adoption_date": "2024-03-06",
+     "application_date": "",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Scope extended to AFS and adaptive driving-beam (ADB) for category L3 vehicles, with their control and failure provisions",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2024/25&l=en&t=pdf"
+    },
+    "B": {
+     "event_id": "B-005",
+     "instrument_id": "L03",
+     "domain": "L",
+     "act_id": "R149-01-S3",
+     "adoption_date": "2024-03-06",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "low",
+     "what_changed": "Supplement 3 to 01 series: scope extended to AFS for L3 vehicles (ADB for L3 clarified), with system documentation showing compliance with the R53 adaptive-lighting control and signal-status provisions",
+     "source_url": "https://documents.un.org/api/symbol/access?s=ECE/TRANS/WP.29/2024/25&l=en&t=pdf"
+    }
+   },
+   {
+    "A": {
+     "event_id": "A088",
+     "instrument_id": "L12",
+     "domain": "L",
+     "act_id": "87 FR 9916",
+     "adoption_date": "2022-02-22",
+     "application_date": "2022-02-22",
+     "class": "software-only",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "FMVSS 108 amended to permit adaptive driving beam (ADB) systems as a semiautomatic beam switching option: system must detect malfunctions (incl. sensor obstruction), revert to manual mode and warn the driver; glare/visibility track-test performance requirements",
+     "source_url": "https://www.federalregister.gov/documents/2022/02/22/2022-02451/federal-motor-vehicle-safety-standards-lamps-reflective-devices-and-associated-equipment-adaptive"
+    },
+    "B": {
+     "event_id": "B-001",
+     "instrument_id": "L12",
+     "domain": "L",
+     "act_id": "87 FR 9916",
+     "adoption_date": "2022-02-22",
+     "application_date": "",
+     "class": "hardware-or-recert",
+     "stack": "no",
+     "confidence": "medium",
+     "what_changed": "FMVSS 108 amended to permit adaptive driving beam (S9.4.1.6 Option 2): system must detect malfunctions (incl. sensor obstruction), fall back to manual mode with a visible driver warning, give lower beam only below 32 km/h, and switch only between lower/upper/ADB in automatic mode",
+     "source_url": "https://www.federalregister.gov/documents/2022/02/22/2022-02451"
+    }
+   }
+  ],
+  "stack_disagreements_SL": [],
+  "window_straddling": []
+ },
+ "V1": {
+  "M": 46,
+  "n_A": 71,
+  "n_B": 52,
+  "identification": 0.5974025974025974,
+  "kappa_class": {
+   "kappa": 0.37837837837837834,
+   "n": 46,
+   "observed_agreement": 0.717391304347826
+  },
+  "matched_by": {
+   "act_id": 46
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 97,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": null,
+   "n": 46,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 6,
+  "N_S": 6,
+  "MC_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "H_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 3
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_S": {
+   "S02": 4,
+   "S09": 2
+  },
+  "union_S": 12,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 6,
+   "n_events": 6,
+   "share": {
+    "k": 0,
+    "n": 6,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.3903430336530645
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 40,
+  "N_L": 40,
+  "MC_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "H_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 36,
+   "hardware-or-recert": 4
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 3,
+   "2020": 1,
+   "2021": 1,
+   "2022": 9,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 2,
+   "2020": 1,
+   "2021": 1,
+   "2022": 10,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "by_instrument_L": {
+   "L01": 33,
+   "L02": 1,
+   "L03": 3,
+   "L06": 1,
+   "L10": 1,
+   "L12": 1
+  },
+  "union_L": 65,
+  "stack_L": {
+   "k": 0,
+   "n_judged": 40,
+   "n_events": 40,
+   "share": {
+    "k": 0,
+    "n": 40,
+    "p": 0.0,
+    "lo": -6.938893903907228e-18,
+    "hi": 0.08762453925039232
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "stack_B": {
+   "k": 16,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 16,
+    "n": 27,
+    "p": 0.5925925925925926,
+    "lo": 0.4072638305536409,
+    "hi": 0.7548548662714265
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 1.160174002040216e-08,
+  "R_BL": {
+   "R": 0.875,
+   "lo": 0.5580087830693023,
+   "hi": 1.3720662169306974,
+   "N_num": 35,
+   "N_den": 40
+  },
+  "R_BS": {
+   "R": 5.833333333333333,
+   "lo": 2.51571018157476,
+   "hi": 13.526112040647462,
+   "N_num": 35,
+   "N_den": 6
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 46
+  },
+  "gates": {
+   "values": {
+    "identification": 0.5974025974025974,
+    "kappa_class": 0.37837837837837834,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": false,
+    "kappa_class": false,
+    "kappa_stack": true
+   },
+   "all_pass": false
+  },
+  "verdict_count": "UNGATED",
+  "verdict_kind": "UNGATED",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "V0": {
+  "M": 46,
+  "n_A": 71,
+  "n_B": 52,
+  "identification": 0.5974025974025974,
+  "kappa_class": {
+   "kappa": 0.37837837837837834,
+   "n": 46,
+   "observed_agreement": 0.717391304347826
+  },
+  "matched_by": {
+   "act_id": 46
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 97,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": null,
+   "n": 46,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 27,
+  "N_S_specific": 6,
+  "N_S": 6,
+  "MC_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "H_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 3
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_S": {
+   "S02": 4,
+   "S09": 2
+  },
+  "union_S": 12,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 6,
+   "n_events": 6,
+   "share": {
+    "k": 0,
+    "n": 6,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.3903430336530645
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 40,
+  "N_L": 40,
+  "MC_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "H_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 36,
+   "hardware-or-recert": 4
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 3,
+   "2020": 1,
+   "2021": 1,
+   "2022": 9,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 2,
+   "2020": 1,
+   "2021": 1,
+   "2022": 10,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "by_instrument_L": {
+   "L01": 33,
+   "L02": 1,
+   "L03": 3,
+   "L06": 1,
+   "L10": 1,
+   "L12": 1
+  },
+  "union_L": 65,
+  "stack_L": {
+   "k": 0,
+   "n_judged": 40,
+   "n_events": 40,
+   "share": {
+    "k": 0,
+    "n": 40,
+    "p": 0.0,
+    "lo": -6.938893903907228e-18,
+    "hi": 0.08762453925039232
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 1,
+   "2021": 0,
+   "2022": 1,
+   "2023": 4,
+   "2024": 5,
+   "2025": 8,
+   "2026": 3
+  },
+  "stack_B": {
+   "k": 16,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 16,
+    "n": 27,
+    "p": 0.5925925925925926,
+    "lo": 0.4072638305536409,
+    "hi": 0.7548548662714265
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 1.160174002040216e-08,
+  "R_BL": {
+   "R": 0.675,
+   "lo": 0.41623625218945237,
+   "hi": 1.0946307478105473,
+   "N_num": 27,
+   "N_den": 40
+  },
+  "R_BS": {
+   "R": 4.5,
+   "lo": 1.9079432084696157,
+   "hi": 10.613523458197056,
+   "N_num": 27,
+   "N_den": 6
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 46
+  },
+  "gates": {
+   "values": {
+    "identification": 0.5974025974025974,
+    "kappa_class": 0.37837837837837834,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": false,
+    "kappa_class": false,
+    "kappa_stack": true
+   },
+   "all_pass": false
+  },
+  "verdict_count": "UNGATED",
+  "verdict_kind": "UNGATED",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "CN0": {
+  "M": 46,
+  "n_A": 71,
+  "n_B": 52,
+  "identification": 0.5974025974025974,
+  "kappa_class": {
+   "kappa": 0.37837837837837834,
+   "n": 46,
+   "observed_agreement": 0.717391304347826
+  },
+  "matched_by": {
+   "act_id": 46
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 97,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": null,
+   "n": 46,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 26,
+  "N_S_specific": 6,
+  "N_S": 12,
+  "MC_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "H_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 3
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_S": {
+   "S02": 4,
+   "S09": 2
+  },
+  "union_S": 18,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 6,
+   "n_events": 6,
+   "share": {
+    "k": 0,
+    "n": 6,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.3903430336530645
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 40,
+  "N_L": 46,
+  "MC_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "H_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 36,
+   "hardware-or-recert": 4
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 3,
+   "2020": 1,
+   "2021": 1,
+   "2022": 9,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 2,
+   "2020": 1,
+   "2021": 1,
+   "2022": 10,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "by_instrument_L": {
+   "L01": 33,
+   "L02": 1,
+   "L03": 3,
+   "L06": 1,
+   "L10": 1,
+   "L12": 1
+  },
+  "union_L": 71,
+  "stack_L": {
+   "k": 0,
+   "n_judged": 40,
+   "n_events": 40,
+   "share": {
+    "k": 0,
+    "n": 40,
+    "p": 0.0,
+    "lo": -6.938893903907228e-18,
+    "hi": 0.08762453925039232
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 4,
+   "2024": 6,
+   "2025": 6,
+   "2026": 3
+  },
+  "stack_B": {
+   "k": 9,
+   "n_judged": 20,
+   "n_events": 20,
+   "share": {
+    "k": 9,
+    "n": 20,
+    "p": 0.45,
+    "lo": 0.25819502085709295,
+    "hi": 0.6579179916924003
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 3,
+    "n_judged": 6,
+    "n_events": 6
+   },
+   "S": {
+    "k": 3,
+    "n_judged": 6,
+    "n_events": 6
+   },
+   "L": {
+    "k": 3,
+    "n_judged": 6,
+    "n_events": 6
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 1.136158960668516e-05,
+  "R_BL": {
+   "R": 0.5652173913043478,
+   "lo": 0.35101386216762825,
+   "hi": 0.9101369884939974,
+   "N_num": 26,
+   "N_den": 46
+  },
+  "R_BS": {
+   "R": 2.1666666666666665,
+   "lo": 1.1072125983864936,
+   "hi": 4.2398762905023935,
+   "N_num": 26,
+   "N_den": 12
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 46
+  },
+  "gates": {
+   "values": {
+    "identification": 0.5974025974025974,
+    "kappa_class": 0.37837837837837834,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": false,
+    "kappa_class": false,
+    "kappa_stack": true
+   },
+   "all_pass": false
+  },
+  "verdict_count": "UNGATED",
+  "verdict_kind": "UNGATED",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "FULL": {
+  "M": 77,
+  "n_A": 104,
+  "n_B": 86,
+  "identification": 0.6814159292035398,
+  "kappa_class": {
+   "kappa": 0.3319502074688797,
+   "n": 77,
+   "observed_agreement": 0.7012987012987013
+  },
+  "matched_by": {
+   "act_id": 77
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 128,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": null,
+   "n": 77,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 6,
+  "N_S": 14,
+  "MC_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "H_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 3
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_S": {
+   "S02": 4,
+   "S09": 2
+  },
+  "union_S": 21,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 6,
+   "n_events": 6,
+   "share": {
+    "k": 0,
+    "n": 6,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.3903430336530645
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 71,
+  "N_L": 79,
+  "MC_L": {
+   "k": 7,
+   "n": 71,
+   "p": 0.09859154929577464,
+   "lo": 0.048582206325328975,
+   "hi": 0.18980927648636933
+  },
+  "H_L": {
+   "k": 7,
+   "n": 71,
+   "p": 0.09859154929577464,
+   "lo": 0.048582206325328975,
+   "hi": 0.18980927648636933
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 64,
+   "hardware-or-recert": 7
+  },
+  "per_year_adoption_L": {
+   "2016": 4,
+   "2017": 9,
+   "2018": 1,
+   "2019": 9,
+   "2020": 1,
+   "2021": 2,
+   "2022": 17,
+   "2023": 6,
+   "2024": 4,
+   "2025": 9,
+   "2026": 9
+  },
+  "per_year_application_L": {
+   "2016": 4,
+   "2017": 9,
+   "2018": 1,
+   "2019": 8,
+   "2020": 1,
+   "2021": 2,
+   "2022": 18,
+   "2023": 6,
+   "2024": 4,
+   "2025": 9,
+   "2026": 9
+  },
+  "by_instrument_L": {
+   "L01": 33,
+   "L02": 1,
+   "L03": 3,
+   "L06": 1,
+   "L10": 1,
+   "L12": 1,
+   "L25": 1,
+   "L26": 1,
+   "L28": 1,
+   "L29": 1,
+   "L30": 1,
+   "L32": 1,
+   "L36": 1,
+   "L38": 19,
+   "L39": 3,
+   "L40": 1,
+   "L41": 1
+  },
+  "union_L": 108,
+  "stack_L": {
+   "k": 0,
+   "n_judged": 71,
+   "n_events": 71,
+   "share": {
+    "k": 0,
+    "n": 71,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.05132974174790491
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "stack_B": {
+   "k": 16,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 16,
+    "n": 27,
+    "p": 0.5925925925925926,
+    "lo": 0.4072638305536409,
+    "hi": 0.7548548662714265
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 1.3755779529960572e-11,
+  "R_BL": {
+   "R": 0.4430379746835443,
+   "lo": 0.29834678518124685,
+   "hi": 0.6579009956231114,
+   "N_num": 35,
+   "N_den": 79
+  },
+  "R_BS": {
+   "R": 2.5,
+   "lo": 1.357981753277322,
+   "hi": 4.602418246722677,
+   "N_num": 35,
+   "N_den": 14
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 77
+  },
+  "gates": {
+   "values": {
+    "identification": 0.6814159292035398,
+    "kappa_class": 0.3319502074688797,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": false,
+    "kappa_class": false,
+    "kappa_stack": true
+   },
+   "all_pass": false
+  },
+  "verdict_count": "UNGATED",
+  "verdict_kind": "UNGATED",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "ACC": {
+  "M": 46,
+  "n_A": 71,
+  "n_B": 50,
+  "identification": 0.6133333333333333,
+  "kappa_class": {
+   "kappa": 0.37837837837837834,
+   "n": 46,
+   "observed_agreement": 0.717391304347826
+  },
+  "matched_by": {
+   "act_id": 46
+  },
+  "window_straddling_pairs": 0,
+  "kappa_stack": {
+   "kappa": 1.0,
+   "n": 97,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_SL_only": {
+   "kappa": null,
+   "n": 46,
+   "observed_agreement": 1.0
+  },
+  "kappa_stack_B_rows_only": {
+   "kappa": 1.0,
+   "n": 51,
+   "observed_agreement": 1.0
+  },
+  "N_B": 35,
+  "N_S_specific": 6,
+  "N_S": 14,
+  "MC_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "H_S": {
+   "k": 3,
+   "n": 6,
+   "p": 0.5,
+   "lo": 0.18761280689940868,
+   "hi": 0.8123871931005913
+  },
+  "cannot_judge_class_S": 0,
+  "class_S": {
+   "hardware-or-recert": 3,
+   "software-only": 3
+  },
+  "per_year_adoption_S": {
+   "2016": 1,
+   "2017": 0,
+   "2018": 0,
+   "2019": 0,
+   "2020": 2,
+   "2021": 0,
+   "2022": 0,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 0
+  },
+  "per_year_application_S": {
+   "2016": 1,
+   "2020": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1
+  },
+  "by_instrument_S": {
+   "S02": 4,
+   "S09": 2
+  },
+  "union_S": 20,
+  "stack_S": {
+   "k": 0,
+   "n_judged": 6,
+   "n_events": 6,
+   "share": {
+    "k": 0,
+    "n": 6,
+    "p": 0.0,
+    "lo": 0.0,
+    "hi": 0.3903430336530645
+   },
+   "not_judged": []
+  },
+  "N_L_specific": 40,
+  "N_L": 48,
+  "MC_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "H_L": {
+   "k": 4,
+   "n": 40,
+   "p": 0.1,
+   "lo": 0.03957888759557486,
+   "hi": 0.23052074380473897
+  },
+  "cannot_judge_class_L": 0,
+  "class_L": {
+   "software-only": 36,
+   "hardware-or-recert": 4
+  },
+  "per_year_adoption_L": {
+   "2016": 0,
+   "2017": 2,
+   "2018": 1,
+   "2019": 3,
+   "2020": 1,
+   "2021": 1,
+   "2022": 9,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "per_year_application_L": {
+   "2017": 2,
+   "2018": 1,
+   "2019": 2,
+   "2020": 1,
+   "2021": 1,
+   "2022": 10,
+   "2023": 3,
+   "2024": 2,
+   "2025": 9,
+   "2026": 9
+  },
+  "by_instrument_L": {
+   "L01": 33,
+   "L02": 1,
+   "L03": 3,
+   "L06": 1,
+   "L10": 1,
+   "L12": 1
+  },
+  "union_L": 71,
+  "stack_L": {
+   "k": 0,
+   "n_judged": 40,
+   "n_events": 40,
+   "share": {
+    "k": 0,
+    "n": 40,
+    "p": 0.0,
+    "lo": -6.938893903907228e-18,
+    "hi": 0.08762453925039232
+   },
+   "not_judged": []
+  },
+  "per_year_adoption_B": {
+   "2016": 3,
+   "2017": 2,
+   "2018": 0,
+   "2019": 0,
+   "2020": 3,
+   "2021": 0,
+   "2022": 2,
+   "2023": 5,
+   "2024": 8,
+   "2025": 9,
+   "2026": 3
+  },
+  "stack_B": {
+   "k": 16,
+   "n_judged": 27,
+   "n_events": 27,
+   "share": {
+    "k": 16,
+    "n": 27,
+    "p": 0.5925925925925926,
+    "lo": 0.4072638305536409,
+    "hi": 0.7548548662714265
+   },
+   "not_judged": []
+  },
+  "stack_vehicle_level": {
+   "B": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "S": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   },
+   "L": {
+    "k": 5,
+    "n_judged": 8,
+    "n_events": 8
+   }
+  },
+  "fisher_B_gt_L_one_sided_p": 1.160174002040216e-08,
+  "R_BL": {
+   "R": 0.7291666666666666,
+   "lo": 0.4732497119051007,
+   "hi": 1.1234745936504553,
+   "N_num": 35,
+   "N_den": 48
+  },
+  "R_BS": {
+   "R": 2.5,
+   "lo": 1.357981753277322,
+   "hi": 4.602418246722677,
+   "N_num": 35,
+   "N_den": 14
+  },
+  "by_jurisdiction_SL": {
+   "non-China": 46
+  },
+  "gates": {
+   "values": {
+    "identification": 0.6133333333333333,
+    "kappa_class": 0.37837837837837834,
+    "kappa_stack": 1.0
+   },
+   "pass": {
+    "identification": false,
+    "kappa_class": false,
+    "kappa_stack": true
+   },
+   "all_pass": false
+  },
+  "verdict_count": "UNGATED",
+  "verdict_kind": "UNGATED",
+  "decision_notes_count": [],
+  "decision_notes_kind": []
+ },
+ "stack_disagreements_B_rows": [],
+ "own": {
+  "A": {
+   "S": {
+    "n": 10,
+    "MC": {
+     "k": 4,
+     "n": 10,
+     "p": 0.4,
+     "lo": 0.16817758120350967,
+     "hi": 0.6873304525498135
+    },
+    "H": {
+     "k": 4,
+     "n": 10,
+     "p": 0.4,
+     "lo": 0.16817758120350967,
+     "hi": 0.6873304525498135
+    },
+    "class": {
+     "software-only": 6,
+     "hardware-or-recert": 4
+    },
+    "stack": {
+     "no": 10
+    }
+   },
+   "L": {
+    "n": 61,
+    "MC": {
+     "k": 7,
+     "n": 61,
+     "p": 0.11475409836065574,
+     "lo": 0.0567113064337431,
+     "hi": 0.2184453830989026
+    },
+    "H": {
+     "k": 7,
+     "n": 61,
+     "p": 0.11475409836065574,
+     "lo": 0.0567113064337431,
+     "hi": 0.2184453830989026
+    },
+    "class": {
+     "software-only": 54,
+     "hardware-or-recert": 7
+    },
+    "stack": {
+     "no": 61
+    }
+   },
+   "stack_B_rows": {
+    "B": {
+     "yes": 21,
+     "no": 14
+    },
+    "S": {
+     "yes": 5,
+     "no": 3
+    },
+    "L": {
+     "yes": 5,
+     "no": 3
+    }
+   }
+  },
+  "B": {
+   "S": {
+    "n": 8,
+    "MC": {
+     "k": 4,
+     "n": 8,
+     "p": 0.5,
+     "lo": 0.21521252682444186,
+     "hi": 0.7847874731755582
+    },
+    "H": {
+     "k": 4,
+     "n": 8,
+     "p": 0.5,
+     "lo": 0.21521252682444186,
+     "hi": 0.7847874731755582
+    },
+    "class": {
+     "hardware-or-recert": 4,
+     "software-only": 4
+    },
+    "stack": {
+     "no": 8
+    }
+   },
+   "L": {
+    "n": 44,
+    "MC": {
+     "k": 18,
+     "n": 42,
+     "p": 0.42857142857142855,
+     "lo": 0.2911742951914822,
+     "hi": 0.5779402208812553
+    },
+    "H": {
+     "k": 18,
+     "n": 42,
+     "p": 0.42857142857142855,
+     "lo": 0.2911742951914822,
+     "hi": 0.5779402208812553
+    },
+    "class": {
+     "hardware-or-recert": 18,
+     "software-only": 24,
+     "cannot judge": 2
+    },
+    "stack": {
+     "no": 44
+    }
+   },
+   "stack_B_rows": {
+    "B": {
+     "yes": 21,
+     "no": 14
+    },
+    "S": {
+     "yes": 5,
+     "no": 3
+    },
+    "L": {
+     "yes": 5,
+     "no": 3
+    }
+   }
+  }
+ },
+ "verdict_line": {
+  "count": "UNGATED",
+  "kind": "UNGATED",
+  "calibration": "CALIBRATED",
+  "sensitivities_differing": {}
+ }
+}

@@ -152,6 +152,22 @@ in-service RTOS image. If that is common, the option is worth ~$0 and §E stands
 > years" this section was written from is, counted, five large acts in six years with thirty smaller events around
 > them. The option value in this section should be priced on those five, not on the 3-a-year rate.
 
+> **Update 2026-11-11 (L1b, `results/L1B/results_L1B.md`).** The second comparison domain (exterior lighting) and
+> the `stack` class, rated by two fresh blind raters: **UNGATED on both the count and the kind verdict.**
+> Identification 0.60 and class κ 0.38 fail. `stack` κ is 1.00, but its variance comes only from the battery rows,
+> judged from one shared text. The seat domain calibrated against L1 (6 specific events vs 8).
+> - **No reading under the pre-registration.** This section stands as the L1 update and review above left it.
+> - **Ungated, for the record:**
+>   - **Count:** lighting received 48 events (40 specific, 33 of them UN R48 supplements adopted in parallel across
+>     series) against the battery domain's 35, so R_BL is 0.73 [0.47, 1.12]. It is about 1.1 with one event per
+>     instrument per date.
+>   - **Kind:** 16 of 27 specific battery events force the crypto / update / data / telemetry / external-protocol
+>     stack (59 % [41, 75]). None of 40 lighting events and none of 6 seat events do (0 % [0, 9]). Neither rater rated
+>     any lighting or seat event `yes`.
+> - **Read, ungated:** the arrival *rate* is not what sets the battery box apart (a lamp regulation moves as often).
+>   What sets it apart is that its acts carry the stack. That is the kind form of this section, and L1b could not
+>   gate it.
+
 ### B.2 The data-centre analogue of C2: provisioned-power margin and rack stabilisation, where the money is public
 
 **Mechanism.** A data centre's breakers, transformers and UPS are provisioned for a peak that the load rarely reaches;

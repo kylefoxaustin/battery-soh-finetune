@@ -36,6 +36,18 @@ and its licence; nothing here is computed on a dataset that forbids commercial u
    (DC2 / DC2-R, four raters). What is Tier-A-specific there is, again, the software: operator telemetry, TLS to the
    DCIM, firmware isolation, the storage element's BMS — plus whatever the operator's own ramp contract says.
 
+> **Note, 2026-11-11 (L1b, [`../L1B/results_L1B.md`](../L1B/results_L1B.md)).** The test of sentence 1 against a
+> second comparison domain is **UNGATED** (identification 0.60, class κ 0.38), so sentence 1 stands as written and is
+> not rewritten. Ungated, for the record:
+> - exterior lighting receives as many dated requirement events as the battery / charging domain, or more (R_BL
+>   0.73);
+> - but none of its 40 events, nor the 6 seat events, force the stack. 16 of 27 specific battery events do, under
+>   both raters.
+>
+> Sentence 1's 'five acts' was counted on L1's narrower split. Under L1b's `stack` definition both raters also put
+> GTR 22, GB/T 32960 (2016 and 2025), GB/T 27930-2023 and IEC 61851 in the stack set. That is ungated, and a
+> rewording is the reviewer's.
+
 ## 2. The customer's claims, one by one
 
 | Claim as stated | What the evidence says | Say this |

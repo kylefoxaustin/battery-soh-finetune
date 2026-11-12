@@ -42,6 +42,7 @@ measured, gated, or explicitly documentary, and the counter-evidence is on the t
 | **DC2** | What window and excursion allowance do real large-load power specs use; is any shaped so that seconds of history would pay? | **UNGATED** (identification 0.52 < 0.80; κ(window) 0.64). Exploratory: binding real-power-variation limits found are `hard`, except ERCOT §6.5.7.11 (PCLR ramp, one-minute intervals, 10 % may fail), read identically by both raters; gray-boxed, registration-scoped, at the 60 s class edge | No (UNGATED; public documents, DERIVED-judgemental) | The last data-centre leg gets no reading; no spec found that makes DC1's 0.5 % sensitivity the real case |
 | **DC2-R** | DC2 re-rated by two fresh raters with row granularity fixed in advance | **UNGATED** (identification 0.72 < 0.80, now on coverage of very large documents; κ(window) 1.00; deciding-row identification 0.81; every class of all 23 binding-deciding pairs agreed). Same picture: every binding real-power-variation limit `hard` or no window stated, except ERCOT §6.5.7.11 (PCLR, one-minute averages, 10 % may fail) | No (UNGATED; documentary) | Four raters in two blind pairs reproduce the reading; DC1b not run (pre-declared); the anticipation leg closes on public evidence |
 | **DC2-R** | DC2 re-rated by fresh raters with row granularity fixed in advance; DC1b declared if a history-shaped spec gates | **UNGATED** (identification 0.72 < 0.80, on coverage and quantity naming; κ(window) 1.00; deciding rows 0.81, every class agreed). Exploratory: ERCOT §6.5.7.11 again the only history-shaped binding clause, identical in both files | No (UNGATED; public documents, DERIVED-judgemental) | DC1b is not run; the data-centre anticipation leg closes on DC2-R |
+| **L1b** | Against exterior lighting, is the battery domain's requirement arrival specific in count, and in kind (acts forcing the crypto / update / data / telemetry stack)? | **UNGATED** both (identification 0.60, κ classes 0.38; κ `stack` 1.00). Calibrated. Ungated: R_BL 0.73 [0.47, 1.12]; stack B 16 / 27 vs L 0 / 40, S 0 / 6 | No (UNGATED; public regulatory record, DERIVED-judgemental) | No reading. Ungated, the count form of §B.1 looks weaker than L1 and the kind form stronger; see the note under §3 |
 
 Earlier, from the programme proper: **X2-F** (per-cell R is stable and removes margin at the top of charge: κ 1.10 vs
 1.35–1.45, min/max's margin does not transfer) and **X5/X6** (per-vehicle history does not beat a frozen fleet model on
@@ -86,6 +87,15 @@ usable energy; knees set the reserve) stand unchanged.
 | DRAM retention is a recurring forensic necessity | **Not supported** (gated) | FR1-R: 31 % of field-observable causes need > 80 s, but the long windows are per-event signatures over many cycles (flash/cloud class); ring-buffer-shaped 17 % |
 | The battery box's requirement arrival is unlike any other ECU domain (ANGLES §B.1 as written) | **Overstated** | L1: seats receive 0.7 specific events a year plus the vehicle-wide cyber / update floor; the battery box's excess is 4.4× on specific events, 2.2× with the floor on both sides; the pre-registered 3× bar is not met under the symmetric count (R in [1.2, 3.9]) |
 | Most of that arrival forces more silicon | **Not supported** (exploratory) | L1 reviewer split: five `stack` acts in eleven years; the other 30 events are software, re-approval, warnings or scope |
+
+> **Note, 2026-11-11 (L1b, [`../L1B/results_L1B.md`](../L1B/results_L1B.md)): UNGATED on count and kind**, so neither
+> row above moves. Two fresh raters failed identification (0.60) and class κ (0.38) on the lighting ledger; they
+> agreed on every `stack` call (κ 1.00, carried by the 51 battery rows judged from one shared text). Ungated, the
+> two readouts point in opposite directions. By count, lighting received **more** events than the battery domain
+> (R_BL 0.73 [0.47, 1.12]; 33 of 40 on UN R48 parallel supplements; ≈ 1.1 if each instrument-date counts once). By
+> kind, 16 of 27 specific battery events force the stack and **none** of 40 lighting or 6 seat events do, under
+> either rater (Fisher p 1e-8). The vehicle-level acts (R155-00, R156-00/01, GB 44495, GB 44496) were rated `yes`
+> for the lighting and seat ECUs as well. The seat domain calibrated against L1 (6 vs 8).
 
 Two rows matter most for the MCU-tier story: the cheapest fix to min/max is not per-cell telemetry, it is carrying the
 pack's **worst-cell resistance** in the limiter — bytes, not DRAM; and the regulation that forces a Linux-class stack is
